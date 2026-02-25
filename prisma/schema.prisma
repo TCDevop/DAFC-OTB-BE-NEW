@@ -1,0 +1,619 @@
+// ============================================================================
+// DAFC OTB Planning System - Database Schema
+// Tech: PostgreSQL 16 + Prisma ORM
+// Updated: 2026-02-23 — Sync ID & FK types to match SQL (bigint -> Int autoincrement)
+// ============================================================================
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ============================================
+// AUTHENTICATION & AUTHORIZATION
+// ============================================
+
+model User {
+  id            Int      @id @default(autoincrement())
+  email         String   @unique
+  name          String
+  password_hash String
+  role_id       Int
+  is_active     Boolean  @default(true)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  // Relations
+  role                              Role                      @relation(fields: [role_id], references: [id])
+  created_budgets                   Budget[]                  @relation("CreatedBudgets")
+  created_allocate_headers          AllocateHeader[]          @relation("CreatedAllocateHeaders")
+  created_planning_headers          PlanningHeader[]          @relation("CreatedPlanningHeaders")
+  created_sku_proposal_headers      SKUProposalHeader[]       @relation("CreatedSKUProposalHeaders")
+  created_proposal_sizing_headers   ProposalSizingHeader[]    @relation("CreatedProposalSizingHeaders")
+  created_tickets                   Ticket[]                  @relation("CreatedTickets")
+  approval_workflow_levels          ApprovalWorkflowLevel[]   @relation("ApproverUser")
+  ticket_approval_logs              TicketApprovalLog[]       @relation("ApproverLogs")
+
+  @@map("user")
+}
+
+model Role {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique // buyer, merchandiser, merch_manager, finance_director, admin
+  description String?
+  permissions String   @default("[]") // ["budget:read", "budget:write", "planning:approve", ...]
+  created_by  Int?
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  updated_by  Int?
+
+  // Relations
+  users User[]
+
+  @@map("role")
+}
+
+// ============================================
+// BRAND HIERARCHY
+// ============================================
+
+model GroupBrand {
+  id         Int      @id @default(autoincrement())
+  code       String   @unique // LUXURY, PREMIUM
+  name       String   // Luxury Brands, Premium Brands
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  brands             Brand[]              @relation("GroupBrandToBrand")
+  approval_workflows ApprovalWorkflow[]   @relation("GroupBrandToWorkflow")
+
+  @@map("group_brand")
+}
+
+model Brand {
+  id             Int      @id @default(autoincrement())
+  code           String   @unique // FER, BUR, GUC, PRA
+  name           String   // Ferragamo, Burberry, Gucci, Prada
+  group_brand_id Int
+  is_active      Boolean  @default(true)
+  created_by     Int?
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+  updated_by     Int?
+
+  // Relations
+  group_brand      GroupBrand       @relation("GroupBrandToBrand", fields: [group_brand_id], references: [id], onDelete: Restrict)
+  products         Product[]        @relation("BrandToProduct")
+  allocate_headers AllocateHeader[] @relation("BrandToAllocateHeader")
+
+  @@map("brand")
+}
+
+// ============================================
+// STORE & LOCATION
+// ============================================
+
+model Store {
+  id         Int      @id @default(autoincrement())
+  code       String   @unique // REX, TTP
+  name       String
+  region     String?
+  location   String?
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  budget_allocates     BudgetAllocate[]     @relation("StoreToBudgetAllocate")
+  planning_collections PlanningCollection[] @relation("StoreToPlanningCollection")
+  planning_genders     PlanningGender[]     @relation("StoreToPlanningGender")
+  sku_allocates        SKUAllocate[]        @relation("StoreToSKUAllocate")
+
+  @@map("store")
+}
+
+// ============================================
+// PRODUCT TAXONOMY & ATTRIBUTES
+// ============================================
+
+model Collection {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique // SS Collection, FW Collection
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  planning_collections PlanningCollection[] @relation("CollectionToPlanningCollection")
+
+  @@map("collection")
+}
+
+model SeasonGroup {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique // SS, FW
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  seasons          Season[]         @relation("SeasonGroupToSeason")
+  budget_allocates BudgetAllocate[] @relation("SeasonGroupToBudgetAllocate")
+
+  @@map("season_group")
+}
+
+model Season {
+  id              Int      @id @default(autoincrement())
+  name            String   @unique // SS24, FW24, SS25
+  season_group_id Int
+  is_active       Boolean  @default(true)
+  created_by      Int?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+  updated_by      Int?
+
+  // Relations
+  season_group     SeasonGroup      @relation("SeasonGroupToSeason", fields: [season_group_id], references: [id], onDelete: Cascade)
+  budget_allocates BudgetAllocate[] @relation("SeasonToBudgetAllocate")
+
+  @@map("season")
+}
+
+model Gender {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique // Male, Female, Unisex
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  categories       Category[]       @relation("GenderToCategory")
+  planning_genders PlanningGender[] @relation("GenderToPlanningGender")
+
+  @@map("gender")
+}
+
+model Category {
+  id         Int      @id @default(autoincrement())
+  name       String   // RTW, HARD ACCESSORIES, SOFT ACCESSORIES
+  gender_id  Int
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  // Relations
+  gender         Gender        @relation("GenderToCategory", fields: [gender_id], references: [id], onDelete: Cascade)
+  sub_categories SubCategory[] @relation("CategoryToSubCategory")
+
+  @@map("category")
+}
+
+model SubCategory {
+  id          Int      @id @default(autoincrement())
+  name        String   // W Outerwear, W Tailoring, M Bags, M Shoes
+  category_id Int
+  is_active   Boolean  @default(true)
+  created_by  Int?
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  updated_by  Int?
+
+  // Relations
+  category            Category             @relation("CategoryToSubCategory", fields: [category_id], references: [id], onDelete: Cascade)
+  products            Product[]            @relation("SubCategoryToProduct")
+  subcategory_sizes   SubcategorySize[]    @relation("SubCategoryToSize")
+  planning_categories PlanningCategory[]   @relation("SubCategoryToPlanningCategory")
+
+  @@map("sub_category")
+}
+
+model SubcategorySize {
+  id              Int      @id @default(autoincrement())
+  name            String   // XS, S, M, L, XL, 36, 38, 40
+  sub_category_id Int
+  created_by      Int?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+  updated_by      Int?
+
+  // Relations
+  sub_category     SubCategory      @relation("SubCategoryToSize", fields: [sub_category_id], references: [id], onDelete: Cascade)
+  proposal_sizings ProposalSizing[] @relation("SizeToProposalSizing")
+
+  @@map("subcategory_size")
+}
+
+// ============================================
+// PRODUCT CATALOG
+// ============================================
+
+model Product {
+  id              Int      @id @default(autoincrement())
+  sku_code        String   @unique // FER-RTW-001, BUR-BAG-002
+  product_name    String
+  sub_category_id Int
+  brand_id        Int?
+  family          String?
+  theme           String?  // AUGUST (08), SEPTEMBER (09), HOLIDAY
+  color           String?  // Black, Navy, Red
+  composition     String?  // 100% Cotton, 80% Wool 20% Cashmere
+  srp             Decimal  @db.Decimal(18, 2) // Suggested Retail Price (VND)
+  image_url       String?
+  is_active       Boolean  @default(true)
+  created_by      Int?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+  updated_by      Int?
+
+  // Relations
+  brand         Brand?        @relation("BrandToProduct", fields: [brand_id], references: [id], onDelete: SetNull)
+  sub_category  SubCategory   @relation("SubCategoryToProduct", fields: [sub_category_id], references: [id], onDelete: Restrict)
+  sku_proposals SKUProposal[] @relation("ProductToSKUProposal")
+
+  @@map("product")
+}
+
+// ============================================
+// BUDGET MANAGEMENT
+// ============================================
+
+model Budget {
+  id          Int      @id @default(autoincrement())
+  name        String   // FY2024 Budget, Q1 2024 Budget
+  amount      Decimal  @db.Decimal(18, 2)
+  description String?
+  status      String   @default("DRAFT") // DRAFT, SUBMITTED, APPROVED, REJECTED
+  fiscal_year Int      // 2024, 2025
+  created_by  Int
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  updated_by  Int?
+
+  // Relations
+  creator          User             @relation("CreatedBudgets", fields: [created_by], references: [id], onDelete: Restrict)
+  allocate_headers AllocateHeader[] @relation("BudgetToAllocateHeader")
+
+  @@map("budget")
+}
+
+model AllocateHeader {
+  id               Int      @id @default(autoincrement())
+  budget_id        Int
+  brand_id         Int
+  version          Int      // Version control for budget allocation
+  is_final_version Boolean  @default(false)
+  created_by       Int
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+  updated_by       Int?
+
+  // Relations
+  budget           Budget           @relation("BudgetToAllocateHeader", fields: [budget_id], references: [id], onDelete: Cascade)
+  brand            Brand            @relation("BrandToAllocateHeader", fields: [brand_id], references: [id], onDelete: Restrict)
+  creator          User             @relation("CreatedAllocateHeaders", fields: [created_by], references: [id], onDelete: Restrict)
+  budget_allocates BudgetAllocate[] @relation("AllocateHeaderToBudgetAllocate")
+
+  @@map("allocate_headers")
+}
+
+model BudgetAllocate {
+  id                 Int      @id @default(autoincrement())
+  allocate_header_id Int
+  store_id           Int
+  season_group_id    Int
+  season_id          Int
+  budget_amount      Decimal  @default(0) @db.Decimal(18, 2)
+  created_by         Int?
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+  updated_by         Int?
+
+  // Relations
+  allocate_header AllocateHeader @relation("AllocateHeaderToBudgetAllocate", fields: [allocate_header_id], references: [id], onDelete: Cascade)
+  store           Store          @relation("StoreToBudgetAllocate", fields: [store_id], references: [id], onDelete: Restrict)
+  season_group    SeasonGroup    @relation("SeasonGroupToBudgetAllocate", fields: [season_group_id], references: [id], onDelete: Restrict)
+  season          Season         @relation("SeasonToBudgetAllocate", fields: [season_id], references: [id], onDelete: Restrict)
+  tickets         Ticket[]       @relation("BudgetAllocateToTicket")
+
+  @@map("budget_allocate")
+}
+
+// ============================================
+// PLANNING & FORECASTING
+// ============================================
+
+model PlanningHeader {
+  id               Int      @id @default(autoincrement())
+  version          Int      // Version control for planning
+  is_final_version Boolean  @default(false)
+  created_by       Int
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+  updated_by       Int?
+
+  // Relations
+  creator              User                 @relation("CreatedPlanningHeaders", fields: [created_by], references: [id], onDelete: Restrict)
+  planning_collections PlanningCollection[] @relation("PlanningHeaderToCollection")
+  planning_genders     PlanningGender[]     @relation("PlanningHeaderToGender")
+  planning_categories  PlanningCategory[]   @relation("PlanningHeaderToCategory")
+
+  @@map("planning_headers")
+}
+
+model PlanningCollection {
+  id                  Int      @id @default(autoincrement())
+  collection_id       Int
+  store_id            Int
+  planning_header_id  Int
+  actual_buy_pct      Decimal  @default(0) @db.Decimal(18, 2) // Actual buy percentage
+  actual_sales_pct    Decimal  @default(0) @db.Decimal(18, 2) // Actual sales percentage
+  actual_st_pct       Decimal  @default(0) @db.Decimal(18, 2) // Actual sell-through percentage
+  actual_moc          Decimal  @default(0) @db.Decimal(18, 2) // Actual margin of contribution
+  proposed_buy_pct    Decimal  @default(0) @db.Decimal(18, 2) // Proposed buy percentage
+  otb_proposed_amount Decimal  @default(0) @db.Decimal(18, 2) // Open-to-buy proposed amount
+  pct_var_vs_last     Decimal  @default(0) @db.Decimal(18, 2) // Percentage variance vs last year
+  created_by          Int?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+  updated_by          Int?
+
+  // Relations
+  collection      Collection     @relation("CollectionToPlanningCollection", fields: [collection_id], references: [id], onDelete: Restrict)
+  store           Store          @relation("StoreToPlanningCollection", fields: [store_id], references: [id], onDelete: Restrict)
+  planning_header PlanningHeader @relation("PlanningHeaderToCollection", fields: [planning_header_id], references: [id], onDelete: Cascade)
+
+  @@map("collection_proposal")
+}
+
+model PlanningGender {
+  id                  Int      @id @default(autoincrement())
+  gender_id           Int
+  store_id            Int
+  planning_header_id  Int
+  actual_buy_pct      Decimal  @default(0) @db.Decimal(18, 2)
+  actual_sales_pct    Decimal  @default(0) @db.Decimal(18, 2)
+  actual_st_pct       Decimal  @default(0) @db.Decimal(18, 2)
+  proposed_buy_pct    Decimal  @default(0) @db.Decimal(18, 2)
+  otb_proposed_amount Decimal  @default(0) @db.Decimal(18, 2)
+  pct_var_vs_last     Decimal  @default(0) @db.Decimal(18, 2)
+  created_by          Int?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+  updated_by          Int?
+
+  // Relations
+  gender          Gender         @relation("GenderToPlanningGender", fields: [gender_id], references: [id], onDelete: Restrict)
+  store           Store          @relation("StoreToPlanningGender", fields: [store_id], references: [id], onDelete: Restrict)
+  planning_header PlanningHeader @relation("PlanningHeaderToGender", fields: [planning_header_id], references: [id], onDelete: Cascade)
+
+  @@map("gender_proposal")
+}
+
+model PlanningCategory {
+  id                  Int      @id @default(autoincrement())
+  subcategory_id      Int
+  planning_header_id  Int
+  actual_buy_pct      Decimal  @default(0) @db.Decimal(18, 2)
+  actual_sales_pct    Decimal  @default(0) @db.Decimal(18, 2)
+  actual_st_pct       Decimal  @default(0) @db.Decimal(18, 2)
+  proposed_buy_pct    Decimal  @default(0) @db.Decimal(18, 2)
+  otb_proposed_amount Decimal  @default(0) @db.Decimal(18, 2)
+  var_lastyear_pct    Decimal  @default(0) @db.Decimal(18, 2)
+  otb_actual_amount   Decimal  @default(0) @db.Decimal(18, 2)
+  otb_actual_buy_pct  Decimal  @default(0) @db.Decimal(18, 2)
+  created_by          Int?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+  updated_by          Int?
+
+  // Relations
+  subcategory     SubCategory    @relation("SubCategoryToPlanningCategory", fields: [subcategory_id], references: [id], onDelete: Restrict)
+  planning_header PlanningHeader @relation("PlanningHeaderToCategory", fields: [planning_header_id], references: [id], onDelete: Cascade)
+
+  @@map("category_proposal")
+}
+
+// ============================================
+// SKU PROPOSAL & ALLOCATION
+// ============================================
+
+model SKUProposalHeader {
+  id               Int      @id @default(autoincrement())
+  version          Int      // Version control for SKU proposals
+  is_final_version Boolean  @default(false)
+  created_by       Int
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+  updated_by       Int?
+
+  // Relations
+  creator       User          @relation("CreatedSKUProposalHeaders", fields: [created_by], references: [id], onDelete: Restrict)
+  sku_proposals SKUProposal[] @relation("SKUProposalHeaderToSKUProposal")
+
+  @@map("sku_proposal_headers")
+}
+
+model SKUProposal {
+  id                     Int      @id @default(autoincrement())
+  sku_proposal_header_id Int
+  product_id             Int
+  customer_target        String   // VIP, Regular, Outlet
+  unit_cost              Decimal  @default(0) @db.Decimal(18, 2)
+  srp                    Decimal  @default(0) @db.Decimal(18, 2) // Suggested retail price
+  created_by             Int?
+  created_at             DateTime @default(now())
+  updated_at             DateTime @updatedAt
+  updated_by             Int?
+
+  // Relations
+  sku_proposal_header     SKUProposalHeader      @relation("SKUProposalHeaderToSKUProposal", fields: [sku_proposal_header_id], references: [id], onDelete: Cascade)
+  product                 Product                @relation("ProductToSKUProposal", fields: [product_id], references: [id], onDelete: Restrict)
+  sku_allocates           SKUAllocate[]          @relation("SKUProposalToSKUAllocate")
+  proposal_sizing_headers ProposalSizingHeader[] @relation("SKUProposalToProposalSizingHeader")
+
+  @@map("sku_proposal")
+}
+
+model SKUAllocate {
+  id              Int      @id @default(autoincrement())
+  sku_proposal_id Int
+  store_id        Int
+  quantity        Decimal  @default(0) @db.Decimal(18, 2)
+  created_by      Int?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+  updated_by      Int?
+
+  // Relations
+  sku_proposal SKUProposal @relation("SKUProposalToSKUAllocate", fields: [sku_proposal_id], references: [id], onDelete: Cascade)
+  store        Store       @relation("StoreToSKUAllocate", fields: [store_id], references: [id], onDelete: Restrict)
+
+  @@map("sku_allocates")
+}
+
+model ProposalSizingHeader {
+  id               Int      @id @default(autoincrement())
+  sku_proposal_id  Int
+  version          Int      // Version control for sizing proposals
+  is_final_version Boolean  @default(false)
+  created_by       Int
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+  updated_by       Int?
+
+  // Relations
+  sku_proposal     SKUProposal      @relation("SKUProposalToProposalSizingHeader", fields: [sku_proposal_id], references: [id], onDelete: Cascade)
+  creator          User             @relation("CreatedProposalSizingHeaders", fields: [created_by], references: [id], onDelete: Restrict)
+  proposal_sizings ProposalSizing[] @relation("ProposalSizingHeaderToProposalSizing")
+
+  @@map("proposal_sizing_headers")
+}
+
+model ProposalSizing {
+  id                        Int      @id @default(autoincrement())
+  proposal_sizing_header_id Int
+  subcategory_size_id       Int
+  actual_salesmix_pct       Decimal  @default(0) @db.Decimal(18, 2) // Actual sales mix percentage
+  actual_st_pct             Decimal  @default(0) @db.Decimal(18, 2) // Actual sell-through percentage
+  proposal_quantity         Int      // Proposed quantity for this size
+  created_by                Int?
+  created_at                DateTime @default(now())
+  updated_at                DateTime @updatedAt
+  updated_by                Int?
+
+  // Relations
+  proposal_sizing_header ProposalSizingHeader @relation("ProposalSizingHeaderToProposalSizing", fields: [proposal_sizing_header_id], references: [id], onDelete: Cascade)
+  subcategory_size       SubcategorySize      @relation("SizeToProposalSizing", fields: [subcategory_size_id], references: [id], onDelete: Restrict)
+
+  @@map("sizing_proposal")
+}
+
+// ============================================
+// APPROVAL WORKFLOW & TICKETS
+// ============================================
+
+model ApprovalStatus {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique // PENDING, APPROVED, REJECTED, IN_REVIEW
+  is_active  Boolean  @default(true)
+  created_by Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  updated_by Int?
+
+  @@map("approval_statuses")
+}
+
+model Ticket {
+  id                 Int      @id @default(autoincrement())
+  budget_allocate_id Int
+  status             String   @default("PENDING") // PENDING, APPROVED, REJECTED, IN_REVIEW
+  created_by         Int
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+  updated_by         Int?
+
+  // Relations
+  budget_allocate      BudgetAllocate      @relation("BudgetAllocateToTicket", fields: [budget_allocate_id], references: [id], onDelete: Cascade)
+  creator              User                @relation("CreatedTickets", fields: [created_by], references: [id], onDelete: Restrict)
+  ticket_approval_logs TicketApprovalLog[] @relation("TicketToApprovalLog")
+
+  @@map("ticket")
+}
+
+model ApprovalWorkflow {
+  id             Int      @id @default(autoincrement())
+  group_brand_id Int
+  workflow_name  String   // Standard Approval, Express Approval, Multi-level Approval
+  created_by     Int?
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+  updated_by     Int?
+
+  // Relations
+  group_brand              GroupBrand              @relation("GroupBrandToWorkflow", fields: [group_brand_id], references: [id], onDelete: Cascade)
+  approval_workflow_levels ApprovalWorkflowLevel[] @relation("WorkflowToLevel")
+
+  @@map("approval_workflow")
+}
+
+model ApprovalWorkflowLevel {
+  id                   Int      @id @default(autoincrement())
+  approval_workflow_id Int
+  level_order          Int      // 1, 2, 3 (sequential order)
+  level_name           String   // Merchandiser Review, Manager Approval, Director Approval
+  approver_user_id     Int
+  is_required          Boolean  // Is this level mandatory?
+  created_by           Int?
+  created_at           DateTime @default(now())
+  updated_at           DateTime @updatedAt
+  updated_by           Int?
+
+  // Relations
+  approval_workflow    ApprovalWorkflow    @relation("WorkflowToLevel", fields: [approval_workflow_id], references: [id], onDelete: Cascade)
+  approver_user        User                @relation("ApproverUser", fields: [approver_user_id], references: [id], onDelete: Restrict)
+  ticket_approval_logs TicketApprovalLog[] @relation("LevelToApprovalLog")
+
+  @@map("approval_workflow_level")
+}
+
+model TicketApprovalLog {
+  id                         Int       @id @default(autoincrement())
+  ticket_id                  Int
+  approval_workflow_level_id Int
+  approver_user_id           Int
+  is_approved                Boolean   // true = approved, false = rejected
+  comment                    String?   // Optional approver comment
+  approved_at                DateTime? // Timestamp of approval/rejection
+  created_by                 Int?
+  created_at                 DateTime  @default(now())
+  updated_at                 DateTime  @updatedAt
+  updated_by                 Int?
+
+  // Relations
+  ticket                  Ticket                @relation("TicketToApprovalLog", fields: [ticket_id], references: [id], onDelete: Cascade)
+  approval_workflow_level ApprovalWorkflowLevel @relation("LevelToApprovalLog", fields: [approval_workflow_level_id], references: [id], onDelete: Restrict)
+  approver_user           User                  @relation("ApproverLogs", fields: [approver_user_id], references: [id], onDelete: Restrict)
+
+  @@map("approval_request_log")
+}

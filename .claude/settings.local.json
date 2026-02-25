@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:\\\\Users\\\\ManhLe\\\\Downloads\\\\DAFC\\\\dafc-otb-main v4\\\\backend\" && npx prisma generate 2>&1)",
+      "Bash(cd C:\\\\Users\\\\ManhLe\\\\Downloads\\\\DAFC\\\\dafc-otb-main v4\\\\backend:*)",
+      "Bash(git:*)",
+      "Bash(cd /c/Users/ManhLe/Downloads/OTBnonAI-main/backend && npm run prisma:seed 2>&1)",
+      "Bash(cd /c/Users/ManhLe/Downloads/OTBnonAI-main/backend && npx prisma generate 2>&1)",
+      "Bash(cd /c/Users/ManhLe/Downloads/OTBnonAI-main/backend && npm run start:dev 2>&1)",
+      "Bash(head:*)",
+      "Bash(echo Exit code: $?:*)"
+    ]
+  }
+}
