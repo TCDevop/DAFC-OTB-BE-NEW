@@ -26,7 +26,7 @@ export class AuthService {
     }
 
     const payload = {
-      sub: user.id,
+      sub: Number(user.id),
       email: user.email,
       role: user.role.name,
       permissions: user.role.permissions,
@@ -36,7 +36,7 @@ export class AuthService {
       accessToken: this.jwtService.sign(payload),
       refreshToken: this.jwtService.sign(payload, { expiresIn: '7d' }),
       user: {
-        id: user.id,
+        id: Number(user.id),
         email: user.email,
         name: user.name,
         role: user.role.name,
@@ -58,7 +58,7 @@ export class AuthService {
       }
 
       const payload = {
-        sub: user.id,
+        sub: Number(user.id),
         email: user.email,
         role: user.role.name,
         permissions: user.role.permissions,
@@ -74,14 +74,14 @@ export class AuthService {
 
   async getProfile(userId: string) {
     const user = await this.prisma.user.findUnique({
-      where: { id: +userId },
+      where: { id: BigInt(userId) },
       include: { role: true },
     });
 
     if (!user) throw new UnauthorizedException('User not found');
 
     return {
-      id: user.id,
+      id: Number(user.id),
       email: user.email,
       name: user.name,
       role: user.role.name,

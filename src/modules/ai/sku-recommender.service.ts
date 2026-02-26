@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 
 export interface SkuRecommendationItem {
-  productId: number;
+  productId: number | bigint;
   skuCode: string;
   productName: string;
   subCategory: string;

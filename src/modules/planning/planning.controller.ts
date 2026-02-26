@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Delete, Param, Query, Body, UseGuards, Request } from '@nestjs/common';
+import { Controller, Get, Post, Put, Patch, Delete, Param, Query, Body, UseGuards, Request } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth, ApiOperation, ApiQuery, ApiBody } from '@nestjs/swagger';
 import { PlanningService } from './planning.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
@@ -21,13 +21,17 @@ export class PlanningController {
   @ApiQuery({ name: 'pageSize', required: false, type: Number })
   @ApiQuery({ name: 'status', required: false, description: 'Filter by status (DRAFT, SUBMITTED, APPROVED, REJECTED)' })
   @ApiQuery({ name: 'budgetId', required: false, description: 'Filter by budget ID (reserved for future FK)' })
+  @ApiQuery({ name: 'brandId', required: false, description: 'Filter by brand ID (via allocate_header.brand_id)' })
+  @ApiQuery({ name: 'allocateHeaderId', required: false, description: 'Filter by allocate header ID' })
   async findAll(
     @Query('page') page?: number,
     @Query('pageSize') pageSize?: number,
     @Query('status') status?: string,
     @Query('budgetId') budgetId?: string,
+    @Query('brandId') brandId?: string,
+    @Query('allocateHeaderId') allocateHeaderId?: string,
   ) {
-    const result = await this.planningService.findAll({ page, pageSize, status, budgetId });
+    const result = await this.planningService.findAll({ page, pageSize, status, budgetId, brandId, allocateHeaderId });
     return { success: true, ...result };
   }
 
@@ -81,6 +85,53 @@ export class PlanningController {
   @ApiBody({ type: UpdatePlanningDto })
   async update(@Param('id') id: string, @Body() dto: UpdatePlanningDto, @Request() req: any) {
     return { success: true, data: await this.planningService.update(id, dto, req.user.sub) };
+  }
+
+  // ─── SUBMIT ────────────────────────────────────────────────────────────────
+
+  @Post(':id/submit')
+  @RequirePermissions('planning:submit')
+  @ApiOperation({ summary: 'Submit planning for approval (DRAFT → SUBMITTED)' })
+  async submit(@Param('id') id: string, @Request() req: any) {
+    return { success: true, data: await this.planningService.submit(id, req.user.sub) };
+  }
+
+  // ─── APPROVE BY LEVEL (used by approvalHelper) ────────────────────────────
+
+  @Post(':id/approve/:level')
+  @RequirePermissions('planning:approve')
+  @ApiOperation({ summary: 'Approve or reject planning by level (action: APPROVED | REJECTED)' })
+  async approveByLevel(
+    @Param('id') id: string,
+    @Param('level') level: string,
+    @Body('action') action: string,
+    @Body('comment') comment: string,
+    @Request() req: any,
+  ) {
+    return { success: true, data: await this.planningService.approveByLevel(id, level, action, comment, req.user.sub) };
+  }
+
+  // ─── FINALIZE ──────────────────────────────────────────────────────────────
+
+  @Post(':id/final')
+  @RequirePermissions('planning:write')
+  @ApiOperation({ summary: 'Mark planning version as final' })
+  async finalize(@Param('id') id: string, @Request() req: any) {
+    return { success: true, data: await this.planningService.finalize(id, req.user.sub) };
+  }
+
+  // ─── UPDATE DETAIL ─────────────────────────────────────────────────────────
+
+  @Patch(':id/details/:detailId')
+  @RequirePermissions('planning:write')
+  @ApiOperation({ summary: 'Update a single planning detail row' })
+  async updateDetail(
+    @Param('id') id: string,
+    @Param('detailId') detailId: string,
+    @Body() dto: any,
+    @Request() req: any,
+  ) {
+    return { success: true, data: await this.planningService.updateDetail(id, detailId, dto, req.user.sub) };
   }
 
   // ─── DELETE ────────────────────────────────────────────────────────────────

@@ -19,8 +19,12 @@ export class MasterDataController {
   @Get('brands')
   @ApiOperation({ summary: 'Get all active brands' })
   @ApiQuery({ name: 'groupBrandId', required: false })
-  async getBrands(@Query('groupBrandId') groupBrandId?: string) {
-    return { success: true, data: await this.masterDataService.getBrands(groupBrandId) };
+  @ApiQuery({ name: 'limit', required: false, type: Number, description: 'Max number of brands to return' })
+  async getBrands(
+    @Query('groupBrandId') groupBrandId?: string,
+    @Query('limit') limit?: number,
+  ) {
+    return { success: true, data: await this.masterDataService.getBrands(groupBrandId, limit ? +limit : undefined) };
   }
 
   @Get('stores')
@@ -68,8 +72,12 @@ export class MasterDataController {
   @Get('categories')
   @ApiOperation({ summary: 'Get full category hierarchy: Gender → Category → SubCategory → Sizes' })
   @ApiQuery({ name: 'genderId', required: false })
-  async getCategories(@Query('genderId') genderId?: string) {
-    return { success: true, data: await this.masterDataService.getCategories(genderId) };
+  @ApiQuery({ name: 'subCategoryLimit', required: false, type: Number })
+  async getCategories(
+    @Query('genderId') genderId?: string,
+    @Query('subCategoryLimit') subCategoryLimit?: number,
+  ) {
+    return { success: true, data: await this.masterDataService.getCategories(genderId, subCategoryLimit ? +subCategoryLimit : undefined) };
   }
 
   @Get('approval-statuses')

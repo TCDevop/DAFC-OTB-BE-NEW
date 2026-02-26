@@ -119,7 +119,8 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   ReadUncommitted: 'ReadUncommitted',
   ReadCommitted: 'ReadCommitted',
   RepeatableRead: 'RepeatableRead',
-  Serializable: 'Serializable'
+  Serializable: 'Serializable',
+  Snapshot: 'Snapshot'
 });
 
 exports.Prisma.UserScalarFieldEnum = {
@@ -130,7 +131,9 @@ exports.Prisma.UserScalarFieldEnum = {
   role_id: 'role_id',
   is_active: 'is_active',
   created_at: 'created_at',
-  updated_at: 'updated_at'
+  updated_at: 'updated_at',
+  store_access: 'store_access',
+  brand_access: 'brand_access'
 };
 
 exports.Prisma.RoleScalarFieldEnum = {
@@ -312,7 +315,9 @@ exports.Prisma.BudgetAllocateScalarFieldEnum = {
 
 exports.Prisma.PlanningHeaderScalarFieldEnum = {
   id: 'id',
+  allocate_header_id: 'allocate_header_id',
   version: 'version',
+  status: 'status',
   is_final_version: 'is_final_version',
   created_by: 'created_by',
   created_at: 'created_at',
@@ -376,6 +381,7 @@ exports.Prisma.PlanningCategoryScalarFieldEnum = {
 exports.Prisma.SKUProposalHeaderScalarFieldEnum = {
   id: 'id',
   version: 'version',
+  status: 'status',
   is_final_version: 'is_final_version',
   created_by: 'created_by',
   created_at: 'created_at',
@@ -491,11 +497,6 @@ exports.Prisma.TicketApprovalLogScalarFieldEnum = {
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
-};
-
-exports.Prisma.QueryMode = {
-  default: 'default',
-  insensitive: 'insensitive'
 };
 
 exports.Prisma.NullsOrder = {

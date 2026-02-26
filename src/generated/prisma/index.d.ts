@@ -1108,10 +1108,6 @@ export namespace Prisma {
             args: Prisma.UserCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.UserCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$UserPayload>[]
-          }
           delete: {
             args: Prisma.UserDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$UserPayload>
@@ -1177,10 +1173,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.RoleCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.RoleCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$RolePayload>[]
           }
           delete: {
             args: Prisma.RoleDeleteArgs<ExtArgs>
@@ -1248,10 +1240,6 @@ export namespace Prisma {
             args: Prisma.GroupBrandCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.GroupBrandCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$GroupBrandPayload>[]
-          }
           delete: {
             args: Prisma.GroupBrandDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$GroupBrandPayload>
@@ -1317,10 +1305,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.BrandCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.BrandCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$BrandPayload>[]
           }
           delete: {
             args: Prisma.BrandDeleteArgs<ExtArgs>
@@ -1388,10 +1372,6 @@ export namespace Prisma {
             args: Prisma.StoreCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.StoreCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$StorePayload>[]
-          }
           delete: {
             args: Prisma.StoreDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$StorePayload>
@@ -1457,10 +1437,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.CollectionCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.CollectionCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>[]
           }
           delete: {
             args: Prisma.CollectionDeleteArgs<ExtArgs>
@@ -1528,10 +1504,6 @@ export namespace Prisma {
             args: Prisma.SeasonGroupCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.SeasonGroupCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SeasonGroupPayload>[]
-          }
           delete: {
             args: Prisma.SeasonGroupDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$SeasonGroupPayload>
@@ -1597,10 +1569,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.SeasonCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.SeasonCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SeasonPayload>[]
           }
           delete: {
             args: Prisma.SeasonDeleteArgs<ExtArgs>
@@ -1668,10 +1636,6 @@ export namespace Prisma {
             args: Prisma.GenderCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.GenderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$GenderPayload>[]
-          }
           delete: {
             args: Prisma.GenderDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$GenderPayload>
@@ -1737,10 +1701,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.CategoryCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.CategoryCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CategoryPayload>[]
           }
           delete: {
             args: Prisma.CategoryDeleteArgs<ExtArgs>
@@ -1808,10 +1768,6 @@ export namespace Prisma {
             args: Prisma.SubCategoryCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.SubCategoryCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SubCategoryPayload>[]
-          }
           delete: {
             args: Prisma.SubCategoryDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$SubCategoryPayload>
@@ -1877,10 +1833,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.SubcategorySizeCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.SubcategorySizeCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SubcategorySizePayload>[]
           }
           delete: {
             args: Prisma.SubcategorySizeDeleteArgs<ExtArgs>
@@ -1948,10 +1900,6 @@ export namespace Prisma {
             args: Prisma.ProductCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.ProductCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ProductPayload>[]
-          }
           delete: {
             args: Prisma.ProductDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$ProductPayload>
@@ -2017,10 +1965,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.BudgetCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.BudgetCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$BudgetPayload>[]
           }
           delete: {
             args: Prisma.BudgetDeleteArgs<ExtArgs>
@@ -2088,10 +2032,6 @@ export namespace Prisma {
             args: Prisma.AllocateHeaderCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.AllocateHeaderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AllocateHeaderPayload>[]
-          }
           delete: {
             args: Prisma.AllocateHeaderDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$AllocateHeaderPayload>
@@ -2157,10 +2097,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.BudgetAllocateCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.BudgetAllocateCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$BudgetAllocatePayload>[]
           }
           delete: {
             args: Prisma.BudgetAllocateDeleteArgs<ExtArgs>
@@ -2228,10 +2164,6 @@ export namespace Prisma {
             args: Prisma.PlanningHeaderCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.PlanningHeaderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PlanningHeaderPayload>[]
-          }
           delete: {
             args: Prisma.PlanningHeaderDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$PlanningHeaderPayload>
@@ -2297,10 +2229,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.PlanningCollectionCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.PlanningCollectionCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PlanningCollectionPayload>[]
           }
           delete: {
             args: Prisma.PlanningCollectionDeleteArgs<ExtArgs>
@@ -2368,10 +2296,6 @@ export namespace Prisma {
             args: Prisma.PlanningGenderCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.PlanningGenderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PlanningGenderPayload>[]
-          }
           delete: {
             args: Prisma.PlanningGenderDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$PlanningGenderPayload>
@@ -2437,10 +2361,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.PlanningCategoryCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.PlanningCategoryCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PlanningCategoryPayload>[]
           }
           delete: {
             args: Prisma.PlanningCategoryDeleteArgs<ExtArgs>
@@ -2508,10 +2428,6 @@ export namespace Prisma {
             args: Prisma.SKUProposalHeaderCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.SKUProposalHeaderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SKUProposalHeaderPayload>[]
-          }
           delete: {
             args: Prisma.SKUProposalHeaderDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$SKUProposalHeaderPayload>
@@ -2577,10 +2493,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.SKUProposalCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.SKUProposalCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SKUProposalPayload>[]
           }
           delete: {
             args: Prisma.SKUProposalDeleteArgs<ExtArgs>
@@ -2648,10 +2560,6 @@ export namespace Prisma {
             args: Prisma.SKUAllocateCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.SKUAllocateCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$SKUAllocatePayload>[]
-          }
           delete: {
             args: Prisma.SKUAllocateDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$SKUAllocatePayload>
@@ -2717,10 +2625,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.ProposalSizingHeaderCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.ProposalSizingHeaderCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ProposalSizingHeaderPayload>[]
           }
           delete: {
             args: Prisma.ProposalSizingHeaderDeleteArgs<ExtArgs>
@@ -2788,10 +2692,6 @@ export namespace Prisma {
             args: Prisma.ProposalSizingCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.ProposalSizingCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ProposalSizingPayload>[]
-          }
           delete: {
             args: Prisma.ProposalSizingDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$ProposalSizingPayload>
@@ -2857,10 +2757,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.ApprovalStatusCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.ApprovalStatusCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ApprovalStatusPayload>[]
           }
           delete: {
             args: Prisma.ApprovalStatusDeleteArgs<ExtArgs>
@@ -2928,10 +2824,6 @@ export namespace Prisma {
             args: Prisma.TicketCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.TicketCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$TicketPayload>[]
-          }
           delete: {
             args: Prisma.TicketDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$TicketPayload>
@@ -2997,10 +2889,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.ApprovalWorkflowCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.ApprovalWorkflowCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ApprovalWorkflowPayload>[]
           }
           delete: {
             args: Prisma.ApprovalWorkflowDeleteArgs<ExtArgs>
@@ -3068,10 +2956,6 @@ export namespace Prisma {
             args: Prisma.ApprovalWorkflowLevelCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.ApprovalWorkflowLevelCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ApprovalWorkflowLevelPayload>[]
-          }
           delete: {
             args: Prisma.ApprovalWorkflowLevelDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$ApprovalWorkflowLevelPayload>
@@ -3137,10 +3021,6 @@ export namespace Prisma {
           createMany: {
             args: Prisma.TicketApprovalLogCreateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.TicketApprovalLogCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$TicketApprovalLogPayload>[]
           }
           delete: {
             args: Prisma.TicketApprovalLogDeleteArgs<ExtArgs>
@@ -3916,10 +3796,12 @@ export namespace Prisma {
 
   export type AllocateHeaderCountOutputType = {
     budget_allocates: number
+    planning_headers: number
   }
 
   export type AllocateHeaderCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     budget_allocates?: boolean | AllocateHeaderCountOutputTypeCountBudget_allocatesArgs
+    planning_headers?: boolean | AllocateHeaderCountOutputTypeCountPlanning_headersArgs
   }
 
   // Custom InputTypes
@@ -3938,6 +3820,13 @@ export namespace Prisma {
    */
   export type AllocateHeaderCountOutputTypeCountBudget_allocatesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: BudgetAllocateWhereInput
+  }
+
+  /**
+   * AllocateHeaderCountOutputType without action
+   */
+  export type AllocateHeaderCountOutputTypeCountPlanning_headersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: PlanningHeaderWhereInput
   }
 
 
@@ -4238,30 +4127,34 @@ export namespace Prisma {
   }
 
   export type UserSumAggregateOutputType = {
-    id: number | null
-    role_id: number | null
+    id: bigint | null
+    role_id: bigint | null
   }
 
   export type UserMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     email: string | null
     name: string | null
     password_hash: string | null
-    role_id: number | null
+    role_id: bigint | null
     is_active: boolean | null
     created_at: Date | null
     updated_at: Date | null
+    store_access: string | null
+    brand_access: string | null
   }
 
   export type UserMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     email: string | null
     name: string | null
     password_hash: string | null
-    role_id: number | null
+    role_id: bigint | null
     is_active: boolean | null
     created_at: Date | null
     updated_at: Date | null
+    store_access: string | null
+    brand_access: string | null
   }
 
   export type UserCountAggregateOutputType = {
@@ -4273,6 +4166,8 @@ export namespace Prisma {
     is_active: number
     created_at: number
     updated_at: number
+    store_access: number
+    brand_access: number
     _all: number
   }
 
@@ -4296,6 +4191,8 @@ export namespace Prisma {
     is_active?: true
     created_at?: true
     updated_at?: true
+    store_access?: true
+    brand_access?: true
   }
 
   export type UserMaxAggregateInputType = {
@@ -4307,6 +4204,8 @@ export namespace Prisma {
     is_active?: true
     created_at?: true
     updated_at?: true
+    store_access?: true
+    brand_access?: true
   }
 
   export type UserCountAggregateInputType = {
@@ -4318,6 +4217,8 @@ export namespace Prisma {
     is_active?: true
     created_at?: true
     updated_at?: true
+    store_access?: true
+    brand_access?: true
     _all?: true
   }
 
@@ -4408,14 +4309,16 @@ export namespace Prisma {
   }
 
   export type UserGroupByOutputType = {
-    id: number
+    id: bigint
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint
     is_active: boolean
     created_at: Date
     updated_at: Date
+    store_access: string
+    brand_access: string
     _count: UserCountAggregateOutputType | null
     _avg: UserAvgAggregateOutputType | null
     _sum: UserSumAggregateOutputType | null
@@ -4446,6 +4349,8 @@ export namespace Prisma {
     is_active?: boolean
     created_at?: boolean
     updated_at?: boolean
+    store_access?: boolean
+    brand_access?: boolean
     role?: boolean | RoleDefaultArgs<ExtArgs>
     created_budgets?: boolean | User$created_budgetsArgs<ExtArgs>
     created_allocate_headers?: boolean | User$created_allocate_headersArgs<ExtArgs>
@@ -4458,17 +4363,6 @@ export namespace Prisma {
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["user"]>
 
-  export type UserSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    email?: boolean
-    name?: boolean
-    password_hash?: boolean
-    role_id?: boolean
-    is_active?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    role?: boolean | RoleDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["user"]>
 
   export type UserSelectScalar = {
     id?: boolean
@@ -4479,6 +4373,8 @@ export namespace Prisma {
     is_active?: boolean
     created_at?: boolean
     updated_at?: boolean
+    store_access?: boolean
+    brand_access?: boolean
   }
 
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4492,9 +4388,6 @@ export namespace Prisma {
     approval_workflow_levels?: boolean | User$approval_workflow_levelsArgs<ExtArgs>
     ticket_approval_logs?: boolean | User$ticket_approval_logsArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type UserIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    role?: boolean | RoleDefaultArgs<ExtArgs>
   }
 
   export type $UserPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4511,14 +4404,16 @@ export namespace Prisma {
       ticket_approval_logs: Prisma.$TicketApprovalLogPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       email: string
       name: string
       password_hash: string
-      role_id: number
+      role_id: bigint
       is_active: boolean
       created_at: Date
       updated_at: Date
+      store_access: string
+      brand_access: string
     }, ExtArgs["result"]["user"]>
     composites: {}
   }
@@ -4635,30 +4530,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends UserCreateManyArgs>(args?: SelectSubset<T, UserCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Users and returns the data saved in the database.
-     * @param {UserCreateManyAndReturnArgs} args - Arguments to create many Users.
-     * @example
-     * // Create many Users
-     * const user = await prisma.user.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Users and only return the `id`
-     * const userWithIdOnly = await prisma.user.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends UserCreateManyAndReturnArgs>(args?: SelectSubset<T, UserCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a User.
@@ -4921,14 +4792,16 @@ export namespace Prisma {
    * Fields of the User model
    */ 
   interface UserFieldRefs {
-    readonly id: FieldRef<"User", 'Int'>
+    readonly id: FieldRef<"User", 'BigInt'>
     readonly email: FieldRef<"User", 'String'>
     readonly name: FieldRef<"User", 'String'>
     readonly password_hash: FieldRef<"User", 'String'>
-    readonly role_id: FieldRef<"User", 'Int'>
+    readonly role_id: FieldRef<"User", 'BigInt'>
     readonly is_active: FieldRef<"User", 'Boolean'>
     readonly created_at: FieldRef<"User", 'DateTime'>
     readonly updated_at: FieldRef<"User", 'DateTime'>
+    readonly store_access: FieldRef<"User", 'String'>
+    readonly brand_access: FieldRef<"User", 'String'>
   }
     
 
@@ -5134,26 +5007,6 @@ export namespace Prisma {
      * The data used to create many Users.
      */
     data: UserCreateManyInput | UserCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * User createManyAndReturn
-   */
-  export type UserCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the User
-     */
-    select?: UserSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Users.
-     */
-    data: UserCreateManyInput | UserCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: UserIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -5440,31 +5293,31 @@ export namespace Prisma {
   }
 
   export type RoleSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type RoleMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     description: string | null
     permissions: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type RoleMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     description: string | null
     permissions: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type RoleCountAggregateOutputType = {
@@ -5613,14 +5466,14 @@ export namespace Prisma {
   }
 
   export type RoleGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     description: string | null
     permissions: string
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: RoleCountAggregateOutputType | null
     _avg: RoleAvgAggregateOutputType | null
     _sum: RoleSumAggregateOutputType | null
@@ -5655,16 +5508,6 @@ export namespace Prisma {
     _count?: boolean | RoleCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["role"]>
 
-  export type RoleSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    description?: boolean
-    permissions?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["role"]>
 
   export type RoleSelectScalar = {
     id?: boolean
@@ -5681,7 +5524,6 @@ export namespace Prisma {
     users?: boolean | Role$usersArgs<ExtArgs>
     _count?: boolean | RoleCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type RoleIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $RolePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Role"
@@ -5689,14 +5531,14 @@ export namespace Prisma {
       users: Prisma.$UserPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       description: string | null
       permissions: string
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["role"]>
     composites: {}
   }
@@ -5813,30 +5655,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends RoleCreateManyArgs>(args?: SelectSubset<T, RoleCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Roles and returns the data saved in the database.
-     * @param {RoleCreateManyAndReturnArgs} args - Arguments to create many Roles.
-     * @example
-     * // Create many Roles
-     * const role = await prisma.role.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Roles and only return the `id`
-     * const roleWithIdOnly = await prisma.role.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends RoleCreateManyAndReturnArgs>(args?: SelectSubset<T, RoleCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$RolePayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Role.
@@ -6091,14 +5909,14 @@ export namespace Prisma {
    * Fields of the Role model
    */ 
   interface RoleFieldRefs {
-    readonly id: FieldRef<"Role", 'Int'>
+    readonly id: FieldRef<"Role", 'BigInt'>
     readonly name: FieldRef<"Role", 'String'>
     readonly description: FieldRef<"Role", 'String'>
     readonly permissions: FieldRef<"Role", 'String'>
-    readonly created_by: FieldRef<"Role", 'Int'>
+    readonly created_by: FieldRef<"Role", 'BigInt'>
     readonly created_at: FieldRef<"Role", 'DateTime'>
     readonly updated_at: FieldRef<"Role", 'DateTime'>
-    readonly updated_by: FieldRef<"Role", 'Int'>
+    readonly updated_by: FieldRef<"Role", 'BigInt'>
   }
     
 
@@ -6304,22 +6122,6 @@ export namespace Prisma {
      * The data used to create many Roles.
      */
     data: RoleCreateManyInput | RoleCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Role createManyAndReturn
-   */
-  export type RoleCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Role
-     */
-    select?: RoleSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Roles.
-     */
-    data: RoleCreateManyInput | RoleCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -6466,31 +6268,31 @@ export namespace Prisma {
   }
 
   export type GroupBrandSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type GroupBrandMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type GroupBrandMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type GroupBrandCountAggregateOutputType = {
@@ -6639,14 +6441,14 @@ export namespace Prisma {
   }
 
   export type GroupBrandGroupByOutputType = {
-    id: number
+    id: bigint
     code: string
     name: string
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: GroupBrandCountAggregateOutputType | null
     _avg: GroupBrandAvgAggregateOutputType | null
     _sum: GroupBrandSumAggregateOutputType | null
@@ -6682,16 +6484,6 @@ export namespace Prisma {
     _count?: boolean | GroupBrandCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["groupBrand"]>
 
-  export type GroupBrandSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    code?: boolean
-    name?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["groupBrand"]>
 
   export type GroupBrandSelectScalar = {
     id?: boolean
@@ -6709,7 +6501,6 @@ export namespace Prisma {
     approval_workflows?: boolean | GroupBrand$approval_workflowsArgs<ExtArgs>
     _count?: boolean | GroupBrandCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type GroupBrandIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $GroupBrandPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "GroupBrand"
@@ -6718,14 +6509,14 @@ export namespace Prisma {
       approval_workflows: Prisma.$ApprovalWorkflowPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       code: string
       name: string
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["groupBrand"]>
     composites: {}
   }
@@ -6842,30 +6633,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends GroupBrandCreateManyArgs>(args?: SelectSubset<T, GroupBrandCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many GroupBrands and returns the data saved in the database.
-     * @param {GroupBrandCreateManyAndReturnArgs} args - Arguments to create many GroupBrands.
-     * @example
-     * // Create many GroupBrands
-     * const groupBrand = await prisma.groupBrand.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many GroupBrands and only return the `id`
-     * const groupBrandWithIdOnly = await prisma.groupBrand.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends GroupBrandCreateManyAndReturnArgs>(args?: SelectSubset<T, GroupBrandCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$GroupBrandPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a GroupBrand.
@@ -7121,14 +6888,14 @@ export namespace Prisma {
    * Fields of the GroupBrand model
    */ 
   interface GroupBrandFieldRefs {
-    readonly id: FieldRef<"GroupBrand", 'Int'>
+    readonly id: FieldRef<"GroupBrand", 'BigInt'>
     readonly code: FieldRef<"GroupBrand", 'String'>
     readonly name: FieldRef<"GroupBrand", 'String'>
     readonly is_active: FieldRef<"GroupBrand", 'Boolean'>
-    readonly created_by: FieldRef<"GroupBrand", 'Int'>
+    readonly created_by: FieldRef<"GroupBrand", 'BigInt'>
     readonly created_at: FieldRef<"GroupBrand", 'DateTime'>
     readonly updated_at: FieldRef<"GroupBrand", 'DateTime'>
-    readonly updated_by: FieldRef<"GroupBrand", 'Int'>
+    readonly updated_by: FieldRef<"GroupBrand", 'BigInt'>
   }
     
 
@@ -7334,22 +7101,6 @@ export namespace Prisma {
      * The data used to create many GroupBrands.
      */
     data: GroupBrandCreateManyInput | GroupBrandCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * GroupBrand createManyAndReturn
-   */
-  export type GroupBrandCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the GroupBrand
-     */
-    select?: GroupBrandSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many GroupBrands.
-     */
-    data: GroupBrandCreateManyInput | GroupBrandCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -7517,34 +7268,34 @@ export namespace Prisma {
   }
 
   export type BrandSumAggregateOutputType = {
-    id: number | null
-    group_brand_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    group_brand_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type BrandMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
-    group_brand_id: number | null
+    group_brand_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BrandMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
-    group_brand_id: number | null
+    group_brand_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BrandCountAggregateOutputType = {
@@ -7699,15 +7450,15 @@ export namespace Prisma {
   }
 
   export type BrandGroupByOutputType = {
-    id: number
+    id: bigint
     code: string
     name: string
-    group_brand_id: number
+    group_brand_id: bigint
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: BrandCountAggregateOutputType | null
     _avg: BrandAvgAggregateOutputType | null
     _sum: BrandSumAggregateOutputType | null
@@ -7745,18 +7496,6 @@ export namespace Prisma {
     _count?: boolean | BrandCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["brand"]>
 
-  export type BrandSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    code?: boolean
-    name?: boolean
-    group_brand_id?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["brand"]>
 
   export type BrandSelectScalar = {
     id?: boolean
@@ -7776,9 +7515,6 @@ export namespace Prisma {
     allocate_headers?: boolean | Brand$allocate_headersArgs<ExtArgs>
     _count?: boolean | BrandCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type BrandIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
-  }
 
   export type $BrandPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Brand"
@@ -7788,15 +7524,15 @@ export namespace Prisma {
       allocate_headers: Prisma.$AllocateHeaderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       code: string
       name: string
-      group_brand_id: number
+      group_brand_id: bigint
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["brand"]>
     composites: {}
   }
@@ -7913,30 +7649,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends BrandCreateManyArgs>(args?: SelectSubset<T, BrandCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Brands and returns the data saved in the database.
-     * @param {BrandCreateManyAndReturnArgs} args - Arguments to create many Brands.
-     * @example
-     * // Create many Brands
-     * const brand = await prisma.brand.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Brands and only return the `id`
-     * const brandWithIdOnly = await prisma.brand.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends BrandCreateManyAndReturnArgs>(args?: SelectSubset<T, BrandCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BrandPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Brand.
@@ -8193,15 +7905,15 @@ export namespace Prisma {
    * Fields of the Brand model
    */ 
   interface BrandFieldRefs {
-    readonly id: FieldRef<"Brand", 'Int'>
+    readonly id: FieldRef<"Brand", 'BigInt'>
     readonly code: FieldRef<"Brand", 'String'>
     readonly name: FieldRef<"Brand", 'String'>
-    readonly group_brand_id: FieldRef<"Brand", 'Int'>
+    readonly group_brand_id: FieldRef<"Brand", 'BigInt'>
     readonly is_active: FieldRef<"Brand", 'Boolean'>
-    readonly created_by: FieldRef<"Brand", 'Int'>
+    readonly created_by: FieldRef<"Brand", 'BigInt'>
     readonly created_at: FieldRef<"Brand", 'DateTime'>
     readonly updated_at: FieldRef<"Brand", 'DateTime'>
-    readonly updated_by: FieldRef<"Brand", 'Int'>
+    readonly updated_by: FieldRef<"Brand", 'BigInt'>
   }
     
 
@@ -8407,26 +8119,6 @@ export namespace Prisma {
      * The data used to create many Brands.
      */
     data: BrandCreateManyInput | BrandCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Brand createManyAndReturn
-   */
-  export type BrandCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Brand
-     */
-    select?: BrandSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Brands.
-     */
-    data: BrandCreateManyInput | BrandCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: BrandIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -8593,35 +8285,35 @@ export namespace Prisma {
   }
 
   export type StoreSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type StoreMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
     region: string | null
     location: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type StoreMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     code: string | null
     name: string | null
     region: string | null
     location: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type StoreCountAggregateOutputType = {
@@ -8778,16 +8470,16 @@ export namespace Prisma {
   }
 
   export type StoreGroupByOutputType = {
-    id: number
+    id: bigint
     code: string
     name: string
     region: string | null
     location: string | null
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: StoreCountAggregateOutputType | null
     _avg: StoreAvgAggregateOutputType | null
     _sum: StoreSumAggregateOutputType | null
@@ -8827,18 +8519,6 @@ export namespace Prisma {
     _count?: boolean | StoreCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["store"]>
 
-  export type StoreSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    code?: boolean
-    name?: boolean
-    region?: boolean
-    location?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["store"]>
 
   export type StoreSelectScalar = {
     id?: boolean
@@ -8860,7 +8540,6 @@ export namespace Prisma {
     sku_allocates?: boolean | Store$sku_allocatesArgs<ExtArgs>
     _count?: boolean | StoreCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type StoreIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $StorePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Store"
@@ -8871,16 +8550,16 @@ export namespace Prisma {
       sku_allocates: Prisma.$SKUAllocatePayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       code: string
       name: string
       region: string | null
       location: string | null
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["store"]>
     composites: {}
   }
@@ -8997,30 +8676,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends StoreCreateManyArgs>(args?: SelectSubset<T, StoreCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Stores and returns the data saved in the database.
-     * @param {StoreCreateManyAndReturnArgs} args - Arguments to create many Stores.
-     * @example
-     * // Create many Stores
-     * const store = await prisma.store.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Stores and only return the `id`
-     * const storeWithIdOnly = await prisma.store.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends StoreCreateManyAndReturnArgs>(args?: SelectSubset<T, StoreCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$StorePayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Store.
@@ -9278,16 +8933,16 @@ export namespace Prisma {
    * Fields of the Store model
    */ 
   interface StoreFieldRefs {
-    readonly id: FieldRef<"Store", 'Int'>
+    readonly id: FieldRef<"Store", 'BigInt'>
     readonly code: FieldRef<"Store", 'String'>
     readonly name: FieldRef<"Store", 'String'>
     readonly region: FieldRef<"Store", 'String'>
     readonly location: FieldRef<"Store", 'String'>
     readonly is_active: FieldRef<"Store", 'Boolean'>
-    readonly created_by: FieldRef<"Store", 'Int'>
+    readonly created_by: FieldRef<"Store", 'BigInt'>
     readonly created_at: FieldRef<"Store", 'DateTime'>
     readonly updated_at: FieldRef<"Store", 'DateTime'>
-    readonly updated_by: FieldRef<"Store", 'Int'>
+    readonly updated_by: FieldRef<"Store", 'BigInt'>
   }
     
 
@@ -9493,22 +9148,6 @@ export namespace Prisma {
      * The data used to create many Stores.
      */
     data: StoreCreateManyInput | StoreCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Store createManyAndReturn
-   */
-  export type StoreCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Store
-     */
-    select?: StoreSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Stores.
-     */
-    data: StoreCreateManyInput | StoreCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -9715,29 +9354,29 @@ export namespace Prisma {
   }
 
   export type CollectionSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type CollectionMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type CollectionMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type CollectionCountAggregateOutputType = {
@@ -9882,13 +9521,13 @@ export namespace Prisma {
   }
 
   export type CollectionGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: CollectionCountAggregateOutputType | null
     _avg: CollectionAvgAggregateOutputType | null
     _sum: CollectionSumAggregateOutputType | null
@@ -9922,15 +9561,6 @@ export namespace Prisma {
     _count?: boolean | CollectionCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["collection"]>
 
-  export type CollectionSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["collection"]>
 
   export type CollectionSelectScalar = {
     id?: boolean
@@ -9946,7 +9576,6 @@ export namespace Prisma {
     planning_collections?: boolean | Collection$planning_collectionsArgs<ExtArgs>
     _count?: boolean | CollectionCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type CollectionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $CollectionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Collection"
@@ -9954,13 +9583,13 @@ export namespace Prisma {
       planning_collections: Prisma.$PlanningCollectionPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["collection"]>
     composites: {}
   }
@@ -10077,30 +9706,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends CollectionCreateManyArgs>(args?: SelectSubset<T, CollectionCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Collections and returns the data saved in the database.
-     * @param {CollectionCreateManyAndReturnArgs} args - Arguments to create many Collections.
-     * @example
-     * // Create many Collections
-     * const collection = await prisma.collection.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Collections and only return the `id`
-     * const collectionWithIdOnly = await prisma.collection.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends CollectionCreateManyAndReturnArgs>(args?: SelectSubset<T, CollectionCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Collection.
@@ -10355,13 +9960,13 @@ export namespace Prisma {
    * Fields of the Collection model
    */ 
   interface CollectionFieldRefs {
-    readonly id: FieldRef<"Collection", 'Int'>
+    readonly id: FieldRef<"Collection", 'BigInt'>
     readonly name: FieldRef<"Collection", 'String'>
     readonly is_active: FieldRef<"Collection", 'Boolean'>
-    readonly created_by: FieldRef<"Collection", 'Int'>
+    readonly created_by: FieldRef<"Collection", 'BigInt'>
     readonly created_at: FieldRef<"Collection", 'DateTime'>
     readonly updated_at: FieldRef<"Collection", 'DateTime'>
-    readonly updated_by: FieldRef<"Collection", 'Int'>
+    readonly updated_by: FieldRef<"Collection", 'BigInt'>
   }
     
 
@@ -10567,22 +10172,6 @@ export namespace Prisma {
      * The data used to create many Collections.
      */
     data: CollectionCreateManyInput | CollectionCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Collection createManyAndReturn
-   */
-  export type CollectionCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Collection
-     */
-    select?: CollectionSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Collections.
-     */
-    data: CollectionCreateManyInput | CollectionCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -10729,29 +10318,29 @@ export namespace Prisma {
   }
 
   export type SeasonGroupSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SeasonGroupMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SeasonGroupMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SeasonGroupCountAggregateOutputType = {
@@ -10896,13 +10485,13 @@ export namespace Prisma {
   }
 
   export type SeasonGroupGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SeasonGroupCountAggregateOutputType | null
     _avg: SeasonGroupAvgAggregateOutputType | null
     _sum: SeasonGroupSumAggregateOutputType | null
@@ -10937,15 +10526,6 @@ export namespace Prisma {
     _count?: boolean | SeasonGroupCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["seasonGroup"]>
 
-  export type SeasonGroupSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["seasonGroup"]>
 
   export type SeasonGroupSelectScalar = {
     id?: boolean
@@ -10962,7 +10542,6 @@ export namespace Prisma {
     budget_allocates?: boolean | SeasonGroup$budget_allocatesArgs<ExtArgs>
     _count?: boolean | SeasonGroupCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SeasonGroupIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $SeasonGroupPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SeasonGroup"
@@ -10971,13 +10550,13 @@ export namespace Prisma {
       budget_allocates: Prisma.$BudgetAllocatePayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["seasonGroup"]>
     composites: {}
   }
@@ -11094,30 +10673,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SeasonGroupCreateManyArgs>(args?: SelectSubset<T, SeasonGroupCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SeasonGroups and returns the data saved in the database.
-     * @param {SeasonGroupCreateManyAndReturnArgs} args - Arguments to create many SeasonGroups.
-     * @example
-     * // Create many SeasonGroups
-     * const seasonGroup = await prisma.seasonGroup.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SeasonGroups and only return the `id`
-     * const seasonGroupWithIdOnly = await prisma.seasonGroup.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SeasonGroupCreateManyAndReturnArgs>(args?: SelectSubset<T, SeasonGroupCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SeasonGroupPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SeasonGroup.
@@ -11373,13 +10928,13 @@ export namespace Prisma {
    * Fields of the SeasonGroup model
    */ 
   interface SeasonGroupFieldRefs {
-    readonly id: FieldRef<"SeasonGroup", 'Int'>
+    readonly id: FieldRef<"SeasonGroup", 'BigInt'>
     readonly name: FieldRef<"SeasonGroup", 'String'>
     readonly is_active: FieldRef<"SeasonGroup", 'Boolean'>
-    readonly created_by: FieldRef<"SeasonGroup", 'Int'>
+    readonly created_by: FieldRef<"SeasonGroup", 'BigInt'>
     readonly created_at: FieldRef<"SeasonGroup", 'DateTime'>
     readonly updated_at: FieldRef<"SeasonGroup", 'DateTime'>
-    readonly updated_by: FieldRef<"SeasonGroup", 'Int'>
+    readonly updated_by: FieldRef<"SeasonGroup", 'BigInt'>
   }
     
 
@@ -11585,22 +11140,6 @@ export namespace Prisma {
      * The data used to create many SeasonGroups.
      */
     data: SeasonGroupCreateManyInput | SeasonGroupCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SeasonGroup createManyAndReturn
-   */
-  export type SeasonGroupCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SeasonGroup
-     */
-    select?: SeasonGroupSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SeasonGroups.
-     */
-    data: SeasonGroupCreateManyInput | SeasonGroupCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -11768,32 +11307,32 @@ export namespace Prisma {
   }
 
   export type SeasonSumAggregateOutputType = {
-    id: number | null
-    season_group_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    season_group_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SeasonMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    season_group_id: number | null
+    season_group_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SeasonMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    season_group_id: number | null
+    season_group_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SeasonCountAggregateOutputType = {
@@ -11944,14 +11483,14 @@ export namespace Prisma {
   }
 
   export type SeasonGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
-    season_group_id: number
+    season_group_id: bigint
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SeasonCountAggregateOutputType | null
     _avg: SeasonAvgAggregateOutputType | null
     _sum: SeasonSumAggregateOutputType | null
@@ -11987,17 +11526,6 @@ export namespace Prisma {
     _count?: boolean | SeasonCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["season"]>
 
-  export type SeasonSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    season_group_id?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["season"]>
 
   export type SeasonSelectScalar = {
     id?: boolean
@@ -12015,9 +11543,6 @@ export namespace Prisma {
     budget_allocates?: boolean | Season$budget_allocatesArgs<ExtArgs>
     _count?: boolean | SeasonCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SeasonIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
-  }
 
   export type $SeasonPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Season"
@@ -12026,14 +11551,14 @@ export namespace Prisma {
       budget_allocates: Prisma.$BudgetAllocatePayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
-      season_group_id: number
+      season_group_id: bigint
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["season"]>
     composites: {}
   }
@@ -12150,30 +11675,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SeasonCreateManyArgs>(args?: SelectSubset<T, SeasonCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Seasons and returns the data saved in the database.
-     * @param {SeasonCreateManyAndReturnArgs} args - Arguments to create many Seasons.
-     * @example
-     * // Create many Seasons
-     * const season = await prisma.season.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Seasons and only return the `id`
-     * const seasonWithIdOnly = await prisma.season.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SeasonCreateManyAndReturnArgs>(args?: SelectSubset<T, SeasonCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SeasonPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Season.
@@ -12429,14 +11930,14 @@ export namespace Prisma {
    * Fields of the Season model
    */ 
   interface SeasonFieldRefs {
-    readonly id: FieldRef<"Season", 'Int'>
+    readonly id: FieldRef<"Season", 'BigInt'>
     readonly name: FieldRef<"Season", 'String'>
-    readonly season_group_id: FieldRef<"Season", 'Int'>
+    readonly season_group_id: FieldRef<"Season", 'BigInt'>
     readonly is_active: FieldRef<"Season", 'Boolean'>
-    readonly created_by: FieldRef<"Season", 'Int'>
+    readonly created_by: FieldRef<"Season", 'BigInt'>
     readonly created_at: FieldRef<"Season", 'DateTime'>
     readonly updated_at: FieldRef<"Season", 'DateTime'>
-    readonly updated_by: FieldRef<"Season", 'Int'>
+    readonly updated_by: FieldRef<"Season", 'BigInt'>
   }
     
 
@@ -12642,26 +12143,6 @@ export namespace Prisma {
      * The data used to create many Seasons.
      */
     data: SeasonCreateManyInput | SeasonCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Season createManyAndReturn
-   */
-  export type SeasonCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Season
-     */
-    select?: SeasonSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Seasons.
-     */
-    data: SeasonCreateManyInput | SeasonCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SeasonIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -12808,29 +12289,29 @@ export namespace Prisma {
   }
 
   export type GenderSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type GenderMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type GenderMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type GenderCountAggregateOutputType = {
@@ -12975,13 +12456,13 @@ export namespace Prisma {
   }
 
   export type GenderGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: GenderCountAggregateOutputType | null
     _avg: GenderAvgAggregateOutputType | null
     _sum: GenderSumAggregateOutputType | null
@@ -13016,15 +12497,6 @@ export namespace Prisma {
     _count?: boolean | GenderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["gender"]>
 
-  export type GenderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["gender"]>
 
   export type GenderSelectScalar = {
     id?: boolean
@@ -13041,7 +12513,6 @@ export namespace Prisma {
     planning_genders?: boolean | Gender$planning_gendersArgs<ExtArgs>
     _count?: boolean | GenderCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type GenderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $GenderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Gender"
@@ -13050,13 +12521,13 @@ export namespace Prisma {
       planning_genders: Prisma.$PlanningGenderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["gender"]>
     composites: {}
   }
@@ -13173,30 +12644,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends GenderCreateManyArgs>(args?: SelectSubset<T, GenderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Genders and returns the data saved in the database.
-     * @param {GenderCreateManyAndReturnArgs} args - Arguments to create many Genders.
-     * @example
-     * // Create many Genders
-     * const gender = await prisma.gender.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Genders and only return the `id`
-     * const genderWithIdOnly = await prisma.gender.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends GenderCreateManyAndReturnArgs>(args?: SelectSubset<T, GenderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$GenderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Gender.
@@ -13452,13 +12899,13 @@ export namespace Prisma {
    * Fields of the Gender model
    */ 
   interface GenderFieldRefs {
-    readonly id: FieldRef<"Gender", 'Int'>
+    readonly id: FieldRef<"Gender", 'BigInt'>
     readonly name: FieldRef<"Gender", 'String'>
     readonly is_active: FieldRef<"Gender", 'Boolean'>
-    readonly created_by: FieldRef<"Gender", 'Int'>
+    readonly created_by: FieldRef<"Gender", 'BigInt'>
     readonly created_at: FieldRef<"Gender", 'DateTime'>
     readonly updated_at: FieldRef<"Gender", 'DateTime'>
-    readonly updated_by: FieldRef<"Gender", 'Int'>
+    readonly updated_by: FieldRef<"Gender", 'BigInt'>
   }
     
 
@@ -13664,22 +13111,6 @@ export namespace Prisma {
      * The data used to create many Genders.
      */
     data: GenderCreateManyInput | GenderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Gender createManyAndReturn
-   */
-  export type GenderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Gender
-     */
-    select?: GenderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Genders.
-     */
-    data: GenderCreateManyInput | GenderCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -13847,32 +13278,32 @@ export namespace Prisma {
   }
 
   export type CategorySumAggregateOutputType = {
-    id: number | null
-    gender_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    gender_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type CategoryMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    gender_id: number | null
+    gender_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type CategoryMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    gender_id: number | null
+    gender_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type CategoryCountAggregateOutputType = {
@@ -14023,14 +13454,14 @@ export namespace Prisma {
   }
 
   export type CategoryGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
-    gender_id: number
+    gender_id: bigint
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: CategoryCountAggregateOutputType | null
     _avg: CategoryAvgAggregateOutputType | null
     _sum: CategorySumAggregateOutputType | null
@@ -14066,17 +13497,6 @@ export namespace Prisma {
     _count?: boolean | CategoryCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["category"]>
 
-  export type CategorySelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    gender_id?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    gender?: boolean | GenderDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["category"]>
 
   export type CategorySelectScalar = {
     id?: boolean
@@ -14094,9 +13514,6 @@ export namespace Prisma {
     sub_categories?: boolean | Category$sub_categoriesArgs<ExtArgs>
     _count?: boolean | CategoryCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type CategoryIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    gender?: boolean | GenderDefaultArgs<ExtArgs>
-  }
 
   export type $CategoryPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Category"
@@ -14105,14 +13522,14 @@ export namespace Prisma {
       sub_categories: Prisma.$SubCategoryPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
-      gender_id: number
+      gender_id: bigint
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["category"]>
     composites: {}
   }
@@ -14229,30 +13646,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends CategoryCreateManyArgs>(args?: SelectSubset<T, CategoryCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Categories and returns the data saved in the database.
-     * @param {CategoryCreateManyAndReturnArgs} args - Arguments to create many Categories.
-     * @example
-     * // Create many Categories
-     * const category = await prisma.category.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Categories and only return the `id`
-     * const categoryWithIdOnly = await prisma.category.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends CategoryCreateManyAndReturnArgs>(args?: SelectSubset<T, CategoryCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Category.
@@ -14508,14 +13901,14 @@ export namespace Prisma {
    * Fields of the Category model
    */ 
   interface CategoryFieldRefs {
-    readonly id: FieldRef<"Category", 'Int'>
+    readonly id: FieldRef<"Category", 'BigInt'>
     readonly name: FieldRef<"Category", 'String'>
-    readonly gender_id: FieldRef<"Category", 'Int'>
+    readonly gender_id: FieldRef<"Category", 'BigInt'>
     readonly is_active: FieldRef<"Category", 'Boolean'>
-    readonly created_by: FieldRef<"Category", 'Int'>
+    readonly created_by: FieldRef<"Category", 'BigInt'>
     readonly created_at: FieldRef<"Category", 'DateTime'>
     readonly updated_at: FieldRef<"Category", 'DateTime'>
-    readonly updated_by: FieldRef<"Category", 'Int'>
+    readonly updated_by: FieldRef<"Category", 'BigInt'>
   }
     
 
@@ -14721,26 +14114,6 @@ export namespace Prisma {
      * The data used to create many Categories.
      */
     data: CategoryCreateManyInput | CategoryCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Category createManyAndReturn
-   */
-  export type CategoryCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Category
-     */
-    select?: CategorySelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Categories.
-     */
-    data: CategoryCreateManyInput | CategoryCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: CategoryIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -14888,32 +14261,32 @@ export namespace Prisma {
   }
 
   export type SubCategorySumAggregateOutputType = {
-    id: number | null
-    category_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    category_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SubCategoryMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    category_id: number | null
+    category_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SubCategoryMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    category_id: number | null
+    category_id: bigint | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SubCategoryCountAggregateOutputType = {
@@ -15064,14 +14437,14 @@ export namespace Prisma {
   }
 
   export type SubCategoryGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
-    category_id: number
+    category_id: bigint
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SubCategoryCountAggregateOutputType | null
     _avg: SubCategoryAvgAggregateOutputType | null
     _sum: SubCategorySumAggregateOutputType | null
@@ -15109,17 +14482,6 @@ export namespace Prisma {
     _count?: boolean | SubCategoryCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["subCategory"]>
 
-  export type SubCategorySelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    category_id?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    category?: boolean | CategoryDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["subCategory"]>
 
   export type SubCategorySelectScalar = {
     id?: boolean
@@ -15139,9 +14501,6 @@ export namespace Prisma {
     planning_categories?: boolean | SubCategory$planning_categoriesArgs<ExtArgs>
     _count?: boolean | SubCategoryCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SubCategoryIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    category?: boolean | CategoryDefaultArgs<ExtArgs>
-  }
 
   export type $SubCategoryPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SubCategory"
@@ -15152,14 +14511,14 @@ export namespace Prisma {
       planning_categories: Prisma.$PlanningCategoryPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
-      category_id: number
+      category_id: bigint
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["subCategory"]>
     composites: {}
   }
@@ -15276,30 +14635,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SubCategoryCreateManyArgs>(args?: SelectSubset<T, SubCategoryCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SubCategories and returns the data saved in the database.
-     * @param {SubCategoryCreateManyAndReturnArgs} args - Arguments to create many SubCategories.
-     * @example
-     * // Create many SubCategories
-     * const subCategory = await prisma.subCategory.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SubCategories and only return the `id`
-     * const subCategoryWithIdOnly = await prisma.subCategory.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SubCategoryCreateManyAndReturnArgs>(args?: SelectSubset<T, SubCategoryCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategoryPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SubCategory.
@@ -15557,14 +14892,14 @@ export namespace Prisma {
    * Fields of the SubCategory model
    */ 
   interface SubCategoryFieldRefs {
-    readonly id: FieldRef<"SubCategory", 'Int'>
+    readonly id: FieldRef<"SubCategory", 'BigInt'>
     readonly name: FieldRef<"SubCategory", 'String'>
-    readonly category_id: FieldRef<"SubCategory", 'Int'>
+    readonly category_id: FieldRef<"SubCategory", 'BigInt'>
     readonly is_active: FieldRef<"SubCategory", 'Boolean'>
-    readonly created_by: FieldRef<"SubCategory", 'Int'>
+    readonly created_by: FieldRef<"SubCategory", 'BigInt'>
     readonly created_at: FieldRef<"SubCategory", 'DateTime'>
     readonly updated_at: FieldRef<"SubCategory", 'DateTime'>
-    readonly updated_by: FieldRef<"SubCategory", 'Int'>
+    readonly updated_by: FieldRef<"SubCategory", 'BigInt'>
   }
     
 
@@ -15770,26 +15105,6 @@ export namespace Prisma {
      * The data used to create many SubCategories.
      */
     data: SubCategoryCreateManyInput | SubCategoryCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SubCategory createManyAndReturn
-   */
-  export type SubCategoryCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SubCategory
-     */
-    select?: SubCategorySelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SubCategories.
-     */
-    data: SubCategoryCreateManyInput | SubCategoryCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SubCategoryIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -15977,30 +15292,30 @@ export namespace Prisma {
   }
 
   export type SubcategorySizeSumAggregateOutputType = {
-    id: number | null
-    sub_category_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    sub_category_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SubcategorySizeMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    sub_category_id: number | null
-    created_by: number | null
+    sub_category_id: bigint | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SubcategorySizeMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
-    sub_category_id: number | null
-    created_by: number | null
+    sub_category_id: bigint | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SubcategorySizeCountAggregateOutputType = {
@@ -16147,13 +15462,13 @@ export namespace Prisma {
   }
 
   export type SubcategorySizeGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
-    sub_category_id: number
-    created_by: number | null
+    sub_category_id: bigint
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SubcategorySizeCountAggregateOutputType | null
     _avg: SubcategorySizeAvgAggregateOutputType | null
     _sum: SubcategorySizeSumAggregateOutputType | null
@@ -16188,16 +15503,6 @@ export namespace Prisma {
     _count?: boolean | SubcategorySizeCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["subcategorySize"]>
 
-  export type SubcategorySizeSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    sub_category_id?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    sub_category?: boolean | SubCategoryDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["subcategorySize"]>
 
   export type SubcategorySizeSelectScalar = {
     id?: boolean
@@ -16214,9 +15519,6 @@ export namespace Prisma {
     proposal_sizings?: boolean | SubcategorySize$proposal_sizingsArgs<ExtArgs>
     _count?: boolean | SubcategorySizeCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SubcategorySizeIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    sub_category?: boolean | SubCategoryDefaultArgs<ExtArgs>
-  }
 
   export type $SubcategorySizePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SubcategorySize"
@@ -16225,13 +15527,13 @@ export namespace Prisma {
       proposal_sizings: Prisma.$ProposalSizingPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
-      sub_category_id: number
-      created_by: number | null
+      sub_category_id: bigint
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["subcategorySize"]>
     composites: {}
   }
@@ -16348,30 +15650,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SubcategorySizeCreateManyArgs>(args?: SelectSubset<T, SubcategorySizeCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SubcategorySizes and returns the data saved in the database.
-     * @param {SubcategorySizeCreateManyAndReturnArgs} args - Arguments to create many SubcategorySizes.
-     * @example
-     * // Create many SubcategorySizes
-     * const subcategorySize = await prisma.subcategorySize.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SubcategorySizes and only return the `id`
-     * const subcategorySizeWithIdOnly = await prisma.subcategorySize.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SubcategorySizeCreateManyAndReturnArgs>(args?: SelectSubset<T, SubcategorySizeCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubcategorySizePayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SubcategorySize.
@@ -16627,13 +15905,13 @@ export namespace Prisma {
    * Fields of the SubcategorySize model
    */ 
   interface SubcategorySizeFieldRefs {
-    readonly id: FieldRef<"SubcategorySize", 'Int'>
+    readonly id: FieldRef<"SubcategorySize", 'BigInt'>
     readonly name: FieldRef<"SubcategorySize", 'String'>
-    readonly sub_category_id: FieldRef<"SubcategorySize", 'Int'>
-    readonly created_by: FieldRef<"SubcategorySize", 'Int'>
+    readonly sub_category_id: FieldRef<"SubcategorySize", 'BigInt'>
+    readonly created_by: FieldRef<"SubcategorySize", 'BigInt'>
     readonly created_at: FieldRef<"SubcategorySize", 'DateTime'>
     readonly updated_at: FieldRef<"SubcategorySize", 'DateTime'>
-    readonly updated_by: FieldRef<"SubcategorySize", 'Int'>
+    readonly updated_by: FieldRef<"SubcategorySize", 'BigInt'>
   }
     
 
@@ -16839,26 +16117,6 @@ export namespace Prisma {
      * The data used to create many SubcategorySizes.
      */
     data: SubcategorySizeCreateManyInput | SubcategorySizeCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SubcategorySize createManyAndReturn
-   */
-  export type SubcategorySizeCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SubcategorySize
-     */
-    select?: SubcategorySizeSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SubcategorySizes.
-     */
-    data: SubcategorySizeCreateManyInput | SubcategorySizeCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SubcategorySizeIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -17008,20 +16266,20 @@ export namespace Prisma {
   }
 
   export type ProductSumAggregateOutputType = {
-    id: number | null
-    sub_category_id: number | null
-    brand_id: number | null
+    id: bigint | null
+    sub_category_id: bigint | null
+    brand_id: bigint | null
     srp: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ProductMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     sku_code: string | null
     product_name: string | null
-    sub_category_id: number | null
-    brand_id: number | null
+    sub_category_id: bigint | null
+    brand_id: bigint | null
     family: string | null
     theme: string | null
     color: string | null
@@ -17029,18 +16287,18 @@ export namespace Prisma {
     srp: Decimal | null
     image_url: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProductMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     sku_code: string | null
     product_name: string | null
-    sub_category_id: number | null
-    brand_id: number | null
+    sub_category_id: bigint | null
+    brand_id: bigint | null
     family: string | null
     theme: string | null
     color: string | null
@@ -17048,10 +16306,10 @@ export namespace Prisma {
     srp: Decimal | null
     image_url: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProductCountAggregateOutputType = {
@@ -17238,11 +16496,11 @@ export namespace Prisma {
   }
 
   export type ProductGroupByOutputType = {
-    id: number
+    id: bigint
     sku_code: string
     product_name: string
-    sub_category_id: number
-    brand_id: number | null
+    sub_category_id: bigint
+    brand_id: bigint | null
     family: string | null
     theme: string | null
     color: string | null
@@ -17250,10 +16508,10 @@ export namespace Prisma {
     srp: Decimal
     image_url: string | null
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ProductCountAggregateOutputType | null
     _avg: ProductAvgAggregateOutputType | null
     _sum: ProductSumAggregateOutputType | null
@@ -17298,26 +16556,6 @@ export namespace Prisma {
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["product"]>
 
-  export type ProductSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    sku_code?: boolean
-    product_name?: boolean
-    sub_category_id?: boolean
-    brand_id?: boolean
-    family?: boolean
-    theme?: boolean
-    color?: boolean
-    composition?: boolean
-    srp?: boolean
-    image_url?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    brand?: boolean | Product$brandArgs<ExtArgs>
-    sub_category?: boolean | SubCategoryDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["product"]>
 
   export type ProductSelectScalar = {
     id?: boolean
@@ -17344,10 +16582,6 @@ export namespace Prisma {
     sku_proposals?: boolean | Product$sku_proposalsArgs<ExtArgs>
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type ProductIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    brand?: boolean | Product$brandArgs<ExtArgs>
-    sub_category?: boolean | SubCategoryDefaultArgs<ExtArgs>
-  }
 
   export type $ProductPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Product"
@@ -17357,11 +16591,11 @@ export namespace Prisma {
       sku_proposals: Prisma.$SKUProposalPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       sku_code: string
       product_name: string
-      sub_category_id: number
-      brand_id: number | null
+      sub_category_id: bigint
+      brand_id: bigint | null
       family: string | null
       theme: string | null
       color: string | null
@@ -17369,10 +16603,10 @@ export namespace Prisma {
       srp: Prisma.Decimal
       image_url: string | null
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["product"]>
     composites: {}
   }
@@ -17489,30 +16723,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ProductCreateManyArgs>(args?: SelectSubset<T, ProductCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Products and returns the data saved in the database.
-     * @param {ProductCreateManyAndReturnArgs} args - Arguments to create many Products.
-     * @example
-     * // Create many Products
-     * const product = await prisma.product.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Products and only return the `id`
-     * const productWithIdOnly = await prisma.product.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ProductCreateManyAndReturnArgs>(args?: SelectSubset<T, ProductCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Product.
@@ -17769,11 +16979,11 @@ export namespace Prisma {
    * Fields of the Product model
    */ 
   interface ProductFieldRefs {
-    readonly id: FieldRef<"Product", 'Int'>
+    readonly id: FieldRef<"Product", 'BigInt'>
     readonly sku_code: FieldRef<"Product", 'String'>
     readonly product_name: FieldRef<"Product", 'String'>
-    readonly sub_category_id: FieldRef<"Product", 'Int'>
-    readonly brand_id: FieldRef<"Product", 'Int'>
+    readonly sub_category_id: FieldRef<"Product", 'BigInt'>
+    readonly brand_id: FieldRef<"Product", 'BigInt'>
     readonly family: FieldRef<"Product", 'String'>
     readonly theme: FieldRef<"Product", 'String'>
     readonly color: FieldRef<"Product", 'String'>
@@ -17781,10 +16991,10 @@ export namespace Prisma {
     readonly srp: FieldRef<"Product", 'Decimal'>
     readonly image_url: FieldRef<"Product", 'String'>
     readonly is_active: FieldRef<"Product", 'Boolean'>
-    readonly created_by: FieldRef<"Product", 'Int'>
+    readonly created_by: FieldRef<"Product", 'BigInt'>
     readonly created_at: FieldRef<"Product", 'DateTime'>
     readonly updated_at: FieldRef<"Product", 'DateTime'>
-    readonly updated_by: FieldRef<"Product", 'Int'>
+    readonly updated_by: FieldRef<"Product", 'BigInt'>
   }
     
 
@@ -17990,26 +17200,6 @@ export namespace Prisma {
      * The data used to create many Products.
      */
     data: ProductCreateManyInput | ProductCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Product createManyAndReturn
-   */
-  export type ProductCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Product
-     */
-    select?: ProductSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Products.
-     */
-    data: ProductCreateManyInput | ProductCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ProductIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -18173,37 +17363,37 @@ export namespace Prisma {
   }
 
   export type BudgetSumAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     amount: Decimal | null
     fiscal_year: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type BudgetMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     amount: Decimal | null
     description: string | null
     status: string | null
     fiscal_year: number | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BudgetMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     amount: Decimal | null
     description: string | null
     status: string | null
     fiscal_year: number | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BudgetCountAggregateOutputType = {
@@ -18364,16 +17554,16 @@ export namespace Prisma {
   }
 
   export type BudgetGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     amount: Decimal
     description: string | null
     status: string
     fiscal_year: number
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: BudgetCountAggregateOutputType | null
     _avg: BudgetAvgAggregateOutputType | null
     _sum: BudgetSumAggregateOutputType | null
@@ -18411,19 +17601,6 @@ export namespace Prisma {
     _count?: boolean | BudgetCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["budget"]>
 
-  export type BudgetSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    amount?: boolean
-    description?: boolean
-    status?: boolean
-    fiscal_year?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["budget"]>
 
   export type BudgetSelectScalar = {
     id?: boolean
@@ -18443,9 +17620,6 @@ export namespace Prisma {
     allocate_headers?: boolean | Budget$allocate_headersArgs<ExtArgs>
     _count?: boolean | BudgetCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type BudgetIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $BudgetPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Budget"
@@ -18454,16 +17628,16 @@ export namespace Prisma {
       allocate_headers: Prisma.$AllocateHeaderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       amount: Prisma.Decimal
       description: string | null
       status: string
       fiscal_year: number
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["budget"]>
     composites: {}
   }
@@ -18580,30 +17754,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends BudgetCreateManyArgs>(args?: SelectSubset<T, BudgetCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Budgets and returns the data saved in the database.
-     * @param {BudgetCreateManyAndReturnArgs} args - Arguments to create many Budgets.
-     * @example
-     * // Create many Budgets
-     * const budget = await prisma.budget.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Budgets and only return the `id`
-     * const budgetWithIdOnly = await prisma.budget.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends BudgetCreateManyAndReturnArgs>(args?: SelectSubset<T, BudgetCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BudgetPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Budget.
@@ -18859,16 +18009,16 @@ export namespace Prisma {
    * Fields of the Budget model
    */ 
   interface BudgetFieldRefs {
-    readonly id: FieldRef<"Budget", 'Int'>
+    readonly id: FieldRef<"Budget", 'BigInt'>
     readonly name: FieldRef<"Budget", 'String'>
     readonly amount: FieldRef<"Budget", 'Decimal'>
     readonly description: FieldRef<"Budget", 'String'>
     readonly status: FieldRef<"Budget", 'String'>
     readonly fiscal_year: FieldRef<"Budget", 'Int'>
-    readonly created_by: FieldRef<"Budget", 'Int'>
+    readonly created_by: FieldRef<"Budget", 'BigInt'>
     readonly created_at: FieldRef<"Budget", 'DateTime'>
     readonly updated_at: FieldRef<"Budget", 'DateTime'>
-    readonly updated_by: FieldRef<"Budget", 'Int'>
+    readonly updated_by: FieldRef<"Budget", 'BigInt'>
   }
     
 
@@ -19074,26 +18224,6 @@ export namespace Prisma {
      * The data used to create many Budgets.
      */
     data: BudgetCreateManyInput | BudgetCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Budget createManyAndReturn
-   */
-  export type BudgetCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Budget
-     */
-    select?: BudgetSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Budgets.
-     */
-    data: BudgetCreateManyInput | BudgetCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: BudgetIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -19243,36 +18373,36 @@ export namespace Prisma {
   }
 
   export type AllocateHeaderSumAggregateOutputType = {
-    id: number | null
-    budget_id: number | null
-    brand_id: number | null
+    id: bigint | null
+    budget_id: bigint | null
+    brand_id: bigint | null
     version: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type AllocateHeaderMinAggregateOutputType = {
-    id: number | null
-    budget_id: number | null
-    brand_id: number | null
+    id: bigint | null
+    budget_id: bigint | null
+    brand_id: bigint | null
     version: number | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type AllocateHeaderMaxAggregateOutputType = {
-    id: number | null
-    budget_id: number | null
-    brand_id: number | null
+    id: bigint | null
+    budget_id: bigint | null
+    brand_id: bigint | null
     version: number | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type AllocateHeaderCountAggregateOutputType = {
@@ -19431,15 +18561,15 @@ export namespace Prisma {
   }
 
   export type AllocateHeaderGroupByOutputType = {
-    id: number
-    budget_id: number
-    brand_id: number
+    id: bigint
+    budget_id: bigint
+    brand_id: bigint
     version: number
     is_final_version: boolean
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: AllocateHeaderCountAggregateOutputType | null
     _avg: AllocateHeaderAvgAggregateOutputType | null
     _sum: AllocateHeaderSumAggregateOutputType | null
@@ -19475,23 +18605,10 @@ export namespace Prisma {
     brand?: boolean | BrandDefaultArgs<ExtArgs>
     creator?: boolean | UserDefaultArgs<ExtArgs>
     budget_allocates?: boolean | AllocateHeader$budget_allocatesArgs<ExtArgs>
+    planning_headers?: boolean | AllocateHeader$planning_headersArgs<ExtArgs>
     _count?: boolean | AllocateHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["allocateHeader"]>
 
-  export type AllocateHeaderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    budget_id?: boolean
-    brand_id?: boolean
-    version?: boolean
-    is_final_version?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    budget?: boolean | BudgetDefaultArgs<ExtArgs>
-    brand?: boolean | BrandDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["allocateHeader"]>
 
   export type AllocateHeaderSelectScalar = {
     id?: boolean
@@ -19510,12 +18627,8 @@ export namespace Prisma {
     brand?: boolean | BrandDefaultArgs<ExtArgs>
     creator?: boolean | UserDefaultArgs<ExtArgs>
     budget_allocates?: boolean | AllocateHeader$budget_allocatesArgs<ExtArgs>
+    planning_headers?: boolean | AllocateHeader$planning_headersArgs<ExtArgs>
     _count?: boolean | AllocateHeaderCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type AllocateHeaderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    budget?: boolean | BudgetDefaultArgs<ExtArgs>
-    brand?: boolean | BrandDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
   }
 
   export type $AllocateHeaderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -19525,17 +18638,18 @@ export namespace Prisma {
       brand: Prisma.$BrandPayload<ExtArgs>
       creator: Prisma.$UserPayload<ExtArgs>
       budget_allocates: Prisma.$BudgetAllocatePayload<ExtArgs>[]
+      planning_headers: Prisma.$PlanningHeaderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      budget_id: number
-      brand_id: number
+      id: bigint
+      budget_id: bigint
+      brand_id: bigint
       version: number
       is_final_version: boolean
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["allocateHeader"]>
     composites: {}
   }
@@ -19652,30 +18766,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends AllocateHeaderCreateManyArgs>(args?: SelectSubset<T, AllocateHeaderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many AllocateHeaders and returns the data saved in the database.
-     * @param {AllocateHeaderCreateManyAndReturnArgs} args - Arguments to create many AllocateHeaders.
-     * @example
-     * // Create many AllocateHeaders
-     * const allocateHeader = await prisma.allocateHeader.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many AllocateHeaders and only return the `id`
-     * const allocateHeaderWithIdOnly = await prisma.allocateHeader.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends AllocateHeaderCreateManyAndReturnArgs>(args?: SelectSubset<T, AllocateHeaderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AllocateHeaderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a AllocateHeader.
@@ -19904,6 +18994,7 @@ export namespace Prisma {
     brand<T extends BrandDefaultArgs<ExtArgs> = {}>(args?: Subset<T, BrandDefaultArgs<ExtArgs>>): Prisma__BrandClient<$Result.GetResult<Prisma.$BrandPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     creator<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     budget_allocates<T extends AllocateHeader$budget_allocatesArgs<ExtArgs> = {}>(args?: Subset<T, AllocateHeader$budget_allocatesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BudgetAllocatePayload<ExtArgs>, T, "findMany"> | Null>
+    planning_headers<T extends AllocateHeader$planning_headersArgs<ExtArgs> = {}>(args?: Subset<T, AllocateHeader$planning_headersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningHeaderPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -19933,15 +19024,15 @@ export namespace Prisma {
    * Fields of the AllocateHeader model
    */ 
   interface AllocateHeaderFieldRefs {
-    readonly id: FieldRef<"AllocateHeader", 'Int'>
-    readonly budget_id: FieldRef<"AllocateHeader", 'Int'>
-    readonly brand_id: FieldRef<"AllocateHeader", 'Int'>
+    readonly id: FieldRef<"AllocateHeader", 'BigInt'>
+    readonly budget_id: FieldRef<"AllocateHeader", 'BigInt'>
+    readonly brand_id: FieldRef<"AllocateHeader", 'BigInt'>
     readonly version: FieldRef<"AllocateHeader", 'Int'>
     readonly is_final_version: FieldRef<"AllocateHeader", 'Boolean'>
-    readonly created_by: FieldRef<"AllocateHeader", 'Int'>
+    readonly created_by: FieldRef<"AllocateHeader", 'BigInt'>
     readonly created_at: FieldRef<"AllocateHeader", 'DateTime'>
     readonly updated_at: FieldRef<"AllocateHeader", 'DateTime'>
-    readonly updated_by: FieldRef<"AllocateHeader", 'Int'>
+    readonly updated_by: FieldRef<"AllocateHeader", 'BigInt'>
   }
     
 
@@ -20147,26 +19238,6 @@ export namespace Prisma {
      * The data used to create many AllocateHeaders.
      */
     data: AllocateHeaderCreateManyInput | AllocateHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * AllocateHeader createManyAndReturn
-   */
-  export type AllocateHeaderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the AllocateHeader
-     */
-    select?: AllocateHeaderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many AllocateHeaders.
-     */
-    data: AllocateHeaderCreateManyInput | AllocateHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AllocateHeaderIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -20280,6 +19351,26 @@ export namespace Prisma {
   }
 
   /**
+   * AllocateHeader.planning_headers
+   */
+  export type AllocateHeader$planning_headersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PlanningHeader
+     */
+    select?: PlanningHeaderSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PlanningHeaderInclude<ExtArgs> | null
+    where?: PlanningHeaderWhereInput
+    orderBy?: PlanningHeaderOrderByWithRelationInput | PlanningHeaderOrderByWithRelationInput[]
+    cursor?: PlanningHeaderWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: PlanningHeaderScalarFieldEnum | PlanningHeaderScalarFieldEnum[]
+  }
+
+  /**
    * AllocateHeader without action
    */
   export type AllocateHeaderDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -20318,40 +19409,40 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateSumAggregateOutputType = {
-    id: number | null
-    allocate_header_id: number | null
-    store_id: number | null
-    season_group_id: number | null
-    season_id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
+    store_id: bigint | null
+    season_group_id: bigint | null
+    season_id: bigint | null
     budget_amount: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type BudgetAllocateMinAggregateOutputType = {
-    id: number | null
-    allocate_header_id: number | null
-    store_id: number | null
-    season_group_id: number | null
-    season_id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
+    store_id: bigint | null
+    season_group_id: bigint | null
+    season_id: bigint | null
     budget_amount: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BudgetAllocateMaxAggregateOutputType = {
-    id: number | null
-    allocate_header_id: number | null
-    store_id: number | null
-    season_group_id: number | null
-    season_id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
+    store_id: bigint | null
+    season_group_id: bigint | null
+    season_id: bigint | null
     budget_amount: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type BudgetAllocateCountAggregateOutputType = {
@@ -20518,16 +19609,16 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateGroupByOutputType = {
-    id: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    id: bigint
+    allocate_header_id: bigint
+    store_id: bigint
+    season_group_id: bigint
+    season_id: bigint
     budget_amount: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: BudgetAllocateCountAggregateOutputType | null
     _avg: BudgetAllocateAvgAggregateOutputType | null
     _sum: BudgetAllocateSumAggregateOutputType | null
@@ -20568,22 +19659,6 @@ export namespace Prisma {
     _count?: boolean | BudgetAllocateCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["budgetAllocate"]>
 
-  export type BudgetAllocateSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    allocate_header_id?: boolean
-    store_id?: boolean
-    season_group_id?: boolean
-    season_id?: boolean
-    budget_amount?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    allocate_header?: boolean | AllocateHeaderDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
-    season?: boolean | SeasonDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["budgetAllocate"]>
 
   export type BudgetAllocateSelectScalar = {
     id?: boolean
@@ -20606,12 +19681,6 @@ export namespace Prisma {
     tickets?: boolean | BudgetAllocate$ticketsArgs<ExtArgs>
     _count?: boolean | BudgetAllocateCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type BudgetAllocateIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    allocate_header?: boolean | AllocateHeaderDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
-    season?: boolean | SeasonDefaultArgs<ExtArgs>
-  }
 
   export type $BudgetAllocatePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "BudgetAllocate"
@@ -20623,16 +19692,16 @@ export namespace Prisma {
       tickets: Prisma.$TicketPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      allocate_header_id: number
-      store_id: number
-      season_group_id: number
-      season_id: number
+      id: bigint
+      allocate_header_id: bigint
+      store_id: bigint
+      season_group_id: bigint
+      season_id: bigint
       budget_amount: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["budgetAllocate"]>
     composites: {}
   }
@@ -20749,30 +19818,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends BudgetAllocateCreateManyArgs>(args?: SelectSubset<T, BudgetAllocateCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many BudgetAllocates and returns the data saved in the database.
-     * @param {BudgetAllocateCreateManyAndReturnArgs} args - Arguments to create many BudgetAllocates.
-     * @example
-     * // Create many BudgetAllocates
-     * const budgetAllocate = await prisma.budgetAllocate.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many BudgetAllocates and only return the `id`
-     * const budgetAllocateWithIdOnly = await prisma.budgetAllocate.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends BudgetAllocateCreateManyAndReturnArgs>(args?: SelectSubset<T, BudgetAllocateCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BudgetAllocatePayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a BudgetAllocate.
@@ -21031,16 +20076,16 @@ export namespace Prisma {
    * Fields of the BudgetAllocate model
    */ 
   interface BudgetAllocateFieldRefs {
-    readonly id: FieldRef<"BudgetAllocate", 'Int'>
-    readonly allocate_header_id: FieldRef<"BudgetAllocate", 'Int'>
-    readonly store_id: FieldRef<"BudgetAllocate", 'Int'>
-    readonly season_group_id: FieldRef<"BudgetAllocate", 'Int'>
-    readonly season_id: FieldRef<"BudgetAllocate", 'Int'>
+    readonly id: FieldRef<"BudgetAllocate", 'BigInt'>
+    readonly allocate_header_id: FieldRef<"BudgetAllocate", 'BigInt'>
+    readonly store_id: FieldRef<"BudgetAllocate", 'BigInt'>
+    readonly season_group_id: FieldRef<"BudgetAllocate", 'BigInt'>
+    readonly season_id: FieldRef<"BudgetAllocate", 'BigInt'>
     readonly budget_amount: FieldRef<"BudgetAllocate", 'Decimal'>
-    readonly created_by: FieldRef<"BudgetAllocate", 'Int'>
+    readonly created_by: FieldRef<"BudgetAllocate", 'BigInt'>
     readonly created_at: FieldRef<"BudgetAllocate", 'DateTime'>
     readonly updated_at: FieldRef<"BudgetAllocate", 'DateTime'>
-    readonly updated_by: FieldRef<"BudgetAllocate", 'Int'>
+    readonly updated_by: FieldRef<"BudgetAllocate", 'BigInt'>
   }
     
 
@@ -21246,26 +20291,6 @@ export namespace Prisma {
      * The data used to create many BudgetAllocates.
      */
     data: BudgetAllocateCreateManyInput | BudgetAllocateCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * BudgetAllocate createManyAndReturn
-   */
-  export type BudgetAllocateCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the BudgetAllocate
-     */
-    select?: BudgetAllocateSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many BudgetAllocates.
-     */
-    data: BudgetAllocateCreateManyInput | BudgetAllocateCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: BudgetAllocateIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -21407,41 +20432,49 @@ export namespace Prisma {
 
   export type PlanningHeaderAvgAggregateOutputType = {
     id: number | null
+    allocate_header_id: number | null
     version: number | null
     created_by: number | null
     updated_by: number | null
   }
 
   export type PlanningHeaderSumAggregateOutputType = {
-    id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type PlanningHeaderMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
+    status: string | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningHeaderMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
+    status: string | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningHeaderCountAggregateOutputType = {
     id: number
+    allocate_header_id: number
     version: number
+    status: number
     is_final_version: number
     created_by: number
     created_at: number
@@ -21453,6 +20486,7 @@ export namespace Prisma {
 
   export type PlanningHeaderAvgAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     created_by?: true
     updated_by?: true
@@ -21460,6 +20494,7 @@ export namespace Prisma {
 
   export type PlanningHeaderSumAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     created_by?: true
     updated_by?: true
@@ -21467,7 +20502,9 @@ export namespace Prisma {
 
   export type PlanningHeaderMinAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -21477,7 +20514,9 @@ export namespace Prisma {
 
   export type PlanningHeaderMaxAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -21487,7 +20526,9 @@ export namespace Prisma {
 
   export type PlanningHeaderCountAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -21583,13 +20624,15 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderGroupByOutputType = {
-    id: number
+    id: bigint
+    allocate_header_id: bigint | null
     version: number
+    status: string
     is_final_version: boolean
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: PlanningHeaderCountAggregateOutputType | null
     _avg: PlanningHeaderAvgAggregateOutputType | null
     _sum: PlanningHeaderSumAggregateOutputType | null
@@ -21613,33 +20656,28 @@ export namespace Prisma {
 
   export type PlanningHeaderSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
+    allocate_header_id?: boolean
     version?: boolean
+    status?: boolean
     is_final_version?: boolean
     created_by?: boolean
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
     creator?: boolean | UserDefaultArgs<ExtArgs>
+    allocate_header?: boolean | PlanningHeader$allocate_headerArgs<ExtArgs>
     planning_collections?: boolean | PlanningHeader$planning_collectionsArgs<ExtArgs>
     planning_genders?: boolean | PlanningHeader$planning_gendersArgs<ExtArgs>
     planning_categories?: boolean | PlanningHeader$planning_categoriesArgs<ExtArgs>
     _count?: boolean | PlanningHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["planningHeader"]>
 
-  export type PlanningHeaderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    version?: boolean
-    is_final_version?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["planningHeader"]>
 
   export type PlanningHeaderSelectScalar = {
     id?: boolean
+    allocate_header_id?: boolean
     version?: boolean
+    status?: boolean
     is_final_version?: boolean
     created_by?: boolean
     created_at?: boolean
@@ -21649,31 +20687,32 @@ export namespace Prisma {
 
   export type PlanningHeaderInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     creator?: boolean | UserDefaultArgs<ExtArgs>
+    allocate_header?: boolean | PlanningHeader$allocate_headerArgs<ExtArgs>
     planning_collections?: boolean | PlanningHeader$planning_collectionsArgs<ExtArgs>
     planning_genders?: boolean | PlanningHeader$planning_gendersArgs<ExtArgs>
     planning_categories?: boolean | PlanningHeader$planning_categoriesArgs<ExtArgs>
     _count?: boolean | PlanningHeaderCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type PlanningHeaderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    creator?: boolean | UserDefaultArgs<ExtArgs>
   }
 
   export type $PlanningHeaderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "PlanningHeader"
     objects: {
       creator: Prisma.$UserPayload<ExtArgs>
+      allocate_header: Prisma.$AllocateHeaderPayload<ExtArgs> | null
       planning_collections: Prisma.$PlanningCollectionPayload<ExtArgs>[]
       planning_genders: Prisma.$PlanningGenderPayload<ExtArgs>[]
       planning_categories: Prisma.$PlanningCategoryPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
+      allocate_header_id: bigint | null
       version: number
+      status: string
       is_final_version: boolean
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["planningHeader"]>
     composites: {}
   }
@@ -21790,30 +20829,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends PlanningHeaderCreateManyArgs>(args?: SelectSubset<T, PlanningHeaderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many PlanningHeaders and returns the data saved in the database.
-     * @param {PlanningHeaderCreateManyAndReturnArgs} args - Arguments to create many PlanningHeaders.
-     * @example
-     * // Create many PlanningHeaders
-     * const planningHeader = await prisma.planningHeader.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many PlanningHeaders and only return the `id`
-     * const planningHeaderWithIdOnly = await prisma.planningHeader.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PlanningHeaderCreateManyAndReturnArgs>(args?: SelectSubset<T, PlanningHeaderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningHeaderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a PlanningHeader.
@@ -22039,6 +21054,7 @@ export namespace Prisma {
   export interface Prisma__PlanningHeaderClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     creator<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    allocate_header<T extends PlanningHeader$allocate_headerArgs<ExtArgs> = {}>(args?: Subset<T, PlanningHeader$allocate_headerArgs<ExtArgs>>): Prisma__AllocateHeaderClient<$Result.GetResult<Prisma.$AllocateHeaderPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
     planning_collections<T extends PlanningHeader$planning_collectionsArgs<ExtArgs> = {}>(args?: Subset<T, PlanningHeader$planning_collectionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "findMany"> | Null>
     planning_genders<T extends PlanningHeader$planning_gendersArgs<ExtArgs> = {}>(args?: Subset<T, PlanningHeader$planning_gendersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningGenderPayload<ExtArgs>, T, "findMany"> | Null>
     planning_categories<T extends PlanningHeader$planning_categoriesArgs<ExtArgs> = {}>(args?: Subset<T, PlanningHeader$planning_categoriesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCategoryPayload<ExtArgs>, T, "findMany"> | Null>
@@ -22071,13 +21087,15 @@ export namespace Prisma {
    * Fields of the PlanningHeader model
    */ 
   interface PlanningHeaderFieldRefs {
-    readonly id: FieldRef<"PlanningHeader", 'Int'>
+    readonly id: FieldRef<"PlanningHeader", 'BigInt'>
+    readonly allocate_header_id: FieldRef<"PlanningHeader", 'BigInt'>
     readonly version: FieldRef<"PlanningHeader", 'Int'>
+    readonly status: FieldRef<"PlanningHeader", 'String'>
     readonly is_final_version: FieldRef<"PlanningHeader", 'Boolean'>
-    readonly created_by: FieldRef<"PlanningHeader", 'Int'>
+    readonly created_by: FieldRef<"PlanningHeader", 'BigInt'>
     readonly created_at: FieldRef<"PlanningHeader", 'DateTime'>
     readonly updated_at: FieldRef<"PlanningHeader", 'DateTime'>
-    readonly updated_by: FieldRef<"PlanningHeader", 'Int'>
+    readonly updated_by: FieldRef<"PlanningHeader", 'BigInt'>
   }
     
 
@@ -22283,26 +21301,6 @@ export namespace Prisma {
      * The data used to create many PlanningHeaders.
      */
     data: PlanningHeaderCreateManyInput | PlanningHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * PlanningHeader createManyAndReturn
-   */
-  export type PlanningHeaderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the PlanningHeader
-     */
-    select?: PlanningHeaderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many PlanningHeaders.
-     */
-    data: PlanningHeaderCreateManyInput | PlanningHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PlanningHeaderIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -22393,6 +21391,21 @@ export namespace Prisma {
      * Filter which PlanningHeaders to delete
      */
     where?: PlanningHeaderWhereInput
+  }
+
+  /**
+   * PlanningHeader.allocate_header
+   */
+  export type PlanningHeader$allocate_headerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AllocateHeader
+     */
+    select?: AllocateHeaderSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AllocateHeaderInclude<ExtArgs> | null
+    where?: AllocateHeaderWhereInput
   }
 
   /**
@@ -22499,10 +21512,10 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionSumAggregateOutputType = {
-    id: number | null
-    collection_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    collection_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -22510,15 +21523,15 @@ export namespace Prisma {
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type PlanningCollectionMinAggregateOutputType = {
-    id: number | null
-    collection_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    collection_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -22526,17 +21539,17 @@ export namespace Prisma {
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningCollectionMaxAggregateOutputType = {
-    id: number | null
-    collection_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    collection_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -22544,10 +21557,10 @@ export namespace Prisma {
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningCollectionCountAggregateOutputType = {
@@ -22744,10 +21757,10 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionGroupByOutputType = {
-    id: number
-    collection_id: number
-    store_id: number
-    planning_header_id: number
+    id: bigint
+    collection_id: bigint
+    store_id: bigint
+    planning_header_id: bigint
     actual_buy_pct: Decimal
     actual_sales_pct: Decimal
     actual_st_pct: Decimal
@@ -22755,10 +21768,10 @@ export namespace Prisma {
     proposed_buy_pct: Decimal
     otb_proposed_amount: Decimal
     pct_var_vs_last: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: PlanningCollectionCountAggregateOutputType | null
     _avg: PlanningCollectionAvgAggregateOutputType | null
     _sum: PlanningCollectionSumAggregateOutputType | null
@@ -22801,26 +21814,6 @@ export namespace Prisma {
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["planningCollection"]>
 
-  export type PlanningCollectionSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    collection_id?: boolean
-    store_id?: boolean
-    planning_header_id?: boolean
-    actual_buy_pct?: boolean
-    actual_sales_pct?: boolean
-    actual_st_pct?: boolean
-    actual_moc?: boolean
-    proposed_buy_pct?: boolean
-    otb_proposed_amount?: boolean
-    pct_var_vs_last?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    collection?: boolean | CollectionDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["planningCollection"]>
 
   export type PlanningCollectionSelectScalar = {
     id?: boolean
@@ -22845,11 +21838,6 @@ export namespace Prisma {
     store?: boolean | StoreDefaultArgs<ExtArgs>
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }
-  export type PlanningCollectionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    collection?: boolean | CollectionDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }
 
   export type $PlanningCollectionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "PlanningCollection"
@@ -22859,10 +21847,10 @@ export namespace Prisma {
       planning_header: Prisma.$PlanningHeaderPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      collection_id: number
-      store_id: number
-      planning_header_id: number
+      id: bigint
+      collection_id: bigint
+      store_id: bigint
+      planning_header_id: bigint
       actual_buy_pct: Prisma.Decimal
       actual_sales_pct: Prisma.Decimal
       actual_st_pct: Prisma.Decimal
@@ -22870,10 +21858,10 @@ export namespace Prisma {
       proposed_buy_pct: Prisma.Decimal
       otb_proposed_amount: Prisma.Decimal
       pct_var_vs_last: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["planningCollection"]>
     composites: {}
   }
@@ -22990,30 +21978,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends PlanningCollectionCreateManyArgs>(args?: SelectSubset<T, PlanningCollectionCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many PlanningCollections and returns the data saved in the database.
-     * @param {PlanningCollectionCreateManyAndReturnArgs} args - Arguments to create many PlanningCollections.
-     * @example
-     * // Create many PlanningCollections
-     * const planningCollection = await prisma.planningCollection.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many PlanningCollections and only return the `id`
-     * const planningCollectionWithIdOnly = await prisma.planningCollection.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PlanningCollectionCreateManyAndReturnArgs>(args?: SelectSubset<T, PlanningCollectionCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a PlanningCollection.
@@ -23270,10 +22234,10 @@ export namespace Prisma {
    * Fields of the PlanningCollection model
    */ 
   interface PlanningCollectionFieldRefs {
-    readonly id: FieldRef<"PlanningCollection", 'Int'>
-    readonly collection_id: FieldRef<"PlanningCollection", 'Int'>
-    readonly store_id: FieldRef<"PlanningCollection", 'Int'>
-    readonly planning_header_id: FieldRef<"PlanningCollection", 'Int'>
+    readonly id: FieldRef<"PlanningCollection", 'BigInt'>
+    readonly collection_id: FieldRef<"PlanningCollection", 'BigInt'>
+    readonly store_id: FieldRef<"PlanningCollection", 'BigInt'>
+    readonly planning_header_id: FieldRef<"PlanningCollection", 'BigInt'>
     readonly actual_buy_pct: FieldRef<"PlanningCollection", 'Decimal'>
     readonly actual_sales_pct: FieldRef<"PlanningCollection", 'Decimal'>
     readonly actual_st_pct: FieldRef<"PlanningCollection", 'Decimal'>
@@ -23281,10 +22245,10 @@ export namespace Prisma {
     readonly proposed_buy_pct: FieldRef<"PlanningCollection", 'Decimal'>
     readonly otb_proposed_amount: FieldRef<"PlanningCollection", 'Decimal'>
     readonly pct_var_vs_last: FieldRef<"PlanningCollection", 'Decimal'>
-    readonly created_by: FieldRef<"PlanningCollection", 'Int'>
+    readonly created_by: FieldRef<"PlanningCollection", 'BigInt'>
     readonly created_at: FieldRef<"PlanningCollection", 'DateTime'>
     readonly updated_at: FieldRef<"PlanningCollection", 'DateTime'>
-    readonly updated_by: FieldRef<"PlanningCollection", 'Int'>
+    readonly updated_by: FieldRef<"PlanningCollection", 'BigInt'>
   }
     
 
@@ -23490,26 +22454,6 @@ export namespace Prisma {
      * The data used to create many PlanningCollections.
      */
     data: PlanningCollectionCreateManyInput | PlanningCollectionCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * PlanningCollection createManyAndReturn
-   */
-  export type PlanningCollectionCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the PlanningCollection
-     */
-    select?: PlanningCollectionSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many PlanningCollections.
-     */
-    data: PlanningCollectionCreateManyInput | PlanningCollectionCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PlanningCollectionIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -23645,52 +22589,52 @@ export namespace Prisma {
   }
 
   export type PlanningGenderSumAggregateOutputType = {
-    id: number | null
-    gender_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    gender_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type PlanningGenderMinAggregateOutputType = {
-    id: number | null
-    gender_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    gender_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningGenderMaxAggregateOutputType = {
-    id: number | null
-    gender_id: number | null
-    store_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    gender_id: bigint | null
+    store_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposed_buy_pct: Decimal | null
     otb_proposed_amount: Decimal | null
     pct_var_vs_last: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningGenderCountAggregateOutputType = {
@@ -23881,20 +22825,20 @@ export namespace Prisma {
   }
 
   export type PlanningGenderGroupByOutputType = {
-    id: number
-    gender_id: number
-    store_id: number
-    planning_header_id: number
+    id: bigint
+    gender_id: bigint
+    store_id: bigint
+    planning_header_id: bigint
     actual_buy_pct: Decimal
     actual_sales_pct: Decimal
     actual_st_pct: Decimal
     proposed_buy_pct: Decimal
     otb_proposed_amount: Decimal
     pct_var_vs_last: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: PlanningGenderCountAggregateOutputType | null
     _avg: PlanningGenderAvgAggregateOutputType | null
     _sum: PlanningGenderSumAggregateOutputType | null
@@ -23936,25 +22880,6 @@ export namespace Prisma {
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["planningGender"]>
 
-  export type PlanningGenderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    gender_id?: boolean
-    store_id?: boolean
-    planning_header_id?: boolean
-    actual_buy_pct?: boolean
-    actual_sales_pct?: boolean
-    actual_st_pct?: boolean
-    proposed_buy_pct?: boolean
-    otb_proposed_amount?: boolean
-    pct_var_vs_last?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    gender?: boolean | GenderDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["planningGender"]>
 
   export type PlanningGenderSelectScalar = {
     id?: boolean
@@ -23978,11 +22903,6 @@ export namespace Prisma {
     store?: boolean | StoreDefaultArgs<ExtArgs>
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }
-  export type PlanningGenderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    gender?: boolean | GenderDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }
 
   export type $PlanningGenderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "PlanningGender"
@@ -23992,20 +22912,20 @@ export namespace Prisma {
       planning_header: Prisma.$PlanningHeaderPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      gender_id: number
-      store_id: number
-      planning_header_id: number
+      id: bigint
+      gender_id: bigint
+      store_id: bigint
+      planning_header_id: bigint
       actual_buy_pct: Prisma.Decimal
       actual_sales_pct: Prisma.Decimal
       actual_st_pct: Prisma.Decimal
       proposed_buy_pct: Prisma.Decimal
       otb_proposed_amount: Prisma.Decimal
       pct_var_vs_last: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["planningGender"]>
     composites: {}
   }
@@ -24122,30 +23042,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends PlanningGenderCreateManyArgs>(args?: SelectSubset<T, PlanningGenderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many PlanningGenders and returns the data saved in the database.
-     * @param {PlanningGenderCreateManyAndReturnArgs} args - Arguments to create many PlanningGenders.
-     * @example
-     * // Create many PlanningGenders
-     * const planningGender = await prisma.planningGender.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many PlanningGenders and only return the `id`
-     * const planningGenderWithIdOnly = await prisma.planningGender.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PlanningGenderCreateManyAndReturnArgs>(args?: SelectSubset<T, PlanningGenderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningGenderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a PlanningGender.
@@ -24402,20 +23298,20 @@ export namespace Prisma {
    * Fields of the PlanningGender model
    */ 
   interface PlanningGenderFieldRefs {
-    readonly id: FieldRef<"PlanningGender", 'Int'>
-    readonly gender_id: FieldRef<"PlanningGender", 'Int'>
-    readonly store_id: FieldRef<"PlanningGender", 'Int'>
-    readonly planning_header_id: FieldRef<"PlanningGender", 'Int'>
+    readonly id: FieldRef<"PlanningGender", 'BigInt'>
+    readonly gender_id: FieldRef<"PlanningGender", 'BigInt'>
+    readonly store_id: FieldRef<"PlanningGender", 'BigInt'>
+    readonly planning_header_id: FieldRef<"PlanningGender", 'BigInt'>
     readonly actual_buy_pct: FieldRef<"PlanningGender", 'Decimal'>
     readonly actual_sales_pct: FieldRef<"PlanningGender", 'Decimal'>
     readonly actual_st_pct: FieldRef<"PlanningGender", 'Decimal'>
     readonly proposed_buy_pct: FieldRef<"PlanningGender", 'Decimal'>
     readonly otb_proposed_amount: FieldRef<"PlanningGender", 'Decimal'>
     readonly pct_var_vs_last: FieldRef<"PlanningGender", 'Decimal'>
-    readonly created_by: FieldRef<"PlanningGender", 'Int'>
+    readonly created_by: FieldRef<"PlanningGender", 'BigInt'>
     readonly created_at: FieldRef<"PlanningGender", 'DateTime'>
     readonly updated_at: FieldRef<"PlanningGender", 'DateTime'>
-    readonly updated_by: FieldRef<"PlanningGender", 'Int'>
+    readonly updated_by: FieldRef<"PlanningGender", 'BigInt'>
   }
     
 
@@ -24621,26 +23517,6 @@ export namespace Prisma {
      * The data used to create many PlanningGenders.
      */
     data: PlanningGenderCreateManyInput | PlanningGenderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * PlanningGender createManyAndReturn
-   */
-  export type PlanningGenderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the PlanningGender
-     */
-    select?: PlanningGenderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many PlanningGenders.
-     */
-    data: PlanningGenderCreateManyInput | PlanningGenderCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PlanningGenderIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -24777,9 +23653,9 @@ export namespace Prisma {
   }
 
   export type PlanningCategorySumAggregateOutputType = {
-    id: number | null
-    subcategory_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    subcategory_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -24788,14 +23664,14 @@ export namespace Prisma {
     var_lastyear_pct: Decimal | null
     otb_actual_amount: Decimal | null
     otb_actual_buy_pct: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type PlanningCategoryMinAggregateOutputType = {
-    id: number | null
-    subcategory_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    subcategory_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -24804,16 +23680,16 @@ export namespace Prisma {
     var_lastyear_pct: Decimal | null
     otb_actual_amount: Decimal | null
     otb_actual_buy_pct: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningCategoryMaxAggregateOutputType = {
-    id: number | null
-    subcategory_id: number | null
-    planning_header_id: number | null
+    id: bigint | null
+    subcategory_id: bigint | null
+    planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
     actual_sales_pct: Decimal | null
     actual_st_pct: Decimal | null
@@ -24822,10 +23698,10 @@ export namespace Prisma {
     var_lastyear_pct: Decimal | null
     otb_actual_amount: Decimal | null
     otb_actual_buy_pct: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type PlanningCategoryCountAggregateOutputType = {
@@ -25022,9 +23898,9 @@ export namespace Prisma {
   }
 
   export type PlanningCategoryGroupByOutputType = {
-    id: number
-    subcategory_id: number
-    planning_header_id: number
+    id: bigint
+    subcategory_id: bigint
+    planning_header_id: bigint
     actual_buy_pct: Decimal
     actual_sales_pct: Decimal
     actual_st_pct: Decimal
@@ -25033,10 +23909,10 @@ export namespace Prisma {
     var_lastyear_pct: Decimal
     otb_actual_amount: Decimal
     otb_actual_buy_pct: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: PlanningCategoryCountAggregateOutputType | null
     _avg: PlanningCategoryAvgAggregateOutputType | null
     _sum: PlanningCategorySumAggregateOutputType | null
@@ -25078,25 +23954,6 @@ export namespace Prisma {
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["planningCategory"]>
 
-  export type PlanningCategorySelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    subcategory_id?: boolean
-    planning_header_id?: boolean
-    actual_buy_pct?: boolean
-    actual_sales_pct?: boolean
-    actual_st_pct?: boolean
-    proposed_buy_pct?: boolean
-    otb_proposed_amount?: boolean
-    var_lastyear_pct?: boolean
-    otb_actual_amount?: boolean
-    otb_actual_buy_pct?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    subcategory?: boolean | SubCategoryDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["planningCategory"]>
 
   export type PlanningCategorySelectScalar = {
     id?: boolean
@@ -25120,10 +23977,6 @@ export namespace Prisma {
     subcategory?: boolean | SubCategoryDefaultArgs<ExtArgs>
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }
-  export type PlanningCategoryIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    subcategory?: boolean | SubCategoryDefaultArgs<ExtArgs>
-    planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
-  }
 
   export type $PlanningCategoryPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "PlanningCategory"
@@ -25132,9 +23985,9 @@ export namespace Prisma {
       planning_header: Prisma.$PlanningHeaderPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      subcategory_id: number
-      planning_header_id: number
+      id: bigint
+      subcategory_id: bigint
+      planning_header_id: bigint
       actual_buy_pct: Prisma.Decimal
       actual_sales_pct: Prisma.Decimal
       actual_st_pct: Prisma.Decimal
@@ -25143,10 +23996,10 @@ export namespace Prisma {
       var_lastyear_pct: Prisma.Decimal
       otb_actual_amount: Prisma.Decimal
       otb_actual_buy_pct: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["planningCategory"]>
     composites: {}
   }
@@ -25263,30 +24116,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends PlanningCategoryCreateManyArgs>(args?: SelectSubset<T, PlanningCategoryCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many PlanningCategories and returns the data saved in the database.
-     * @param {PlanningCategoryCreateManyAndReturnArgs} args - Arguments to create many PlanningCategories.
-     * @example
-     * // Create many PlanningCategories
-     * const planningCategory = await prisma.planningCategory.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many PlanningCategories and only return the `id`
-     * const planningCategoryWithIdOnly = await prisma.planningCategory.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PlanningCategoryCreateManyAndReturnArgs>(args?: SelectSubset<T, PlanningCategoryCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCategoryPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a PlanningCategory.
@@ -25542,9 +24371,9 @@ export namespace Prisma {
    * Fields of the PlanningCategory model
    */ 
   interface PlanningCategoryFieldRefs {
-    readonly id: FieldRef<"PlanningCategory", 'Int'>
-    readonly subcategory_id: FieldRef<"PlanningCategory", 'Int'>
-    readonly planning_header_id: FieldRef<"PlanningCategory", 'Int'>
+    readonly id: FieldRef<"PlanningCategory", 'BigInt'>
+    readonly subcategory_id: FieldRef<"PlanningCategory", 'BigInt'>
+    readonly planning_header_id: FieldRef<"PlanningCategory", 'BigInt'>
     readonly actual_buy_pct: FieldRef<"PlanningCategory", 'Decimal'>
     readonly actual_sales_pct: FieldRef<"PlanningCategory", 'Decimal'>
     readonly actual_st_pct: FieldRef<"PlanningCategory", 'Decimal'>
@@ -25553,10 +24382,10 @@ export namespace Prisma {
     readonly var_lastyear_pct: FieldRef<"PlanningCategory", 'Decimal'>
     readonly otb_actual_amount: FieldRef<"PlanningCategory", 'Decimal'>
     readonly otb_actual_buy_pct: FieldRef<"PlanningCategory", 'Decimal'>
-    readonly created_by: FieldRef<"PlanningCategory", 'Int'>
+    readonly created_by: FieldRef<"PlanningCategory", 'BigInt'>
     readonly created_at: FieldRef<"PlanningCategory", 'DateTime'>
     readonly updated_at: FieldRef<"PlanningCategory", 'DateTime'>
-    readonly updated_by: FieldRef<"PlanningCategory", 'Int'>
+    readonly updated_by: FieldRef<"PlanningCategory", 'BigInt'>
   }
     
 
@@ -25762,26 +24591,6 @@ export namespace Prisma {
      * The data used to create many PlanningCategories.
      */
     data: PlanningCategoryCreateManyInput | PlanningCategoryCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * PlanningCategory createManyAndReturn
-   */
-  export type PlanningCategoryCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the PlanningCategory
-     */
-    select?: PlanningCategorySelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many PlanningCategories.
-     */
-    data: PlanningCategoryCreateManyInput | PlanningCategoryCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PlanningCategoryIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -25909,35 +24718,38 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderSumAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     version: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalHeaderMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     version: number | null
+    status: string | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalHeaderMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     version: number | null
+    status: string | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalHeaderCountAggregateOutputType = {
     id: number
     version: number
+    status: number
     is_final_version: number
     created_by: number
     created_at: number
@@ -25964,6 +24776,7 @@ export namespace Prisma {
   export type SKUProposalHeaderMinAggregateInputType = {
     id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -25974,6 +24787,7 @@ export namespace Prisma {
   export type SKUProposalHeaderMaxAggregateInputType = {
     id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -25984,6 +24798,7 @@ export namespace Prisma {
   export type SKUProposalHeaderCountAggregateInputType = {
     id?: true
     version?: true
+    status?: true
     is_final_version?: true
     created_by?: true
     created_at?: true
@@ -26079,13 +24894,14 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderGroupByOutputType = {
-    id: number
+    id: bigint
     version: number
+    status: string
     is_final_version: boolean
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SKUProposalHeaderCountAggregateOutputType | null
     _avg: SKUProposalHeaderAvgAggregateOutputType | null
     _sum: SKUProposalHeaderSumAggregateOutputType | null
@@ -26110,6 +24926,7 @@ export namespace Prisma {
   export type SKUProposalHeaderSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     version?: boolean
+    status?: boolean
     is_final_version?: boolean
     created_by?: boolean
     created_at?: boolean
@@ -26120,20 +24937,11 @@ export namespace Prisma {
     _count?: boolean | SKUProposalHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["sKUProposalHeader"]>
 
-  export type SKUProposalHeaderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    version?: boolean
-    is_final_version?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["sKUProposalHeader"]>
 
   export type SKUProposalHeaderSelectScalar = {
     id?: boolean
     version?: boolean
+    status?: boolean
     is_final_version?: boolean
     created_by?: boolean
     created_at?: boolean
@@ -26146,9 +24954,6 @@ export namespace Prisma {
     sku_proposals?: boolean | SKUProposalHeader$sku_proposalsArgs<ExtArgs>
     _count?: boolean | SKUProposalHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SKUProposalHeaderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $SKUProposalHeaderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SKUProposalHeader"
@@ -26157,13 +24962,14 @@ export namespace Prisma {
       sku_proposals: Prisma.$SKUProposalPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       version: number
+      status: string
       is_final_version: boolean
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["sKUProposalHeader"]>
     composites: {}
   }
@@ -26280,30 +25086,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SKUProposalHeaderCreateManyArgs>(args?: SelectSubset<T, SKUProposalHeaderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SKUProposalHeaders and returns the data saved in the database.
-     * @param {SKUProposalHeaderCreateManyAndReturnArgs} args - Arguments to create many SKUProposalHeaders.
-     * @example
-     * // Create many SKUProposalHeaders
-     * const sKUProposalHeader = await prisma.sKUProposalHeader.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SKUProposalHeaders and only return the `id`
-     * const sKUProposalHeaderWithIdOnly = await prisma.sKUProposalHeader.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SKUProposalHeaderCreateManyAndReturnArgs>(args?: SelectSubset<T, SKUProposalHeaderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUProposalHeaderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SKUProposalHeader.
@@ -26559,13 +25341,14 @@ export namespace Prisma {
    * Fields of the SKUProposalHeader model
    */ 
   interface SKUProposalHeaderFieldRefs {
-    readonly id: FieldRef<"SKUProposalHeader", 'Int'>
+    readonly id: FieldRef<"SKUProposalHeader", 'BigInt'>
     readonly version: FieldRef<"SKUProposalHeader", 'Int'>
+    readonly status: FieldRef<"SKUProposalHeader", 'String'>
     readonly is_final_version: FieldRef<"SKUProposalHeader", 'Boolean'>
-    readonly created_by: FieldRef<"SKUProposalHeader", 'Int'>
+    readonly created_by: FieldRef<"SKUProposalHeader", 'BigInt'>
     readonly created_at: FieldRef<"SKUProposalHeader", 'DateTime'>
     readonly updated_at: FieldRef<"SKUProposalHeader", 'DateTime'>
-    readonly updated_by: FieldRef<"SKUProposalHeader", 'Int'>
+    readonly updated_by: FieldRef<"SKUProposalHeader", 'BigInt'>
   }
     
 
@@ -26771,26 +25554,6 @@ export namespace Prisma {
      * The data used to create many SKUProposalHeaders.
      */
     data: SKUProposalHeaderCreateManyInput | SKUProposalHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SKUProposalHeader createManyAndReturn
-   */
-  export type SKUProposalHeaderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SKUProposalHeader
-     */
-    select?: SKUProposalHeaderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SKUProposalHeaders.
-     */
-    data: SKUProposalHeaderCreateManyInput | SKUProposalHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SKUProposalHeaderIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -26941,39 +25704,39 @@ export namespace Prisma {
   }
 
   export type SKUProposalSumAggregateOutputType = {
-    id: number | null
-    sku_proposal_header_id: number | null
-    product_id: number | null
+    id: bigint | null
+    sku_proposal_header_id: bigint | null
+    product_id: bigint | null
     unit_cost: Decimal | null
     srp: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalMinAggregateOutputType = {
-    id: number | null
-    sku_proposal_header_id: number | null
-    product_id: number | null
+    id: bigint | null
+    sku_proposal_header_id: bigint | null
+    product_id: bigint | null
     customer_target: string | null
     unit_cost: Decimal | null
     srp: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalMaxAggregateOutputType = {
-    id: number | null
-    sku_proposal_header_id: number | null
-    product_id: number | null
+    id: bigint | null
+    sku_proposal_header_id: bigint | null
+    product_id: bigint | null
     customer_target: string | null
     unit_cost: Decimal | null
     srp: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUProposalCountAggregateOutputType = {
@@ -27138,16 +25901,16 @@ export namespace Prisma {
   }
 
   export type SKUProposalGroupByOutputType = {
-    id: number
-    sku_proposal_header_id: number
-    product_id: number
+    id: bigint
+    sku_proposal_header_id: bigint
+    product_id: bigint
     customer_target: string
     unit_cost: Decimal
     srp: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SKUProposalCountAggregateOutputType | null
     _avg: SKUProposalAvgAggregateOutputType | null
     _sum: SKUProposalSumAggregateOutputType | null
@@ -27187,20 +25950,6 @@ export namespace Prisma {
     _count?: boolean | SKUProposalCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["sKUProposal"]>
 
-  export type SKUProposalSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    sku_proposal_header_id?: boolean
-    product_id?: boolean
-    customer_target?: boolean
-    unit_cost?: boolean
-    srp?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    sku_proposal_header?: boolean | SKUProposalHeaderDefaultArgs<ExtArgs>
-    product?: boolean | ProductDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["sKUProposal"]>
 
   export type SKUProposalSelectScalar = {
     id?: boolean
@@ -27222,10 +25971,6 @@ export namespace Prisma {
     proposal_sizing_headers?: boolean | SKUProposal$proposal_sizing_headersArgs<ExtArgs>
     _count?: boolean | SKUProposalCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type SKUProposalIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    sku_proposal_header?: boolean | SKUProposalHeaderDefaultArgs<ExtArgs>
-    product?: boolean | ProductDefaultArgs<ExtArgs>
-  }
 
   export type $SKUProposalPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SKUProposal"
@@ -27236,16 +25981,16 @@ export namespace Prisma {
       proposal_sizing_headers: Prisma.$ProposalSizingHeaderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      sku_proposal_header_id: number
-      product_id: number
+      id: bigint
+      sku_proposal_header_id: bigint
+      product_id: bigint
       customer_target: string
       unit_cost: Prisma.Decimal
       srp: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["sKUProposal"]>
     composites: {}
   }
@@ -27362,30 +26107,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SKUProposalCreateManyArgs>(args?: SelectSubset<T, SKUProposalCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SKUProposals and returns the data saved in the database.
-     * @param {SKUProposalCreateManyAndReturnArgs} args - Arguments to create many SKUProposals.
-     * @example
-     * // Create many SKUProposals
-     * const sKUProposal = await prisma.sKUProposal.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SKUProposals and only return the `id`
-     * const sKUProposalWithIdOnly = await prisma.sKUProposal.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SKUProposalCreateManyAndReturnArgs>(args?: SelectSubset<T, SKUProposalCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUProposalPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SKUProposal.
@@ -27643,16 +26364,16 @@ export namespace Prisma {
    * Fields of the SKUProposal model
    */ 
   interface SKUProposalFieldRefs {
-    readonly id: FieldRef<"SKUProposal", 'Int'>
-    readonly sku_proposal_header_id: FieldRef<"SKUProposal", 'Int'>
-    readonly product_id: FieldRef<"SKUProposal", 'Int'>
+    readonly id: FieldRef<"SKUProposal", 'BigInt'>
+    readonly sku_proposal_header_id: FieldRef<"SKUProposal", 'BigInt'>
+    readonly product_id: FieldRef<"SKUProposal", 'BigInt'>
     readonly customer_target: FieldRef<"SKUProposal", 'String'>
     readonly unit_cost: FieldRef<"SKUProposal", 'Decimal'>
     readonly srp: FieldRef<"SKUProposal", 'Decimal'>
-    readonly created_by: FieldRef<"SKUProposal", 'Int'>
+    readonly created_by: FieldRef<"SKUProposal", 'BigInt'>
     readonly created_at: FieldRef<"SKUProposal", 'DateTime'>
     readonly updated_at: FieldRef<"SKUProposal", 'DateTime'>
-    readonly updated_by: FieldRef<"SKUProposal", 'Int'>
+    readonly updated_by: FieldRef<"SKUProposal", 'BigInt'>
   }
     
 
@@ -27858,26 +26579,6 @@ export namespace Prisma {
      * The data used to create many SKUProposals.
      */
     data: SKUProposalCreateManyInput | SKUProposalCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SKUProposal createManyAndReturn
-   */
-  export type SKUProposalCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SKUProposal
-     */
-    select?: SKUProposalSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SKUProposals.
-     */
-    data: SKUProposalCreateManyInput | SKUProposalCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SKUProposalIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -28047,34 +26748,34 @@ export namespace Prisma {
   }
 
   export type SKUAllocateSumAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
-    store_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
+    store_id: bigint | null
     quantity: Decimal | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type SKUAllocateMinAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
-    store_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
+    store_id: bigint | null
     quantity: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUAllocateMaxAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
-    store_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
+    store_id: bigint | null
     quantity: Decimal | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type SKUAllocateCountAggregateOutputType = {
@@ -28229,14 +26930,14 @@ export namespace Prisma {
   }
 
   export type SKUAllocateGroupByOutputType = {
-    id: number
-    sku_proposal_id: number
-    store_id: number
+    id: bigint
+    sku_proposal_id: bigint
+    store_id: bigint
     quantity: Decimal
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: SKUAllocateCountAggregateOutputType | null
     _avg: SKUAllocateAvgAggregateOutputType | null
     _sum: SKUAllocateSumAggregateOutputType | null
@@ -28271,18 +26972,6 @@ export namespace Prisma {
     store?: boolean | StoreDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["sKUAllocate"]>
 
-  export type SKUAllocateSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    sku_proposal_id?: boolean
-    store_id?: boolean
-    quantity?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    sku_proposal?: boolean | SKUProposalDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["sKUAllocate"]>
 
   export type SKUAllocateSelectScalar = {
     id?: boolean
@@ -28299,10 +26988,6 @@ export namespace Prisma {
     sku_proposal?: boolean | SKUProposalDefaultArgs<ExtArgs>
     store?: boolean | StoreDefaultArgs<ExtArgs>
   }
-  export type SKUAllocateIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    sku_proposal?: boolean | SKUProposalDefaultArgs<ExtArgs>
-    store?: boolean | StoreDefaultArgs<ExtArgs>
-  }
 
   export type $SKUAllocatePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SKUAllocate"
@@ -28311,14 +26996,14 @@ export namespace Prisma {
       store: Prisma.$StorePayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      sku_proposal_id: number
-      store_id: number
+      id: bigint
+      sku_proposal_id: bigint
+      store_id: bigint
       quantity: Prisma.Decimal
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["sKUAllocate"]>
     composites: {}
   }
@@ -28435,30 +27120,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends SKUAllocateCreateManyArgs>(args?: SelectSubset<T, SKUAllocateCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many SKUAllocates and returns the data saved in the database.
-     * @param {SKUAllocateCreateManyAndReturnArgs} args - Arguments to create many SKUAllocates.
-     * @example
-     * // Create many SKUAllocates
-     * const sKUAllocate = await prisma.sKUAllocate.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many SKUAllocates and only return the `id`
-     * const sKUAllocateWithIdOnly = await prisma.sKUAllocate.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends SKUAllocateCreateManyAndReturnArgs>(args?: SelectSubset<T, SKUAllocateCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUAllocatePayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a SKUAllocate.
@@ -28714,14 +27375,14 @@ export namespace Prisma {
    * Fields of the SKUAllocate model
    */ 
   interface SKUAllocateFieldRefs {
-    readonly id: FieldRef<"SKUAllocate", 'Int'>
-    readonly sku_proposal_id: FieldRef<"SKUAllocate", 'Int'>
-    readonly store_id: FieldRef<"SKUAllocate", 'Int'>
+    readonly id: FieldRef<"SKUAllocate", 'BigInt'>
+    readonly sku_proposal_id: FieldRef<"SKUAllocate", 'BigInt'>
+    readonly store_id: FieldRef<"SKUAllocate", 'BigInt'>
     readonly quantity: FieldRef<"SKUAllocate", 'Decimal'>
-    readonly created_by: FieldRef<"SKUAllocate", 'Int'>
+    readonly created_by: FieldRef<"SKUAllocate", 'BigInt'>
     readonly created_at: FieldRef<"SKUAllocate", 'DateTime'>
     readonly updated_at: FieldRef<"SKUAllocate", 'DateTime'>
-    readonly updated_by: FieldRef<"SKUAllocate", 'Int'>
+    readonly updated_by: FieldRef<"SKUAllocate", 'BigInt'>
   }
     
 
@@ -28927,26 +27588,6 @@ export namespace Prisma {
      * The data used to create many SKUAllocates.
      */
     data: SKUAllocateCreateManyInput | SKUAllocateCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * SKUAllocate createManyAndReturn
-   */
-  export type SKUAllocateCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the SKUAllocate
-     */
-    select?: SKUAllocateSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many SKUAllocates.
-     */
-    data: SKUAllocateCreateManyInput | SKUAllocateCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: SKUAllocateIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -29075,33 +27716,33 @@ export namespace Prisma {
   }
 
   export type ProposalSizingHeaderSumAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
     version: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingHeaderMinAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
     version: number | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingHeaderMaxAggregateOutputType = {
-    id: number | null
-    sku_proposal_id: number | null
+    id: bigint | null
+    sku_proposal_id: bigint | null
     version: number | null
     is_final_version: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingHeaderCountAggregateOutputType = {
@@ -29254,14 +27895,14 @@ export namespace Prisma {
   }
 
   export type ProposalSizingHeaderGroupByOutputType = {
-    id: number
-    sku_proposal_id: number
+    id: bigint
+    sku_proposal_id: bigint
     version: number
     is_final_version: boolean
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ProposalSizingHeaderCountAggregateOutputType | null
     _avg: ProposalSizingHeaderAvgAggregateOutputType | null
     _sum: ProposalSizingHeaderSumAggregateOutputType | null
@@ -29298,18 +27939,6 @@ export namespace Prisma {
     _count?: boolean | ProposalSizingHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["proposalSizingHeader"]>
 
-  export type ProposalSizingHeaderSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    sku_proposal_id?: boolean
-    version?: boolean
-    is_final_version?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    sku_proposal?: boolean | SKUProposalDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["proposalSizingHeader"]>
 
   export type ProposalSizingHeaderSelectScalar = {
     id?: boolean
@@ -29328,10 +27957,6 @@ export namespace Prisma {
     proposal_sizings?: boolean | ProposalSizingHeader$proposal_sizingsArgs<ExtArgs>
     _count?: boolean | ProposalSizingHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type ProposalSizingHeaderIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    sku_proposal?: boolean | SKUProposalDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $ProposalSizingHeaderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "ProposalSizingHeader"
@@ -29341,14 +27966,14 @@ export namespace Prisma {
       proposal_sizings: Prisma.$ProposalSizingPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      sku_proposal_id: number
+      id: bigint
+      sku_proposal_id: bigint
       version: number
       is_final_version: boolean
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["proposalSizingHeader"]>
     composites: {}
   }
@@ -29465,30 +28090,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ProposalSizingHeaderCreateManyArgs>(args?: SelectSubset<T, ProposalSizingHeaderCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many ProposalSizingHeaders and returns the data saved in the database.
-     * @param {ProposalSizingHeaderCreateManyAndReturnArgs} args - Arguments to create many ProposalSizingHeaders.
-     * @example
-     * // Create many ProposalSizingHeaders
-     * const proposalSizingHeader = await prisma.proposalSizingHeader.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many ProposalSizingHeaders and only return the `id`
-     * const proposalSizingHeaderWithIdOnly = await prisma.proposalSizingHeader.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ProposalSizingHeaderCreateManyAndReturnArgs>(args?: SelectSubset<T, ProposalSizingHeaderCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProposalSizingHeaderPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a ProposalSizingHeader.
@@ -29745,14 +28346,14 @@ export namespace Prisma {
    * Fields of the ProposalSizingHeader model
    */ 
   interface ProposalSizingHeaderFieldRefs {
-    readonly id: FieldRef<"ProposalSizingHeader", 'Int'>
-    readonly sku_proposal_id: FieldRef<"ProposalSizingHeader", 'Int'>
+    readonly id: FieldRef<"ProposalSizingHeader", 'BigInt'>
+    readonly sku_proposal_id: FieldRef<"ProposalSizingHeader", 'BigInt'>
     readonly version: FieldRef<"ProposalSizingHeader", 'Int'>
     readonly is_final_version: FieldRef<"ProposalSizingHeader", 'Boolean'>
-    readonly created_by: FieldRef<"ProposalSizingHeader", 'Int'>
+    readonly created_by: FieldRef<"ProposalSizingHeader", 'BigInt'>
     readonly created_at: FieldRef<"ProposalSizingHeader", 'DateTime'>
     readonly updated_at: FieldRef<"ProposalSizingHeader", 'DateTime'>
-    readonly updated_by: FieldRef<"ProposalSizingHeader", 'Int'>
+    readonly updated_by: FieldRef<"ProposalSizingHeader", 'BigInt'>
   }
     
 
@@ -29958,26 +28559,6 @@ export namespace Prisma {
      * The data used to create many ProposalSizingHeaders.
      */
     data: ProposalSizingHeaderCreateManyInput | ProposalSizingHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * ProposalSizingHeader createManyAndReturn
-   */
-  export type ProposalSizingHeaderCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ProposalSizingHeader
-     */
-    select?: ProposalSizingHeaderSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many ProposalSizingHeaders.
-     */
-    data: ProposalSizingHeaderCreateManyInput | ProposalSizingHeaderCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ProposalSizingHeaderIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -30129,40 +28710,40 @@ export namespace Prisma {
   }
 
   export type ProposalSizingSumAggregateOutputType = {
-    id: number | null
-    proposal_sizing_header_id: number | null
-    subcategory_size_id: number | null
+    id: bigint | null
+    proposal_sizing_header_id: bigint | null
+    subcategory_size_id: bigint | null
     actual_salesmix_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposal_quantity: number | null
-    created_by: number | null
-    updated_by: number | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingMinAggregateOutputType = {
-    id: number | null
-    proposal_sizing_header_id: number | null
-    subcategory_size_id: number | null
+    id: bigint | null
+    proposal_sizing_header_id: bigint | null
+    subcategory_size_id: bigint | null
     actual_salesmix_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposal_quantity: number | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingMaxAggregateOutputType = {
-    id: number | null
-    proposal_sizing_header_id: number | null
-    subcategory_size_id: number | null
+    id: bigint | null
+    proposal_sizing_header_id: bigint | null
+    subcategory_size_id: bigint | null
     actual_salesmix_pct: Decimal | null
     actual_st_pct: Decimal | null
     proposal_quantity: number | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ProposalSizingCountAggregateOutputType = {
@@ -30329,16 +28910,16 @@ export namespace Prisma {
   }
 
   export type ProposalSizingGroupByOutputType = {
-    id: number
-    proposal_sizing_header_id: number
-    subcategory_size_id: number
+    id: bigint
+    proposal_sizing_header_id: bigint
+    subcategory_size_id: bigint
     actual_salesmix_pct: Decimal
     actual_st_pct: Decimal
     proposal_quantity: number
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ProposalSizingCountAggregateOutputType | null
     _avg: ProposalSizingAvgAggregateOutputType | null
     _sum: ProposalSizingSumAggregateOutputType | null
@@ -30375,20 +28956,6 @@ export namespace Prisma {
     subcategory_size?: boolean | SubcategorySizeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["proposalSizing"]>
 
-  export type ProposalSizingSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    proposal_sizing_header_id?: boolean
-    subcategory_size_id?: boolean
-    actual_salesmix_pct?: boolean
-    actual_st_pct?: boolean
-    proposal_quantity?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    proposal_sizing_header?: boolean | ProposalSizingHeaderDefaultArgs<ExtArgs>
-    subcategory_size?: boolean | SubcategorySizeDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["proposalSizing"]>
 
   export type ProposalSizingSelectScalar = {
     id?: boolean
@@ -30407,10 +28974,6 @@ export namespace Prisma {
     proposal_sizing_header?: boolean | ProposalSizingHeaderDefaultArgs<ExtArgs>
     subcategory_size?: boolean | SubcategorySizeDefaultArgs<ExtArgs>
   }
-  export type ProposalSizingIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    proposal_sizing_header?: boolean | ProposalSizingHeaderDefaultArgs<ExtArgs>
-    subcategory_size?: boolean | SubcategorySizeDefaultArgs<ExtArgs>
-  }
 
   export type $ProposalSizingPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "ProposalSizing"
@@ -30419,16 +28982,16 @@ export namespace Prisma {
       subcategory_size: Prisma.$SubcategorySizePayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      proposal_sizing_header_id: number
-      subcategory_size_id: number
+      id: bigint
+      proposal_sizing_header_id: bigint
+      subcategory_size_id: bigint
       actual_salesmix_pct: Prisma.Decimal
       actual_st_pct: Prisma.Decimal
       proposal_quantity: number
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["proposalSizing"]>
     composites: {}
   }
@@ -30545,30 +29108,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ProposalSizingCreateManyArgs>(args?: SelectSubset<T, ProposalSizingCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many ProposalSizings and returns the data saved in the database.
-     * @param {ProposalSizingCreateManyAndReturnArgs} args - Arguments to create many ProposalSizings.
-     * @example
-     * // Create many ProposalSizings
-     * const proposalSizing = await prisma.proposalSizing.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many ProposalSizings and only return the `id`
-     * const proposalSizingWithIdOnly = await prisma.proposalSizing.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ProposalSizingCreateManyAndReturnArgs>(args?: SelectSubset<T, ProposalSizingCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProposalSizingPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a ProposalSizing.
@@ -30824,16 +29363,16 @@ export namespace Prisma {
    * Fields of the ProposalSizing model
    */ 
   interface ProposalSizingFieldRefs {
-    readonly id: FieldRef<"ProposalSizing", 'Int'>
-    readonly proposal_sizing_header_id: FieldRef<"ProposalSizing", 'Int'>
-    readonly subcategory_size_id: FieldRef<"ProposalSizing", 'Int'>
+    readonly id: FieldRef<"ProposalSizing", 'BigInt'>
+    readonly proposal_sizing_header_id: FieldRef<"ProposalSizing", 'BigInt'>
+    readonly subcategory_size_id: FieldRef<"ProposalSizing", 'BigInt'>
     readonly actual_salesmix_pct: FieldRef<"ProposalSizing", 'Decimal'>
     readonly actual_st_pct: FieldRef<"ProposalSizing", 'Decimal'>
     readonly proposal_quantity: FieldRef<"ProposalSizing", 'Int'>
-    readonly created_by: FieldRef<"ProposalSizing", 'Int'>
+    readonly created_by: FieldRef<"ProposalSizing", 'BigInt'>
     readonly created_at: FieldRef<"ProposalSizing", 'DateTime'>
     readonly updated_at: FieldRef<"ProposalSizing", 'DateTime'>
-    readonly updated_by: FieldRef<"ProposalSizing", 'Int'>
+    readonly updated_by: FieldRef<"ProposalSizing", 'BigInt'>
   }
     
 
@@ -31039,26 +29578,6 @@ export namespace Prisma {
      * The data used to create many ProposalSizings.
      */
     data: ProposalSizingCreateManyInput | ProposalSizingCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * ProposalSizing createManyAndReturn
-   */
-  export type ProposalSizingCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ProposalSizing
-     */
-    select?: ProposalSizingSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many ProposalSizings.
-     */
-    data: ProposalSizingCreateManyInput | ProposalSizingCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ProposalSizingIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -31185,29 +29704,29 @@ export namespace Prisma {
   }
 
   export type ApprovalStatusSumAggregateOutputType = {
-    id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ApprovalStatusMinAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalStatusMaxAggregateOutputType = {
-    id: number | null
+    id: bigint | null
     name: string | null
     is_active: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalStatusCountAggregateOutputType = {
@@ -31352,13 +29871,13 @@ export namespace Prisma {
   }
 
   export type ApprovalStatusGroupByOutputType = {
-    id: number
+    id: bigint
     name: string
     is_active: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ApprovalStatusCountAggregateOutputType | null
     _avg: ApprovalStatusAvgAggregateOutputType | null
     _sum: ApprovalStatusSumAggregateOutputType | null
@@ -31390,15 +29909,6 @@ export namespace Prisma {
     updated_by?: boolean
   }, ExtArgs["result"]["approvalStatus"]>
 
-  export type ApprovalStatusSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    is_active?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-  }, ExtArgs["result"]["approvalStatus"]>
 
   export type ApprovalStatusSelectScalar = {
     id?: boolean
@@ -31415,13 +29925,13 @@ export namespace Prisma {
     name: "ApprovalStatus"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
-      id: number
+      id: bigint
       name: string
       is_active: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["approvalStatus"]>
     composites: {}
   }
@@ -31538,30 +30048,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ApprovalStatusCreateManyArgs>(args?: SelectSubset<T, ApprovalStatusCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many ApprovalStatuses and returns the data saved in the database.
-     * @param {ApprovalStatusCreateManyAndReturnArgs} args - Arguments to create many ApprovalStatuses.
-     * @example
-     * // Create many ApprovalStatuses
-     * const approvalStatus = await prisma.approvalStatus.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many ApprovalStatuses and only return the `id`
-     * const approvalStatusWithIdOnly = await prisma.approvalStatus.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ApprovalStatusCreateManyAndReturnArgs>(args?: SelectSubset<T, ApprovalStatusCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ApprovalStatusPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a ApprovalStatus.
@@ -31815,13 +30301,13 @@ export namespace Prisma {
    * Fields of the ApprovalStatus model
    */ 
   interface ApprovalStatusFieldRefs {
-    readonly id: FieldRef<"ApprovalStatus", 'Int'>
+    readonly id: FieldRef<"ApprovalStatus", 'BigInt'>
     readonly name: FieldRef<"ApprovalStatus", 'String'>
     readonly is_active: FieldRef<"ApprovalStatus", 'Boolean'>
-    readonly created_by: FieldRef<"ApprovalStatus", 'Int'>
+    readonly created_by: FieldRef<"ApprovalStatus", 'BigInt'>
     readonly created_at: FieldRef<"ApprovalStatus", 'DateTime'>
     readonly updated_at: FieldRef<"ApprovalStatus", 'DateTime'>
-    readonly updated_by: FieldRef<"ApprovalStatus", 'Int'>
+    readonly updated_by: FieldRef<"ApprovalStatus", 'BigInt'>
   }
     
 
@@ -32003,22 +30489,6 @@ export namespace Prisma {
      * The data used to create many ApprovalStatuses.
      */
     data: ApprovalStatusCreateManyInput | ApprovalStatusCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * ApprovalStatus createManyAndReturn
-   */
-  export type ApprovalStatusCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ApprovalStatus
-     */
-    select?: ApprovalStatusSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many ApprovalStatuses.
-     */
-    data: ApprovalStatusCreateManyInput | ApprovalStatusCreateManyInput[]
-    skipDuplicates?: boolean
   }
 
   /**
@@ -32130,30 +30600,30 @@ export namespace Prisma {
   }
 
   export type TicketSumAggregateOutputType = {
-    id: number | null
-    budget_allocate_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    budget_allocate_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type TicketMinAggregateOutputType = {
-    id: number | null
-    budget_allocate_id: number | null
+    id: bigint | null
+    budget_allocate_id: bigint | null
     status: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type TicketMaxAggregateOutputType = {
-    id: number | null
-    budget_allocate_id: number | null
+    id: bigint | null
+    budget_allocate_id: bigint | null
     status: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type TicketCountAggregateOutputType = {
@@ -32300,13 +30770,13 @@ export namespace Prisma {
   }
 
   export type TicketGroupByOutputType = {
-    id: number
-    budget_allocate_id: number
+    id: bigint
+    budget_allocate_id: bigint
     status: string
-    created_by: number
+    created_by: bigint
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: TicketCountAggregateOutputType | null
     _avg: TicketAvgAggregateOutputType | null
     _sum: TicketSumAggregateOutputType | null
@@ -32342,17 +30812,6 @@ export namespace Prisma {
     _count?: boolean | TicketCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["ticket"]>
 
-  export type TicketSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    budget_allocate_id?: boolean
-    status?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    budget_allocate?: boolean | BudgetAllocateDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["ticket"]>
 
   export type TicketSelectScalar = {
     id?: boolean
@@ -32370,10 +30829,6 @@ export namespace Prisma {
     ticket_approval_logs?: boolean | Ticket$ticket_approval_logsArgs<ExtArgs>
     _count?: boolean | TicketCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type TicketIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    budget_allocate?: boolean | BudgetAllocateDefaultArgs<ExtArgs>
-    creator?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $TicketPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Ticket"
@@ -32383,13 +30838,13 @@ export namespace Prisma {
       ticket_approval_logs: Prisma.$TicketApprovalLogPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      budget_allocate_id: number
+      id: bigint
+      budget_allocate_id: bigint
       status: string
-      created_by: number
+      created_by: bigint
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["ticket"]>
     composites: {}
   }
@@ -32506,30 +30961,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends TicketCreateManyArgs>(args?: SelectSubset<T, TicketCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Tickets and returns the data saved in the database.
-     * @param {TicketCreateManyAndReturnArgs} args - Arguments to create many Tickets.
-     * @example
-     * // Create many Tickets
-     * const ticket = await prisma.ticket.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Tickets and only return the `id`
-     * const ticketWithIdOnly = await prisma.ticket.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends TicketCreateManyAndReturnArgs>(args?: SelectSubset<T, TicketCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TicketPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a Ticket.
@@ -32786,13 +31217,13 @@ export namespace Prisma {
    * Fields of the Ticket model
    */ 
   interface TicketFieldRefs {
-    readonly id: FieldRef<"Ticket", 'Int'>
-    readonly budget_allocate_id: FieldRef<"Ticket", 'Int'>
+    readonly id: FieldRef<"Ticket", 'BigInt'>
+    readonly budget_allocate_id: FieldRef<"Ticket", 'BigInt'>
     readonly status: FieldRef<"Ticket", 'String'>
-    readonly created_by: FieldRef<"Ticket", 'Int'>
+    readonly created_by: FieldRef<"Ticket", 'BigInt'>
     readonly created_at: FieldRef<"Ticket", 'DateTime'>
     readonly updated_at: FieldRef<"Ticket", 'DateTime'>
-    readonly updated_by: FieldRef<"Ticket", 'Int'>
+    readonly updated_by: FieldRef<"Ticket", 'BigInt'>
   }
     
 
@@ -32998,26 +31429,6 @@ export namespace Prisma {
      * The data used to create many Tickets.
      */
     data: TicketCreateManyInput | TicketCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * Ticket createManyAndReturn
-   */
-  export type TicketCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Ticket
-     */
-    select?: TicketSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many Tickets.
-     */
-    data: TicketCreateManyInput | TicketCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: TicketIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -33165,30 +31576,30 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowSumAggregateOutputType = {
-    id: number | null
-    group_brand_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    group_brand_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowMinAggregateOutputType = {
-    id: number | null
-    group_brand_id: number | null
+    id: bigint | null
+    group_brand_id: bigint | null
     workflow_name: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowMaxAggregateOutputType = {
-    id: number | null
-    group_brand_id: number | null
+    id: bigint | null
+    group_brand_id: bigint | null
     workflow_name: string | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowCountAggregateOutputType = {
@@ -33335,13 +31746,13 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowGroupByOutputType = {
-    id: number
-    group_brand_id: number
+    id: bigint
+    group_brand_id: bigint
     workflow_name: string
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ApprovalWorkflowCountAggregateOutputType | null
     _avg: ApprovalWorkflowAvgAggregateOutputType | null
     _sum: ApprovalWorkflowSumAggregateOutputType | null
@@ -33376,16 +31787,6 @@ export namespace Prisma {
     _count?: boolean | ApprovalWorkflowCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["approvalWorkflow"]>
 
-  export type ApprovalWorkflowSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    group_brand_id?: boolean
-    workflow_name?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["approvalWorkflow"]>
 
   export type ApprovalWorkflowSelectScalar = {
     id?: boolean
@@ -33402,9 +31803,6 @@ export namespace Prisma {
     approval_workflow_levels?: boolean | ApprovalWorkflow$approval_workflow_levelsArgs<ExtArgs>
     _count?: boolean | ApprovalWorkflowCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type ApprovalWorkflowIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
-  }
 
   export type $ApprovalWorkflowPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "ApprovalWorkflow"
@@ -33413,13 +31811,13 @@ export namespace Prisma {
       approval_workflow_levels: Prisma.$ApprovalWorkflowLevelPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      group_brand_id: number
+      id: bigint
+      group_brand_id: bigint
       workflow_name: string
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["approvalWorkflow"]>
     composites: {}
   }
@@ -33536,30 +31934,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ApprovalWorkflowCreateManyArgs>(args?: SelectSubset<T, ApprovalWorkflowCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many ApprovalWorkflows and returns the data saved in the database.
-     * @param {ApprovalWorkflowCreateManyAndReturnArgs} args - Arguments to create many ApprovalWorkflows.
-     * @example
-     * // Create many ApprovalWorkflows
-     * const approvalWorkflow = await prisma.approvalWorkflow.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many ApprovalWorkflows and only return the `id`
-     * const approvalWorkflowWithIdOnly = await prisma.approvalWorkflow.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ApprovalWorkflowCreateManyAndReturnArgs>(args?: SelectSubset<T, ApprovalWorkflowCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ApprovalWorkflowPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a ApprovalWorkflow.
@@ -33815,13 +32189,13 @@ export namespace Prisma {
    * Fields of the ApprovalWorkflow model
    */ 
   interface ApprovalWorkflowFieldRefs {
-    readonly id: FieldRef<"ApprovalWorkflow", 'Int'>
-    readonly group_brand_id: FieldRef<"ApprovalWorkflow", 'Int'>
+    readonly id: FieldRef<"ApprovalWorkflow", 'BigInt'>
+    readonly group_brand_id: FieldRef<"ApprovalWorkflow", 'BigInt'>
     readonly workflow_name: FieldRef<"ApprovalWorkflow", 'String'>
-    readonly created_by: FieldRef<"ApprovalWorkflow", 'Int'>
+    readonly created_by: FieldRef<"ApprovalWorkflow", 'BigInt'>
     readonly created_at: FieldRef<"ApprovalWorkflow", 'DateTime'>
     readonly updated_at: FieldRef<"ApprovalWorkflow", 'DateTime'>
-    readonly updated_by: FieldRef<"ApprovalWorkflow", 'Int'>
+    readonly updated_by: FieldRef<"ApprovalWorkflow", 'BigInt'>
   }
     
 
@@ -34027,26 +32401,6 @@ export namespace Prisma {
      * The data used to create many ApprovalWorkflows.
      */
     data: ApprovalWorkflowCreateManyInput | ApprovalWorkflowCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * ApprovalWorkflow createManyAndReturn
-   */
-  export type ApprovalWorkflowCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ApprovalWorkflow
-     */
-    select?: ApprovalWorkflowSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many ApprovalWorkflows.
-     */
-    data: ApprovalWorkflowCreateManyInput | ApprovalWorkflowCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ApprovalWorkflowIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -34196,38 +32550,38 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelSumAggregateOutputType = {
-    id: number | null
-    approval_workflow_id: number | null
+    id: bigint | null
+    approval_workflow_id: bigint | null
     level_order: number | null
-    approver_user_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    approver_user_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowLevelMinAggregateOutputType = {
-    id: number | null
-    approval_workflow_id: number | null
+    id: bigint | null
+    approval_workflow_id: bigint | null
     level_order: number | null
     level_name: string | null
-    approver_user_id: number | null
+    approver_user_id: bigint | null
     is_required: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowLevelMaxAggregateOutputType = {
-    id: number | null
-    approval_workflow_id: number | null
+    id: bigint | null
+    approval_workflow_id: bigint | null
     level_order: number | null
     level_name: string | null
-    approver_user_id: number | null
+    approver_user_id: bigint | null
     is_required: boolean | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type ApprovalWorkflowLevelCountAggregateOutputType = {
@@ -34390,16 +32744,16 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelGroupByOutputType = {
-    id: number
-    approval_workflow_id: number
+    id: bigint
+    approval_workflow_id: bigint
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint
     is_required: boolean
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: ApprovalWorkflowLevelCountAggregateOutputType | null
     _avg: ApprovalWorkflowLevelAvgAggregateOutputType | null
     _sum: ApprovalWorkflowLevelSumAggregateOutputType | null
@@ -34438,20 +32792,6 @@ export namespace Prisma {
     _count?: boolean | ApprovalWorkflowLevelCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["approvalWorkflowLevel"]>
 
-  export type ApprovalWorkflowLevelSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    approval_workflow_id?: boolean
-    level_order?: boolean
-    level_name?: boolean
-    approver_user_id?: boolean
-    is_required?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    approval_workflow?: boolean | ApprovalWorkflowDefaultArgs<ExtArgs>
-    approver_user?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["approvalWorkflowLevel"]>
 
   export type ApprovalWorkflowLevelSelectScalar = {
     id?: boolean
@@ -34472,10 +32812,6 @@ export namespace Prisma {
     ticket_approval_logs?: boolean | ApprovalWorkflowLevel$ticket_approval_logsArgs<ExtArgs>
     _count?: boolean | ApprovalWorkflowLevelCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type ApprovalWorkflowLevelIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    approval_workflow?: boolean | ApprovalWorkflowDefaultArgs<ExtArgs>
-    approver_user?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $ApprovalWorkflowLevelPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "ApprovalWorkflowLevel"
@@ -34485,16 +32821,16 @@ export namespace Prisma {
       ticket_approval_logs: Prisma.$TicketApprovalLogPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      approval_workflow_id: number
+      id: bigint
+      approval_workflow_id: bigint
       level_order: number
       level_name: string
-      approver_user_id: number
+      approver_user_id: bigint
       is_required: boolean
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["approvalWorkflowLevel"]>
     composites: {}
   }
@@ -34611,30 +32947,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends ApprovalWorkflowLevelCreateManyArgs>(args?: SelectSubset<T, ApprovalWorkflowLevelCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many ApprovalWorkflowLevels and returns the data saved in the database.
-     * @param {ApprovalWorkflowLevelCreateManyAndReturnArgs} args - Arguments to create many ApprovalWorkflowLevels.
-     * @example
-     * // Create many ApprovalWorkflowLevels
-     * const approvalWorkflowLevel = await prisma.approvalWorkflowLevel.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many ApprovalWorkflowLevels and only return the `id`
-     * const approvalWorkflowLevelWithIdOnly = await prisma.approvalWorkflowLevel.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ApprovalWorkflowLevelCreateManyAndReturnArgs>(args?: SelectSubset<T, ApprovalWorkflowLevelCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ApprovalWorkflowLevelPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a ApprovalWorkflowLevel.
@@ -34891,16 +33203,16 @@ export namespace Prisma {
    * Fields of the ApprovalWorkflowLevel model
    */ 
   interface ApprovalWorkflowLevelFieldRefs {
-    readonly id: FieldRef<"ApprovalWorkflowLevel", 'Int'>
-    readonly approval_workflow_id: FieldRef<"ApprovalWorkflowLevel", 'Int'>
+    readonly id: FieldRef<"ApprovalWorkflowLevel", 'BigInt'>
+    readonly approval_workflow_id: FieldRef<"ApprovalWorkflowLevel", 'BigInt'>
     readonly level_order: FieldRef<"ApprovalWorkflowLevel", 'Int'>
     readonly level_name: FieldRef<"ApprovalWorkflowLevel", 'String'>
-    readonly approver_user_id: FieldRef<"ApprovalWorkflowLevel", 'Int'>
+    readonly approver_user_id: FieldRef<"ApprovalWorkflowLevel", 'BigInt'>
     readonly is_required: FieldRef<"ApprovalWorkflowLevel", 'Boolean'>
-    readonly created_by: FieldRef<"ApprovalWorkflowLevel", 'Int'>
+    readonly created_by: FieldRef<"ApprovalWorkflowLevel", 'BigInt'>
     readonly created_at: FieldRef<"ApprovalWorkflowLevel", 'DateTime'>
     readonly updated_at: FieldRef<"ApprovalWorkflowLevel", 'DateTime'>
-    readonly updated_by: FieldRef<"ApprovalWorkflowLevel", 'Int'>
+    readonly updated_by: FieldRef<"ApprovalWorkflowLevel", 'BigInt'>
   }
     
 
@@ -35106,26 +33418,6 @@ export namespace Prisma {
      * The data used to create many ApprovalWorkflowLevels.
      */
     data: ApprovalWorkflowLevelCreateManyInput | ApprovalWorkflowLevelCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * ApprovalWorkflowLevel createManyAndReturn
-   */
-  export type ApprovalWorkflowLevelCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ApprovalWorkflowLevel
-     */
-    select?: ApprovalWorkflowLevelSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many ApprovalWorkflowLevels.
-     */
-    data: ApprovalWorkflowLevelCreateManyInput | ApprovalWorkflowLevelCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ApprovalWorkflowLevelIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -35275,40 +33567,40 @@ export namespace Prisma {
   }
 
   export type TicketApprovalLogSumAggregateOutputType = {
-    id: number | null
-    ticket_id: number | null
-    approval_workflow_level_id: number | null
-    approver_user_id: number | null
-    created_by: number | null
-    updated_by: number | null
+    id: bigint | null
+    ticket_id: bigint | null
+    approval_workflow_level_id: bigint | null
+    approver_user_id: bigint | null
+    created_by: bigint | null
+    updated_by: bigint | null
   }
 
   export type TicketApprovalLogMinAggregateOutputType = {
-    id: number | null
-    ticket_id: number | null
-    approval_workflow_level_id: number | null
-    approver_user_id: number | null
+    id: bigint | null
+    ticket_id: bigint | null
+    approval_workflow_level_id: bigint | null
+    approver_user_id: bigint | null
     is_approved: boolean | null
     comment: string | null
     approved_at: Date | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type TicketApprovalLogMaxAggregateOutputType = {
-    id: number | null
-    ticket_id: number | null
-    approval_workflow_level_id: number | null
-    approver_user_id: number | null
+    id: bigint | null
+    ticket_id: bigint | null
+    approval_workflow_level_id: bigint | null
+    approver_user_id: bigint | null
     is_approved: boolean | null
     comment: string | null
     approved_at: Date | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date | null
     updated_at: Date | null
-    updated_by: number | null
+    updated_by: bigint | null
   }
 
   export type TicketApprovalLogCountAggregateOutputType = {
@@ -35475,17 +33767,17 @@ export namespace Prisma {
   }
 
   export type TicketApprovalLogGroupByOutputType = {
-    id: number
-    ticket_id: number
-    approval_workflow_level_id: number
-    approver_user_id: number
+    id: bigint
+    ticket_id: bigint
+    approval_workflow_level_id: bigint
+    approver_user_id: bigint
     is_approved: boolean
     comment: string | null
     approved_at: Date | null
-    created_by: number | null
+    created_by: bigint | null
     created_at: Date
     updated_at: Date
-    updated_by: number | null
+    updated_by: bigint | null
     _count: TicketApprovalLogCountAggregateOutputType | null
     _avg: TicketApprovalLogAvgAggregateOutputType | null
     _sum: TicketApprovalLogSumAggregateOutputType | null
@@ -35524,22 +33816,6 @@ export namespace Prisma {
     approver_user?: boolean | UserDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["ticketApprovalLog"]>
 
-  export type TicketApprovalLogSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    ticket_id?: boolean
-    approval_workflow_level_id?: boolean
-    approver_user_id?: boolean
-    is_approved?: boolean
-    comment?: boolean
-    approved_at?: boolean
-    created_by?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    updated_by?: boolean
-    ticket?: boolean | TicketDefaultArgs<ExtArgs>
-    approval_workflow_level?: boolean | ApprovalWorkflowLevelDefaultArgs<ExtArgs>
-    approver_user?: boolean | UserDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["ticketApprovalLog"]>
 
   export type TicketApprovalLogSelectScalar = {
     id?: boolean
@@ -35560,11 +33836,6 @@ export namespace Prisma {
     approval_workflow_level?: boolean | ApprovalWorkflowLevelDefaultArgs<ExtArgs>
     approver_user?: boolean | UserDefaultArgs<ExtArgs>
   }
-  export type TicketApprovalLogIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    ticket?: boolean | TicketDefaultArgs<ExtArgs>
-    approval_workflow_level?: boolean | ApprovalWorkflowLevelDefaultArgs<ExtArgs>
-    approver_user?: boolean | UserDefaultArgs<ExtArgs>
-  }
 
   export type $TicketApprovalLogPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "TicketApprovalLog"
@@ -35574,17 +33845,17 @@ export namespace Prisma {
       approver_user: Prisma.$UserPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      id: number
-      ticket_id: number
-      approval_workflow_level_id: number
-      approver_user_id: number
+      id: bigint
+      ticket_id: bigint
+      approval_workflow_level_id: bigint
+      approver_user_id: bigint
       is_approved: boolean
       comment: string | null
       approved_at: Date | null
-      created_by: number | null
+      created_by: bigint | null
       created_at: Date
       updated_at: Date
-      updated_by: number | null
+      updated_by: bigint | null
     }, ExtArgs["result"]["ticketApprovalLog"]>
     composites: {}
   }
@@ -35701,30 +33972,6 @@ export namespace Prisma {
      *     
      */
     createMany<T extends TicketApprovalLogCreateManyArgs>(args?: SelectSubset<T, TicketApprovalLogCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many TicketApprovalLogs and returns the data saved in the database.
-     * @param {TicketApprovalLogCreateManyAndReturnArgs} args - Arguments to create many TicketApprovalLogs.
-     * @example
-     * // Create many TicketApprovalLogs
-     * const ticketApprovalLog = await prisma.ticketApprovalLog.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many TicketApprovalLogs and only return the `id`
-     * const ticketApprovalLogWithIdOnly = await prisma.ticketApprovalLog.createManyAndReturn({ 
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends TicketApprovalLogCreateManyAndReturnArgs>(args?: SelectSubset<T, TicketApprovalLogCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TicketApprovalLogPayload<ExtArgs>, T, "createManyAndReturn">>
 
     /**
      * Delete a TicketApprovalLog.
@@ -35981,17 +34228,17 @@ export namespace Prisma {
    * Fields of the TicketApprovalLog model
    */ 
   interface TicketApprovalLogFieldRefs {
-    readonly id: FieldRef<"TicketApprovalLog", 'Int'>
-    readonly ticket_id: FieldRef<"TicketApprovalLog", 'Int'>
-    readonly approval_workflow_level_id: FieldRef<"TicketApprovalLog", 'Int'>
-    readonly approver_user_id: FieldRef<"TicketApprovalLog", 'Int'>
+    readonly id: FieldRef<"TicketApprovalLog", 'BigInt'>
+    readonly ticket_id: FieldRef<"TicketApprovalLog", 'BigInt'>
+    readonly approval_workflow_level_id: FieldRef<"TicketApprovalLog", 'BigInt'>
+    readonly approver_user_id: FieldRef<"TicketApprovalLog", 'BigInt'>
     readonly is_approved: FieldRef<"TicketApprovalLog", 'Boolean'>
     readonly comment: FieldRef<"TicketApprovalLog", 'String'>
     readonly approved_at: FieldRef<"TicketApprovalLog", 'DateTime'>
-    readonly created_by: FieldRef<"TicketApprovalLog", 'Int'>
+    readonly created_by: FieldRef<"TicketApprovalLog", 'BigInt'>
     readonly created_at: FieldRef<"TicketApprovalLog", 'DateTime'>
     readonly updated_at: FieldRef<"TicketApprovalLog", 'DateTime'>
-    readonly updated_by: FieldRef<"TicketApprovalLog", 'Int'>
+    readonly updated_by: FieldRef<"TicketApprovalLog", 'BigInt'>
   }
     
 
@@ -36197,26 +34444,6 @@ export namespace Prisma {
      * The data used to create many TicketApprovalLogs.
      */
     data: TicketApprovalLogCreateManyInput | TicketApprovalLogCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * TicketApprovalLog createManyAndReturn
-   */
-  export type TicketApprovalLogCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the TicketApprovalLog
-     */
-    select?: TicketApprovalLogSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * The data used to create many TicketApprovalLogs.
-     */
-    data: TicketApprovalLogCreateManyInput | TicketApprovalLogCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: TicketApprovalLogIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -36332,7 +34559,8 @@ export namespace Prisma {
     ReadUncommitted: 'ReadUncommitted',
     ReadCommitted: 'ReadCommitted',
     RepeatableRead: 'RepeatableRead',
-    Serializable: 'Serializable'
+    Serializable: 'Serializable',
+    Snapshot: 'Snapshot'
   };
 
   export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
@@ -36346,7 +34574,9 @@ export namespace Prisma {
     role_id: 'role_id',
     is_active: 'is_active',
     created_at: 'created_at',
-    updated_at: 'updated_at'
+    updated_at: 'updated_at',
+    store_access: 'store_access',
+    brand_access: 'brand_access'
   };
 
   export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
@@ -36576,7 +34806,9 @@ export namespace Prisma {
 
   export const PlanningHeaderScalarFieldEnum: {
     id: 'id',
+    allocate_header_id: 'allocate_header_id',
     version: 'version',
+    status: 'status',
     is_final_version: 'is_final_version',
     created_by: 'created_by',
     created_at: 'created_at',
@@ -36652,6 +34884,7 @@ export namespace Prisma {
   export const SKUProposalHeaderScalarFieldEnum: {
     id: 'id',
     version: 'version',
+    status: 'status',
     is_final_version: 'is_final_version',
     created_by: 'created_by',
     created_at: 'created_at',
@@ -36802,14 +35035,6 @@ export namespace Prisma {
   export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
 
 
-  export const QueryMode: {
-    default: 'default',
-    insensitive: 'insensitive'
-  };
-
-  export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
-
-
   export const NullsOrder: {
     first: 'first',
     last: 'last'
@@ -36824,16 +35049,9 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'Int'
+   * Reference to a field of type 'BigInt'
    */
-  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
-    
-
-
-  /**
-   * Reference to a field of type 'Int[]'
-   */
-  export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+  export type BigIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'BigInt'>
     
 
 
@@ -36841,13 +35059,6 @@ export namespace Prisma {
    * Reference to a field of type 'String'
    */
   export type StringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String'>
-    
-
-
-  /**
-   * Reference to a field of type 'String[]'
-   */
-  export type ListStringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String[]'>
     
 
 
@@ -36866,13 +35077,6 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'DateTime[]'
-   */
-  export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
-    
-
-
-  /**
    * Reference to a field of type 'Decimal'
    */
   export type DecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal'>
@@ -36880,9 +35084,9 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'Decimal[]'
+   * Reference to a field of type 'Int'
    */
-  export type ListDecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal[]'>
+  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
     
 
 
@@ -36890,13 +35094,6 @@ export namespace Prisma {
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
-    
-
-
-  /**
-   * Reference to a field of type 'Float[]'
-   */
-  export type ListFloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float[]'>
     
   /**
    * Deep Input Types
@@ -36907,14 +35104,16 @@ export namespace Prisma {
     AND?: UserWhereInput | UserWhereInput[]
     OR?: UserWhereInput[]
     NOT?: UserWhereInput | UserWhereInput[]
-    id?: IntFilter<"User"> | number
+    id?: BigIntFilter<"User"> | bigint | number
     email?: StringFilter<"User"> | string
     name?: StringFilter<"User"> | string
     password_hash?: StringFilter<"User"> | string
-    role_id?: IntFilter<"User"> | number
+    role_id?: BigIntFilter<"User"> | bigint | number
     is_active?: BoolFilter<"User"> | boolean
     created_at?: DateTimeFilter<"User"> | Date | string
     updated_at?: DateTimeFilter<"User"> | Date | string
+    store_access?: StringFilter<"User"> | string
+    brand_access?: StringFilter<"User"> | string
     role?: XOR<RoleRelationFilter, RoleWhereInput>
     created_budgets?: BudgetListRelationFilter
     created_allocate_headers?: AllocateHeaderListRelationFilter
@@ -36935,6 +35134,8 @@ export namespace Prisma {
     is_active?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
+    store_access?: SortOrder
+    brand_access?: SortOrder
     role?: RoleOrderByWithRelationInput
     created_budgets?: BudgetOrderByRelationAggregateInput
     created_allocate_headers?: AllocateHeaderOrderByRelationAggregateInput
@@ -36947,17 +35148,19 @@ export namespace Prisma {
   }
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     email?: string
     AND?: UserWhereInput | UserWhereInput[]
     OR?: UserWhereInput[]
     NOT?: UserWhereInput | UserWhereInput[]
     name?: StringFilter<"User"> | string
     password_hash?: StringFilter<"User"> | string
-    role_id?: IntFilter<"User"> | number
+    role_id?: BigIntFilter<"User"> | bigint | number
     is_active?: BoolFilter<"User"> | boolean
     created_at?: DateTimeFilter<"User"> | Date | string
     updated_at?: DateTimeFilter<"User"> | Date | string
+    store_access?: StringFilter<"User"> | string
+    brand_access?: StringFilter<"User"> | string
     role?: XOR<RoleRelationFilter, RoleWhereInput>
     created_budgets?: BudgetListRelationFilter
     created_allocate_headers?: AllocateHeaderListRelationFilter
@@ -36978,6 +35181,8 @@ export namespace Prisma {
     is_active?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
+    store_access?: SortOrder
+    brand_access?: SortOrder
     _count?: UserCountOrderByAggregateInput
     _avg?: UserAvgOrderByAggregateInput
     _max?: UserMaxOrderByAggregateInput
@@ -36989,28 +35194,30 @@ export namespace Prisma {
     AND?: UserScalarWhereWithAggregatesInput | UserScalarWhereWithAggregatesInput[]
     OR?: UserScalarWhereWithAggregatesInput[]
     NOT?: UserScalarWhereWithAggregatesInput | UserScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"User"> | number
+    id?: BigIntWithAggregatesFilter<"User"> | bigint | number
     email?: StringWithAggregatesFilter<"User"> | string
     name?: StringWithAggregatesFilter<"User"> | string
     password_hash?: StringWithAggregatesFilter<"User"> | string
-    role_id?: IntWithAggregatesFilter<"User"> | number
+    role_id?: BigIntWithAggregatesFilter<"User"> | bigint | number
     is_active?: BoolWithAggregatesFilter<"User"> | boolean
     created_at?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"User"> | Date | string
+    store_access?: StringWithAggregatesFilter<"User"> | string
+    brand_access?: StringWithAggregatesFilter<"User"> | string
   }
 
   export type RoleWhereInput = {
     AND?: RoleWhereInput | RoleWhereInput[]
     OR?: RoleWhereInput[]
     NOT?: RoleWhereInput | RoleWhereInput[]
-    id?: IntFilter<"Role"> | number
+    id?: BigIntFilter<"Role"> | bigint | number
     name?: StringFilter<"Role"> | string
     description?: StringNullableFilter<"Role"> | string | null
     permissions?: StringFilter<"Role"> | string
-    created_by?: IntNullableFilter<"Role"> | number | null
+    created_by?: BigIntNullableFilter<"Role"> | bigint | number | null
     created_at?: DateTimeFilter<"Role"> | Date | string
     updated_at?: DateTimeFilter<"Role"> | Date | string
-    updated_by?: IntNullableFilter<"Role"> | number | null
+    updated_by?: BigIntNullableFilter<"Role"> | bigint | number | null
     users?: UserListRelationFilter
   }
 
@@ -37027,19 +35234,19 @@ export namespace Prisma {
   }
 
   export type RoleWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: RoleWhereInput | RoleWhereInput[]
     OR?: RoleWhereInput[]
     NOT?: RoleWhereInput | RoleWhereInput[]
+    name?: StringFilter<"Role"> | string
     description?: StringNullableFilter<"Role"> | string | null
     permissions?: StringFilter<"Role"> | string
-    created_by?: IntNullableFilter<"Role"> | number | null
+    created_by?: BigIntNullableFilter<"Role"> | bigint | number | null
     created_at?: DateTimeFilter<"Role"> | Date | string
     updated_at?: DateTimeFilter<"Role"> | Date | string
-    updated_by?: IntNullableFilter<"Role"> | number | null
+    updated_by?: BigIntNullableFilter<"Role"> | bigint | number | null
     users?: UserListRelationFilter
-  }, "id" | "name">
+  }, "id">
 
   export type RoleOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37061,28 +35268,28 @@ export namespace Prisma {
     AND?: RoleScalarWhereWithAggregatesInput | RoleScalarWhereWithAggregatesInput[]
     OR?: RoleScalarWhereWithAggregatesInput[]
     NOT?: RoleScalarWhereWithAggregatesInput | RoleScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Role"> | number
+    id?: BigIntWithAggregatesFilter<"Role"> | bigint | number
     name?: StringWithAggregatesFilter<"Role"> | string
     description?: StringNullableWithAggregatesFilter<"Role"> | string | null
     permissions?: StringWithAggregatesFilter<"Role"> | string
-    created_by?: IntNullableWithAggregatesFilter<"Role"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Role"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Role"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Role"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Role"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Role"> | bigint | number | null
   }
 
   export type GroupBrandWhereInput = {
     AND?: GroupBrandWhereInput | GroupBrandWhereInput[]
     OR?: GroupBrandWhereInput[]
     NOT?: GroupBrandWhereInput | GroupBrandWhereInput[]
-    id?: IntFilter<"GroupBrand"> | number
+    id?: BigIntFilter<"GroupBrand"> | bigint | number
     code?: StringFilter<"GroupBrand"> | string
     name?: StringFilter<"GroupBrand"> | string
     is_active?: BoolFilter<"GroupBrand"> | boolean
-    created_by?: IntNullableFilter<"GroupBrand"> | number | null
+    created_by?: BigIntNullableFilter<"GroupBrand"> | bigint | number | null
     created_at?: DateTimeFilter<"GroupBrand"> | Date | string
     updated_at?: DateTimeFilter<"GroupBrand"> | Date | string
-    updated_by?: IntNullableFilter<"GroupBrand"> | number | null
+    updated_by?: BigIntNullableFilter<"GroupBrand"> | bigint | number | null
     brands?: BrandListRelationFilter
     approval_workflows?: ApprovalWorkflowListRelationFilter
   }
@@ -37101,20 +35308,20 @@ export namespace Prisma {
   }
 
   export type GroupBrandWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    code?: string
+    id?: bigint | number
     AND?: GroupBrandWhereInput | GroupBrandWhereInput[]
     OR?: GroupBrandWhereInput[]
     NOT?: GroupBrandWhereInput | GroupBrandWhereInput[]
+    code?: StringFilter<"GroupBrand"> | string
     name?: StringFilter<"GroupBrand"> | string
     is_active?: BoolFilter<"GroupBrand"> | boolean
-    created_by?: IntNullableFilter<"GroupBrand"> | number | null
+    created_by?: BigIntNullableFilter<"GroupBrand"> | bigint | number | null
     created_at?: DateTimeFilter<"GroupBrand"> | Date | string
     updated_at?: DateTimeFilter<"GroupBrand"> | Date | string
-    updated_by?: IntNullableFilter<"GroupBrand"> | number | null
+    updated_by?: BigIntNullableFilter<"GroupBrand"> | bigint | number | null
     brands?: BrandListRelationFilter
     approval_workflows?: ApprovalWorkflowListRelationFilter
-  }, "id" | "code">
+  }, "id">
 
   export type GroupBrandOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37136,29 +35343,29 @@ export namespace Prisma {
     AND?: GroupBrandScalarWhereWithAggregatesInput | GroupBrandScalarWhereWithAggregatesInput[]
     OR?: GroupBrandScalarWhereWithAggregatesInput[]
     NOT?: GroupBrandScalarWhereWithAggregatesInput | GroupBrandScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"GroupBrand"> | number
+    id?: BigIntWithAggregatesFilter<"GroupBrand"> | bigint | number
     code?: StringWithAggregatesFilter<"GroupBrand"> | string
     name?: StringWithAggregatesFilter<"GroupBrand"> | string
     is_active?: BoolWithAggregatesFilter<"GroupBrand"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"GroupBrand"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"GroupBrand"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"GroupBrand"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"GroupBrand"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"GroupBrand"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"GroupBrand"> | bigint | number | null
   }
 
   export type BrandWhereInput = {
     AND?: BrandWhereInput | BrandWhereInput[]
     OR?: BrandWhereInput[]
     NOT?: BrandWhereInput | BrandWhereInput[]
-    id?: IntFilter<"Brand"> | number
+    id?: BigIntFilter<"Brand"> | bigint | number
     code?: StringFilter<"Brand"> | string
     name?: StringFilter<"Brand"> | string
-    group_brand_id?: IntFilter<"Brand"> | number
+    group_brand_id?: BigIntFilter<"Brand"> | bigint | number
     is_active?: BoolFilter<"Brand"> | boolean
-    created_by?: IntNullableFilter<"Brand"> | number | null
+    created_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
     created_at?: DateTimeFilter<"Brand"> | Date | string
     updated_at?: DateTimeFilter<"Brand"> | Date | string
-    updated_by?: IntNullableFilter<"Brand"> | number | null
+    updated_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     products?: ProductListRelationFilter
     allocate_headers?: AllocateHeaderListRelationFilter
@@ -37180,22 +35387,22 @@ export namespace Prisma {
   }
 
   export type BrandWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    code?: string
+    id?: bigint | number
     AND?: BrandWhereInput | BrandWhereInput[]
     OR?: BrandWhereInput[]
     NOT?: BrandWhereInput | BrandWhereInput[]
+    code?: StringFilter<"Brand"> | string
     name?: StringFilter<"Brand"> | string
-    group_brand_id?: IntFilter<"Brand"> | number
+    group_brand_id?: BigIntFilter<"Brand"> | bigint | number
     is_active?: BoolFilter<"Brand"> | boolean
-    created_by?: IntNullableFilter<"Brand"> | number | null
+    created_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
     created_at?: DateTimeFilter<"Brand"> | Date | string
     updated_at?: DateTimeFilter<"Brand"> | Date | string
-    updated_by?: IntNullableFilter<"Brand"> | number | null
+    updated_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     products?: ProductListRelationFilter
     allocate_headers?: AllocateHeaderListRelationFilter
-  }, "id" | "code">
+  }, "id">
 
   export type BrandOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37218,31 +35425,31 @@ export namespace Prisma {
     AND?: BrandScalarWhereWithAggregatesInput | BrandScalarWhereWithAggregatesInput[]
     OR?: BrandScalarWhereWithAggregatesInput[]
     NOT?: BrandScalarWhereWithAggregatesInput | BrandScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Brand"> | number
+    id?: BigIntWithAggregatesFilter<"Brand"> | bigint | number
     code?: StringWithAggregatesFilter<"Brand"> | string
     name?: StringWithAggregatesFilter<"Brand"> | string
-    group_brand_id?: IntWithAggregatesFilter<"Brand"> | number
+    group_brand_id?: BigIntWithAggregatesFilter<"Brand"> | bigint | number
     is_active?: BoolWithAggregatesFilter<"Brand"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Brand"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Brand"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Brand"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Brand"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Brand"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Brand"> | bigint | number | null
   }
 
   export type StoreWhereInput = {
     AND?: StoreWhereInput | StoreWhereInput[]
     OR?: StoreWhereInput[]
     NOT?: StoreWhereInput | StoreWhereInput[]
-    id?: IntFilter<"Store"> | number
+    id?: BigIntFilter<"Store"> | bigint | number
     code?: StringFilter<"Store"> | string
     name?: StringFilter<"Store"> | string
     region?: StringNullableFilter<"Store"> | string | null
     location?: StringNullableFilter<"Store"> | string | null
     is_active?: BoolFilter<"Store"> | boolean
-    created_by?: IntNullableFilter<"Store"> | number | null
+    created_by?: BigIntNullableFilter<"Store"> | bigint | number | null
     created_at?: DateTimeFilter<"Store"> | Date | string
     updated_at?: DateTimeFilter<"Store"> | Date | string
-    updated_by?: IntNullableFilter<"Store"> | number | null
+    updated_by?: BigIntNullableFilter<"Store"> | bigint | number | null
     budget_allocates?: BudgetAllocateListRelationFilter
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
@@ -37267,24 +35474,24 @@ export namespace Prisma {
   }
 
   export type StoreWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    code?: string
+    id?: bigint | number
     AND?: StoreWhereInput | StoreWhereInput[]
     OR?: StoreWhereInput[]
     NOT?: StoreWhereInput | StoreWhereInput[]
+    code?: StringFilter<"Store"> | string
     name?: StringFilter<"Store"> | string
     region?: StringNullableFilter<"Store"> | string | null
     location?: StringNullableFilter<"Store"> | string | null
     is_active?: BoolFilter<"Store"> | boolean
-    created_by?: IntNullableFilter<"Store"> | number | null
+    created_by?: BigIntNullableFilter<"Store"> | bigint | number | null
     created_at?: DateTimeFilter<"Store"> | Date | string
     updated_at?: DateTimeFilter<"Store"> | Date | string
-    updated_by?: IntNullableFilter<"Store"> | number | null
+    updated_by?: BigIntNullableFilter<"Store"> | bigint | number | null
     budget_allocates?: BudgetAllocateListRelationFilter
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
     sku_allocates?: SKUAllocateListRelationFilter
-  }, "id" | "code">
+  }, "id">
 
   export type StoreOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37308,29 +35515,29 @@ export namespace Prisma {
     AND?: StoreScalarWhereWithAggregatesInput | StoreScalarWhereWithAggregatesInput[]
     OR?: StoreScalarWhereWithAggregatesInput[]
     NOT?: StoreScalarWhereWithAggregatesInput | StoreScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Store"> | number
+    id?: BigIntWithAggregatesFilter<"Store"> | bigint | number
     code?: StringWithAggregatesFilter<"Store"> | string
     name?: StringWithAggregatesFilter<"Store"> | string
     region?: StringNullableWithAggregatesFilter<"Store"> | string | null
     location?: StringNullableWithAggregatesFilter<"Store"> | string | null
     is_active?: BoolWithAggregatesFilter<"Store"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Store"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Store"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Store"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Store"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Store"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Store"> | bigint | number | null
   }
 
   export type CollectionWhereInput = {
     AND?: CollectionWhereInput | CollectionWhereInput[]
     OR?: CollectionWhereInput[]
     NOT?: CollectionWhereInput | CollectionWhereInput[]
-    id?: IntFilter<"Collection"> | number
+    id?: BigIntFilter<"Collection"> | bigint | number
     name?: StringFilter<"Collection"> | string
     is_active?: BoolFilter<"Collection"> | boolean
-    created_by?: IntNullableFilter<"Collection"> | number | null
+    created_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
     created_at?: DateTimeFilter<"Collection"> | Date | string
     updated_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_by?: IntNullableFilter<"Collection"> | number | null
+    updated_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
   }
 
@@ -37346,18 +35553,18 @@ export namespace Prisma {
   }
 
   export type CollectionWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: CollectionWhereInput | CollectionWhereInput[]
     OR?: CollectionWhereInput[]
     NOT?: CollectionWhereInput | CollectionWhereInput[]
+    name?: StringFilter<"Collection"> | string
     is_active?: BoolFilter<"Collection"> | boolean
-    created_by?: IntNullableFilter<"Collection"> | number | null
+    created_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
     created_at?: DateTimeFilter<"Collection"> | Date | string
     updated_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_by?: IntNullableFilter<"Collection"> | number | null
+    updated_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
-  }, "id" | "name">
+  }, "id">
 
   export type CollectionOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37378,26 +35585,26 @@ export namespace Prisma {
     AND?: CollectionScalarWhereWithAggregatesInput | CollectionScalarWhereWithAggregatesInput[]
     OR?: CollectionScalarWhereWithAggregatesInput[]
     NOT?: CollectionScalarWhereWithAggregatesInput | CollectionScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Collection"> | number
+    id?: BigIntWithAggregatesFilter<"Collection"> | bigint | number
     name?: StringWithAggregatesFilter<"Collection"> | string
     is_active?: BoolWithAggregatesFilter<"Collection"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Collection"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Collection"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Collection"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Collection"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Collection"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Collection"> | bigint | number | null
   }
 
   export type SeasonGroupWhereInput = {
     AND?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
     OR?: SeasonGroupWhereInput[]
     NOT?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
-    id?: IntFilter<"SeasonGroup"> | number
+    id?: BigIntFilter<"SeasonGroup"> | bigint | number
     name?: StringFilter<"SeasonGroup"> | string
     is_active?: BoolFilter<"SeasonGroup"> | boolean
-    created_by?: IntNullableFilter<"SeasonGroup"> | number | null
+    created_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeFilter<"SeasonGroup"> | Date | string
     updated_at?: DateTimeFilter<"SeasonGroup"> | Date | string
-    updated_by?: IntNullableFilter<"SeasonGroup"> | number | null
+    updated_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     seasons?: SeasonListRelationFilter
     budget_allocates?: BudgetAllocateListRelationFilter
   }
@@ -37415,19 +35622,19 @@ export namespace Prisma {
   }
 
   export type SeasonGroupWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
     OR?: SeasonGroupWhereInput[]
     NOT?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
+    name?: StringFilter<"SeasonGroup"> | string
     is_active?: BoolFilter<"SeasonGroup"> | boolean
-    created_by?: IntNullableFilter<"SeasonGroup"> | number | null
+    created_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeFilter<"SeasonGroup"> | Date | string
     updated_at?: DateTimeFilter<"SeasonGroup"> | Date | string
-    updated_by?: IntNullableFilter<"SeasonGroup"> | number | null
+    updated_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     seasons?: SeasonListRelationFilter
     budget_allocates?: BudgetAllocateListRelationFilter
-  }, "id" | "name">
+  }, "id">
 
   export type SeasonGroupOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37448,27 +35655,27 @@ export namespace Prisma {
     AND?: SeasonGroupScalarWhereWithAggregatesInput | SeasonGroupScalarWhereWithAggregatesInput[]
     OR?: SeasonGroupScalarWhereWithAggregatesInput[]
     NOT?: SeasonGroupScalarWhereWithAggregatesInput | SeasonGroupScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SeasonGroup"> | number
+    id?: BigIntWithAggregatesFilter<"SeasonGroup"> | bigint | number
     name?: StringWithAggregatesFilter<"SeasonGroup"> | string
     is_active?: BoolWithAggregatesFilter<"SeasonGroup"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"SeasonGroup"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SeasonGroup"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SeasonGroup"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SeasonGroup"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SeasonGroup"> | bigint | number | null
   }
 
   export type SeasonWhereInput = {
     AND?: SeasonWhereInput | SeasonWhereInput[]
     OR?: SeasonWhereInput[]
     NOT?: SeasonWhereInput | SeasonWhereInput[]
-    id?: IntFilter<"Season"> | number
+    id?: BigIntFilter<"Season"> | bigint | number
     name?: StringFilter<"Season"> | string
-    season_group_id?: IntFilter<"Season"> | number
+    season_group_id?: BigIntFilter<"Season"> | bigint | number
     is_active?: BoolFilter<"Season"> | boolean
-    created_by?: IntNullableFilter<"Season"> | number | null
+    created_by?: BigIntNullableFilter<"Season"> | bigint | number | null
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
-    updated_by?: IntNullableFilter<"Season"> | number | null
+    updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
   }
@@ -37487,20 +35694,20 @@ export namespace Prisma {
   }
 
   export type SeasonWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: SeasonWhereInput | SeasonWhereInput[]
     OR?: SeasonWhereInput[]
     NOT?: SeasonWhereInput | SeasonWhereInput[]
-    season_group_id?: IntFilter<"Season"> | number
+    name?: StringFilter<"Season"> | string
+    season_group_id?: BigIntFilter<"Season"> | bigint | number
     is_active?: BoolFilter<"Season"> | boolean
-    created_by?: IntNullableFilter<"Season"> | number | null
+    created_by?: BigIntNullableFilter<"Season"> | bigint | number | null
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
-    updated_by?: IntNullableFilter<"Season"> | number | null
+    updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
-  }, "id" | "name">
+  }, "id">
 
   export type SeasonOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37522,27 +35729,27 @@ export namespace Prisma {
     AND?: SeasonScalarWhereWithAggregatesInput | SeasonScalarWhereWithAggregatesInput[]
     OR?: SeasonScalarWhereWithAggregatesInput[]
     NOT?: SeasonScalarWhereWithAggregatesInput | SeasonScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Season"> | number
+    id?: BigIntWithAggregatesFilter<"Season"> | bigint | number
     name?: StringWithAggregatesFilter<"Season"> | string
-    season_group_id?: IntWithAggregatesFilter<"Season"> | number
+    season_group_id?: BigIntWithAggregatesFilter<"Season"> | bigint | number
     is_active?: BoolWithAggregatesFilter<"Season"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Season"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Season"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Season"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Season"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Season"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Season"> | bigint | number | null
   }
 
   export type GenderWhereInput = {
     AND?: GenderWhereInput | GenderWhereInput[]
     OR?: GenderWhereInput[]
     NOT?: GenderWhereInput | GenderWhereInput[]
-    id?: IntFilter<"Gender"> | number
+    id?: BigIntFilter<"Gender"> | bigint | number
     name?: StringFilter<"Gender"> | string
     is_active?: BoolFilter<"Gender"> | boolean
-    created_by?: IntNullableFilter<"Gender"> | number | null
+    created_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     created_at?: DateTimeFilter<"Gender"> | Date | string
     updated_at?: DateTimeFilter<"Gender"> | Date | string
-    updated_by?: IntNullableFilter<"Gender"> | number | null
+    updated_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     categories?: CategoryListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
   }
@@ -37560,19 +35767,19 @@ export namespace Prisma {
   }
 
   export type GenderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: GenderWhereInput | GenderWhereInput[]
     OR?: GenderWhereInput[]
     NOT?: GenderWhereInput | GenderWhereInput[]
+    name?: StringFilter<"Gender"> | string
     is_active?: BoolFilter<"Gender"> | boolean
-    created_by?: IntNullableFilter<"Gender"> | number | null
+    created_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     created_at?: DateTimeFilter<"Gender"> | Date | string
     updated_at?: DateTimeFilter<"Gender"> | Date | string
-    updated_by?: IntNullableFilter<"Gender"> | number | null
+    updated_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     categories?: CategoryListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
-  }, "id" | "name">
+  }, "id">
 
   export type GenderOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37593,27 +35800,27 @@ export namespace Prisma {
     AND?: GenderScalarWhereWithAggregatesInput | GenderScalarWhereWithAggregatesInput[]
     OR?: GenderScalarWhereWithAggregatesInput[]
     NOT?: GenderScalarWhereWithAggregatesInput | GenderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Gender"> | number
+    id?: BigIntWithAggregatesFilter<"Gender"> | bigint | number
     name?: StringWithAggregatesFilter<"Gender"> | string
     is_active?: BoolWithAggregatesFilter<"Gender"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Gender"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Gender"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Gender"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Gender"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Gender"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Gender"> | bigint | number | null
   }
 
   export type CategoryWhereInput = {
     AND?: CategoryWhereInput | CategoryWhereInput[]
     OR?: CategoryWhereInput[]
     NOT?: CategoryWhereInput | CategoryWhereInput[]
-    id?: IntFilter<"Category"> | number
+    id?: BigIntFilter<"Category"> | bigint | number
     name?: StringFilter<"Category"> | string
-    gender_id?: IntFilter<"Category"> | number
+    gender_id?: BigIntFilter<"Category"> | bigint | number
     is_active?: BoolFilter<"Category"> | boolean
-    created_by?: IntNullableFilter<"Category"> | number | null
+    created_by?: BigIntNullableFilter<"Category"> | bigint | number | null
     created_at?: DateTimeFilter<"Category"> | Date | string
     updated_at?: DateTimeFilter<"Category"> | Date | string
-    updated_by?: IntNullableFilter<"Category"> | number | null
+    updated_by?: BigIntNullableFilter<"Category"> | bigint | number | null
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     sub_categories?: SubCategoryListRelationFilter
   }
@@ -37632,17 +35839,17 @@ export namespace Prisma {
   }
 
   export type CategoryWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: CategoryWhereInput | CategoryWhereInput[]
     OR?: CategoryWhereInput[]
     NOT?: CategoryWhereInput | CategoryWhereInput[]
     name?: StringFilter<"Category"> | string
-    gender_id?: IntFilter<"Category"> | number
+    gender_id?: BigIntFilter<"Category"> | bigint | number
     is_active?: BoolFilter<"Category"> | boolean
-    created_by?: IntNullableFilter<"Category"> | number | null
+    created_by?: BigIntNullableFilter<"Category"> | bigint | number | null
     created_at?: DateTimeFilter<"Category"> | Date | string
     updated_at?: DateTimeFilter<"Category"> | Date | string
-    updated_by?: IntNullableFilter<"Category"> | number | null
+    updated_by?: BigIntNullableFilter<"Category"> | bigint | number | null
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     sub_categories?: SubCategoryListRelationFilter
   }, "id">
@@ -37667,28 +35874,28 @@ export namespace Prisma {
     AND?: CategoryScalarWhereWithAggregatesInput | CategoryScalarWhereWithAggregatesInput[]
     OR?: CategoryScalarWhereWithAggregatesInput[]
     NOT?: CategoryScalarWhereWithAggregatesInput | CategoryScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Category"> | number
+    id?: BigIntWithAggregatesFilter<"Category"> | bigint | number
     name?: StringWithAggregatesFilter<"Category"> | string
-    gender_id?: IntWithAggregatesFilter<"Category"> | number
+    gender_id?: BigIntWithAggregatesFilter<"Category"> | bigint | number
     is_active?: BoolWithAggregatesFilter<"Category"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Category"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Category"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Category"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Category"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Category"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Category"> | bigint | number | null
   }
 
   export type SubCategoryWhereInput = {
     AND?: SubCategoryWhereInput | SubCategoryWhereInput[]
     OR?: SubCategoryWhereInput[]
     NOT?: SubCategoryWhereInput | SubCategoryWhereInput[]
-    id?: IntFilter<"SubCategory"> | number
+    id?: BigIntFilter<"SubCategory"> | bigint | number
     name?: StringFilter<"SubCategory"> | string
-    category_id?: IntFilter<"SubCategory"> | number
+    category_id?: BigIntFilter<"SubCategory"> | bigint | number
     is_active?: BoolFilter<"SubCategory"> | boolean
-    created_by?: IntNullableFilter<"SubCategory"> | number | null
+    created_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"SubCategory"> | Date | string
     updated_at?: DateTimeFilter<"SubCategory"> | Date | string
-    updated_by?: IntNullableFilter<"SubCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
     category?: XOR<CategoryRelationFilter, CategoryWhereInput>
     products?: ProductListRelationFilter
     subcategory_sizes?: SubcategorySizeListRelationFilter
@@ -37711,17 +35918,17 @@ export namespace Prisma {
   }
 
   export type SubCategoryWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: SubCategoryWhereInput | SubCategoryWhereInput[]
     OR?: SubCategoryWhereInput[]
     NOT?: SubCategoryWhereInput | SubCategoryWhereInput[]
     name?: StringFilter<"SubCategory"> | string
-    category_id?: IntFilter<"SubCategory"> | number
+    category_id?: BigIntFilter<"SubCategory"> | bigint | number
     is_active?: BoolFilter<"SubCategory"> | boolean
-    created_by?: IntNullableFilter<"SubCategory"> | number | null
+    created_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"SubCategory"> | Date | string
     updated_at?: DateTimeFilter<"SubCategory"> | Date | string
-    updated_by?: IntNullableFilter<"SubCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
     category?: XOR<CategoryRelationFilter, CategoryWhereInput>
     products?: ProductListRelationFilter
     subcategory_sizes?: SubcategorySizeListRelationFilter
@@ -37748,27 +35955,27 @@ export namespace Prisma {
     AND?: SubCategoryScalarWhereWithAggregatesInput | SubCategoryScalarWhereWithAggregatesInput[]
     OR?: SubCategoryScalarWhereWithAggregatesInput[]
     NOT?: SubCategoryScalarWhereWithAggregatesInput | SubCategoryScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SubCategory"> | number
+    id?: BigIntWithAggregatesFilter<"SubCategory"> | bigint | number
     name?: StringWithAggregatesFilter<"SubCategory"> | string
-    category_id?: IntWithAggregatesFilter<"SubCategory"> | number
+    category_id?: BigIntWithAggregatesFilter<"SubCategory"> | bigint | number
     is_active?: BoolWithAggregatesFilter<"SubCategory"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"SubCategory"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"SubCategory"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SubCategory"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SubCategory"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SubCategory"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SubCategory"> | bigint | number | null
   }
 
   export type SubcategorySizeWhereInput = {
     AND?: SubcategorySizeWhereInput | SubcategorySizeWhereInput[]
     OR?: SubcategorySizeWhereInput[]
     NOT?: SubcategorySizeWhereInput | SubcategorySizeWhereInput[]
-    id?: IntFilter<"SubcategorySize"> | number
+    id?: BigIntFilter<"SubcategorySize"> | bigint | number
     name?: StringFilter<"SubcategorySize"> | string
-    sub_category_id?: IntFilter<"SubcategorySize"> | number
-    created_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    sub_category_id?: BigIntFilter<"SubcategorySize"> | bigint | number
+    created_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
     created_at?: DateTimeFilter<"SubcategorySize"> | Date | string
     updated_at?: DateTimeFilter<"SubcategorySize"> | Date | string
-    updated_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    updated_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
     sub_category?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     proposal_sizings?: ProposalSizingListRelationFilter
   }
@@ -37786,16 +35993,16 @@ export namespace Prisma {
   }
 
   export type SubcategorySizeWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: SubcategorySizeWhereInput | SubcategorySizeWhereInput[]
     OR?: SubcategorySizeWhereInput[]
     NOT?: SubcategorySizeWhereInput | SubcategorySizeWhereInput[]
     name?: StringFilter<"SubcategorySize"> | string
-    sub_category_id?: IntFilter<"SubcategorySize"> | number
-    created_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    sub_category_id?: BigIntFilter<"SubcategorySize"> | bigint | number
+    created_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
     created_at?: DateTimeFilter<"SubcategorySize"> | Date | string
     updated_at?: DateTimeFilter<"SubcategorySize"> | Date | string
-    updated_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    updated_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
     sub_category?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     proposal_sizings?: ProposalSizingListRelationFilter
   }, "id">
@@ -37819,24 +36026,24 @@ export namespace Prisma {
     AND?: SubcategorySizeScalarWhereWithAggregatesInput | SubcategorySizeScalarWhereWithAggregatesInput[]
     OR?: SubcategorySizeScalarWhereWithAggregatesInput[]
     NOT?: SubcategorySizeScalarWhereWithAggregatesInput | SubcategorySizeScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SubcategorySize"> | number
+    id?: BigIntWithAggregatesFilter<"SubcategorySize"> | bigint | number
     name?: StringWithAggregatesFilter<"SubcategorySize"> | string
-    sub_category_id?: IntWithAggregatesFilter<"SubcategorySize"> | number
-    created_by?: IntNullableWithAggregatesFilter<"SubcategorySize"> | number | null
+    sub_category_id?: BigIntWithAggregatesFilter<"SubcategorySize"> | bigint | number
+    created_by?: BigIntNullableWithAggregatesFilter<"SubcategorySize"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SubcategorySize"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SubcategorySize"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SubcategorySize"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SubcategorySize"> | bigint | number | null
   }
 
   export type ProductWhereInput = {
     AND?: ProductWhereInput | ProductWhereInput[]
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
-    id?: IntFilter<"Product"> | number
+    id?: BigIntFilter<"Product"> | bigint | number
     sku_code?: StringFilter<"Product"> | string
     product_name?: StringFilter<"Product"> | string
-    sub_category_id?: IntFilter<"Product"> | number
-    brand_id?: IntNullableFilter<"Product"> | number | null
+    sub_category_id?: BigIntFilter<"Product"> | bigint | number
+    brand_id?: BigIntNullableFilter<"Product"> | bigint | number | null
     family?: StringNullableFilter<"Product"> | string | null
     theme?: StringNullableFilter<"Product"> | string | null
     color?: StringNullableFilter<"Product"> | string | null
@@ -37844,10 +36051,10 @@ export namespace Prisma {
     srp?: DecimalFilter<"Product"> | Decimal | DecimalJsLike | number | string
     image_url?: StringNullableFilter<"Product"> | string | null
     is_active?: BoolFilter<"Product"> | boolean
-    created_by?: IntNullableFilter<"Product"> | number | null
+    created_by?: BigIntNullableFilter<"Product"> | bigint | number | null
     created_at?: DateTimeFilter<"Product"> | Date | string
     updated_at?: DateTimeFilter<"Product"> | Date | string
-    updated_by?: IntNullableFilter<"Product"> | number | null
+    updated_by?: BigIntNullableFilter<"Product"> | bigint | number | null
     brand?: XOR<BrandNullableRelationFilter, BrandWhereInput> | null
     sub_category?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
@@ -37876,14 +36083,14 @@ export namespace Prisma {
   }
 
   export type ProductWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    sku_code?: string
+    id?: bigint | number
     AND?: ProductWhereInput | ProductWhereInput[]
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
+    sku_code?: StringFilter<"Product"> | string
     product_name?: StringFilter<"Product"> | string
-    sub_category_id?: IntFilter<"Product"> | number
-    brand_id?: IntNullableFilter<"Product"> | number | null
+    sub_category_id?: BigIntFilter<"Product"> | bigint | number
+    brand_id?: BigIntNullableFilter<"Product"> | bigint | number | null
     family?: StringNullableFilter<"Product"> | string | null
     theme?: StringNullableFilter<"Product"> | string | null
     color?: StringNullableFilter<"Product"> | string | null
@@ -37891,14 +36098,14 @@ export namespace Prisma {
     srp?: DecimalFilter<"Product"> | Decimal | DecimalJsLike | number | string
     image_url?: StringNullableFilter<"Product"> | string | null
     is_active?: BoolFilter<"Product"> | boolean
-    created_by?: IntNullableFilter<"Product"> | number | null
+    created_by?: BigIntNullableFilter<"Product"> | bigint | number | null
     created_at?: DateTimeFilter<"Product"> | Date | string
     updated_at?: DateTimeFilter<"Product"> | Date | string
-    updated_by?: IntNullableFilter<"Product"> | number | null
+    updated_by?: BigIntNullableFilter<"Product"> | bigint | number | null
     brand?: XOR<BrandNullableRelationFilter, BrandWhereInput> | null
     sub_category?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
-  }, "id" | "sku_code">
+  }, "id">
 
   export type ProductOrderByWithAggregationInput = {
     id?: SortOrder
@@ -37928,11 +36135,11 @@ export namespace Prisma {
     AND?: ProductScalarWhereWithAggregatesInput | ProductScalarWhereWithAggregatesInput[]
     OR?: ProductScalarWhereWithAggregatesInput[]
     NOT?: ProductScalarWhereWithAggregatesInput | ProductScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Product"> | number
+    id?: BigIntWithAggregatesFilter<"Product"> | bigint | number
     sku_code?: StringWithAggregatesFilter<"Product"> | string
     product_name?: StringWithAggregatesFilter<"Product"> | string
-    sub_category_id?: IntWithAggregatesFilter<"Product"> | number
-    brand_id?: IntNullableWithAggregatesFilter<"Product"> | number | null
+    sub_category_id?: BigIntWithAggregatesFilter<"Product"> | bigint | number
+    brand_id?: BigIntNullableWithAggregatesFilter<"Product"> | bigint | number | null
     family?: StringNullableWithAggregatesFilter<"Product"> | string | null
     theme?: StringNullableWithAggregatesFilter<"Product"> | string | null
     color?: StringNullableWithAggregatesFilter<"Product"> | string | null
@@ -37940,26 +36147,26 @@ export namespace Prisma {
     srp?: DecimalWithAggregatesFilter<"Product"> | Decimal | DecimalJsLike | number | string
     image_url?: StringNullableWithAggregatesFilter<"Product"> | string | null
     is_active?: BoolWithAggregatesFilter<"Product"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"Product"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"Product"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"Product"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Product"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Product"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Product"> | bigint | number | null
   }
 
   export type BudgetWhereInput = {
     AND?: BudgetWhereInput | BudgetWhereInput[]
     OR?: BudgetWhereInput[]
     NOT?: BudgetWhereInput | BudgetWhereInput[]
-    id?: IntFilter<"Budget"> | number
+    id?: BigIntFilter<"Budget"> | bigint | number
     name?: StringFilter<"Budget"> | string
     amount?: DecimalFilter<"Budget"> | Decimal | DecimalJsLike | number | string
     description?: StringNullableFilter<"Budget"> | string | null
     status?: StringFilter<"Budget"> | string
     fiscal_year?: IntFilter<"Budget"> | number
-    created_by?: IntFilter<"Budget"> | number
+    created_by?: BigIntFilter<"Budget"> | bigint | number
     created_at?: DateTimeFilter<"Budget"> | Date | string
     updated_at?: DateTimeFilter<"Budget"> | Date | string
-    updated_by?: IntNullableFilter<"Budget"> | number | null
+    updated_by?: BigIntNullableFilter<"Budget"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     allocate_headers?: AllocateHeaderListRelationFilter
   }
@@ -37980,7 +36187,7 @@ export namespace Prisma {
   }
 
   export type BudgetWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: BudgetWhereInput | BudgetWhereInput[]
     OR?: BudgetWhereInput[]
     NOT?: BudgetWhereInput | BudgetWhereInput[]
@@ -37989,10 +36196,10 @@ export namespace Prisma {
     description?: StringNullableFilter<"Budget"> | string | null
     status?: StringFilter<"Budget"> | string
     fiscal_year?: IntFilter<"Budget"> | number
-    created_by?: IntFilter<"Budget"> | number
+    created_by?: BigIntFilter<"Budget"> | bigint | number
     created_at?: DateTimeFilter<"Budget"> | Date | string
     updated_at?: DateTimeFilter<"Budget"> | Date | string
-    updated_by?: IntNullableFilter<"Budget"> | number | null
+    updated_by?: BigIntNullableFilter<"Budget"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     allocate_headers?: AllocateHeaderListRelationFilter
   }, "id">
@@ -38019,35 +36226,36 @@ export namespace Prisma {
     AND?: BudgetScalarWhereWithAggregatesInput | BudgetScalarWhereWithAggregatesInput[]
     OR?: BudgetScalarWhereWithAggregatesInput[]
     NOT?: BudgetScalarWhereWithAggregatesInput | BudgetScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Budget"> | number
+    id?: BigIntWithAggregatesFilter<"Budget"> | bigint | number
     name?: StringWithAggregatesFilter<"Budget"> | string
     amount?: DecimalWithAggregatesFilter<"Budget"> | Decimal | DecimalJsLike | number | string
     description?: StringNullableWithAggregatesFilter<"Budget"> | string | null
     status?: StringWithAggregatesFilter<"Budget"> | string
     fiscal_year?: IntWithAggregatesFilter<"Budget"> | number
-    created_by?: IntWithAggregatesFilter<"Budget"> | number
+    created_by?: BigIntWithAggregatesFilter<"Budget"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"Budget"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Budget"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Budget"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Budget"> | bigint | number | null
   }
 
   export type AllocateHeaderWhereInput = {
     AND?: AllocateHeaderWhereInput | AllocateHeaderWhereInput[]
     OR?: AllocateHeaderWhereInput[]
     NOT?: AllocateHeaderWhereInput | AllocateHeaderWhereInput[]
-    id?: IntFilter<"AllocateHeader"> | number
-    budget_id?: IntFilter<"AllocateHeader"> | number
-    brand_id?: IntFilter<"AllocateHeader"> | number
+    id?: BigIntFilter<"AllocateHeader"> | bigint | number
+    budget_id?: BigIntFilter<"AllocateHeader"> | bigint | number
+    brand_id?: BigIntFilter<"AllocateHeader"> | bigint | number
     version?: IntFilter<"AllocateHeader"> | number
     is_final_version?: BoolFilter<"AllocateHeader"> | boolean
-    created_by?: IntFilter<"AllocateHeader"> | number
+    created_by?: BigIntFilter<"AllocateHeader"> | bigint | number
     created_at?: DateTimeFilter<"AllocateHeader"> | Date | string
     updated_at?: DateTimeFilter<"AllocateHeader"> | Date | string
-    updated_by?: IntNullableFilter<"AllocateHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"AllocateHeader"> | bigint | number | null
     budget?: XOR<BudgetRelationFilter, BudgetWhereInput>
     brand?: XOR<BrandRelationFilter, BrandWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
+    planning_headers?: PlanningHeaderListRelationFilter
   }
 
   export type AllocateHeaderOrderByWithRelationInput = {
@@ -38064,25 +36272,27 @@ export namespace Prisma {
     brand?: BrandOrderByWithRelationInput
     creator?: UserOrderByWithRelationInput
     budget_allocates?: BudgetAllocateOrderByRelationAggregateInput
+    planning_headers?: PlanningHeaderOrderByRelationAggregateInput
   }
 
   export type AllocateHeaderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: AllocateHeaderWhereInput | AllocateHeaderWhereInput[]
     OR?: AllocateHeaderWhereInput[]
     NOT?: AllocateHeaderWhereInput | AllocateHeaderWhereInput[]
-    budget_id?: IntFilter<"AllocateHeader"> | number
-    brand_id?: IntFilter<"AllocateHeader"> | number
+    budget_id?: BigIntFilter<"AllocateHeader"> | bigint | number
+    brand_id?: BigIntFilter<"AllocateHeader"> | bigint | number
     version?: IntFilter<"AllocateHeader"> | number
     is_final_version?: BoolFilter<"AllocateHeader"> | boolean
-    created_by?: IntFilter<"AllocateHeader"> | number
+    created_by?: BigIntFilter<"AllocateHeader"> | bigint | number
     created_at?: DateTimeFilter<"AllocateHeader"> | Date | string
     updated_at?: DateTimeFilter<"AllocateHeader"> | Date | string
-    updated_by?: IntNullableFilter<"AllocateHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"AllocateHeader"> | bigint | number | null
     budget?: XOR<BudgetRelationFilter, BudgetWhereInput>
     brand?: XOR<BrandRelationFilter, BrandWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
+    planning_headers?: PlanningHeaderListRelationFilter
   }, "id">
 
   export type AllocateHeaderOrderByWithAggregationInput = {
@@ -38106,31 +36316,31 @@ export namespace Prisma {
     AND?: AllocateHeaderScalarWhereWithAggregatesInput | AllocateHeaderScalarWhereWithAggregatesInput[]
     OR?: AllocateHeaderScalarWhereWithAggregatesInput[]
     NOT?: AllocateHeaderScalarWhereWithAggregatesInput | AllocateHeaderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"AllocateHeader"> | number
-    budget_id?: IntWithAggregatesFilter<"AllocateHeader"> | number
-    brand_id?: IntWithAggregatesFilter<"AllocateHeader"> | number
+    id?: BigIntWithAggregatesFilter<"AllocateHeader"> | bigint | number
+    budget_id?: BigIntWithAggregatesFilter<"AllocateHeader"> | bigint | number
+    brand_id?: BigIntWithAggregatesFilter<"AllocateHeader"> | bigint | number
     version?: IntWithAggregatesFilter<"AllocateHeader"> | number
     is_final_version?: BoolWithAggregatesFilter<"AllocateHeader"> | boolean
-    created_by?: IntWithAggregatesFilter<"AllocateHeader"> | number
+    created_by?: BigIntWithAggregatesFilter<"AllocateHeader"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"AllocateHeader"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"AllocateHeader"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"AllocateHeader"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"AllocateHeader"> | bigint | number | null
   }
 
   export type BudgetAllocateWhereInput = {
     AND?: BudgetAllocateWhereInput | BudgetAllocateWhereInput[]
     OR?: BudgetAllocateWhereInput[]
     NOT?: BudgetAllocateWhereInput | BudgetAllocateWhereInput[]
-    id?: IntFilter<"BudgetAllocate"> | number
-    allocate_header_id?: IntFilter<"BudgetAllocate"> | number
-    store_id?: IntFilter<"BudgetAllocate"> | number
-    season_group_id?: IntFilter<"BudgetAllocate"> | number
-    season_id?: IntFilter<"BudgetAllocate"> | number
+    id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    allocate_header_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    store_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_group_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
     budget_amount?: DecimalFilter<"BudgetAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
     updated_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
     allocate_header?: XOR<AllocateHeaderRelationFilter, AllocateHeaderWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
@@ -38157,19 +36367,19 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: BudgetAllocateWhereInput | BudgetAllocateWhereInput[]
     OR?: BudgetAllocateWhereInput[]
     NOT?: BudgetAllocateWhereInput | BudgetAllocateWhereInput[]
-    allocate_header_id?: IntFilter<"BudgetAllocate"> | number
-    store_id?: IntFilter<"BudgetAllocate"> | number
-    season_group_id?: IntFilter<"BudgetAllocate"> | number
-    season_id?: IntFilter<"BudgetAllocate"> | number
+    allocate_header_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    store_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_group_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
     budget_amount?: DecimalFilter<"BudgetAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
     updated_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
     allocate_header?: XOR<AllocateHeaderRelationFilter, AllocateHeaderWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
@@ -38199,30 +36409,33 @@ export namespace Prisma {
     AND?: BudgetAllocateScalarWhereWithAggregatesInput | BudgetAllocateScalarWhereWithAggregatesInput[]
     OR?: BudgetAllocateScalarWhereWithAggregatesInput[]
     NOT?: BudgetAllocateScalarWhereWithAggregatesInput | BudgetAllocateScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"BudgetAllocate"> | number
-    allocate_header_id?: IntWithAggregatesFilter<"BudgetAllocate"> | number
-    store_id?: IntWithAggregatesFilter<"BudgetAllocate"> | number
-    season_group_id?: IntWithAggregatesFilter<"BudgetAllocate"> | number
-    season_id?: IntWithAggregatesFilter<"BudgetAllocate"> | number
+    id?: BigIntWithAggregatesFilter<"BudgetAllocate"> | bigint | number
+    allocate_header_id?: BigIntWithAggregatesFilter<"BudgetAllocate"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"BudgetAllocate"> | bigint | number
+    season_group_id?: BigIntWithAggregatesFilter<"BudgetAllocate"> | bigint | number
+    season_id?: BigIntWithAggregatesFilter<"BudgetAllocate"> | bigint | number
     budget_amount?: DecimalWithAggregatesFilter<"BudgetAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"BudgetAllocate"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"BudgetAllocate"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"BudgetAllocate"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"BudgetAllocate"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"BudgetAllocate"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"BudgetAllocate"> | bigint | number | null
   }
 
   export type PlanningHeaderWhereInput = {
     AND?: PlanningHeaderWhereInput | PlanningHeaderWhereInput[]
     OR?: PlanningHeaderWhereInput[]
     NOT?: PlanningHeaderWhereInput | PlanningHeaderWhereInput[]
-    id?: IntFilter<"PlanningHeader"> | number
+    id?: BigIntFilter<"PlanningHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
     version?: IntFilter<"PlanningHeader"> | number
+    status?: StringFilter<"PlanningHeader"> | string
     is_final_version?: BoolFilter<"PlanningHeader"> | boolean
-    created_by?: IntFilter<"PlanningHeader"> | number
+    created_by?: BigIntFilter<"PlanningHeader"> | bigint | number
     created_at?: DateTimeFilter<"PlanningHeader"> | Date | string
     updated_at?: DateTimeFilter<"PlanningHeader"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
+    allocate_header?: XOR<AllocateHeaderNullableRelationFilter, AllocateHeaderWhereInput> | null
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
     planning_categories?: PlanningCategoryListRelationFilter
@@ -38230,30 +36443,36 @@ export namespace Prisma {
 
   export type PlanningHeaderOrderByWithRelationInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrderInput | SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
     creator?: UserOrderByWithRelationInput
+    allocate_header?: AllocateHeaderOrderByWithRelationInput
     planning_collections?: PlanningCollectionOrderByRelationAggregateInput
     planning_genders?: PlanningGenderOrderByRelationAggregateInput
     planning_categories?: PlanningCategoryOrderByRelationAggregateInput
   }
 
   export type PlanningHeaderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: PlanningHeaderWhereInput | PlanningHeaderWhereInput[]
     OR?: PlanningHeaderWhereInput[]
     NOT?: PlanningHeaderWhereInput | PlanningHeaderWhereInput[]
+    allocate_header_id?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
     version?: IntFilter<"PlanningHeader"> | number
+    status?: StringFilter<"PlanningHeader"> | string
     is_final_version?: BoolFilter<"PlanningHeader"> | boolean
-    created_by?: IntFilter<"PlanningHeader"> | number
+    created_by?: BigIntFilter<"PlanningHeader"> | bigint | number
     created_at?: DateTimeFilter<"PlanningHeader"> | Date | string
     updated_at?: DateTimeFilter<"PlanningHeader"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
+    allocate_header?: XOR<AllocateHeaderNullableRelationFilter, AllocateHeaderWhereInput> | null
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
     planning_categories?: PlanningCategoryListRelationFilter
@@ -38261,7 +36480,9 @@ export namespace Prisma {
 
   export type PlanningHeaderOrderByWithAggregationInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrderInput | SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -38278,23 +36499,25 @@ export namespace Prisma {
     AND?: PlanningHeaderScalarWhereWithAggregatesInput | PlanningHeaderScalarWhereWithAggregatesInput[]
     OR?: PlanningHeaderScalarWhereWithAggregatesInput[]
     NOT?: PlanningHeaderScalarWhereWithAggregatesInput | PlanningHeaderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"PlanningHeader"> | number
+    id?: BigIntWithAggregatesFilter<"PlanningHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableWithAggregatesFilter<"PlanningHeader"> | bigint | number | null
     version?: IntWithAggregatesFilter<"PlanningHeader"> | number
+    status?: StringWithAggregatesFilter<"PlanningHeader"> | string
     is_final_version?: BoolWithAggregatesFilter<"PlanningHeader"> | boolean
-    created_by?: IntWithAggregatesFilter<"PlanningHeader"> | number
+    created_by?: BigIntWithAggregatesFilter<"PlanningHeader"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"PlanningHeader"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"PlanningHeader"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"PlanningHeader"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"PlanningHeader"> | bigint | number | null
   }
 
   export type PlanningCollectionWhereInput = {
     AND?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
     OR?: PlanningCollectionWhereInput[]
     NOT?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
-    id?: IntFilter<"PlanningCollection"> | number
-    collection_id?: IntFilter<"PlanningCollection"> | number
-    store_id?: IntFilter<"PlanningCollection"> | number
-    planning_header_id?: IntFilter<"PlanningCollection"> | number
+    id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -38302,10 +36525,10 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCollection"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
     collection?: XOR<CollectionRelationFilter, CollectionWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
@@ -38333,13 +36556,13 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
     OR?: PlanningCollectionWhereInput[]
     NOT?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
-    collection_id?: IntFilter<"PlanningCollection"> | number
-    store_id?: IntFilter<"PlanningCollection"> | number
-    planning_header_id?: IntFilter<"PlanningCollection"> | number
+    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -38347,10 +36570,10 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCollection"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
     collection?: XOR<CollectionRelationFilter, CollectionWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
@@ -38383,10 +36606,10 @@ export namespace Prisma {
     AND?: PlanningCollectionScalarWhereWithAggregatesInput | PlanningCollectionScalarWhereWithAggregatesInput[]
     OR?: PlanningCollectionScalarWhereWithAggregatesInput[]
     NOT?: PlanningCollectionScalarWhereWithAggregatesInput | PlanningCollectionScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"PlanningCollection"> | number
-    collection_id?: IntWithAggregatesFilter<"PlanningCollection"> | number
-    store_id?: IntWithAggregatesFilter<"PlanningCollection"> | number
-    planning_header_id?: IntWithAggregatesFilter<"PlanningCollection"> | number
+    id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
+    collection_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
+    planning_header_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -38394,30 +36617,30 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"PlanningCollection"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"PlanningCollection"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"PlanningCollection"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"PlanningCollection"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"PlanningCollection"> | bigint | number | null
   }
 
   export type PlanningGenderWhereInput = {
     AND?: PlanningGenderWhereInput | PlanningGenderWhereInput[]
     OR?: PlanningGenderWhereInput[]
     NOT?: PlanningGenderWhereInput | PlanningGenderWhereInput[]
-    id?: IntFilter<"PlanningGender"> | number
-    gender_id?: IntFilter<"PlanningGender"> | number
-    store_id?: IntFilter<"PlanningGender"> | number
-    planning_header_id?: IntFilter<"PlanningGender"> | number
+    id?: BigIntFilter<"PlanningGender"> | bigint | number
+    gender_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    store_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningGender"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningGender"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningGender"> | Date | string
     updated_at?: DateTimeFilter<"PlanningGender"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningGender"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
@@ -38444,23 +36667,23 @@ export namespace Prisma {
   }
 
   export type PlanningGenderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: PlanningGenderWhereInput | PlanningGenderWhereInput[]
     OR?: PlanningGenderWhereInput[]
     NOT?: PlanningGenderWhereInput | PlanningGenderWhereInput[]
-    gender_id?: IntFilter<"PlanningGender"> | number
-    store_id?: IntFilter<"PlanningGender"> | number
-    planning_header_id?: IntFilter<"PlanningGender"> | number
+    gender_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    store_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningGender"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningGender"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningGender"> | Date | string
     updated_at?: DateTimeFilter<"PlanningGender"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningGender"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
@@ -38492,29 +36715,29 @@ export namespace Prisma {
     AND?: PlanningGenderScalarWhereWithAggregatesInput | PlanningGenderScalarWhereWithAggregatesInput[]
     OR?: PlanningGenderScalarWhereWithAggregatesInput[]
     NOT?: PlanningGenderScalarWhereWithAggregatesInput | PlanningGenderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"PlanningGender"> | number
-    gender_id?: IntWithAggregatesFilter<"PlanningGender"> | number
-    store_id?: IntWithAggregatesFilter<"PlanningGender"> | number
-    planning_header_id?: IntWithAggregatesFilter<"PlanningGender"> | number
+    id?: BigIntWithAggregatesFilter<"PlanningGender"> | bigint | number
+    gender_id?: BigIntWithAggregatesFilter<"PlanningGender"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"PlanningGender"> | bigint | number
+    planning_header_id?: BigIntWithAggregatesFilter<"PlanningGender"> | bigint | number
     actual_buy_pct?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalWithAggregatesFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"PlanningGender"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"PlanningGender"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"PlanningGender"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"PlanningGender"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"PlanningGender"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"PlanningGender"> | bigint | number | null
   }
 
   export type PlanningCategoryWhereInput = {
     AND?: PlanningCategoryWhereInput | PlanningCategoryWhereInput[]
     OR?: PlanningCategoryWhereInput[]
     NOT?: PlanningCategoryWhereInput | PlanningCategoryWhereInput[]
-    id?: IntFilter<"PlanningCategory"> | number
-    subcategory_id?: IntFilter<"PlanningCategory"> | number
-    planning_header_id?: IntFilter<"PlanningCategory"> | number
+    id?: BigIntFilter<"PlanningCategory"> | bigint | number
+    subcategory_id?: BigIntFilter<"PlanningCategory"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCategory"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
@@ -38523,10 +36746,10 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCategory"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCategory"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
     subcategory?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
   }
@@ -38552,12 +36775,12 @@ export namespace Prisma {
   }
 
   export type PlanningCategoryWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: PlanningCategoryWhereInput | PlanningCategoryWhereInput[]
     OR?: PlanningCategoryWhereInput[]
     NOT?: PlanningCategoryWhereInput | PlanningCategoryWhereInput[]
-    subcategory_id?: IntFilter<"PlanningCategory"> | number
-    planning_header_id?: IntFilter<"PlanningCategory"> | number
+    subcategory_id?: BigIntFilter<"PlanningCategory"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCategory"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
@@ -38566,10 +36789,10 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCategory"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCategory"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
     subcategory?: XOR<SubCategoryRelationFilter, SubCategoryWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
   }, "id">
@@ -38601,9 +36824,9 @@ export namespace Prisma {
     AND?: PlanningCategoryScalarWhereWithAggregatesInput | PlanningCategoryScalarWhereWithAggregatesInput[]
     OR?: PlanningCategoryScalarWhereWithAggregatesInput[]
     NOT?: PlanningCategoryScalarWhereWithAggregatesInput | PlanningCategoryScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"PlanningCategory"> | number
-    subcategory_id?: IntWithAggregatesFilter<"PlanningCategory"> | number
-    planning_header_id?: IntWithAggregatesFilter<"PlanningCategory"> | number
+    id?: BigIntWithAggregatesFilter<"PlanningCategory"> | bigint | number
+    subcategory_id?: BigIntWithAggregatesFilter<"PlanningCategory"> | bigint | number
+    planning_header_id?: BigIntWithAggregatesFilter<"PlanningCategory"> | bigint | number
     actual_buy_pct?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
@@ -38612,23 +36835,24 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalWithAggregatesFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"PlanningCategory"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"PlanningCategory"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"PlanningCategory"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"PlanningCategory"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"PlanningCategory"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"PlanningCategory"> | bigint | number | null
   }
 
   export type SKUProposalHeaderWhereInput = {
     AND?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
     OR?: SKUProposalHeaderWhereInput[]
     NOT?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
-    id?: IntFilter<"SKUProposalHeader"> | number
+    id?: BigIntFilter<"SKUProposalHeader"> | bigint | number
     version?: IntFilter<"SKUProposalHeader"> | number
+    status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
-    created_by?: IntFilter<"SKUProposalHeader"> | number
+    created_by?: BigIntFilter<"SKUProposalHeader"> | bigint | number
     created_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposalHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
   }
@@ -38636,6 +36860,7 @@ export namespace Prisma {
   export type SKUProposalHeaderOrderByWithRelationInput = {
     id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -38646,16 +36871,17 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
     OR?: SKUProposalHeaderWhereInput[]
     NOT?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
     version?: IntFilter<"SKUProposalHeader"> | number
+    status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
-    created_by?: IntFilter<"SKUProposalHeader"> | number
+    created_by?: BigIntFilter<"SKUProposalHeader"> | bigint | number
     created_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposalHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
   }, "id">
@@ -38663,6 +36889,7 @@ export namespace Prisma {
   export type SKUProposalHeaderOrderByWithAggregationInput = {
     id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -38679,29 +36906,30 @@ export namespace Prisma {
     AND?: SKUProposalHeaderScalarWhereWithAggregatesInput | SKUProposalHeaderScalarWhereWithAggregatesInput[]
     OR?: SKUProposalHeaderScalarWhereWithAggregatesInput[]
     NOT?: SKUProposalHeaderScalarWhereWithAggregatesInput | SKUProposalHeaderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SKUProposalHeader"> | number
+    id?: BigIntWithAggregatesFilter<"SKUProposalHeader"> | bigint | number
     version?: IntWithAggregatesFilter<"SKUProposalHeader"> | number
+    status?: StringWithAggregatesFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolWithAggregatesFilter<"SKUProposalHeader"> | boolean
-    created_by?: IntWithAggregatesFilter<"SKUProposalHeader"> | number
+    created_by?: BigIntWithAggregatesFilter<"SKUProposalHeader"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SKUProposalHeader"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SKUProposalHeader"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SKUProposalHeader"> | bigint | number | null
   }
 
   export type SKUProposalWhereInput = {
     AND?: SKUProposalWhereInput | SKUProposalWhereInput[]
     OR?: SKUProposalWhereInput[]
     NOT?: SKUProposalWhereInput | SKUProposalWhereInput[]
-    id?: IntFilter<"SKUProposal"> | number
-    sku_proposal_header_id?: IntFilter<"SKUProposal"> | number
-    product_id?: IntFilter<"SKUProposal"> | number
+    id?: BigIntFilter<"SKUProposal"> | bigint | number
+    sku_proposal_header_id?: BigIntFilter<"SKUProposal"> | bigint | number
+    product_id?: BigIntFilter<"SKUProposal"> | bigint | number
     customer_target?: StringFilter<"SKUProposal"> | string
     unit_cost?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
     srp?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUProposal"> | number | null
+    created_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUProposal"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposal"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposal"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
     sku_proposal_header?: XOR<SKUProposalHeaderRelationFilter, SKUProposalHeaderWhereInput>
     product?: XOR<ProductRelationFilter, ProductWhereInput>
     sku_allocates?: SKUAllocateListRelationFilter
@@ -38726,19 +36954,19 @@ export namespace Prisma {
   }
 
   export type SKUProposalWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: SKUProposalWhereInput | SKUProposalWhereInput[]
     OR?: SKUProposalWhereInput[]
     NOT?: SKUProposalWhereInput | SKUProposalWhereInput[]
-    sku_proposal_header_id?: IntFilter<"SKUProposal"> | number
-    product_id?: IntFilter<"SKUProposal"> | number
+    sku_proposal_header_id?: BigIntFilter<"SKUProposal"> | bigint | number
+    product_id?: BigIntFilter<"SKUProposal"> | bigint | number
     customer_target?: StringFilter<"SKUProposal"> | string
     unit_cost?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
     srp?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUProposal"> | number | null
+    created_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUProposal"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposal"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposal"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
     sku_proposal_header?: XOR<SKUProposalHeaderRelationFilter, SKUProposalHeaderWhereInput>
     product?: XOR<ProductRelationFilter, ProductWhereInput>
     sku_allocates?: SKUAllocateListRelationFilter
@@ -38767,30 +36995,30 @@ export namespace Prisma {
     AND?: SKUProposalScalarWhereWithAggregatesInput | SKUProposalScalarWhereWithAggregatesInput[]
     OR?: SKUProposalScalarWhereWithAggregatesInput[]
     NOT?: SKUProposalScalarWhereWithAggregatesInput | SKUProposalScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SKUProposal"> | number
-    sku_proposal_header_id?: IntWithAggregatesFilter<"SKUProposal"> | number
-    product_id?: IntWithAggregatesFilter<"SKUProposal"> | number
+    id?: BigIntWithAggregatesFilter<"SKUProposal"> | bigint | number
+    sku_proposal_header_id?: BigIntWithAggregatesFilter<"SKUProposal"> | bigint | number
+    product_id?: BigIntWithAggregatesFilter<"SKUProposal"> | bigint | number
     customer_target?: StringWithAggregatesFilter<"SKUProposal"> | string
     unit_cost?: DecimalWithAggregatesFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
     srp?: DecimalWithAggregatesFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"SKUProposal"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"SKUProposal"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SKUProposal"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SKUProposal"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SKUProposal"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SKUProposal"> | bigint | number | null
   }
 
   export type SKUAllocateWhereInput = {
     AND?: SKUAllocateWhereInput | SKUAllocateWhereInput[]
     OR?: SKUAllocateWhereInput[]
     NOT?: SKUAllocateWhereInput | SKUAllocateWhereInput[]
-    id?: IntFilter<"SKUAllocate"> | number
-    sku_proposal_id?: IntFilter<"SKUAllocate"> | number
-    store_id?: IntFilter<"SKUAllocate"> | number
+    id?: BigIntFilter<"SKUAllocate"> | bigint | number
+    sku_proposal_id?: BigIntFilter<"SKUAllocate"> | bigint | number
+    store_id?: BigIntFilter<"SKUAllocate"> | bigint | number
     quantity?: DecimalFilter<"SKUAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUAllocate"> | Date | string
     updated_at?: DateTimeFilter<"SKUAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
     sku_proposal?: XOR<SKUProposalRelationFilter, SKUProposalWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
   }
@@ -38809,17 +37037,17 @@ export namespace Prisma {
   }
 
   export type SKUAllocateWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: SKUAllocateWhereInput | SKUAllocateWhereInput[]
     OR?: SKUAllocateWhereInput[]
     NOT?: SKUAllocateWhereInput | SKUAllocateWhereInput[]
-    sku_proposal_id?: IntFilter<"SKUAllocate"> | number
-    store_id?: IntFilter<"SKUAllocate"> | number
+    sku_proposal_id?: BigIntFilter<"SKUAllocate"> | bigint | number
+    store_id?: BigIntFilter<"SKUAllocate"> | bigint | number
     quantity?: DecimalFilter<"SKUAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUAllocate"> | Date | string
     updated_at?: DateTimeFilter<"SKUAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
     sku_proposal?: XOR<SKUProposalRelationFilter, SKUProposalWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
   }, "id">
@@ -38844,28 +37072,28 @@ export namespace Prisma {
     AND?: SKUAllocateScalarWhereWithAggregatesInput | SKUAllocateScalarWhereWithAggregatesInput[]
     OR?: SKUAllocateScalarWhereWithAggregatesInput[]
     NOT?: SKUAllocateScalarWhereWithAggregatesInput | SKUAllocateScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"SKUAllocate"> | number
-    sku_proposal_id?: IntWithAggregatesFilter<"SKUAllocate"> | number
-    store_id?: IntWithAggregatesFilter<"SKUAllocate"> | number
+    id?: BigIntWithAggregatesFilter<"SKUAllocate"> | bigint | number
+    sku_proposal_id?: BigIntWithAggregatesFilter<"SKUAllocate"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"SKUAllocate"> | bigint | number
     quantity?: DecimalWithAggregatesFilter<"SKUAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableWithAggregatesFilter<"SKUAllocate"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"SKUAllocate"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SKUAllocate"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"SKUAllocate"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"SKUAllocate"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"SKUAllocate"> | bigint | number | null
   }
 
   export type ProposalSizingHeaderWhereInput = {
     AND?: ProposalSizingHeaderWhereInput | ProposalSizingHeaderWhereInput[]
     OR?: ProposalSizingHeaderWhereInput[]
     NOT?: ProposalSizingHeaderWhereInput | ProposalSizingHeaderWhereInput[]
-    id?: IntFilter<"ProposalSizingHeader"> | number
-    sku_proposal_id?: IntFilter<"ProposalSizingHeader"> | number
+    id?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
+    sku_proposal_id?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     version?: IntFilter<"ProposalSizingHeader"> | number
     is_final_version?: BoolFilter<"ProposalSizingHeader"> | boolean
-    created_by?: IntFilter<"ProposalSizingHeader"> | number
+    created_by?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     created_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizingHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizingHeader"> | bigint | number | null
     sku_proposal?: XOR<SKUProposalRelationFilter, SKUProposalWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     proposal_sizings?: ProposalSizingListRelationFilter
@@ -38886,17 +37114,17 @@ export namespace Prisma {
   }
 
   export type ProposalSizingHeaderWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: ProposalSizingHeaderWhereInput | ProposalSizingHeaderWhereInput[]
     OR?: ProposalSizingHeaderWhereInput[]
     NOT?: ProposalSizingHeaderWhereInput | ProposalSizingHeaderWhereInput[]
-    sku_proposal_id?: IntFilter<"ProposalSizingHeader"> | number
+    sku_proposal_id?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     version?: IntFilter<"ProposalSizingHeader"> | number
     is_final_version?: BoolFilter<"ProposalSizingHeader"> | boolean
-    created_by?: IntFilter<"ProposalSizingHeader"> | number
+    created_by?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     created_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizingHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizingHeader"> | bigint | number | null
     sku_proposal?: XOR<SKUProposalRelationFilter, SKUProposalWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     proposal_sizings?: ProposalSizingListRelationFilter
@@ -38922,30 +37150,30 @@ export namespace Prisma {
     AND?: ProposalSizingHeaderScalarWhereWithAggregatesInput | ProposalSizingHeaderScalarWhereWithAggregatesInput[]
     OR?: ProposalSizingHeaderScalarWhereWithAggregatesInput[]
     NOT?: ProposalSizingHeaderScalarWhereWithAggregatesInput | ProposalSizingHeaderScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"ProposalSizingHeader"> | number
-    sku_proposal_id?: IntWithAggregatesFilter<"ProposalSizingHeader"> | number
+    id?: BigIntWithAggregatesFilter<"ProposalSizingHeader"> | bigint | number
+    sku_proposal_id?: BigIntWithAggregatesFilter<"ProposalSizingHeader"> | bigint | number
     version?: IntWithAggregatesFilter<"ProposalSizingHeader"> | number
     is_final_version?: BoolWithAggregatesFilter<"ProposalSizingHeader"> | boolean
-    created_by?: IntWithAggregatesFilter<"ProposalSizingHeader"> | number
+    created_by?: BigIntWithAggregatesFilter<"ProposalSizingHeader"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"ProposalSizingHeader"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"ProposalSizingHeader"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"ProposalSizingHeader"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"ProposalSizingHeader"> | bigint | number | null
   }
 
   export type ProposalSizingWhereInput = {
     AND?: ProposalSizingWhereInput | ProposalSizingWhereInput[]
     OR?: ProposalSizingWhereInput[]
     NOT?: ProposalSizingWhereInput | ProposalSizingWhereInput[]
-    id?: IntFilter<"ProposalSizing"> | number
-    proposal_sizing_header_id?: IntFilter<"ProposalSizing"> | number
-    subcategory_size_id?: IntFilter<"ProposalSizing"> | number
+    id?: BigIntFilter<"ProposalSizing"> | bigint | number
+    proposal_sizing_header_id?: BigIntFilter<"ProposalSizing"> | bigint | number
+    subcategory_size_id?: BigIntFilter<"ProposalSizing"> | bigint | number
     actual_salesmix_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFilter<"ProposalSizing"> | number
-    created_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    created_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
     created_at?: DateTimeFilter<"ProposalSizing"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizing"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
     proposal_sizing_header?: XOR<ProposalSizingHeaderRelationFilter, ProposalSizingHeaderWhereInput>
     subcategory_size?: XOR<SubcategorySizeRelationFilter, SubcategorySizeWhereInput>
   }
@@ -38966,19 +37194,19 @@ export namespace Prisma {
   }
 
   export type ProposalSizingWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: ProposalSizingWhereInput | ProposalSizingWhereInput[]
     OR?: ProposalSizingWhereInput[]
     NOT?: ProposalSizingWhereInput | ProposalSizingWhereInput[]
-    proposal_sizing_header_id?: IntFilter<"ProposalSizing"> | number
-    subcategory_size_id?: IntFilter<"ProposalSizing"> | number
+    proposal_sizing_header_id?: BigIntFilter<"ProposalSizing"> | bigint | number
+    subcategory_size_id?: BigIntFilter<"ProposalSizing"> | bigint | number
     actual_salesmix_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFilter<"ProposalSizing"> | number
-    created_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    created_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
     created_at?: DateTimeFilter<"ProposalSizing"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizing"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
     proposal_sizing_header?: XOR<ProposalSizingHeaderRelationFilter, ProposalSizingHeaderWhereInput>
     subcategory_size?: XOR<SubcategorySizeRelationFilter, SubcategorySizeWhereInput>
   }, "id">
@@ -39005,29 +37233,29 @@ export namespace Prisma {
     AND?: ProposalSizingScalarWhereWithAggregatesInput | ProposalSizingScalarWhereWithAggregatesInput[]
     OR?: ProposalSizingScalarWhereWithAggregatesInput[]
     NOT?: ProposalSizingScalarWhereWithAggregatesInput | ProposalSizingScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"ProposalSizing"> | number
-    proposal_sizing_header_id?: IntWithAggregatesFilter<"ProposalSizing"> | number
-    subcategory_size_id?: IntWithAggregatesFilter<"ProposalSizing"> | number
+    id?: BigIntWithAggregatesFilter<"ProposalSizing"> | bigint | number
+    proposal_sizing_header_id?: BigIntWithAggregatesFilter<"ProposalSizing"> | bigint | number
+    subcategory_size_id?: BigIntWithAggregatesFilter<"ProposalSizing"> | bigint | number
     actual_salesmix_pct?: DecimalWithAggregatesFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalWithAggregatesFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntWithAggregatesFilter<"ProposalSizing"> | number
-    created_by?: IntNullableWithAggregatesFilter<"ProposalSizing"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"ProposalSizing"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"ProposalSizing"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"ProposalSizing"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"ProposalSizing"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"ProposalSizing"> | bigint | number | null
   }
 
   export type ApprovalStatusWhereInput = {
     AND?: ApprovalStatusWhereInput | ApprovalStatusWhereInput[]
     OR?: ApprovalStatusWhereInput[]
     NOT?: ApprovalStatusWhereInput | ApprovalStatusWhereInput[]
-    id?: IntFilter<"ApprovalStatus"> | number
+    id?: BigIntFilter<"ApprovalStatus"> | bigint | number
     name?: StringFilter<"ApprovalStatus"> | string
     is_active?: BoolFilter<"ApprovalStatus"> | boolean
-    created_by?: IntNullableFilter<"ApprovalStatus"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalStatus"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalStatus"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalStatus"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalStatus"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalStatus"> | bigint | number | null
   }
 
   export type ApprovalStatusOrderByWithRelationInput = {
@@ -39041,17 +37269,17 @@ export namespace Prisma {
   }
 
   export type ApprovalStatusWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    name?: string
+    id?: bigint | number
     AND?: ApprovalStatusWhereInput | ApprovalStatusWhereInput[]
     OR?: ApprovalStatusWhereInput[]
     NOT?: ApprovalStatusWhereInput | ApprovalStatusWhereInput[]
+    name?: StringFilter<"ApprovalStatus"> | string
     is_active?: BoolFilter<"ApprovalStatus"> | boolean
-    created_by?: IntNullableFilter<"ApprovalStatus"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalStatus"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalStatus"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalStatus"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalStatus"> | number | null
-  }, "id" | "name">
+    updated_by?: BigIntNullableFilter<"ApprovalStatus"> | bigint | number | null
+  }, "id">
 
   export type ApprovalStatusOrderByWithAggregationInput = {
     id?: SortOrder
@@ -39072,26 +37300,26 @@ export namespace Prisma {
     AND?: ApprovalStatusScalarWhereWithAggregatesInput | ApprovalStatusScalarWhereWithAggregatesInput[]
     OR?: ApprovalStatusScalarWhereWithAggregatesInput[]
     NOT?: ApprovalStatusScalarWhereWithAggregatesInput | ApprovalStatusScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"ApprovalStatus"> | number
+    id?: BigIntWithAggregatesFilter<"ApprovalStatus"> | bigint | number
     name?: StringWithAggregatesFilter<"ApprovalStatus"> | string
     is_active?: BoolWithAggregatesFilter<"ApprovalStatus"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"ApprovalStatus"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"ApprovalStatus"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"ApprovalStatus"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"ApprovalStatus"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"ApprovalStatus"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"ApprovalStatus"> | bigint | number | null
   }
 
   export type TicketWhereInput = {
     AND?: TicketWhereInput | TicketWhereInput[]
     OR?: TicketWhereInput[]
     NOT?: TicketWhereInput | TicketWhereInput[]
-    id?: IntFilter<"Ticket"> | number
-    budget_allocate_id?: IntFilter<"Ticket"> | number
+    id?: BigIntFilter<"Ticket"> | bigint | number
+    budget_allocate_id?: BigIntFilter<"Ticket"> | bigint | number
     status?: StringFilter<"Ticket"> | string
-    created_by?: IntFilter<"Ticket"> | number
+    created_by?: BigIntFilter<"Ticket"> | bigint | number
     created_at?: DateTimeFilter<"Ticket"> | Date | string
     updated_at?: DateTimeFilter<"Ticket"> | Date | string
-    updated_by?: IntNullableFilter<"Ticket"> | number | null
+    updated_by?: BigIntNullableFilter<"Ticket"> | bigint | number | null
     budget_allocate?: XOR<BudgetAllocateRelationFilter, BudgetAllocateWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     ticket_approval_logs?: TicketApprovalLogListRelationFilter
@@ -39111,16 +37339,16 @@ export namespace Prisma {
   }
 
   export type TicketWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: TicketWhereInput | TicketWhereInput[]
     OR?: TicketWhereInput[]
     NOT?: TicketWhereInput | TicketWhereInput[]
-    budget_allocate_id?: IntFilter<"Ticket"> | number
+    budget_allocate_id?: BigIntFilter<"Ticket"> | bigint | number
     status?: StringFilter<"Ticket"> | string
-    created_by?: IntFilter<"Ticket"> | number
+    created_by?: BigIntFilter<"Ticket"> | bigint | number
     created_at?: DateTimeFilter<"Ticket"> | Date | string
     updated_at?: DateTimeFilter<"Ticket"> | Date | string
-    updated_by?: IntNullableFilter<"Ticket"> | number | null
+    updated_by?: BigIntNullableFilter<"Ticket"> | bigint | number | null
     budget_allocate?: XOR<BudgetAllocateRelationFilter, BudgetAllocateWhereInput>
     creator?: XOR<UserRelationFilter, UserWhereInput>
     ticket_approval_logs?: TicketApprovalLogListRelationFilter
@@ -39145,26 +37373,26 @@ export namespace Prisma {
     AND?: TicketScalarWhereWithAggregatesInput | TicketScalarWhereWithAggregatesInput[]
     OR?: TicketScalarWhereWithAggregatesInput[]
     NOT?: TicketScalarWhereWithAggregatesInput | TicketScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Ticket"> | number
-    budget_allocate_id?: IntWithAggregatesFilter<"Ticket"> | number
+    id?: BigIntWithAggregatesFilter<"Ticket"> | bigint | number
+    budget_allocate_id?: BigIntWithAggregatesFilter<"Ticket"> | bigint | number
     status?: StringWithAggregatesFilter<"Ticket"> | string
-    created_by?: IntWithAggregatesFilter<"Ticket"> | number
+    created_by?: BigIntWithAggregatesFilter<"Ticket"> | bigint | number
     created_at?: DateTimeWithAggregatesFilter<"Ticket"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Ticket"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"Ticket"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"Ticket"> | bigint | number | null
   }
 
   export type ApprovalWorkflowWhereInput = {
     AND?: ApprovalWorkflowWhereInput | ApprovalWorkflowWhereInput[]
     OR?: ApprovalWorkflowWhereInput[]
     NOT?: ApprovalWorkflowWhereInput | ApprovalWorkflowWhereInput[]
-    id?: IntFilter<"ApprovalWorkflow"> | number
-    group_brand_id?: IntFilter<"ApprovalWorkflow"> | number
+    id?: BigIntFilter<"ApprovalWorkflow"> | bigint | number
+    group_brand_id?: BigIntFilter<"ApprovalWorkflow"> | bigint | number
     workflow_name?: StringFilter<"ApprovalWorkflow"> | string
-    created_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     approval_workflow_levels?: ApprovalWorkflowLevelListRelationFilter
   }
@@ -39182,16 +37410,16 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: ApprovalWorkflowWhereInput | ApprovalWorkflowWhereInput[]
     OR?: ApprovalWorkflowWhereInput[]
     NOT?: ApprovalWorkflowWhereInput | ApprovalWorkflowWhereInput[]
-    group_brand_id?: IntFilter<"ApprovalWorkflow"> | number
+    group_brand_id?: BigIntFilter<"ApprovalWorkflow"> | bigint | number
     workflow_name?: StringFilter<"ApprovalWorkflow"> | string
-    created_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     approval_workflow_levels?: ApprovalWorkflowLevelListRelationFilter
   }, "id">
@@ -39215,29 +37443,29 @@ export namespace Prisma {
     AND?: ApprovalWorkflowScalarWhereWithAggregatesInput | ApprovalWorkflowScalarWhereWithAggregatesInput[]
     OR?: ApprovalWorkflowScalarWhereWithAggregatesInput[]
     NOT?: ApprovalWorkflowScalarWhereWithAggregatesInput | ApprovalWorkflowScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"ApprovalWorkflow"> | number
-    group_brand_id?: IntWithAggregatesFilter<"ApprovalWorkflow"> | number
+    id?: BigIntWithAggregatesFilter<"ApprovalWorkflow"> | bigint | number
+    group_brand_id?: BigIntWithAggregatesFilter<"ApprovalWorkflow"> | bigint | number
     workflow_name?: StringWithAggregatesFilter<"ApprovalWorkflow"> | string
-    created_by?: IntNullableWithAggregatesFilter<"ApprovalWorkflow"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"ApprovalWorkflow"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"ApprovalWorkflow"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"ApprovalWorkflow"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"ApprovalWorkflow"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"ApprovalWorkflow"> | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelWhereInput = {
     AND?: ApprovalWorkflowLevelWhereInput | ApprovalWorkflowLevelWhereInput[]
     OR?: ApprovalWorkflowLevelWhereInput[]
     NOT?: ApprovalWorkflowLevelWhereInput | ApprovalWorkflowLevelWhereInput[]
-    id?: IntFilter<"ApprovalWorkflowLevel"> | number
-    approval_workflow_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
+    approval_workflow_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     level_order?: IntFilter<"ApprovalWorkflowLevel"> | number
     level_name?: StringFilter<"ApprovalWorkflowLevel"> | string
-    approver_user_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    approver_user_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     is_required?: BoolFilter<"ApprovalWorkflowLevel"> | boolean
-    created_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     approval_workflow?: XOR<ApprovalWorkflowRelationFilter, ApprovalWorkflowWhereInput>
     approver_user?: XOR<UserRelationFilter, UserWhereInput>
     ticket_approval_logs?: TicketApprovalLogListRelationFilter
@@ -39260,19 +37488,19 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: ApprovalWorkflowLevelWhereInput | ApprovalWorkflowLevelWhereInput[]
     OR?: ApprovalWorkflowLevelWhereInput[]
     NOT?: ApprovalWorkflowLevelWhereInput | ApprovalWorkflowLevelWhereInput[]
-    approval_workflow_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    approval_workflow_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     level_order?: IntFilter<"ApprovalWorkflowLevel"> | number
     level_name?: StringFilter<"ApprovalWorkflowLevel"> | string
-    approver_user_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    approver_user_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     is_required?: BoolFilter<"ApprovalWorkflowLevel"> | boolean
-    created_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     approval_workflow?: XOR<ApprovalWorkflowRelationFilter, ApprovalWorkflowWhereInput>
     approver_user?: XOR<UserRelationFilter, UserWhereInput>
     ticket_approval_logs?: TicketApprovalLogListRelationFilter
@@ -39300,33 +37528,33 @@ export namespace Prisma {
     AND?: ApprovalWorkflowLevelScalarWhereWithAggregatesInput | ApprovalWorkflowLevelScalarWhereWithAggregatesInput[]
     OR?: ApprovalWorkflowLevelScalarWhereWithAggregatesInput[]
     NOT?: ApprovalWorkflowLevelScalarWhereWithAggregatesInput | ApprovalWorkflowLevelScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"ApprovalWorkflowLevel"> | number
-    approval_workflow_id?: IntWithAggregatesFilter<"ApprovalWorkflowLevel"> | number
+    id?: BigIntWithAggregatesFilter<"ApprovalWorkflowLevel"> | bigint | number
+    approval_workflow_id?: BigIntWithAggregatesFilter<"ApprovalWorkflowLevel"> | bigint | number
     level_order?: IntWithAggregatesFilter<"ApprovalWorkflowLevel"> | number
     level_name?: StringWithAggregatesFilter<"ApprovalWorkflowLevel"> | string
-    approver_user_id?: IntWithAggregatesFilter<"ApprovalWorkflowLevel"> | number
+    approver_user_id?: BigIntWithAggregatesFilter<"ApprovalWorkflowLevel"> | bigint | number
     is_required?: BoolWithAggregatesFilter<"ApprovalWorkflowLevel"> | boolean
-    created_by?: IntNullableWithAggregatesFilter<"ApprovalWorkflowLevel"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"ApprovalWorkflowLevel"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"ApprovalWorkflowLevel"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"ApprovalWorkflowLevel"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"ApprovalWorkflowLevel"> | bigint | number | null
   }
 
   export type TicketApprovalLogWhereInput = {
     AND?: TicketApprovalLogWhereInput | TicketApprovalLogWhereInput[]
     OR?: TicketApprovalLogWhereInput[]
     NOT?: TicketApprovalLogWhereInput | TicketApprovalLogWhereInput[]
-    id?: IntFilter<"TicketApprovalLog"> | number
-    ticket_id?: IntFilter<"TicketApprovalLog"> | number
-    approval_workflow_level_id?: IntFilter<"TicketApprovalLog"> | number
-    approver_user_id?: IntFilter<"TicketApprovalLog"> | number
+    id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    ticket_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approval_workflow_level_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approver_user_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
     is_approved?: BoolFilter<"TicketApprovalLog"> | boolean
     comment?: StringNullableFilter<"TicketApprovalLog"> | string | null
     approved_at?: DateTimeNullableFilter<"TicketApprovalLog"> | Date | string | null
-    created_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    created_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
     created_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
     updated_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
-    updated_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    updated_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
     ticket?: XOR<TicketRelationFilter, TicketWhereInput>
     approval_workflow_level?: XOR<ApprovalWorkflowLevelRelationFilter, ApprovalWorkflowLevelWhereInput>
     approver_user?: XOR<UserRelationFilter, UserWhereInput>
@@ -39350,20 +37578,20 @@ export namespace Prisma {
   }
 
   export type TicketApprovalLogWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
+    id?: bigint | number
     AND?: TicketApprovalLogWhereInput | TicketApprovalLogWhereInput[]
     OR?: TicketApprovalLogWhereInput[]
     NOT?: TicketApprovalLogWhereInput | TicketApprovalLogWhereInput[]
-    ticket_id?: IntFilter<"TicketApprovalLog"> | number
-    approval_workflow_level_id?: IntFilter<"TicketApprovalLog"> | number
-    approver_user_id?: IntFilter<"TicketApprovalLog"> | number
+    ticket_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approval_workflow_level_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approver_user_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
     is_approved?: BoolFilter<"TicketApprovalLog"> | boolean
     comment?: StringNullableFilter<"TicketApprovalLog"> | string | null
     approved_at?: DateTimeNullableFilter<"TicketApprovalLog"> | Date | string | null
-    created_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    created_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
     created_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
     updated_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
-    updated_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    updated_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
     ticket?: XOR<TicketRelationFilter, TicketWhereInput>
     approval_workflow_level?: XOR<ApprovalWorkflowLevelRelationFilter, ApprovalWorkflowLevelWhereInput>
     approver_user?: XOR<UserRelationFilter, UserWhereInput>
@@ -39392,26 +37620,29 @@ export namespace Prisma {
     AND?: TicketApprovalLogScalarWhereWithAggregatesInput | TicketApprovalLogScalarWhereWithAggregatesInput[]
     OR?: TicketApprovalLogScalarWhereWithAggregatesInput[]
     NOT?: TicketApprovalLogScalarWhereWithAggregatesInput | TicketApprovalLogScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"TicketApprovalLog"> | number
-    ticket_id?: IntWithAggregatesFilter<"TicketApprovalLog"> | number
-    approval_workflow_level_id?: IntWithAggregatesFilter<"TicketApprovalLog"> | number
-    approver_user_id?: IntWithAggregatesFilter<"TicketApprovalLog"> | number
+    id?: BigIntWithAggregatesFilter<"TicketApprovalLog"> | bigint | number
+    ticket_id?: BigIntWithAggregatesFilter<"TicketApprovalLog"> | bigint | number
+    approval_workflow_level_id?: BigIntWithAggregatesFilter<"TicketApprovalLog"> | bigint | number
+    approver_user_id?: BigIntWithAggregatesFilter<"TicketApprovalLog"> | bigint | number
     is_approved?: BoolWithAggregatesFilter<"TicketApprovalLog"> | boolean
     comment?: StringNullableWithAggregatesFilter<"TicketApprovalLog"> | string | null
     approved_at?: DateTimeNullableWithAggregatesFilter<"TicketApprovalLog"> | Date | string | null
-    created_by?: IntNullableWithAggregatesFilter<"TicketApprovalLog"> | number | null
+    created_by?: BigIntNullableWithAggregatesFilter<"TicketApprovalLog"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"TicketApprovalLog"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"TicketApprovalLog"> | Date | string
-    updated_by?: IntNullableWithAggregatesFilter<"TicketApprovalLog"> | number | null
+    updated_by?: BigIntNullableWithAggregatesFilter<"TicketApprovalLog"> | bigint | number | null
   }
 
   export type UserCreateInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -39424,14 +37655,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -39443,12 +37676,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -39461,14 +37697,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -39480,294 +37718,307 @@ export namespace Prisma {
   }
 
   export type UserCreateManyInput = {
-    id?: number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
   }
 
   export type UserUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
   }
 
   export type UserUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
   }
 
   export type RoleCreateInput = {
+    id?: bigint | number
     name: string
     description?: string | null
     permissions?: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     users?: UserCreateNestedManyWithoutRoleInput
   }
 
   export type RoleUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     description?: string | null
     permissions?: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     users?: UserUncheckedCreateNestedManyWithoutRoleInput
   }
 
   export type RoleUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     users?: UserUpdateManyWithoutRoleNestedInput
   }
 
   export type RoleUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     users?: UserUncheckedUpdateManyWithoutRoleNestedInput
   }
 
   export type RoleCreateManyInput = {
-    id?: number
     name: string
     description?: string | null
     permissions?: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type RoleUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type RoleUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type GroupBrandCreateInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brands?: BrandCreateNestedManyWithoutGroup_brandInput
     approval_workflows?: ApprovalWorkflowCreateNestedManyWithoutGroup_brandInput
   }
 
   export type GroupBrandUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brands?: BrandUncheckedCreateNestedManyWithoutGroup_brandInput
     approval_workflows?: ApprovalWorkflowUncheckedCreateNestedManyWithoutGroup_brandInput
   }
 
   export type GroupBrandUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brands?: BrandUpdateManyWithoutGroup_brandNestedInput
     approval_workflows?: ApprovalWorkflowUpdateManyWithoutGroup_brandNestedInput
   }
 
   export type GroupBrandUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brands?: BrandUncheckedUpdateManyWithoutGroup_brandNestedInput
     approval_workflows?: ApprovalWorkflowUncheckedUpdateManyWithoutGroup_brandNestedInput
   }
 
   export type GroupBrandCreateManyInput = {
-    id?: number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type GroupBrandUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type GroupBrandUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BrandCreateInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     products?: ProductCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
   }
 
   export type BrandUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
-    group_brand_id: number
+    group_brand_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
   }
 
   export type BrandUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     products?: ProductUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandCreateManyInput = {
-    id?: number
     code: string
     name: string
-    group_brand_id: number
+    group_brand_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BrandUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BrandUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type StoreCreateInput = {
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
@@ -39775,16 +38026,16 @@ export namespace Prisma {
   }
 
   export type StoreUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
@@ -39792,15 +38043,16 @@ export namespace Prisma {
   }
 
   export type StoreUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
@@ -39808,16 +38060,16 @@ export namespace Prisma {
   }
 
   export type StoreUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
@@ -39825,425 +38077,436 @@ export namespace Prisma {
   }
 
   export type StoreCreateManyInput = {
-    id?: number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type StoreUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type StoreUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CollectionCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionCreateNestedManyWithoutCollectionInput
   }
 
   export type CollectionUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutCollectionInput
   }
 
   export type CollectionUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUpdateManyWithoutCollectionNestedInput
   }
 
   export type CollectionUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutCollectionNestedInput
   }
 
   export type CollectionCreateManyInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CollectionUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CollectionUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SeasonGroupCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     seasons?: SeasonCreateNestedManyWithoutSeason_groupInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeason_groupInput
   }
 
   export type SeasonGroupUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     seasons?: SeasonUncheckedCreateNestedManyWithoutSeason_groupInput
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeason_groupInput
   }
 
   export type SeasonGroupUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     seasons?: SeasonUpdateManyWithoutSeason_groupNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeason_groupNestedInput
   }
 
   export type SeasonGroupUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     seasons?: SeasonUncheckedUpdateManyWithoutSeason_groupNestedInput
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeason_groupNestedInput
   }
 
   export type SeasonGroupCreateManyInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SeasonGroupUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SeasonGroupUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SeasonCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    season_group_id: number
+    season_group_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    season_group_id?: IntFieldUpdateOperationsInput | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonCreateManyInput = {
-    id?: number
     name: string
-    season_group_id: number
+    season_group_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SeasonUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SeasonUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    season_group_id?: IntFieldUpdateOperationsInput | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type GenderCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     categories?: CategoryCreateNestedManyWithoutGenderInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
   }
 
   export type GenderUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
   }
 
   export type GenderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUpdateManyWithoutGenderNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
   }
 
   export type GenderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
   }
 
   export type GenderCreateManyInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type GenderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type GenderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CategoryCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutCategoriesInput
     sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    gender_id: number
+    gender_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
     sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    gender_id?: IntFieldUpdateOperationsInput | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryCreateManyInput = {
-    id?: number
     name: string
-    gender_id: number
+    gender_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CategoryUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CategoryUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    gender_id?: IntFieldUpdateOperationsInput | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubCategoryCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
@@ -40251,26 +38514,27 @@ export namespace Prisma {
   }
 
   export type SubCategoryUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    category_id: number
+    category_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
   }
 
   export type SubCategoryUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
@@ -40278,121 +38542,124 @@ export namespace Prisma {
   }
 
   export type SubCategoryUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    category_id?: IntFieldUpdateOperationsInput | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
   }
 
   export type SubCategoryCreateManyInput = {
-    id?: number
     name: string
-    category_id: number
+    category_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SubCategoryUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubCategoryUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    category_id?: IntFieldUpdateOperationsInput | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubcategorySizeCreateInput = {
+    id?: bigint | number
     name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_category: SubCategoryCreateNestedOneWithoutSubcategory_sizesInput
     proposal_sizings?: ProposalSizingCreateNestedManyWithoutSubcategory_sizeInput
   }
 
   export type SubcategorySizeUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    sub_category_id: number
-    created_by?: number | null
+    sub_category_id: bigint | number
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedCreateNestedManyWithoutSubcategory_sizeInput
   }
 
   export type SubcategorySizeUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category?: SubCategoryUpdateOneRequiredWithoutSubcategory_sizesNestedInput
     proposal_sizings?: ProposalSizingUpdateManyWithoutSubcategory_sizeNestedInput
   }
 
   export type SubcategorySizeUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedUpdateManyWithoutSubcategory_sizeNestedInput
   }
 
   export type SubcategorySizeCreateManyInput = {
-    id?: number
     name: string
-    sub_category_id: number
-    created_by?: number | null
+    sub_category_id: bigint | number
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SubcategorySizeUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubcategorySizeUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductCreateInput = {
+    id?: bigint | number
     sku_code: string
     product_name: string
     family?: string | null
@@ -40402,21 +38669,21 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brand?: BrandCreateNestedOneWithoutProductsInput
     sub_category: SubCategoryCreateNestedOneWithoutProductsInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     sku_code: string
     product_name: string
-    sub_category_id: number
-    brand_id?: number | null
+    sub_category_id: bigint | number
+    brand_id?: bigint | number | null
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -40424,14 +38691,15 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutProductInput
   }
 
   export type ProductUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
     family?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40441,21 +38709,21 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brand?: BrandUpdateOneWithoutProductsNestedInput
     sub_category?: SubCategoryUpdateOneRequiredWithoutProductsNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40463,19 +38731,18 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type ProductCreateManyInput = {
-    id?: number
     sku_code: string
     product_name: string
-    sub_category_id: number
-    brand_id?: number | null
+    sub_category_id: bigint | number
+    brand_id?: bigint | number | null
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -40483,13 +38750,14 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProductUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
     family?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40499,18 +38767,18 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40518,13 +38786,14 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetCreateInput = {
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
@@ -40532,26 +38801,27 @@ export namespace Prisma {
     fiscal_year: number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_budgetsInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBudgetInput
   }
 
   export type BudgetUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
     status?: string
     fiscal_year: number
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBudgetInput
   }
 
   export type BudgetUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40559,39 +38829,39 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_budgetsNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBudgetNestedInput
   }
 
   export type BudgetUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
     fiscal_year?: IntFieldUpdateOperationsInput | number
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBudgetNestedInput
   }
 
   export type BudgetCreateManyInput = {
-    id?: number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
     status?: string
     fiscal_year: number
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -40599,110 +38869,117 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
     fiscal_year?: IntFieldUpdateOperationsInput | number
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type AllocateHeaderCreateInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget: BudgetCreateNestedOneWithoutAllocate_headersInput
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateInput = {
-    id?: number
-    budget_id: number
-    brand_id: number
+    id?: bigint | number
+    budget_id: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderCreateManyInput = {
-    id?: number
-    budget_id: number
-    brand_id: number
+    budget_id: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type AllocateHeaderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type AllocateHeaderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateCreateInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_header: AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput
     store: StoreCreateNestedOneWithoutBudget_allocatesInput
     season_group: SeasonGroupCreateNestedOneWithoutBudget_allocatesInput
@@ -40711,25 +38988,26 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    id?: bigint | number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutBudget_allocateInput
   }
 
   export type BudgetAllocateUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_header?: AllocateHeaderUpdateOneRequiredWithoutBudget_allocatesNestedInput
     store?: StoreUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season_group?: SeasonGroupUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -40738,132 +39016,148 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutBudget_allocateNestedInput
   }
 
   export type BudgetAllocateCreateManyInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningHeaderCreateInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_planning_headersInput
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutPlanning_headersInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_planning_headersNestedInput
+    allocate_header?: AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderCreateManyInput = {
-    id?: number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningHeaderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningHeaderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionCreateInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -40871,20 +39165,20 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
     store: StoreCreateNestedOneWithoutPlanning_collectionsInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateInput = {
-    id?: number
-    collection_id: number
-    store_id: number
-    planning_header_id: number
+    id?: bigint | number
+    collection_id: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -40892,13 +39186,14 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -40906,20 +39201,20 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -40927,17 +39222,16 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionCreateManyInput = {
-    id?: number
-    collection_id: number
-    store_id: number
-    planning_header_id: number
+    collection_id: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -40945,13 +39239,14 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -40959,17 +39254,17 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -40977,126 +39272,129 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderCreateInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutPlanning_gendersInput
     store: StoreCreateNestedOneWithoutPlanning_gendersInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_gendersInput
   }
 
   export type PlanningGenderUncheckedCreateInput = {
-    id?: number
-    gender_id: number
-    store_id: number
-    planning_header_id: number
+    id?: bigint | number
+    gender_id: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutPlanning_gendersNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_gendersNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_gendersNestedInput
   }
 
   export type PlanningGenderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderCreateManyInput = {
-    id?: number
-    gender_id: number
-    store_id: number
-    planning_header_id: number
+    gender_id: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryCreateInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -41105,18 +39403,18 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     subcategory: SubCategoryCreateNestedOneWithoutPlanning_categoriesInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_categoriesInput
   }
 
   export type PlanningCategoryUncheckedCreateInput = {
-    id?: number
-    subcategory_id: number
-    planning_header_id: number
+    id?: bigint | number
+    subcategory_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -41125,13 +39423,14 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -41140,18 +39439,18 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     subcategory?: SubCategoryUpdateOneRequiredWithoutPlanning_categoriesNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_categoriesNestedInput
   }
 
   export type PlanningCategoryUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -41160,16 +39459,15 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryCreateManyInput = {
-    id?: number
-    subcategory_id: number
-    planning_header_id: number
+    subcategory_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -41178,13 +39476,14 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -41193,16 +39492,16 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -41211,90 +39510,100 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalHeaderCreateInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_sku_proposal_headersInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutSku_proposal_headerInput
   }
 
   export type SKUProposalHeaderUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutSku_proposal_headerInput
   }
 
   export type SKUProposalHeaderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUncheckedUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderCreateManyInput = {
-    id?: number
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalHeaderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalHeaderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalCreateInput = {
+    id?: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal_header: SKUProposalHeaderCreateNestedOneWithoutSku_proposalsInput
     product: ProductCreateNestedOneWithoutSku_proposalsInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutSku_proposalInput
@@ -41302,28 +39611,29 @@ export namespace Prisma {
   }
 
   export type SKUProposalUncheckedCreateInput = {
-    id?: number
-    sku_proposal_header_id: number
-    product_id: number
+    id?: bigint | number
+    sku_proposal_header_id: bigint | number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutSku_proposalInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedCreateNestedManyWithoutSku_proposalInput
   }
 
   export type SKUProposalUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal_header?: SKUProposalHeaderUpdateOneRequiredWithoutSku_proposalsNestedInput
     product?: ProductUpdateOneRequiredWithoutSku_proposalsNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutSku_proposalNestedInput
@@ -41331,693 +39641,709 @@ export namespace Prisma {
   }
 
   export type SKUProposalUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutSku_proposalNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalCreateManyInput = {
-    id?: number
-    sku_proposal_header_id: number
-    product_id: number
+    sku_proposal_header_id: bigint | number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateCreateInput = {
+    id?: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal: SKUProposalCreateNestedOneWithoutSku_allocatesInput
     store: StoreCreateNestedOneWithoutSku_allocatesInput
   }
 
   export type SKUAllocateUncheckedCreateInput = {
-    id?: number
-    sku_proposal_id: number
-    store_id: number
+    id?: bigint | number
+    sku_proposal_id: bigint | number
+    store_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal?: SKUProposalUpdateOneRequiredWithoutSku_allocatesNestedInput
     store?: StoreUpdateOneRequiredWithoutSku_allocatesNestedInput
   }
 
   export type SKUAllocateUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateCreateManyInput = {
-    id?: number
-    sku_proposal_id: number
-    store_id: number
+    sku_proposal_id: bigint | number
+    store_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingHeaderCreateInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal: SKUProposalCreateNestedOneWithoutProposal_sizing_headersInput
     creator: UserCreateNestedOneWithoutCreated_proposal_sizing_headersInput
     proposal_sizings?: ProposalSizingCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
   export type ProposalSizingHeaderUncheckedCreateInput = {
-    id?: number
-    sku_proposal_id: number
+    id?: bigint | number
+    sku_proposal_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
   export type ProposalSizingHeaderUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal?: SKUProposalUpdateOneRequiredWithoutProposal_sizing_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_proposal_sizing_headersNestedInput
     proposal_sizings?: ProposalSizingUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderCreateManyInput = {
-    id?: number
-    sku_proposal_id: number
+    sku_proposal_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingHeaderUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingHeaderUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingCreateInput = {
+    id?: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizing_header: ProposalSizingHeaderCreateNestedOneWithoutProposal_sizingsInput
     subcategory_size: SubcategorySizeCreateNestedOneWithoutProposal_sizingsInput
   }
 
   export type ProposalSizingUncheckedCreateInput = {
-    id?: number
-    proposal_sizing_header_id: number
-    subcategory_size_id: number
+    id?: bigint | number
+    proposal_sizing_header_id: bigint | number
+    subcategory_size_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizing_header?: ProposalSizingHeaderUpdateOneRequiredWithoutProposal_sizingsNestedInput
     subcategory_size?: SubcategorySizeUpdateOneRequiredWithoutProposal_sizingsNestedInput
   }
 
   export type ProposalSizingUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    proposal_sizing_header_id?: IntFieldUpdateOperationsInput | number
-    subcategory_size_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    proposal_sizing_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_size_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingCreateManyInput = {
-    id?: number
-    proposal_sizing_header_id: number
-    subcategory_size_id: number
+    proposal_sizing_header_id: bigint | number
+    subcategory_size_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    proposal_sizing_header_id?: IntFieldUpdateOperationsInput | number
-    subcategory_size_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    proposal_sizing_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_size_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalStatusCreateInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalStatusUncheckedCreateInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalStatusUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalStatusUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalStatusCreateManyInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalStatusUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalStatusUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketCreateInput = {
+    id?: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocate: BudgetAllocateCreateNestedOneWithoutTicketsInput
     creator: UserCreateNestedOneWithoutCreated_ticketsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutTicketInput
   }
 
   export type TicketUncheckedCreateInput = {
-    id?: number
-    budget_allocate_id: number
+    id?: bigint | number
+    budget_allocate_id: bigint | number
     status?: string
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutTicketInput
   }
 
   export type TicketUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocate?: BudgetAllocateUpdateOneRequiredWithoutTicketsNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_ticketsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_allocate_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_allocate_id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketCreateManyInput = {
-    id?: number
-    budget_allocate_id: number
+    budget_allocate_id: bigint | number
     status?: string
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_allocate_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_allocate_id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowCreateInput = {
+    id?: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutApproval_workflowsInput
     approval_workflow_levels?: ApprovalWorkflowLevelCreateNestedManyWithoutApproval_workflowInput
   }
 
   export type ApprovalWorkflowUncheckedCreateInput = {
-    id?: number
-    group_brand_id: number
+    id?: bigint | number
+    group_brand_id: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelUncheckedCreateNestedManyWithoutApproval_workflowInput
   }
 
   export type ApprovalWorkflowUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutApproval_workflowsNestedInput
     approval_workflow_levels?: ApprovalWorkflowLevelUpdateManyWithoutApproval_workflowNestedInput
   }
 
   export type ApprovalWorkflowUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelUncheckedUpdateManyWithoutApproval_workflowNestedInput
   }
 
   export type ApprovalWorkflowCreateManyInput = {
-    id?: number
-    group_brand_id: number
+    group_brand_id: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelCreateInput = {
+    id?: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow: ApprovalWorkflowCreateNestedOneWithoutApproval_workflow_levelsInput
     approver_user: UserCreateNestedOneWithoutApproval_workflow_levelsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
   export type ApprovalWorkflowLevelUncheckedCreateInput = {
-    id?: number
-    approval_workflow_id: number
+    id?: bigint | number
+    approval_workflow_id: bigint | number
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint | number
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
   export type ApprovalWorkflowLevelUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow?: ApprovalWorkflowUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
     approver_user?: UserUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelCreateManyInput = {
-    id?: number
-    approval_workflow_id: number
+    approval_workflow_id: bigint | number
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint | number
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogCreateInput = {
+    id?: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket: TicketCreateNestedOneWithoutTicket_approval_logsInput
     approval_workflow_level: ApprovalWorkflowLevelCreateNestedOneWithoutTicket_approval_logsInput
     approver_user: UserCreateNestedOneWithoutTicket_approval_logsInput
   }
 
   export type TicketApprovalLogUncheckedCreateInput = {
-    id?: number
-    ticket_id: number
-    approval_workflow_level_id: number
-    approver_user_id: number
+    id?: bigint | number
+    ticket_id: bigint | number
+    approval_workflow_level_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket?: TicketUpdateOneRequiredWithoutTicket_approval_logsNestedInput
     approval_workflow_level?: ApprovalWorkflowLevelUpdateOneRequiredWithoutTicket_approval_logsNestedInput
     approver_user?: UserUpdateOneRequiredWithoutTicket_approval_logsNestedInput
   }
 
   export type TicketApprovalLogUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogCreateManyInput = {
-    id?: number
-    ticket_id: number
-    approval_workflow_level_id: number
-    approver_user_id: number
+    ticket_id: bigint | number
+    approval_workflow_level_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type IntFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntFilter<$PrismaModel> | number
+  export type BigIntFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    in?: bigint[] | number[]
+    notIn?: bigint[] | number[]
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntFilter<$PrismaModel> | bigint | number
   }
 
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -42025,7 +40351,6 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
@@ -42036,8 +40361,8 @@ export namespace Prisma {
 
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -42139,6 +40464,8 @@ export namespace Prisma {
     is_active?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
+    store_access?: SortOrder
+    brand_access?: SortOrder
   }
 
   export type UserAvgOrderByAggregateInput = {
@@ -42155,6 +40482,8 @@ export namespace Prisma {
     is_active?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
+    store_access?: SortOrder
+    brand_access?: SortOrder
   }
 
   export type UserMinOrderByAggregateInput = {
@@ -42166,6 +40495,8 @@ export namespace Prisma {
     is_active?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
+    store_access?: SortOrder
+    brand_access?: SortOrder
   }
 
   export type UserSumOrderByAggregateInput = {
@@ -42173,26 +40504,26 @@ export namespace Prisma {
     role_id?: SortOrder
   }
 
-  export type IntWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+  export type BigIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    in?: bigint[] | number[]
+    notIn?: bigint[] | number[]
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntWithAggregatesFilter<$PrismaModel> | bigint | number
     _count?: NestedIntFilter<$PrismaModel>
     _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
+    _sum?: NestedBigIntFilter<$PrismaModel>
+    _min?: NestedBigIntFilter<$PrismaModel>
+    _max?: NestedBigIntFilter<$PrismaModel>
   }
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -42200,7 +40531,6 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
     not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
@@ -42217,8 +40547,8 @@ export namespace Prisma {
 
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -42231,8 +40561,8 @@ export namespace Prisma {
 
   export type StringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -42240,19 +40570,18 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
-  export type IntNullableFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  export type BigIntNullableFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel> | null
+    in?: bigint[] | number[] | null
+    notIn?: bigint[] | number[] | null
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntNullableFilter<$PrismaModel> | bigint | number | null
   }
 
   export type UserListRelationFilter = {
@@ -42317,8 +40646,8 @@ export namespace Prisma {
 
   export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -42326,27 +40655,26 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
     not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
     _max?: NestedStringNullableFilter<$PrismaModel>
   }
 
-  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+  export type BigIntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel> | null
+    in?: bigint[] | number[] | null
+    notIn?: bigint[] | number[] | null
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntNullableWithAggregatesFilter<$PrismaModel> | bigint | number | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _avg?: NestedFloatNullableFilter<$PrismaModel>
-    _sum?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedIntNullableFilter<$PrismaModel>
-    _max?: NestedIntNullableFilter<$PrismaModel>
+    _sum?: NestedBigIntNullableFilter<$PrismaModel>
+    _min?: NestedBigIntNullableFilter<$PrismaModel>
+    _max?: NestedBigIntNullableFilter<$PrismaModel>
   }
 
   export type BrandListRelationFilter = {
@@ -42963,8 +41291,8 @@ export namespace Prisma {
 
   export type DecimalFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -43064,8 +41392,8 @@ export namespace Prisma {
 
   export type DecimalWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -43076,6 +41404,17 @@ export namespace Prisma {
     _sum?: NestedDecimalFilter<$PrismaModel>
     _min?: NestedDecimalFilter<$PrismaModel>
     _max?: NestedDecimalFilter<$PrismaModel>
+  }
+
+  export type IntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
   }
 
   export type UserRelationFilter = {
@@ -43136,6 +41475,22 @@ export namespace Prisma {
     fiscal_year?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
+  }
+
+  export type IntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
   }
 
   export type BudgetRelationFilter = {
@@ -43278,9 +41633,16 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
+  export type AllocateHeaderNullableRelationFilter = {
+    is?: AllocateHeaderWhereInput | null
+    isNot?: AllocateHeaderWhereInput | null
+  }
+
   export type PlanningHeaderCountOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -43290,6 +41652,7 @@ export namespace Prisma {
 
   export type PlanningHeaderAvgOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
@@ -43297,7 +41660,9 @@ export namespace Prisma {
 
   export type PlanningHeaderMaxOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -43307,7 +41672,9 @@ export namespace Prisma {
 
   export type PlanningHeaderMinOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -43317,6 +41684,7 @@ export namespace Prisma {
 
   export type PlanningHeaderSumOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
@@ -43588,6 +41956,7 @@ export namespace Prisma {
   export type SKUProposalHeaderCountOrderByAggregateInput = {
     id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -43605,6 +41974,7 @@ export namespace Prisma {
   export type SKUProposalHeaderMaxOrderByAggregateInput = {
     id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -43615,6 +41985,7 @@ export namespace Prisma {
   export type SKUProposalHeaderMinOrderByAggregateInput = {
     id?: SortOrder
     version?: SortOrder
+    status?: SortOrder
     is_final_version?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -44073,8 +42444,8 @@ export namespace Prisma {
 
   export type DateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -44154,8 +42525,8 @@ export namespace Prisma {
 
   export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -44282,6 +42653,14 @@ export namespace Prisma {
     connectOrCreate?: TicketApprovalLogCreateOrConnectWithoutApprover_userInput | TicketApprovalLogCreateOrConnectWithoutApprover_userInput[]
     createMany?: TicketApprovalLogCreateManyApprover_userInputEnvelope
     connect?: TicketApprovalLogWhereUniqueInput | TicketApprovalLogWhereUniqueInput[]
+  }
+
+  export type BigIntFieldUpdateOperationsInput = {
+    set?: bigint | number
+    increment?: bigint | number
+    decrement?: bigint | number
+    multiply?: bigint | number
+    divide?: bigint | number
   }
 
   export type StringFieldUpdateOperationsInput = {
@@ -44416,14 +42795,6 @@ export namespace Prisma {
     deleteMany?: TicketApprovalLogScalarWhereInput | TicketApprovalLogScalarWhereInput[]
   }
 
-  export type IntFieldUpdateOperationsInput = {
-    set?: number
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
-  }
-
   export type BudgetUncheckedUpdateManyWithoutCreatorNestedInput = {
     create?: XOR<BudgetCreateWithoutCreatorInput, BudgetUncheckedCreateWithoutCreatorInput> | BudgetCreateWithoutCreatorInput[] | BudgetUncheckedCreateWithoutCreatorInput[]
     connectOrCreate?: BudgetCreateOrConnectWithoutCreatorInput | BudgetCreateOrConnectWithoutCreatorInput[]
@@ -44554,12 +42925,12 @@ export namespace Prisma {
     set?: string | null
   }
 
-  export type NullableIntFieldUpdateOperationsInput = {
-    set?: number | null
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
+  export type NullableBigIntFieldUpdateOperationsInput = {
+    set?: bigint | number | null
+    increment?: bigint | number
+    decrement?: bigint | number
+    multiply?: bigint | number
+    divide?: bigint | number
   }
 
   export type UserUpdateManyWithoutRoleNestedInput = {
@@ -45558,6 +43929,14 @@ export namespace Prisma {
     connect?: AllocateHeaderWhereUniqueInput | AllocateHeaderWhereUniqueInput[]
   }
 
+  export type IntFieldUpdateOperationsInput = {
+    set?: number
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
   export type UserUpdateOneRequiredWithoutCreated_budgetsNestedInput = {
     create?: XOR<UserCreateWithoutCreated_budgetsInput, UserUncheckedCreateWithoutCreated_budgetsInput>
     connectOrCreate?: UserCreateOrConnectWithoutCreated_budgetsInput
@@ -45619,11 +43998,25 @@ export namespace Prisma {
     connect?: BudgetAllocateWhereUniqueInput | BudgetAllocateWhereUniqueInput[]
   }
 
+  export type PlanningHeaderCreateNestedManyWithoutAllocate_headerInput = {
+    create?: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput> | PlanningHeaderCreateWithoutAllocate_headerInput[] | PlanningHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: PlanningHeaderCreateOrConnectWithoutAllocate_headerInput | PlanningHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    createMany?: PlanningHeaderCreateManyAllocate_headerInputEnvelope
+    connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+  }
+
   export type BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput = {
     create?: XOR<BudgetAllocateCreateWithoutAllocate_headerInput, BudgetAllocateUncheckedCreateWithoutAllocate_headerInput> | BudgetAllocateCreateWithoutAllocate_headerInput[] | BudgetAllocateUncheckedCreateWithoutAllocate_headerInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutAllocate_headerInput | BudgetAllocateCreateOrConnectWithoutAllocate_headerInput[]
     createMany?: BudgetAllocateCreateManyAllocate_headerInputEnvelope
     connect?: BudgetAllocateWhereUniqueInput | BudgetAllocateWhereUniqueInput[]
+  }
+
+  export type PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput = {
+    create?: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput> | PlanningHeaderCreateWithoutAllocate_headerInput[] | PlanningHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: PlanningHeaderCreateOrConnectWithoutAllocate_headerInput | PlanningHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    createMany?: PlanningHeaderCreateManyAllocate_headerInputEnvelope
+    connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
   }
 
   export type BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput = {
@@ -45664,6 +44057,20 @@ export namespace Prisma {
     deleteMany?: BudgetAllocateScalarWhereInput | BudgetAllocateScalarWhereInput[]
   }
 
+  export type PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput = {
+    create?: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput> | PlanningHeaderCreateWithoutAllocate_headerInput[] | PlanningHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: PlanningHeaderCreateOrConnectWithoutAllocate_headerInput | PlanningHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    upsert?: PlanningHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput | PlanningHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput[]
+    createMany?: PlanningHeaderCreateManyAllocate_headerInputEnvelope
+    set?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    disconnect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    delete?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    update?: PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput | PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput[]
+    updateMany?: PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput | PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput[]
+    deleteMany?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
+  }
+
   export type BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput = {
     create?: XOR<BudgetAllocateCreateWithoutAllocate_headerInput, BudgetAllocateUncheckedCreateWithoutAllocate_headerInput> | BudgetAllocateCreateWithoutAllocate_headerInput[] | BudgetAllocateUncheckedCreateWithoutAllocate_headerInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutAllocate_headerInput | BudgetAllocateCreateOrConnectWithoutAllocate_headerInput[]
@@ -45676,6 +44083,20 @@ export namespace Prisma {
     update?: BudgetAllocateUpdateWithWhereUniqueWithoutAllocate_headerInput | BudgetAllocateUpdateWithWhereUniqueWithoutAllocate_headerInput[]
     updateMany?: BudgetAllocateUpdateManyWithWhereWithoutAllocate_headerInput | BudgetAllocateUpdateManyWithWhereWithoutAllocate_headerInput[]
     deleteMany?: BudgetAllocateScalarWhereInput | BudgetAllocateScalarWhereInput[]
+  }
+
+  export type PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput = {
+    create?: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput> | PlanningHeaderCreateWithoutAllocate_headerInput[] | PlanningHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: PlanningHeaderCreateOrConnectWithoutAllocate_headerInput | PlanningHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    upsert?: PlanningHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput | PlanningHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput[]
+    createMany?: PlanningHeaderCreateManyAllocate_headerInputEnvelope
+    set?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    disconnect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    delete?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+    update?: PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput | PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput[]
+    updateMany?: PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput | PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput[]
+    deleteMany?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
   }
 
   export type AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput = {
@@ -45782,6 +44203,12 @@ export namespace Prisma {
     connect?: UserWhereUniqueInput
   }
 
+  export type AllocateHeaderCreateNestedOneWithoutPlanning_headersInput = {
+    create?: XOR<AllocateHeaderCreateWithoutPlanning_headersInput, AllocateHeaderUncheckedCreateWithoutPlanning_headersInput>
+    connectOrCreate?: AllocateHeaderCreateOrConnectWithoutPlanning_headersInput
+    connect?: AllocateHeaderWhereUniqueInput
+  }
+
   export type PlanningCollectionCreateNestedManyWithoutPlanning_headerInput = {
     create?: XOR<PlanningCollectionCreateWithoutPlanning_headerInput, PlanningCollectionUncheckedCreateWithoutPlanning_headerInput> | PlanningCollectionCreateWithoutPlanning_headerInput[] | PlanningCollectionUncheckedCreateWithoutPlanning_headerInput[]
     connectOrCreate?: PlanningCollectionCreateOrConnectWithoutPlanning_headerInput | PlanningCollectionCreateOrConnectWithoutPlanning_headerInput[]
@@ -45830,6 +44257,16 @@ export namespace Prisma {
     upsert?: UserUpsertWithoutCreated_planning_headersInput
     connect?: UserWhereUniqueInput
     update?: XOR<XOR<UserUpdateToOneWithWhereWithoutCreated_planning_headersInput, UserUpdateWithoutCreated_planning_headersInput>, UserUncheckedUpdateWithoutCreated_planning_headersInput>
+  }
+
+  export type AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput = {
+    create?: XOR<AllocateHeaderCreateWithoutPlanning_headersInput, AllocateHeaderUncheckedCreateWithoutPlanning_headersInput>
+    connectOrCreate?: AllocateHeaderCreateOrConnectWithoutPlanning_headersInput
+    upsert?: AllocateHeaderUpsertWithoutPlanning_headersInput
+    disconnect?: AllocateHeaderWhereInput | boolean
+    delete?: AllocateHeaderWhereInput | boolean
+    connect?: AllocateHeaderWhereUniqueInput
+    update?: XOR<XOR<AllocateHeaderUpdateToOneWithWhereWithoutPlanning_headersInput, AllocateHeaderUpdateWithoutPlanning_headersInput>, AllocateHeaderUncheckedUpdateWithoutPlanning_headersInput>
   }
 
   export type PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput = {
@@ -46564,21 +45001,21 @@ export namespace Prisma {
     update?: XOR<XOR<UserUpdateToOneWithWhereWithoutTicket_approval_logsInput, UserUpdateWithoutTicket_approval_logsInput>, UserUncheckedUpdateWithoutTicket_approval_logsInput>
   }
 
-  export type NestedIntFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntFilter<$PrismaModel> | number
+  export type NestedBigIntFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    in?: bigint[] | number[]
+    notIn?: bigint[] | number[]
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntFilter<$PrismaModel> | bigint | number
   }
 
   export type NestedStringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -46596,8 +45033,8 @@ export namespace Prisma {
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -46605,26 +45042,37 @@ export namespace Prisma {
     not?: NestedDateTimeFilter<$PrismaModel> | Date | string
   }
 
-  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
+  export type NestedBigIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    in?: bigint[] | number[]
+    notIn?: bigint[] | number[]
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntWithAggregatesFilter<$PrismaModel> | bigint | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedBigIntFilter<$PrismaModel>
+    _min?: NestedBigIntFilter<$PrismaModel>
+    _max?: NestedBigIntFilter<$PrismaModel>
+  }
+
+  export type NestedIntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
-    _count?: NestedIntFilter<$PrismaModel>
-    _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
   }
 
   export type NestedFloatFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -46634,8 +45082,8 @@ export namespace Prisma {
 
   export type NestedStringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -46659,8 +45107,8 @@ export namespace Prisma {
 
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -46673,8 +45121,8 @@ export namespace Prisma {
 
   export type NestedStringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -46685,21 +45133,21 @@ export namespace Prisma {
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
-  export type NestedIntNullableFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  export type NestedBigIntNullableFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel> | null
+    in?: bigint[] | number[] | null
+    notIn?: bigint[] | number[] | null
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntNullableFilter<$PrismaModel> | bigint | number | null
   }
 
   export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -46713,26 +45161,37 @@ export namespace Prisma {
     _max?: NestedStringNullableFilter<$PrismaModel>
   }
 
-  export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
+  export type NestedIntNullableFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type NestedBigIntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: bigint | number | BigIntFieldRefInput<$PrismaModel> | null
+    in?: bigint[] | number[] | null
+    notIn?: bigint[] | number[] | null
+    lt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    lte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gt?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    gte?: bigint | number | BigIntFieldRefInput<$PrismaModel>
+    not?: NestedBigIntNullableWithAggregatesFilter<$PrismaModel> | bigint | number | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _avg?: NestedFloatNullableFilter<$PrismaModel>
-    _sum?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedIntNullableFilter<$PrismaModel>
-    _max?: NestedIntNullableFilter<$PrismaModel>
+    _sum?: NestedBigIntNullableFilter<$PrismaModel>
+    _min?: NestedBigIntNullableFilter<$PrismaModel>
+    _max?: NestedBigIntNullableFilter<$PrismaModel>
   }
 
   export type NestedFloatNullableFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -46742,8 +45201,8 @@ export namespace Prisma {
 
   export type NestedDecimalFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -46753,8 +45212,8 @@ export namespace Prisma {
 
   export type NestedDecimalWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -46767,10 +45226,26 @@ export namespace Prisma {
     _max?: NestedDecimalFilter<$PrismaModel>
   }
 
+  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
   export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -46780,8 +45255,8 @@ export namespace Prisma {
 
   export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -46793,24 +45268,25 @@ export namespace Prisma {
   }
 
   export type RoleCreateWithoutUsersInput = {
+    id?: bigint | number
     name: string
     description?: string | null
     permissions?: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type RoleUncheckedCreateWithoutUsersInput = {
-    id?: number
+    id?: bigint | number
     name: string
     description?: string | null
     permissions?: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type RoleCreateOrConnectWithoutUsersInput = {
@@ -46819,6 +45295,7 @@ export namespace Prisma {
   }
 
   export type BudgetCreateWithoutCreatorInput = {
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
@@ -46826,12 +45303,12 @@ export namespace Prisma {
     fiscal_year: number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBudgetInput
   }
 
   export type BudgetUncheckedCreateWithoutCreatorInput = {
-    id?: number
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
@@ -46839,7 +45316,7 @@ export namespace Prisma {
     fiscal_year: number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBudgetInput
   }
 
@@ -46850,30 +45327,32 @@ export namespace Prisma {
 
   export type BudgetCreateManyCreatorInputEnvelope = {
     data: BudgetCreateManyCreatorInput | BudgetCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type AllocateHeaderCreateWithoutCreatorInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget: BudgetCreateNestedOneWithoutAllocate_headersInput
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutCreatorInput = {
-    id?: number
-    budget_id: number
-    brand_id: number
+    id?: bigint | number
+    budget_id: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutCreatorInput = {
@@ -46883,27 +45362,31 @@ export namespace Prisma {
 
   export type AllocateHeaderCreateManyCreatorInputEnvelope = {
     data: AllocateHeaderCreateManyCreatorInput | AllocateHeaderCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningHeaderCreateWithoutCreatorInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutPlanning_headersInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUncheckedCreateWithoutCreatorInput = {
-    id?: number
+    id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutPlanning_headerInput
@@ -46916,25 +45399,27 @@ export namespace Prisma {
 
   export type PlanningHeaderCreateManyCreatorInputEnvelope = {
     data: PlanningHeaderCreateManyCreatorInput | PlanningHeaderCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type SKUProposalHeaderCreateWithoutCreatorInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalCreateNestedManyWithoutSku_proposal_headerInput
   }
 
   export type SKUProposalHeaderUncheckedCreateWithoutCreatorInput = {
-    id?: number
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutSku_proposal_headerInput
   }
 
@@ -46945,27 +45430,27 @@ export namespace Prisma {
 
   export type SKUProposalHeaderCreateManyCreatorInputEnvelope = {
     data: SKUProposalHeaderCreateManyCreatorInput | SKUProposalHeaderCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type ProposalSizingHeaderCreateWithoutCreatorInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal: SKUProposalCreateNestedOneWithoutProposal_sizing_headersInput
     proposal_sizings?: ProposalSizingCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
   export type ProposalSizingHeaderUncheckedCreateWithoutCreatorInput = {
-    id?: number
-    sku_proposal_id: number
+    id?: bigint | number
+    sku_proposal_id: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
@@ -46976,25 +45461,25 @@ export namespace Prisma {
 
   export type ProposalSizingHeaderCreateManyCreatorInputEnvelope = {
     data: ProposalSizingHeaderCreateManyCreatorInput | ProposalSizingHeaderCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type TicketCreateWithoutCreatorInput = {
+    id?: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocate: BudgetAllocateCreateNestedOneWithoutTicketsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutTicketInput
   }
 
   export type TicketUncheckedCreateWithoutCreatorInput = {
-    id?: number
-    budget_allocate_id: number
+    id?: bigint | number
+    budget_allocate_id: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutTicketInput
   }
 
@@ -47005,31 +45490,31 @@ export namespace Prisma {
 
   export type TicketCreateManyCreatorInputEnvelope = {
     data: TicketCreateManyCreatorInput | TicketCreateManyCreatorInput[]
-    skipDuplicates?: boolean
   }
 
   export type ApprovalWorkflowLevelCreateWithoutApprover_userInput = {
+    id?: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow: ApprovalWorkflowCreateNestedOneWithoutApproval_workflow_levelsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
   export type ApprovalWorkflowLevelUncheckedCreateWithoutApprover_userInput = {
-    id?: number
-    approval_workflow_id: number
+    id?: bigint | number
+    approval_workflow_id: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
@@ -47040,32 +45525,32 @@ export namespace Prisma {
 
   export type ApprovalWorkflowLevelCreateManyApprover_userInputEnvelope = {
     data: ApprovalWorkflowLevelCreateManyApprover_userInput | ApprovalWorkflowLevelCreateManyApprover_userInput[]
-    skipDuplicates?: boolean
   }
 
   export type TicketApprovalLogCreateWithoutApprover_userInput = {
+    id?: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket: TicketCreateNestedOneWithoutTicket_approval_logsInput
     approval_workflow_level: ApprovalWorkflowLevelCreateNestedOneWithoutTicket_approval_logsInput
   }
 
   export type TicketApprovalLogUncheckedCreateWithoutApprover_userInput = {
-    id?: number
-    ticket_id: number
-    approval_workflow_level_id: number
+    id?: bigint | number
+    ticket_id: bigint | number
+    approval_workflow_level_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogCreateOrConnectWithoutApprover_userInput = {
@@ -47075,7 +45560,6 @@ export namespace Prisma {
 
   export type TicketApprovalLogCreateManyApprover_userInputEnvelope = {
     data: TicketApprovalLogCreateManyApprover_userInput | TicketApprovalLogCreateManyApprover_userInput[]
-    skipDuplicates?: boolean
   }
 
   export type RoleUpsertWithoutUsersInput = {
@@ -47090,24 +45574,25 @@ export namespace Prisma {
   }
 
   export type RoleUpdateWithoutUsersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type RoleUncheckedUpdateWithoutUsersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     permissions?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47130,16 +45615,16 @@ export namespace Prisma {
     AND?: BudgetScalarWhereInput | BudgetScalarWhereInput[]
     OR?: BudgetScalarWhereInput[]
     NOT?: BudgetScalarWhereInput | BudgetScalarWhereInput[]
-    id?: IntFilter<"Budget"> | number
+    id?: BigIntFilter<"Budget"> | bigint | number
     name?: StringFilter<"Budget"> | string
     amount?: DecimalFilter<"Budget"> | Decimal | DecimalJsLike | number | string
     description?: StringNullableFilter<"Budget"> | string | null
     status?: StringFilter<"Budget"> | string
     fiscal_year?: IntFilter<"Budget"> | number
-    created_by?: IntFilter<"Budget"> | number
+    created_by?: BigIntFilter<"Budget"> | bigint | number
     created_at?: DateTimeFilter<"Budget"> | Date | string
     updated_at?: DateTimeFilter<"Budget"> | Date | string
-    updated_by?: IntNullableFilter<"Budget"> | number | null
+    updated_by?: BigIntNullableFilter<"Budget"> | bigint | number | null
   }
 
   export type AllocateHeaderUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47162,15 +45647,15 @@ export namespace Prisma {
     AND?: AllocateHeaderScalarWhereInput | AllocateHeaderScalarWhereInput[]
     OR?: AllocateHeaderScalarWhereInput[]
     NOT?: AllocateHeaderScalarWhereInput | AllocateHeaderScalarWhereInput[]
-    id?: IntFilter<"AllocateHeader"> | number
-    budget_id?: IntFilter<"AllocateHeader"> | number
-    brand_id?: IntFilter<"AllocateHeader"> | number
+    id?: BigIntFilter<"AllocateHeader"> | bigint | number
+    budget_id?: BigIntFilter<"AllocateHeader"> | bigint | number
+    brand_id?: BigIntFilter<"AllocateHeader"> | bigint | number
     version?: IntFilter<"AllocateHeader"> | number
     is_final_version?: BoolFilter<"AllocateHeader"> | boolean
-    created_by?: IntFilter<"AllocateHeader"> | number
+    created_by?: BigIntFilter<"AllocateHeader"> | bigint | number
     created_at?: DateTimeFilter<"AllocateHeader"> | Date | string
     updated_at?: DateTimeFilter<"AllocateHeader"> | Date | string
-    updated_by?: IntNullableFilter<"AllocateHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"AllocateHeader"> | bigint | number | null
   }
 
   export type PlanningHeaderUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47193,13 +45678,15 @@ export namespace Prisma {
     AND?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
     OR?: PlanningHeaderScalarWhereInput[]
     NOT?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
-    id?: IntFilter<"PlanningHeader"> | number
+    id?: BigIntFilter<"PlanningHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
     version?: IntFilter<"PlanningHeader"> | number
+    status?: StringFilter<"PlanningHeader"> | string
     is_final_version?: BoolFilter<"PlanningHeader"> | boolean
-    created_by?: IntFilter<"PlanningHeader"> | number
+    created_by?: BigIntFilter<"PlanningHeader"> | bigint | number
     created_at?: DateTimeFilter<"PlanningHeader"> | Date | string
     updated_at?: DateTimeFilter<"PlanningHeader"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningHeader"> | bigint | number | null
   }
 
   export type SKUProposalHeaderUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47222,13 +45709,14 @@ export namespace Prisma {
     AND?: SKUProposalHeaderScalarWhereInput | SKUProposalHeaderScalarWhereInput[]
     OR?: SKUProposalHeaderScalarWhereInput[]
     NOT?: SKUProposalHeaderScalarWhereInput | SKUProposalHeaderScalarWhereInput[]
-    id?: IntFilter<"SKUProposalHeader"> | number
+    id?: BigIntFilter<"SKUProposalHeader"> | bigint | number
     version?: IntFilter<"SKUProposalHeader"> | number
+    status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
-    created_by?: IntFilter<"SKUProposalHeader"> | number
+    created_by?: BigIntFilter<"SKUProposalHeader"> | bigint | number
     created_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposalHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
   }
 
   export type ProposalSizingHeaderUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47251,14 +45739,14 @@ export namespace Prisma {
     AND?: ProposalSizingHeaderScalarWhereInput | ProposalSizingHeaderScalarWhereInput[]
     OR?: ProposalSizingHeaderScalarWhereInput[]
     NOT?: ProposalSizingHeaderScalarWhereInput | ProposalSizingHeaderScalarWhereInput[]
-    id?: IntFilter<"ProposalSizingHeader"> | number
-    sku_proposal_id?: IntFilter<"ProposalSizingHeader"> | number
+    id?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
+    sku_proposal_id?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     version?: IntFilter<"ProposalSizingHeader"> | number
     is_final_version?: BoolFilter<"ProposalSizingHeader"> | boolean
-    created_by?: IntFilter<"ProposalSizingHeader"> | number
+    created_by?: BigIntFilter<"ProposalSizingHeader"> | bigint | number
     created_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizingHeader"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizingHeader"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizingHeader"> | bigint | number | null
   }
 
   export type TicketUpsertWithWhereUniqueWithoutCreatorInput = {
@@ -47281,13 +45769,13 @@ export namespace Prisma {
     AND?: TicketScalarWhereInput | TicketScalarWhereInput[]
     OR?: TicketScalarWhereInput[]
     NOT?: TicketScalarWhereInput | TicketScalarWhereInput[]
-    id?: IntFilter<"Ticket"> | number
-    budget_allocate_id?: IntFilter<"Ticket"> | number
+    id?: BigIntFilter<"Ticket"> | bigint | number
+    budget_allocate_id?: BigIntFilter<"Ticket"> | bigint | number
     status?: StringFilter<"Ticket"> | string
-    created_by?: IntFilter<"Ticket"> | number
+    created_by?: BigIntFilter<"Ticket"> | bigint | number
     created_at?: DateTimeFilter<"Ticket"> | Date | string
     updated_at?: DateTimeFilter<"Ticket"> | Date | string
-    updated_by?: IntNullableFilter<"Ticket"> | number | null
+    updated_by?: BigIntNullableFilter<"Ticket"> | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUpsertWithWhereUniqueWithoutApprover_userInput = {
@@ -47310,16 +45798,16 @@ export namespace Prisma {
     AND?: ApprovalWorkflowLevelScalarWhereInput | ApprovalWorkflowLevelScalarWhereInput[]
     OR?: ApprovalWorkflowLevelScalarWhereInput[]
     NOT?: ApprovalWorkflowLevelScalarWhereInput | ApprovalWorkflowLevelScalarWhereInput[]
-    id?: IntFilter<"ApprovalWorkflowLevel"> | number
-    approval_workflow_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
+    approval_workflow_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     level_order?: IntFilter<"ApprovalWorkflowLevel"> | number
     level_name?: StringFilter<"ApprovalWorkflowLevel"> | string
-    approver_user_id?: IntFilter<"ApprovalWorkflowLevel"> | number
+    approver_user_id?: BigIntFilter<"ApprovalWorkflowLevel"> | bigint | number
     is_required?: BoolFilter<"ApprovalWorkflowLevel"> | boolean
-    created_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflowLevel"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflowLevel"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflowLevel"> | bigint | number | null
   }
 
   export type TicketApprovalLogUpsertWithWhereUniqueWithoutApprover_userInput = {
@@ -47342,26 +45830,29 @@ export namespace Prisma {
     AND?: TicketApprovalLogScalarWhereInput | TicketApprovalLogScalarWhereInput[]
     OR?: TicketApprovalLogScalarWhereInput[]
     NOT?: TicketApprovalLogScalarWhereInput | TicketApprovalLogScalarWhereInput[]
-    id?: IntFilter<"TicketApprovalLog"> | number
-    ticket_id?: IntFilter<"TicketApprovalLog"> | number
-    approval_workflow_level_id?: IntFilter<"TicketApprovalLog"> | number
-    approver_user_id?: IntFilter<"TicketApprovalLog"> | number
+    id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    ticket_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approval_workflow_level_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
+    approver_user_id?: BigIntFilter<"TicketApprovalLog"> | bigint | number
     is_approved?: BoolFilter<"TicketApprovalLog"> | boolean
     comment?: StringNullableFilter<"TicketApprovalLog"> | string | null
     approved_at?: DateTimeNullableFilter<"TicketApprovalLog"> | Date | string | null
-    created_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    created_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
     created_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
     updated_at?: DateTimeFilter<"TicketApprovalLog"> | Date | string
-    updated_by?: IntNullableFilter<"TicketApprovalLog"> | number | null
+    updated_by?: BigIntNullableFilter<"TicketApprovalLog"> | bigint | number | null
   }
 
   export type UserCreateWithoutRoleInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderCreateNestedManyWithoutCreatorInput
@@ -47373,13 +45864,15 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutRoleInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -47397,7 +45890,6 @@ export namespace Prisma {
 
   export type UserCreateManyRoleInputEnvelope = {
     data: UserCreateManyRoleInput | UserCreateManyRoleInput[]
-    skipDuplicates?: boolean
   }
 
   export type UserUpsertWithWhereUniqueWithoutRoleInput = {
@@ -47420,37 +45912,40 @@ export namespace Prisma {
     AND?: UserScalarWhereInput | UserScalarWhereInput[]
     OR?: UserScalarWhereInput[]
     NOT?: UserScalarWhereInput | UserScalarWhereInput[]
-    id?: IntFilter<"User"> | number
+    id?: BigIntFilter<"User"> | bigint | number
     email?: StringFilter<"User"> | string
     name?: StringFilter<"User"> | string
     password_hash?: StringFilter<"User"> | string
-    role_id?: IntFilter<"User"> | number
+    role_id?: BigIntFilter<"User"> | bigint | number
     is_active?: BoolFilter<"User"> | boolean
     created_at?: DateTimeFilter<"User"> | Date | string
     updated_at?: DateTimeFilter<"User"> | Date | string
+    store_access?: StringFilter<"User"> | string
+    brand_access?: StringFilter<"User"> | string
   }
 
   export type BrandCreateWithoutGroup_brandInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
   }
 
   export type BrandUncheckedCreateWithoutGroup_brandInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
   }
@@ -47462,25 +45957,25 @@ export namespace Prisma {
 
   export type BrandCreateManyGroup_brandInputEnvelope = {
     data: BrandCreateManyGroup_brandInput | BrandCreateManyGroup_brandInput[]
-    skipDuplicates?: boolean
   }
 
   export type ApprovalWorkflowCreateWithoutGroup_brandInput = {
+    id?: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelCreateNestedManyWithoutApproval_workflowInput
   }
 
   export type ApprovalWorkflowUncheckedCreateWithoutGroup_brandInput = {
-    id?: number
+    id?: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelUncheckedCreateNestedManyWithoutApproval_workflowInput
   }
 
@@ -47491,7 +45986,6 @@ export namespace Prisma {
 
   export type ApprovalWorkflowCreateManyGroup_brandInputEnvelope = {
     data: ApprovalWorkflowCreateManyGroup_brandInput | ApprovalWorkflowCreateManyGroup_brandInput[]
-    skipDuplicates?: boolean
   }
 
   export type BrandUpsertWithWhereUniqueWithoutGroup_brandInput = {
@@ -47514,15 +46008,15 @@ export namespace Prisma {
     AND?: BrandScalarWhereInput | BrandScalarWhereInput[]
     OR?: BrandScalarWhereInput[]
     NOT?: BrandScalarWhereInput | BrandScalarWhereInput[]
-    id?: IntFilter<"Brand"> | number
+    id?: BigIntFilter<"Brand"> | bigint | number
     code?: StringFilter<"Brand"> | string
     name?: StringFilter<"Brand"> | string
-    group_brand_id?: IntFilter<"Brand"> | number
+    group_brand_id?: BigIntFilter<"Brand"> | bigint | number
     is_active?: BoolFilter<"Brand"> | boolean
-    created_by?: IntNullableFilter<"Brand"> | number | null
+    created_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
     created_at?: DateTimeFilter<"Brand"> | Date | string
     updated_at?: DateTimeFilter<"Brand"> | Date | string
-    updated_by?: IntNullableFilter<"Brand"> | number | null
+    updated_by?: BigIntNullableFilter<"Brand"> | bigint | number | null
   }
 
   export type ApprovalWorkflowUpsertWithWhereUniqueWithoutGroup_brandInput = {
@@ -47545,35 +46039,36 @@ export namespace Prisma {
     AND?: ApprovalWorkflowScalarWhereInput | ApprovalWorkflowScalarWhereInput[]
     OR?: ApprovalWorkflowScalarWhereInput[]
     NOT?: ApprovalWorkflowScalarWhereInput | ApprovalWorkflowScalarWhereInput[]
-    id?: IntFilter<"ApprovalWorkflow"> | number
-    group_brand_id?: IntFilter<"ApprovalWorkflow"> | number
+    id?: BigIntFilter<"ApprovalWorkflow"> | bigint | number
+    group_brand_id?: BigIntFilter<"ApprovalWorkflow"> | bigint | number
     workflow_name?: StringFilter<"ApprovalWorkflow"> | string
-    created_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    created_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
     created_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
     updated_at?: DateTimeFilter<"ApprovalWorkflow"> | Date | string
-    updated_by?: IntNullableFilter<"ApprovalWorkflow"> | number | null
+    updated_by?: BigIntNullableFilter<"ApprovalWorkflow"> | bigint | number | null
   }
 
   export type GroupBrandCreateWithoutBrandsInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflows?: ApprovalWorkflowCreateNestedManyWithoutGroup_brandInput
   }
 
   export type GroupBrandUncheckedCreateWithoutBrandsInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflows?: ApprovalWorkflowUncheckedCreateNestedManyWithoutGroup_brandInput
   }
 
@@ -47583,6 +46078,7 @@ export namespace Prisma {
   }
 
   export type ProductCreateWithoutBrandInput = {
+    id?: bigint | number
     sku_code: string
     product_name: string
     family?: string | null
@@ -47592,19 +46088,19 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_category: SubCategoryCreateNestedOneWithoutProductsInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateWithoutBrandInput = {
-    id?: number
+    id?: bigint | number
     sku_code: string
     product_name: string
-    sub_category_id: number
+    sub_category_id: bigint | number
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -47612,10 +46108,10 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutProductInput
   }
 
@@ -47626,30 +46122,32 @@ export namespace Prisma {
 
   export type ProductCreateManyBrandInputEnvelope = {
     data: ProductCreateManyBrandInput | ProductCreateManyBrandInput[]
-    skipDuplicates?: boolean
   }
 
   export type AllocateHeaderCreateWithoutBrandInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget: BudgetCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBrandInput = {
-    id?: number
-    budget_id: number
+    id?: bigint | number
+    budget_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBrandInput = {
@@ -47659,7 +46157,6 @@ export namespace Prisma {
 
   export type AllocateHeaderCreateManyBrandInputEnvelope = {
     data: AllocateHeaderCreateManyBrandInput | AllocateHeaderCreateManyBrandInput[]
-    skipDuplicates?: boolean
   }
 
   export type GroupBrandUpsertWithoutBrandsInput = {
@@ -47674,25 +46171,26 @@ export namespace Prisma {
   }
 
   export type GroupBrandUpdateWithoutBrandsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflows?: ApprovalWorkflowUpdateManyWithoutGroup_brandNestedInput
   }
 
   export type GroupBrandUncheckedUpdateWithoutBrandsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflows?: ApprovalWorkflowUncheckedUpdateManyWithoutGroup_brandNestedInput
   }
 
@@ -47716,11 +46214,11 @@ export namespace Prisma {
     AND?: ProductScalarWhereInput | ProductScalarWhereInput[]
     OR?: ProductScalarWhereInput[]
     NOT?: ProductScalarWhereInput | ProductScalarWhereInput[]
-    id?: IntFilter<"Product"> | number
+    id?: BigIntFilter<"Product"> | bigint | number
     sku_code?: StringFilter<"Product"> | string
     product_name?: StringFilter<"Product"> | string
-    sub_category_id?: IntFilter<"Product"> | number
-    brand_id?: IntNullableFilter<"Product"> | number | null
+    sub_category_id?: BigIntFilter<"Product"> | bigint | number
+    brand_id?: BigIntNullableFilter<"Product"> | bigint | number | null
     family?: StringNullableFilter<"Product"> | string | null
     theme?: StringNullableFilter<"Product"> | string | null
     color?: StringNullableFilter<"Product"> | string | null
@@ -47728,10 +46226,10 @@ export namespace Prisma {
     srp?: DecimalFilter<"Product"> | Decimal | DecimalJsLike | number | string
     image_url?: StringNullableFilter<"Product"> | string | null
     is_active?: BoolFilter<"Product"> | boolean
-    created_by?: IntNullableFilter<"Product"> | number | null
+    created_by?: BigIntNullableFilter<"Product"> | bigint | number | null
     created_at?: DateTimeFilter<"Product"> | Date | string
     updated_at?: DateTimeFilter<"Product"> | Date | string
-    updated_by?: IntNullableFilter<"Product"> | number | null
+    updated_by?: BigIntNullableFilter<"Product"> | bigint | number | null
   }
 
   export type AllocateHeaderUpsertWithWhereUniqueWithoutBrandInput = {
@@ -47751,11 +46249,12 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateCreateWithoutStoreInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_header: AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput
     season_group: SeasonGroupCreateNestedOneWithoutBudget_allocatesInput
     season: SeasonCreateNestedOneWithoutBudget_allocatesInput
@@ -47763,15 +46262,15 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateWithoutStoreInput = {
-    id?: number
-    allocate_header_id: number
-    season_group_id: number
-    season_id: number
+    id?: bigint | number
+    allocate_header_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutBudget_allocateInput
   }
 
@@ -47782,10 +46281,10 @@ export namespace Prisma {
 
   export type BudgetAllocateCreateManyStoreInputEnvelope = {
     data: BudgetAllocateCreateManyStoreInput | BudgetAllocateCreateManyStoreInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningCollectionCreateWithoutStoreInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -47793,18 +46292,18 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateWithoutStoreInput = {
-    id?: number
-    collection_id: number
-    planning_header_id: number
+    id?: bigint | number
+    collection_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -47812,10 +46311,10 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionCreateOrConnectWithoutStoreInput = {
@@ -47825,38 +46324,38 @@ export namespace Prisma {
 
   export type PlanningCollectionCreateManyStoreInputEnvelope = {
     data: PlanningCollectionCreateManyStoreInput | PlanningCollectionCreateManyStoreInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningGenderCreateWithoutStoreInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutPlanning_gendersInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_gendersInput
   }
 
   export type PlanningGenderUncheckedCreateWithoutStoreInput = {
-    id?: number
-    gender_id: number
-    planning_header_id: number
+    id?: bigint | number
+    gender_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateOrConnectWithoutStoreInput = {
@@ -47866,26 +46365,26 @@ export namespace Prisma {
 
   export type PlanningGenderCreateManyStoreInputEnvelope = {
     data: PlanningGenderCreateManyStoreInput | PlanningGenderCreateManyStoreInput[]
-    skipDuplicates?: boolean
   }
 
   export type SKUAllocateCreateWithoutStoreInput = {
+    id?: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal: SKUProposalCreateNestedOneWithoutSku_allocatesInput
   }
 
   export type SKUAllocateUncheckedCreateWithoutStoreInput = {
-    id?: number
-    sku_proposal_id: number
+    id?: bigint | number
+    sku_proposal_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateCreateOrConnectWithoutStoreInput = {
@@ -47895,7 +46394,6 @@ export namespace Prisma {
 
   export type SKUAllocateCreateManyStoreInputEnvelope = {
     data: SKUAllocateCreateManyStoreInput | SKUAllocateCreateManyStoreInput[]
-    skipDuplicates?: boolean
   }
 
   export type BudgetAllocateUpsertWithWhereUniqueWithoutStoreInput = {
@@ -47918,16 +46416,16 @@ export namespace Prisma {
     AND?: BudgetAllocateScalarWhereInput | BudgetAllocateScalarWhereInput[]
     OR?: BudgetAllocateScalarWhereInput[]
     NOT?: BudgetAllocateScalarWhereInput | BudgetAllocateScalarWhereInput[]
-    id?: IntFilter<"BudgetAllocate"> | number
-    allocate_header_id?: IntFilter<"BudgetAllocate"> | number
-    store_id?: IntFilter<"BudgetAllocate"> | number
-    season_group_id?: IntFilter<"BudgetAllocate"> | number
-    season_id?: IntFilter<"BudgetAllocate"> | number
+    id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    allocate_header_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    store_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_group_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
+    season_id?: BigIntFilter<"BudgetAllocate"> | bigint | number
     budget_amount?: DecimalFilter<"BudgetAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
     updated_at?: DateTimeFilter<"BudgetAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"BudgetAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"BudgetAllocate"> | bigint | number | null
   }
 
   export type PlanningCollectionUpsertWithWhereUniqueWithoutStoreInput = {
@@ -47950,10 +46448,10 @@ export namespace Prisma {
     AND?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
     OR?: PlanningCollectionScalarWhereInput[]
     NOT?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
-    id?: IntFilter<"PlanningCollection"> | number
-    collection_id?: IntFilter<"PlanningCollection"> | number
-    store_id?: IntFilter<"PlanningCollection"> | number
-    planning_header_id?: IntFilter<"PlanningCollection"> | number
+    id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -47961,10 +46459,10 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCollection"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCollection"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
   }
 
   export type PlanningGenderUpsertWithWhereUniqueWithoutStoreInput = {
@@ -47987,20 +46485,20 @@ export namespace Prisma {
     AND?: PlanningGenderScalarWhereInput | PlanningGenderScalarWhereInput[]
     OR?: PlanningGenderScalarWhereInput[]
     NOT?: PlanningGenderScalarWhereInput | PlanningGenderScalarWhereInput[]
-    id?: IntFilter<"PlanningGender"> | number
-    gender_id?: IntFilter<"PlanningGender"> | number
-    store_id?: IntFilter<"PlanningGender"> | number
-    planning_header_id?: IntFilter<"PlanningGender"> | number
+    id?: BigIntFilter<"PlanningGender"> | bigint | number
+    gender_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    store_id?: BigIntFilter<"PlanningGender"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningGender"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFilter<"PlanningGender"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningGender"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningGender"> | Date | string
     updated_at?: DateTimeFilter<"PlanningGender"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningGender"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningGender"> | bigint | number | null
   }
 
   export type SKUAllocateUpsertWithWhereUniqueWithoutStoreInput = {
@@ -48023,17 +46521,18 @@ export namespace Prisma {
     AND?: SKUAllocateScalarWhereInput | SKUAllocateScalarWhereInput[]
     OR?: SKUAllocateScalarWhereInput[]
     NOT?: SKUAllocateScalarWhereInput | SKUAllocateScalarWhereInput[]
-    id?: IntFilter<"SKUAllocate"> | number
-    sku_proposal_id?: IntFilter<"SKUAllocate"> | number
-    store_id?: IntFilter<"SKUAllocate"> | number
+    id?: BigIntFilter<"SKUAllocate"> | bigint | number
+    sku_proposal_id?: BigIntFilter<"SKUAllocate"> | bigint | number
+    store_id?: BigIntFilter<"SKUAllocate"> | bigint | number
     quantity?: DecimalFilter<"SKUAllocate"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    created_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUAllocate"> | Date | string
     updated_at?: DateTimeFilter<"SKUAllocate"> | Date | string
-    updated_by?: IntNullableFilter<"SKUAllocate"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
   }
 
   export type PlanningCollectionCreateWithoutCollectionInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -48041,18 +46540,18 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     store: StoreCreateNestedOneWithoutPlanning_collectionsInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateWithoutCollectionInput = {
-    id?: number
-    store_id: number
-    planning_header_id: number
+    id?: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -48060,10 +46559,10 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionCreateOrConnectWithoutCollectionInput = {
@@ -48073,7 +46572,6 @@ export namespace Prisma {
 
   export type PlanningCollectionCreateManyCollectionInputEnvelope = {
     data: PlanningCollectionCreateManyCollectionInput | PlanningCollectionCreateManyCollectionInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput = {
@@ -48093,23 +46591,24 @@ export namespace Prisma {
   }
 
   export type SeasonCreateWithoutSeason_groupInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateWithoutSeason_groupInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
   }
 
@@ -48120,15 +46619,15 @@ export namespace Prisma {
 
   export type SeasonCreateManySeason_groupInputEnvelope = {
     data: SeasonCreateManySeason_groupInput | SeasonCreateManySeason_groupInput[]
-    skipDuplicates?: boolean
   }
 
   export type BudgetAllocateCreateWithoutSeason_groupInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_header: AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput
     store: StoreCreateNestedOneWithoutBudget_allocatesInput
     season: SeasonCreateNestedOneWithoutBudget_allocatesInput
@@ -48136,15 +46635,15 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateWithoutSeason_groupInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_id: number
+    id?: bigint | number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutBudget_allocateInput
   }
 
@@ -48155,7 +46654,6 @@ export namespace Prisma {
 
   export type BudgetAllocateCreateManySeason_groupInputEnvelope = {
     data: BudgetAllocateCreateManySeason_groupInput | BudgetAllocateCreateManySeason_groupInput[]
-    skipDuplicates?: boolean
   }
 
   export type SeasonUpsertWithWhereUniqueWithoutSeason_groupInput = {
@@ -48178,14 +46676,14 @@ export namespace Prisma {
     AND?: SeasonScalarWhereInput | SeasonScalarWhereInput[]
     OR?: SeasonScalarWhereInput[]
     NOT?: SeasonScalarWhereInput | SeasonScalarWhereInput[]
-    id?: IntFilter<"Season"> | number
+    id?: BigIntFilter<"Season"> | bigint | number
     name?: StringFilter<"Season"> | string
-    season_group_id?: IntFilter<"Season"> | number
+    season_group_id?: BigIntFilter<"Season"> | bigint | number
     is_active?: BoolFilter<"Season"> | boolean
-    created_by?: IntNullableFilter<"Season"> | number | null
+    created_by?: BigIntNullableFilter<"Season"> | bigint | number | null
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
-    updated_by?: IntNullableFilter<"Season"> | number | null
+    updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
   }
 
   export type BudgetAllocateUpsertWithWhereUniqueWithoutSeason_groupInput = {
@@ -48205,23 +46703,24 @@ export namespace Prisma {
   }
 
   export type SeasonGroupCreateWithoutSeasonsInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeason_groupInput
   }
 
   export type SeasonGroupUncheckedCreateWithoutSeasonsInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeason_groupInput
   }
 
@@ -48231,11 +46730,12 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateCreateWithoutSeasonInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_header: AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput
     store: StoreCreateNestedOneWithoutBudget_allocatesInput
     season_group: SeasonGroupCreateNestedOneWithoutBudget_allocatesInput
@@ -48243,15 +46743,15 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateWithoutSeasonInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
+    id?: bigint | number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutBudget_allocateInput
   }
 
@@ -48262,7 +46762,6 @@ export namespace Prisma {
 
   export type BudgetAllocateCreateManySeasonInputEnvelope = {
     data: BudgetAllocateCreateManySeasonInput | BudgetAllocateCreateManySeasonInput[]
-    skipDuplicates?: boolean
   }
 
   export type SeasonGroupUpsertWithoutSeasonsInput = {
@@ -48277,23 +46776,24 @@ export namespace Prisma {
   }
 
   export type SeasonGroupUpdateWithoutSeasonsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeason_groupNestedInput
   }
 
   export type SeasonGroupUncheckedUpdateWithoutSeasonsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeason_groupNestedInput
   }
 
@@ -48314,23 +46814,24 @@ export namespace Prisma {
   }
 
   export type CategoryCreateWithoutGenderInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateWithoutGenderInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
   }
 
@@ -48341,38 +46842,38 @@ export namespace Prisma {
 
   export type CategoryCreateManyGenderInputEnvelope = {
     data: CategoryCreateManyGenderInput | CategoryCreateManyGenderInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningGenderCreateWithoutGenderInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     store: StoreCreateNestedOneWithoutPlanning_gendersInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_gendersInput
   }
 
   export type PlanningGenderUncheckedCreateWithoutGenderInput = {
-    id?: number
-    store_id: number
-    planning_header_id: number
+    id?: bigint | number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateOrConnectWithoutGenderInput = {
@@ -48382,7 +46883,6 @@ export namespace Prisma {
 
   export type PlanningGenderCreateManyGenderInputEnvelope = {
     data: PlanningGenderCreateManyGenderInput | PlanningGenderCreateManyGenderInput[]
-    skipDuplicates?: boolean
   }
 
   export type CategoryUpsertWithWhereUniqueWithoutGenderInput = {
@@ -48405,14 +46905,14 @@ export namespace Prisma {
     AND?: CategoryScalarWhereInput | CategoryScalarWhereInput[]
     OR?: CategoryScalarWhereInput[]
     NOT?: CategoryScalarWhereInput | CategoryScalarWhereInput[]
-    id?: IntFilter<"Category"> | number
+    id?: BigIntFilter<"Category"> | bigint | number
     name?: StringFilter<"Category"> | string
-    gender_id?: IntFilter<"Category"> | number
+    gender_id?: BigIntFilter<"Category"> | bigint | number
     is_active?: BoolFilter<"Category"> | boolean
-    created_by?: IntNullableFilter<"Category"> | number | null
+    created_by?: BigIntNullableFilter<"Category"> | bigint | number | null
     created_at?: DateTimeFilter<"Category"> | Date | string
     updated_at?: DateTimeFilter<"Category"> | Date | string
-    updated_by?: IntNullableFilter<"Category"> | number | null
+    updated_by?: BigIntNullableFilter<"Category"> | bigint | number | null
   }
 
   export type PlanningGenderUpsertWithWhereUniqueWithoutGenderInput = {
@@ -48432,23 +46932,24 @@ export namespace Prisma {
   }
 
   export type GenderCreateWithoutCategoriesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
   }
 
   export type GenderUncheckedCreateWithoutCategoriesInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
   }
 
@@ -48458,25 +46959,26 @@ export namespace Prisma {
   }
 
   export type SubCategoryCreateWithoutCategoryInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutCategoryInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
@@ -48489,7 +46991,6 @@ export namespace Prisma {
 
   export type SubCategoryCreateManyCategoryInputEnvelope = {
     data: SubCategoryCreateManyCategoryInput | SubCategoryCreateManyCategoryInput[]
-    skipDuplicates?: boolean
   }
 
   export type GenderUpsertWithoutCategoriesInput = {
@@ -48504,23 +47005,24 @@ export namespace Prisma {
   }
 
   export type GenderUpdateWithoutCategoriesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
   }
 
   export type GenderUncheckedUpdateWithoutCategoriesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
   }
 
@@ -48544,35 +47046,36 @@ export namespace Prisma {
     AND?: SubCategoryScalarWhereInput | SubCategoryScalarWhereInput[]
     OR?: SubCategoryScalarWhereInput[]
     NOT?: SubCategoryScalarWhereInput | SubCategoryScalarWhereInput[]
-    id?: IntFilter<"SubCategory"> | number
+    id?: BigIntFilter<"SubCategory"> | bigint | number
     name?: StringFilter<"SubCategory"> | string
-    category_id?: IntFilter<"SubCategory"> | number
+    category_id?: BigIntFilter<"SubCategory"> | bigint | number
     is_active?: BoolFilter<"SubCategory"> | boolean
-    created_by?: IntNullableFilter<"SubCategory"> | number | null
+    created_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"SubCategory"> | Date | string
     updated_at?: DateTimeFilter<"SubCategory"> | Date | string
-    updated_by?: IntNullableFilter<"SubCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"SubCategory"> | bigint | number | null
   }
 
   export type CategoryCreateWithoutSub_categoriesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutCategoriesInput
   }
 
   export type CategoryUncheckedCreateWithoutSub_categoriesInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    gender_id: number
+    gender_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CategoryCreateOrConnectWithoutSub_categoriesInput = {
@@ -48581,6 +47084,7 @@ export namespace Prisma {
   }
 
   export type ProductCreateWithoutSub_categoryInput = {
+    id?: bigint | number
     sku_code: string
     product_name: string
     family?: string | null
@@ -48590,19 +47094,19 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brand?: BrandCreateNestedOneWithoutProductsInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateWithoutSub_categoryInput = {
-    id?: number
+    id?: bigint | number
     sku_code: string
     product_name: string
-    brand_id?: number | null
+    brand_id?: bigint | number | null
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -48610,10 +47114,10 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutProductInput
   }
 
@@ -48624,25 +47128,25 @@ export namespace Prisma {
 
   export type ProductCreateManySub_categoryInputEnvelope = {
     data: ProductCreateManySub_categoryInput | ProductCreateManySub_categoryInput[]
-    skipDuplicates?: boolean
   }
 
   export type SubcategorySizeCreateWithoutSub_categoryInput = {
+    id?: bigint | number
     name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingCreateNestedManyWithoutSubcategory_sizeInput
   }
 
   export type SubcategorySizeUncheckedCreateWithoutSub_categoryInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedCreateNestedManyWithoutSubcategory_sizeInput
   }
 
@@ -48653,10 +47157,10 @@ export namespace Prisma {
 
   export type SubcategorySizeCreateManySub_categoryInputEnvelope = {
     data: SubcategorySizeCreateManySub_categoryInput | SubcategorySizeCreateManySub_categoryInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningCategoryCreateWithoutSubcategoryInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -48665,16 +47169,16 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_categoriesInput
   }
 
   export type PlanningCategoryUncheckedCreateWithoutSubcategoryInput = {
-    id?: number
-    planning_header_id: number
+    id?: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -48683,10 +47187,10 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryCreateOrConnectWithoutSubcategoryInput = {
@@ -48696,7 +47200,6 @@ export namespace Prisma {
 
   export type PlanningCategoryCreateManySubcategoryInputEnvelope = {
     data: PlanningCategoryCreateManySubcategoryInput | PlanningCategoryCreateManySubcategoryInput[]
-    skipDuplicates?: boolean
   }
 
   export type CategoryUpsertWithoutSub_categoriesInput = {
@@ -48711,24 +47214,25 @@ export namespace Prisma {
   }
 
   export type CategoryUpdateWithoutSub_categoriesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
   }
 
   export type CategoryUncheckedUpdateWithoutSub_categoriesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    gender_id?: IntFieldUpdateOperationsInput | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductUpsertWithWhereUniqueWithoutSub_categoryInput = {
@@ -48767,13 +47271,13 @@ export namespace Prisma {
     AND?: SubcategorySizeScalarWhereInput | SubcategorySizeScalarWhereInput[]
     OR?: SubcategorySizeScalarWhereInput[]
     NOT?: SubcategorySizeScalarWhereInput | SubcategorySizeScalarWhereInput[]
-    id?: IntFilter<"SubcategorySize"> | number
+    id?: BigIntFilter<"SubcategorySize"> | bigint | number
     name?: StringFilter<"SubcategorySize"> | string
-    sub_category_id?: IntFilter<"SubcategorySize"> | number
-    created_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    sub_category_id?: BigIntFilter<"SubcategorySize"> | bigint | number
+    created_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
     created_at?: DateTimeFilter<"SubcategorySize"> | Date | string
     updated_at?: DateTimeFilter<"SubcategorySize"> | Date | string
-    updated_by?: IntNullableFilter<"SubcategorySize"> | number | null
+    updated_by?: BigIntNullableFilter<"SubcategorySize"> | bigint | number | null
   }
 
   export type PlanningCategoryUpsertWithWhereUniqueWithoutSubcategoryInput = {
@@ -48796,9 +47300,9 @@ export namespace Prisma {
     AND?: PlanningCategoryScalarWhereInput | PlanningCategoryScalarWhereInput[]
     OR?: PlanningCategoryScalarWhereInput[]
     NOT?: PlanningCategoryScalarWhereInput | PlanningCategoryScalarWhereInput[]
-    id?: IntFilter<"PlanningCategory"> | number
-    subcategory_id?: IntFilter<"PlanningCategory"> | number
-    planning_header_id?: IntFilter<"PlanningCategory"> | number
+    id?: BigIntFilter<"PlanningCategory"> | bigint | number
+    subcategory_id?: BigIntFilter<"PlanningCategory"> | bigint | number
+    planning_header_id?: BigIntFilter<"PlanningCategory"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
@@ -48807,33 +47311,34 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFilter<"PlanningCategory"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    created_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
     created_at?: DateTimeFilter<"PlanningCategory"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCategory"> | Date | string
-    updated_by?: IntNullableFilter<"PlanningCategory"> | number | null
+    updated_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
   }
 
   export type SubCategoryCreateWithoutSubcategory_sizesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutSubcategory_sizesInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    category_id: number
+    category_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
   }
@@ -48844,26 +47349,27 @@ export namespace Prisma {
   }
 
   export type ProposalSizingCreateWithoutSubcategory_sizeInput = {
+    id?: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizing_header: ProposalSizingHeaderCreateNestedOneWithoutProposal_sizingsInput
   }
 
   export type ProposalSizingUncheckedCreateWithoutSubcategory_sizeInput = {
-    id?: number
-    proposal_sizing_header_id: number
+    id?: bigint | number
+    proposal_sizing_header_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingCreateOrConnectWithoutSubcategory_sizeInput = {
@@ -48873,7 +47379,6 @@ export namespace Prisma {
 
   export type ProposalSizingCreateManySubcategory_sizeInputEnvelope = {
     data: ProposalSizingCreateManySubcategory_sizeInput | ProposalSizingCreateManySubcategory_sizeInput[]
-    skipDuplicates?: boolean
   }
 
   export type SubCategoryUpsertWithoutSubcategory_sizesInput = {
@@ -48888,26 +47393,27 @@ export namespace Prisma {
   }
 
   export type SubCategoryUpdateWithoutSubcategory_sizesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutSubcategory_sizesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    category_id?: IntFieldUpdateOperationsInput | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
   }
@@ -48932,40 +47438,41 @@ export namespace Prisma {
     AND?: ProposalSizingScalarWhereInput | ProposalSizingScalarWhereInput[]
     OR?: ProposalSizingScalarWhereInput[]
     NOT?: ProposalSizingScalarWhereInput | ProposalSizingScalarWhereInput[]
-    id?: IntFilter<"ProposalSizing"> | number
-    proposal_sizing_header_id?: IntFilter<"ProposalSizing"> | number
-    subcategory_size_id?: IntFilter<"ProposalSizing"> | number
+    id?: BigIntFilter<"ProposalSizing"> | bigint | number
+    proposal_sizing_header_id?: BigIntFilter<"ProposalSizing"> | bigint | number
+    subcategory_size_id?: BigIntFilter<"ProposalSizing"> | bigint | number
     actual_salesmix_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFilter<"ProposalSizing"> | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFilter<"ProposalSizing"> | number
-    created_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    created_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
     created_at?: DateTimeFilter<"ProposalSizing"> | Date | string
     updated_at?: DateTimeFilter<"ProposalSizing"> | Date | string
-    updated_by?: IntNullableFilter<"ProposalSizing"> | number | null
+    updated_by?: BigIntNullableFilter<"ProposalSizing"> | bigint | number | null
   }
 
   export type BrandCreateWithoutProductsInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
   }
 
   export type BrandUncheckedCreateWithoutProductsInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
-    group_brand_id: number
+    group_brand_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
   }
 
@@ -48975,26 +47482,27 @@ export namespace Prisma {
   }
 
   export type SubCategoryCreateWithoutProductsInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutProductsInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    category_id: number
+    category_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
   }
@@ -49005,28 +47513,29 @@ export namespace Prisma {
   }
 
   export type SKUProposalCreateWithoutProductInput = {
+    id?: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal_header: SKUProposalHeaderCreateNestedOneWithoutSku_proposalsInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutSku_proposalInput
     proposal_sizing_headers?: ProposalSizingHeaderCreateNestedManyWithoutSku_proposalInput
   }
 
   export type SKUProposalUncheckedCreateWithoutProductInput = {
-    id?: number
-    sku_proposal_header_id: number
+    id?: bigint | number
+    sku_proposal_header_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutSku_proposalInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedCreateNestedManyWithoutSku_proposalInput
   }
@@ -49038,7 +47547,6 @@ export namespace Prisma {
 
   export type SKUProposalCreateManyProductInputEnvelope = {
     data: SKUProposalCreateManyProductInput | SKUProposalCreateManyProductInput[]
-    skipDuplicates?: boolean
   }
 
   export type BrandUpsertWithoutProductsInput = {
@@ -49053,27 +47561,28 @@ export namespace Prisma {
   }
 
   export type BrandUpdateWithoutProductsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutProductsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
   }
 
@@ -49089,26 +47598,27 @@ export namespace Prisma {
   }
 
   export type SubCategoryUpdateWithoutProductsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutProductsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    category_id?: IntFieldUpdateOperationsInput | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
   }
@@ -49133,25 +47643,28 @@ export namespace Prisma {
     AND?: SKUProposalScalarWhereInput | SKUProposalScalarWhereInput[]
     OR?: SKUProposalScalarWhereInput[]
     NOT?: SKUProposalScalarWhereInput | SKUProposalScalarWhereInput[]
-    id?: IntFilter<"SKUProposal"> | number
-    sku_proposal_header_id?: IntFilter<"SKUProposal"> | number
-    product_id?: IntFilter<"SKUProposal"> | number
+    id?: BigIntFilter<"SKUProposal"> | bigint | number
+    sku_proposal_header_id?: BigIntFilter<"SKUProposal"> | bigint | number
+    product_id?: BigIntFilter<"SKUProposal"> | bigint | number
     customer_target?: StringFilter<"SKUProposal"> | string
     unit_cost?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
     srp?: DecimalFilter<"SKUProposal"> | Decimal | DecimalJsLike | number | string
-    created_by?: IntNullableFilter<"SKUProposal"> | number | null
+    created_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
     created_at?: DateTimeFilter<"SKUProposal"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposal"> | Date | string
-    updated_by?: IntNullableFilter<"SKUProposal"> | number | null
+    updated_by?: BigIntNullableFilter<"SKUProposal"> | bigint | number | null
   }
 
   export type UserCreateWithoutCreated_budgetsInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderCreateNestedManyWithoutCreatorInput
@@ -49163,14 +47676,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_budgetsInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -49186,26 +47701,29 @@ export namespace Prisma {
   }
 
   export type AllocateHeaderCreateWithoutBudgetInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBudgetInput = {
-    id?: number
-    brand_id: number
+    id?: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBudgetInput = {
@@ -49215,7 +47733,6 @@ export namespace Prisma {
 
   export type AllocateHeaderCreateManyBudgetInputEnvelope = {
     data: AllocateHeaderCreateManyBudgetInput | AllocateHeaderCreateManyBudgetInput[]
-    skipDuplicates?: boolean
   }
 
   export type UserUpsertWithoutCreated_budgetsInput = {
@@ -49230,12 +47747,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_budgetsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUpdateManyWithoutCreatorNestedInput
@@ -49247,14 +47767,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_budgetsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -49281,6 +47803,7 @@ export namespace Prisma {
   }
 
   export type BudgetCreateWithoutAllocate_headersInput = {
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
@@ -49288,21 +47811,21 @@ export namespace Prisma {
     fiscal_year: number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_budgetsInput
   }
 
   export type BudgetUncheckedCreateWithoutAllocate_headersInput = {
-    id?: number
+    id?: bigint | number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
     status?: string
     fiscal_year: number
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetCreateOrConnectWithoutAllocate_headersInput = {
@@ -49311,27 +47834,28 @@ export namespace Prisma {
   }
 
   export type BrandCreateWithoutAllocate_headersInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     products?: ProductCreateNestedManyWithoutBrandInput
   }
 
   export type BrandUncheckedCreateWithoutAllocate_headersInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
-    group_brand_id: number
+    group_brand_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutBrandInput
   }
 
@@ -49341,12 +47865,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutCreated_allocate_headersInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderCreateNestedManyWithoutCreatorInput
@@ -49358,14 +47885,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_allocate_headersInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -49381,11 +47910,12 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateCreateWithoutAllocate_headerInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     store: StoreCreateNestedOneWithoutBudget_allocatesInput
     season_group: SeasonGroupCreateNestedOneWithoutBudget_allocatesInput
     season: SeasonCreateNestedOneWithoutBudget_allocatesInput
@@ -49393,15 +47923,15 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateWithoutAllocate_headerInput = {
-    id?: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    id?: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutBudget_allocateInput
   }
 
@@ -49412,7 +47942,43 @@ export namespace Prisma {
 
   export type BudgetAllocateCreateManyAllocate_headerInputEnvelope = {
     data: BudgetAllocateCreateManyAllocate_headerInput | BudgetAllocateCreateManyAllocate_headerInput[]
-    skipDuplicates?: boolean
+  }
+
+  export type PlanningHeaderCreateWithoutAllocate_headerInput = {
+    id?: bigint | number
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    creator: UserCreateNestedOneWithoutCreated_planning_headersInput
+    planning_collections?: PlanningCollectionCreateNestedManyWithoutPlanning_headerInput
+    planning_genders?: PlanningGenderCreateNestedManyWithoutPlanning_headerInput
+    planning_categories?: PlanningCategoryCreateNestedManyWithoutPlanning_headerInput
+  }
+
+  export type PlanningHeaderUncheckedCreateWithoutAllocate_headerInput = {
+    id?: bigint | number
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutPlanning_headerInput
+    planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutPlanning_headerInput
+    planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutPlanning_headerInput
+  }
+
+  export type PlanningHeaderCreateOrConnectWithoutAllocate_headerInput = {
+    where: PlanningHeaderWhereUniqueInput
+    create: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput>
+  }
+
+  export type PlanningHeaderCreateManyAllocate_headerInputEnvelope = {
+    data: PlanningHeaderCreateManyAllocate_headerInput | PlanningHeaderCreateManyAllocate_headerInput[]
   }
 
   export type BudgetUpsertWithoutAllocate_headersInput = {
@@ -49427,6 +47993,7 @@ export namespace Prisma {
   }
 
   export type BudgetUpdateWithoutAllocate_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -49434,21 +48001,21 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_budgetsNestedInput
   }
 
   export type BudgetUncheckedUpdateWithoutAllocate_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
     fiscal_year?: IntFieldUpdateOperationsInput | number
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BrandUpsertWithoutAllocate_headersInput = {
@@ -49463,27 +48030,28 @@ export namespace Prisma {
   }
 
   export type BrandUpdateWithoutAllocate_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     products?: ProductUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutAllocate_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutBrandNestedInput
   }
 
@@ -49499,12 +48067,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_allocate_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUpdateManyWithoutCreatorNestedInput
@@ -49516,14 +48087,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_allocate_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -49549,27 +48122,46 @@ export namespace Prisma {
     data: XOR<BudgetAllocateUpdateManyMutationInput, BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerInput>
   }
 
+  export type PlanningHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput = {
+    where: PlanningHeaderWhereUniqueInput
+    update: XOR<PlanningHeaderUpdateWithoutAllocate_headerInput, PlanningHeaderUncheckedUpdateWithoutAllocate_headerInput>
+    create: XOR<PlanningHeaderCreateWithoutAllocate_headerInput, PlanningHeaderUncheckedCreateWithoutAllocate_headerInput>
+  }
+
+  export type PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput = {
+    where: PlanningHeaderWhereUniqueInput
+    data: XOR<PlanningHeaderUpdateWithoutAllocate_headerInput, PlanningHeaderUncheckedUpdateWithoutAllocate_headerInput>
+  }
+
+  export type PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput = {
+    where: PlanningHeaderScalarWhereInput
+    data: XOR<PlanningHeaderUpdateManyMutationInput, PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerInput>
+  }
+
   export type AllocateHeaderCreateWithoutBudget_allocatesInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget: BudgetCreateNestedOneWithoutAllocate_headersInput
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBudget_allocatesInput = {
-    id?: number
-    budget_id: number
-    brand_id: number
+    id?: bigint | number
+    budget_id: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBudget_allocatesInput = {
@@ -49578,31 +48170,32 @@ export namespace Prisma {
   }
 
   export type StoreCreateWithoutBudget_allocatesInput = {
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
   }
 
   export type StoreUncheckedCreateWithoutBudget_allocatesInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
@@ -49614,23 +48207,24 @@ export namespace Prisma {
   }
 
   export type SeasonGroupCreateWithoutBudget_allocatesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     seasons?: SeasonCreateNestedManyWithoutSeason_groupInput
   }
 
   export type SeasonGroupUncheckedCreateWithoutBudget_allocatesInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     seasons?: SeasonUncheckedCreateNestedManyWithoutSeason_groupInput
   }
 
@@ -49640,24 +48234,25 @@ export namespace Prisma {
   }
 
   export type SeasonCreateWithoutBudget_allocatesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
   }
 
   export type SeasonUncheckedCreateWithoutBudget_allocatesInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    season_group_id: number
+    season_group_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SeasonCreateOrConnectWithoutBudget_allocatesInput = {
@@ -49666,21 +48261,22 @@ export namespace Prisma {
   }
 
   export type TicketCreateWithoutBudget_allocateInput = {
+    id?: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_ticketsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutTicketInput
   }
 
   export type TicketUncheckedCreateWithoutBudget_allocateInput = {
-    id?: number
+    id?: bigint | number
     status?: string
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutTicketInput
   }
 
@@ -49691,7 +48287,6 @@ export namespace Prisma {
 
   export type TicketCreateManyBudget_allocateInputEnvelope = {
     data: TicketCreateManyBudget_allocateInput | TicketCreateManyBudget_allocateInput[]
-    skipDuplicates?: boolean
   }
 
   export type AllocateHeaderUpsertWithoutBudget_allocatesInput = {
@@ -49706,26 +48301,29 @@ export namespace Prisma {
   }
 
   export type AllocateHeaderUpdateWithoutBudget_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBudget_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type StoreUpsertWithoutBudget_allocatesInput = {
@@ -49740,31 +48338,32 @@ export namespace Prisma {
   }
 
   export type StoreUpdateWithoutBudget_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutBudget_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
@@ -49782,23 +48381,24 @@ export namespace Prisma {
   }
 
   export type SeasonGroupUpdateWithoutBudget_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     seasons?: SeasonUpdateManyWithoutSeason_groupNestedInput
   }
 
   export type SeasonGroupUncheckedUpdateWithoutBudget_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     seasons?: SeasonUncheckedUpdateManyWithoutSeason_groupNestedInput
   }
 
@@ -49814,24 +48414,25 @@ export namespace Prisma {
   }
 
   export type SeasonUpdateWithoutBudget_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
   }
 
   export type SeasonUncheckedUpdateWithoutBudget_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    season_group_id?: IntFieldUpdateOperationsInput | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketUpsertWithWhereUniqueWithoutBudget_allocateInput = {
@@ -49851,12 +48452,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutCreated_planning_headersInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -49868,14 +48472,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_planning_headersInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -49890,7 +48496,39 @@ export namespace Prisma {
     create: XOR<UserCreateWithoutCreated_planning_headersInput, UserUncheckedCreateWithoutCreated_planning_headersInput>
   }
 
+  export type AllocateHeaderCreateWithoutPlanning_headersInput = {
+    id?: bigint | number
+    version: number
+    is_final_version?: boolean
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget: BudgetCreateNestedOneWithoutAllocate_headersInput
+    brand: BrandCreateNestedOneWithoutAllocate_headersInput
+    creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+  }
+
+  export type AllocateHeaderUncheckedCreateWithoutPlanning_headersInput = {
+    id?: bigint | number
+    budget_id: bigint | number
+    brand_id: bigint | number
+    version: number
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+  }
+
+  export type AllocateHeaderCreateOrConnectWithoutPlanning_headersInput = {
+    where: AllocateHeaderWhereUniqueInput
+    create: XOR<AllocateHeaderCreateWithoutPlanning_headersInput, AllocateHeaderUncheckedCreateWithoutPlanning_headersInput>
+  }
+
   export type PlanningCollectionCreateWithoutPlanning_headerInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -49898,18 +48536,18 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
     store: StoreCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateWithoutPlanning_headerInput = {
-    id?: number
-    collection_id: number
-    store_id: number
+    id?: bigint | number
+    collection_id: bigint | number
+    store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -49917,10 +48555,10 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionCreateOrConnectWithoutPlanning_headerInput = {
@@ -49930,38 +48568,38 @@ export namespace Prisma {
 
   export type PlanningCollectionCreateManyPlanning_headerInputEnvelope = {
     data: PlanningCollectionCreateManyPlanning_headerInput | PlanningCollectionCreateManyPlanning_headerInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningGenderCreateWithoutPlanning_headerInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutPlanning_gendersInput
     store: StoreCreateNestedOneWithoutPlanning_gendersInput
   }
 
   export type PlanningGenderUncheckedCreateWithoutPlanning_headerInput = {
-    id?: number
-    gender_id: number
-    store_id: number
+    id?: bigint | number
+    gender_id: bigint | number
+    store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateOrConnectWithoutPlanning_headerInput = {
@@ -49971,10 +48609,10 @@ export namespace Prisma {
 
   export type PlanningGenderCreateManyPlanning_headerInputEnvelope = {
     data: PlanningGenderCreateManyPlanning_headerInput | PlanningGenderCreateManyPlanning_headerInput[]
-    skipDuplicates?: boolean
   }
 
   export type PlanningCategoryCreateWithoutPlanning_headerInput = {
+    id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -49983,16 +48621,16 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     subcategory: SubCategoryCreateNestedOneWithoutPlanning_categoriesInput
   }
 
   export type PlanningCategoryUncheckedCreateWithoutPlanning_headerInput = {
-    id?: number
-    subcategory_id: number
+    id?: bigint | number
+    subcategory_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -50001,10 +48639,10 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryCreateOrConnectWithoutPlanning_headerInput = {
@@ -50014,7 +48652,6 @@ export namespace Prisma {
 
   export type PlanningCategoryCreateManyPlanning_headerInputEnvelope = {
     data: PlanningCategoryCreateManyPlanning_headerInput | PlanningCategoryCreateManyPlanning_headerInput[]
-    skipDuplicates?: boolean
   }
 
   export type UserUpsertWithoutCreated_planning_headersInput = {
@@ -50029,12 +48666,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_planning_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -50046,14 +48686,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_planning_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -50061,6 +48703,43 @@ export namespace Prisma {
     created_tickets?: TicketUncheckedUpdateManyWithoutCreatorNestedInput
     approval_workflow_levels?: ApprovalWorkflowLevelUncheckedUpdateManyWithoutApprover_userNestedInput
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutApprover_userNestedInput
+  }
+
+  export type AllocateHeaderUpsertWithoutPlanning_headersInput = {
+    update: XOR<AllocateHeaderUpdateWithoutPlanning_headersInput, AllocateHeaderUncheckedUpdateWithoutPlanning_headersInput>
+    create: XOR<AllocateHeaderCreateWithoutPlanning_headersInput, AllocateHeaderUncheckedCreateWithoutPlanning_headersInput>
+    where?: AllocateHeaderWhereInput
+  }
+
+  export type AllocateHeaderUpdateToOneWithWhereWithoutPlanning_headersInput = {
+    where?: AllocateHeaderWhereInput
+    data: XOR<AllocateHeaderUpdateWithoutPlanning_headersInput, AllocateHeaderUncheckedUpdateWithoutPlanning_headersInput>
+  }
+
+  export type AllocateHeaderUpdateWithoutPlanning_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
+    brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
+    creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
+    budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+  }
+
+  export type AllocateHeaderUncheckedUpdateWithoutPlanning_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type PlanningCollectionUpsertWithWhereUniqueWithoutPlanning_headerInput = {
@@ -50112,22 +48791,23 @@ export namespace Prisma {
   }
 
   export type CollectionCreateWithoutPlanning_collectionsInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CollectionUncheckedCreateWithoutPlanning_collectionsInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CollectionCreateOrConnectWithoutPlanning_collectionsInput = {
@@ -50136,31 +48816,32 @@ export namespace Prisma {
   }
 
   export type StoreCreateWithoutPlanning_collectionsInput = {
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
   }
 
   export type StoreUncheckedCreateWithoutPlanning_collectionsInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
@@ -50172,24 +48853,29 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderCreateWithoutPlanning_collectionsInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_planning_headersInput
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutPlanning_headersInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUncheckedCreateWithoutPlanning_collectionsInput = {
-    id?: number
+    id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutPlanning_headerInput
   }
@@ -50211,22 +48897,23 @@ export namespace Prisma {
   }
 
   export type CollectionUpdateWithoutPlanning_collectionsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CollectionUncheckedUpdateWithoutPlanning_collectionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type StoreUpsertWithoutPlanning_collectionsInput = {
@@ -50241,31 +48928,32 @@ export namespace Prisma {
   }
 
   export type StoreUpdateWithoutPlanning_collectionsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutPlanning_collectionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
@@ -50283,46 +48971,52 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderUpdateWithoutPlanning_collectionsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_planning_headersNestedInput
+    allocate_header?: AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateWithoutPlanning_collectionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type GenderCreateWithoutPlanning_gendersInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     categories?: CategoryCreateNestedManyWithoutGenderInput
   }
 
   export type GenderUncheckedCreateWithoutPlanning_gendersInput = {
-    id?: number
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
   }
 
@@ -50332,31 +49026,32 @@ export namespace Prisma {
   }
 
   export type StoreCreateWithoutPlanning_gendersInput = {
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
   }
 
   export type StoreUncheckedCreateWithoutPlanning_gendersInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
@@ -50368,24 +49063,29 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderCreateWithoutPlanning_gendersInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_planning_headersInput
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutPlanning_headersInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUncheckedCreateWithoutPlanning_gendersInput = {
-    id?: number
+    id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutPlanning_headerInput
   }
@@ -50407,23 +49107,24 @@ export namespace Prisma {
   }
 
   export type GenderUpdateWithoutPlanning_gendersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUpdateManyWithoutGenderNestedInput
   }
 
   export type GenderUncheckedUpdateWithoutPlanning_gendersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
   }
 
@@ -50439,31 +49140,32 @@ export namespace Prisma {
   }
 
   export type StoreUpdateWithoutPlanning_gendersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutPlanning_gendersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
@@ -50481,49 +49183,55 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderUpdateWithoutPlanning_gendersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_planning_headersNestedInput
+    allocate_header?: AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateWithoutPlanning_gendersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type SubCategoryCreateWithoutPlanning_categoriesInput = {
+    id?: bigint | number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutPlanning_categoriesInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    category_id: number
+    category_id: bigint | number
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
   }
@@ -50534,24 +49242,29 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderCreateWithoutPlanning_categoriesInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_planning_headersInput
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutPlanning_headersInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutPlanning_headerInput
   }
 
   export type PlanningHeaderUncheckedCreateWithoutPlanning_categoriesInput = {
-    id?: number
+    id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutPlanning_headerInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutPlanning_headerInput
   }
@@ -50573,26 +49286,27 @@ export namespace Prisma {
   }
 
   export type SubCategoryUpdateWithoutPlanning_categoriesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutPlanning_categoriesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    category_id?: IntFieldUpdateOperationsInput | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
@@ -50609,35 +49323,43 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderUpdateWithoutPlanning_categoriesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_planning_headersNestedInput
+    allocate_header?: AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateWithoutPlanning_categoriesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type UserCreateWithoutCreated_sku_proposal_headersInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -50649,14 +49371,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_sku_proposal_headersInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -50672,28 +49396,29 @@ export namespace Prisma {
   }
 
   export type SKUProposalCreateWithoutSku_proposal_headerInput = {
+    id?: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     product: ProductCreateNestedOneWithoutSku_proposalsInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutSku_proposalInput
     proposal_sizing_headers?: ProposalSizingHeaderCreateNestedManyWithoutSku_proposalInput
   }
 
   export type SKUProposalUncheckedCreateWithoutSku_proposal_headerInput = {
-    id?: number
-    product_id: number
+    id?: bigint | number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutSku_proposalInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedCreateNestedManyWithoutSku_proposalInput
   }
@@ -50705,7 +49430,6 @@ export namespace Prisma {
 
   export type SKUProposalCreateManySku_proposal_headerInputEnvelope = {
     data: SKUProposalCreateManySku_proposal_headerInput | SKUProposalCreateManySku_proposal_headerInput[]
-    skipDuplicates?: boolean
   }
 
   export type UserUpsertWithoutCreated_sku_proposal_headersInput = {
@@ -50720,12 +49444,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_sku_proposal_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -50737,14 +49464,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_sku_proposal_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -50771,22 +49500,25 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderCreateWithoutSku_proposalsInput = {
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_sku_proposal_headersInput
   }
 
   export type SKUProposalHeaderUncheckedCreateWithoutSku_proposalsInput = {
-    id?: number
+    id?: bigint | number
     version: number
+    status?: string
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalHeaderCreateOrConnectWithoutSku_proposalsInput = {
@@ -50795,6 +49527,7 @@ export namespace Prisma {
   }
 
   export type ProductCreateWithoutSku_proposalsInput = {
+    id?: bigint | number
     sku_code: string
     product_name: string
     family?: string | null
@@ -50804,20 +49537,20 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brand?: BrandCreateNestedOneWithoutProductsInput
     sub_category: SubCategoryCreateNestedOneWithoutProductsInput
   }
 
   export type ProductUncheckedCreateWithoutSku_proposalsInput = {
-    id?: number
+    id?: bigint | number
     sku_code: string
     product_name: string
-    sub_category_id: number
-    brand_id?: number | null
+    sub_category_id: bigint | number
+    brand_id?: bigint | number | null
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -50825,10 +49558,10 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProductCreateOrConnectWithoutSku_proposalsInput = {
@@ -50837,22 +49570,23 @@ export namespace Prisma {
   }
 
   export type SKUAllocateCreateWithoutSku_proposalInput = {
+    id?: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     store: StoreCreateNestedOneWithoutSku_allocatesInput
   }
 
   export type SKUAllocateUncheckedCreateWithoutSku_proposalInput = {
-    id?: number
-    store_id: number
+    id?: bigint | number
+    store_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateCreateOrConnectWithoutSku_proposalInput = {
@@ -50862,27 +49596,27 @@ export namespace Prisma {
 
   export type SKUAllocateCreateManySku_proposalInputEnvelope = {
     data: SKUAllocateCreateManySku_proposalInput | SKUAllocateCreateManySku_proposalInput[]
-    skipDuplicates?: boolean
   }
 
   export type ProposalSizingHeaderCreateWithoutSku_proposalInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     creator: UserCreateNestedOneWithoutCreated_proposal_sizing_headersInput
     proposal_sizings?: ProposalSizingCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
   export type ProposalSizingHeaderUncheckedCreateWithoutSku_proposalInput = {
-    id?: number
+    id?: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedCreateNestedManyWithoutProposal_sizing_headerInput
   }
 
@@ -50893,7 +49627,6 @@ export namespace Prisma {
 
   export type ProposalSizingHeaderCreateManySku_proposalInputEnvelope = {
     data: ProposalSizingHeaderCreateManySku_proposalInput | ProposalSizingHeaderCreateManySku_proposalInput[]
-    skipDuplicates?: boolean
   }
 
   export type SKUProposalHeaderUpsertWithoutSku_proposalsInput = {
@@ -50908,22 +49641,25 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderUpdateWithoutSku_proposalsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateWithoutSku_proposalsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductUpsertWithoutSku_proposalsInput = {
@@ -50938,6 +49674,7 @@ export namespace Prisma {
   }
 
   export type ProductUpdateWithoutSku_proposalsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
     family?: NullableStringFieldUpdateOperationsInput | string | null
@@ -50947,20 +49684,20 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brand?: BrandUpdateOneWithoutProductsNestedInput
     sub_category?: SubCategoryUpdateOneRequiredWithoutProductsNestedInput
   }
 
   export type ProductUncheckedUpdateWithoutSku_proposalsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -50968,10 +49705,10 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateUpsertWithWhereUniqueWithoutSku_proposalInput = {
@@ -51007,29 +49744,30 @@ export namespace Prisma {
   }
 
   export type SKUProposalCreateWithoutSku_allocatesInput = {
+    id?: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal_header: SKUProposalHeaderCreateNestedOneWithoutSku_proposalsInput
     product: ProductCreateNestedOneWithoutSku_proposalsInput
     proposal_sizing_headers?: ProposalSizingHeaderCreateNestedManyWithoutSku_proposalInput
   }
 
   export type SKUProposalUncheckedCreateWithoutSku_allocatesInput = {
-    id?: number
-    sku_proposal_header_id: number
-    product_id: number
+    id?: bigint | number
+    sku_proposal_header_id: bigint | number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedCreateNestedManyWithoutSku_proposalInput
   }
 
@@ -51039,31 +49777,32 @@ export namespace Prisma {
   }
 
   export type StoreCreateWithoutSku_allocatesInput = {
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
   }
 
   export type StoreUncheckedCreateWithoutSku_allocatesInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     region?: string | null
     location?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
@@ -51086,29 +49825,30 @@ export namespace Prisma {
   }
 
   export type SKUProposalUpdateWithoutSku_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal_header?: SKUProposalHeaderUpdateOneRequiredWithoutSku_proposalsNestedInput
     product?: ProductUpdateOneRequiredWithoutSku_proposalsNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateWithoutSku_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedUpdateManyWithoutSku_proposalNestedInput
   }
 
@@ -51124,60 +49864,62 @@ export namespace Prisma {
   }
 
   export type StoreUpdateWithoutSku_allocatesInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutSku_allocatesInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     region?: NullableStringFieldUpdateOperationsInput | string | null
     location?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
   }
 
   export type SKUProposalCreateWithoutProposal_sizing_headersInput = {
+    id?: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal_header: SKUProposalHeaderCreateNestedOneWithoutSku_proposalsInput
     product: ProductCreateNestedOneWithoutSku_proposalsInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutSku_proposalInput
   }
 
   export type SKUProposalUncheckedCreateWithoutProposal_sizing_headersInput = {
-    id?: number
-    sku_proposal_header_id: number
-    product_id: number
+    id?: bigint | number
+    sku_proposal_header_id: bigint | number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutSku_proposalInput
   }
 
@@ -51187,12 +49929,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutCreated_proposal_sizing_headersInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -51204,14 +49949,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_proposal_sizing_headersInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -51227,26 +49974,27 @@ export namespace Prisma {
   }
 
   export type ProposalSizingCreateWithoutProposal_sizing_headerInput = {
+    id?: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     subcategory_size: SubcategorySizeCreateNestedOneWithoutProposal_sizingsInput
   }
 
   export type ProposalSizingUncheckedCreateWithoutProposal_sizing_headerInput = {
-    id?: number
-    subcategory_size_id: number
+    id?: bigint | number
+    subcategory_size_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingCreateOrConnectWithoutProposal_sizing_headerInput = {
@@ -51256,7 +50004,6 @@ export namespace Prisma {
 
   export type ProposalSizingCreateManyProposal_sizing_headerInputEnvelope = {
     data: ProposalSizingCreateManyProposal_sizing_headerInput | ProposalSizingCreateManyProposal_sizing_headerInput[]
-    skipDuplicates?: boolean
   }
 
   export type SKUProposalUpsertWithoutProposal_sizing_headersInput = {
@@ -51271,29 +50018,30 @@ export namespace Prisma {
   }
 
   export type SKUProposalUpdateWithoutProposal_sizing_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal_header?: SKUProposalHeaderUpdateOneRequiredWithoutSku_proposalsNestedInput
     product?: ProductUpdateOneRequiredWithoutSku_proposalsNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateWithoutProposal_sizing_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutSku_proposalNestedInput
   }
 
@@ -51309,12 +50057,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_proposal_sizing_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -51326,14 +50077,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_proposal_sizing_headersInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -51360,24 +50113,25 @@ export namespace Prisma {
   }
 
   export type ProposalSizingHeaderCreateWithoutProposal_sizingsInput = {
+    id?: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sku_proposal: SKUProposalCreateNestedOneWithoutProposal_sizing_headersInput
     creator: UserCreateNestedOneWithoutCreated_proposal_sizing_headersInput
   }
 
   export type ProposalSizingHeaderUncheckedCreateWithoutProposal_sizingsInput = {
-    id?: number
-    sku_proposal_id: number
+    id?: bigint | number
+    sku_proposal_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingHeaderCreateOrConnectWithoutProposal_sizingsInput = {
@@ -51386,22 +50140,23 @@ export namespace Prisma {
   }
 
   export type SubcategorySizeCreateWithoutProposal_sizingsInput = {
+    id?: bigint | number
     name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     sub_category: SubCategoryCreateNestedOneWithoutSubcategory_sizesInput
   }
 
   export type SubcategorySizeUncheckedCreateWithoutProposal_sizingsInput = {
-    id?: number
+    id?: bigint | number
     name: string
-    sub_category_id: number
-    created_by?: number | null
+    sub_category_id: bigint | number
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SubcategorySizeCreateOrConnectWithoutProposal_sizingsInput = {
@@ -51421,24 +50176,25 @@ export namespace Prisma {
   }
 
   export type ProposalSizingHeaderUpdateWithoutProposal_sizingsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal?: SKUProposalUpdateOneRequiredWithoutProposal_sizing_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_proposal_sizing_headersNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateWithoutProposal_sizingsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubcategorySizeUpsertWithoutProposal_sizingsInput = {
@@ -51453,30 +50209,32 @@ export namespace Prisma {
   }
 
   export type SubcategorySizeUpdateWithoutProposal_sizingsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category?: SubCategoryUpdateOneRequiredWithoutSubcategory_sizesNestedInput
   }
 
   export type SubcategorySizeUncheckedUpdateWithoutProposal_sizingsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateCreateWithoutTicketsInput = {
+    id?: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     allocate_header: AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput
     store: StoreCreateNestedOneWithoutBudget_allocatesInput
     season_group: SeasonGroupCreateNestedOneWithoutBudget_allocatesInput
@@ -51484,16 +50242,16 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedCreateWithoutTicketsInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    id?: bigint | number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateCreateOrConnectWithoutTicketsInput = {
@@ -51502,12 +50260,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutCreated_ticketsInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -51519,14 +50280,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutCreated_ticketsInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -51542,28 +50305,29 @@ export namespace Prisma {
   }
 
   export type TicketApprovalLogCreateWithoutTicketInput = {
+    id?: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow_level: ApprovalWorkflowLevelCreateNestedOneWithoutTicket_approval_logsInput
     approver_user: UserCreateNestedOneWithoutTicket_approval_logsInput
   }
 
   export type TicketApprovalLogUncheckedCreateWithoutTicketInput = {
-    id?: number
-    approval_workflow_level_id: number
-    approver_user_id: number
+    id?: bigint | number
+    approval_workflow_level_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogCreateOrConnectWithoutTicketInput = {
@@ -51573,7 +50337,6 @@ export namespace Prisma {
 
   export type TicketApprovalLogCreateManyTicketInputEnvelope = {
     data: TicketApprovalLogCreateManyTicketInput | TicketApprovalLogCreateManyTicketInput[]
-    skipDuplicates?: boolean
   }
 
   export type BudgetAllocateUpsertWithoutTicketsInput = {
@@ -51588,11 +50351,12 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUpdateWithoutTicketsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_header?: AllocateHeaderUpdateOneRequiredWithoutBudget_allocatesNestedInput
     store?: StoreUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season_group?: SeasonGroupUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -51600,16 +50364,16 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateWithoutTicketsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type UserUpsertWithoutCreated_ticketsInput = {
@@ -51624,12 +50388,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutCreated_ticketsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -51641,14 +50408,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutCreated_ticketsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -51675,25 +50444,26 @@ export namespace Prisma {
   }
 
   export type GroupBrandCreateWithoutApproval_workflowsInput = {
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brands?: BrandCreateNestedManyWithoutGroup_brandInput
   }
 
   export type GroupBrandUncheckedCreateWithoutApproval_workflowsInput = {
-    id?: number
+    id?: bigint | number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     brands?: BrandUncheckedCreateNestedManyWithoutGroup_brandInput
   }
 
@@ -51703,27 +50473,28 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelCreateWithoutApproval_workflowInput = {
+    id?: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approver_user: UserCreateNestedOneWithoutApproval_workflow_levelsInput
     ticket_approval_logs?: TicketApprovalLogCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
   export type ApprovalWorkflowLevelUncheckedCreateWithoutApproval_workflowInput = {
-    id?: number
+    id?: bigint | number
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint | number
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedCreateNestedManyWithoutApproval_workflow_levelInput
   }
 
@@ -51734,7 +50505,6 @@ export namespace Prisma {
 
   export type ApprovalWorkflowLevelCreateManyApproval_workflowInputEnvelope = {
     data: ApprovalWorkflowLevelCreateManyApproval_workflowInput | ApprovalWorkflowLevelCreateManyApproval_workflowInput[]
-    skipDuplicates?: boolean
   }
 
   export type GroupBrandUpsertWithoutApproval_workflowsInput = {
@@ -51749,25 +50519,26 @@ export namespace Prisma {
   }
 
   export type GroupBrandUpdateWithoutApproval_workflowsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brands?: BrandUpdateManyWithoutGroup_brandNestedInput
   }
 
   export type GroupBrandUncheckedUpdateWithoutApproval_workflowsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brands?: BrandUncheckedUpdateManyWithoutGroup_brandNestedInput
   }
 
@@ -51788,22 +50559,23 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowCreateWithoutApproval_workflow_levelsInput = {
+    id?: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutApproval_workflowsInput
   }
 
   export type ApprovalWorkflowUncheckedCreateWithoutApproval_workflow_levelsInput = {
-    id?: number
-    group_brand_id: number
+    id?: bigint | number
+    group_brand_id: bigint | number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowCreateOrConnectWithoutApproval_workflow_levelsInput = {
@@ -51812,12 +50584,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutApproval_workflow_levelsInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -51829,14 +50604,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutApproval_workflow_levelsInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -51852,28 +50629,29 @@ export namespace Prisma {
   }
 
   export type TicketApprovalLogCreateWithoutApproval_workflow_levelInput = {
+    id?: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     ticket: TicketCreateNestedOneWithoutTicket_approval_logsInput
     approver_user: UserCreateNestedOneWithoutTicket_approval_logsInput
   }
 
   export type TicketApprovalLogUncheckedCreateWithoutApproval_workflow_levelInput = {
-    id?: number
-    ticket_id: number
-    approver_user_id: number
+    id?: bigint | number
+    ticket_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogCreateOrConnectWithoutApproval_workflow_levelInput = {
@@ -51883,7 +50661,6 @@ export namespace Prisma {
 
   export type TicketApprovalLogCreateManyApproval_workflow_levelInputEnvelope = {
     data: TicketApprovalLogCreateManyApproval_workflow_levelInput | TicketApprovalLogCreateManyApproval_workflow_levelInput[]
-    skipDuplicates?: boolean
   }
 
   export type ApprovalWorkflowUpsertWithoutApproval_workflow_levelsInput = {
@@ -51898,22 +50675,23 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowUpdateWithoutApproval_workflow_levelsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutApproval_workflowsNestedInput
   }
 
   export type ApprovalWorkflowUncheckedUpdateWithoutApproval_workflow_levelsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    group_brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type UserUpsertWithoutApproval_workflow_levelsInput = {
@@ -51928,12 +50706,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutApproval_workflow_levelsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -51945,14 +50726,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutApproval_workflow_levelsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -51979,22 +50762,23 @@ export namespace Prisma {
   }
 
   export type TicketCreateWithoutTicket_approval_logsInput = {
+    id?: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     budget_allocate: BudgetAllocateCreateNestedOneWithoutTicketsInput
     creator: UserCreateNestedOneWithoutCreated_ticketsInput
   }
 
   export type TicketUncheckedCreateWithoutTicket_approval_logsInput = {
-    id?: number
-    budget_allocate_id: number
+    id?: bigint | number
+    budget_allocate_id: bigint | number
     status?: string
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketCreateOrConnectWithoutTicket_approval_logsInput = {
@@ -52003,28 +50787,29 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelCreateWithoutTicket_approval_logsInput = {
+    id?: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
     approval_workflow: ApprovalWorkflowCreateNestedOneWithoutApproval_workflow_levelsInput
     approver_user: UserCreateNestedOneWithoutApproval_workflow_levelsInput
   }
 
   export type ApprovalWorkflowLevelUncheckedCreateWithoutTicket_approval_logsInput = {
-    id?: number
-    approval_workflow_id: number
+    id?: bigint | number
+    approval_workflow_id: bigint | number
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint | number
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowLevelCreateOrConnectWithoutTicket_approval_logsInput = {
@@ -52033,12 +50818,15 @@ export namespace Prisma {
   }
 
   export type UserCreateWithoutTicket_approval_logsInput = {
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     role: RoleCreateNestedOneWithoutUsersInput
     created_budgets?: BudgetCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderCreateNestedManyWithoutCreatorInput
@@ -52050,14 +50838,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateWithoutTicket_approval_logsInput = {
-    id?: number
+    id?: bigint | number
     email: string
     name: string
     password_hash: string
-    role_id: number
+    role_id: bigint | number
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
     created_budgets?: BudgetUncheckedCreateNestedManyWithoutCreatorInput
     created_allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutCreatorInput
     created_planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutCreatorInput
@@ -52084,22 +50874,23 @@ export namespace Prisma {
   }
 
   export type TicketUpdateWithoutTicket_approval_logsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocate?: BudgetAllocateUpdateOneRequiredWithoutTicketsNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_ticketsNestedInput
   }
 
   export type TicketUncheckedUpdateWithoutTicket_approval_logsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_allocate_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_allocate_id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUpsertWithoutTicket_approval_logsInput = {
@@ -52114,28 +50905,29 @@ export namespace Prisma {
   }
 
   export type ApprovalWorkflowLevelUpdateWithoutTicket_approval_logsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow?: ApprovalWorkflowUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
     approver_user?: UserUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateWithoutTicket_approval_logsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type UserUpsertWithoutTicket_approval_logsInput = {
@@ -52150,12 +50942,15 @@ export namespace Prisma {
   }
 
   export type UserUpdateWithoutTicket_approval_logsInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     role?: RoleUpdateOneRequiredWithoutUsersNestedInput
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
@@ -52167,14 +50962,16 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutTicket_approval_logsInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
-    role_id?: IntFieldUpdateOperationsInput | number
+    role_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -52185,7 +50982,6 @@ export namespace Prisma {
   }
 
   export type BudgetCreateManyCreatorInput = {
-    id?: number
     name: string
     amount: Decimal | DecimalJsLike | number | string
     description?: string | null
@@ -52193,83 +50989,80 @@ export namespace Prisma {
     fiscal_year: number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type AllocateHeaderCreateManyCreatorInput = {
-    id?: number
-    budget_id: number
-    brand_id: number
+    budget_id: bigint | number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningHeaderCreateManyCreatorInput = {
-    id?: number
+    allocate_header_id?: bigint | number | null
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalHeaderCreateManyCreatorInput = {
-    id?: number
     version: number
+    status?: string
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingHeaderCreateManyCreatorInput = {
-    id?: number
-    sku_proposal_id: number
+    sku_proposal_id: bigint | number
     version: number
     is_final_version?: boolean
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketCreateManyCreatorInput = {
-    id?: number
-    budget_allocate_id: number
+    budget_allocate_id: bigint | number
     status?: string
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowLevelCreateManyApprover_userInput = {
-    id?: number
-    approval_workflow_id: number
+    approval_workflow_id: bigint | number
     level_order: number
     level_name: string
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogCreateManyApprover_userInput = {
-    id?: number
-    ticket_id: number
-    approval_workflow_level_id: number
+    ticket_id: bigint | number
+    approval_workflow_level_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52277,12 +51070,12 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_headers?: AllocateHeaderUpdateManyWithoutBudgetNestedInput
   }
 
   export type BudgetUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52290,12 +51083,12 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBudgetNestedInput
   }
 
   export type BudgetUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52303,254 +51096,276 @@ export namespace Prisma {
     fiscal_year?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type AllocateHeaderUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningHeaderUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    allocate_header?: AllocateHeaderUpdateOneWithoutPlanning_headersNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
   export type PlanningHeaderUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalHeaderUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUncheckedUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingHeaderUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal?: SKUProposalUpdateOneRequiredWithoutProposal_sizing_headersNestedInput
     proposal_sizings?: ProposalSizingUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketUpdateWithoutCreatorInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocate?: BudgetAllocateUpdateOneRequiredWithoutTicketsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketUncheckedUpdateWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_allocate_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_allocate_id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketUncheckedUpdateManyWithoutCreatorInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_allocate_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_allocate_id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUpdateWithoutApprover_userInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow?: ApprovalWorkflowUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateWithoutApprover_userInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateManyWithoutApprover_userInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogUpdateWithoutApprover_userInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket?: TicketUpdateOneRequiredWithoutTicket_approval_logsNestedInput
     approval_workflow_level?: ApprovalWorkflowLevelUpdateOneRequiredWithoutTicket_approval_logsNestedInput
   }
 
   export type TicketApprovalLogUncheckedUpdateWithoutApprover_userInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogUncheckedUpdateManyWithoutApprover_userInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type UserCreateManyRoleInput = {
-    id?: number
     email: string
     name: string
     password_hash: string
     is_active?: boolean
     created_at?: Date | string
     updated_at?: Date | string
+    store_access?: string
+    brand_access?: string
   }
 
   export type UserUpdateWithoutRoleInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUpdateManyWithoutCreatorNestedInput
@@ -52562,13 +51377,15 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateWithoutRoleInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
     created_budgets?: BudgetUncheckedUpdateManyWithoutCreatorNestedInput
     created_allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutCreatorNestedInput
     created_planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutCreatorNestedInput
@@ -52580,104 +51397,105 @@ export namespace Prisma {
   }
 
   export type UserUncheckedUpdateManyWithoutRoleInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     email?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     password_hash?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    store_access?: StringFieldUpdateOperationsInput | string
+    brand_access?: StringFieldUpdateOperationsInput | string
   }
 
   export type BrandCreateManyGroup_brandInput = {
-    id?: number
     code: string
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowCreateManyGroup_brandInput = {
-    id?: number
     workflow_name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BrandUpdateWithoutGroup_brandInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutGroup_brandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
   }
 
   export type BrandUncheckedUpdateManyWithoutGroup_brandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     code?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowUpdateWithoutGroup_brandInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelUpdateManyWithoutApproval_workflowNestedInput
   }
 
   export type ApprovalWorkflowUncheckedUpdateWithoutGroup_brandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow_levels?: ApprovalWorkflowLevelUncheckedUpdateManyWithoutApproval_workflowNestedInput
   }
 
   export type ApprovalWorkflowUncheckedUpdateManyWithoutGroup_brandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     workflow_name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductCreateManyBrandInput = {
-    id?: number
     sku_code: string
     product_name: string
-    sub_category_id: number
+    sub_category_id: bigint | number
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -52685,24 +51503,24 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type AllocateHeaderCreateManyBrandInput = {
-    id?: number
-    budget_id: number
+    budget_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProductUpdateWithoutBrandInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
     family?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52712,19 +51530,19 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category?: SubCategoryUpdateOneRequiredWithoutProductsNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateWithoutBrandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52732,18 +51550,18 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateManyWithoutBrandInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    sub_category_id?: IntFieldUpdateOperationsInput | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -52751,62 +51569,63 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type AllocateHeaderUpdateWithoutBrandInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBrandInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutBrandInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    budget_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateCreateManyStoreInput = {
-    id?: number
-    allocate_header_id: number
-    season_group_id: number
-    season_id: number
+    allocate_header_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionCreateManyStoreInput = {
-    id?: number
-    collection_id: number
-    planning_header_id: number
+    collection_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -52814,44 +51633,43 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateManyStoreInput = {
-    id?: number
-    gender_id: number
-    planning_header_id: number
+    gender_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateCreateManyStoreInput = {
-    id?: number
-    sku_proposal_id: number
+    sku_proposal_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateUpdateWithoutStoreInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_header?: AllocateHeaderUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season_group?: SeasonGroupUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season?: SeasonUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -52859,31 +51677,32 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutBudget_allocateNestedInput
   }
 
   export type BudgetAllocateUncheckedUpdateManyWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionUpdateWithoutStoreInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52891,18 +51710,18 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52910,16 +51729,16 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionUncheckedUpdateManyWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52927,92 +51746,93 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUpdateWithoutStoreInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutPlanning_gendersNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_gendersNestedInput
   }
 
   export type PlanningGenderUncheckedUpdateWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUncheckedUpdateManyWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateUpdateWithoutStoreInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal?: SKUProposalUpdateOneRequiredWithoutSku_allocatesNestedInput
   }
 
   export type SKUAllocateUncheckedUpdateWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateUncheckedUpdateManyWithoutStoreInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionCreateManyCollectionInput = {
-    id?: number
-    store_id: number
-    planning_header_id: number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -53020,13 +51840,14 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionUpdateWithoutCollectionInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53034,18 +51855,18 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     store?: StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateWithoutCollectionInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53053,16 +51874,16 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionUncheckedUpdateManyWithoutCollectionInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53070,71 +51891,71 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SeasonCreateManySeason_groupInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateCreateManySeason_groupInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_id: number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SeasonUpdateWithoutSeason_groupInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateWithoutSeason_groupInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateManyWithoutSeason_groupInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateUpdateWithoutSeason_groupInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_header?: AllocateHeaderUpdateOneRequiredWithoutBudget_allocatesNestedInput
     store?: StoreUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season?: SeasonUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -53142,48 +51963,48 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateWithoutSeason_groupInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutBudget_allocateNestedInput
   }
 
   export type BudgetAllocateUncheckedUpdateManyWithoutSeason_groupInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateCreateManySeasonInput = {
-    id?: number
-    allocate_header_id: number
-    store_id: number
-    season_group_id: number
+    allocate_header_id: bigint | number
+    store_id: bigint | number
+    season_group_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateUpdateWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_header?: AllocateHeaderUpdateOneRequiredWithoutBudget_allocatesNestedInput
     store?: StoreUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season_group?: SeasonGroupUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -53191,184 +52012,183 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateWithoutSeasonInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutBudget_allocateNestedInput
   }
 
   export type BudgetAllocateUncheckedUpdateManyWithoutSeasonInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    allocate_header_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type CategoryCreateManyGenderInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateManyGenderInput = {
-    id?: number
-    store_id: number
-    planning_header_id: number
+    store_id: bigint | number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type CategoryUpdateWithoutGenderInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateWithoutGenderInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateManyWithoutGenderInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUpdateWithoutGenderInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     store?: StoreUpdateOneRequiredWithoutPlanning_gendersNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_gendersNestedInput
   }
 
   export type PlanningGenderUncheckedUpdateWithoutGenderInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUncheckedUpdateManyWithoutGenderInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubCategoryCreateManyCategoryInput = {
-    id?: number
     name: string
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SubCategoryUpdateWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutCategoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateManyWithoutCategoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProductCreateManySub_categoryInput = {
-    id?: number
     sku_code: string
     product_name: string
-    brand_id?: number | null
+    brand_id?: bigint | number | null
     family?: string | null
     theme?: string | null
     color?: string | null
@@ -53376,24 +52196,22 @@ export namespace Prisma {
     srp: Decimal | DecimalJsLike | number | string
     image_url?: string | null
     is_active?: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SubcategorySizeCreateManySub_categoryInput = {
-    id?: number
     name: string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryCreateManySubcategoryInput = {
-    id?: number
-    planning_header_id: number
+    planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -53402,13 +52220,14 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProductUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
     family?: NullableStringFieldUpdateOperationsInput | string | null
@@ -53418,19 +52237,19 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brand?: BrandUpdateOneWithoutProductsNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateWithoutSub_categoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    brand_id?: NullableIntFieldUpdateOperationsInput | number | null
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -53438,18 +52257,18 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposals?: SKUProposalUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateManyWithoutSub_categoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     sku_code?: StringFieldUpdateOperationsInput | string
     product_name?: StringFieldUpdateOperationsInput | string
-    brand_id?: NullableIntFieldUpdateOperationsInput | number | null
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     family?: NullableStringFieldUpdateOperationsInput | string | null
     theme?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
@@ -53457,41 +52276,43 @@ export namespace Prisma {
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SubcategorySizeUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUpdateManyWithoutSubcategory_sizeNestedInput
   }
 
   export type SubcategorySizeUncheckedUpdateWithoutSub_categoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedUpdateManyWithoutSubcategory_sizeNestedInput
   }
 
   export type SubcategorySizeUncheckedUpdateManyWithoutSub_categoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryUpdateWithoutSubcategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53500,16 +52321,16 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_categoriesNestedInput
   }
 
   export type PlanningCategoryUncheckedUpdateWithoutSubcategoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53518,15 +52339,15 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryUncheckedUpdateManyWithoutSubcategoryInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    planning_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53535,173 +52356,185 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingCreateManySubcategory_sizeInput = {
-    id?: number
-    proposal_sizing_header_id: number
+    proposal_sizing_header_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingUpdateWithoutSubcategory_sizeInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizing_header?: ProposalSizingHeaderUpdateOneRequiredWithoutProposal_sizingsNestedInput
   }
 
   export type ProposalSizingUncheckedUpdateWithoutSubcategory_sizeInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    proposal_sizing_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    proposal_sizing_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingUncheckedUpdateManyWithoutSubcategory_sizeInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    proposal_sizing_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    proposal_sizing_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalCreateManyProductInput = {
-    id?: number
-    sku_proposal_header_id: number
+    sku_proposal_header_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalUpdateWithoutProductInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_proposal_header?: SKUProposalHeaderUpdateOneRequiredWithoutSku_proposalsNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutSku_proposalNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateWithoutProductInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutSku_proposalNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateManyWithoutProductInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    sku_proposal_header_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sku_proposal_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type AllocateHeaderCreateManyBudgetInput = {
-    id?: number
-    brand_id: number
+    brand_id: bigint | number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type AllocateHeaderUpdateWithoutBudgetInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBudgetInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutBudgetInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    brand_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type BudgetAllocateCreateManyAllocate_headerInput = {
-    id?: number
-    store_id: number
-    season_group_id: number
-    season_id: number
+    store_id: bigint | number
+    season_group_id: bigint | number
+    season_id: bigint | number
     budget_amount?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
+  }
+
+  export type PlanningHeaderCreateManyAllocate_headerInput = {
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
   }
 
   export type BudgetAllocateUpdateWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     store?: StoreUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season_group?: SeasonGroupUpdateOneRequiredWithoutBudget_allocatesNestedInput
     season?: SeasonUpdateOneRequiredWithoutBudget_allocatesNestedInput
@@ -53709,71 +52542,109 @@ export namespace Prisma {
   }
 
   export type BudgetAllocateUncheckedUpdateWithoutAllocate_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutBudget_allocateNestedInput
   }
 
   export type BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
-    season_group_id?: IntFieldUpdateOperationsInput | number
-    season_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+  }
+
+  export type PlanningHeaderUpdateWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    creator?: UserUpdateOneRequiredWithoutCreated_planning_headersNestedInput
+    planning_collections?: PlanningCollectionUpdateManyWithoutPlanning_headerNestedInput
+    planning_genders?: PlanningGenderUpdateManyWithoutPlanning_headerNestedInput
+    planning_categories?: PlanningCategoryUpdateManyWithoutPlanning_headerNestedInput
+  }
+
+  export type PlanningHeaderUncheckedUpdateWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerNestedInput
+    planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
+    planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerNestedInput
+  }
+
+  export type PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketCreateManyBudget_allocateInput = {
-    id?: number
     status?: string
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketUpdateWithoutBudget_allocateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_ticketsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketUncheckedUpdateWithoutBudget_allocateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutTicketNestedInput
   }
 
   export type TicketUncheckedUpdateManyWithoutBudget_allocateInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     status?: StringFieldUpdateOperationsInput | string
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionCreateManyPlanning_headerInput = {
-    id?: number
-    collection_id: number
-    store_id: number
+    collection_id: bigint | number
+    store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -53781,31 +52652,29 @@ export namespace Prisma {
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningGenderCreateManyPlanning_headerInput = {
-    id?: number
-    gender_id: number
-    store_id: number
+    gender_id: bigint | number
+    store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCategoryCreateManyPlanning_headerInput = {
-    id?: number
-    subcategory_id: number
+    subcategory_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
@@ -53814,13 +52683,14 @@ export namespace Prisma {
     var_lastyear_pct?: Decimal | DecimalJsLike | number | string
     otb_actual_amount?: Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type PlanningCollectionUpdateWithoutPlanning_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53828,18 +52698,18 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53847,16 +52717,16 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    collection_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53864,60 +52734,62 @@ export namespace Prisma {
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUpdateWithoutPlanning_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutPlanning_gendersNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_gendersNestedInput
   }
 
   export type PlanningGenderUncheckedUpdateWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningGenderUncheckedUpdateManyWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    gender_id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposed_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_proposed_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     pct_var_vs_last?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryUpdateWithoutPlanning_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53926,16 +52798,16 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     subcategory?: SubCategoryUpdateOneRequiredWithoutPlanning_categoriesNestedInput
   }
 
   export type PlanningCategoryUncheckedUpdateWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53944,15 +52816,15 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53961,339 +52833,339 @@ export namespace Prisma {
     var_lastyear_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     otb_actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUProposalCreateManySku_proposal_headerInput = {
-    id?: number
-    product_id: number
+    product_id: bigint | number
     customer_target: string
     unit_cost?: Decimal | DecimalJsLike | number | string
     srp?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUProposalUpdateWithoutSku_proposal_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     product?: ProductUpdateOneRequiredWithoutSku_proposalsNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutSku_proposalNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateWithoutSku_proposal_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutSku_proposalNestedInput
     proposal_sizing_headers?: ProposalSizingHeaderUncheckedUpdateManyWithoutSku_proposalNestedInput
   }
 
   export type SKUProposalUncheckedUpdateManyWithoutSku_proposal_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    product_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    product_id?: BigIntFieldUpdateOperationsInput | bigint | number
     customer_target?: StringFieldUpdateOperationsInput | string
     unit_cost?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     srp?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateCreateManySku_proposalInput = {
-    id?: number
-    store_id: number
+    store_id: bigint | number
     quantity?: Decimal | DecimalJsLike | number | string
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingHeaderCreateManySku_proposalInput = {
-    id?: number
     version: number
     is_final_version?: boolean
-    created_by: number
+    created_by: bigint | number
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type SKUAllocateUpdateWithoutSku_proposalInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     store?: StoreUpdateOneRequiredWithoutSku_allocatesNestedInput
   }
 
   export type SKUAllocateUncheckedUpdateWithoutSku_proposalInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type SKUAllocateUncheckedUpdateManyWithoutSku_proposalInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    store_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     quantity?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingHeaderUpdateWithoutSku_proposalInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     creator?: UserUpdateOneRequiredWithoutCreated_proposal_sizing_headersNestedInput
     proposal_sizings?: ProposalSizingUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateWithoutSku_proposalInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     proposal_sizings?: ProposalSizingUncheckedUpdateManyWithoutProposal_sizing_headerNestedInput
   }
 
   export type ProposalSizingHeaderUncheckedUpdateManyWithoutSku_proposalInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: IntFieldUpdateOperationsInput | number
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingCreateManyProposal_sizing_headerInput = {
-    id?: number
-    subcategory_size_id: number
+    subcategory_size_id: bigint | number
     actual_salesmix_pct?: Decimal | DecimalJsLike | number | string
     actual_st_pct?: Decimal | DecimalJsLike | number | string
     proposal_quantity: number
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ProposalSizingUpdateWithoutProposal_sizing_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     subcategory_size?: SubcategorySizeUpdateOneRequiredWithoutProposal_sizingsNestedInput
   }
 
   export type ProposalSizingUncheckedUpdateWithoutProposal_sizing_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_size_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_size_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ProposalSizingUncheckedUpdateManyWithoutProposal_sizing_headerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    subcategory_size_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    subcategory_size_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_salesmix_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_st_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     proposal_quantity?: IntFieldUpdateOperationsInput | number
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogCreateManyTicketInput = {
-    id?: number
-    approval_workflow_level_id: number
-    approver_user_id: number
+    approval_workflow_level_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogUpdateWithoutTicketInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approval_workflow_level?: ApprovalWorkflowLevelUpdateOneRequiredWithoutTicket_approval_logsNestedInput
     approver_user?: UserUpdateOneRequiredWithoutTicket_approval_logsNestedInput
   }
 
   export type TicketApprovalLogUncheckedUpdateWithoutTicketInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogUncheckedUpdateManyWithoutTicketInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    approval_workflow_level_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approval_workflow_level_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type ApprovalWorkflowLevelCreateManyApproval_workflowInput = {
-    id?: number
     level_order: number
     level_name: string
-    approver_user_id: number
+    approver_user_id: bigint | number
     is_required: boolean
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type ApprovalWorkflowLevelUpdateWithoutApproval_workflowInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     approver_user?: UserUpdateOneRequiredWithoutApproval_workflow_levelsNestedInput
     ticket_approval_logs?: TicketApprovalLogUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateWithoutApproval_workflowInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket_approval_logs?: TicketApprovalLogUncheckedUpdateManyWithoutApproval_workflow_levelNestedInput
   }
 
   export type ApprovalWorkflowLevelUncheckedUpdateManyWithoutApproval_workflowInput = {
-    id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     level_order?: IntFieldUpdateOperationsInput | number
     level_name?: StringFieldUpdateOperationsInput | string
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_required?: BoolFieldUpdateOperationsInput | boolean
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogCreateManyApproval_workflow_levelInput = {
-    id?: number
-    ticket_id: number
-    approver_user_id: number
+    ticket_id: bigint | number
+    approver_user_id: bigint | number
     is_approved: boolean
     comment?: string | null
     approved_at?: Date | string | null
-    created_by?: number | null
+    created_by?: bigint | number | null
     created_at?: Date | string
     updated_at?: Date | string
-    updated_by?: number | null
+    updated_by?: bigint | number | null
   }
 
   export type TicketApprovalLogUpdateWithoutApproval_workflow_levelInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     ticket?: TicketUpdateOneRequiredWithoutTicket_approval_logsNestedInput
     approver_user?: UserUpdateOneRequiredWithoutTicket_approval_logsNestedInput
   }
 
   export type TicketApprovalLogUncheckedUpdateWithoutApproval_workflow_levelInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
   export type TicketApprovalLogUncheckedUpdateManyWithoutApproval_workflow_levelInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    ticket_id?: IntFieldUpdateOperationsInput | number
-    approver_user_id?: IntFieldUpdateOperationsInput | number
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    ticket_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    approver_user_id?: BigIntFieldUpdateOperationsInput | bigint | number
     is_approved?: BoolFieldUpdateOperationsInput | boolean
     comment?: NullableStringFieldUpdateOperationsInput | string | null
     approved_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
 

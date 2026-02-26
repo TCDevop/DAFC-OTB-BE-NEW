@@ -1,12 +1,20 @@
 import 'dotenv/config';
+// Global BigInt serialization fix — BigInt không serialize được JSON mặc định
+(BigInt.prototype as any).toJSON = function () { return Number(this); };
+
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import helmet from 'helmet';
+import { json, urlencoded } from 'express';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  // Increase body size limit for large planning payloads
+  app.use(json({ limit: '10mb' }));
+  app.use(urlencoded({ limit: '10mb', extended: true }));
 
   // Security
   app.use(helmet());

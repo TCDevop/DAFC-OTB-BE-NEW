@@ -9,7 +9,7 @@ export class ApprovalWorkflowService {
 
   async findAll(groupBrandId?: string) {
     const where: any = {};
-    if (groupBrandId) where.group_brand_id = +groupBrandId;
+    if (groupBrandId) where.group_brand_id = BigInt(groupBrandId);
 
     return this.prisma.approvalWorkflow.findMany({
       where,
@@ -30,7 +30,7 @@ export class ApprovalWorkflowService {
 
   async findOne(id: string | number) {
     const workflow = await this.prisma.approvalWorkflow.findUnique({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       include: {
         group_brand: true,
         approval_workflow_levels: {
@@ -50,7 +50,7 @@ export class ApprovalWorkflowService {
 
   async findByGroupBrand(groupBrandId: string) {
     return this.prisma.approvalWorkflow.findMany({
-      where: { group_brand_id: +groupBrandId },
+      where: { group_brand_id: BigInt(groupBrandId) },
       include: {
         group_brand: true,
         approval_workflow_levels: {
@@ -76,19 +76,19 @@ export class ApprovalWorkflowService {
     }>;
   }) {
     const groupBrand = await this.prisma.groupBrand.findUnique({
-      where: { id: +data.groupBrandId },
+      where: { id: BigInt(data.groupBrandId) },
     });
     if (!groupBrand) throw new NotFoundException('Group brand not found');
 
     return this.prisma.approvalWorkflow.create({
       data: {
-        group_brand_id: +data.groupBrandId,
+        group_brand_id: BigInt(data.groupBrandId),
         workflow_name: data.workflowName,
         approval_workflow_levels: data.levels ? {
           create: data.levels.map(level => ({
             level_order: level.levelOrder,
             level_name: level.levelName,
-            approver_user_id: +level.approverUserId,
+            approver_user_id: BigInt(level.approverUserId),
             is_required: level.isRequired,
           })),
         } : undefined,
@@ -113,18 +113,18 @@ export class ApprovalWorkflowService {
     approverUserId: string;
     isRequired: boolean;
   }) {
-    const workflow = await this.prisma.approvalWorkflow.findUnique({ where: { id: +workflowId } });
+    const workflow = await this.prisma.approvalWorkflow.findUnique({ where: { id: BigInt(workflowId) } });
     if (!workflow) throw new NotFoundException('Workflow not found');
 
-    const user = await this.prisma.user.findUnique({ where: { id: +data.approverUserId } });
+    const user = await this.prisma.user.findUnique({ where: { id: BigInt(data.approverUserId) } });
     if (!user) throw new BadRequestException('Approver user not found');
 
     return this.prisma.approvalWorkflowLevel.create({
       data: {
-        approval_workflow_id: +workflowId,
+        approval_workflow_id: BigInt(workflowId),
         level_order: data.levelOrder,
         level_name: data.levelName,
-        approver_user_id: +data.approverUserId,
+        approver_user_id: BigInt(data.approverUserId),
         is_required: data.isRequired,
       },
       include: {
@@ -141,17 +141,17 @@ export class ApprovalWorkflowService {
     approverUserId?: string;
     isRequired?: boolean;
   }) {
-    const level = await this.prisma.approvalWorkflowLevel.findUnique({ where: { id: +levelId } });
+    const level = await this.prisma.approvalWorkflowLevel.findUnique({ where: { id: BigInt(levelId) } });
     if (!level) throw new NotFoundException('Workflow level not found');
 
     const updateData: any = {};
     if (data.levelOrder !== undefined) updateData.level_order = data.levelOrder;
     if (data.levelName !== undefined) updateData.level_name = data.levelName;
-    if (data.approverUserId !== undefined) updateData.approver_user_id = +data.approverUserId;
+    if (data.approverUserId !== undefined) updateData.approver_user_id = BigInt(data.approverUserId);
     if (data.isRequired !== undefined) updateData.is_required = data.isRequired;
 
     return this.prisma.approvalWorkflowLevel.update({
-      where: { id: +levelId },
+      where: { id: BigInt(levelId) },
       data: updateData,
       include: {
         approver_user: { select: { id: true, name: true, email: true } },
@@ -162,20 +162,20 @@ export class ApprovalWorkflowService {
   // ─── REMOVE LEVEL ─────────────────────────────────────────────────────────
 
   async removeLevel(levelId: string) {
-    const level = await this.prisma.approvalWorkflowLevel.findUnique({ where: { id: +levelId } });
+    const level = await this.prisma.approvalWorkflowLevel.findUnique({ where: { id: BigInt(levelId) } });
     if (!level) throw new NotFoundException('Workflow level not found');
 
-    await this.prisma.approvalWorkflowLevel.delete({ where: { id: +levelId } });
+    await this.prisma.approvalWorkflowLevel.delete({ where: { id: BigInt(levelId) } });
     return { message: 'Level removed' };
   }
 
   // ─── DELETE WORKFLOW ───────────────────────────────────────────────────────
 
   async remove(id: string) {
-    const workflow = await this.prisma.approvalWorkflow.findUnique({ where: { id: +id } });
+    const workflow = await this.prisma.approvalWorkflow.findUnique({ where: { id: BigInt(id) } });
     if (!workflow) throw new NotFoundException('Workflow not found');
 
-    await this.prisma.approvalWorkflow.delete({ where: { id: +id } });
+    await this.prisma.approvalWorkflow.delete({ where: { id: BigInt(id) } });
     return { message: 'Workflow deleted' };
   }
 
@@ -184,7 +184,7 @@ export class ApprovalWorkflowService {
   async reorderLevels(workflowId: string, levelIds: string[]) {
     const updates = levelIds.map((id, index) =>
       this.prisma.approvalWorkflowLevel.update({
-        where: { id: +id },
+        where: { id: BigInt(id) },
         data: { level_order: index + 1 },
       }),
     );

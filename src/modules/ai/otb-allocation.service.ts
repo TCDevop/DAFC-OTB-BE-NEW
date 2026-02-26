@@ -4,7 +4,7 @@ import { PrismaService } from '../../prisma/prisma.service';
 export interface DimensionRecommendation {
   dimensionType: 'collection' | 'gender' | 'category';
   dimensionValue: string;
-  dimensionId: number;
+  dimensionId: number | bigint;
   recommendedPct: number;
   recommendedAmt: number;
   confidence: number;

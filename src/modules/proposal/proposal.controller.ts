@@ -37,6 +37,16 @@ export class ProposalController {
     return { success: true, ...result };
   }
 
+  // ─── STATISTICS (must be before :id) ──────────────────────────────────────
+
+  @Get('statistics')
+  @RequirePermissions('proposal:read')
+  @ApiOperation({ summary: 'Get proposal statistics' })
+  @ApiQuery({ name: 'budgetId', required: false })
+  async getStatistics(@Query('budgetId') budgetId?: string) {
+    return { success: true, data: await this.proposalService.getStatistics(budgetId) };
+  }
+
   // ─── GET ONE ───────────────────────────────────────────────────────────────
 
   @Get(':id')
@@ -54,6 +64,39 @@ export class ProposalController {
   @ApiBody({ type: CreateSKUProposalHeaderDto })
   async create(@Body() dto: CreateSKUProposalHeaderDto, @Request() req: any) {
     return { success: true, data: await this.proposalService.create(dto, req.user.sub) };
+  }
+
+  // ─── UPDATE HEADER ─────────────────────────────────────────────────────────
+
+  @Put(':id')
+  @RequirePermissions('proposal:write')
+  @ApiOperation({ summary: 'Update SKU proposal header' })
+  async updateHeader(@Param('id') id: string, @Body() dto: any, @Request() req: any) {
+    return { success: true, data: await this.proposalService.updateHeader(id, dto, req.user.sub) };
+  }
+
+  // ─── SUBMIT ────────────────────────────────────────────────────────────────
+
+  @Post(':id/submit')
+  @RequirePermissions('proposal:submit')
+  @ApiOperation({ summary: 'Submit proposal for approval (DRAFT → SUBMITTED)' })
+  async submit(@Param('id') id: string, @Request() req: any) {
+    return { success: true, data: await this.proposalService.submit(id, req.user.sub) };
+  }
+
+  // ─── APPROVE BY LEVEL (used by approvalHelper) ────────────────────────────
+
+  @Post(':id/approve/:level')
+  @RequirePermissions('proposal:approve')
+  @ApiOperation({ summary: 'Approve or reject proposal by level (action: APPROVED | REJECTED)' })
+  async approveByLevel(
+    @Param('id') id: string,
+    @Param('level') level: string,
+    @Body('action') action: string,
+    @Body('comment') comment: string,
+    @Request() req: any,
+  ) {
+    return { success: true, data: await this.proposalService.approveByLevel(id, level, action, comment, req.user.sub) };
   }
 
   // ─── ADD PRODUCT ───────────────────────────────────────────────────────────

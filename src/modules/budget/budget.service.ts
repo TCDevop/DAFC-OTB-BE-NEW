@@ -54,9 +54,9 @@ export class BudgetService {
 
   // ─── GET ONE ───────────────────────────────────────────────────────────────
 
-  async findOne(id: string | number) {
+  async findOne(id: string | number | bigint) {
     const budget = await this.prisma.budget.findUnique({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       include: {
         creator: { select: { id: true, name: true, email: true } },
         allocate_headers: {
@@ -85,7 +85,7 @@ export class BudgetService {
         amount: dto.amount,
         description: dto.description,
         fiscal_year: dto.fiscalYear,
-        created_by: +userId,
+        created_by: BigInt(userId),
       },
     });
 
@@ -104,10 +104,10 @@ export class BudgetService {
         await this.prisma.allocateHeader.create({
           data: {
             budget_id: budget.id,
-            brand_id: +dto.brandId,
+            brand_id: BigInt(dto.brandId),
             version,
             is_final_version: false,
-            created_by: +userId,
+            created_by: BigInt(userId),
           },
         });
       }
@@ -119,7 +119,7 @@ export class BudgetService {
   // ─── UPDATE ────────────────────────────────────────────────────────────────
 
   async update(id: string, dto: UpdateBudgetDto, userId: string) {
-    const budget = await this.prisma.budget.findUnique({ where: { id: +id } });
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(id) } });
     if (!budget) throw new NotFoundException('Budget not found');
 
     if (budget.status !== 'DRAFT') {
@@ -132,22 +132,22 @@ export class BudgetService {
     if (dto.description !== undefined) updateData.description = dto.description;
 
     return this.prisma.budget.update({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       data: updateData,
     });
   }
 
   // ─── CREATE ALLOCATE HEADER ────────────────────────────────────────────────
 
-  async createAllocateHeader(budgetId: string | number, brandId: string | number, allocations: CreateAllocateDto['allocations'], userId: string | number, isFinalVersion = false) {
-    const budget = await this.prisma.budget.findUnique({ where: { id: +budgetId } });
+  async createAllocateHeader(budgetId: string | number | bigint, brandId: string | number, allocations: CreateAllocateDto['allocations'], userId: string | number, isFinalVersion = false) {
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(budgetId) } });
     if (!budget) throw new NotFoundException('Budget not found');
 
-    const brand = await this.prisma.brand.findUnique({ where: { id: +brandId } });
+    const brand = await this.prisma.brand.findUnique({ where: { id: BigInt(brandId) } });
     if (!brand) throw new BadRequestException('Brand not found');
 
     const lastHeader = await this.prisma.allocateHeader.findFirst({
-      where: { budget_id: +budgetId },
+      where: { budget_id: BigInt(budgetId) },
       orderBy: { version: 'desc' },
     });
     const version = (lastHeader?.version || 0) + 1;
@@ -159,16 +159,16 @@ export class BudgetService {
 
     return this.prisma.allocateHeader.create({
       data: {
-        budget_id: +budgetId,
-        brand_id: +brandId,
+        budget_id: BigInt(budgetId),
+        brand_id: BigInt(brandId),
         version,
         is_final_version: isFinalVersion,
-        created_by: +userId,
+        created_by: BigInt(userId),
         budget_allocates: {
           create: allocations.map(a => ({
-            store_id: +a.storeId,
-            season_group_id: +a.seasonGroupId,
-            season_id: +a.seasonId,
+            store_id: BigInt(a.storeId),
+            season_group_id: BigInt(a.seasonGroupId),
+            season_id: BigInt(a.seasonId),
             budget_amount: a.budgetAmount,
           })),
         },
@@ -186,18 +186,13 @@ export class BudgetService {
 
   async updateAllocateHeader(headerId: string, dto: UpdateAllocateDto, userId: string) {
     const header = await this.prisma.allocateHeader.findUnique({
-      where: { id: +headerId },
-      include: { budget: true },
+      where: { id: BigInt(headerId) },
     });
     if (!header) throw new NotFoundException('Allocate header not found');
 
-    if (header.budget.status !== 'DRAFT') {
-      throw new ForbiddenException('Only draft budget allocations can be edited');
-    }
-
     if (dto.isFinalVersion !== undefined) {
       await this.prisma.allocateHeader.update({
-        where: { id: +headerId },
+        where: { id: BigInt(headerId) },
         data: { is_final_version: dto.isFinalVersion },
       });
     }
@@ -207,15 +202,15 @@ export class BudgetService {
     await this.prisma.budgetAllocate.createMany({
       data: dto.allocations.map(a => ({
         allocate_header_id: +headerId,
-        store_id: +a.storeId,
-        season_group_id: +a.seasonGroupId,
-        season_id: +a.seasonId,
+        store_id: BigInt(a.storeId),
+        season_group_id: BigInt(a.seasonGroupId),
+        season_id: BigInt(a.seasonId),
         budget_amount: a.budgetAmount,
       })),
     });
 
     return this.prisma.allocateHeader.findUnique({
-      where: { id: +headerId },
+      where: { id: BigInt(headerId) },
       include: {
         brand: { include: { group_brand: true } },
         budget_allocates: {
@@ -229,7 +224,7 @@ export class BudgetService {
 
   async submit(id: string, userId: string) {
     const budget = await this.prisma.budget.findUnique({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       include: { allocate_headers: true },
     });
     if (!budget) throw new NotFoundException('Budget not found');
@@ -239,15 +234,22 @@ export class BudgetService {
     }
 
     return this.prisma.budget.update({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       data: { status: 'SUBMITTED' },
     });
+  }
+
+  // ─── APPROVE BY LEVEL (unified handler for approvalHelper) ────────────────
+
+  async approveByLevel(id: string, level: string, action: string, comment: string, userId: string) {
+    if (action === 'REJECTED') return this.reject(id, userId);
+    return this.approve(id, userId);
   }
 
   // ─── APPROVE ───────────────────────────────────────────────────────────────
 
   async approve(id: string, userId: string) {
-    const budget = await this.prisma.budget.findUnique({ where: { id: +id } });
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(id) } });
     if (!budget) throw new NotFoundException('Budget not found');
 
     if (budget.status !== 'SUBMITTED') {
@@ -255,7 +257,7 @@ export class BudgetService {
     }
 
     return this.prisma.budget.update({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       data: { status: 'APPROVED' },
     });
   }
@@ -263,7 +265,7 @@ export class BudgetService {
   // ─── REJECT ────────────────────────────────────────────────────────────────
 
   async reject(id: string, userId: string) {
-    const budget = await this.prisma.budget.findUnique({ where: { id: +id } });
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(id) } });
     if (!budget) throw new NotFoundException('Budget not found');
 
     if (budget.status !== 'SUBMITTED') {
@@ -271,7 +273,7 @@ export class BudgetService {
     }
 
     return this.prisma.budget.update({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       data: { status: 'REJECTED' },
     });
   }
@@ -279,21 +281,37 @@ export class BudgetService {
   // ─── DELETE ────────────────────────────────────────────────────────────────
 
   async remove(id: string) {
-    const budget = await this.prisma.budget.findUnique({ where: { id: +id } });
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(id) } });
     if (!budget) throw new NotFoundException('Budget not found');
 
     if (budget.status !== 'DRAFT') {
       throw new ForbiddenException('Only draft budgets can be deleted');
     }
 
-    return this.prisma.budget.delete({ where: { id: +id } });
+    return this.prisma.budget.delete({ where: { id: BigInt(id) } });
+  }
+
+  // ─── ARCHIVE ───────────────────────────────────────────────────────────────
+
+  async archive(id: string) {
+    const budget = await this.prisma.budget.findUnique({ where: { id: BigInt(id) } });
+    if (!budget) throw new NotFoundException('Budget not found');
+
+    if (budget.status !== 'APPROVED') {
+      throw new BadRequestException(`Only approved budgets can be archived. Current status: ${budget.status}`);
+    }
+
+    return this.prisma.budget.update({
+      where: { id: BigInt(id) },
+      data: { status: 'ARCHIVED' },
+    });
   }
 
   // ─── SET FINAL ALLOCATE VERSION ────────────────────────────────────────────
 
   async setFinalVersion(headerId: string) {
     const header = await this.prisma.allocateHeader.findUnique({
-      where: { id: +headerId },
+      where: { id: BigInt(headerId) },
     });
     if (!header) throw new NotFoundException('Allocate header not found');
 
@@ -308,7 +326,7 @@ export class BudgetService {
     });
 
     return this.prisma.allocateHeader.update({
-      where: { id: +headerId },
+      where: { id: BigInt(headerId) },
       data: { is_final_version: true },
       include: {
         brand: { include: { group_brand: true } },

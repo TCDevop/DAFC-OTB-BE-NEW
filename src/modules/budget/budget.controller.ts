@@ -129,6 +129,21 @@ export class BudgetController {
     return { success: true, data: await this.budgetService.approve(id, req.user.sub) };
   }
 
+  // ─── APPROVE BY LEVEL (used by approvalHelper) ────────────────────────────
+
+  @Post(':id/approve/:level')
+  @RequirePermissions('budget:approve')
+  @ApiOperation({ summary: 'Approve or reject budget by level (action: APPROVED | REJECTED)' })
+  async approveByLevel(
+    @Param('id') id: string,
+    @Param('level') level: string,
+    @Body('action') action: string,
+    @Body('comment') comment: string,
+    @Request() req: any,
+  ) {
+    return { success: true, data: await this.budgetService.approveByLevel(id, level, action, comment, req.user.sub) };
+  }
+
   // ─── REJECT ────────────────────────────────────────────────────────────────
 
   @Post(':id/reject')
@@ -136,6 +151,15 @@ export class BudgetController {
   @ApiOperation({ summary: 'Reject budget (SUBMITTED → REJECTED)' })
   async reject(@Param('id') id: string, @Request() req: any) {
     return { success: true, data: await this.budgetService.reject(id, req.user.sub) };
+  }
+
+  // ─── ARCHIVE ───────────────────────────────────────────────────────────────
+
+  @Patch(':id/archive')
+  @RequirePermissions('budget:write')
+  @ApiOperation({ summary: 'Archive approved budget (APPROVED → ARCHIVED)' })
+  async archive(@Param('id') id: string) {
+    return { success: true, data: await this.budgetService.archive(id) };
   }
 
   // ─── DELETE ────────────────────────────────────────────────────────────────

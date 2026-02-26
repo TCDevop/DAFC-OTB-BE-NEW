@@ -21,7 +21,7 @@ export class MasterDataService {
   }
 
   // ─── BRANDS ──────────────────────────────────────────────────────────────
-  async getBrands(groupBrandId?: string) {
+  async getBrands(groupBrandId?: string, limit?: number) {
     const where: Prisma.BrandWhereInput = { is_active: true };
     if (groupBrandId) where.group_brand_id = +groupBrandId;
 
@@ -29,6 +29,7 @@ export class MasterDataService {
       where,
       include: { group_brand: true },
       orderBy: { name: 'asc' },
+      ...(limit ? { take: limit } : {}),
     });
   }
 
@@ -82,7 +83,7 @@ export class MasterDataService {
   }
 
   // ─── CATEGORIES (Full Hierarchy) ─────────────────────────────────────────
-  async getCategories(genderId?: string) {
+  async getCategories(genderId?: string, subCategoryLimit?: number) {
     const where: Prisma.GenderWhereInput = { is_active: true };
     if (genderId) where.id = +genderId;
 
@@ -100,6 +101,7 @@ export class MasterDataService {
                 },
               },
               orderBy: { name: 'asc' },
+              ...(subCategoryLimit ? { take: subCategoryLimit } : {}),
             },
           },
           orderBy: { name: 'asc' },
@@ -202,12 +204,12 @@ export class MasterDataService {
     const pageSize = filters?.pageSize || 50;
 
     const where: Prisma.ProductWhereInput = { is_active: true };
-    if (filters?.brandId) where.brand_id = +filters.brandId;
-    if (filters?.subCategoryId) where.sub_category_id = +filters.subCategoryId;
+    if (filters?.brandId) where.brand_id = BigInt(filters.brandId);
+    if (filters?.subCategoryId) where.sub_category_id = BigInt(filters.subCategoryId);
     if (filters?.search) {
       where.OR = [
-        { sku_code: { contains: filters.search, mode: 'insensitive' } },
-        { product_name: { contains: filters.search, mode: 'insensitive' } },
+        { sku_code: { contains: filters.search } },
+        { product_name: { contains: filters.search } },
       ];
     }
 

@@ -68,7 +68,7 @@ export class TicketService {
 
   async findOne(id: string | number) {
     const ticket = await this.prisma.ticket.findUnique({
-      where: { id: +id },
+      where: { id: BigInt(id) },
       include: {
         budget_allocate: {
           include: {
@@ -109,7 +109,7 @@ export class TicketService {
     return this.prisma.ticket.create({
       data: {
         budget_allocate_id: +data.budgetAllocateId,
-        created_by: +userId,
+        created_by: BigInt(userId),
       },
       include: {
         budget_allocate: {
@@ -131,7 +131,7 @@ export class TicketService {
     },
     userId: string,
   ) {
-    const ticket = await this.prisma.ticket.findUnique({ where: { id: +ticketId } });
+    const ticket = await this.prisma.ticket.findUnique({ where: { id: BigInt(ticketId) } });
     if (!ticket) throw new NotFoundException('Ticket not found');
 
     if (ticket.status !== 'PENDING' && ticket.status !== 'IN_REVIEW') {
@@ -145,7 +145,7 @@ export class TicketService {
     if (!level) throw new BadRequestException('Approval workflow level not found');
 
     // Verify the user is the designated approver
-    if (level.approver_user_id !== +userId) {
+    if (level.approver_user_id !== BigInt(userId)) {
       throw new BadRequestException('You are not the designated approver for this level');
     }
 
@@ -154,7 +154,7 @@ export class TicketService {
       data: {
         ticket_id: +ticketId,
         approval_workflow_level_id: +data.approvalWorkflowLevelId,
-        approver_user_id: +userId,
+        approver_user_id: BigInt(userId),
         is_approved: data.isApproved,
         comment: data.comment,
         approved_at: new Date(),
@@ -202,7 +202,7 @@ export class TicketService {
     }
 
     await this.prisma.ticket.update({
-      where: { id: +ticketId },
+      where: { id: BigInt(ticketId) },
       data: { status: newStatus },
     });
 
