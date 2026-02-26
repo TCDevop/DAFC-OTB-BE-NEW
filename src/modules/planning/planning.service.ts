@@ -89,68 +89,153 @@ export class PlanningService {
     return planning;
   }
 
+  // ─── HISTORICAL (for comparison) ──────────────────────────────────────────
+
+  async findHistorical(params: {
+    fiscalYear: number;
+    seasonGroupName: string;
+    seasonName: string;
+    brandId: string;
+  }) {
+    const { fiscalYear, seasonGroupName, seasonName, brandId } = params;
+
+    // Step 1: Find AllocateHeaders matching brand + budget.fiscal_year
+    //         AND whose budget_allocates touch the target season_group + season
+    const matchingHeaders = await this.prisma.allocateHeader.findMany({
+      where: {
+        brand_id: BigInt(brandId),
+        budget: { fiscal_year: fiscalYear },
+        budget_allocates: {
+          some: {
+            season_group: { name: seasonGroupName },
+            season: { name: seasonName },
+          },
+        },
+      },
+      select: { id: true },
+    });
+
+    if (matchingHeaders.length === 0) return null;
+
+    const allocateHeaderIds = matchingHeaders.map(h => h.id);
+
+    // Step 2: Find the best PlanningHeader (prefer final, then most recent approved)
+    const planning = await this.prisma.planningHeader.findFirst({
+      where: {
+        allocate_header_id: { in: allocateHeaderIds },
+        OR: [
+          { status: 'APPROVED' },
+          { is_final_version: true },
+        ],
+      },
+      include: {
+        planning_categories: {
+          include: {
+            subcategory: {
+              include: { category: { include: { gender: true } } },
+            },
+          },
+        },
+        planning_collections: {
+          include: { collection: true, store: true },
+        },
+        planning_genders: {
+          include: { gender: true, store: true },
+        },
+      },
+      orderBy: [
+        { is_final_version: 'desc' },
+        { created_at: 'desc' },
+      ],
+    });
+
+    return planning;
+  }
+
   // ─── CREATE ────────────────────────────────────────────────────────────────
 
   async create(dto: CreatePlanningDto, userId: string) {
+    console.log('[PlanningService.create] allocateHeaderId:', dto.allocateHeaderId,
+      'collections:', dto.collections?.length || 0,
+      'genders:', dto.genders?.length || 0,
+      'categories:', dto.categories?.length || 0);
+
+    // Version = max version for this brand's allocate_header + 1
+    const allocateHeaderIdBig = dto.allocateHeaderId ? BigInt(dto.allocateHeaderId) : null;
+    const versionWhere: any = {};
+    if (allocateHeaderIdBig) {
+      // Find brand_id from allocate_header, then scope version to same brand
+      const ah = await this.prisma.allocateHeader.findUnique({ where: { id: allocateHeaderIdBig }, select: { brand_id: true } });
+      if (ah) versionWhere.allocate_header = { brand_id: ah.brand_id };
+    }
     const lastHeader = await this.prisma.planningHeader.findFirst({
+      where: versionWhere,
       orderBy: { version: 'desc' },
     });
     const version = (lastHeader?.version || 0) + 1;
 
-    const planning = await this.prisma.planningHeader.create({
+    // Step 1: Create header
+    const header = await this.prisma.planningHeader.create({
       data: {
         version,
         created_by: BigInt(userId),
-        allocate_header_id: dto.allocateHeaderId ? BigInt(dto.allocateHeaderId) : null,
-        planning_collections: dto.collections ? {
-          create: dto.collections.map(c => ({
-            collection: { connect: { id: +c.collectionId } },
-            store: { connect: { id: +c.storeId } },
-            actual_buy_pct: c.actualBuyPct || 0,
-            actual_sales_pct: c.actualSalesPct || 0,
-            actual_st_pct: c.actualStPct || 0,
-            actual_moc: c.actualMoc || 0,
-            proposed_buy_pct: c.proposedBuyPct,
-            otb_proposed_amount: c.otbProposedAmount,
-            pct_var_vs_last: c.pctVarVsLast || 0,
-          })),
-        } : undefined,
-        planning_genders: dto.genders ? {
-          create: dto.genders.map(g => ({
-            gender: { connect: { id: +g.genderId } },
-            store: { connect: { id: +g.storeId } },
-            actual_buy_pct: g.actualBuyPct || 0,
-            actual_sales_pct: g.actualSalesPct || 0,
-            actual_st_pct: g.actualStPct || 0,
-            proposed_buy_pct: g.proposedBuyPct,
-            otb_proposed_amount: g.otbProposedAmount,
-            pct_var_vs_last: g.pctVarVsLast || 0,
-          })),
-        } : undefined,
-        planning_categories: dto.categories ? {
-          create: dto.categories.map(cat => ({
-            subcategory: { connect: { id: +cat.subcategoryId } },
-            actual_buy_pct: cat.actualBuyPct || 0,
-            actual_sales_pct: cat.actualSalesPct || 0,
-            actual_st_pct: cat.actualStPct || 0,
-            proposed_buy_pct: cat.proposedBuyPct,
-            otb_proposed_amount: cat.otbProposedAmount,
-            var_lastyear_pct: cat.varLastyearPct || 0,
-            otb_actual_amount: cat.otbActualAmount || 0,
-            otb_actual_buy_pct: cat.otbActualBuyPct || 0,
-          })),
-        } : undefined,
-      },
-      include: {
-        creator: { select: { id: true, name: true } },
-        allocate_header: { include: { brand: true } },
-        planning_collections: { include: { collection: true, store: true } },
-        planning_genders: { include: { gender: true, store: true } },
-        planning_categories: { include: { subcategory: true } },
+        allocate_header_id: allocateHeaderIdBig,
       },
     });
 
-    return planning;
+    // Step 2: Bulk-insert child records using createMany (same pattern as update)
+    if (dto.collections && dto.collections.length > 0) {
+      await this.prisma.planningCollection.createMany({
+        data: dto.collections.map(c => ({
+          collection_id: BigInt(c.collectionId),
+          store_id: BigInt(c.storeId),
+          planning_header_id: header.id,
+          actual_buy_pct: c.actualBuyPct || 0,
+          actual_sales_pct: c.actualSalesPct || 0,
+          actual_st_pct: c.actualStPct || 0,
+          actual_moc: c.actualMoc || 0,
+          proposed_buy_pct: c.proposedBuyPct,
+          otb_proposed_amount: c.otbProposedAmount,
+          pct_var_vs_last: c.pctVarVsLast || 0,
+        })),
+      });
+    }
+
+    if (dto.genders && dto.genders.length > 0) {
+      await this.prisma.planningGender.createMany({
+        data: dto.genders.map(g => ({
+          gender_id: BigInt(g.genderId),
+          store_id: BigInt(g.storeId),
+          planning_header_id: header.id,
+          actual_buy_pct: g.actualBuyPct || 0,
+          actual_sales_pct: g.actualSalesPct || 0,
+          actual_st_pct: g.actualStPct || 0,
+          proposed_buy_pct: g.proposedBuyPct,
+          otb_proposed_amount: g.otbProposedAmount,
+          pct_var_vs_last: g.pctVarVsLast || 0,
+        })),
+      });
+    }
+
+    if (dto.categories && dto.categories.length > 0) {
+      await this.prisma.planningCategory.createMany({
+        data: dto.categories.map(cat => ({
+          subcategory_id: BigInt(cat.subcategoryId),
+          planning_header_id: header.id,
+          actual_buy_pct: cat.actualBuyPct || 0,
+          actual_sales_pct: cat.actualSalesPct || 0,
+          actual_st_pct: cat.actualStPct || 0,
+          proposed_buy_pct: cat.proposedBuyPct,
+          otb_proposed_amount: cat.otbProposedAmount,
+          var_lastyear_pct: cat.varLastyearPct || 0,
+          otb_actual_amount: cat.otbActualAmount || 0,
+          otb_actual_buy_pct: cat.otbActualBuyPct || 0,
+        })),
+      });
+    }
+
+    // Return full planning with includes
+    return this.findOne(String(header.id));
   }
 
   // ─── UPDATE ────────────────────────────────────────────────────────────────
@@ -170,8 +255,8 @@ export class PlanningService {
       await this.prisma.planningCollection.deleteMany({ where: { planning_header_id: BigInt(id) } });
       await this.prisma.planningCollection.createMany({
         data: dto.collections.map(c => ({
-          collection_id: +c.collectionId,
-          store_id: +c.storeId,
+          collection_id: BigInt(c.collectionId),
+          store_id: BigInt(c.storeId),
           planning_header_id: BigInt(id),
           actual_buy_pct: c.actualBuyPct || 0,
           actual_sales_pct: c.actualSalesPct || 0,
@@ -188,8 +273,8 @@ export class PlanningService {
       await this.prisma.planningGender.deleteMany({ where: { planning_header_id: BigInt(id) } });
       await this.prisma.planningGender.createMany({
         data: dto.genders.map(g => ({
-          gender_id: +g.genderId,
-          store_id: +g.storeId,
+          gender_id: BigInt(g.genderId),
+          store_id: BigInt(g.storeId),
           planning_header_id: BigInt(id),
           actual_buy_pct: g.actualBuyPct || 0,
           actual_sales_pct: g.actualSalesPct || 0,
@@ -205,7 +290,7 @@ export class PlanningService {
       await this.prisma.planningCategory.deleteMany({ where: { planning_header_id: BigInt(id) } });
       await this.prisma.planningCategory.createMany({
         data: dto.categories.map(cat => ({
-          subcategory_id: +cat.subcategoryId,
+          subcategory_id: BigInt(cat.subcategoryId),
           planning_header_id: BigInt(id),
           actual_buy_pct: cat.actualBuyPct || 0,
           actual_sales_pct: cat.actualSalesPct || 0,
@@ -236,7 +321,14 @@ export class PlanningService {
 
     if (!source) throw new NotFoundException('Source planning header not found');
 
+    // Version = max version for this brand's allocate_header + 1
+    const versionWhere: any = {};
+    if (source.allocate_header_id) {
+      const ah = await this.prisma.allocateHeader.findUnique({ where: { id: source.allocate_header_id }, select: { brand_id: true } });
+      if (ah) versionWhere.allocate_header = { brand_id: ah.brand_id };
+    }
     const lastHeader = await this.prisma.planningHeader.findFirst({
+      where: versionWhere,
       orderBy: { version: 'desc' },
     });
     const version = (lastHeader?.version || 0) + 1;
@@ -245,10 +337,11 @@ export class PlanningService {
       data: {
         version,
         created_by: BigInt(userId),
+        allocate_header_id: source.allocate_header_id,
         planning_collections: {
           create: source.planning_collections.map(c => ({
-            collection_id: c.collection_id,
-            store_id: c.store_id,
+            collection: { connect: { id: c.collection_id } },
+            store: { connect: { id: c.store_id } },
             actual_buy_pct: c.actual_buy_pct,
             actual_sales_pct: c.actual_sales_pct,
             actual_st_pct: c.actual_st_pct,
@@ -260,8 +353,8 @@ export class PlanningService {
         },
         planning_genders: {
           create: source.planning_genders.map(g => ({
-            gender_id: g.gender_id,
-            store_id: g.store_id,
+            gender: { connect: { id: g.gender_id } },
+            store: { connect: { id: g.store_id } },
             actual_buy_pct: g.actual_buy_pct,
             actual_sales_pct: g.actual_sales_pct,
             actual_st_pct: g.actual_st_pct,
@@ -272,7 +365,7 @@ export class PlanningService {
         },
         planning_categories: {
           create: source.planning_categories.map(cat => ({
-            subcategory_id: cat.subcategory_id,
+            subcategory: { connect: { id: cat.subcategory_id } },
             actual_buy_pct: cat.actual_buy_pct,
             actual_sales_pct: cat.actual_sales_pct,
             actual_st_pct: cat.actual_st_pct,

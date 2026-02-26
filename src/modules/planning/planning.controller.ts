@@ -49,6 +49,24 @@ export class PlanningController {
     return { success: true, data: await this.planningService.getCategoryFilterOptions(genderId, categoryId) };
   }
 
+  // ─── HISTORICAL (comparison data) ─────────────────────────────────────────
+
+  @Get('historical')
+  @RequirePermissions('planning:read')
+  @ApiOperation({ summary: 'Get historical planning data for year/season/brand comparison' })
+  @ApiQuery({ name: 'fiscalYear', required: true, type: Number })
+  @ApiQuery({ name: 'seasonGroupName', required: true, type: String })
+  @ApiQuery({ name: 'seasonName', required: true, type: String })
+  @ApiQuery({ name: 'brandId', required: true, type: String })
+  async findHistorical(
+    @Query('fiscalYear') fiscalYear: number,
+    @Query('seasonGroupName') seasonGroupName: string,
+    @Query('seasonName') seasonName: string,
+    @Query('brandId') brandId: string,
+  ) {
+    return { success: true, data: await this.planningService.findHistorical({ fiscalYear: Number(fiscalYear), seasonGroupName, seasonName, brandId }) };
+  }
+
   // ─── GET ONE ───────────────────────────────────────────────────────────────
 
   @Get(':id')

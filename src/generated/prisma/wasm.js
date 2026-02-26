@@ -380,6 +380,7 @@ exports.Prisma.PlanningCategoryScalarFieldEnum = {
 
 exports.Prisma.SKUProposalHeaderScalarFieldEnum = {
   id: 'id',
+  allocate_header_id: 'allocate_header_id',
   version: 'version',
   status: 'status',
   is_final_version: 'is_final_version',

@@ -36,7 +36,6 @@ export class BudgetService {
               },
             },
             orderBy: { version: 'desc' },
-            take: 1,
           },
         },
         skip: (page - 1) * pageSize,
@@ -96,8 +95,9 @@ export class BudgetService {
       if (dto.allocations && dto.allocations.length > 0) {
         await this.createAllocateHeader(budget.id, dto.brandId, dto.allocations, userId);
       } else {
+        // Version = max version for this brand within the budget + 1
         const lastHeader = await this.prisma.allocateHeader.findFirst({
-          where: { budget_id: budget.id },
+          where: { budget_id: budget.id, brand_id: BigInt(dto.brandId) },
           orderBy: { version: 'desc' },
         });
         const version = (lastHeader?.version || 0) + 1;
@@ -146,8 +146,9 @@ export class BudgetService {
     const brand = await this.prisma.brand.findUnique({ where: { id: BigInt(brandId) } });
     if (!brand) throw new BadRequestException('Brand not found');
 
+    // Version = max version for this brand within the budget + 1
     const lastHeader = await this.prisma.allocateHeader.findFirst({
-      where: { budget_id: BigInt(budgetId) },
+      where: { budget_id: BigInt(budgetId), brand_id: BigInt(brandId) },
       orderBy: { version: 'desc' },
     });
     const version = (lastHeader?.version || 0) + 1;

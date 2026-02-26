@@ -29,8 +29,9 @@ export class MasterDataController {
 
   @Get('stores')
   @ApiOperation({ summary: 'Get all active stores' })
-  async getStores() {
-    return { success: true, data: await this.masterDataService.getStores() };
+  @ApiQuery({ name: 'limit', required: false, type: Number })
+  async getStores(@Query('limit') limit?: number) {
+    return { success: true, data: await this.masterDataService.getStores(limit ? +limit : undefined) };
   }
 
   @Get('collections')

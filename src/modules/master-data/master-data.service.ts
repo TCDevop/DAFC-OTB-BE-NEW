@@ -34,10 +34,11 @@ export class MasterDataService {
   }
 
   // ─── STORES ──────────────────────────────────────────────────────────────
-  async getStores() {
+  async getStores(limit?: number) {
     return this.prisma.store.findMany({
       where: { is_active: true },
       orderBy: { code: 'asc' },
+      ...(limit ? { take: limit } : {}),
     });
   }
 

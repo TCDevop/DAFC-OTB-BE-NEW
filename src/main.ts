@@ -19,12 +19,11 @@ async function bootstrap() {
   // Security
   app.use(helmet());
 
-  // CORS - allow multiple localhost ports for development
-  const envOrigin = process.env.CORS_ORIGIN?.replace(/\/$/, '');
-  const allowedOrigins = [
-    'http://localhost:4000', 'http://localhost:3000', 'http://localhost:3002', 'http://localhost:3006',
-    ...(envOrigin ? [envOrigin] : []),
-  ];
+  // CORS - read allowed origins from .env
+  const allowedOrigins = (process.env.CORS_ORIGINS || process.env.CORS_ORIGIN || '')
+    .split(',')
+    .map(o => o.trim().replace(/\/$/, ''))
+    .filter(Boolean);
   app.enableCors({
     origin: (origin, callback) => {
       // Allow requests with no origin (like mobile apps or curl)
@@ -69,14 +68,16 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, document);
 
   const port = process.env.PORT || 4000;
-  await app.listen(port);
+  const host = process.env.HOST || '0.0.0.0';
+  await app.listen(port, host);
 
   console.log(`
-  ┌──────────────────────────────────────────┐
-  │   DAFC OTB Backend API                   │
-  │   Running on: http://localhost:${port}       │
-  │   Swagger:    http://localhost:${port}/api/docs │
-  └──────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────┐
+  │   DAFC OTB Backend API                           │
+  │   Running on: http://${host}:${port}                  │
+  │   Network:    http://192.168.219.46:${port}          │
+  │   Swagger:    http://192.168.219.46:${port}/api/docs  │
+  └──────────────────────────────────────────────────┘
   `);
 }
 

@@ -3797,11 +3797,13 @@ export namespace Prisma {
   export type AllocateHeaderCountOutputType = {
     budget_allocates: number
     planning_headers: number
+    sku_proposal_headers: number
   }
 
   export type AllocateHeaderCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     budget_allocates?: boolean | AllocateHeaderCountOutputTypeCountBudget_allocatesArgs
     planning_headers?: boolean | AllocateHeaderCountOutputTypeCountPlanning_headersArgs
+    sku_proposal_headers?: boolean | AllocateHeaderCountOutputTypeCountSku_proposal_headersArgs
   }
 
   // Custom InputTypes
@@ -3827,6 +3829,13 @@ export namespace Prisma {
    */
   export type AllocateHeaderCountOutputTypeCountPlanning_headersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PlanningHeaderWhereInput
+  }
+
+  /**
+   * AllocateHeaderCountOutputType without action
+   */
+  export type AllocateHeaderCountOutputTypeCountSku_proposal_headersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SKUProposalHeaderWhereInput
   }
 
 
@@ -18606,6 +18615,7 @@ export namespace Prisma {
     creator?: boolean | UserDefaultArgs<ExtArgs>
     budget_allocates?: boolean | AllocateHeader$budget_allocatesArgs<ExtArgs>
     planning_headers?: boolean | AllocateHeader$planning_headersArgs<ExtArgs>
+    sku_proposal_headers?: boolean | AllocateHeader$sku_proposal_headersArgs<ExtArgs>
     _count?: boolean | AllocateHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["allocateHeader"]>
 
@@ -18628,6 +18638,7 @@ export namespace Prisma {
     creator?: boolean | UserDefaultArgs<ExtArgs>
     budget_allocates?: boolean | AllocateHeader$budget_allocatesArgs<ExtArgs>
     planning_headers?: boolean | AllocateHeader$planning_headersArgs<ExtArgs>
+    sku_proposal_headers?: boolean | AllocateHeader$sku_proposal_headersArgs<ExtArgs>
     _count?: boolean | AllocateHeaderCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -18639,6 +18650,7 @@ export namespace Prisma {
       creator: Prisma.$UserPayload<ExtArgs>
       budget_allocates: Prisma.$BudgetAllocatePayload<ExtArgs>[]
       planning_headers: Prisma.$PlanningHeaderPayload<ExtArgs>[]
+      sku_proposal_headers: Prisma.$SKUProposalHeaderPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -18995,6 +19007,7 @@ export namespace Prisma {
     creator<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     budget_allocates<T extends AllocateHeader$budget_allocatesArgs<ExtArgs> = {}>(args?: Subset<T, AllocateHeader$budget_allocatesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BudgetAllocatePayload<ExtArgs>, T, "findMany"> | Null>
     planning_headers<T extends AllocateHeader$planning_headersArgs<ExtArgs> = {}>(args?: Subset<T, AllocateHeader$planning_headersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningHeaderPayload<ExtArgs>, T, "findMany"> | Null>
+    sku_proposal_headers<T extends AllocateHeader$sku_proposal_headersArgs<ExtArgs> = {}>(args?: Subset<T, AllocateHeader$sku_proposal_headersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUProposalHeaderPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -19368,6 +19381,26 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: PlanningHeaderScalarFieldEnum | PlanningHeaderScalarFieldEnum[]
+  }
+
+  /**
+   * AllocateHeader.sku_proposal_headers
+   */
+  export type AllocateHeader$sku_proposal_headersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SKUProposalHeader
+     */
+    select?: SKUProposalHeaderSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SKUProposalHeaderInclude<ExtArgs> | null
+    where?: SKUProposalHeaderWhereInput
+    orderBy?: SKUProposalHeaderOrderByWithRelationInput | SKUProposalHeaderOrderByWithRelationInput[]
+    cursor?: SKUProposalHeaderWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SKUProposalHeaderScalarFieldEnum | SKUProposalHeaderScalarFieldEnum[]
   }
 
   /**
@@ -24712,6 +24745,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderAvgAggregateOutputType = {
     id: number | null
+    allocate_header_id: number | null
     version: number | null
     created_by: number | null
     updated_by: number | null
@@ -24719,6 +24753,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderSumAggregateOutputType = {
     id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
     created_by: bigint | null
     updated_by: bigint | null
@@ -24726,6 +24761,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMinAggregateOutputType = {
     id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
     status: string | null
     is_final_version: boolean | null
@@ -24737,6 +24773,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMaxAggregateOutputType = {
     id: bigint | null
+    allocate_header_id: bigint | null
     version: number | null
     status: string | null
     is_final_version: boolean | null
@@ -24748,6 +24785,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderCountAggregateOutputType = {
     id: number
+    allocate_header_id: number
     version: number
     status: number
     is_final_version: number
@@ -24761,6 +24799,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderAvgAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     created_by?: true
     updated_by?: true
@@ -24768,6 +24807,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderSumAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     created_by?: true
     updated_by?: true
@@ -24775,6 +24815,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMinAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     status?: true
     is_final_version?: true
@@ -24786,6 +24827,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMaxAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     status?: true
     is_final_version?: true
@@ -24797,6 +24839,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderCountAggregateInputType = {
     id?: true
+    allocate_header_id?: true
     version?: true
     status?: true
     is_final_version?: true
@@ -24895,6 +24938,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderGroupByOutputType = {
     id: bigint
+    allocate_header_id: bigint | null
     version: number
     status: string
     is_final_version: boolean
@@ -24925,6 +24969,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
+    allocate_header_id?: boolean
     version?: boolean
     status?: boolean
     is_final_version?: boolean
@@ -24932,6 +24977,7 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
+    allocate_header?: boolean | SKUProposalHeader$allocate_headerArgs<ExtArgs>
     creator?: boolean | UserDefaultArgs<ExtArgs>
     sku_proposals?: boolean | SKUProposalHeader$sku_proposalsArgs<ExtArgs>
     _count?: boolean | SKUProposalHeaderCountOutputTypeDefaultArgs<ExtArgs>
@@ -24940,6 +24986,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderSelectScalar = {
     id?: boolean
+    allocate_header_id?: boolean
     version?: boolean
     status?: boolean
     is_final_version?: boolean
@@ -24950,6 +24997,7 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    allocate_header?: boolean | SKUProposalHeader$allocate_headerArgs<ExtArgs>
     creator?: boolean | UserDefaultArgs<ExtArgs>
     sku_proposals?: boolean | SKUProposalHeader$sku_proposalsArgs<ExtArgs>
     _count?: boolean | SKUProposalHeaderCountOutputTypeDefaultArgs<ExtArgs>
@@ -24958,11 +25006,13 @@ export namespace Prisma {
   export type $SKUProposalHeaderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "SKUProposalHeader"
     objects: {
+      allocate_header: Prisma.$AllocateHeaderPayload<ExtArgs> | null
       creator: Prisma.$UserPayload<ExtArgs>
       sku_proposals: Prisma.$SKUProposalPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
+      allocate_header_id: bigint | null
       version: number
       status: string
       is_final_version: boolean
@@ -25310,6 +25360,7 @@ export namespace Prisma {
    */
   export interface Prisma__SKUProposalHeaderClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
+    allocate_header<T extends SKUProposalHeader$allocate_headerArgs<ExtArgs> = {}>(args?: Subset<T, SKUProposalHeader$allocate_headerArgs<ExtArgs>>): Prisma__AllocateHeaderClient<$Result.GetResult<Prisma.$AllocateHeaderPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
     creator<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     sku_proposals<T extends SKUProposalHeader$sku_proposalsArgs<ExtArgs> = {}>(args?: Subset<T, SKUProposalHeader$sku_proposalsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUProposalPayload<ExtArgs>, T, "findMany"> | Null>
     /**
@@ -25342,6 +25393,7 @@ export namespace Prisma {
    */ 
   interface SKUProposalHeaderFieldRefs {
     readonly id: FieldRef<"SKUProposalHeader", 'BigInt'>
+    readonly allocate_header_id: FieldRef<"SKUProposalHeader", 'BigInt'>
     readonly version: FieldRef<"SKUProposalHeader", 'Int'>
     readonly status: FieldRef<"SKUProposalHeader", 'String'>
     readonly is_final_version: FieldRef<"SKUProposalHeader", 'Boolean'>
@@ -25644,6 +25696,21 @@ export namespace Prisma {
      * Filter which SKUProposalHeaders to delete
      */
     where?: SKUProposalHeaderWhereInput
+  }
+
+  /**
+   * SKUProposalHeader.allocate_header
+   */
+  export type SKUProposalHeader$allocate_headerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AllocateHeader
+     */
+    select?: AllocateHeaderSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AllocateHeaderInclude<ExtArgs> | null
+    where?: AllocateHeaderWhereInput
   }
 
   /**
@@ -34883,6 +34950,7 @@ export namespace Prisma {
 
   export const SKUProposalHeaderScalarFieldEnum: {
     id: 'id',
+    allocate_header_id: 'allocate_header_id',
     version: 'version',
     status: 'status',
     is_final_version: 'is_final_version',
@@ -36256,6 +36324,7 @@ export namespace Prisma {
     creator?: XOR<UserRelationFilter, UserWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     planning_headers?: PlanningHeaderListRelationFilter
+    sku_proposal_headers?: SKUProposalHeaderListRelationFilter
   }
 
   export type AllocateHeaderOrderByWithRelationInput = {
@@ -36273,6 +36342,7 @@ export namespace Prisma {
     creator?: UserOrderByWithRelationInput
     budget_allocates?: BudgetAllocateOrderByRelationAggregateInput
     planning_headers?: PlanningHeaderOrderByRelationAggregateInput
+    sku_proposal_headers?: SKUProposalHeaderOrderByRelationAggregateInput
   }
 
   export type AllocateHeaderWhereUniqueInput = Prisma.AtLeast<{
@@ -36293,6 +36363,7 @@ export namespace Prisma {
     creator?: XOR<UserRelationFilter, UserWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     planning_headers?: PlanningHeaderListRelationFilter
+    sku_proposal_headers?: SKUProposalHeaderListRelationFilter
   }, "id">
 
   export type AllocateHeaderOrderByWithAggregationInput = {
@@ -36846,6 +36917,7 @@ export namespace Prisma {
     OR?: SKUProposalHeaderWhereInput[]
     NOT?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
     id?: BigIntFilter<"SKUProposalHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
     version?: IntFilter<"SKUProposalHeader"> | number
     status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
@@ -36853,12 +36925,14 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_by?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
+    allocate_header?: XOR<AllocateHeaderNullableRelationFilter, AllocateHeaderWhereInput> | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
   }
 
   export type SKUProposalHeaderOrderByWithRelationInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrderInput | SortOrder
     version?: SortOrder
     status?: SortOrder
     is_final_version?: SortOrder
@@ -36866,6 +36940,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
+    allocate_header?: AllocateHeaderOrderByWithRelationInput
     creator?: UserOrderByWithRelationInput
     sku_proposals?: SKUProposalOrderByRelationAggregateInput
   }
@@ -36875,6 +36950,7 @@ export namespace Prisma {
     AND?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
     OR?: SKUProposalHeaderWhereInput[]
     NOT?: SKUProposalHeaderWhereInput | SKUProposalHeaderWhereInput[]
+    allocate_header_id?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
     version?: IntFilter<"SKUProposalHeader"> | number
     status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
@@ -36882,12 +36958,14 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_at?: DateTimeFilter<"SKUProposalHeader"> | Date | string
     updated_by?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
+    allocate_header?: XOR<AllocateHeaderNullableRelationFilter, AllocateHeaderWhereInput> | null
     creator?: XOR<UserRelationFilter, UserWhereInput>
     sku_proposals?: SKUProposalListRelationFilter
   }, "id">
 
   export type SKUProposalHeaderOrderByWithAggregationInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrderInput | SortOrder
     version?: SortOrder
     status?: SortOrder
     is_final_version?: SortOrder
@@ -36907,6 +36985,7 @@ export namespace Prisma {
     OR?: SKUProposalHeaderScalarWhereWithAggregatesInput[]
     NOT?: SKUProposalHeaderScalarWhereWithAggregatesInput | SKUProposalHeaderScalarWhereWithAggregatesInput[]
     id?: BigIntWithAggregatesFilter<"SKUProposalHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableWithAggregatesFilter<"SKUProposalHeader"> | bigint | number | null
     version?: IntWithAggregatesFilter<"SKUProposalHeader"> | number
     status?: StringWithAggregatesFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolWithAggregatesFilter<"SKUProposalHeader"> | boolean
@@ -38897,6 +38976,7 @@ export namespace Prisma {
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateInput = {
@@ -38911,6 +38991,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUpdateInput = {
@@ -38925,6 +39006,7 @@ export namespace Prisma {
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateInput = {
@@ -38939,6 +39021,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderCreateManyInput = {
@@ -39524,12 +39607,14 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutSku_proposal_headersInput
     creator: UserCreateNestedOneWithoutCreated_sku_proposal_headersInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutSku_proposal_headerInput
   }
 
   export type SKUProposalHeaderUncheckedCreateInput = {
     id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
     status?: string
     is_final_version?: boolean
@@ -39548,12 +39633,14 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    allocate_header?: AllocateHeaderUpdateOneWithoutSku_proposal_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
@@ -39565,6 +39652,7 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderCreateManyInput = {
+    allocate_header_id?: bigint | number | null
     version: number
     status?: string
     is_final_version?: boolean
@@ -39586,6 +39674,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderUncheckedUpdateManyInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
@@ -41955,6 +42044,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderCountOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     status?: SortOrder
     is_final_version?: SortOrder
@@ -41966,6 +42056,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderAvgOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
@@ -41973,6 +42064,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMaxOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     status?: SortOrder
     is_final_version?: SortOrder
@@ -41984,6 +42076,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderMinOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     status?: SortOrder
     is_final_version?: SortOrder
@@ -41995,6 +42088,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderSumOrderByAggregateInput = {
     id?: SortOrder
+    allocate_header_id?: SortOrder
     version?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
@@ -44005,6 +44099,13 @@ export namespace Prisma {
     connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
   }
 
+  export type SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput = {
+    create?: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput> | SKUProposalHeaderCreateWithoutAllocate_headerInput[] | SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput | SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    createMany?: SKUProposalHeaderCreateManyAllocate_headerInputEnvelope
+    connect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+  }
+
   export type BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput = {
     create?: XOR<BudgetAllocateCreateWithoutAllocate_headerInput, BudgetAllocateUncheckedCreateWithoutAllocate_headerInput> | BudgetAllocateCreateWithoutAllocate_headerInput[] | BudgetAllocateUncheckedCreateWithoutAllocate_headerInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutAllocate_headerInput | BudgetAllocateCreateOrConnectWithoutAllocate_headerInput[]
@@ -44017,6 +44118,13 @@ export namespace Prisma {
     connectOrCreate?: PlanningHeaderCreateOrConnectWithoutAllocate_headerInput | PlanningHeaderCreateOrConnectWithoutAllocate_headerInput[]
     createMany?: PlanningHeaderCreateManyAllocate_headerInputEnvelope
     connect?: PlanningHeaderWhereUniqueInput | PlanningHeaderWhereUniqueInput[]
+  }
+
+  export type SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput = {
+    create?: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput> | SKUProposalHeaderCreateWithoutAllocate_headerInput[] | SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput | SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    createMany?: SKUProposalHeaderCreateManyAllocate_headerInputEnvelope
+    connect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
   }
 
   export type BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput = {
@@ -44071,6 +44179,20 @@ export namespace Prisma {
     deleteMany?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
   }
 
+  export type SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput = {
+    create?: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput> | SKUProposalHeaderCreateWithoutAllocate_headerInput[] | SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput | SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    upsert?: SKUProposalHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput | SKUProposalHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput[]
+    createMany?: SKUProposalHeaderCreateManyAllocate_headerInputEnvelope
+    set?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    disconnect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    delete?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    connect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    update?: SKUProposalHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput | SKUProposalHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput[]
+    updateMany?: SKUProposalHeaderUpdateManyWithWhereWithoutAllocate_headerInput | SKUProposalHeaderUpdateManyWithWhereWithoutAllocate_headerInput[]
+    deleteMany?: SKUProposalHeaderScalarWhereInput | SKUProposalHeaderScalarWhereInput[]
+  }
+
   export type BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput = {
     create?: XOR<BudgetAllocateCreateWithoutAllocate_headerInput, BudgetAllocateUncheckedCreateWithoutAllocate_headerInput> | BudgetAllocateCreateWithoutAllocate_headerInput[] | BudgetAllocateUncheckedCreateWithoutAllocate_headerInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutAllocate_headerInput | BudgetAllocateCreateOrConnectWithoutAllocate_headerInput[]
@@ -44097,6 +44219,20 @@ export namespace Prisma {
     update?: PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput | PlanningHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput[]
     updateMany?: PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput | PlanningHeaderUpdateManyWithWhereWithoutAllocate_headerInput[]
     deleteMany?: PlanningHeaderScalarWhereInput | PlanningHeaderScalarWhereInput[]
+  }
+
+  export type SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput = {
+    create?: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput> | SKUProposalHeaderCreateWithoutAllocate_headerInput[] | SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput[]
+    connectOrCreate?: SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput | SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput[]
+    upsert?: SKUProposalHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput | SKUProposalHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput[]
+    createMany?: SKUProposalHeaderCreateManyAllocate_headerInputEnvelope
+    set?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    disconnect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    delete?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    connect?: SKUProposalHeaderWhereUniqueInput | SKUProposalHeaderWhereUniqueInput[]
+    update?: SKUProposalHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput | SKUProposalHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput[]
+    updateMany?: SKUProposalHeaderUpdateManyWithWhereWithoutAllocate_headerInput | SKUProposalHeaderUpdateManyWithWhereWithoutAllocate_headerInput[]
+    deleteMany?: SKUProposalHeaderScalarWhereInput | SKUProposalHeaderScalarWhereInput[]
   }
 
   export type AllocateHeaderCreateNestedOneWithoutBudget_allocatesInput = {
@@ -44465,6 +44601,12 @@ export namespace Prisma {
     update?: XOR<XOR<PlanningHeaderUpdateToOneWithWhereWithoutPlanning_categoriesInput, PlanningHeaderUpdateWithoutPlanning_categoriesInput>, PlanningHeaderUncheckedUpdateWithoutPlanning_categoriesInput>
   }
 
+  export type AllocateHeaderCreateNestedOneWithoutSku_proposal_headersInput = {
+    create?: XOR<AllocateHeaderCreateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedCreateWithoutSku_proposal_headersInput>
+    connectOrCreate?: AllocateHeaderCreateOrConnectWithoutSku_proposal_headersInput
+    connect?: AllocateHeaderWhereUniqueInput
+  }
+
   export type UserCreateNestedOneWithoutCreated_sku_proposal_headersInput = {
     create?: XOR<UserCreateWithoutCreated_sku_proposal_headersInput, UserUncheckedCreateWithoutCreated_sku_proposal_headersInput>
     connectOrCreate?: UserCreateOrConnectWithoutCreated_sku_proposal_headersInput
@@ -44483,6 +44625,16 @@ export namespace Prisma {
     connectOrCreate?: SKUProposalCreateOrConnectWithoutSku_proposal_headerInput | SKUProposalCreateOrConnectWithoutSku_proposal_headerInput[]
     createMany?: SKUProposalCreateManySku_proposal_headerInputEnvelope
     connect?: SKUProposalWhereUniqueInput | SKUProposalWhereUniqueInput[]
+  }
+
+  export type AllocateHeaderUpdateOneWithoutSku_proposal_headersNestedInput = {
+    create?: XOR<AllocateHeaderCreateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedCreateWithoutSku_proposal_headersInput>
+    connectOrCreate?: AllocateHeaderCreateOrConnectWithoutSku_proposal_headersInput
+    upsert?: AllocateHeaderUpsertWithoutSku_proposal_headersInput
+    disconnect?: AllocateHeaderWhereInput | boolean
+    delete?: AllocateHeaderWhereInput | boolean
+    connect?: AllocateHeaderWhereUniqueInput
+    update?: XOR<XOR<AllocateHeaderUpdateToOneWithWhereWithoutSku_proposal_headersInput, AllocateHeaderUpdateWithoutSku_proposal_headersInput>, AllocateHeaderUncheckedUpdateWithoutSku_proposal_headersInput>
   }
 
   export type UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput = {
@@ -45340,6 +45492,7 @@ export namespace Prisma {
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutCreatorInput = {
@@ -45353,6 +45506,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutCreatorInput = {
@@ -45409,11 +45563,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutSku_proposal_headersInput
     sku_proposals?: SKUProposalCreateNestedManyWithoutSku_proposal_headerInput
   }
 
   export type SKUProposalHeaderUncheckedCreateWithoutCreatorInput = {
     id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
     status?: string
     is_final_version?: boolean
@@ -45710,6 +45866,7 @@ export namespace Prisma {
     OR?: SKUProposalHeaderScalarWhereInput[]
     NOT?: SKUProposalHeaderScalarWhereInput | SKUProposalHeaderScalarWhereInput[]
     id?: BigIntFilter<"SKUProposalHeader"> | bigint | number
+    allocate_header_id?: BigIntNullableFilter<"SKUProposalHeader"> | bigint | number | null
     version?: IntFilter<"SKUProposalHeader"> | number
     status?: StringFilter<"SKUProposalHeader"> | string
     is_final_version?: BoolFilter<"SKUProposalHeader"> | boolean
@@ -46135,6 +46292,7 @@ export namespace Prisma {
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBrandInput = {
@@ -46148,6 +46306,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBrandInput = {
@@ -47711,6 +47870,7 @@ export namespace Prisma {
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBudgetInput = {
@@ -47724,6 +47884,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
     planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBudgetInput = {
@@ -47981,6 +48142,39 @@ export namespace Prisma {
     data: PlanningHeaderCreateManyAllocate_headerInput | PlanningHeaderCreateManyAllocate_headerInput[]
   }
 
+  export type SKUProposalHeaderCreateWithoutAllocate_headerInput = {
+    id?: bigint | number
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    creator: UserCreateNestedOneWithoutCreated_sku_proposal_headersInput
+    sku_proposals?: SKUProposalCreateNestedManyWithoutSku_proposal_headerInput
+  }
+
+  export type SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput = {
+    id?: bigint | number
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    sku_proposals?: SKUProposalUncheckedCreateNestedManyWithoutSku_proposal_headerInput
+  }
+
+  export type SKUProposalHeaderCreateOrConnectWithoutAllocate_headerInput = {
+    where: SKUProposalHeaderWhereUniqueInput
+    create: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput>
+  }
+
+  export type SKUProposalHeaderCreateManyAllocate_headerInputEnvelope = {
+    data: SKUProposalHeaderCreateManyAllocate_headerInput | SKUProposalHeaderCreateManyAllocate_headerInput[]
+  }
+
   export type BudgetUpsertWithoutAllocate_headersInput = {
     update: XOR<BudgetUpdateWithoutAllocate_headersInput, BudgetUncheckedUpdateWithoutAllocate_headersInput>
     create: XOR<BudgetCreateWithoutAllocate_headersInput, BudgetUncheckedCreateWithoutAllocate_headersInput>
@@ -48138,6 +48332,22 @@ export namespace Prisma {
     data: XOR<PlanningHeaderUpdateManyMutationInput, PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerInput>
   }
 
+  export type SKUProposalHeaderUpsertWithWhereUniqueWithoutAllocate_headerInput = {
+    where: SKUProposalHeaderWhereUniqueInput
+    update: XOR<SKUProposalHeaderUpdateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedUpdateWithoutAllocate_headerInput>
+    create: XOR<SKUProposalHeaderCreateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedCreateWithoutAllocate_headerInput>
+  }
+
+  export type SKUProposalHeaderUpdateWithWhereUniqueWithoutAllocate_headerInput = {
+    where: SKUProposalHeaderWhereUniqueInput
+    data: XOR<SKUProposalHeaderUpdateWithoutAllocate_headerInput, SKUProposalHeaderUncheckedUpdateWithoutAllocate_headerInput>
+  }
+
+  export type SKUProposalHeaderUpdateManyWithWhereWithoutAllocate_headerInput = {
+    where: SKUProposalHeaderScalarWhereInput
+    data: XOR<SKUProposalHeaderUpdateManyMutationInput, SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerInput>
+  }
+
   export type AllocateHeaderCreateWithoutBudget_allocatesInput = {
     id?: bigint | number
     version: number
@@ -48149,6 +48359,7 @@ export namespace Prisma {
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutBudget_allocatesInput = {
@@ -48162,6 +48373,7 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutBudget_allocatesInput = {
@@ -48311,6 +48523,7 @@ export namespace Prisma {
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBudget_allocatesInput = {
@@ -48324,6 +48537,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type StoreUpsertWithoutBudget_allocatesInput = {
@@ -48507,6 +48721,7 @@ export namespace Prisma {
     brand: BrandCreateNestedOneWithoutAllocate_headersInput
     creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderUncheckedCreateWithoutPlanning_headersInput = {
@@ -48520,6 +48735,7 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
   }
 
   export type AllocateHeaderCreateOrConnectWithoutPlanning_headersInput = {
@@ -48727,6 +48943,7 @@ export namespace Prisma {
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutPlanning_headersInput = {
@@ -48740,6 +48957,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type PlanningCollectionUpsertWithWhereUniqueWithoutPlanning_headerInput = {
@@ -49350,6 +49568,39 @@ export namespace Prisma {
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutPlanning_headerNestedInput
   }
 
+  export type AllocateHeaderCreateWithoutSku_proposal_headersInput = {
+    id?: bigint | number
+    version: number
+    is_final_version?: boolean
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget: BudgetCreateNestedOneWithoutAllocate_headersInput
+    brand: BrandCreateNestedOneWithoutAllocate_headersInput
+    creator: UserCreateNestedOneWithoutCreated_allocate_headersInput
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderCreateNestedManyWithoutAllocate_headerInput
+  }
+
+  export type AllocateHeaderUncheckedCreateWithoutSku_proposal_headersInput = {
+    id?: bigint | number
+    budget_id: bigint | number
+    brand_id: bigint | number
+    version: number
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutAllocate_headerInput
+    planning_headers?: PlanningHeaderUncheckedCreateNestedManyWithoutAllocate_headerInput
+  }
+
+  export type AllocateHeaderCreateOrConnectWithoutSku_proposal_headersInput = {
+    where: AllocateHeaderWhereUniqueInput
+    create: XOR<AllocateHeaderCreateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedCreateWithoutSku_proposal_headersInput>
+  }
+
   export type UserCreateWithoutCreated_sku_proposal_headersInput = {
     id?: bigint | number
     email: string
@@ -49432,6 +49683,45 @@ export namespace Prisma {
     data: SKUProposalCreateManySku_proposal_headerInput | SKUProposalCreateManySku_proposal_headerInput[]
   }
 
+  export type AllocateHeaderUpsertWithoutSku_proposal_headersInput = {
+    update: XOR<AllocateHeaderUpdateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedUpdateWithoutSku_proposal_headersInput>
+    create: XOR<AllocateHeaderCreateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedCreateWithoutSku_proposal_headersInput>
+    where?: AllocateHeaderWhereInput
+  }
+
+  export type AllocateHeaderUpdateToOneWithWhereWithoutSku_proposal_headersInput = {
+    where?: AllocateHeaderWhereInput
+    data: XOR<AllocateHeaderUpdateWithoutSku_proposal_headersInput, AllocateHeaderUncheckedUpdateWithoutSku_proposal_headersInput>
+  }
+
+  export type AllocateHeaderUpdateWithoutSku_proposal_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget?: BudgetUpdateOneRequiredWithoutAllocate_headersNestedInput
+    brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
+    creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
+    budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+  }
+
+  export type AllocateHeaderUncheckedUpdateWithoutSku_proposal_headersInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    budget_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+  }
+
   export type UserUpsertWithoutCreated_sku_proposal_headersInput = {
     update: XOR<UserUpdateWithoutCreated_sku_proposal_headersInput, UserUncheckedUpdateWithoutCreated_sku_proposal_headersInput>
     create: XOR<UserCreateWithoutCreated_sku_proposal_headersInput, UserUncheckedCreateWithoutCreated_sku_proposal_headersInput>
@@ -49507,11 +49797,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    allocate_header?: AllocateHeaderCreateNestedOneWithoutSku_proposal_headersInput
     creator: UserCreateNestedOneWithoutCreated_sku_proposal_headersInput
   }
 
   export type SKUProposalHeaderUncheckedCreateWithoutSku_proposalsInput = {
     id?: bigint | number
+    allocate_header_id?: bigint | number | null
     version: number
     status?: string
     is_final_version?: boolean
@@ -49648,11 +49940,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    allocate_header?: AllocateHeaderUpdateOneWithoutSku_proposal_headersNestedInput
     creator?: UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateWithoutSku_proposalsInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
@@ -51013,6 +51307,7 @@ export namespace Prisma {
   }
 
   export type SKUProposalHeaderCreateManyCreatorInput = {
+    allocate_header_id?: bigint | number | null
     version: number
     status?: string
     is_final_version?: boolean
@@ -51110,6 +51405,7 @@ export namespace Prisma {
     brand?: BrandUpdateOneRequiredWithoutAllocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutCreatorInput = {
@@ -51123,6 +51419,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutCreatorInput = {
@@ -51183,11 +51480,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    allocate_header?: AllocateHeaderUpdateOneWithoutSku_proposal_headersNestedInput
     sku_proposals?: SKUProposalUpdateManyWithoutSku_proposal_headerNestedInput
   }
 
   export type SKUProposalHeaderUncheckedUpdateWithoutCreatorInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
@@ -51199,6 +51498,7 @@ export namespace Prisma {
 
   export type SKUProposalHeaderUncheckedUpdateManyWithoutCreatorInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
+    allocate_header_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
     is_final_version?: BoolFieldUpdateOperationsInput | boolean
@@ -51586,6 +51886,7 @@ export namespace Prisma {
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBrandInput = {
@@ -51599,6 +51900,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutBrandInput = {
@@ -52481,6 +52783,7 @@ export namespace Prisma {
     creator?: UserUpdateOneRequiredWithoutCreated_allocate_headersNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateWithoutBudgetInput = {
@@ -52494,6 +52797,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutAllocate_headerNestedInput
     planning_headers?: PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
+    sku_proposal_headers?: SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerNestedInput
   }
 
   export type AllocateHeaderUncheckedUpdateManyWithoutBudgetInput = {
@@ -52519,6 +52823,16 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderCreateManyAllocate_headerInput = {
+    version: number
+    status?: string
+    is_final_version?: boolean
+    created_by: bigint | number
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+  }
+
+  export type SKUProposalHeaderCreateManyAllocate_headerInput = {
     version: number
     status?: string
     is_final_version?: boolean
@@ -52595,6 +52909,41 @@ export namespace Prisma {
   }
 
   export type PlanningHeaderUncheckedUpdateManyWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+  }
+
+  export type SKUProposalHeaderUpdateWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    creator?: UserUpdateOneRequiredWithoutCreated_sku_proposal_headersNestedInput
+    sku_proposals?: SKUProposalUpdateManyWithoutSku_proposal_headerNestedInput
+  }
+
+  export type SKUProposalHeaderUncheckedUpdateWithoutAllocate_headerInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    version?: IntFieldUpdateOperationsInput | number
+    status?: StringFieldUpdateOperationsInput | string
+    is_final_version?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: BigIntFieldUpdateOperationsInput | bigint | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sku_proposals?: SKUProposalUncheckedUpdateManyWithoutSku_proposal_headerNestedInput
+  }
+
+  export type SKUProposalHeaderUncheckedUpdateManyWithoutAllocate_headerInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     version?: IntFieldUpdateOperationsInput | number
     status?: StringFieldUpdateOperationsInput | string
