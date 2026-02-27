@@ -42,8 +42,9 @@ export class MasterDataController {
 
   @Get('season-groups')
   @ApiOperation({ summary: 'Get season groups with seasons (SS, FW)' })
-  async getSeasonGroups() {
-    return { success: true, data: await this.masterDataService.getSeasonGroups() };
+  @ApiQuery({ name: 'year', required: false, type: Number })
+  async getSeasonGroups(@Query('year') year?: string) {
+    return { success: true, data: await this.masterDataService.getSeasonGroups(year ? +year : undefined) };
   }
 
   @Get('seasons')
@@ -101,14 +102,16 @@ export class MasterDataController {
 
   @Get('planning-filters')
   @ApiOperation({ summary: 'Get all filter options for Planning page in one request (groupBrands, brands, seasonGroups, stores, fiscalYears)' })
-  async getPlanningFilterOptions() {
-    return { success: true, data: await this.masterDataService.getPlanningFilterOptions() };
+  @ApiQuery({ name: 'year', required: false, type: Number })
+  async getPlanningFilterOptions(@Query('year') year?: string) {
+    return { success: true, data: await this.masterDataService.getPlanningFilterOptions(year ? +year : undefined) };
   }
 
   @Get('proposal-filters')
   @ApiOperation({ summary: 'Get all filter options for Proposal page (genders, categories, seasonGroups, stores)' })
-  async getProposalFilterOptions() {
-    return { success: true, data: await this.masterDataService.getProposalFilterOptions() };
+  @ApiQuery({ name: 'year', required: false, type: Number })
+  async getProposalFilterOptions(@Query('year') year?: string) {
+    return { success: true, data: await this.masterDataService.getProposalFilterOptions(year ? +year : undefined) };
   }
 
   @Get('sku-catalog')

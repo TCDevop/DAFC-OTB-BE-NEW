@@ -196,6 +196,7 @@ exports.Prisma.SeasonTypeScalarFieldEnum = {
 exports.Prisma.SeasonGroupScalarFieldEnum = {
   id: 'id',
   name: 'name',
+  year: 'year',
   is_active: 'is_active',
   created_by: 'created_by',
   created_at: 'created_at',

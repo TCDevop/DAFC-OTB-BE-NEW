@@ -10322,12 +10322,14 @@ export namespace Prisma {
 
   export type SeasonGroupAvgAggregateOutputType = {
     id: number | null
+    year: number | null
     created_by: number | null
     updated_by: number | null
   }
 
   export type SeasonGroupSumAggregateOutputType = {
     id: bigint | null
+    year: number | null
     created_by: bigint | null
     updated_by: bigint | null
   }
@@ -10335,6 +10337,7 @@ export namespace Prisma {
   export type SeasonGroupMinAggregateOutputType = {
     id: bigint | null
     name: string | null
+    year: number | null
     is_active: boolean | null
     created_by: bigint | null
     created_at: Date | null
@@ -10345,6 +10348,7 @@ export namespace Prisma {
   export type SeasonGroupMaxAggregateOutputType = {
     id: bigint | null
     name: string | null
+    year: number | null
     is_active: boolean | null
     created_by: bigint | null
     created_at: Date | null
@@ -10355,6 +10359,7 @@ export namespace Prisma {
   export type SeasonGroupCountAggregateOutputType = {
     id: number
     name: number
+    year: number
     is_active: number
     created_by: number
     created_at: number
@@ -10366,12 +10371,14 @@ export namespace Prisma {
 
   export type SeasonGroupAvgAggregateInputType = {
     id?: true
+    year?: true
     created_by?: true
     updated_by?: true
   }
 
   export type SeasonGroupSumAggregateInputType = {
     id?: true
+    year?: true
     created_by?: true
     updated_by?: true
   }
@@ -10379,6 +10386,7 @@ export namespace Prisma {
   export type SeasonGroupMinAggregateInputType = {
     id?: true
     name?: true
+    year?: true
     is_active?: true
     created_by?: true
     created_at?: true
@@ -10389,6 +10397,7 @@ export namespace Prisma {
   export type SeasonGroupMaxAggregateInputType = {
     id?: true
     name?: true
+    year?: true
     is_active?: true
     created_by?: true
     created_at?: true
@@ -10399,6 +10408,7 @@ export namespace Prisma {
   export type SeasonGroupCountAggregateInputType = {
     id?: true
     name?: true
+    year?: true
     is_active?: true
     created_by?: true
     created_at?: true
@@ -10496,6 +10506,7 @@ export namespace Prisma {
   export type SeasonGroupGroupByOutputType = {
     id: bigint
     name: string
+    year: number | null
     is_active: boolean
     created_by: bigint | null
     created_at: Date
@@ -10525,6 +10536,7 @@ export namespace Prisma {
   export type SeasonGroupSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     name?: boolean
+    year?: boolean
     is_active?: boolean
     created_by?: boolean
     created_at?: boolean
@@ -10539,6 +10551,7 @@ export namespace Prisma {
   export type SeasonGroupSelectScalar = {
     id?: boolean
     name?: boolean
+    year?: boolean
     is_active?: boolean
     created_by?: boolean
     created_at?: boolean
@@ -10561,6 +10574,7 @@ export namespace Prisma {
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
       name: string
+      year: number | null
       is_active: boolean
       created_by: bigint | null
       created_at: Date
@@ -10939,6 +10953,7 @@ export namespace Prisma {
   interface SeasonGroupFieldRefs {
     readonly id: FieldRef<"SeasonGroup", 'BigInt'>
     readonly name: FieldRef<"SeasonGroup", 'String'>
+    readonly year: FieldRef<"SeasonGroup", 'Int'>
     readonly is_active: FieldRef<"SeasonGroup", 'Boolean'>
     readonly created_by: FieldRef<"SeasonGroup", 'BigInt'>
     readonly created_at: FieldRef<"SeasonGroup", 'DateTime'>
@@ -34724,6 +34739,7 @@ export namespace Prisma {
   export const SeasonGroupScalarFieldEnum: {
     id: 'id',
     name: 'name',
+    year: 'year',
     is_active: 'is_active',
     created_by: 'created_by',
     created_at: 'created_at',
@@ -35145,16 +35161,16 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'Decimal'
+   * Reference to a field of type 'Int'
    */
-  export type DecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal'>
+  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
     
 
 
   /**
-   * Reference to a field of type 'Int'
+   * Reference to a field of type 'Decimal'
    */
-  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
+  export type DecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal'>
     
 
 
@@ -35668,6 +35684,7 @@ export namespace Prisma {
     NOT?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
     id?: BigIntFilter<"SeasonGroup"> | bigint | number
     name?: StringFilter<"SeasonGroup"> | string
+    year?: IntNullableFilter<"SeasonGroup"> | number | null
     is_active?: BoolFilter<"SeasonGroup"> | boolean
     created_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeFilter<"SeasonGroup"> | Date | string
@@ -35680,6 +35697,7 @@ export namespace Prisma {
   export type SeasonGroupOrderByWithRelationInput = {
     id?: SortOrder
     name?: SortOrder
+    year?: SortOrderInput | SortOrder
     is_active?: SortOrder
     created_by?: SortOrderInput | SortOrder
     created_at?: SortOrder
@@ -35695,6 +35713,7 @@ export namespace Prisma {
     OR?: SeasonGroupWhereInput[]
     NOT?: SeasonGroupWhereInput | SeasonGroupWhereInput[]
     name?: StringFilter<"SeasonGroup"> | string
+    year?: IntNullableFilter<"SeasonGroup"> | number | null
     is_active?: BoolFilter<"SeasonGroup"> | boolean
     created_by?: BigIntNullableFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeFilter<"SeasonGroup"> | Date | string
@@ -35707,6 +35726,7 @@ export namespace Prisma {
   export type SeasonGroupOrderByWithAggregationInput = {
     id?: SortOrder
     name?: SortOrder
+    year?: SortOrderInput | SortOrder
     is_active?: SortOrder
     created_by?: SortOrderInput | SortOrder
     created_at?: SortOrder
@@ -35725,6 +35745,7 @@ export namespace Prisma {
     NOT?: SeasonGroupScalarWhereWithAggregatesInput | SeasonGroupScalarWhereWithAggregatesInput[]
     id?: BigIntWithAggregatesFilter<"SeasonGroup"> | bigint | number
     name?: StringWithAggregatesFilter<"SeasonGroup"> | string
+    year?: IntNullableWithAggregatesFilter<"SeasonGroup"> | number | null
     is_active?: BoolWithAggregatesFilter<"SeasonGroup"> | boolean
     created_by?: BigIntNullableWithAggregatesFilter<"SeasonGroup"> | bigint | number | null
     created_at?: DateTimeWithAggregatesFilter<"SeasonGroup"> | Date | string
@@ -38269,6 +38290,7 @@ export namespace Prisma {
   export type SeasonGroupCreateInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -38281,6 +38303,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedCreateInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -38293,6 +38316,7 @@ export namespace Prisma {
   export type SeasonGroupUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -38305,6 +38329,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -38316,6 +38341,7 @@ export namespace Prisma {
 
   export type SeasonGroupCreateManyInput = {
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -38326,6 +38352,7 @@ export namespace Prisma {
   export type SeasonGroupUpdateManyMutationInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -38336,6 +38363,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedUpdateManyInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -41029,6 +41057,17 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
+  export type IntNullableFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
   export type SeasonListRelationFilter = {
     every?: SeasonWhereInput
     some?: SeasonWhereInput
@@ -41042,6 +41081,7 @@ export namespace Prisma {
   export type SeasonGroupCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
+    year?: SortOrder
     is_active?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -41051,6 +41091,7 @@ export namespace Prisma {
 
   export type SeasonGroupAvgOrderByAggregateInput = {
     id?: SortOrder
+    year?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
   }
@@ -41058,6 +41099,7 @@ export namespace Prisma {
   export type SeasonGroupMaxOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
+    year?: SortOrder
     is_active?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -41068,6 +41110,7 @@ export namespace Prisma {
   export type SeasonGroupMinOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
+    year?: SortOrder
     is_active?: SortOrder
     created_by?: SortOrder
     created_at?: SortOrder
@@ -41077,8 +41120,25 @@ export namespace Prisma {
 
   export type SeasonGroupSumOrderByAggregateInput = {
     id?: SortOrder
+    year?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
+  }
+
+  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedFloatNullableFilter<$PrismaModel>
+    _sum?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedIntNullableFilter<$PrismaModel>
+    _max?: NestedIntNullableFilter<$PrismaModel>
   }
 
   export type SeasonGroupRelationFilter = {
@@ -43475,6 +43535,14 @@ export namespace Prisma {
     connect?: BudgetAllocateWhereUniqueInput | BudgetAllocateWhereUniqueInput[]
   }
 
+  export type NullableIntFieldUpdateOperationsInput = {
+    set?: number | null
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
   export type SeasonUpdateManyWithoutSeason_groupNestedInput = {
     create?: XOR<SeasonCreateWithoutSeason_groupInput, SeasonUncheckedCreateWithoutSeason_groupInput> | SeasonCreateWithoutSeason_groupInput[] | SeasonUncheckedCreateWithoutSeason_groupInput[]
     connectOrCreate?: SeasonCreateOrConnectWithoutSeason_groupInput | SeasonCreateOrConnectWithoutSeason_groupInput[]
@@ -45351,6 +45419,22 @@ export namespace Prisma {
     not?: NestedFloatNullableFilter<$PrismaModel> | number | null
   }
 
+  export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedFloatNullableFilter<$PrismaModel>
+    _sum?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedIntNullableFilter<$PrismaModel>
+    _max?: NestedIntNullableFilter<$PrismaModel>
+  }
+
   export type NestedDecimalFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     in?: Decimal[] | DecimalJsLike[] | number[] | string[]
@@ -46864,6 +46948,7 @@ export namespace Prisma {
   export type SeasonGroupCreateWithoutSeasonsInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -46875,6 +46960,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedCreateWithoutSeasonsInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -46937,6 +47023,7 @@ export namespace Prisma {
   export type SeasonGroupUpdateWithoutSeasonsInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -46948,6 +47035,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedUpdateWithoutSeasonsInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -48421,6 +48509,7 @@ export namespace Prisma {
   export type SeasonGroupCreateWithoutBudget_allocatesInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -48432,6 +48521,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedCreateWithoutBudget_allocatesInput = {
     id?: bigint | number
     name: string
+    year?: number | null
     is_active?: boolean
     created_by?: bigint | number | null
     created_at?: Date | string
@@ -48597,6 +48687,7 @@ export namespace Prisma {
   export type SeasonGroupUpdateWithoutBudget_allocatesInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -48608,6 +48699,7 @@ export namespace Prisma {
   export type SeasonGroupUncheckedUpdateWithoutBudget_allocatesInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
     is_active?: BoolFieldUpdateOperationsInput | boolean
     created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string

@@ -51,9 +51,11 @@ export class MasterDataService {
   }
 
   // ─── SEASON GROUPS & SEASONS ─────────────────────────────────────────────
-  async getSeasonGroups() {
+  async getSeasonGroups(year?: number) {
+    const where: any = { is_active: true };
+    if (year) where.year = year;
     return this.prisma.seasonGroup.findMany({
-      where: { is_active: true },
+      where,
       include: {
         seasons: {
           where: { is_active: true },
@@ -154,10 +156,10 @@ export class MasterDataService {
   }
 
   // ─── PLANNING FILTER OPTIONS (gộp 1 call) ────────────────────────────────
-  async getPlanningFilterOptions() {
+  async getPlanningFilterOptions(year?: number) {
     const [groupBrands, seasonGroups, stores, fiscalYears] = await Promise.all([
       this.getGroupBrands(),
-      this.getSeasonGroups(),
+      this.getSeasonGroups(year),
       this.getStores(),
       this.getFiscalYears(),
     ]);
@@ -171,10 +173,10 @@ export class MasterDataService {
   }
 
   // ─── PROPOSAL FILTER OPTIONS ─────────────────────────────────────────────
-  async getProposalFilterOptions() {
+  async getProposalFilterOptions(year?: number) {
     const [genders, seasonGroups, stores] = await Promise.all([
       this.getGenders(),
-      this.getSeasonGroups(),
+      this.getSeasonGroups(year),
       this.getStores(),
     ]);
 
