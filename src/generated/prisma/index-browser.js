@@ -183,7 +183,7 @@ exports.Prisma.StoreScalarFieldEnum = {
   updated_by: 'updated_by'
 };
 
-exports.Prisma.CollectionScalarFieldEnum = {
+exports.Prisma.SeasonTypeScalarFieldEnum = {
   id: 'id',
   name: 'name',
   is_active: 'is_active',
@@ -327,7 +327,7 @@ exports.Prisma.PlanningHeaderScalarFieldEnum = {
 
 exports.Prisma.PlanningCollectionScalarFieldEnum = {
   id: 'id',
-  collection_id: 'collection_id',
+  season_type_id: 'season_type_id',
   store_id: 'store_id',
   planning_header_id: 'planning_header_id',
   actual_buy_pct: 'actual_buy_pct',
@@ -512,7 +512,7 @@ exports.Prisma.ModelName = {
   GroupBrand: 'GroupBrand',
   Brand: 'Brand',
   Store: 'Store',
-  Collection: 'Collection',
+  SeasonType: 'SeasonType',
   SeasonGroup: 'SeasonGroup',
   Season: 'Season',
   Gender: 'Gender',

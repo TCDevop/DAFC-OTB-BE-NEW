@@ -39,10 +39,10 @@ export type Brand = $Result.DefaultSelection<Prisma.$BrandPayload>
  */
 export type Store = $Result.DefaultSelection<Prisma.$StorePayload>
 /**
- * Model Collection
+ * Model SeasonType
  * 
  */
-export type Collection = $Result.DefaultSelection<Prisma.$CollectionPayload>
+export type SeasonType = $Result.DefaultSelection<Prisma.$SeasonTypePayload>
 /**
  * Model SeasonGroup
  * 
@@ -338,14 +338,14 @@ export class PrismaClient<
   get store(): Prisma.StoreDelegate<ExtArgs>;
 
   /**
-   * `prisma.collection`: Exposes CRUD operations for the **Collection** model.
+   * `prisma.seasonType`: Exposes CRUD operations for the **SeasonType** model.
     * Example usage:
     * ```ts
-    * // Fetch zero or more Collections
-    * const collections = await prisma.collection.findMany()
+    * // Fetch zero or more SeasonTypes
+    * const seasonTypes = await prisma.seasonType.findMany()
     * ```
     */
-  get collection(): Prisma.CollectionDelegate<ExtArgs>;
+  get seasonType(): Prisma.SeasonTypeDelegate<ExtArgs>;
 
   /**
    * `prisma.seasonGroup`: Exposes CRUD operations for the **SeasonGroup** model.
@@ -1032,7 +1032,7 @@ export namespace Prisma {
     GroupBrand: 'GroupBrand',
     Brand: 'Brand',
     Store: 'Store',
-    Collection: 'Collection',
+    SeasonType: 'SeasonType',
     SeasonGroup: 'SeasonGroup',
     Season: 'Season',
     Gender: 'Gender',
@@ -1072,7 +1072,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, ClientOptions = {}> = {
     meta: {
-      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "collection" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
+      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "seasonType" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1406,69 +1406,69 @@ export namespace Prisma {
           }
         }
       }
-      Collection: {
-        payload: Prisma.$CollectionPayload<ExtArgs>
-        fields: Prisma.CollectionFieldRefs
+      SeasonType: {
+        payload: Prisma.$SeasonTypePayload<ExtArgs>
+        fields: Prisma.SeasonTypeFieldRefs
         operations: {
           findUnique: {
-            args: Prisma.CollectionFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload> | null
+            args: Prisma.SeasonTypeFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload> | null
           }
           findUniqueOrThrow: {
-            args: Prisma.CollectionFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           findFirst: {
-            args: Prisma.CollectionFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload> | null
+            args: Prisma.SeasonTypeFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload> | null
           }
           findFirstOrThrow: {
-            args: Prisma.CollectionFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           findMany: {
-            args: Prisma.CollectionFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>[]
+            args: Prisma.SeasonTypeFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>[]
           }
           create: {
-            args: Prisma.CollectionCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           createMany: {
-            args: Prisma.CollectionCreateManyArgs<ExtArgs>
+            args: Prisma.SeasonTypeCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
           delete: {
-            args: Prisma.CollectionDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           update: {
-            args: Prisma.CollectionUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           deleteMany: {
-            args: Prisma.CollectionDeleteManyArgs<ExtArgs>
+            args: Prisma.SeasonTypeDeleteManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateMany: {
-            args: Prisma.CollectionUpdateManyArgs<ExtArgs>
+            args: Prisma.SeasonTypeUpdateManyArgs<ExtArgs>
             result: BatchPayload
           }
           upsert: {
-            args: Prisma.CollectionUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$CollectionPayload>
+            args: Prisma.SeasonTypeUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SeasonTypePayload>
           }
           aggregate: {
-            args: Prisma.CollectionAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateCollection>
+            args: Prisma.SeasonTypeAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSeasonType>
           }
           groupBy: {
-            args: Prisma.CollectionGroupByArgs<ExtArgs>
-            result: $Utils.Optional<CollectionGroupByOutputType>[]
+            args: Prisma.SeasonTypeGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SeasonTypeGroupByOutputType>[]
           }
           count: {
-            args: Prisma.CollectionCountArgs<ExtArgs>
-            result: $Utils.Optional<CollectionCountAggregateOutputType> | number
+            args: Prisma.SeasonTypeCountArgs<ExtArgs>
+            result: $Utils.Optional<SeasonTypeCountAggregateOutputType> | number
           }
         }
       }
@@ -3476,32 +3476,32 @@ export namespace Prisma {
 
 
   /**
-   * Count Type CollectionCountOutputType
+   * Count Type SeasonTypeCountOutputType
    */
 
-  export type CollectionCountOutputType = {
+  export type SeasonTypeCountOutputType = {
     planning_collections: number
   }
 
-  export type CollectionCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    planning_collections?: boolean | CollectionCountOutputTypeCountPlanning_collectionsArgs
+  export type SeasonTypeCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    planning_collections?: boolean | SeasonTypeCountOutputTypeCountPlanning_collectionsArgs
   }
 
   // Custom InputTypes
   /**
-   * CollectionCountOutputType without action
+   * SeasonTypeCountOutputType without action
    */
-  export type CollectionCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the CollectionCountOutputType
+     * Select specific fields to fetch from the SeasonTypeCountOutputType
      */
-    select?: CollectionCountOutputTypeSelect<ExtArgs> | null
+    select?: SeasonTypeCountOutputTypeSelect<ExtArgs> | null
   }
 
   /**
-   * CollectionCountOutputType without action
+   * SeasonTypeCountOutputType without action
    */
-  export type CollectionCountOutputTypeCountPlanning_collectionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeCountOutputTypeCountPlanning_collectionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PlanningCollectionWhereInput
   }
 
@@ -9345,40 +9345,30 @@ export namespace Prisma {
 
 
   /**
-   * Model Collection
+   * Model SeasonType
    */
 
-  export type AggregateCollection = {
-    _count: CollectionCountAggregateOutputType | null
-    _avg: CollectionAvgAggregateOutputType | null
-    _sum: CollectionSumAggregateOutputType | null
-    _min: CollectionMinAggregateOutputType | null
-    _max: CollectionMaxAggregateOutputType | null
+  export type AggregateSeasonType = {
+    _count: SeasonTypeCountAggregateOutputType | null
+    _avg: SeasonTypeAvgAggregateOutputType | null
+    _sum: SeasonTypeSumAggregateOutputType | null
+    _min: SeasonTypeMinAggregateOutputType | null
+    _max: SeasonTypeMaxAggregateOutputType | null
   }
 
-  export type CollectionAvgAggregateOutputType = {
+  export type SeasonTypeAvgAggregateOutputType = {
     id: number | null
     created_by: number | null
     updated_by: number | null
   }
 
-  export type CollectionSumAggregateOutputType = {
+  export type SeasonTypeSumAggregateOutputType = {
     id: bigint | null
     created_by: bigint | null
     updated_by: bigint | null
   }
 
-  export type CollectionMinAggregateOutputType = {
-    id: bigint | null
-    name: string | null
-    is_active: boolean | null
-    created_by: bigint | null
-    created_at: Date | null
-    updated_at: Date | null
-    updated_by: bigint | null
-  }
-
-  export type CollectionMaxAggregateOutputType = {
+  export type SeasonTypeMinAggregateOutputType = {
     id: bigint | null
     name: string | null
     is_active: boolean | null
@@ -9388,7 +9378,17 @@ export namespace Prisma {
     updated_by: bigint | null
   }
 
-  export type CollectionCountAggregateOutputType = {
+  export type SeasonTypeMaxAggregateOutputType = {
+    id: bigint | null
+    name: string | null
+    is_active: boolean | null
+    created_by: bigint | null
+    created_at: Date | null
+    updated_at: Date | null
+    updated_by: bigint | null
+  }
+
+  export type SeasonTypeCountAggregateOutputType = {
     id: number
     name: number
     is_active: number
@@ -9400,29 +9400,19 @@ export namespace Prisma {
   }
 
 
-  export type CollectionAvgAggregateInputType = {
+  export type SeasonTypeAvgAggregateInputType = {
     id?: true
     created_by?: true
     updated_by?: true
   }
 
-  export type CollectionSumAggregateInputType = {
+  export type SeasonTypeSumAggregateInputType = {
     id?: true
     created_by?: true
     updated_by?: true
   }
 
-  export type CollectionMinAggregateInputType = {
-    id?: true
-    name?: true
-    is_active?: true
-    created_by?: true
-    created_at?: true
-    updated_at?: true
-    updated_by?: true
-  }
-
-  export type CollectionMaxAggregateInputType = {
+  export type SeasonTypeMinAggregateInputType = {
     id?: true
     name?: true
     is_active?: true
@@ -9432,7 +9422,17 @@ export namespace Prisma {
     updated_by?: true
   }
 
-  export type CollectionCountAggregateInputType = {
+  export type SeasonTypeMaxAggregateInputType = {
+    id?: true
+    name?: true
+    is_active?: true
+    created_by?: true
+    created_at?: true
+    updated_at?: true
+    updated_by?: true
+  }
+
+  export type SeasonTypeCountAggregateInputType = {
     id?: true
     name?: true
     is_active?: true
@@ -9443,93 +9443,93 @@ export namespace Prisma {
     _all?: true
   }
 
-  export type CollectionAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Collection to aggregate.
+     * Filter which SeasonType to aggregate.
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Collections to fetch.
+     * Determine the order of SeasonTypes to fetch.
      */
-    orderBy?: CollectionOrderByWithRelationInput | CollectionOrderByWithRelationInput[]
+    orderBy?: SeasonTypeOrderByWithRelationInput | SeasonTypeOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
      * Sets the start position
      */
-    cursor?: CollectionWhereUniqueInput
+    cursor?: SeasonTypeWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Collections from the position of the cursor.
+     * Take `±n` SeasonTypes from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Collections.
+     * Skip the first `n` SeasonTypes.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Count returned Collections
+     * Count returned SeasonTypes
     **/
-    _count?: true | CollectionCountAggregateInputType
+    _count?: true | SeasonTypeCountAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to average
     **/
-    _avg?: CollectionAvgAggregateInputType
+    _avg?: SeasonTypeAvgAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to sum
     **/
-    _sum?: CollectionSumAggregateInputType
+    _sum?: SeasonTypeSumAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the minimum value
     **/
-    _min?: CollectionMinAggregateInputType
+    _min?: SeasonTypeMinAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the maximum value
     **/
-    _max?: CollectionMaxAggregateInputType
+    _max?: SeasonTypeMaxAggregateInputType
   }
 
-  export type GetCollectionAggregateType<T extends CollectionAggregateArgs> = {
-        [P in keyof T & keyof AggregateCollection]: P extends '_count' | 'count'
+  export type GetSeasonTypeAggregateType<T extends SeasonTypeAggregateArgs> = {
+        [P in keyof T & keyof AggregateSeasonType]: P extends '_count' | 'count'
       ? T[P] extends true
         ? number
-        : GetScalarType<T[P], AggregateCollection[P]>
-      : GetScalarType<T[P], AggregateCollection[P]>
+        : GetScalarType<T[P], AggregateSeasonType[P]>
+      : GetScalarType<T[P], AggregateSeasonType[P]>
   }
 
 
 
 
-  export type CollectionGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: CollectionWhereInput
-    orderBy?: CollectionOrderByWithAggregationInput | CollectionOrderByWithAggregationInput[]
-    by: CollectionScalarFieldEnum[] | CollectionScalarFieldEnum
-    having?: CollectionScalarWhereWithAggregatesInput
+  export type SeasonTypeGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SeasonTypeWhereInput
+    orderBy?: SeasonTypeOrderByWithAggregationInput | SeasonTypeOrderByWithAggregationInput[]
+    by: SeasonTypeScalarFieldEnum[] | SeasonTypeScalarFieldEnum
+    having?: SeasonTypeScalarWhereWithAggregatesInput
     take?: number
     skip?: number
-    _count?: CollectionCountAggregateInputType | true
-    _avg?: CollectionAvgAggregateInputType
-    _sum?: CollectionSumAggregateInputType
-    _min?: CollectionMinAggregateInputType
-    _max?: CollectionMaxAggregateInputType
+    _count?: SeasonTypeCountAggregateInputType | true
+    _avg?: SeasonTypeAvgAggregateInputType
+    _sum?: SeasonTypeSumAggregateInputType
+    _min?: SeasonTypeMinAggregateInputType
+    _max?: SeasonTypeMaxAggregateInputType
   }
 
-  export type CollectionGroupByOutputType = {
+  export type SeasonTypeGroupByOutputType = {
     id: bigint
     name: string
     is_active: boolean
@@ -9537,28 +9537,28 @@ export namespace Prisma {
     created_at: Date
     updated_at: Date
     updated_by: bigint | null
-    _count: CollectionCountAggregateOutputType | null
-    _avg: CollectionAvgAggregateOutputType | null
-    _sum: CollectionSumAggregateOutputType | null
-    _min: CollectionMinAggregateOutputType | null
-    _max: CollectionMaxAggregateOutputType | null
+    _count: SeasonTypeCountAggregateOutputType | null
+    _avg: SeasonTypeAvgAggregateOutputType | null
+    _sum: SeasonTypeSumAggregateOutputType | null
+    _min: SeasonTypeMinAggregateOutputType | null
+    _max: SeasonTypeMaxAggregateOutputType | null
   }
 
-  type GetCollectionGroupByPayload<T extends CollectionGroupByArgs> = Prisma.PrismaPromise<
+  type GetSeasonTypeGroupByPayload<T extends SeasonTypeGroupByArgs> = Prisma.PrismaPromise<
     Array<
-      PickEnumerable<CollectionGroupByOutputType, T['by']> &
+      PickEnumerable<SeasonTypeGroupByOutputType, T['by']> &
         {
-          [P in ((keyof T) & (keyof CollectionGroupByOutputType))]: P extends '_count'
+          [P in ((keyof T) & (keyof SeasonTypeGroupByOutputType))]: P extends '_count'
             ? T[P] extends boolean
               ? number
-              : GetScalarType<T[P], CollectionGroupByOutputType[P]>
-            : GetScalarType<T[P], CollectionGroupByOutputType[P]>
+              : GetScalarType<T[P], SeasonTypeGroupByOutputType[P]>
+            : GetScalarType<T[P], SeasonTypeGroupByOutputType[P]>
         }
       >
     >
 
 
-  export type CollectionSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type SeasonTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     name?: boolean
     is_active?: boolean
@@ -9566,12 +9566,12 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
-    planning_collections?: boolean | Collection$planning_collectionsArgs<ExtArgs>
-    _count?: boolean | CollectionCountOutputTypeDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["collection"]>
+    planning_collections?: boolean | SeasonType$planning_collectionsArgs<ExtArgs>
+    _count?: boolean | SeasonTypeCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["seasonType"]>
 
 
-  export type CollectionSelectScalar = {
+  export type SeasonTypeSelectScalar = {
     id?: boolean
     name?: boolean
     is_active?: boolean
@@ -9581,13 +9581,13 @@ export namespace Prisma {
     updated_by?: boolean
   }
 
-  export type CollectionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    planning_collections?: boolean | Collection$planning_collectionsArgs<ExtArgs>
-    _count?: boolean | CollectionCountOutputTypeDefaultArgs<ExtArgs>
+  export type SeasonTypeInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    planning_collections?: boolean | SeasonType$planning_collectionsArgs<ExtArgs>
+    _count?: boolean | SeasonTypeCountOutputTypeDefaultArgs<ExtArgs>
   }
 
-  export type $CollectionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "Collection"
+  export type $SeasonTypePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SeasonType"
     objects: {
       planning_collections: Prisma.$PlanningCollectionPayload<ExtArgs>[]
     }
@@ -9599,143 +9599,143 @@ export namespace Prisma {
       created_at: Date
       updated_at: Date
       updated_by: bigint | null
-    }, ExtArgs["result"]["collection"]>
+    }, ExtArgs["result"]["seasonType"]>
     composites: {}
   }
 
-  type CollectionGetPayload<S extends boolean | null | undefined | CollectionDefaultArgs> = $Result.GetResult<Prisma.$CollectionPayload, S>
+  type SeasonTypeGetPayload<S extends boolean | null | undefined | SeasonTypeDefaultArgs> = $Result.GetResult<Prisma.$SeasonTypePayload, S>
 
-  type CollectionCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
-    Omit<CollectionFindManyArgs, 'select' | 'include' | 'distinct'> & {
-      select?: CollectionCountAggregateInputType | true
+  type SeasonTypeCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SeasonTypeFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SeasonTypeCountAggregateInputType | true
     }
 
-  export interface CollectionDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Collection'], meta: { name: 'Collection' } }
+  export interface SeasonTypeDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SeasonType'], meta: { name: 'SeasonType' } }
     /**
-     * Find zero or one Collection that matches the filter.
-     * @param {CollectionFindUniqueArgs} args - Arguments to find a Collection
+     * Find zero or one SeasonType that matches the filter.
+     * @param {SeasonTypeFindUniqueArgs} args - Arguments to find a SeasonType
      * @example
-     * // Get one Collection
-     * const collection = await prisma.collection.findUnique({
+     * // Get one SeasonType
+     * const seasonType = await prisma.seasonType.findUnique({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUnique<T extends CollectionFindUniqueArgs>(args: SelectSubset<T, CollectionFindUniqueArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+    findUnique<T extends SeasonTypeFindUniqueArgs>(args: SelectSubset<T, SeasonTypeFindUniqueArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
 
     /**
-     * Find one Collection that matches the filter or throw an error with `error.code='P2025'` 
+     * Find one SeasonType that matches the filter or throw an error with `error.code='P2025'` 
      * if no matches were found.
-     * @param {CollectionFindUniqueOrThrowArgs} args - Arguments to find a Collection
+     * @param {SeasonTypeFindUniqueOrThrowArgs} args - Arguments to find a SeasonType
      * @example
-     * // Get one Collection
-     * const collection = await prisma.collection.findUniqueOrThrow({
+     * // Get one SeasonType
+     * const seasonType = await prisma.seasonType.findUniqueOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUniqueOrThrow<T extends CollectionFindUniqueOrThrowArgs>(args: SelectSubset<T, CollectionFindUniqueOrThrowArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+    findUniqueOrThrow<T extends SeasonTypeFindUniqueOrThrowArgs>(args: SelectSubset<T, SeasonTypeFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
 
     /**
-     * Find the first Collection that matches the filter.
+     * Find the first SeasonType that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionFindFirstArgs} args - Arguments to find a Collection
+     * @param {SeasonTypeFindFirstArgs} args - Arguments to find a SeasonType
      * @example
-     * // Get one Collection
-     * const collection = await prisma.collection.findFirst({
+     * // Get one SeasonType
+     * const seasonType = await prisma.seasonType.findFirst({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirst<T extends CollectionFindFirstArgs>(args?: SelectSubset<T, CollectionFindFirstArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+    findFirst<T extends SeasonTypeFindFirstArgs>(args?: SelectSubset<T, SeasonTypeFindFirstArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
 
     /**
-     * Find the first Collection that matches the filter or
+     * Find the first SeasonType that matches the filter or
      * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionFindFirstOrThrowArgs} args - Arguments to find a Collection
+     * @param {SeasonTypeFindFirstOrThrowArgs} args - Arguments to find a SeasonType
      * @example
-     * // Get one Collection
-     * const collection = await prisma.collection.findFirstOrThrow({
+     * // Get one SeasonType
+     * const seasonType = await prisma.seasonType.findFirstOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirstOrThrow<T extends CollectionFindFirstOrThrowArgs>(args?: SelectSubset<T, CollectionFindFirstOrThrowArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+    findFirstOrThrow<T extends SeasonTypeFindFirstOrThrowArgs>(args?: SelectSubset<T, SeasonTypeFindFirstOrThrowArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
 
     /**
-     * Find zero or more Collections that matches the filter.
+     * Find zero or more SeasonTypes that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @param {SeasonTypeFindManyArgs} args - Arguments to filter and select certain fields only.
      * @example
-     * // Get all Collections
-     * const collections = await prisma.collection.findMany()
+     * // Get all SeasonTypes
+     * const seasonTypes = await prisma.seasonType.findMany()
      * 
-     * // Get first 10 Collections
-     * const collections = await prisma.collection.findMany({ take: 10 })
+     * // Get first 10 SeasonTypes
+     * const seasonTypes = await prisma.seasonType.findMany({ take: 10 })
      * 
      * // Only select the `id`
-     * const collectionWithIdOnly = await prisma.collection.findMany({ select: { id: true } })
+     * const seasonTypeWithIdOnly = await prisma.seasonType.findMany({ select: { id: true } })
      * 
      */
-    findMany<T extends CollectionFindManyArgs>(args?: SelectSubset<T, CollectionFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findMany">>
+    findMany<T extends SeasonTypeFindManyArgs>(args?: SelectSubset<T, SeasonTypeFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findMany">>
 
     /**
-     * Create a Collection.
-     * @param {CollectionCreateArgs} args - Arguments to create a Collection.
+     * Create a SeasonType.
+     * @param {SeasonTypeCreateArgs} args - Arguments to create a SeasonType.
      * @example
-     * // Create one Collection
-     * const Collection = await prisma.collection.create({
+     * // Create one SeasonType
+     * const SeasonType = await prisma.seasonType.create({
      *   data: {
-     *     // ... data to create a Collection
+     *     // ... data to create a SeasonType
      *   }
      * })
      * 
      */
-    create<T extends CollectionCreateArgs>(args: SelectSubset<T, CollectionCreateArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "create">, never, ExtArgs>
+    create<T extends SeasonTypeCreateArgs>(args: SelectSubset<T, SeasonTypeCreateArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "create">, never, ExtArgs>
 
     /**
-     * Create many Collections.
-     * @param {CollectionCreateManyArgs} args - Arguments to create many Collections.
+     * Create many SeasonTypes.
+     * @param {SeasonTypeCreateManyArgs} args - Arguments to create many SeasonTypes.
      * @example
-     * // Create many Collections
-     * const collection = await prisma.collection.createMany({
+     * // Create many SeasonTypes
+     * const seasonType = await prisma.seasonType.createMany({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      *     
      */
-    createMany<T extends CollectionCreateManyArgs>(args?: SelectSubset<T, CollectionCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    createMany<T extends SeasonTypeCreateManyArgs>(args?: SelectSubset<T, SeasonTypeCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Delete a Collection.
-     * @param {CollectionDeleteArgs} args - Arguments to delete one Collection.
+     * Delete a SeasonType.
+     * @param {SeasonTypeDeleteArgs} args - Arguments to delete one SeasonType.
      * @example
-     * // Delete one Collection
-     * const Collection = await prisma.collection.delete({
+     * // Delete one SeasonType
+     * const SeasonType = await prisma.seasonType.delete({
      *   where: {
-     *     // ... filter to delete one Collection
+     *     // ... filter to delete one SeasonType
      *   }
      * })
      * 
      */
-    delete<T extends CollectionDeleteArgs>(args: SelectSubset<T, CollectionDeleteArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+    delete<T extends SeasonTypeDeleteArgs>(args: SelectSubset<T, SeasonTypeDeleteArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "delete">, never, ExtArgs>
 
     /**
-     * Update one Collection.
-     * @param {CollectionUpdateArgs} args - Arguments to update one Collection.
+     * Update one SeasonType.
+     * @param {SeasonTypeUpdateArgs} args - Arguments to update one SeasonType.
      * @example
-     * // Update one Collection
-     * const collection = await prisma.collection.update({
+     * // Update one SeasonType
+     * const seasonType = await prisma.seasonType.update({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -9745,30 +9745,30 @@ export namespace Prisma {
      * })
      * 
      */
-    update<T extends CollectionUpdateArgs>(args: SelectSubset<T, CollectionUpdateArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "update">, never, ExtArgs>
+    update<T extends SeasonTypeUpdateArgs>(args: SelectSubset<T, SeasonTypeUpdateArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "update">, never, ExtArgs>
 
     /**
-     * Delete zero or more Collections.
-     * @param {CollectionDeleteManyArgs} args - Arguments to filter Collections to delete.
+     * Delete zero or more SeasonTypes.
+     * @param {SeasonTypeDeleteManyArgs} args - Arguments to filter SeasonTypes to delete.
      * @example
-     * // Delete a few Collections
-     * const { count } = await prisma.collection.deleteMany({
+     * // Delete a few SeasonTypes
+     * const { count } = await prisma.seasonType.deleteMany({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      * 
      */
-    deleteMany<T extends CollectionDeleteManyArgs>(args?: SelectSubset<T, CollectionDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    deleteMany<T extends SeasonTypeDeleteManyArgs>(args?: SelectSubset<T, SeasonTypeDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Collections.
+     * Update zero or more SeasonTypes.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionUpdateManyArgs} args - Arguments to update one or more rows.
+     * @param {SeasonTypeUpdateManyArgs} args - Arguments to update one or more rows.
      * @example
-     * // Update many Collections
-     * const collection = await prisma.collection.updateMany({
+     * // Update many SeasonTypes
+     * const seasonType = await prisma.seasonType.updateMany({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -9778,56 +9778,56 @@ export namespace Prisma {
      * })
      * 
      */
-    updateMany<T extends CollectionUpdateManyArgs>(args: SelectSubset<T, CollectionUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    updateMany<T extends SeasonTypeUpdateManyArgs>(args: SelectSubset<T, SeasonTypeUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create or update one Collection.
-     * @param {CollectionUpsertArgs} args - Arguments to update or create a Collection.
+     * Create or update one SeasonType.
+     * @param {SeasonTypeUpsertArgs} args - Arguments to update or create a SeasonType.
      * @example
-     * // Update or create a Collection
-     * const collection = await prisma.collection.upsert({
+     * // Update or create a SeasonType
+     * const seasonType = await prisma.seasonType.upsert({
      *   create: {
-     *     // ... data to create a Collection
+     *     // ... data to create a SeasonType
      *   },
      *   update: {
      *     // ... in case it already exists, update
      *   },
      *   where: {
-     *     // ... the filter for the Collection we want to update
+     *     // ... the filter for the SeasonType we want to update
      *   }
      * })
      */
-    upsert<T extends CollectionUpsertArgs>(args: SelectSubset<T, CollectionUpsertArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+    upsert<T extends SeasonTypeUpsertArgs>(args: SelectSubset<T, SeasonTypeUpsertArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "upsert">, never, ExtArgs>
 
 
     /**
-     * Count the number of Collections.
+     * Count the number of SeasonTypes.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionCountArgs} args - Arguments to filter Collections to count.
+     * @param {SeasonTypeCountArgs} args - Arguments to filter SeasonTypes to count.
      * @example
-     * // Count the number of Collections
-     * const count = await prisma.collection.count({
+     * // Count the number of SeasonTypes
+     * const count = await prisma.seasonType.count({
      *   where: {
-     *     // ... the filter for the Collections we want to count
+     *     // ... the filter for the SeasonTypes we want to count
      *   }
      * })
     **/
-    count<T extends CollectionCountArgs>(
-      args?: Subset<T, CollectionCountArgs>,
+    count<T extends SeasonTypeCountArgs>(
+      args?: Subset<T, SeasonTypeCountArgs>,
     ): Prisma.PrismaPromise<
       T extends $Utils.Record<'select', any>
         ? T['select'] extends true
           ? number
-          : GetScalarType<T['select'], CollectionCountAggregateOutputType>
+          : GetScalarType<T['select'], SeasonTypeCountAggregateOutputType>
         : number
     >
 
     /**
-     * Allows you to perform aggregations operations on a Collection.
+     * Allows you to perform aggregations operations on a SeasonType.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @param {SeasonTypeAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
      * @example
      * // Ordered by age ascending
      * // Where email contains prisma.io
@@ -9847,13 +9847,13 @@ export namespace Prisma {
      *   take: 10,
      * })
     **/
-    aggregate<T extends CollectionAggregateArgs>(args: Subset<T, CollectionAggregateArgs>): Prisma.PrismaPromise<GetCollectionAggregateType<T>>
+    aggregate<T extends SeasonTypeAggregateArgs>(args: Subset<T, SeasonTypeAggregateArgs>): Prisma.PrismaPromise<GetSeasonTypeAggregateType<T>>
 
     /**
-     * Group by Collection.
+     * Group by SeasonType.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {CollectionGroupByArgs} args - Group by arguments.
+     * @param {SeasonTypeGroupByArgs} args - Group by arguments.
      * @example
      * // Group by city, order by createdAt, get count
      * const result = await prisma.user.groupBy({
@@ -9868,14 +9868,14 @@ export namespace Prisma {
      * 
     **/
     groupBy<
-      T extends CollectionGroupByArgs,
+      T extends SeasonTypeGroupByArgs,
       HasSelectOrTake extends Or<
         Extends<'skip', Keys<T>>,
         Extends<'take', Keys<T>>
       >,
       OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: CollectionGroupByArgs['orderBy'] }
-        : { orderBy?: CollectionGroupByArgs['orderBy'] },
+        ? { orderBy: SeasonTypeGroupByArgs['orderBy'] }
+        : { orderBy?: SeasonTypeGroupByArgs['orderBy'] },
       OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
       ByFields extends MaybeTupleToUnion<T['by']>,
       ByValid extends Has<ByFields, OrderFields>,
@@ -9924,22 +9924,22 @@ export namespace Prisma {
             ? never
             : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
         }[OrderFields]
-    >(args: SubsetIntersection<T, CollectionGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetCollectionGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+    >(args: SubsetIntersection<T, SeasonTypeGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSeasonTypeGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
   /**
-   * Fields of the Collection model
+   * Fields of the SeasonType model
    */
-  readonly fields: CollectionFieldRefs;
+  readonly fields: SeasonTypeFieldRefs;
   }
 
   /**
-   * The delegate class that acts as a "Promise-like" for Collection.
+   * The delegate class that acts as a "Promise-like" for SeasonType.
    * Why is this prefixed with `Prisma__`?
    * Because we want to prevent naming conflicts as mentioned in
    * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export interface Prisma__CollectionClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+  export interface Prisma__SeasonTypeClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    planning_collections<T extends Collection$planning_collectionsArgs<ExtArgs> = {}>(args?: Subset<T, Collection$planning_collectionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "findMany"> | Null>
+    planning_collections<T extends SeasonType$planning_collectionsArgs<ExtArgs> = {}>(args?: Subset<T, SeasonType$planning_collectionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -9966,317 +9966,317 @@ export namespace Prisma {
 
 
   /**
-   * Fields of the Collection model
+   * Fields of the SeasonType model
    */ 
-  interface CollectionFieldRefs {
-    readonly id: FieldRef<"Collection", 'BigInt'>
-    readonly name: FieldRef<"Collection", 'String'>
-    readonly is_active: FieldRef<"Collection", 'Boolean'>
-    readonly created_by: FieldRef<"Collection", 'BigInt'>
-    readonly created_at: FieldRef<"Collection", 'DateTime'>
-    readonly updated_at: FieldRef<"Collection", 'DateTime'>
-    readonly updated_by: FieldRef<"Collection", 'BigInt'>
+  interface SeasonTypeFieldRefs {
+    readonly id: FieldRef<"SeasonType", 'BigInt'>
+    readonly name: FieldRef<"SeasonType", 'String'>
+    readonly is_active: FieldRef<"SeasonType", 'Boolean'>
+    readonly created_by: FieldRef<"SeasonType", 'BigInt'>
+    readonly created_at: FieldRef<"SeasonType", 'DateTime'>
+    readonly updated_at: FieldRef<"SeasonType", 'DateTime'>
+    readonly updated_by: FieldRef<"SeasonType", 'BigInt'>
   }
     
 
   // Custom InputTypes
   /**
-   * Collection findUnique
+   * SeasonType findUnique
    */
-  export type CollectionFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter, which Collection to fetch.
+     * Filter, which SeasonType to fetch.
      */
-    where: CollectionWhereUniqueInput
+    where: SeasonTypeWhereUniqueInput
   }
 
   /**
-   * Collection findUniqueOrThrow
+   * SeasonType findUniqueOrThrow
    */
-  export type CollectionFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter, which Collection to fetch.
+     * Filter, which SeasonType to fetch.
      */
-    where: CollectionWhereUniqueInput
+    where: SeasonTypeWhereUniqueInput
   }
 
   /**
-   * Collection findFirst
+   * SeasonType findFirst
    */
-  export type CollectionFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter, which Collection to fetch.
+     * Filter, which SeasonType to fetch.
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Collections to fetch.
+     * Determine the order of SeasonTypes to fetch.
      */
-    orderBy?: CollectionOrderByWithRelationInput | CollectionOrderByWithRelationInput[]
+    orderBy?: SeasonTypeOrderByWithRelationInput | SeasonTypeOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Collections.
+     * Sets the position for searching for SeasonTypes.
      */
-    cursor?: CollectionWhereUniqueInput
+    cursor?: SeasonTypeWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Collections from the position of the cursor.
+     * Take `±n` SeasonTypes from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Collections.
+     * Skip the first `n` SeasonTypes.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Collections.
+     * Filter by unique combinations of SeasonTypes.
      */
-    distinct?: CollectionScalarFieldEnum | CollectionScalarFieldEnum[]
+    distinct?: SeasonTypeScalarFieldEnum | SeasonTypeScalarFieldEnum[]
   }
 
   /**
-   * Collection findFirstOrThrow
+   * SeasonType findFirstOrThrow
    */
-  export type CollectionFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter, which Collection to fetch.
+     * Filter, which SeasonType to fetch.
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Collections to fetch.
+     * Determine the order of SeasonTypes to fetch.
      */
-    orderBy?: CollectionOrderByWithRelationInput | CollectionOrderByWithRelationInput[]
+    orderBy?: SeasonTypeOrderByWithRelationInput | SeasonTypeOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Collections.
+     * Sets the position for searching for SeasonTypes.
      */
-    cursor?: CollectionWhereUniqueInput
+    cursor?: SeasonTypeWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Collections from the position of the cursor.
+     * Take `±n` SeasonTypes from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Collections.
+     * Skip the first `n` SeasonTypes.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Collections.
+     * Filter by unique combinations of SeasonTypes.
      */
-    distinct?: CollectionScalarFieldEnum | CollectionScalarFieldEnum[]
+    distinct?: SeasonTypeScalarFieldEnum | SeasonTypeScalarFieldEnum[]
   }
 
   /**
-   * Collection findMany
+   * SeasonType findMany
    */
-  export type CollectionFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter, which Collections to fetch.
+     * Filter, which SeasonTypes to fetch.
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Collections to fetch.
+     * Determine the order of SeasonTypes to fetch.
      */
-    orderBy?: CollectionOrderByWithRelationInput | CollectionOrderByWithRelationInput[]
+    orderBy?: SeasonTypeOrderByWithRelationInput | SeasonTypeOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for listing Collections.
+     * Sets the position for listing SeasonTypes.
      */
-    cursor?: CollectionWhereUniqueInput
+    cursor?: SeasonTypeWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Collections from the position of the cursor.
+     * Take `±n` SeasonTypes from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Collections.
+     * Skip the first `n` SeasonTypes.
      */
     skip?: number
-    distinct?: CollectionScalarFieldEnum | CollectionScalarFieldEnum[]
+    distinct?: SeasonTypeScalarFieldEnum | SeasonTypeScalarFieldEnum[]
   }
 
   /**
-   * Collection create
+   * SeasonType create
    */
-  export type CollectionCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * The data needed to create a Collection.
+     * The data needed to create a SeasonType.
      */
-    data: XOR<CollectionCreateInput, CollectionUncheckedCreateInput>
+    data: XOR<SeasonTypeCreateInput, SeasonTypeUncheckedCreateInput>
   }
 
   /**
-   * Collection createMany
+   * SeasonType createMany
    */
-  export type CollectionCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to create many Collections.
+     * The data used to create many SeasonTypes.
      */
-    data: CollectionCreateManyInput | CollectionCreateManyInput[]
+    data: SeasonTypeCreateManyInput | SeasonTypeCreateManyInput[]
   }
 
   /**
-   * Collection update
+   * SeasonType update
    */
-  export type CollectionUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * The data needed to update a Collection.
+     * The data needed to update a SeasonType.
      */
-    data: XOR<CollectionUpdateInput, CollectionUncheckedUpdateInput>
+    data: XOR<SeasonTypeUpdateInput, SeasonTypeUncheckedUpdateInput>
     /**
-     * Choose, which Collection to update.
+     * Choose, which SeasonType to update.
      */
-    where: CollectionWhereUniqueInput
+    where: SeasonTypeWhereUniqueInput
   }
 
   /**
-   * Collection updateMany
+   * SeasonType updateMany
    */
-  export type CollectionUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to update Collections.
+     * The data used to update SeasonTypes.
      */
-    data: XOR<CollectionUpdateManyMutationInput, CollectionUncheckedUpdateManyInput>
+    data: XOR<SeasonTypeUpdateManyMutationInput, SeasonTypeUncheckedUpdateManyInput>
     /**
-     * Filter which Collections to update
+     * Filter which SeasonTypes to update
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
   }
 
   /**
-   * Collection upsert
+   * SeasonType upsert
    */
-  export type CollectionUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * The filter to search for the Collection to update in case it exists.
+     * The filter to search for the SeasonType to update in case it exists.
      */
-    where: CollectionWhereUniqueInput
+    where: SeasonTypeWhereUniqueInput
     /**
-     * In case the Collection found by the `where` argument doesn't exist, create a new Collection with this data.
+     * In case the SeasonType found by the `where` argument doesn't exist, create a new SeasonType with this data.
      */
-    create: XOR<CollectionCreateInput, CollectionUncheckedCreateInput>
+    create: XOR<SeasonTypeCreateInput, SeasonTypeUncheckedCreateInput>
     /**
-     * In case the Collection was found with the provided `where` argument, update it with this data.
+     * In case the SeasonType was found with the provided `where` argument, update it with this data.
      */
-    update: XOR<CollectionUpdateInput, CollectionUncheckedUpdateInput>
+    update: XOR<SeasonTypeUpdateInput, SeasonTypeUncheckedUpdateInput>
   }
 
   /**
-   * Collection delete
+   * SeasonType delete
    */
-  export type CollectionDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
     /**
-     * Filter which Collection to delete.
+     * Filter which SeasonType to delete.
      */
-    where: CollectionWhereUniqueInput
+    where: SeasonTypeWhereUniqueInput
   }
 
   /**
-   * Collection deleteMany
+   * SeasonType deleteMany
    */
-  export type CollectionDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Collections to delete
+     * Filter which SeasonTypes to delete
      */
-    where?: CollectionWhereInput
+    where?: SeasonTypeWhereInput
   }
 
   /**
-   * Collection.planning_collections
+   * SeasonType.planning_collections
    */
-  export type Collection$planning_collectionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonType$planning_collectionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the PlanningCollection
      */
@@ -10294,17 +10294,17 @@ export namespace Prisma {
   }
 
   /**
-   * Collection without action
+   * SeasonType without action
    */
-  export type CollectionDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SeasonTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Collection
+     * Select specific fields to fetch from the SeasonType
      */
-    select?: CollectionSelect<ExtArgs> | null
+    select?: SeasonTypeSelect<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: CollectionInclude<ExtArgs> | null
+    include?: SeasonTypeInclude<ExtArgs> | null
   }
 
 
@@ -21530,7 +21530,7 @@ export namespace Prisma {
 
   export type PlanningCollectionAvgAggregateOutputType = {
     id: number | null
-    collection_id: number | null
+    season_type_id: number | null
     store_id: number | null
     planning_header_id: number | null
     actual_buy_pct: Decimal | null
@@ -21546,7 +21546,7 @@ export namespace Prisma {
 
   export type PlanningCollectionSumAggregateOutputType = {
     id: bigint | null
-    collection_id: bigint | null
+    season_type_id: bigint | null
     store_id: bigint | null
     planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
@@ -21562,7 +21562,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMinAggregateOutputType = {
     id: bigint | null
-    collection_id: bigint | null
+    season_type_id: bigint | null
     store_id: bigint | null
     planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
@@ -21580,7 +21580,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMaxAggregateOutputType = {
     id: bigint | null
-    collection_id: bigint | null
+    season_type_id: bigint | null
     store_id: bigint | null
     planning_header_id: bigint | null
     actual_buy_pct: Decimal | null
@@ -21598,7 +21598,7 @@ export namespace Prisma {
 
   export type PlanningCollectionCountAggregateOutputType = {
     id: number
-    collection_id: number
+    season_type_id: number
     store_id: number
     planning_header_id: number
     actual_buy_pct: number
@@ -21618,7 +21618,7 @@ export namespace Prisma {
 
   export type PlanningCollectionAvgAggregateInputType = {
     id?: true
-    collection_id?: true
+    season_type_id?: true
     store_id?: true
     planning_header_id?: true
     actual_buy_pct?: true
@@ -21634,7 +21634,7 @@ export namespace Prisma {
 
   export type PlanningCollectionSumAggregateInputType = {
     id?: true
-    collection_id?: true
+    season_type_id?: true
     store_id?: true
     planning_header_id?: true
     actual_buy_pct?: true
@@ -21650,7 +21650,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMinAggregateInputType = {
     id?: true
-    collection_id?: true
+    season_type_id?: true
     store_id?: true
     planning_header_id?: true
     actual_buy_pct?: true
@@ -21668,7 +21668,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMaxAggregateInputType = {
     id?: true
-    collection_id?: true
+    season_type_id?: true
     store_id?: true
     planning_header_id?: true
     actual_buy_pct?: true
@@ -21686,7 +21686,7 @@ export namespace Prisma {
 
   export type PlanningCollectionCountAggregateInputType = {
     id?: true
-    collection_id?: true
+    season_type_id?: true
     store_id?: true
     planning_header_id?: true
     actual_buy_pct?: true
@@ -21791,7 +21791,7 @@ export namespace Prisma {
 
   export type PlanningCollectionGroupByOutputType = {
     id: bigint
-    collection_id: bigint
+    season_type_id: bigint
     store_id: bigint
     planning_header_id: bigint
     actual_buy_pct: Decimal
@@ -21828,7 +21828,7 @@ export namespace Prisma {
 
   export type PlanningCollectionSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    collection_id?: boolean
+    season_type_id?: boolean
     store_id?: boolean
     planning_header_id?: boolean
     actual_buy_pct?: boolean
@@ -21842,7 +21842,7 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
-    collection?: boolean | CollectionDefaultArgs<ExtArgs>
+    season_type?: boolean | SeasonTypeDefaultArgs<ExtArgs>
     store?: boolean | StoreDefaultArgs<ExtArgs>
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["planningCollection"]>
@@ -21850,7 +21850,7 @@ export namespace Prisma {
 
   export type PlanningCollectionSelectScalar = {
     id?: boolean
-    collection_id?: boolean
+    season_type_id?: boolean
     store_id?: boolean
     planning_header_id?: boolean
     actual_buy_pct?: boolean
@@ -21867,7 +21867,7 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    collection?: boolean | CollectionDefaultArgs<ExtArgs>
+    season_type?: boolean | SeasonTypeDefaultArgs<ExtArgs>
     store?: boolean | StoreDefaultArgs<ExtArgs>
     planning_header?: boolean | PlanningHeaderDefaultArgs<ExtArgs>
   }
@@ -21875,13 +21875,13 @@ export namespace Prisma {
   export type $PlanningCollectionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "PlanningCollection"
     objects: {
-      collection: Prisma.$CollectionPayload<ExtArgs>
+      season_type: Prisma.$SeasonTypePayload<ExtArgs>
       store: Prisma.$StorePayload<ExtArgs>
       planning_header: Prisma.$PlanningHeaderPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
-      collection_id: bigint
+      season_type_id: bigint
       store_id: bigint
       planning_header_id: bigint
       actual_buy_pct: Prisma.Decimal
@@ -22235,7 +22235,7 @@ export namespace Prisma {
    */
   export interface Prisma__PlanningCollectionClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    collection<T extends CollectionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, CollectionDefaultArgs<ExtArgs>>): Prisma__CollectionClient<$Result.GetResult<Prisma.$CollectionPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    season_type<T extends SeasonTypeDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SeasonTypeDefaultArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     store<T extends StoreDefaultArgs<ExtArgs> = {}>(args?: Subset<T, StoreDefaultArgs<ExtArgs>>): Prisma__StoreClient<$Result.GetResult<Prisma.$StorePayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     planning_header<T extends PlanningHeaderDefaultArgs<ExtArgs> = {}>(args?: Subset<T, PlanningHeaderDefaultArgs<ExtArgs>>): Prisma__PlanningHeaderClient<$Result.GetResult<Prisma.$PlanningHeaderPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     /**
@@ -22268,7 +22268,7 @@ export namespace Prisma {
    */ 
   interface PlanningCollectionFieldRefs {
     readonly id: FieldRef<"PlanningCollection", 'BigInt'>
-    readonly collection_id: FieldRef<"PlanningCollection", 'BigInt'>
+    readonly season_type_id: FieldRef<"PlanningCollection", 'BigInt'>
     readonly store_id: FieldRef<"PlanningCollection", 'BigInt'>
     readonly planning_header_id: FieldRef<"PlanningCollection", 'BigInt'>
     readonly actual_buy_pct: FieldRef<"PlanningCollection", 'Decimal'>
@@ -34708,7 +34708,7 @@ export namespace Prisma {
   export type StoreScalarFieldEnum = (typeof StoreScalarFieldEnum)[keyof typeof StoreScalarFieldEnum]
 
 
-  export const CollectionScalarFieldEnum: {
+  export const SeasonTypeScalarFieldEnum: {
     id: 'id',
     name: 'name',
     is_active: 'is_active',
@@ -34718,7 +34718,7 @@ export namespace Prisma {
     updated_by: 'updated_by'
   };
 
-  export type CollectionScalarFieldEnum = (typeof CollectionScalarFieldEnum)[keyof typeof CollectionScalarFieldEnum]
+  export type SeasonTypeScalarFieldEnum = (typeof SeasonTypeScalarFieldEnum)[keyof typeof SeasonTypeScalarFieldEnum]
 
 
   export const SeasonGroupScalarFieldEnum: {
@@ -34888,7 +34888,7 @@ export namespace Prisma {
 
   export const PlanningCollectionScalarFieldEnum: {
     id: 'id',
-    collection_id: 'collection_id',
+    season_type_id: 'season_type_id',
     store_id: 'store_id',
     planning_header_id: 'planning_header_id',
     actual_buy_pct: 'actual_buy_pct',
@@ -35595,21 +35595,21 @@ export namespace Prisma {
     updated_by?: BigIntNullableWithAggregatesFilter<"Store"> | bigint | number | null
   }
 
-  export type CollectionWhereInput = {
-    AND?: CollectionWhereInput | CollectionWhereInput[]
-    OR?: CollectionWhereInput[]
-    NOT?: CollectionWhereInput | CollectionWhereInput[]
-    id?: BigIntFilter<"Collection"> | bigint | number
-    name?: StringFilter<"Collection"> | string
-    is_active?: BoolFilter<"Collection"> | boolean
-    created_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
-    created_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
+  export type SeasonTypeWhereInput = {
+    AND?: SeasonTypeWhereInput | SeasonTypeWhereInput[]
+    OR?: SeasonTypeWhereInput[]
+    NOT?: SeasonTypeWhereInput | SeasonTypeWhereInput[]
+    id?: BigIntFilter<"SeasonType"> | bigint | number
+    name?: StringFilter<"SeasonType"> | string
+    is_active?: BoolFilter<"SeasonType"> | boolean
+    created_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
+    created_at?: DateTimeFilter<"SeasonType"> | Date | string
+    updated_at?: DateTimeFilter<"SeasonType"> | Date | string
+    updated_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
   }
 
-  export type CollectionOrderByWithRelationInput = {
+  export type SeasonTypeOrderByWithRelationInput = {
     id?: SortOrder
     name?: SortOrder
     is_active?: SortOrder
@@ -35620,21 +35620,21 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionOrderByRelationAggregateInput
   }
 
-  export type CollectionWhereUniqueInput = Prisma.AtLeast<{
+  export type SeasonTypeWhereUniqueInput = Prisma.AtLeast<{
     id?: bigint | number
-    AND?: CollectionWhereInput | CollectionWhereInput[]
-    OR?: CollectionWhereInput[]
-    NOT?: CollectionWhereInput | CollectionWhereInput[]
-    name?: StringFilter<"Collection"> | string
-    is_active?: BoolFilter<"Collection"> | boolean
-    created_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
-    created_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_at?: DateTimeFilter<"Collection"> | Date | string
-    updated_by?: BigIntNullableFilter<"Collection"> | bigint | number | null
+    AND?: SeasonTypeWhereInput | SeasonTypeWhereInput[]
+    OR?: SeasonTypeWhereInput[]
+    NOT?: SeasonTypeWhereInput | SeasonTypeWhereInput[]
+    name?: StringFilter<"SeasonType"> | string
+    is_active?: BoolFilter<"SeasonType"> | boolean
+    created_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
+    created_at?: DateTimeFilter<"SeasonType"> | Date | string
+    updated_at?: DateTimeFilter<"SeasonType"> | Date | string
+    updated_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
   }, "id">
 
-  export type CollectionOrderByWithAggregationInput = {
+  export type SeasonTypeOrderByWithAggregationInput = {
     id?: SortOrder
     name?: SortOrder
     is_active?: SortOrder
@@ -35642,24 +35642,24 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
-    _count?: CollectionCountOrderByAggregateInput
-    _avg?: CollectionAvgOrderByAggregateInput
-    _max?: CollectionMaxOrderByAggregateInput
-    _min?: CollectionMinOrderByAggregateInput
-    _sum?: CollectionSumOrderByAggregateInput
+    _count?: SeasonTypeCountOrderByAggregateInput
+    _avg?: SeasonTypeAvgOrderByAggregateInput
+    _max?: SeasonTypeMaxOrderByAggregateInput
+    _min?: SeasonTypeMinOrderByAggregateInput
+    _sum?: SeasonTypeSumOrderByAggregateInput
   }
 
-  export type CollectionScalarWhereWithAggregatesInput = {
-    AND?: CollectionScalarWhereWithAggregatesInput | CollectionScalarWhereWithAggregatesInput[]
-    OR?: CollectionScalarWhereWithAggregatesInput[]
-    NOT?: CollectionScalarWhereWithAggregatesInput | CollectionScalarWhereWithAggregatesInput[]
-    id?: BigIntWithAggregatesFilter<"Collection"> | bigint | number
-    name?: StringWithAggregatesFilter<"Collection"> | string
-    is_active?: BoolWithAggregatesFilter<"Collection"> | boolean
-    created_by?: BigIntNullableWithAggregatesFilter<"Collection"> | bigint | number | null
-    created_at?: DateTimeWithAggregatesFilter<"Collection"> | Date | string
-    updated_at?: DateTimeWithAggregatesFilter<"Collection"> | Date | string
-    updated_by?: BigIntNullableWithAggregatesFilter<"Collection"> | bigint | number | null
+  export type SeasonTypeScalarWhereWithAggregatesInput = {
+    AND?: SeasonTypeScalarWhereWithAggregatesInput | SeasonTypeScalarWhereWithAggregatesInput[]
+    OR?: SeasonTypeScalarWhereWithAggregatesInput[]
+    NOT?: SeasonTypeScalarWhereWithAggregatesInput | SeasonTypeScalarWhereWithAggregatesInput[]
+    id?: BigIntWithAggregatesFilter<"SeasonType"> | bigint | number
+    name?: StringWithAggregatesFilter<"SeasonType"> | string
+    is_active?: BoolWithAggregatesFilter<"SeasonType"> | boolean
+    created_by?: BigIntNullableWithAggregatesFilter<"SeasonType"> | bigint | number | null
+    created_at?: DateTimeWithAggregatesFilter<"SeasonType"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"SeasonType"> | Date | string
+    updated_by?: BigIntNullableWithAggregatesFilter<"SeasonType"> | bigint | number | null
   }
 
   export type SeasonGroupWhereInput = {
@@ -36586,7 +36586,7 @@ export namespace Prisma {
     OR?: PlanningCollectionWhereInput[]
     NOT?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
     id?: BigIntFilter<"PlanningCollection"> | bigint | number
-    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    season_type_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -36600,14 +36600,14 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
-    collection?: XOR<CollectionRelationFilter, CollectionWhereInput>
+    season_type?: XOR<SeasonTypeRelationFilter, SeasonTypeWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
   }
 
   export type PlanningCollectionOrderByWithRelationInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -36621,7 +36621,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
-    collection?: CollectionOrderByWithRelationInput
+    season_type?: SeasonTypeOrderByWithRelationInput
     store?: StoreOrderByWithRelationInput
     planning_header?: PlanningHeaderOrderByWithRelationInput
   }
@@ -36631,7 +36631,7 @@ export namespace Prisma {
     AND?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
     OR?: PlanningCollectionWhereInput[]
     NOT?: PlanningCollectionWhereInput | PlanningCollectionWhereInput[]
-    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    season_type_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -36645,14 +36645,14 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_at?: DateTimeFilter<"PlanningCollection"> | Date | string
     updated_by?: BigIntNullableFilter<"PlanningCollection"> | bigint | number | null
-    collection?: XOR<CollectionRelationFilter, CollectionWhereInput>
+    season_type?: XOR<SeasonTypeRelationFilter, SeasonTypeWhereInput>
     store?: XOR<StoreRelationFilter, StoreWhereInput>
     planning_header?: XOR<PlanningHeaderRelationFilter, PlanningHeaderWhereInput>
   }, "id">
 
   export type PlanningCollectionOrderByWithAggregationInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -36678,7 +36678,7 @@ export namespace Prisma {
     OR?: PlanningCollectionScalarWhereWithAggregatesInput[]
     NOT?: PlanningCollectionScalarWhereWithAggregatesInput | PlanningCollectionScalarWhereWithAggregatesInput[]
     id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
-    collection_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
+    season_type_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
     store_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
     planning_header_id?: BigIntWithAggregatesFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalWithAggregatesFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -38193,7 +38193,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type CollectionCreateInput = {
+  export type SeasonTypeCreateInput = {
     id?: bigint | number
     name: string
     is_active?: boolean
@@ -38201,10 +38201,10 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
-    planning_collections?: PlanningCollectionCreateNestedManyWithoutCollectionInput
+    planning_collections?: PlanningCollectionCreateNestedManyWithoutSeason_typeInput
   }
 
-  export type CollectionUncheckedCreateInput = {
+  export type SeasonTypeUncheckedCreateInput = {
     id?: bigint | number
     name: string
     is_active?: boolean
@@ -38212,10 +38212,10 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
-    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutCollectionInput
+    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutSeason_typeInput
   }
 
-  export type CollectionUpdateInput = {
+  export type SeasonTypeUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -38223,10 +38223,10 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
-    planning_collections?: PlanningCollectionUpdateManyWithoutCollectionNestedInput
+    planning_collections?: PlanningCollectionUpdateManyWithoutSeason_typeNestedInput
   }
 
-  export type CollectionUncheckedUpdateInput = {
+  export type SeasonTypeUncheckedUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -38234,10 +38234,10 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
-    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutCollectionNestedInput
+    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutSeason_typeNestedInput
   }
 
-  export type CollectionCreateManyInput = {
+  export type SeasonTypeCreateManyInput = {
     name: string
     is_active?: boolean
     created_by?: bigint | number | null
@@ -38246,7 +38246,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
-  export type CollectionUpdateManyMutationInput = {
+  export type SeasonTypeUpdateManyMutationInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -38256,7 +38256,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type CollectionUncheckedUpdateManyInput = {
+  export type SeasonTypeUncheckedUpdateManyInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -39252,14 +39252,14 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
-    collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
+    season_type: SeasonTypeCreateNestedOneWithoutPlanning_collectionsInput
     store: StoreCreateNestedOneWithoutPlanning_collectionsInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateInput = {
     id?: bigint | number
-    collection_id: bigint | number
+    season_type_id: bigint | number
     store_id: bigint | number
     planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
@@ -39288,14 +39288,14 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
-    collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
+    season_type?: SeasonTypeUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -39312,7 +39312,7 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionCreateManyInput = {
-    collection_id: bigint | number
+    season_type_id: bigint | number
     store_id: bigint | number
     planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
@@ -39345,7 +39345,7 @@ export namespace Prisma {
 
   export type PlanningCollectionUncheckedUpdateManyInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -40987,7 +40987,7 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
-  export type CollectionCountOrderByAggregateInput = {
+  export type SeasonTypeCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
     is_active?: SortOrder
@@ -40997,23 +40997,13 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
-  export type CollectionAvgOrderByAggregateInput = {
+  export type SeasonTypeAvgOrderByAggregateInput = {
     id?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
   }
 
-  export type CollectionMaxOrderByAggregateInput = {
-    id?: SortOrder
-    name?: SortOrder
-    is_active?: SortOrder
-    created_by?: SortOrder
-    created_at?: SortOrder
-    updated_at?: SortOrder
-    updated_by?: SortOrder
-  }
-
-  export type CollectionMinOrderByAggregateInput = {
+  export type SeasonTypeMaxOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
     is_active?: SortOrder
@@ -41023,7 +41013,17 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
-  export type CollectionSumOrderByAggregateInput = {
+  export type SeasonTypeMinOrderByAggregateInput = {
+    id?: SortOrder
+    name?: SortOrder
+    is_active?: SortOrder
+    created_by?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    updated_by?: SortOrder
+  }
+
+  export type SeasonTypeSumOrderByAggregateInput = {
     id?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
@@ -41779,9 +41779,9 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
-  export type CollectionRelationFilter = {
-    is?: CollectionWhereInput
-    isNot?: CollectionWhereInput
+  export type SeasonTypeRelationFilter = {
+    is?: SeasonTypeWhereInput
+    isNot?: SeasonTypeWhereInput
   }
 
   export type PlanningHeaderRelationFilter = {
@@ -41791,7 +41791,7 @@ export namespace Prisma {
 
   export type PlanningCollectionCountOrderByAggregateInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -41809,7 +41809,7 @@ export namespace Prisma {
 
   export type PlanningCollectionAvgOrderByAggregateInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -41825,7 +41825,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMaxOrderByAggregateInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -41843,7 +41843,7 @@ export namespace Prisma {
 
   export type PlanningCollectionMinOrderByAggregateInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -41861,7 +41861,7 @@ export namespace Prisma {
 
   export type PlanningCollectionSumOrderByAggregateInput = {
     id?: SortOrder
-    collection_id?: SortOrder
+    season_type_id?: SortOrder
     store_id?: SortOrder
     planning_header_id?: SortOrder
     actual_buy_pct?: SortOrder
@@ -43405,45 +43405,45 @@ export namespace Prisma {
     deleteMany?: SKUAllocateScalarWhereInput | SKUAllocateScalarWhereInput[]
   }
 
-  export type PlanningCollectionCreateNestedManyWithoutCollectionInput = {
-    create?: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput> | PlanningCollectionCreateWithoutCollectionInput[] | PlanningCollectionUncheckedCreateWithoutCollectionInput[]
-    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutCollectionInput | PlanningCollectionCreateOrConnectWithoutCollectionInput[]
-    createMany?: PlanningCollectionCreateManyCollectionInputEnvelope
+  export type PlanningCollectionCreateNestedManyWithoutSeason_typeInput = {
+    create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
+    createMany?: PlanningCollectionCreateManySeason_typeInputEnvelope
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
   }
 
-  export type PlanningCollectionUncheckedCreateNestedManyWithoutCollectionInput = {
-    create?: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput> | PlanningCollectionCreateWithoutCollectionInput[] | PlanningCollectionUncheckedCreateWithoutCollectionInput[]
-    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutCollectionInput | PlanningCollectionCreateOrConnectWithoutCollectionInput[]
-    createMany?: PlanningCollectionCreateManyCollectionInputEnvelope
+  export type PlanningCollectionUncheckedCreateNestedManyWithoutSeason_typeInput = {
+    create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
+    createMany?: PlanningCollectionCreateManySeason_typeInputEnvelope
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
   }
 
-  export type PlanningCollectionUpdateManyWithoutCollectionNestedInput = {
-    create?: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput> | PlanningCollectionCreateWithoutCollectionInput[] | PlanningCollectionUncheckedCreateWithoutCollectionInput[]
-    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutCollectionInput | PlanningCollectionCreateOrConnectWithoutCollectionInput[]
-    upsert?: PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput | PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput[]
-    createMany?: PlanningCollectionCreateManyCollectionInputEnvelope
+  export type PlanningCollectionUpdateManyWithoutSeason_typeNestedInput = {
+    create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
+    upsert?: PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput | PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput[]
+    createMany?: PlanningCollectionCreateManySeason_typeInputEnvelope
     set?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     disconnect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     delete?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
-    update?: PlanningCollectionUpdateWithWhereUniqueWithoutCollectionInput | PlanningCollectionUpdateWithWhereUniqueWithoutCollectionInput[]
-    updateMany?: PlanningCollectionUpdateManyWithWhereWithoutCollectionInput | PlanningCollectionUpdateManyWithWhereWithoutCollectionInput[]
+    update?: PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput | PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput[]
+    updateMany?: PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput | PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput[]
     deleteMany?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
   }
 
-  export type PlanningCollectionUncheckedUpdateManyWithoutCollectionNestedInput = {
-    create?: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput> | PlanningCollectionCreateWithoutCollectionInput[] | PlanningCollectionUncheckedCreateWithoutCollectionInput[]
-    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutCollectionInput | PlanningCollectionCreateOrConnectWithoutCollectionInput[]
-    upsert?: PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput | PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput[]
-    createMany?: PlanningCollectionCreateManyCollectionInputEnvelope
+  export type PlanningCollectionUncheckedUpdateManyWithoutSeason_typeNestedInput = {
+    create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
+    upsert?: PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput | PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput[]
+    createMany?: PlanningCollectionCreateManySeason_typeInputEnvelope
     set?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     disconnect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     delete?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
-    update?: PlanningCollectionUpdateWithWhereUniqueWithoutCollectionInput | PlanningCollectionUpdateWithWhereUniqueWithoutCollectionInput[]
-    updateMany?: PlanningCollectionUpdateManyWithWhereWithoutCollectionInput | PlanningCollectionUpdateManyWithWhereWithoutCollectionInput[]
+    update?: PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput | PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput[]
+    updateMany?: PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput | PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput[]
     deleteMany?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
   }
 
@@ -44489,10 +44489,10 @@ export namespace Prisma {
     deleteMany?: PlanningCategoryScalarWhereInput | PlanningCategoryScalarWhereInput[]
   }
 
-  export type CollectionCreateNestedOneWithoutPlanning_collectionsInput = {
-    create?: XOR<CollectionCreateWithoutPlanning_collectionsInput, CollectionUncheckedCreateWithoutPlanning_collectionsInput>
-    connectOrCreate?: CollectionCreateOrConnectWithoutPlanning_collectionsInput
-    connect?: CollectionWhereUniqueInput
+  export type SeasonTypeCreateNestedOneWithoutPlanning_collectionsInput = {
+    create?: XOR<SeasonTypeCreateWithoutPlanning_collectionsInput, SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput>
+    connectOrCreate?: SeasonTypeCreateOrConnectWithoutPlanning_collectionsInput
+    connect?: SeasonTypeWhereUniqueInput
   }
 
   export type StoreCreateNestedOneWithoutPlanning_collectionsInput = {
@@ -44507,12 +44507,12 @@ export namespace Prisma {
     connect?: PlanningHeaderWhereUniqueInput
   }
 
-  export type CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput = {
-    create?: XOR<CollectionCreateWithoutPlanning_collectionsInput, CollectionUncheckedCreateWithoutPlanning_collectionsInput>
-    connectOrCreate?: CollectionCreateOrConnectWithoutPlanning_collectionsInput
-    upsert?: CollectionUpsertWithoutPlanning_collectionsInput
-    connect?: CollectionWhereUniqueInput
-    update?: XOR<XOR<CollectionUpdateToOneWithWhereWithoutPlanning_collectionsInput, CollectionUpdateWithoutPlanning_collectionsInput>, CollectionUncheckedUpdateWithoutPlanning_collectionsInput>
+  export type SeasonTypeUpdateOneRequiredWithoutPlanning_collectionsNestedInput = {
+    create?: XOR<SeasonTypeCreateWithoutPlanning_collectionsInput, SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput>
+    connectOrCreate?: SeasonTypeCreateOrConnectWithoutPlanning_collectionsInput
+    upsert?: SeasonTypeUpsertWithoutPlanning_collectionsInput
+    connect?: SeasonTypeWhereUniqueInput
+    update?: XOR<XOR<SeasonTypeUpdateToOneWithWhereWithoutPlanning_collectionsInput, SeasonTypeUpdateWithoutPlanning_collectionsInput>, SeasonTypeUncheckedUpdateWithoutPlanning_collectionsInput>
   }
 
   export type StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput = {
@@ -46455,13 +46455,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
-    collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
+    season_type: SeasonTypeCreateNestedOneWithoutPlanning_collectionsInput
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateWithoutStoreInput = {
     id?: bigint | number
-    collection_id: bigint | number
+    season_type_id: bigint | number
     planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
@@ -46608,7 +46608,7 @@ export namespace Prisma {
     OR?: PlanningCollectionScalarWhereInput[]
     NOT?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
     id?: BigIntFilter<"PlanningCollection"> | bigint | number
-    collection_id?: BigIntFilter<"PlanningCollection"> | bigint | number
+    season_type_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     store_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     planning_header_id?: BigIntFilter<"PlanningCollection"> | bigint | number
     actual_buy_pct?: DecimalFilter<"PlanningCollection"> | Decimal | DecimalJsLike | number | string
@@ -46690,7 +46690,7 @@ export namespace Prisma {
     updated_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
   }
 
-  export type PlanningCollectionCreateWithoutCollectionInput = {
+  export type PlanningCollectionCreateWithoutSeason_typeInput = {
     id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
@@ -46707,7 +46707,7 @@ export namespace Prisma {
     planning_header: PlanningHeaderCreateNestedOneWithoutPlanning_collectionsInput
   }
 
-  export type PlanningCollectionUncheckedCreateWithoutCollectionInput = {
+  export type PlanningCollectionUncheckedCreateWithoutSeason_typeInput = {
     id?: bigint | number
     store_id: bigint | number
     planning_header_id: bigint | number
@@ -46724,29 +46724,29 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
-  export type PlanningCollectionCreateOrConnectWithoutCollectionInput = {
+  export type PlanningCollectionCreateOrConnectWithoutSeason_typeInput = {
     where: PlanningCollectionWhereUniqueInput
-    create: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput>
+    create: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput>
   }
 
-  export type PlanningCollectionCreateManyCollectionInputEnvelope = {
-    data: PlanningCollectionCreateManyCollectionInput | PlanningCollectionCreateManyCollectionInput[]
+  export type PlanningCollectionCreateManySeason_typeInputEnvelope = {
+    data: PlanningCollectionCreateManySeason_typeInput | PlanningCollectionCreateManySeason_typeInput[]
   }
 
-  export type PlanningCollectionUpsertWithWhereUniqueWithoutCollectionInput = {
+  export type PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput = {
     where: PlanningCollectionWhereUniqueInput
-    update: XOR<PlanningCollectionUpdateWithoutCollectionInput, PlanningCollectionUncheckedUpdateWithoutCollectionInput>
-    create: XOR<PlanningCollectionCreateWithoutCollectionInput, PlanningCollectionUncheckedCreateWithoutCollectionInput>
+    update: XOR<PlanningCollectionUpdateWithoutSeason_typeInput, PlanningCollectionUncheckedUpdateWithoutSeason_typeInput>
+    create: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput>
   }
 
-  export type PlanningCollectionUpdateWithWhereUniqueWithoutCollectionInput = {
+  export type PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput = {
     where: PlanningCollectionWhereUniqueInput
-    data: XOR<PlanningCollectionUpdateWithoutCollectionInput, PlanningCollectionUncheckedUpdateWithoutCollectionInput>
+    data: XOR<PlanningCollectionUpdateWithoutSeason_typeInput, PlanningCollectionUncheckedUpdateWithoutSeason_typeInput>
   }
 
-  export type PlanningCollectionUpdateManyWithWhereWithoutCollectionInput = {
+  export type PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput = {
     where: PlanningCollectionScalarWhereInput
-    data: XOR<PlanningCollectionUpdateManyMutationInput, PlanningCollectionUncheckedUpdateManyWithoutCollectionInput>
+    data: XOR<PlanningCollectionUpdateManyMutationInput, PlanningCollectionUncheckedUpdateManyWithoutSeason_typeInput>
   }
 
   export type SeasonCreateWithoutSeason_groupInput = {
@@ -48756,13 +48756,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
-    collection: CollectionCreateNestedOneWithoutPlanning_collectionsInput
+    season_type: SeasonTypeCreateNestedOneWithoutPlanning_collectionsInput
     store: StoreCreateNestedOneWithoutPlanning_collectionsInput
   }
 
   export type PlanningCollectionUncheckedCreateWithoutPlanning_headerInput = {
     id?: bigint | number
-    collection_id: bigint | number
+    season_type_id: bigint | number
     store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
@@ -49008,7 +49008,7 @@ export namespace Prisma {
     data: XOR<PlanningCategoryUpdateManyMutationInput, PlanningCategoryUncheckedUpdateManyWithoutPlanning_headerInput>
   }
 
-  export type CollectionCreateWithoutPlanning_collectionsInput = {
+  export type SeasonTypeCreateWithoutPlanning_collectionsInput = {
     id?: bigint | number
     name: string
     is_active?: boolean
@@ -49018,7 +49018,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
-  export type CollectionUncheckedCreateWithoutPlanning_collectionsInput = {
+  export type SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput = {
     id?: bigint | number
     name: string
     is_active?: boolean
@@ -49028,9 +49028,9 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
-  export type CollectionCreateOrConnectWithoutPlanning_collectionsInput = {
-    where: CollectionWhereUniqueInput
-    create: XOR<CollectionCreateWithoutPlanning_collectionsInput, CollectionUncheckedCreateWithoutPlanning_collectionsInput>
+  export type SeasonTypeCreateOrConnectWithoutPlanning_collectionsInput = {
+    where: SeasonTypeWhereUniqueInput
+    create: XOR<SeasonTypeCreateWithoutPlanning_collectionsInput, SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput>
   }
 
   export type StoreCreateWithoutPlanning_collectionsInput = {
@@ -49103,18 +49103,18 @@ export namespace Prisma {
     create: XOR<PlanningHeaderCreateWithoutPlanning_collectionsInput, PlanningHeaderUncheckedCreateWithoutPlanning_collectionsInput>
   }
 
-  export type CollectionUpsertWithoutPlanning_collectionsInput = {
-    update: XOR<CollectionUpdateWithoutPlanning_collectionsInput, CollectionUncheckedUpdateWithoutPlanning_collectionsInput>
-    create: XOR<CollectionCreateWithoutPlanning_collectionsInput, CollectionUncheckedCreateWithoutPlanning_collectionsInput>
-    where?: CollectionWhereInput
+  export type SeasonTypeUpsertWithoutPlanning_collectionsInput = {
+    update: XOR<SeasonTypeUpdateWithoutPlanning_collectionsInput, SeasonTypeUncheckedUpdateWithoutPlanning_collectionsInput>
+    create: XOR<SeasonTypeCreateWithoutPlanning_collectionsInput, SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput>
+    where?: SeasonTypeWhereInput
   }
 
-  export type CollectionUpdateToOneWithWhereWithoutPlanning_collectionsInput = {
-    where?: CollectionWhereInput
-    data: XOR<CollectionUpdateWithoutPlanning_collectionsInput, CollectionUncheckedUpdateWithoutPlanning_collectionsInput>
+  export type SeasonTypeUpdateToOneWithWhereWithoutPlanning_collectionsInput = {
+    where?: SeasonTypeWhereInput
+    data: XOR<SeasonTypeUpdateWithoutPlanning_collectionsInput, SeasonTypeUncheckedUpdateWithoutPlanning_collectionsInput>
   }
 
-  export type CollectionUpdateWithoutPlanning_collectionsInput = {
+  export type SeasonTypeUpdateWithoutPlanning_collectionsInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -49124,7 +49124,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type CollectionUncheckedUpdateWithoutPlanning_collectionsInput = {
+  export type SeasonTypeUncheckedUpdateWithoutPlanning_collectionsInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
     is_active?: BoolFieldUpdateOperationsInput | boolean
@@ -51926,7 +51926,7 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionCreateManyStoreInput = {
-    collection_id: bigint | number
+    season_type_id: bigint | number
     planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
@@ -52016,13 +52016,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
-    collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
+    season_type?: SeasonTypeUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateWithoutStoreInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52039,7 +52039,7 @@ export namespace Prisma {
 
   export type PlanningCollectionUncheckedUpdateManyWithoutStoreInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52132,7 +52132,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type PlanningCollectionCreateManyCollectionInput = {
+  export type PlanningCollectionCreateManySeason_typeInput = {
     store_id: bigint | number
     planning_header_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
@@ -52148,7 +52148,7 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
-  export type PlanningCollectionUpdateWithoutCollectionInput = {
+  export type PlanningCollectionUpdateWithoutSeason_typeInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -52165,7 +52165,7 @@ export namespace Prisma {
     planning_header?: PlanningHeaderUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
-  export type PlanningCollectionUncheckedUpdateWithoutCollectionInput = {
+  export type PlanningCollectionUncheckedUpdateWithoutSeason_typeInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
@@ -52182,7 +52182,7 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
-  export type PlanningCollectionUncheckedUpdateManyWithoutCollectionInput = {
+  export type PlanningCollectionUncheckedUpdateManyWithoutSeason_typeInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     planning_header_id?: BigIntFieldUpdateOperationsInput | bigint | number
@@ -52992,7 +52992,7 @@ export namespace Prisma {
   }
 
   export type PlanningCollectionCreateManyPlanning_headerInput = {
-    collection_id: bigint | number
+    season_type_id: bigint | number
     store_id: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
     actual_sales_pct?: Decimal | DecimalJsLike | number | string
@@ -53051,13 +53051,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
-    collection?: CollectionUpdateOneRequiredWithoutPlanning_collectionsNestedInput
+    season_type?: SeasonTypeUpdateOneRequiredWithoutPlanning_collectionsNestedInput
     store?: StoreUpdateOneRequiredWithoutPlanning_collectionsNestedInput
   }
 
   export type PlanningCollectionUncheckedUpdateWithoutPlanning_headerInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53074,7 +53074,7 @@ export namespace Prisma {
 
   export type PlanningCollectionUncheckedUpdateManyWithoutPlanning_headerInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
-    collection_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
     store_id?: BigIntFieldUpdateOperationsInput | bigint | number
     actual_buy_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     actual_sales_pct?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53543,9 +53543,9 @@ export namespace Prisma {
      */
     export type StoreCountOutputTypeArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = StoreCountOutputTypeDefaultArgs<ExtArgs>
     /**
-     * @deprecated Use CollectionCountOutputTypeDefaultArgs instead
+     * @deprecated Use SeasonTypeCountOutputTypeDefaultArgs instead
      */
-    export type CollectionCountOutputTypeArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = CollectionCountOutputTypeDefaultArgs<ExtArgs>
+    export type SeasonTypeCountOutputTypeArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SeasonTypeCountOutputTypeDefaultArgs<ExtArgs>
     /**
      * @deprecated Use SeasonGroupCountOutputTypeDefaultArgs instead
      */
@@ -53635,9 +53635,9 @@ export namespace Prisma {
      */
     export type StoreArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = StoreDefaultArgs<ExtArgs>
     /**
-     * @deprecated Use CollectionDefaultArgs instead
+     * @deprecated Use SeasonTypeDefaultArgs instead
      */
-    export type CollectionArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = CollectionDefaultArgs<ExtArgs>
+    export type SeasonTypeArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SeasonTypeDefaultArgs<ExtArgs>
     /**
      * @deprecated Use SeasonGroupDefaultArgs instead
      */

@@ -108,7 +108,7 @@ export class OtbAllocationService {
   // ── private helpers ────────────────────────────────────────────────────
 
   private async recommendCollections(budgetAmount: number): Promise<DimensionRecommendation[]> {
-    const collections = await this.prisma.collection.findMany({
+    const collections = await this.prisma.seasonType.findMany({
       where: { is_active: true },
     });
 

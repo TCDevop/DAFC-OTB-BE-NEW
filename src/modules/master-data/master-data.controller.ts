@@ -34,10 +34,10 @@ export class MasterDataController {
     return { success: true, data: await this.masterDataService.getStores(limit ? +limit : undefined) };
   }
 
-  @Get('collections')
-  @ApiOperation({ summary: 'Get all collections' })
-  async getCollections() {
-    return { success: true, data: await this.masterDataService.getCollections() };
+  @Get('season-types')
+  @ApiOperation({ summary: 'Get all season types' })
+  async getSeasonTypes() {
+    return { success: true, data: await this.masterDataService.getSeasonTypes() };
   }
 
   @Get('season-groups')

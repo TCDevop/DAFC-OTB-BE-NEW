@@ -13,6 +13,9 @@ import {
   CreateProposalSizingHeaderDto,
 } from './dto/proposal.dto';
 
+/** Consistent success response wrapper */
+const ok = (data: any) => ({ success: true, data });
+
 @ApiTags('proposals')
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard, PermissionsGuard)
@@ -20,75 +23,88 @@ import {
 export class ProposalController {
   constructor(private proposalService: ProposalService) {}
 
-  // ─── LIST HEADERS ──────────────────────────────────────────────────────────
+  // ─── HEADERS ──────────────────────────────────────────────────────────
 
   @Get()
   @RequirePermissions('proposal:read')
   @ApiOperation({ summary: 'List SKU proposal headers with pagination' })
   @ApiQuery({ name: 'page', required: false, type: Number })
   @ApiQuery({ name: 'pageSize', required: false, type: Number })
-  @ApiQuery({ name: 'status', required: false, description: 'Filter by status (DRAFT, SUBMITTED, APPROVED, REJECTED)' })
+  @ApiQuery({ name: 'status', required: false, description: 'DRAFT | SUBMITTED | APPROVED | REJECTED' })
+  @ApiQuery({ name: 'allocateHeaderId', required: false, description: 'Filter by allocate header ID' })
   async findAll(
     @Query('page') page?: number,
     @Query('pageSize') pageSize?: number,
     @Query('status') status?: string,
+    @Query('allocateHeaderId') allocateHeaderId?: string,
   ) {
-    const result = await this.proposalService.findAll({ page, pageSize, status });
-    return { success: true, ...result };
+    return { success: true, ...(await this.proposalService.findAll({ page, pageSize, status, allocateHeaderId })) };
   }
-
-  // ─── STATISTICS (must be before :id) ──────────────────────────────────────
 
   @Get('statistics')
   @RequirePermissions('proposal:read')
   @ApiOperation({ summary: 'Get proposal statistics' })
   @ApiQuery({ name: 'budgetId', required: false })
   async getStatistics(@Query('budgetId') budgetId?: string) {
-    return { success: true, data: await this.proposalService.getStatistics(budgetId) };
+    return ok(await this.proposalService.getStatistics(budgetId));
   }
-
-  // ─── GET ONE ───────────────────────────────────────────────────────────────
 
   @Get(':id')
   @RequirePermissions('proposal:read')
-  @ApiOperation({ summary: 'Get SKU proposal header with all proposals, allocations, and sizings' })
+  @ApiOperation({ summary: 'Get SKU proposal header with nested data' })
   async findOne(@Param('id') id: string) {
-    return { success: true, data: await this.proposalService.findOne(id) };
+    return ok(await this.proposalService.findOne(id));
   }
-
-  // ─── CREATE ────────────────────────────────────────────────────────────────
 
   @Post()
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Create new SKU proposal header with proposals' })
+  @ApiOperation({ summary: 'Create new SKU proposal header' })
   @ApiBody({ type: CreateSKUProposalHeaderDto })
   async create(@Body() dto: CreateSKUProposalHeaderDto, @Request() req: any) {
-    return { success: true, data: await this.proposalService.create(dto, req.user.sub) };
+    return ok(await this.proposalService.create(dto, req.user.sub));
   }
-
-  // ─── UPDATE HEADER ─────────────────────────────────────────────────────────
 
   @Put(':id')
   @RequirePermissions('proposal:write')
   @ApiOperation({ summary: 'Update SKU proposal header' })
   async updateHeader(@Param('id') id: string, @Body() dto: any, @Request() req: any) {
-    return { success: true, data: await this.proposalService.updateHeader(id, dto, req.user.sub) };
+    return ok(await this.proposalService.updateHeader(id, dto, req.user.sub));
   }
 
-  // ─── SUBMIT ────────────────────────────────────────────────────────────────
+  @Put(':id/save-full')
+  @RequirePermissions('proposal:write')
+  @ApiOperation({ summary: 'Save all products + store allocations' })
+  async saveFullProposal(@Param('id') id: string, @Body() dto: any, @Request() req: any) {
+    return ok(await this.proposalService.saveFullProposal(id, dto, req.user.sub));
+  }
+
+  @Post(':id/copy')
+  @RequirePermissions('proposal:write')
+  @ApiOperation({ summary: 'Copy proposal to a new version' })
+  async copyProposal(@Param('id') id: string, @Request() req: any) {
+    return ok(await this.proposalService.copyProposal(id, req.user.sub));
+  }
+
+  @Delete(':id')
+  @RequirePermissions('proposal:write')
+  @ApiOperation({ summary: 'Delete SKU proposal header and all related data' })
+  async remove(@Param('id') id: string) {
+    await this.proposalService.remove(id);
+    return { success: true, message: 'Deleted' };
+  }
+
+  // ─── SUBMIT / APPROVE ────────────────────────────────────────────────
 
   @Post(':id/submit')
   @RequirePermissions('proposal:submit')
   @ApiOperation({ summary: 'Submit proposal for approval (DRAFT → SUBMITTED)' })
   async submit(@Param('id') id: string, @Request() req: any) {
-    return { success: true, data: await this.proposalService.submit(id, req.user.sub) };
+    return ok(await this.proposalService.submit(id, req.user.sub));
   }
-
-  // ─── APPROVE BY LEVEL (used by approvalHelper) ────────────────────────────
 
   @Post(':id/approve/:level')
   @RequirePermissions('proposal:approve')
-  @ApiOperation({ summary: 'Approve or reject proposal by level (action: APPROVED | REJECTED)' })
+  @ApiOperation({ summary: 'Approve or reject proposal by level' })
   async approveByLevel(
     @Param('id') id: string,
     @Param('level') level: string,
@@ -96,148 +112,139 @@ export class ProposalController {
     @Body('comment') comment: string,
     @Request() req: any,
   ) {
-    return { success: true, data: await this.proposalService.approveByLevel(id, level, action, comment, req.user.sub) };
+    return ok(await this.proposalService.approveByLevel(id, level, action, comment, req.user.sub));
   }
 
-  // ─── ADD PRODUCT ───────────────────────────────────────────────────────────
+  // ─── SKU PROPOSAL ITEMS ──────────────────────────────────────────────
 
   @Post(':id/products')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Add a product to the SKU proposal header' })
+  @ApiOperation({ summary: 'Add a product to proposal' })
   @ApiBody({ type: AddProductDto })
   async addProduct(@Param('id') id: string, @Body() dto: AddProductDto, @Request() req: any) {
-    return { success: true, data: await this.proposalService.addProduct(id, dto, req.user.sub) };
+    return ok(await this.proposalService.addProduct(id, dto, req.user.sub));
   }
-
-  // ─── BULK ADD PRODUCTS ─────────────────────────────────────────────────────
 
   @Post(':id/products/bulk')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Bulk add products to the SKU proposal header' })
+  @ApiOperation({ summary: 'Bulk add products to proposal' })
   @ApiBody({ type: BulkAddProductsDto })
   async bulkAddProducts(@Param('id') id: string, @Body() dto: BulkAddProductsDto, @Request() req: any) {
-    return { success: true, data: await this.proposalService.bulkAddProducts(id, dto, req.user.sub) };
+    return ok(await this.proposalService.bulkAddProducts(id, dto, req.user.sub));
   }
-
-  // ─── UPDATE SKU PROPOSAL ───────────────────────────────────────────────────
 
   @Patch('items/:proposalId')
   @RequirePermissions('proposal:write')
   @ApiOperation({ summary: 'Update a SKU proposal item' })
   @ApiBody({ type: UpdateSKUProposalDto })
   async updateProposal(@Param('proposalId') proposalId: string, @Body() dto: UpdateSKUProposalDto) {
-    return { success: true, data: await this.proposalService.updateProposal(proposalId, dto) };
+    return ok(await this.proposalService.updateProposal(proposalId, dto));
   }
-
-  // ─── REMOVE SKU PROPOSAL ──────────────────────────────────────────────────
 
   @Delete('items/:proposalId')
   @RequirePermissions('proposal:write')
   @ApiOperation({ summary: 'Remove a SKU proposal item' })
   async removeProposal(@Param('proposalId') proposalId: string) {
-    return { success: true, ...(await this.proposalService.removeProposal(proposalId)) };
+    return ok(await this.proposalService.removeProposal(proposalId));
   }
 
-  // ─── SKU ALLOCATIONS (per store) ───────────────────────────────────────────
+  // ─── ALLOCATIONS ─────────────────────────────────────────────────────
 
   @Post('allocations')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Create store allocations for SKU proposals' })
+  @ApiOperation({ summary: 'Create store allocations' })
   @ApiBody({ type: BulkSKUAllocateDto })
   async createAllocations(@Body() dto: BulkSKUAllocateDto) {
-    return { success: true, data: await this.proposalService.createAllocations(dto) };
+    return ok(await this.proposalService.createAllocations(dto));
   }
 
   @Get('items/:skuProposalId/allocations')
   @RequirePermissions('proposal:read')
   @ApiOperation({ summary: 'Get store allocations for a SKU proposal' })
   async getStoreAllocations(@Param('skuProposalId') skuProposalId: string) {
-    return { success: true, data: await this.proposalService.getStoreAllocations(skuProposalId) };
+    return ok(await this.proposalService.getStoreAllocations(skuProposalId));
   }
 
   @Patch('allocations/:allocationId')
   @RequirePermissions('proposal:write')
   @ApiOperation({ summary: 'Update allocation quantity' })
   async updateAllocation(@Param('allocationId') allocationId: string, @Body('quantity') quantity: number) {
-    return { success: true, data: await this.proposalService.updateAllocation(allocationId, quantity) };
+    return ok(await this.proposalService.updateAllocation(allocationId, quantity));
   }
 
   @Delete('allocations/:allocationId')
   @RequirePermissions('proposal:write')
   @ApiOperation({ summary: 'Delete an allocation' })
   async deleteAllocation(@Param('allocationId') allocationId: string) {
-    return { success: true, ...(await this.proposalService.deleteAllocation(allocationId)) };
+    return ok(await this.proposalService.deleteAllocation(allocationId));
   }
 
-  // ─── PROPOSAL SIZING HEADER ───────────────────────────────────────────────
+  // ─── SIZING HEADERS ──────────────────────────────────────────────────
 
   @Post('sizing-headers')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Tạo Proposal Sizing Header (với các sizing theo size)' })
+  @ApiOperation({ summary: 'Create Proposal Sizing Header with sizings' })
   @ApiBody({ type: CreateProposalSizingHeaderDto })
   async createSizingHeader(@Body() dto: CreateProposalSizingHeaderDto, @Request() req: any) {
-    return { success: true, data: await this.proposalService.createSizingHeader(dto, req.user.sub) };
+    return ok(await this.proposalService.createSizingHeader(dto, req.user.sub));
   }
 
   @Get('items/:skuProposalId/sizing-headers')
   @RequirePermissions('proposal:read')
-  @ApiOperation({ summary: 'Lấy danh sách Proposal Sizing Headers của một SKU Proposal' })
+  @ApiOperation({ summary: 'List Sizing Headers for a SKU Proposal' })
   async getSizingHeadersByProposal(@Param('skuProposalId') skuProposalId: string) {
-    return { success: true, data: await this.proposalService.getSizingHeadersByProposal(skuProposalId) };
+    return ok(await this.proposalService.getSizingHeadersByProposal(skuProposalId));
   }
 
   @Get('sizing-headers/:headerId')
   @RequirePermissions('proposal:read')
-  @ApiOperation({ summary: 'Lấy chi tiết Proposal Sizing Header (kèm sizings)' })
+  @ApiOperation({ summary: 'Get Sizing Header detail' })
   async getSizingHeader(@Param('headerId') headerId: string) {
-    return { success: true, data: await this.proposalService.getSizingHeader(headerId) };
+    return ok(await this.proposalService.getSizingHeader(headerId));
+  }
+
+  @Patch('sizing-headers/:headerId')
+  @RequirePermissions('proposal:write')
+  @ApiOperation({ summary: 'Update Sizing Header (set final, etc.)' })
+  async updateSizingHeader(@Param('headerId') headerId: string, @Body() dto: any, @Request() req: any) {
+    return ok(await this.proposalService.updateSizingHeader(headerId, dto, req.user.sub));
   }
 
   @Delete('sizing-headers/:headerId')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Xoá Proposal Sizing Header và tất cả sizings liên quan' })
+  @ApiOperation({ summary: 'Delete Sizing Header and all sizings' })
   async deleteSizingHeader(@Param('headerId') headerId: string) {
-    return { success: true, ...(await this.proposalService.deleteSizingHeader(headerId)) };
+    return ok(await this.proposalService.deleteSizingHeader(headerId));
   }
 
-  // ─── PROPOSAL SIZING (individual rows) ────────────────────────────────────
+  // ─── SIZINGS (individual rows) ───────────────────────────────────────
 
   @Post('sizings')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Thêm sizings vào một Proposal Sizing Header' })
+  @ApiOperation({ summary: 'Add sizings to a Sizing Header' })
   @ApiBody({ type: BulkProposalSizingDto })
   async createSizings(@Body() dto: BulkProposalSizingDto) {
-    return { success: true, data: await this.proposalService.createSizings(dto) };
+    return ok(await this.proposalService.createSizings(dto));
   }
 
   @Get('sizing-headers/:headerId/sizings')
   @RequirePermissions('proposal:read')
-  @ApiOperation({ summary: 'Lấy danh sách sizings của một Proposal Sizing Header' })
+  @ApiOperation({ summary: 'List sizings for a Sizing Header' })
   async getSizings(@Param('headerId') headerId: string) {
-    return { success: true, data: await this.proposalService.getSizings(headerId) };
+    return ok(await this.proposalService.getSizings(headerId));
   }
 
   @Patch('sizings/:sizingId')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Cập nhật số lượng sizing' })
+  @ApiOperation({ summary: 'Update sizing quantity' })
   async updateSizing(@Param('sizingId') sizingId: string, @Body('proposalQuantity') quantity: number) {
-    return { success: true, data: await this.proposalService.updateSizing(sizingId, quantity) };
+    return ok(await this.proposalService.updateSizing(sizingId, quantity));
   }
 
   @Delete('sizings/:sizingId')
   @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Xoá một sizing' })
+  @ApiOperation({ summary: 'Delete a sizing' })
   async deleteSizing(@Param('sizingId') sizingId: string) {
-    return { success: true, ...(await this.proposalService.deleteSizing(sizingId)) };
-  }
-
-  // ─── DELETE HEADER ─────────────────────────────────────────────────────────
-
-  @Delete(':id')
-  @RequirePermissions('proposal:write')
-  @ApiOperation({ summary: 'Delete SKU proposal header and all related data' })
-  async remove(@Param('id') id: string) {
-    await this.proposalService.remove(id);
-    return { success: true, message: 'SKU Proposal Header deleted' };
+    return ok(await this.proposalService.deleteSizing(sizingId));
   }
 }

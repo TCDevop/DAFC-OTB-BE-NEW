@@ -101,6 +101,11 @@ export class ProposalSizingDto {
 // ─── Create SKU Proposal Header ──────────────────────────────────────────────
 
 export class CreateSKUProposalHeaderDto {
+  @ApiPropertyOptional({ description: 'Allocate Header ID (links proposal to a brand allocation)' })
+  @IsString()
+  @IsOptional()
+  allocateHeaderId?: string;
+
   @ApiProperty({ type: [SKUProposalItemDto], description: 'SKU proposal items' })
   @IsArray()
   @ValidateNested({ each: true })

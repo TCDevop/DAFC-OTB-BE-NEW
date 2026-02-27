@@ -42,9 +42,9 @@ export class MasterDataService {
     });
   }
 
-  // ─── COLLECTIONS ─────────────────────────────────────────────────────────
-  async getCollections() {
-    return this.prisma.collection.findMany({
+  // ─── SEASON TYPES ───────────────────────────────────────────────────────
+  async getSeasonTypes() {
+    return this.prisma.seasonType.findMany({
       where: { is_active: true },
       orderBy: { name: 'asc' },
     });

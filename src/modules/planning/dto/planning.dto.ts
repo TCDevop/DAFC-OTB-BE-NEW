@@ -2,13 +2,13 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsString, IsNumber, IsArray, IsOptional, ValidateNested, IsNotEmpty, Min, IsInt } from 'class-validator';
 import { Type } from 'class-transformer';
 
-// ─── Planning Collection Detail ──────────────────────────────────────────────
+// ─── Planning Season Type Detail ─────────────────────────────────────────────
 
-export class PlanningCollectionDto {
-  @ApiProperty({ description: 'Collection ID' })
+export class PlanningSeasonTypeDto {
+  @ApiProperty({ description: 'Season Type ID' })
   @IsString()
   @IsNotEmpty()
-  collectionId: string;
+  seasonTypeId: string;
 
   @ApiProperty({ description: 'Store ID' })
   @IsString()
@@ -152,12 +152,12 @@ export class CreatePlanningDto {
   @IsOptional()
   allocateHeaderId?: string;
 
-  @ApiPropertyOptional({ type: [PlanningCollectionDto] })
+  @ApiPropertyOptional({ type: [PlanningSeasonTypeDto] })
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => PlanningCollectionDto)
+  @Type(() => PlanningSeasonTypeDto)
   @IsOptional()
-  collections?: PlanningCollectionDto[];
+  seasonTypes?: PlanningSeasonTypeDto[];
 
   @ApiPropertyOptional({ type: [PlanningGenderDto] })
   @IsArray()

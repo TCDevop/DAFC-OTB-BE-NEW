@@ -63,7 +63,7 @@ export class PlanningService {
         allocate_header: { include: { brand: true } },
         planning_collections: {
           include: {
-            collection: true,
+            season_type: true,
             store: true,
           },
         },
@@ -137,7 +137,7 @@ export class PlanningService {
           },
         },
         planning_collections: {
-          include: { collection: true, store: true },
+          include: { season_type: true, store: true },
         },
         planning_genders: {
           include: { gender: true, store: true },
@@ -156,7 +156,7 @@ export class PlanningService {
 
   async create(dto: CreatePlanningDto, userId: string) {
     console.log('[PlanningService.create] allocateHeaderId:', dto.allocateHeaderId,
-      'collections:', dto.collections?.length || 0,
+      'seasonTypes:', dto.seasonTypes?.length || 0,
       'genders:', dto.genders?.length || 0,
       'categories:', dto.categories?.length || 0);
 
@@ -184,10 +184,10 @@ export class PlanningService {
     });
 
     // Step 2: Bulk-insert child records using createMany (same pattern as update)
-    if (dto.collections && dto.collections.length > 0) {
+    if (dto.seasonTypes && dto.seasonTypes.length > 0) {
       await this.prisma.planningCollection.createMany({
-        data: dto.collections.map(c => ({
-          collection_id: BigInt(c.collectionId),
+        data: dto.seasonTypes.map(c => ({
+          season_type_id: BigInt(c.seasonTypeId),
           store_id: BigInt(c.storeId),
           planning_header_id: header.id,
           actual_buy_pct: c.actualBuyPct || 0,
@@ -251,11 +251,11 @@ export class PlanningService {
       });
     }
 
-    if (dto.collections) {
+    if (dto.seasonTypes) {
       await this.prisma.planningCollection.deleteMany({ where: { planning_header_id: BigInt(id) } });
       await this.prisma.planningCollection.createMany({
-        data: dto.collections.map(c => ({
-          collection_id: BigInt(c.collectionId),
+        data: dto.seasonTypes.map(c => ({
+          season_type_id: BigInt(c.seasonTypeId),
           store_id: BigInt(c.storeId),
           planning_header_id: BigInt(id),
           actual_buy_pct: c.actualBuyPct || 0,
@@ -340,7 +340,7 @@ export class PlanningService {
         allocate_header_id: source.allocate_header_id,
         planning_collections: {
           create: source.planning_collections.map(c => ({
-            collection: { connect: { id: c.collection_id } },
+            season_type: { connect: { id: c.season_type_id } },
             store: { connect: { id: c.store_id } },
             actual_buy_pct: c.actual_buy_pct,
             actual_sales_pct: c.actual_sales_pct,
@@ -379,7 +379,7 @@ export class PlanningService {
       },
       include: {
         creator: { select: { id: true, name: true } },
-        planning_collections: { include: { collection: true, store: true } },
+        planning_collections: { include: { season_type: true, store: true } },
         planning_genders: { include: { gender: true, store: true } },
         planning_categories: { include: { subcategory: true } },
       },
