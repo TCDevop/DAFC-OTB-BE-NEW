@@ -38,7 +38,7 @@ export class PlanningSeasonTypeDto {
   @ApiProperty({ example: 0.3, description: 'Proposed buy percentage' })
   @IsNumber()
   @Min(0)
-  @Max(1)
+  @Max(100)
   proposedBuyPct: number;
 
   @ApiProperty({ example: 5000000000, description: 'OTB proposed amount (VND)' })
@@ -84,7 +84,7 @@ export class PlanningGenderDto {
   @ApiProperty({ example: 0.3 })
   @IsNumber()
   @Min(0)
-  @Max(1)
+  @Max(100)
   proposedBuyPct: number;
 
   @ApiProperty({ example: 5000000000 })
@@ -125,7 +125,7 @@ export class PlanningCategoryDto {
   @ApiProperty({ example: 0.3 })
   @IsNumber()
   @Min(0)
-  @Max(1)
+  @Max(100)
   proposedBuyPct: number;
 
   @ApiProperty({ example: 5000000000 })
@@ -192,7 +192,7 @@ export class UpdatePlanningDetailDto {
   @IsNumber()
   @IsOptional()
   @Min(0)
-  @Max(1)
+  @Max(100)
   proposedBuyPct?: number;
 
   @ApiPropertyOptional({ example: 5000000000 })

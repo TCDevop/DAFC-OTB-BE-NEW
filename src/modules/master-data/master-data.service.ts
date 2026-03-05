@@ -7,13 +7,12 @@ export class MasterDataService {
   constructor(private prisma: PrismaService) {}
 
   // ─── GROUP BRANDS ────────────────────────────────────────────────────────
-  // DEV LIMIT: only "Luxury Brands" group with Burberry & Ferragamo — remove filters + dedup to get all (see LIMITS.md)
   async getGroupBrands() {
     const result = await this.prisma.groupBrand.findMany({
-      where: { is_active: true, name: 'Luxury Brands' },
+      where: { is_active: true },
       include: {
         brands: {
-          where: { is_active: true, name: { in: ['Burberry', 'Ferragamo'] } },
+          where: { is_active: true },
           orderBy: { name: 'asc' },
         },
       },
@@ -36,11 +35,9 @@ export class MasterDataService {
   }
 
   // ─── BRANDS ──────────────────────────────────────────────────────────────
-  // DEV LIMIT: only Burberry & Ferragamo — remove name filter + dedup to get all (see LIMITS.md)
   async getBrands(groupBrandId?: string) {
     const where: Prisma.BrandWhereInput = {
       is_active: true,
-      name: { in: ['Burberry', 'Ferragamo'] },
     };
     if (groupBrandId) where.group_brand_id = +groupBrandId;
 
@@ -63,10 +60,9 @@ export class MasterDataService {
   }
 
   // ─── STORES ──────────────────────────────────────────────────────────────
-  // DEV LIMIT: only TTP & REX — remove filter to get all stores (see LIMITS.md)
   async getStores() {
     return this.prisma.store.findMany({
-      where: { is_active: true, code: { in: ['TTP', 'REX'] } },
+      where: { is_active: true },
       orderBy: { code: 'asc' },
     });
   }
@@ -80,11 +76,9 @@ export class MasterDataService {
   }
 
   // ─── SEASON GROUPS & SEASONS ─────────────────────────────────────────────
-  async getSeasonGroups(year?: number) {
-    const where: any = { is_active: true };
-    if (year) where.year = year;
+  async getSeasonGroups() {
     return this.prisma.seasonGroup.findMany({
-      where,
+      where: { is_active: true },
       include: {
         seasons: {
           where: { is_active: true },
@@ -115,15 +109,18 @@ export class MasterDataService {
   }
 
   // ─── CATEGORIES (Full Hierarchy) ─────────────────────────────────────────
-  async getCategories(genderId?: string) {
+  async getCategories(genderId?: string, brandId?: string) {
     const where: Prisma.GenderWhereInput = { is_active: true };
     if (genderId) where.id = +genderId;
+
+    const catWhere: Prisma.CategoryWhereInput = { is_active: true };
+    if (brandId) catWhere.brand_id = +brandId;
 
     return this.prisma.gender.findMany({
       where,
       include: {
         categories: {
-          where: { is_active: true },
+          where: catWhere,
           include: {
             sub_categories: {
               where: { is_active: true },
@@ -184,10 +181,10 @@ export class MasterDataService {
   }
 
   // ─── PLANNING FILTER OPTIONS (gộp 1 call) ────────────────────────────────
-  async getPlanningFilterOptions(year?: number) {
+  async getPlanningFilterOptions() {
     const [groupBrands, seasonGroups, stores, fiscalYears] = await Promise.all([
       this.getGroupBrands(),
-      this.getSeasonGroups(year),
+      this.getSeasonGroups(),
       this.getStores(),
       this.getFiscalYears(),
     ]);
@@ -201,10 +198,10 @@ export class MasterDataService {
   }
 
   // ─── PROPOSAL FILTER OPTIONS ─────────────────────────────────────────────
-  async getProposalFilterOptions(year?: number) {
+  async getProposalFilterOptions() {
     const [genders, seasonGroups, stores] = await Promise.all([
       this.getGenders(),
-      this.getSeasonGroups(year),
+      this.getSeasonGroups(),
       this.getStores(),
     ]);
 

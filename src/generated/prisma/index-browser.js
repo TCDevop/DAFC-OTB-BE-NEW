@@ -442,6 +442,48 @@ exports.Prisma.ProposalSizingScalarFieldEnum = {
   updated_by: 'updated_by'
 };
 
+exports.Prisma.SubCategorySizeHistoryAggScalarFieldEnum = {
+  id: 'id',
+  store_id: 'store_id',
+  brand_id: 'brand_id',
+  gender_id: 'gender_id',
+  category_id: 'category_id',
+  sub_category_id: 'sub_category_id',
+  year: 'year',
+  season_id: 'season_id',
+  mall: 'mall',
+  group_brand: 'group_brand',
+  brand_name: 'brand_name',
+  cat_vendor: 'cat_vendor',
+  prod_line_vendor: 'prod_line_vendor',
+  gender: 'gender',
+  product_size: 'product_size',
+  buy: 'buy',
+  sales_amt: 'sales_amt',
+  st: 'st'
+};
+
+exports.Prisma.SalesHistoryAggScalarFieldEnum = {
+  id: 'id',
+  store_id: 'store_id',
+  brand_id: 'brand_id',
+  gender_id: 'gender_id',
+  category_id: 'category_id',
+  sub_category_id: 'sub_category_id',
+  year: 'year',
+  season_id: 'season_id',
+  mall: 'mall',
+  group_brand: 'group_brand',
+  brand_name: 'brand_name',
+  cat_vendor: 'cat_vendor',
+  prod_line_vendor: 'prod_line_vendor',
+  gender: 'gender',
+  product_size: 'product_size',
+  buy: 'buy',
+  sales_amt: 'sales_amt',
+  st: 'st'
+};
+
 exports.Prisma.ApprovalStatusScalarFieldEnum = {
   id: 'id',
   name: 'name',
@@ -538,6 +580,8 @@ exports.Prisma.ModelName = {
   SKUAllocate: 'SKUAllocate',
   ProposalSizingHeader: 'ProposalSizingHeader',
   ProposalSizing: 'ProposalSizing',
+  SubCategorySizeHistoryAgg: 'SubCategorySizeHistoryAgg',
+  SalesHistoryAgg: 'SalesHistoryAgg',
   ApprovalStatus: 'ApprovalStatus',
   Ticket: 'Ticket',
   ApprovalWorkflow: 'ApprovalWorkflow',

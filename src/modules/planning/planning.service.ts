@@ -475,6 +475,156 @@ export class PlanningService {
     throw new NotFoundException('Detail not found');
   }
 
+  // ─── SALES HISTORY (from sales_history_agg) ────────────────────────────────
+
+  private aggregateSalesHistory(rows: any[]) {
+    let totalBuy = 0;
+    let totalSales = 0;
+    rows.forEach(r => {
+      totalBuy += Number(r.buy) || 0;
+      totalSales += Number(r.sales_amt) || 0;
+    });
+
+    // Group by sub_category_id
+    const subCatMap: Record<string, { buy: number; sales: number }> = {};
+    rows.forEach(r => {
+      const scId = r.sub_category_id ? String(r.sub_category_id) : null;
+      if (!scId) return;
+      if (!subCatMap[scId]) subCatMap[scId] = { buy: 0, sales: 0 };
+      subCatMap[scId].buy += Number(r.buy) || 0;
+      subCatMap[scId].sales += Number(r.sales_amt) || 0;
+    });
+
+    const bySubCategory: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
+    for (const [id, v] of Object.entries(subCatMap)) {
+      bySubCategory[id] = {
+        buyPct: totalBuy > 0 ? Math.round((v.buy / totalBuy) * 10000) / 100 : 0,
+        salesPct: totalSales > 0 ? Math.round((v.sales / totalSales) * 10000) / 100 : 0,
+        stPct: v.buy > 0 ? Math.round((v.sales / v.buy) * 10000) / 100 : 0,
+      };
+    }
+
+    // Group by gender_id + store_id
+    const genderStoreMap: Record<string, { buy: number; sales: number }> = {};
+    rows.forEach(r => {
+      const key = `gender_${r.gender_id}_${r.store_id}`;
+      if (!genderStoreMap[key]) genderStoreMap[key] = { buy: 0, sales: 0 };
+      genderStoreMap[key].buy += Number(r.buy) || 0;
+      genderStoreMap[key].sales += Number(r.sales_amt) || 0;
+    });
+
+    const byGenderStore: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
+    for (const [key, v] of Object.entries(genderStoreMap)) {
+      byGenderStore[key] = {
+        buyPct: totalBuy > 0 ? Math.round((v.buy / totalBuy) * 10000) / 100 : 0,
+        salesPct: totalSales > 0 ? Math.round((v.sales / totalSales) * 10000) / 100 : 0,
+        stPct: v.buy > 0 ? Math.round((v.sales / v.buy) * 10000) / 100 : 0,
+      };
+    }
+
+    return { bySubCategory, byGenderStore };
+  }
+
+  async findSalesHistory(params: {
+    brandId: string;
+    mode: 'baseline' | 'recent';
+    year?: number;
+    seasonName?: string;
+    seasonGroupName?: string;
+    limit?: number;
+  }) {
+    const { brandId, mode } = params;
+
+    if (mode === 'baseline') {
+      const { year, seasonName, seasonGroupName } = params;
+      if (!year || !seasonName || !seasonGroupName) {
+        throw new BadRequestException('year, seasonName, seasonGroupName are required for baseline mode');
+      }
+
+      // Find matching season_id(s)
+      const seasons = await this.prisma.season.findMany({
+        where: {
+          name: seasonName,
+          season_group: { name: { contains: seasonGroupName } },
+        },
+        select: { id: true },
+      });
+      const seasonIds = seasons.map(s => s.id);
+
+      if (seasonIds.length === 0) {
+        return { year, seasonName, seasonGroupName, bySubCategory: {}, byGenderStore: {} };
+      }
+
+      const rows = await this.prisma.salesHistoryAgg.findMany({
+        where: {
+          brand_id: BigInt(brandId),
+          year,
+          season_id: { in: seasonIds },
+        },
+      });
+
+      const aggregated = this.aggregateSalesHistory(rows);
+      return { year, seasonName, seasonGroupName, ...aggregated };
+    }
+
+    // mode === 'recent'
+    const limit = params.limit || 3;
+
+    // Find distinct (year, season_id) combos ordered by year DESC
+    const distinctPeriods = await this.prisma.salesHistoryAgg.findMany({
+      where: { brand_id: BigInt(brandId) },
+      distinct: ['year', 'season_id'],
+      orderBy: [{ year: 'desc' }],
+      select: { year: true, season_id: true },
+      take: limit * 5, // fetch more to ensure enough unique combos
+    });
+
+    // De-duplicate and take first `limit`
+    const seen = new Set<string>();
+    const uniquePeriods: { year: number; season_id: bigint }[] = [];
+    for (const p of distinctPeriods) {
+      const key = `${p.year}_${p.season_id}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        uniquePeriods.push(p);
+        if (uniquePeriods.length >= limit) break;
+      }
+    }
+
+    // Fetch season names for labels
+    const seasonIds = [...new Set(uniquePeriods.map(p => p.season_id))];
+    const seasonRecords = await this.prisma.season.findMany({
+      where: { id: { in: seasonIds } },
+      include: { season_group: true },
+    });
+    const seasonMap = new Map(seasonRecords.map(s => [String(s.id), s]));
+
+    // For each period, aggregate
+    const periods = await Promise.all(
+      uniquePeriods.map(async (p) => {
+        const rows = await this.prisma.salesHistoryAgg.findMany({
+          where: {
+            brand_id: BigInt(brandId),
+            year: p.year,
+            season_id: p.season_id,
+          },
+        });
+        const aggregated = this.aggregateSalesHistory(rows);
+        const season = seasonMap.get(String(p.season_id));
+        return {
+          year: p.year,
+          seasonId: String(p.season_id),
+          seasonName: season?.name || '',
+          seasonGroupName: season?.season_group?.name || '',
+          label: `${p.year} ${season?.season_group?.name || ''} ${season?.name || ''}`.trim(),
+          ...aggregated,
+        };
+      })
+    );
+
+    return { periods };
+  }
+
   // ─── CATEGORY FILTER OPTIONS ────────────────────────────────────────────────
 
   async getCategoryFilterOptions(genderId?: string, categoryId?: string) {

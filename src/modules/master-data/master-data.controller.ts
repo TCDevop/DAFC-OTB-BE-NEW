@@ -46,9 +46,8 @@ export class MasterDataController {
   @Get('season-groups')
   @ApiOperation({ summary: 'Get season groups with seasons (SS, FW)' })
   @ApiSuccessResponse()
-  @ApiQuery({ name: 'year', required: false, type: Number })
-  async getSeasonGroups(@Query('year') year?: string) {
-    return this.masterDataService.getSeasonGroups(year ? +year : undefined);
+  async getSeasonGroups() {
+    return this.masterDataService.getSeasonGroups();
   }
 
   @Get('seasons')
@@ -82,10 +81,12 @@ export class MasterDataController {
   @ApiOperation({ summary: 'Get full category hierarchy: Gender → Category → SubCategory → Sizes' })
   @ApiSuccessResponse()
   @ApiQuery({ name: 'genderId', required: false })
+  @ApiQuery({ name: 'brandId', required: false })
   async getCategories(
     @Query('genderId') genderId?: string,
+    @Query('brandId') brandId?: string,
   ) {
-    return this.masterDataService.getCategories(genderId);
+    return this.masterDataService.getCategories(genderId, brandId);
   }
 
   @Get('approval-statuses')
@@ -112,17 +113,15 @@ export class MasterDataController {
   @Get('planning-filters')
   @ApiOperation({ summary: 'Get all filter options for Planning page in one request (groupBrands, brands, seasonGroups, stores, fiscalYears)' })
   @ApiSuccessResponse()
-  @ApiQuery({ name: 'year', required: false, type: Number })
-  async getPlanningFilterOptions(@Query('year') year?: string) {
-    return this.masterDataService.getPlanningFilterOptions(year ? +year : undefined);
+  async getPlanningFilterOptions() {
+    return this.masterDataService.getPlanningFilterOptions();
   }
 
   @Get('proposal-filters')
   @ApiOperation({ summary: 'Get all filter options for Proposal page (genders, categories, seasonGroups, stores)' })
   @ApiSuccessResponse()
-  @ApiQuery({ name: 'year', required: false, type: Number })
-  async getProposalFilterOptions(@Query('year') year?: string) {
-    return this.masterDataService.getProposalFilterOptions(year ? +year : undefined);
+  async getProposalFilterOptions() {
+    return this.masterDataService.getProposalFilterOptions();
   }
 
   @Get('sku-catalog')

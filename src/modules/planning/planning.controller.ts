@@ -72,6 +72,36 @@ export class PlanningController {
     return this.planningService.findHistorical({ fiscalYear: Number(fiscalYear), seasonGroupName, seasonName, brandId });
   }
 
+  // ─── SALES HISTORY (from sales_history_agg) ──────────────────────────────
+
+  @Get('sales-history')
+  @RequirePermissions(PERMISSIONS.PLANNING.READ)
+  @ApiOperation({ summary: 'Get aggregated sales history from sales_history_agg for baseline or recent periods' })
+  @ApiSuccessResponse()
+  @ApiQuery({ name: 'brandId', required: true, type: String })
+  @ApiQuery({ name: 'mode', required: true, description: 'baseline | recent' })
+  @ApiQuery({ name: 'year', required: false, type: Number })
+  @ApiQuery({ name: 'seasonName', required: false, type: String })
+  @ApiQuery({ name: 'seasonGroupName', required: false, type: String })
+  @ApiQuery({ name: 'limit', required: false, type: Number })
+  async findSalesHistory(
+    @Query('brandId') brandId: string,
+    @Query('mode') mode: 'baseline' | 'recent',
+    @Query('year') year?: number,
+    @Query('seasonName') seasonName?: string,
+    @Query('seasonGroupName') seasonGroupName?: string,
+    @Query('limit') limit?: number,
+  ) {
+    return this.planningService.findSalesHistory({
+      brandId,
+      mode,
+      year: year ? Number(year) : undefined,
+      seasonName,
+      seasonGroupName,
+      limit: limit ? Number(limit) : undefined,
+    });
+  }
+
   // ─── GET ONE ───────────────────────────────────────────────────────────────
 
   @Get(':id')

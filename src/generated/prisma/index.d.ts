@@ -139,6 +139,16 @@ export type ProposalSizingHeader = $Result.DefaultSelection<Prisma.$ProposalSizi
  */
 export type ProposalSizing = $Result.DefaultSelection<Prisma.$ProposalSizingPayload>
 /**
+ * Model SubCategorySizeHistoryAgg
+ * 
+ */
+export type SubCategorySizeHistoryAgg = $Result.DefaultSelection<Prisma.$SubCategorySizeHistoryAggPayload>
+/**
+ * Model SalesHistoryAgg
+ * 
+ */
+export type SalesHistoryAgg = $Result.DefaultSelection<Prisma.$SalesHistoryAggPayload>
+/**
  * Model ApprovalStatus
  * 
  */
@@ -536,6 +546,26 @@ export class PrismaClient<
     * ```
     */
   get proposalSizing(): Prisma.ProposalSizingDelegate<ExtArgs>;
+
+  /**
+   * `prisma.subCategorySizeHistoryAgg`: Exposes CRUD operations for the **SubCategorySizeHistoryAgg** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more SubCategorySizeHistoryAggs
+    * const subCategorySizeHistoryAggs = await prisma.subCategorySizeHistoryAgg.findMany()
+    * ```
+    */
+  get subCategorySizeHistoryAgg(): Prisma.SubCategorySizeHistoryAggDelegate<ExtArgs>;
+
+  /**
+   * `prisma.salesHistoryAgg`: Exposes CRUD operations for the **SalesHistoryAgg** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more SalesHistoryAggs
+    * const salesHistoryAggs = await prisma.salesHistoryAgg.findMany()
+    * ```
+    */
+  get salesHistoryAgg(): Prisma.SalesHistoryAggDelegate<ExtArgs>;
 
   /**
    * `prisma.approvalStatus`: Exposes CRUD operations for the **ApprovalStatus** model.
@@ -1052,6 +1082,8 @@ export namespace Prisma {
     SKUAllocate: 'SKUAllocate',
     ProposalSizingHeader: 'ProposalSizingHeader',
     ProposalSizing: 'ProposalSizing',
+    SubCategorySizeHistoryAgg: 'SubCategorySizeHistoryAgg',
+    SalesHistoryAgg: 'SalesHistoryAgg',
     ApprovalStatus: 'ApprovalStatus',
     Ticket: 'Ticket',
     ApprovalWorkflow: 'ApprovalWorkflow',
@@ -1072,7 +1104,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, ClientOptions = {}> = {
     meta: {
-      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "seasonType" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
+      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "seasonType" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "subCategorySizeHistoryAgg" | "salesHistoryAgg" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -2726,6 +2758,138 @@ export namespace Prisma {
           }
         }
       }
+      SubCategorySizeHistoryAgg: {
+        payload: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>
+        fields: Prisma.SubCategorySizeHistoryAggFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.SubCategorySizeHistoryAggFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.SubCategorySizeHistoryAggFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          findFirst: {
+            args: Prisma.SubCategorySizeHistoryAggFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.SubCategorySizeHistoryAggFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          findMany: {
+            args: Prisma.SubCategorySizeHistoryAggFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>[]
+          }
+          create: {
+            args: Prisma.SubCategorySizeHistoryAggCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          createMany: {
+            args: Prisma.SubCategorySizeHistoryAggCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.SubCategorySizeHistoryAggDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          update: {
+            args: Prisma.SubCategorySizeHistoryAggUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          deleteMany: {
+            args: Prisma.SubCategorySizeHistoryAggDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.SubCategorySizeHistoryAggUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.SubCategorySizeHistoryAggUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SubCategorySizeHistoryAggPayload>
+          }
+          aggregate: {
+            args: Prisma.SubCategorySizeHistoryAggAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSubCategorySizeHistoryAgg>
+          }
+          groupBy: {
+            args: Prisma.SubCategorySizeHistoryAggGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SubCategorySizeHistoryAggGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.SubCategorySizeHistoryAggCountArgs<ExtArgs>
+            result: $Utils.Optional<SubCategorySizeHistoryAggCountAggregateOutputType> | number
+          }
+        }
+      }
+      SalesHistoryAgg: {
+        payload: Prisma.$SalesHistoryAggPayload<ExtArgs>
+        fields: Prisma.SalesHistoryAggFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.SalesHistoryAggFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.SalesHistoryAggFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          findFirst: {
+            args: Prisma.SalesHistoryAggFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.SalesHistoryAggFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          findMany: {
+            args: Prisma.SalesHistoryAggFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>[]
+          }
+          create: {
+            args: Prisma.SalesHistoryAggCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          createMany: {
+            args: Prisma.SalesHistoryAggCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.SalesHistoryAggDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          update: {
+            args: Prisma.SalesHistoryAggUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          deleteMany: {
+            args: Prisma.SalesHistoryAggDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.SalesHistoryAggUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.SalesHistoryAggUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SalesHistoryAggPayload>
+          }
+          aggregate: {
+            args: Prisma.SalesHistoryAggAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSalesHistoryAgg>
+          }
+          groupBy: {
+            args: Prisma.SalesHistoryAggGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SalesHistoryAggGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.SalesHistoryAggCountArgs<ExtArgs>
+            result: $Utils.Optional<SalesHistoryAggCountAggregateOutputType> | number
+          }
+        }
+      }
       ApprovalStatus: {
         payload: Prisma.$ApprovalStatusPayload<ExtArgs>
         fields: Prisma.ApprovalStatusFieldRefs
@@ -3384,11 +3548,15 @@ export namespace Prisma {
   export type BrandCountOutputType = {
     categories: number
     allocate_headers: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type BrandCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     categories?: boolean | BrandCountOutputTypeCountCategoriesArgs
     allocate_headers?: boolean | BrandCountOutputTypeCountAllocate_headersArgs
+    history_agg?: boolean | BrandCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | BrandCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3416,6 +3584,20 @@ export namespace Prisma {
     where?: AllocateHeaderWhereInput
   }
 
+  /**
+   * BrandCountOutputType without action
+   */
+  export type BrandCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * BrandCountOutputType without action
+   */
+  export type BrandCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
+  }
+
 
   /**
    * Count Type StoreCountOutputType
@@ -3426,6 +3608,8 @@ export namespace Prisma {
     planning_collections: number
     planning_genders: number
     sku_allocates: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type StoreCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -3433,6 +3617,8 @@ export namespace Prisma {
     planning_collections?: boolean | StoreCountOutputTypeCountPlanning_collectionsArgs
     planning_genders?: boolean | StoreCountOutputTypeCountPlanning_gendersArgs
     sku_allocates?: boolean | StoreCountOutputTypeCountSku_allocatesArgs
+    history_agg?: boolean | StoreCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | StoreCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3472,6 +3658,20 @@ export namespace Prisma {
    */
   export type StoreCountOutputTypeCountSku_allocatesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: SKUAllocateWhereInput
+  }
+
+  /**
+   * StoreCountOutputType without action
+   */
+  export type StoreCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * StoreCountOutputType without action
+   */
+  export type StoreCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
   }
 
 
@@ -3562,11 +3762,15 @@ export namespace Prisma {
   export type SeasonCountOutputType = {
     budget_allocates: number
     tickets: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type SeasonCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     budget_allocates?: boolean | SeasonCountOutputTypeCountBudget_allocatesArgs
     tickets?: boolean | SeasonCountOutputTypeCountTicketsArgs
+    history_agg?: boolean | SeasonCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | SeasonCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3594,6 +3798,20 @@ export namespace Prisma {
     where?: TicketWhereInput
   }
 
+  /**
+   * SeasonCountOutputType without action
+   */
+  export type SeasonCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * SeasonCountOutputType without action
+   */
+  export type SeasonCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
+  }
+
 
   /**
    * Count Type GenderCountOutputType
@@ -3602,11 +3820,15 @@ export namespace Prisma {
   export type GenderCountOutputType = {
     categories: number
     planning_genders: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type GenderCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     categories?: boolean | GenderCountOutputTypeCountCategoriesArgs
     planning_genders?: boolean | GenderCountOutputTypeCountPlanning_gendersArgs
+    history_agg?: boolean | GenderCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | GenderCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3634,6 +3856,20 @@ export namespace Prisma {
     where?: PlanningGenderWhereInput
   }
 
+  /**
+   * GenderCountOutputType without action
+   */
+  export type GenderCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * GenderCountOutputType without action
+   */
+  export type GenderCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
+  }
+
 
   /**
    * Count Type CategoryCountOutputType
@@ -3641,10 +3877,14 @@ export namespace Prisma {
 
   export type CategoryCountOutputType = {
     sub_categories: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type CategoryCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     sub_categories?: boolean | CategoryCountOutputTypeCountSub_categoriesArgs
+    history_agg?: boolean | CategoryCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | CategoryCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3665,6 +3905,20 @@ export namespace Prisma {
     where?: SubCategoryWhereInput
   }
 
+  /**
+   * CategoryCountOutputType without action
+   */
+  export type CategoryCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * CategoryCountOutputType without action
+   */
+  export type CategoryCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
+  }
+
 
   /**
    * Count Type SubCategoryCountOutputType
@@ -3674,12 +3928,16 @@ export namespace Prisma {
     products: number
     subcategory_sizes: number
     planning_categories: number
+    history_agg: number
+    sales_history_agg: number
   }
 
   export type SubCategoryCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     products?: boolean | SubCategoryCountOutputTypeCountProductsArgs
     subcategory_sizes?: boolean | SubCategoryCountOutputTypeCountSubcategory_sizesArgs
     planning_categories?: boolean | SubCategoryCountOutputTypeCountPlanning_categoriesArgs
+    history_agg?: boolean | SubCategoryCountOutputTypeCountHistory_aggArgs
+    sales_history_agg?: boolean | SubCategoryCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3712,6 +3970,20 @@ export namespace Prisma {
    */
   export type SubCategoryCountOutputTypeCountPlanning_categoriesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PlanningCategoryWhereInput
+  }
+
+  /**
+   * SubCategoryCountOutputType without action
+   */
+  export type SubCategoryCountOutputTypeCountHistory_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * SubCategoryCountOutputType without action
+   */
+  export type SubCategoryCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
   }
 
 
@@ -7516,6 +7788,8 @@ export namespace Prisma {
     group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
     categories?: boolean | Brand$categoriesArgs<ExtArgs>
     allocate_headers?: boolean | Brand$allocate_headersArgs<ExtArgs>
+    history_agg?: boolean | Brand$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Brand$sales_history_aggArgs<ExtArgs>
     _count?: boolean | BrandCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["brand"]>
 
@@ -7536,6 +7810,8 @@ export namespace Prisma {
     group_brand?: boolean | GroupBrandDefaultArgs<ExtArgs>
     categories?: boolean | Brand$categoriesArgs<ExtArgs>
     allocate_headers?: boolean | Brand$allocate_headersArgs<ExtArgs>
+    history_agg?: boolean | Brand$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Brand$sales_history_aggArgs<ExtArgs>
     _count?: boolean | BrandCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -7545,6 +7821,8 @@ export namespace Prisma {
       group_brand: Prisma.$GroupBrandPayload<ExtArgs>
       categories: Prisma.$CategoryPayload<ExtArgs>[]
       allocate_headers: Prisma.$AllocateHeaderPayload<ExtArgs>[]
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -7899,6 +8177,8 @@ export namespace Prisma {
     group_brand<T extends GroupBrandDefaultArgs<ExtArgs> = {}>(args?: Subset<T, GroupBrandDefaultArgs<ExtArgs>>): Prisma__GroupBrandClient<$Result.GetResult<Prisma.$GroupBrandPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     categories<T extends Brand$categoriesArgs<ExtArgs> = {}>(args?: Subset<T, Brand$categoriesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "findMany"> | Null>
     allocate_headers<T extends Brand$allocate_headersArgs<ExtArgs> = {}>(args?: Subset<T, Brand$allocate_headersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AllocateHeaderPayload<ExtArgs>, T, "findMany"> | Null>
+    history_agg<T extends Brand$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Brand$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends Brand$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Brand$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -8275,6 +8555,46 @@ export namespace Prisma {
   }
 
   /**
+   * Brand.history_agg
+   */
+  export type Brand$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * Brand.sales_history_agg
+   */
+  export type Brand$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
    * Brand without action
    */
   export type BrandDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -8523,6 +8843,8 @@ export namespace Prisma {
     planning_collections?: boolean | Store$planning_collectionsArgs<ExtArgs>
     planning_genders?: boolean | Store$planning_gendersArgs<ExtArgs>
     sku_allocates?: boolean | Store$sku_allocatesArgs<ExtArgs>
+    history_agg?: boolean | Store$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Store$sales_history_aggArgs<ExtArgs>
     _count?: boolean | StoreCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["store"]>
 
@@ -8543,6 +8865,8 @@ export namespace Prisma {
     planning_collections?: boolean | Store$planning_collectionsArgs<ExtArgs>
     planning_genders?: boolean | Store$planning_gendersArgs<ExtArgs>
     sku_allocates?: boolean | Store$sku_allocatesArgs<ExtArgs>
+    history_agg?: boolean | Store$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Store$sales_history_aggArgs<ExtArgs>
     _count?: boolean | StoreCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -8553,6 +8877,8 @@ export namespace Prisma {
       planning_collections: Prisma.$PlanningCollectionPayload<ExtArgs>[]
       planning_genders: Prisma.$PlanningGenderPayload<ExtArgs>[]
       sku_allocates: Prisma.$SKUAllocatePayload<ExtArgs>[]
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -8907,6 +9233,8 @@ export namespace Prisma {
     planning_collections<T extends Store$planning_collectionsArgs<ExtArgs> = {}>(args?: Subset<T, Store$planning_collectionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "findMany"> | Null>
     planning_genders<T extends Store$planning_gendersArgs<ExtArgs> = {}>(args?: Subset<T, Store$planning_gendersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningGenderPayload<ExtArgs>, T, "findMany"> | Null>
     sku_allocates<T extends Store$sku_allocatesArgs<ExtArgs> = {}>(args?: Subset<T, Store$sku_allocatesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SKUAllocatePayload<ExtArgs>, T, "findMany"> | Null>
+    history_agg<T extends Store$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Store$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends Store$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Store$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -9319,6 +9647,46 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: SKUAllocateScalarFieldEnum | SKUAllocateScalarFieldEnum[]
+  }
+
+  /**
+   * Store.history_agg
+   */
+  export type Store$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * Store.sales_history_agg
+   */
+  export type Store$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
   }
 
   /**
@@ -11564,6 +11932,8 @@ export namespace Prisma {
     season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
     budget_allocates?: boolean | Season$budget_allocatesArgs<ExtArgs>
     tickets?: boolean | Season$ticketsArgs<ExtArgs>
+    history_agg?: boolean | Season$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Season$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SeasonCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["season"]>
 
@@ -11583,6 +11953,8 @@ export namespace Prisma {
     season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
     budget_allocates?: boolean | Season$budget_allocatesArgs<ExtArgs>
     tickets?: boolean | Season$ticketsArgs<ExtArgs>
+    history_agg?: boolean | Season$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Season$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SeasonCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -11592,6 +11964,8 @@ export namespace Prisma {
       season_group: Prisma.$SeasonGroupPayload<ExtArgs>
       budget_allocates: Prisma.$BudgetAllocatePayload<ExtArgs>[]
       tickets: Prisma.$TicketPayload<ExtArgs>[]
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -11945,6 +12319,8 @@ export namespace Prisma {
     season_group<T extends SeasonGroupDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SeasonGroupDefaultArgs<ExtArgs>>): Prisma__SeasonGroupClient<$Result.GetResult<Prisma.$SeasonGroupPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     budget_allocates<T extends Season$budget_allocatesArgs<ExtArgs> = {}>(args?: Subset<T, Season$budget_allocatesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BudgetAllocatePayload<ExtArgs>, T, "findMany"> | Null>
     tickets<T extends Season$ticketsArgs<ExtArgs> = {}>(args?: Subset<T, Season$ticketsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TicketPayload<ExtArgs>, T, "findMany"> | Null>
+    history_agg<T extends Season$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Season$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends Season$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Season$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -12320,6 +12696,46 @@ export namespace Prisma {
   }
 
   /**
+   * Season.history_agg
+   */
+  export type Season$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * Season.sales_history_agg
+   */
+  export type Season$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
    * Season without action
    */
   export type SeasonDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -12558,6 +12974,8 @@ export namespace Prisma {
     updated_by?: boolean
     categories?: boolean | Gender$categoriesArgs<ExtArgs>
     planning_genders?: boolean | Gender$planning_gendersArgs<ExtArgs>
+    history_agg?: boolean | Gender$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Gender$sales_history_aggArgs<ExtArgs>
     _count?: boolean | GenderCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["gender"]>
 
@@ -12575,6 +12993,8 @@ export namespace Prisma {
   export type GenderInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     categories?: boolean | Gender$categoriesArgs<ExtArgs>
     planning_genders?: boolean | Gender$planning_gendersArgs<ExtArgs>
+    history_agg?: boolean | Gender$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Gender$sales_history_aggArgs<ExtArgs>
     _count?: boolean | GenderCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -12583,6 +13003,8 @@ export namespace Prisma {
     objects: {
       categories: Prisma.$CategoryPayload<ExtArgs>[]
       planning_genders: Prisma.$PlanningGenderPayload<ExtArgs>[]
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -12934,6 +13356,8 @@ export namespace Prisma {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     categories<T extends Gender$categoriesArgs<ExtArgs> = {}>(args?: Subset<T, Gender$categoriesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "findMany"> | Null>
     planning_genders<T extends Gender$planning_gendersArgs<ExtArgs> = {}>(args?: Subset<T, Gender$planning_gendersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningGenderPayload<ExtArgs>, T, "findMany"> | Null>
+    history_agg<T extends Gender$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Gender$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends Gender$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Gender$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -13308,6 +13732,46 @@ export namespace Prisma {
   }
 
   /**
+   * Gender.history_agg
+   */
+  export type Gender$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * Gender.sales_history_agg
+   */
+  export type Gender$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
    * Gender without action
    */
   export type GenderDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -13571,6 +14035,8 @@ export namespace Prisma {
     gender?: boolean | GenderDefaultArgs<ExtArgs>
     sub_categories?: boolean | Category$sub_categoriesArgs<ExtArgs>
     brand?: boolean | Category$brandArgs<ExtArgs>
+    history_agg?: boolean | Category$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Category$sales_history_aggArgs<ExtArgs>
     _count?: boolean | CategoryCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["category"]>
 
@@ -13591,6 +14057,8 @@ export namespace Prisma {
     gender?: boolean | GenderDefaultArgs<ExtArgs>
     sub_categories?: boolean | Category$sub_categoriesArgs<ExtArgs>
     brand?: boolean | Category$brandArgs<ExtArgs>
+    history_agg?: boolean | Category$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | Category$sales_history_aggArgs<ExtArgs>
     _count?: boolean | CategoryCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -13600,6 +14068,8 @@ export namespace Prisma {
       gender: Prisma.$GenderPayload<ExtArgs>
       sub_categories: Prisma.$SubCategoryPayload<ExtArgs>[]
       brand: Prisma.$BrandPayload<ExtArgs> | null
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -13954,6 +14424,8 @@ export namespace Prisma {
     gender<T extends GenderDefaultArgs<ExtArgs> = {}>(args?: Subset<T, GenderDefaultArgs<ExtArgs>>): Prisma__GenderClient<$Result.GetResult<Prisma.$GenderPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     sub_categories<T extends Category$sub_categoriesArgs<ExtArgs> = {}>(args?: Subset<T, Category$sub_categoriesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategoryPayload<ExtArgs>, T, "findMany"> | Null>
     brand<T extends Category$brandArgs<ExtArgs> = {}>(args?: Subset<T, Category$brandArgs<ExtArgs>>): Prisma__BrandClient<$Result.GetResult<Prisma.$BrandPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    history_agg<T extends Category$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Category$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends Category$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, Category$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -14325,6 +14797,46 @@ export namespace Prisma {
   }
 
   /**
+   * Category.history_agg
+   */
+  export type Category$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * Category.sales_history_agg
+   */
+  export type Category$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
    * Category without action
    */
   export type CategoryDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -14577,6 +15089,8 @@ export namespace Prisma {
     products?: boolean | SubCategory$productsArgs<ExtArgs>
     subcategory_sizes?: boolean | SubCategory$subcategory_sizesArgs<ExtArgs>
     planning_categories?: boolean | SubCategory$planning_categoriesArgs<ExtArgs>
+    history_agg?: boolean | SubCategory$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | SubCategory$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SubCategoryCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["subCategory"]>
 
@@ -14597,6 +15111,8 @@ export namespace Prisma {
     products?: boolean | SubCategory$productsArgs<ExtArgs>
     subcategory_sizes?: boolean | SubCategory$subcategory_sizesArgs<ExtArgs>
     planning_categories?: boolean | SubCategory$planning_categoriesArgs<ExtArgs>
+    history_agg?: boolean | SubCategory$history_aggArgs<ExtArgs>
+    sales_history_agg?: boolean | SubCategory$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SubCategoryCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -14607,6 +15123,8 @@ export namespace Prisma {
       products: Prisma.$ProductPayload<ExtArgs>[]
       subcategory_sizes: Prisma.$SubcategorySizePayload<ExtArgs>[]
       planning_categories: Prisma.$PlanningCategoryPayload<ExtArgs>[]
+      history_agg: Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -14961,6 +15479,8 @@ export namespace Prisma {
     products<T extends SubCategory$productsArgs<ExtArgs> = {}>(args?: Subset<T, SubCategory$productsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductPayload<ExtArgs>, T, "findMany"> | Null>
     subcategory_sizes<T extends SubCategory$subcategory_sizesArgs<ExtArgs> = {}>(args?: Subset<T, SubCategory$subcategory_sizesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubcategorySizePayload<ExtArgs>, T, "findMany"> | Null>
     planning_categories<T extends SubCategory$planning_categoriesArgs<ExtArgs> = {}>(args?: Subset<T, SubCategory$planning_categoriesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCategoryPayload<ExtArgs>, T, "findMany"> | Null>
+    history_agg<T extends SubCategory$history_aggArgs<ExtArgs> = {}>(args?: Subset<T, SubCategory$history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends SubCategory$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, SubCategory$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -15353,6 +15873,46 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: PlanningCategoryScalarFieldEnum | PlanningCategoryScalarFieldEnum[]
+  }
+
+  /**
+   * SubCategory.history_agg
+   */
+  export type SubCategory$history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SubCategory.sales_history_agg
+   */
+  export type SubCategory$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
   }
 
   /**
@@ -29890,6 +30450,2296 @@ export namespace Prisma {
 
 
   /**
+   * Model SubCategorySizeHistoryAgg
+   */
+
+  export type AggregateSubCategorySizeHistoryAgg = {
+    _count: SubCategorySizeHistoryAggCountAggregateOutputType | null
+    _avg: SubCategorySizeHistoryAggAvgAggregateOutputType | null
+    _sum: SubCategorySizeHistoryAggSumAggregateOutputType | null
+    _min: SubCategorySizeHistoryAggMinAggregateOutputType | null
+    _max: SubCategorySizeHistoryAggMaxAggregateOutputType | null
+  }
+
+  export type SubCategorySizeHistoryAggAvgAggregateOutputType = {
+    id: number | null
+    store_id: number | null
+    brand_id: number | null
+    gender_id: number | null
+    category_id: number | null
+    sub_category_id: number | null
+    year: number | null
+    season_id: number | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SubCategorySizeHistoryAggSumAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SubCategorySizeHistoryAggMinAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SubCategorySizeHistoryAggMaxAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SubCategorySizeHistoryAggCountAggregateOutputType = {
+    id: number
+    store_id: number
+    brand_id: number
+    gender_id: number
+    category_id: number
+    sub_category_id: number
+    year: number
+    season_id: number
+    mall: number
+    group_brand: number
+    brand_name: number
+    cat_vendor: number
+    prod_line_vendor: number
+    gender: number
+    product_size: number
+    buy: number
+    sales_amt: number
+    st: number
+    _all: number
+  }
+
+
+  export type SubCategorySizeHistoryAggAvgAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SubCategorySizeHistoryAggSumAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SubCategorySizeHistoryAggMinAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SubCategorySizeHistoryAggMaxAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SubCategorySizeHistoryAggCountAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+    _all?: true
+  }
+
+  export type SubCategorySizeHistoryAggAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SubCategorySizeHistoryAgg to aggregate.
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SubCategorySizeHistoryAggs to fetch.
+     */
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SubCategorySizeHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SubCategorySizeHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned SubCategorySizeHistoryAggs
+    **/
+    _count?: true | SubCategorySizeHistoryAggCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: SubCategorySizeHistoryAggAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: SubCategorySizeHistoryAggSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: SubCategorySizeHistoryAggMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: SubCategorySizeHistoryAggMaxAggregateInputType
+  }
+
+  export type GetSubCategorySizeHistoryAggAggregateType<T extends SubCategorySizeHistoryAggAggregateArgs> = {
+        [P in keyof T & keyof AggregateSubCategorySizeHistoryAgg]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateSubCategorySizeHistoryAgg[P]>
+      : GetScalarType<T[P], AggregateSubCategorySizeHistoryAgg[P]>
+  }
+
+
+
+
+  export type SubCategorySizeHistoryAggGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SubCategorySizeHistoryAggWhereInput
+    orderBy?: SubCategorySizeHistoryAggOrderByWithAggregationInput | SubCategorySizeHistoryAggOrderByWithAggregationInput[]
+    by: SubCategorySizeHistoryAggScalarFieldEnum[] | SubCategorySizeHistoryAggScalarFieldEnum
+    having?: SubCategorySizeHistoryAggScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: SubCategorySizeHistoryAggCountAggregateInputType | true
+    _avg?: SubCategorySizeHistoryAggAvgAggregateInputType
+    _sum?: SubCategorySizeHistoryAggSumAggregateInputType
+    _min?: SubCategorySizeHistoryAggMinAggregateInputType
+    _max?: SubCategorySizeHistoryAggMaxAggregateInputType
+  }
+
+  export type SubCategorySizeHistoryAggGroupByOutputType = {
+    id: bigint
+    store_id: bigint
+    brand_id: bigint
+    gender_id: bigint
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number
+    season_id: bigint
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal
+    sales_amt: Decimal
+    st: Decimal | null
+    _count: SubCategorySizeHistoryAggCountAggregateOutputType | null
+    _avg: SubCategorySizeHistoryAggAvgAggregateOutputType | null
+    _sum: SubCategorySizeHistoryAggSumAggregateOutputType | null
+    _min: SubCategorySizeHistoryAggMinAggregateOutputType | null
+    _max: SubCategorySizeHistoryAggMaxAggregateOutputType | null
+  }
+
+  type GetSubCategorySizeHistoryAggGroupByPayload<T extends SubCategorySizeHistoryAggGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<SubCategorySizeHistoryAggGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof SubCategorySizeHistoryAggGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], SubCategorySizeHistoryAggGroupByOutputType[P]>
+            : GetScalarType<T[P], SubCategorySizeHistoryAggGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type SubCategorySizeHistoryAggSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    product_size?: boolean
+    buy?: boolean
+    sales_amt?: boolean
+    st?: boolean
+    store_ref?: boolean | StoreDefaultArgs<ExtArgs>
+    brand_ref?: boolean | BrandDefaultArgs<ExtArgs>
+    gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
+    category?: boolean | SubCategorySizeHistoryAgg$categoryArgs<ExtArgs>
+    sub_category?: boolean | SubCategorySizeHistoryAgg$sub_categoryArgs<ExtArgs>
+    season?: boolean | SeasonDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["subCategorySizeHistoryAgg"]>
+
+
+  export type SubCategorySizeHistoryAggSelectScalar = {
+    id?: boolean
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    product_size?: boolean
+    buy?: boolean
+    sales_amt?: boolean
+    st?: boolean
+  }
+
+  export type SubCategorySizeHistoryAggInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    store_ref?: boolean | StoreDefaultArgs<ExtArgs>
+    brand_ref?: boolean | BrandDefaultArgs<ExtArgs>
+    gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
+    category?: boolean | SubCategorySizeHistoryAgg$categoryArgs<ExtArgs>
+    sub_category?: boolean | SubCategorySizeHistoryAgg$sub_categoryArgs<ExtArgs>
+    season?: boolean | SeasonDefaultArgs<ExtArgs>
+  }
+
+  export type $SubCategorySizeHistoryAggPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SubCategorySizeHistoryAgg"
+    objects: {
+      store_ref: Prisma.$StorePayload<ExtArgs>
+      brand_ref: Prisma.$BrandPayload<ExtArgs>
+      gender_ref: Prisma.$GenderPayload<ExtArgs>
+      category: Prisma.$CategoryPayload<ExtArgs> | null
+      sub_category: Prisma.$SubCategoryPayload<ExtArgs> | null
+      season: Prisma.$SeasonPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: bigint
+      store_id: bigint
+      brand_id: bigint
+      gender_id: bigint
+      category_id: bigint | null
+      sub_category_id: bigint | null
+      year: number
+      season_id: bigint
+      mall: string | null
+      group_brand: string | null
+      brand_name: string | null
+      cat_vendor: string | null
+      prod_line_vendor: string | null
+      gender: string | null
+      product_size: string | null
+      buy: Prisma.Decimal
+      sales_amt: Prisma.Decimal
+      st: Prisma.Decimal | null
+    }, ExtArgs["result"]["subCategorySizeHistoryAgg"]>
+    composites: {}
+  }
+
+  type SubCategorySizeHistoryAggGetPayload<S extends boolean | null | undefined | SubCategorySizeHistoryAggDefaultArgs> = $Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload, S>
+
+  type SubCategorySizeHistoryAggCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SubCategorySizeHistoryAggFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SubCategorySizeHistoryAggCountAggregateInputType | true
+    }
+
+  export interface SubCategorySizeHistoryAggDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SubCategorySizeHistoryAgg'], meta: { name: 'SubCategorySizeHistoryAgg' } }
+    /**
+     * Find zero or one SubCategorySizeHistoryAgg that matches the filter.
+     * @param {SubCategorySizeHistoryAggFindUniqueArgs} args - Arguments to find a SubCategorySizeHistoryAgg
+     * @example
+     * // Get one SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends SubCategorySizeHistoryAggFindUniqueArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggFindUniqueArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+
+    /**
+     * Find one SubCategorySizeHistoryAgg that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {SubCategorySizeHistoryAggFindUniqueOrThrowArgs} args - Arguments to find a SubCategorySizeHistoryAgg
+     * @example
+     * // Get one SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends SubCategorySizeHistoryAggFindUniqueOrThrowArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+
+    /**
+     * Find the first SubCategorySizeHistoryAgg that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggFindFirstArgs} args - Arguments to find a SubCategorySizeHistoryAgg
+     * @example
+     * // Get one SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends SubCategorySizeHistoryAggFindFirstArgs>(args?: SelectSubset<T, SubCategorySizeHistoryAggFindFirstArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+
+    /**
+     * Find the first SubCategorySizeHistoryAgg that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggFindFirstOrThrowArgs} args - Arguments to find a SubCategorySizeHistoryAgg
+     * @example
+     * // Get one SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends SubCategorySizeHistoryAggFindFirstOrThrowArgs>(args?: SelectSubset<T, SubCategorySizeHistoryAggFindFirstOrThrowArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+
+    /**
+     * Find zero or more SubCategorySizeHistoryAggs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all SubCategorySizeHistoryAggs
+     * const subCategorySizeHistoryAggs = await prisma.subCategorySizeHistoryAgg.findMany()
+     * 
+     * // Get first 10 SubCategorySizeHistoryAggs
+     * const subCategorySizeHistoryAggs = await prisma.subCategorySizeHistoryAgg.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const subCategorySizeHistoryAggWithIdOnly = await prisma.subCategorySizeHistoryAgg.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends SubCategorySizeHistoryAggFindManyArgs>(args?: SelectSubset<T, SubCategorySizeHistoryAggFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "findMany">>
+
+    /**
+     * Create a SubCategorySizeHistoryAgg.
+     * @param {SubCategorySizeHistoryAggCreateArgs} args - Arguments to create a SubCategorySizeHistoryAgg.
+     * @example
+     * // Create one SubCategorySizeHistoryAgg
+     * const SubCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.create({
+     *   data: {
+     *     // ... data to create a SubCategorySizeHistoryAgg
+     *   }
+     * })
+     * 
+     */
+    create<T extends SubCategorySizeHistoryAggCreateArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggCreateArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "create">, never, ExtArgs>
+
+    /**
+     * Create many SubCategorySizeHistoryAggs.
+     * @param {SubCategorySizeHistoryAggCreateManyArgs} args - Arguments to create many SubCategorySizeHistoryAggs.
+     * @example
+     * // Create many SubCategorySizeHistoryAggs
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends SubCategorySizeHistoryAggCreateManyArgs>(args?: SelectSubset<T, SubCategorySizeHistoryAggCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a SubCategorySizeHistoryAgg.
+     * @param {SubCategorySizeHistoryAggDeleteArgs} args - Arguments to delete one SubCategorySizeHistoryAgg.
+     * @example
+     * // Delete one SubCategorySizeHistoryAgg
+     * const SubCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.delete({
+     *   where: {
+     *     // ... filter to delete one SubCategorySizeHistoryAgg
+     *   }
+     * })
+     * 
+     */
+    delete<T extends SubCategorySizeHistoryAggDeleteArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggDeleteArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+
+    /**
+     * Update one SubCategorySizeHistoryAgg.
+     * @param {SubCategorySizeHistoryAggUpdateArgs} args - Arguments to update one SubCategorySizeHistoryAgg.
+     * @example
+     * // Update one SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends SubCategorySizeHistoryAggUpdateArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggUpdateArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "update">, never, ExtArgs>
+
+    /**
+     * Delete zero or more SubCategorySizeHistoryAggs.
+     * @param {SubCategorySizeHistoryAggDeleteManyArgs} args - Arguments to filter SubCategorySizeHistoryAggs to delete.
+     * @example
+     * // Delete a few SubCategorySizeHistoryAggs
+     * const { count } = await prisma.subCategorySizeHistoryAgg.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends SubCategorySizeHistoryAggDeleteManyArgs>(args?: SelectSubset<T, SubCategorySizeHistoryAggDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more SubCategorySizeHistoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many SubCategorySizeHistoryAggs
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends SubCategorySizeHistoryAggUpdateManyArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one SubCategorySizeHistoryAgg.
+     * @param {SubCategorySizeHistoryAggUpsertArgs} args - Arguments to update or create a SubCategorySizeHistoryAgg.
+     * @example
+     * // Update or create a SubCategorySizeHistoryAgg
+     * const subCategorySizeHistoryAgg = await prisma.subCategorySizeHistoryAgg.upsert({
+     *   create: {
+     *     // ... data to create a SubCategorySizeHistoryAgg
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the SubCategorySizeHistoryAgg we want to update
+     *   }
+     * })
+     */
+    upsert<T extends SubCategorySizeHistoryAggUpsertArgs>(args: SelectSubset<T, SubCategorySizeHistoryAggUpsertArgs<ExtArgs>>): Prisma__SubCategorySizeHistoryAggClient<$Result.GetResult<Prisma.$SubCategorySizeHistoryAggPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+
+
+    /**
+     * Count the number of SubCategorySizeHistoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggCountArgs} args - Arguments to filter SubCategorySizeHistoryAggs to count.
+     * @example
+     * // Count the number of SubCategorySizeHistoryAggs
+     * const count = await prisma.subCategorySizeHistoryAgg.count({
+     *   where: {
+     *     // ... the filter for the SubCategorySizeHistoryAggs we want to count
+     *   }
+     * })
+    **/
+    count<T extends SubCategorySizeHistoryAggCountArgs>(
+      args?: Subset<T, SubCategorySizeHistoryAggCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], SubCategorySizeHistoryAggCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a SubCategorySizeHistoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends SubCategorySizeHistoryAggAggregateArgs>(args: Subset<T, SubCategorySizeHistoryAggAggregateArgs>): Prisma.PrismaPromise<GetSubCategorySizeHistoryAggAggregateType<T>>
+
+    /**
+     * Group by SubCategorySizeHistoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SubCategorySizeHistoryAggGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends SubCategorySizeHistoryAggGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: SubCategorySizeHistoryAggGroupByArgs['orderBy'] }
+        : { orderBy?: SubCategorySizeHistoryAggGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, SubCategorySizeHistoryAggGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSubCategorySizeHistoryAggGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the SubCategorySizeHistoryAgg model
+   */
+  readonly fields: SubCategorySizeHistoryAggFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for SubCategorySizeHistoryAgg.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__SubCategorySizeHistoryAggClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    store_ref<T extends StoreDefaultArgs<ExtArgs> = {}>(args?: Subset<T, StoreDefaultArgs<ExtArgs>>): Prisma__StoreClient<$Result.GetResult<Prisma.$StorePayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    brand_ref<T extends BrandDefaultArgs<ExtArgs> = {}>(args?: Subset<T, BrandDefaultArgs<ExtArgs>>): Prisma__BrandClient<$Result.GetResult<Prisma.$BrandPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    gender_ref<T extends GenderDefaultArgs<ExtArgs> = {}>(args?: Subset<T, GenderDefaultArgs<ExtArgs>>): Prisma__GenderClient<$Result.GetResult<Prisma.$GenderPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    category<T extends SubCategorySizeHistoryAgg$categoryArgs<ExtArgs> = {}>(args?: Subset<T, SubCategorySizeHistoryAgg$categoryArgs<ExtArgs>>): Prisma__CategoryClient<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    sub_category<T extends SubCategorySizeHistoryAgg$sub_categoryArgs<ExtArgs> = {}>(args?: Subset<T, SubCategorySizeHistoryAgg$sub_categoryArgs<ExtArgs>>): Prisma__SubCategoryClient<$Result.GetResult<Prisma.$SubCategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    season<T extends SeasonDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SeasonDefaultArgs<ExtArgs>>): Prisma__SeasonClient<$Result.GetResult<Prisma.$SeasonPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the SubCategorySizeHistoryAgg model
+   */ 
+  interface SubCategorySizeHistoryAggFieldRefs {
+    readonly id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly store_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly brand_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly gender_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly category_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly sub_category_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly year: FieldRef<"SubCategorySizeHistoryAgg", 'Int'>
+    readonly season_id: FieldRef<"SubCategorySizeHistoryAgg", 'BigInt'>
+    readonly mall: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly group_brand: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly brand_name: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly cat_vendor: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly prod_line_vendor: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly gender: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly product_size: FieldRef<"SubCategorySizeHistoryAgg", 'String'>
+    readonly buy: FieldRef<"SubCategorySizeHistoryAgg", 'Decimal'>
+    readonly sales_amt: FieldRef<"SubCategorySizeHistoryAgg", 'Decimal'>
+    readonly st: FieldRef<"SubCategorySizeHistoryAgg", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * SubCategorySizeHistoryAgg findUnique
+   */
+  export type SubCategorySizeHistoryAggFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SubCategorySizeHistoryAgg to fetch.
+     */
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg findUniqueOrThrow
+   */
+  export type SubCategorySizeHistoryAggFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SubCategorySizeHistoryAgg to fetch.
+     */
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg findFirst
+   */
+  export type SubCategorySizeHistoryAggFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SubCategorySizeHistoryAgg to fetch.
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SubCategorySizeHistoryAggs to fetch.
+     */
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SubCategorySizeHistoryAggs.
+     */
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SubCategorySizeHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SubCategorySizeHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SubCategorySizeHistoryAggs.
+     */
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg findFirstOrThrow
+   */
+  export type SubCategorySizeHistoryAggFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SubCategorySizeHistoryAgg to fetch.
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SubCategorySizeHistoryAggs to fetch.
+     */
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SubCategorySizeHistoryAggs.
+     */
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SubCategorySizeHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SubCategorySizeHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SubCategorySizeHistoryAggs.
+     */
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg findMany
+   */
+  export type SubCategorySizeHistoryAggFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SubCategorySizeHistoryAggs to fetch.
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SubCategorySizeHistoryAggs to fetch.
+     */
+    orderBy?: SubCategorySizeHistoryAggOrderByWithRelationInput | SubCategorySizeHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing SubCategorySizeHistoryAggs.
+     */
+    cursor?: SubCategorySizeHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SubCategorySizeHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SubCategorySizeHistoryAggs.
+     */
+    skip?: number
+    distinct?: SubCategorySizeHistoryAggScalarFieldEnum | SubCategorySizeHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg create
+   */
+  export type SubCategorySizeHistoryAggCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * The data needed to create a SubCategorySizeHistoryAgg.
+     */
+    data: XOR<SubCategorySizeHistoryAggCreateInput, SubCategorySizeHistoryAggUncheckedCreateInput>
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg createMany
+   */
+  export type SubCategorySizeHistoryAggCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many SubCategorySizeHistoryAggs.
+     */
+    data: SubCategorySizeHistoryAggCreateManyInput | SubCategorySizeHistoryAggCreateManyInput[]
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg update
+   */
+  export type SubCategorySizeHistoryAggUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * The data needed to update a SubCategorySizeHistoryAgg.
+     */
+    data: XOR<SubCategorySizeHistoryAggUpdateInput, SubCategorySizeHistoryAggUncheckedUpdateInput>
+    /**
+     * Choose, which SubCategorySizeHistoryAgg to update.
+     */
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg updateMany
+   */
+  export type SubCategorySizeHistoryAggUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update SubCategorySizeHistoryAggs.
+     */
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyInput>
+    /**
+     * Filter which SubCategorySizeHistoryAggs to update
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg upsert
+   */
+  export type SubCategorySizeHistoryAggUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * The filter to search for the SubCategorySizeHistoryAgg to update in case it exists.
+     */
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    /**
+     * In case the SubCategorySizeHistoryAgg found by the `where` argument doesn't exist, create a new SubCategorySizeHistoryAgg with this data.
+     */
+    create: XOR<SubCategorySizeHistoryAggCreateInput, SubCategorySizeHistoryAggUncheckedCreateInput>
+    /**
+     * In case the SubCategorySizeHistoryAgg was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<SubCategorySizeHistoryAggUpdateInput, SubCategorySizeHistoryAggUncheckedUpdateInput>
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg delete
+   */
+  export type SubCategorySizeHistoryAggDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter which SubCategorySizeHistoryAgg to delete.
+     */
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg deleteMany
+   */
+  export type SubCategorySizeHistoryAggDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SubCategorySizeHistoryAggs to delete
+     */
+    where?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg.category
+   */
+  export type SubCategorySizeHistoryAgg$categoryArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Category
+     */
+    select?: CategorySelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: CategoryInclude<ExtArgs> | null
+    where?: CategoryWhereInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg.sub_category
+   */
+  export type SubCategorySizeHistoryAgg$sub_categoryArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategory
+     */
+    select?: SubCategorySelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategoryInclude<ExtArgs> | null
+    where?: SubCategoryWhereInput
+  }
+
+  /**
+   * SubCategorySizeHistoryAgg without action
+   */
+  export type SubCategorySizeHistoryAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategorySizeHistoryAgg
+     */
+    select?: SubCategorySizeHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategorySizeHistoryAggInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model SalesHistoryAgg
+   */
+
+  export type AggregateSalesHistoryAgg = {
+    _count: SalesHistoryAggCountAggregateOutputType | null
+    _avg: SalesHistoryAggAvgAggregateOutputType | null
+    _sum: SalesHistoryAggSumAggregateOutputType | null
+    _min: SalesHistoryAggMinAggregateOutputType | null
+    _max: SalesHistoryAggMaxAggregateOutputType | null
+  }
+
+  export type SalesHistoryAggAvgAggregateOutputType = {
+    id: number | null
+    store_id: number | null
+    brand_id: number | null
+    gender_id: number | null
+    category_id: number | null
+    sub_category_id: number | null
+    year: number | null
+    season_id: number | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SalesHistoryAggSumAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SalesHistoryAggMinAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SalesHistoryAggMaxAggregateOutputType = {
+    id: bigint | null
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal | null
+    sales_amt: Decimal | null
+    st: Decimal | null
+  }
+
+  export type SalesHistoryAggCountAggregateOutputType = {
+    id: number
+    store_id: number
+    brand_id: number
+    gender_id: number
+    category_id: number
+    sub_category_id: number
+    year: number
+    season_id: number
+    mall: number
+    group_brand: number
+    brand_name: number
+    cat_vendor: number
+    prod_line_vendor: number
+    gender: number
+    product_size: number
+    buy: number
+    sales_amt: number
+    st: number
+    _all: number
+  }
+
+
+  export type SalesHistoryAggAvgAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SalesHistoryAggSumAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SalesHistoryAggMinAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SalesHistoryAggMaxAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+  }
+
+  export type SalesHistoryAggCountAggregateInputType = {
+    id?: true
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    product_size?: true
+    buy?: true
+    sales_amt?: true
+    st?: true
+    _all?: true
+  }
+
+  export type SalesHistoryAggAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SalesHistoryAgg to aggregate.
+     */
+    where?: SalesHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SalesHistoryAggs to fetch.
+     */
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: SalesHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SalesHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SalesHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned SalesHistoryAggs
+    **/
+    _count?: true | SalesHistoryAggCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: SalesHistoryAggAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: SalesHistoryAggSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: SalesHistoryAggMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: SalesHistoryAggMaxAggregateInputType
+  }
+
+  export type GetSalesHistoryAggAggregateType<T extends SalesHistoryAggAggregateArgs> = {
+        [P in keyof T & keyof AggregateSalesHistoryAgg]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateSalesHistoryAgg[P]>
+      : GetScalarType<T[P], AggregateSalesHistoryAgg[P]>
+  }
+
+
+
+
+  export type SalesHistoryAggGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithAggregationInput | SalesHistoryAggOrderByWithAggregationInput[]
+    by: SalesHistoryAggScalarFieldEnum[] | SalesHistoryAggScalarFieldEnum
+    having?: SalesHistoryAggScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: SalesHistoryAggCountAggregateInputType | true
+    _avg?: SalesHistoryAggAvgAggregateInputType
+    _sum?: SalesHistoryAggSumAggregateInputType
+    _min?: SalesHistoryAggMinAggregateInputType
+    _max?: SalesHistoryAggMaxAggregateInputType
+  }
+
+  export type SalesHistoryAggGroupByOutputType = {
+    id: bigint
+    store_id: bigint
+    brand_id: bigint
+    gender_id: bigint
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number
+    season_id: bigint
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    product_size: string | null
+    buy: Decimal
+    sales_amt: Decimal
+    st: Decimal | null
+    _count: SalesHistoryAggCountAggregateOutputType | null
+    _avg: SalesHistoryAggAvgAggregateOutputType | null
+    _sum: SalesHistoryAggSumAggregateOutputType | null
+    _min: SalesHistoryAggMinAggregateOutputType | null
+    _max: SalesHistoryAggMaxAggregateOutputType | null
+  }
+
+  type GetSalesHistoryAggGroupByPayload<T extends SalesHistoryAggGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<SalesHistoryAggGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof SalesHistoryAggGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], SalesHistoryAggGroupByOutputType[P]>
+            : GetScalarType<T[P], SalesHistoryAggGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type SalesHistoryAggSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    product_size?: boolean
+    buy?: boolean
+    sales_amt?: boolean
+    st?: boolean
+    store_ref?: boolean | StoreDefaultArgs<ExtArgs>
+    brand_ref?: boolean | BrandDefaultArgs<ExtArgs>
+    gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
+    category?: boolean | SalesHistoryAgg$categoryArgs<ExtArgs>
+    sub_category?: boolean | SalesHistoryAgg$sub_categoryArgs<ExtArgs>
+    season?: boolean | SeasonDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["salesHistoryAgg"]>
+
+
+  export type SalesHistoryAggSelectScalar = {
+    id?: boolean
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    product_size?: boolean
+    buy?: boolean
+    sales_amt?: boolean
+    st?: boolean
+  }
+
+  export type SalesHistoryAggInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    store_ref?: boolean | StoreDefaultArgs<ExtArgs>
+    brand_ref?: boolean | BrandDefaultArgs<ExtArgs>
+    gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
+    category?: boolean | SalesHistoryAgg$categoryArgs<ExtArgs>
+    sub_category?: boolean | SalesHistoryAgg$sub_categoryArgs<ExtArgs>
+    season?: boolean | SeasonDefaultArgs<ExtArgs>
+  }
+
+  export type $SalesHistoryAggPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SalesHistoryAgg"
+    objects: {
+      store_ref: Prisma.$StorePayload<ExtArgs>
+      brand_ref: Prisma.$BrandPayload<ExtArgs>
+      gender_ref: Prisma.$GenderPayload<ExtArgs>
+      category: Prisma.$CategoryPayload<ExtArgs> | null
+      sub_category: Prisma.$SubCategoryPayload<ExtArgs> | null
+      season: Prisma.$SeasonPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: bigint
+      store_id: bigint
+      brand_id: bigint
+      gender_id: bigint
+      category_id: bigint | null
+      sub_category_id: bigint | null
+      year: number
+      season_id: bigint
+      mall: string | null
+      group_brand: string | null
+      brand_name: string | null
+      cat_vendor: string | null
+      prod_line_vendor: string | null
+      gender: string | null
+      product_size: string | null
+      buy: Prisma.Decimal
+      sales_amt: Prisma.Decimal
+      st: Prisma.Decimal | null
+    }, ExtArgs["result"]["salesHistoryAgg"]>
+    composites: {}
+  }
+
+  type SalesHistoryAggGetPayload<S extends boolean | null | undefined | SalesHistoryAggDefaultArgs> = $Result.GetResult<Prisma.$SalesHistoryAggPayload, S>
+
+  type SalesHistoryAggCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SalesHistoryAggFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SalesHistoryAggCountAggregateInputType | true
+    }
+
+  export interface SalesHistoryAggDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SalesHistoryAgg'], meta: { name: 'SalesHistoryAgg' } }
+    /**
+     * Find zero or one SalesHistoryAgg that matches the filter.
+     * @param {SalesHistoryAggFindUniqueArgs} args - Arguments to find a SalesHistoryAgg
+     * @example
+     * // Get one SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends SalesHistoryAggFindUniqueArgs>(args: SelectSubset<T, SalesHistoryAggFindUniqueArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+
+    /**
+     * Find one SalesHistoryAgg that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {SalesHistoryAggFindUniqueOrThrowArgs} args - Arguments to find a SalesHistoryAgg
+     * @example
+     * // Get one SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends SalesHistoryAggFindUniqueOrThrowArgs>(args: SelectSubset<T, SalesHistoryAggFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+
+    /**
+     * Find the first SalesHistoryAgg that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggFindFirstArgs} args - Arguments to find a SalesHistoryAgg
+     * @example
+     * // Get one SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends SalesHistoryAggFindFirstArgs>(args?: SelectSubset<T, SalesHistoryAggFindFirstArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+
+    /**
+     * Find the first SalesHistoryAgg that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggFindFirstOrThrowArgs} args - Arguments to find a SalesHistoryAgg
+     * @example
+     * // Get one SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends SalesHistoryAggFindFirstOrThrowArgs>(args?: SelectSubset<T, SalesHistoryAggFindFirstOrThrowArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+
+    /**
+     * Find zero or more SalesHistoryAggs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all SalesHistoryAggs
+     * const salesHistoryAggs = await prisma.salesHistoryAgg.findMany()
+     * 
+     * // Get first 10 SalesHistoryAggs
+     * const salesHistoryAggs = await prisma.salesHistoryAgg.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const salesHistoryAggWithIdOnly = await prisma.salesHistoryAgg.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends SalesHistoryAggFindManyArgs>(args?: SelectSubset<T, SalesHistoryAggFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany">>
+
+    /**
+     * Create a SalesHistoryAgg.
+     * @param {SalesHistoryAggCreateArgs} args - Arguments to create a SalesHistoryAgg.
+     * @example
+     * // Create one SalesHistoryAgg
+     * const SalesHistoryAgg = await prisma.salesHistoryAgg.create({
+     *   data: {
+     *     // ... data to create a SalesHistoryAgg
+     *   }
+     * })
+     * 
+     */
+    create<T extends SalesHistoryAggCreateArgs>(args: SelectSubset<T, SalesHistoryAggCreateArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "create">, never, ExtArgs>
+
+    /**
+     * Create many SalesHistoryAggs.
+     * @param {SalesHistoryAggCreateManyArgs} args - Arguments to create many SalesHistoryAggs.
+     * @example
+     * // Create many SalesHistoryAggs
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends SalesHistoryAggCreateManyArgs>(args?: SelectSubset<T, SalesHistoryAggCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a SalesHistoryAgg.
+     * @param {SalesHistoryAggDeleteArgs} args - Arguments to delete one SalesHistoryAgg.
+     * @example
+     * // Delete one SalesHistoryAgg
+     * const SalesHistoryAgg = await prisma.salesHistoryAgg.delete({
+     *   where: {
+     *     // ... filter to delete one SalesHistoryAgg
+     *   }
+     * })
+     * 
+     */
+    delete<T extends SalesHistoryAggDeleteArgs>(args: SelectSubset<T, SalesHistoryAggDeleteArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+
+    /**
+     * Update one SalesHistoryAgg.
+     * @param {SalesHistoryAggUpdateArgs} args - Arguments to update one SalesHistoryAgg.
+     * @example
+     * // Update one SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends SalesHistoryAggUpdateArgs>(args: SelectSubset<T, SalesHistoryAggUpdateArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "update">, never, ExtArgs>
+
+    /**
+     * Delete zero or more SalesHistoryAggs.
+     * @param {SalesHistoryAggDeleteManyArgs} args - Arguments to filter SalesHistoryAggs to delete.
+     * @example
+     * // Delete a few SalesHistoryAggs
+     * const { count } = await prisma.salesHistoryAgg.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends SalesHistoryAggDeleteManyArgs>(args?: SelectSubset<T, SalesHistoryAggDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more SalesHistoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many SalesHistoryAggs
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends SalesHistoryAggUpdateManyArgs>(args: SelectSubset<T, SalesHistoryAggUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one SalesHistoryAgg.
+     * @param {SalesHistoryAggUpsertArgs} args - Arguments to update or create a SalesHistoryAgg.
+     * @example
+     * // Update or create a SalesHistoryAgg
+     * const salesHistoryAgg = await prisma.salesHistoryAgg.upsert({
+     *   create: {
+     *     // ... data to create a SalesHistoryAgg
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the SalesHistoryAgg we want to update
+     *   }
+     * })
+     */
+    upsert<T extends SalesHistoryAggUpsertArgs>(args: SelectSubset<T, SalesHistoryAggUpsertArgs<ExtArgs>>): Prisma__SalesHistoryAggClient<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+
+
+    /**
+     * Count the number of SalesHistoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggCountArgs} args - Arguments to filter SalesHistoryAggs to count.
+     * @example
+     * // Count the number of SalesHistoryAggs
+     * const count = await prisma.salesHistoryAgg.count({
+     *   where: {
+     *     // ... the filter for the SalesHistoryAggs we want to count
+     *   }
+     * })
+    **/
+    count<T extends SalesHistoryAggCountArgs>(
+      args?: Subset<T, SalesHistoryAggCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], SalesHistoryAggCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a SalesHistoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends SalesHistoryAggAggregateArgs>(args: Subset<T, SalesHistoryAggAggregateArgs>): Prisma.PrismaPromise<GetSalesHistoryAggAggregateType<T>>
+
+    /**
+     * Group by SalesHistoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SalesHistoryAggGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends SalesHistoryAggGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: SalesHistoryAggGroupByArgs['orderBy'] }
+        : { orderBy?: SalesHistoryAggGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, SalesHistoryAggGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSalesHistoryAggGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the SalesHistoryAgg model
+   */
+  readonly fields: SalesHistoryAggFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for SalesHistoryAgg.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__SalesHistoryAggClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    store_ref<T extends StoreDefaultArgs<ExtArgs> = {}>(args?: Subset<T, StoreDefaultArgs<ExtArgs>>): Prisma__StoreClient<$Result.GetResult<Prisma.$StorePayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    brand_ref<T extends BrandDefaultArgs<ExtArgs> = {}>(args?: Subset<T, BrandDefaultArgs<ExtArgs>>): Prisma__BrandClient<$Result.GetResult<Prisma.$BrandPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    gender_ref<T extends GenderDefaultArgs<ExtArgs> = {}>(args?: Subset<T, GenderDefaultArgs<ExtArgs>>): Prisma__GenderClient<$Result.GetResult<Prisma.$GenderPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    category<T extends SalesHistoryAgg$categoryArgs<ExtArgs> = {}>(args?: Subset<T, SalesHistoryAgg$categoryArgs<ExtArgs>>): Prisma__CategoryClient<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    sub_category<T extends SalesHistoryAgg$sub_categoryArgs<ExtArgs> = {}>(args?: Subset<T, SalesHistoryAgg$sub_categoryArgs<ExtArgs>>): Prisma__SubCategoryClient<$Result.GetResult<Prisma.$SubCategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    season<T extends SeasonDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SeasonDefaultArgs<ExtArgs>>): Prisma__SeasonClient<$Result.GetResult<Prisma.$SeasonPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the SalesHistoryAgg model
+   */ 
+  interface SalesHistoryAggFieldRefs {
+    readonly id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly store_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly brand_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly gender_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly category_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly sub_category_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly year: FieldRef<"SalesHistoryAgg", 'Int'>
+    readonly season_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly mall: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly group_brand: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly brand_name: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly cat_vendor: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly prod_line_vendor: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly gender: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly product_size: FieldRef<"SalesHistoryAgg", 'String'>
+    readonly buy: FieldRef<"SalesHistoryAgg", 'Decimal'>
+    readonly sales_amt: FieldRef<"SalesHistoryAgg", 'Decimal'>
+    readonly st: FieldRef<"SalesHistoryAgg", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * SalesHistoryAgg findUnique
+   */
+  export type SalesHistoryAggFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SalesHistoryAgg to fetch.
+     */
+    where: SalesHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SalesHistoryAgg findUniqueOrThrow
+   */
+  export type SalesHistoryAggFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SalesHistoryAgg to fetch.
+     */
+    where: SalesHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SalesHistoryAgg findFirst
+   */
+  export type SalesHistoryAggFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SalesHistoryAgg to fetch.
+     */
+    where?: SalesHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SalesHistoryAggs to fetch.
+     */
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SalesHistoryAggs.
+     */
+    cursor?: SalesHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SalesHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SalesHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SalesHistoryAggs.
+     */
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SalesHistoryAgg findFirstOrThrow
+   */
+  export type SalesHistoryAggFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SalesHistoryAgg to fetch.
+     */
+    where?: SalesHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SalesHistoryAggs to fetch.
+     */
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SalesHistoryAggs.
+     */
+    cursor?: SalesHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SalesHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SalesHistoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SalesHistoryAggs.
+     */
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SalesHistoryAgg findMany
+   */
+  export type SalesHistoryAggFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter, which SalesHistoryAggs to fetch.
+     */
+    where?: SalesHistoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SalesHistoryAggs to fetch.
+     */
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing SalesHistoryAggs.
+     */
+    cursor?: SalesHistoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SalesHistoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SalesHistoryAggs.
+     */
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SalesHistoryAgg create
+   */
+  export type SalesHistoryAggCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * The data needed to create a SalesHistoryAgg.
+     */
+    data: XOR<SalesHistoryAggCreateInput, SalesHistoryAggUncheckedCreateInput>
+  }
+
+  /**
+   * SalesHistoryAgg createMany
+   */
+  export type SalesHistoryAggCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many SalesHistoryAggs.
+     */
+    data: SalesHistoryAggCreateManyInput | SalesHistoryAggCreateManyInput[]
+  }
+
+  /**
+   * SalesHistoryAgg update
+   */
+  export type SalesHistoryAggUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * The data needed to update a SalesHistoryAgg.
+     */
+    data: XOR<SalesHistoryAggUpdateInput, SalesHistoryAggUncheckedUpdateInput>
+    /**
+     * Choose, which SalesHistoryAgg to update.
+     */
+    where: SalesHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SalesHistoryAgg updateMany
+   */
+  export type SalesHistoryAggUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update SalesHistoryAggs.
+     */
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyInput>
+    /**
+     * Filter which SalesHistoryAggs to update
+     */
+    where?: SalesHistoryAggWhereInput
+  }
+
+  /**
+   * SalesHistoryAgg upsert
+   */
+  export type SalesHistoryAggUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * The filter to search for the SalesHistoryAgg to update in case it exists.
+     */
+    where: SalesHistoryAggWhereUniqueInput
+    /**
+     * In case the SalesHistoryAgg found by the `where` argument doesn't exist, create a new SalesHistoryAgg with this data.
+     */
+    create: XOR<SalesHistoryAggCreateInput, SalesHistoryAggUncheckedCreateInput>
+    /**
+     * In case the SalesHistoryAgg was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<SalesHistoryAggUpdateInput, SalesHistoryAggUncheckedUpdateInput>
+  }
+
+  /**
+   * SalesHistoryAgg delete
+   */
+  export type SalesHistoryAggDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    /**
+     * Filter which SalesHistoryAgg to delete.
+     */
+    where: SalesHistoryAggWhereUniqueInput
+  }
+
+  /**
+   * SalesHistoryAgg deleteMany
+   */
+  export type SalesHistoryAggDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SalesHistoryAggs to delete
+     */
+    where?: SalesHistoryAggWhereInput
+  }
+
+  /**
+   * SalesHistoryAgg.category
+   */
+  export type SalesHistoryAgg$categoryArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Category
+     */
+    select?: CategorySelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: CategoryInclude<ExtArgs> | null
+    where?: CategoryWhereInput
+  }
+
+  /**
+   * SalesHistoryAgg.sub_category
+   */
+  export type SalesHistoryAgg$sub_categoryArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SubCategory
+     */
+    select?: SubCategorySelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SubCategoryInclude<ExtArgs> | null
+    where?: SubCategoryWhereInput
+  }
+
+  /**
+   * SalesHistoryAgg without action
+   */
+  export type SalesHistoryAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+  }
+
+
+  /**
    * Model ApprovalStatus
    */
 
@@ -35226,6 +38076,54 @@ export namespace Prisma {
   export type ProposalSizingScalarFieldEnum = (typeof ProposalSizingScalarFieldEnum)[keyof typeof ProposalSizingScalarFieldEnum]
 
 
+  export const SubCategorySizeHistoryAggScalarFieldEnum: {
+    id: 'id',
+    store_id: 'store_id',
+    brand_id: 'brand_id',
+    gender_id: 'gender_id',
+    category_id: 'category_id',
+    sub_category_id: 'sub_category_id',
+    year: 'year',
+    season_id: 'season_id',
+    mall: 'mall',
+    group_brand: 'group_brand',
+    brand_name: 'brand_name',
+    cat_vendor: 'cat_vendor',
+    prod_line_vendor: 'prod_line_vendor',
+    gender: 'gender',
+    product_size: 'product_size',
+    buy: 'buy',
+    sales_amt: 'sales_amt',
+    st: 'st'
+  };
+
+  export type SubCategorySizeHistoryAggScalarFieldEnum = (typeof SubCategorySizeHistoryAggScalarFieldEnum)[keyof typeof SubCategorySizeHistoryAggScalarFieldEnum]
+
+
+  export const SalesHistoryAggScalarFieldEnum: {
+    id: 'id',
+    store_id: 'store_id',
+    brand_id: 'brand_id',
+    gender_id: 'gender_id',
+    category_id: 'category_id',
+    sub_category_id: 'sub_category_id',
+    year: 'year',
+    season_id: 'season_id',
+    mall: 'mall',
+    group_brand: 'group_brand',
+    brand_name: 'brand_name',
+    cat_vendor: 'cat_vendor',
+    prod_line_vendor: 'prod_line_vendor',
+    gender: 'gender',
+    product_size: 'product_size',
+    buy: 'buy',
+    sales_amt: 'sales_amt',
+    st: 'st'
+  };
+
+  export type SalesHistoryAggScalarFieldEnum = (typeof SalesHistoryAggScalarFieldEnum)[keyof typeof SalesHistoryAggScalarFieldEnum]
+
+
   export const ApprovalStatusScalarFieldEnum: {
     id: 'id',
     name: 'name',
@@ -35642,6 +38540,8 @@ export namespace Prisma {
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     categories?: CategoryListRelationFilter
     allocate_headers?: AllocateHeaderListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type BrandOrderByWithRelationInput = {
@@ -35657,6 +38557,8 @@ export namespace Prisma {
     group_brand?: GroupBrandOrderByWithRelationInput
     categories?: CategoryOrderByRelationAggregateInput
     allocate_headers?: AllocateHeaderOrderByRelationAggregateInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type BrandWhereUniqueInput = Prisma.AtLeast<{
@@ -35675,6 +38577,8 @@ export namespace Prisma {
     group_brand?: XOR<GroupBrandRelationFilter, GroupBrandWhereInput>
     categories?: CategoryListRelationFilter
     allocate_headers?: AllocateHeaderListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type BrandOrderByWithAggregationInput = {
@@ -35725,6 +38629,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
     sku_allocates?: SKUAllocateListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type StoreOrderByWithRelationInput = {
@@ -35740,6 +38646,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionOrderByRelationAggregateInput
     planning_genders?: PlanningGenderOrderByRelationAggregateInput
     sku_allocates?: SKUAllocateOrderByRelationAggregateInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type StoreWhereUniqueInput = Prisma.AtLeast<{
@@ -35758,6 +38666,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
     sku_allocates?: SKUAllocateListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type StoreOrderByWithAggregationInput = {
@@ -35950,6 +38860,8 @@ export namespace Prisma {
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     tickets?: TicketListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type SeasonOrderByWithRelationInput = {
@@ -35964,6 +38876,8 @@ export namespace Prisma {
     season_group?: SeasonGroupOrderByWithRelationInput
     budget_allocates?: BudgetAllocateOrderByRelationAggregateInput
     tickets?: TicketOrderByRelationAggregateInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type SeasonWhereUniqueInput = Prisma.AtLeast<{
@@ -35981,6 +38895,8 @@ export namespace Prisma {
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     tickets?: TicketListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type SeasonOrderByWithAggregationInput = {
@@ -36026,6 +38942,8 @@ export namespace Prisma {
     updated_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     categories?: CategoryListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type GenderOrderByWithRelationInput = {
@@ -36038,6 +38956,8 @@ export namespace Prisma {
     updated_by?: SortOrderInput | SortOrder
     categories?: CategoryOrderByRelationAggregateInput
     planning_genders?: PlanningGenderOrderByRelationAggregateInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type GenderWhereUniqueInput = Prisma.AtLeast<{
@@ -36053,6 +38973,8 @@ export namespace Prisma {
     updated_by?: BigIntNullableFilter<"Gender"> | bigint | number | null
     categories?: CategoryListRelationFilter
     planning_genders?: PlanningGenderListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type GenderOrderByWithAggregationInput = {
@@ -36099,6 +39021,8 @@ export namespace Prisma {
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     sub_categories?: SubCategoryListRelationFilter
     brand?: XOR<BrandNullableRelationFilter, BrandWhereInput> | null
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type CategoryOrderByWithRelationInput = {
@@ -36114,6 +39038,8 @@ export namespace Prisma {
     gender?: GenderOrderByWithRelationInput
     sub_categories?: SubCategoryOrderByRelationAggregateInput
     brand?: BrandOrderByWithRelationInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type CategoryWhereUniqueInput = Prisma.AtLeast<{
@@ -36132,6 +39058,8 @@ export namespace Prisma {
     gender?: XOR<GenderRelationFilter, GenderWhereInput>
     sub_categories?: SubCategoryListRelationFilter
     brand?: XOR<BrandNullableRelationFilter, BrandWhereInput> | null
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type CategoryOrderByWithAggregationInput = {
@@ -36182,6 +39110,8 @@ export namespace Prisma {
     products?: ProductListRelationFilter
     subcategory_sizes?: SubcategorySizeListRelationFilter
     planning_categories?: PlanningCategoryListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type SubCategoryOrderByWithRelationInput = {
@@ -36197,6 +39127,8 @@ export namespace Prisma {
     products?: ProductOrderByRelationAggregateInput
     subcategory_sizes?: SubcategorySizeOrderByRelationAggregateInput
     planning_categories?: PlanningCategoryOrderByRelationAggregateInput
+    history_agg?: SubCategorySizeHistoryAggOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type SubCategoryWhereUniqueInput = Prisma.AtLeast<{
@@ -36215,6 +39147,8 @@ export namespace Prisma {
     products?: ProductListRelationFilter
     subcategory_sizes?: SubcategorySizeListRelationFilter
     planning_categories?: PlanningCategoryListRelationFilter
+    history_agg?: SubCategorySizeHistoryAggListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type SubCategoryOrderByWithAggregationInput = {
@@ -37564,6 +40498,280 @@ export namespace Prisma {
     updated_by?: BigIntNullableWithAggregatesFilter<"ProposalSizing"> | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggWhereInput = {
+    AND?: SubCategorySizeHistoryAggWhereInput | SubCategorySizeHistoryAggWhereInput[]
+    OR?: SubCategorySizeHistoryAggWhereInput[]
+    NOT?: SubCategorySizeHistoryAggWhereInput | SubCategorySizeHistoryAggWhereInput[]
+    id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    store_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SubCategorySizeHistoryAgg"> | number
+    season_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+    store_ref?: XOR<StoreRelationFilter, StoreWhereInput>
+    brand_ref?: XOR<BrandRelationFilter, BrandWhereInput>
+    gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
+    category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
+    sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season?: XOR<SeasonRelationFilter, SeasonWhereInput>
+  }
+
+  export type SubCategorySizeHistoryAggOrderByWithRelationInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrderInput | SortOrder
+    sub_category_id?: SortOrderInput | SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    product_size?: SortOrderInput | SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrderInput | SortOrder
+    store_ref?: StoreOrderByWithRelationInput
+    brand_ref?: BrandOrderByWithRelationInput
+    gender_ref?: GenderOrderByWithRelationInput
+    category?: CategoryOrderByWithRelationInput
+    sub_category?: SubCategoryOrderByWithRelationInput
+    season?: SeasonOrderByWithRelationInput
+  }
+
+  export type SubCategorySizeHistoryAggWhereUniqueInput = Prisma.AtLeast<{
+    id?: bigint | number
+    AND?: SubCategorySizeHistoryAggWhereInput | SubCategorySizeHistoryAggWhereInput[]
+    OR?: SubCategorySizeHistoryAggWhereInput[]
+    NOT?: SubCategorySizeHistoryAggWhereInput | SubCategorySizeHistoryAggWhereInput[]
+    store_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SubCategorySizeHistoryAgg"> | number
+    season_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+    store_ref?: XOR<StoreRelationFilter, StoreWhereInput>
+    brand_ref?: XOR<BrandRelationFilter, BrandWhereInput>
+    gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
+    category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
+    sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season?: XOR<SeasonRelationFilter, SeasonWhereInput>
+  }, "id">
+
+  export type SubCategorySizeHistoryAggOrderByWithAggregationInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrderInput | SortOrder
+    sub_category_id?: SortOrderInput | SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    product_size?: SortOrderInput | SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrderInput | SortOrder
+    _count?: SubCategorySizeHistoryAggCountOrderByAggregateInput
+    _avg?: SubCategorySizeHistoryAggAvgOrderByAggregateInput
+    _max?: SubCategorySizeHistoryAggMaxOrderByAggregateInput
+    _min?: SubCategorySizeHistoryAggMinOrderByAggregateInput
+    _sum?: SubCategorySizeHistoryAggSumOrderByAggregateInput
+  }
+
+  export type SubCategorySizeHistoryAggScalarWhereWithAggregatesInput = {
+    AND?: SubCategorySizeHistoryAggScalarWhereWithAggregatesInput | SubCategorySizeHistoryAggScalarWhereWithAggregatesInput[]
+    OR?: SubCategorySizeHistoryAggScalarWhereWithAggregatesInput[]
+    NOT?: SubCategorySizeHistoryAggScalarWhereWithAggregatesInput | SubCategorySizeHistoryAggScalarWhereWithAggregatesInput[]
+    id?: BigIntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    brand_id?: BigIntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    gender_id?: BigIntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    year?: IntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | number
+    season_id?: BigIntWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    mall?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    group_brand?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    brand_name?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    cat_vendor?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    gender?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    product_size?: StringNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | string | null
+    buy?: DecimalWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableWithAggregatesFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggWhereInput = {
+    AND?: SalesHistoryAggWhereInput | SalesHistoryAggWhereInput[]
+    OR?: SalesHistoryAggWhereInput[]
+    NOT?: SalesHistoryAggWhereInput | SalesHistoryAggWhereInput[]
+    id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    store_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SalesHistoryAgg"> | number
+    season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+    store_ref?: XOR<StoreRelationFilter, StoreWhereInput>
+    brand_ref?: XOR<BrandRelationFilter, BrandWhereInput>
+    gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
+    category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
+    sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season?: XOR<SeasonRelationFilter, SeasonWhereInput>
+  }
+
+  export type SalesHistoryAggOrderByWithRelationInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrderInput | SortOrder
+    sub_category_id?: SortOrderInput | SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    product_size?: SortOrderInput | SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrderInput | SortOrder
+    store_ref?: StoreOrderByWithRelationInput
+    brand_ref?: BrandOrderByWithRelationInput
+    gender_ref?: GenderOrderByWithRelationInput
+    category?: CategoryOrderByWithRelationInput
+    sub_category?: SubCategoryOrderByWithRelationInput
+    season?: SeasonOrderByWithRelationInput
+  }
+
+  export type SalesHistoryAggWhereUniqueInput = Prisma.AtLeast<{
+    id?: bigint | number
+    AND?: SalesHistoryAggWhereInput | SalesHistoryAggWhereInput[]
+    OR?: SalesHistoryAggWhereInput[]
+    NOT?: SalesHistoryAggWhereInput | SalesHistoryAggWhereInput[]
+    store_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SalesHistoryAgg"> | number
+    season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+    store_ref?: XOR<StoreRelationFilter, StoreWhereInput>
+    brand_ref?: XOR<BrandRelationFilter, BrandWhereInput>
+    gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
+    category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
+    sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season?: XOR<SeasonRelationFilter, SeasonWhereInput>
+  }, "id">
+
+  export type SalesHistoryAggOrderByWithAggregationInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrderInput | SortOrder
+    sub_category_id?: SortOrderInput | SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    product_size?: SortOrderInput | SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrderInput | SortOrder
+    _count?: SalesHistoryAggCountOrderByAggregateInput
+    _avg?: SalesHistoryAggAvgOrderByAggregateInput
+    _max?: SalesHistoryAggMaxOrderByAggregateInput
+    _min?: SalesHistoryAggMinOrderByAggregateInput
+    _sum?: SalesHistoryAggSumOrderByAggregateInput
+  }
+
+  export type SalesHistoryAggScalarWhereWithAggregatesInput = {
+    AND?: SalesHistoryAggScalarWhereWithAggregatesInput | SalesHistoryAggScalarWhereWithAggregatesInput[]
+    OR?: SalesHistoryAggScalarWhereWithAggregatesInput[]
+    NOT?: SalesHistoryAggScalarWhereWithAggregatesInput | SalesHistoryAggScalarWhereWithAggregatesInput[]
+    id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
+    store_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
+    brand_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
+    gender_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number | null
+    year?: IntWithAggregatesFilter<"SalesHistoryAgg"> | number
+    season_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
+    mall?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    group_brand?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    brand_name?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    cat_vendor?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    gender?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    product_size?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
+    buy?: DecimalWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type ApprovalStatusWhereInput = {
     AND?: ApprovalStatusWhereInput | ApprovalStatusWhereInput[]
     OR?: ApprovalStatusWhereInput[]
@@ -38268,6 +41476,8 @@ export namespace Prisma {
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     categories?: CategoryCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandUncheckedCreateInput = {
@@ -38282,6 +41492,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandUpdateInput = {
@@ -38296,6 +41508,8 @@ export namespace Prisma {
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     categories?: CategoryUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandUncheckedUpdateInput = {
@@ -38310,6 +41524,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandCreateManyInput = {
@@ -38359,6 +41575,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUncheckedCreateInput = {
@@ -38374,6 +41592,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUpdateInput = {
@@ -38389,6 +41609,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreUncheckedUpdateInput = {
@@ -38404,6 +41626,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreCreateManyInput = {
@@ -38610,6 +41834,8 @@ export namespace Prisma {
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateInput = {
@@ -38623,6 +41849,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUpdateInput = {
@@ -38636,6 +41864,8 @@ export namespace Prisma {
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateInput = {
@@ -38649,6 +41879,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonCreateManyInput = {
@@ -38692,6 +41924,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     categories?: CategoryCreateNestedManyWithoutGenderInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderUncheckedCreateInput = {
@@ -38704,6 +41938,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderUpdateInput = {
@@ -38716,6 +41952,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUpdateManyWithoutGenderNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutGender_refNestedInput
   }
 
   export type GenderUncheckedUpdateInput = {
@@ -38728,6 +41966,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
   }
 
   export type GenderCreateManyInput = {
@@ -38770,6 +42010,8 @@ export namespace Prisma {
     gender: GenderCreateNestedOneWithoutCategoriesInput
     sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
     brand?: BrandCreateNestedOneWithoutCategoriesInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateInput = {
@@ -38783,6 +42025,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUpdateInput = {
@@ -38796,6 +42040,8 @@ export namespace Prisma {
     gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
     sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
     brand?: BrandUpdateOneWithoutCategoriesNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateInput = {
@@ -38809,6 +42055,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryCreateManyInput = {
@@ -38856,6 +42104,8 @@ export namespace Prisma {
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateInput = {
@@ -38870,6 +42120,8 @@ export namespace Prisma {
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUpdateInput = {
@@ -38884,6 +42136,8 @@ export namespace Prisma {
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateInput = {
@@ -38898,6 +42152,8 @@ export namespace Prisma {
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryCreateManyInput = {
@@ -40317,6 +43573,286 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggCreateInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManyInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateManyMutationInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type ApprovalStatusCreateInput = {
     id?: bigint | number
     name: string
@@ -41155,7 +44691,27 @@ export namespace Prisma {
     none?: CategoryWhereInput
   }
 
+  export type SubCategorySizeHistoryAggListRelationFilter = {
+    every?: SubCategorySizeHistoryAggWhereInput
+    some?: SubCategorySizeHistoryAggWhereInput
+    none?: SubCategorySizeHistoryAggWhereInput
+  }
+
+  export type SalesHistoryAggListRelationFilter = {
+    every?: SalesHistoryAggWhereInput
+    some?: SalesHistoryAggWhereInput
+    none?: SalesHistoryAggWhereInput
+  }
+
   export type CategoryOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type SubCategorySizeHistoryAggOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type SalesHistoryAggOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
@@ -42699,6 +46255,225 @@ export namespace Prisma {
     updated_by?: SortOrder
   }
 
+  export type DecimalNullableFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type CategoryNullableRelationFilter = {
+    is?: CategoryWhereInput | null
+    isNot?: CategoryWhereInput | null
+  }
+
+  export type SubCategoryNullableRelationFilter = {
+    is?: SubCategoryWhereInput | null
+    isNot?: SubCategoryWhereInput | null
+  }
+
+  export type SubCategorySizeHistoryAggCountOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SubCategorySizeHistoryAggAvgOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SubCategorySizeHistoryAggMaxOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SubCategorySizeHistoryAggMinOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SubCategorySizeHistoryAggSumOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type DecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableWithAggregatesFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedDecimalNullableFilter<$PrismaModel>
+    _sum?: NestedDecimalNullableFilter<$PrismaModel>
+    _min?: NestedDecimalNullableFilter<$PrismaModel>
+    _max?: NestedDecimalNullableFilter<$PrismaModel>
+  }
+
+  export type SalesHistoryAggCountOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SalesHistoryAggAvgOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SalesHistoryAggMaxOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SalesHistoryAggMinOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    product_size?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SalesHistoryAggSumOrderByAggregateInput = {
+    id?: SortOrder
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    buy?: SortOrder
+    sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
   export type ApprovalStatusCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
@@ -43524,6 +47299,20 @@ export namespace Prisma {
     connect?: AllocateHeaderWhereUniqueInput | AllocateHeaderWhereUniqueInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput> | SubCategorySizeHistoryAggCreateWithoutBrand_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyBrand_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutBrand_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput> | SalesHistoryAggCreateWithoutBrand_refInput[] | SalesHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutBrand_refInput | SalesHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    createMany?: SalesHistoryAggCreateManyBrand_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type CategoryUncheckedCreateNestedManyWithoutBrandInput = {
     create?: XOR<CategoryCreateWithoutBrandInput, CategoryUncheckedCreateWithoutBrandInput> | CategoryCreateWithoutBrandInput[] | CategoryUncheckedCreateWithoutBrandInput[]
     connectOrCreate?: CategoryCreateOrConnectWithoutBrandInput | CategoryCreateOrConnectWithoutBrandInput[]
@@ -43536,6 +47325,20 @@ export namespace Prisma {
     connectOrCreate?: AllocateHeaderCreateOrConnectWithoutBrandInput | AllocateHeaderCreateOrConnectWithoutBrandInput[]
     createMany?: AllocateHeaderCreateManyBrandInputEnvelope
     connect?: AllocateHeaderWhereUniqueInput | AllocateHeaderWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput> | SubCategorySizeHistoryAggCreateWithoutBrand_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyBrand_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput> | SalesHistoryAggCreateWithoutBrand_refInput[] | SalesHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutBrand_refInput | SalesHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    createMany?: SalesHistoryAggCreateManyBrand_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type GroupBrandUpdateOneRequiredWithoutBrandsNestedInput = {
@@ -43574,6 +47377,34 @@ export namespace Prisma {
     deleteMany?: AllocateHeaderScalarWhereInput | AllocateHeaderScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput> | SubCategorySizeHistoryAggCreateWithoutBrand_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyBrand_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutBrand_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutBrand_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutBrand_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput> | SalesHistoryAggCreateWithoutBrand_refInput[] | SalesHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutBrand_refInput | SalesHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput[]
+    createMany?: SalesHistoryAggCreateManyBrand_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutBrand_refInput | SalesHistoryAggUpdateManyWithWhereWithoutBrand_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type CategoryUncheckedUpdateManyWithoutBrandNestedInput = {
     create?: XOR<CategoryCreateWithoutBrandInput, CategoryUncheckedCreateWithoutBrandInput> | CategoryCreateWithoutBrandInput[] | CategoryUncheckedCreateWithoutBrandInput[]
     connectOrCreate?: CategoryCreateOrConnectWithoutBrandInput | CategoryCreateOrConnectWithoutBrandInput[]
@@ -43600,6 +47431,34 @@ export namespace Prisma {
     update?: AllocateHeaderUpdateWithWhereUniqueWithoutBrandInput | AllocateHeaderUpdateWithWhereUniqueWithoutBrandInput[]
     updateMany?: AllocateHeaderUpdateManyWithWhereWithoutBrandInput | AllocateHeaderUpdateManyWithWhereWithoutBrandInput[]
     deleteMany?: AllocateHeaderScalarWhereInput | AllocateHeaderScalarWhereInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput> | SubCategorySizeHistoryAggCreateWithoutBrand_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyBrand_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutBrand_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutBrand_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput> | SalesHistoryAggCreateWithoutBrand_refInput[] | SalesHistoryAggUncheckedCreateWithoutBrand_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutBrand_refInput | SalesHistoryAggCreateOrConnectWithoutBrand_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput[]
+    createMany?: SalesHistoryAggCreateManyBrand_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutBrand_refInput | SalesHistoryAggUpdateManyWithWhereWithoutBrand_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
   }
 
   export type BudgetAllocateCreateNestedManyWithoutStoreInput = {
@@ -43630,6 +47489,20 @@ export namespace Prisma {
     connect?: SKUAllocateWhereUniqueInput | SKUAllocateWhereUniqueInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput> | SubCategorySizeHistoryAggCreateWithoutStore_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyStore_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutStore_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput> | SalesHistoryAggCreateWithoutStore_refInput[] | SalesHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutStore_refInput | SalesHistoryAggCreateOrConnectWithoutStore_refInput[]
+    createMany?: SalesHistoryAggCreateManyStore_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput = {
     create?: XOR<BudgetAllocateCreateWithoutStoreInput, BudgetAllocateUncheckedCreateWithoutStoreInput> | BudgetAllocateCreateWithoutStoreInput[] | BudgetAllocateUncheckedCreateWithoutStoreInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutStoreInput | BudgetAllocateCreateOrConnectWithoutStoreInput[]
@@ -43656,6 +47529,20 @@ export namespace Prisma {
     connectOrCreate?: SKUAllocateCreateOrConnectWithoutStoreInput | SKUAllocateCreateOrConnectWithoutStoreInput[]
     createMany?: SKUAllocateCreateManyStoreInputEnvelope
     connect?: SKUAllocateWhereUniqueInput | SKUAllocateWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput> | SubCategorySizeHistoryAggCreateWithoutStore_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyStore_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput> | SalesHistoryAggCreateWithoutStore_refInput[] | SalesHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutStore_refInput | SalesHistoryAggCreateOrConnectWithoutStore_refInput[]
+    createMany?: SalesHistoryAggCreateManyStore_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type BudgetAllocateUpdateManyWithoutStoreNestedInput = {
@@ -43714,6 +47601,34 @@ export namespace Prisma {
     deleteMany?: SKUAllocateScalarWhereInput | SKUAllocateScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput> | SubCategorySizeHistoryAggCreateWithoutStore_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutStore_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutStore_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyStore_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutStore_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutStore_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutStore_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutStore_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutStore_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput> | SalesHistoryAggCreateWithoutStore_refInput[] | SalesHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutStore_refInput | SalesHistoryAggCreateOrConnectWithoutStore_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutStore_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutStore_refInput[]
+    createMany?: SalesHistoryAggCreateManyStore_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutStore_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutStore_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutStore_refInput | SalesHistoryAggUpdateManyWithWhereWithoutStore_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput = {
     create?: XOR<BudgetAllocateCreateWithoutStoreInput, BudgetAllocateUncheckedCreateWithoutStoreInput> | BudgetAllocateCreateWithoutStoreInput[] | BudgetAllocateUncheckedCreateWithoutStoreInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutStoreInput | BudgetAllocateCreateOrConnectWithoutStoreInput[]
@@ -43768,6 +47683,34 @@ export namespace Prisma {
     update?: SKUAllocateUpdateWithWhereUniqueWithoutStoreInput | SKUAllocateUpdateWithWhereUniqueWithoutStoreInput[]
     updateMany?: SKUAllocateUpdateManyWithWhereWithoutStoreInput | SKUAllocateUpdateManyWithWhereWithoutStoreInput[]
     deleteMany?: SKUAllocateScalarWhereInput | SKUAllocateScalarWhereInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput> | SubCategorySizeHistoryAggCreateWithoutStore_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutStore_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutStore_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyStore_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutStore_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutStore_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutStore_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutStore_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput> | SalesHistoryAggCreateWithoutStore_refInput[] | SalesHistoryAggUncheckedCreateWithoutStore_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutStore_refInput | SalesHistoryAggCreateOrConnectWithoutStore_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutStore_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutStore_refInput[]
+    createMany?: SalesHistoryAggCreateManyStore_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutStore_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutStore_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutStore_refInput | SalesHistoryAggUpdateManyWithWhereWithoutStore_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
   }
 
   export type PlanningCollectionCreateNestedManyWithoutSeason_typeInput = {
@@ -43966,6 +47909,20 @@ export namespace Prisma {
     connect?: TicketWhereUniqueInput | TicketWhereUniqueInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput> | SubCategorySizeHistoryAggCreateWithoutSeasonInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySeasonInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutSeasonInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput> | SalesHistoryAggCreateWithoutSeasonInput[] | SalesHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeasonInput | SalesHistoryAggCreateOrConnectWithoutSeasonInput[]
+    createMany?: SalesHistoryAggCreateManySeasonInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput = {
     create?: XOR<BudgetAllocateCreateWithoutSeasonInput, BudgetAllocateUncheckedCreateWithoutSeasonInput> | BudgetAllocateCreateWithoutSeasonInput[] | BudgetAllocateUncheckedCreateWithoutSeasonInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutSeasonInput | BudgetAllocateCreateOrConnectWithoutSeasonInput[]
@@ -43978,6 +47935,20 @@ export namespace Prisma {
     connectOrCreate?: TicketCreateOrConnectWithoutSeasonInput | TicketCreateOrConnectWithoutSeasonInput[]
     createMany?: TicketCreateManySeasonInputEnvelope
     connect?: TicketWhereUniqueInput | TicketWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput> | SubCategorySizeHistoryAggCreateWithoutSeasonInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySeasonInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput> | SalesHistoryAggCreateWithoutSeasonInput[] | SalesHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeasonInput | SalesHistoryAggCreateOrConnectWithoutSeasonInput[]
+    createMany?: SalesHistoryAggCreateManySeasonInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput = {
@@ -44016,6 +47987,34 @@ export namespace Prisma {
     deleteMany?: TicketScalarWhereInput | TicketScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput> | SubCategorySizeHistoryAggCreateWithoutSeasonInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSeasonInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSeasonInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySeasonInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSeasonInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSeasonInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSeasonInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSeasonInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutSeasonNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput> | SalesHistoryAggCreateWithoutSeasonInput[] | SalesHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeasonInput | SalesHistoryAggCreateOrConnectWithoutSeasonInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSeasonInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSeasonInput[]
+    createMany?: SalesHistoryAggCreateManySeasonInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSeasonInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSeasonInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSeasonInput | SalesHistoryAggUpdateManyWithWhereWithoutSeasonInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput = {
     create?: XOR<BudgetAllocateCreateWithoutSeasonInput, BudgetAllocateUncheckedCreateWithoutSeasonInput> | BudgetAllocateCreateWithoutSeasonInput[] | BudgetAllocateUncheckedCreateWithoutSeasonInput[]
     connectOrCreate?: BudgetAllocateCreateOrConnectWithoutSeasonInput | BudgetAllocateCreateOrConnectWithoutSeasonInput[]
@@ -44044,6 +48043,34 @@ export namespace Prisma {
     deleteMany?: TicketScalarWhereInput | TicketScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput> | SubCategorySizeHistoryAggCreateWithoutSeasonInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSeasonInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSeasonInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySeasonInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSeasonInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSeasonInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSeasonInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSeasonInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput> | SalesHistoryAggCreateWithoutSeasonInput[] | SalesHistoryAggUncheckedCreateWithoutSeasonInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeasonInput | SalesHistoryAggCreateOrConnectWithoutSeasonInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSeasonInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSeasonInput[]
+    createMany?: SalesHistoryAggCreateManySeasonInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSeasonInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSeasonInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSeasonInput | SalesHistoryAggUpdateManyWithWhereWithoutSeasonInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type CategoryCreateNestedManyWithoutGenderInput = {
     create?: XOR<CategoryCreateWithoutGenderInput, CategoryUncheckedCreateWithoutGenderInput> | CategoryCreateWithoutGenderInput[] | CategoryUncheckedCreateWithoutGenderInput[]
     connectOrCreate?: CategoryCreateOrConnectWithoutGenderInput | CategoryCreateOrConnectWithoutGenderInput[]
@@ -44058,6 +48085,20 @@ export namespace Prisma {
     connect?: PlanningGenderWhereUniqueInput | PlanningGenderWhereUniqueInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutGender_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput> | SubCategorySizeHistoryAggCreateWithoutGender_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyGender_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutGender_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput> | SalesHistoryAggCreateWithoutGender_refInput[] | SalesHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutGender_refInput | SalesHistoryAggCreateOrConnectWithoutGender_refInput[]
+    createMany?: SalesHistoryAggCreateManyGender_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type CategoryUncheckedCreateNestedManyWithoutGenderInput = {
     create?: XOR<CategoryCreateWithoutGenderInput, CategoryUncheckedCreateWithoutGenderInput> | CategoryCreateWithoutGenderInput[] | CategoryUncheckedCreateWithoutGenderInput[]
     connectOrCreate?: CategoryCreateOrConnectWithoutGenderInput | CategoryCreateOrConnectWithoutGenderInput[]
@@ -44070,6 +48111,20 @@ export namespace Prisma {
     connectOrCreate?: PlanningGenderCreateOrConnectWithoutGenderInput | PlanningGenderCreateOrConnectWithoutGenderInput[]
     createMany?: PlanningGenderCreateManyGenderInputEnvelope
     connect?: PlanningGenderWhereUniqueInput | PlanningGenderWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutGender_refInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput> | SubCategorySizeHistoryAggCreateWithoutGender_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyGender_refInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutGender_refInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput> | SalesHistoryAggCreateWithoutGender_refInput[] | SalesHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutGender_refInput | SalesHistoryAggCreateOrConnectWithoutGender_refInput[]
+    createMany?: SalesHistoryAggCreateManyGender_refInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type CategoryUpdateManyWithoutGenderNestedInput = {
@@ -44100,6 +48155,34 @@ export namespace Prisma {
     deleteMany?: PlanningGenderScalarWhereInput | PlanningGenderScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutGender_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput> | SubCategorySizeHistoryAggCreateWithoutGender_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutGender_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutGender_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyGender_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutGender_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutGender_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutGender_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutGender_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutGender_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput> | SalesHistoryAggCreateWithoutGender_refInput[] | SalesHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutGender_refInput | SalesHistoryAggCreateOrConnectWithoutGender_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutGender_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutGender_refInput[]
+    createMany?: SalesHistoryAggCreateManyGender_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutGender_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutGender_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutGender_refInput | SalesHistoryAggUpdateManyWithWhereWithoutGender_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type CategoryUncheckedUpdateManyWithoutGenderNestedInput = {
     create?: XOR<CategoryCreateWithoutGenderInput, CategoryUncheckedCreateWithoutGenderInput> | CategoryCreateWithoutGenderInput[] | CategoryUncheckedCreateWithoutGenderInput[]
     connectOrCreate?: CategoryCreateOrConnectWithoutGenderInput | CategoryCreateOrConnectWithoutGenderInput[]
@@ -44128,6 +48211,34 @@ export namespace Prisma {
     deleteMany?: PlanningGenderScalarWhereInput | PlanningGenderScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput> | SubCategorySizeHistoryAggCreateWithoutGender_refInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput | SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutGender_refInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutGender_refInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyGender_refInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutGender_refInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutGender_refInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutGender_refInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutGender_refInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput> | SalesHistoryAggCreateWithoutGender_refInput[] | SalesHistoryAggUncheckedCreateWithoutGender_refInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutGender_refInput | SalesHistoryAggCreateOrConnectWithoutGender_refInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutGender_refInput | SalesHistoryAggUpsertWithWhereUniqueWithoutGender_refInput[]
+    createMany?: SalesHistoryAggCreateManyGender_refInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutGender_refInput | SalesHistoryAggUpdateWithWhereUniqueWithoutGender_refInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutGender_refInput | SalesHistoryAggUpdateManyWithWhereWithoutGender_refInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type GenderCreateNestedOneWithoutCategoriesInput = {
     create?: XOR<GenderCreateWithoutCategoriesInput, GenderUncheckedCreateWithoutCategoriesInput>
     connectOrCreate?: GenderCreateOrConnectWithoutCategoriesInput
@@ -44147,11 +48258,39 @@ export namespace Prisma {
     connect?: BrandWhereUniqueInput
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput> | SubCategorySizeHistoryAggCreateWithoutCategoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyCategoryInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutCategoryInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput> | SalesHistoryAggCreateWithoutCategoryInput[] | SalesHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutCategoryInput | SalesHistoryAggCreateOrConnectWithoutCategoryInput[]
+    createMany?: SalesHistoryAggCreateManyCategoryInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type SubCategoryUncheckedCreateNestedManyWithoutCategoryInput = {
     create?: XOR<SubCategoryCreateWithoutCategoryInput, SubCategoryUncheckedCreateWithoutCategoryInput> | SubCategoryCreateWithoutCategoryInput[] | SubCategoryUncheckedCreateWithoutCategoryInput[]
     connectOrCreate?: SubCategoryCreateOrConnectWithoutCategoryInput | SubCategoryCreateOrConnectWithoutCategoryInput[]
     createMany?: SubCategoryCreateManyCategoryInputEnvelope
     connect?: SubCategoryWhereUniqueInput | SubCategoryWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput> | SubCategorySizeHistoryAggCreateWithoutCategoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyCategoryInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput> | SalesHistoryAggCreateWithoutCategoryInput[] | SalesHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutCategoryInput | SalesHistoryAggCreateOrConnectWithoutCategoryInput[]
+    createMany?: SalesHistoryAggCreateManyCategoryInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type GenderUpdateOneRequiredWithoutCategoriesNestedInput = {
@@ -44186,6 +48325,34 @@ export namespace Prisma {
     update?: XOR<XOR<BrandUpdateToOneWithWhereWithoutCategoriesInput, BrandUpdateWithoutCategoriesInput>, BrandUncheckedUpdateWithoutCategoriesInput>
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput> | SubCategorySizeHistoryAggCreateWithoutCategoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutCategoryInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutCategoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyCategoryInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutCategoryInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutCategoryInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutCategoryInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutCategoryInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutCategoryNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput> | SalesHistoryAggCreateWithoutCategoryInput[] | SalesHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutCategoryInput | SalesHistoryAggCreateOrConnectWithoutCategoryInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutCategoryInput | SalesHistoryAggUpsertWithWhereUniqueWithoutCategoryInput[]
+    createMany?: SalesHistoryAggCreateManyCategoryInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutCategoryInput | SalesHistoryAggUpdateWithWhereUniqueWithoutCategoryInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutCategoryInput | SalesHistoryAggUpdateManyWithWhereWithoutCategoryInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput = {
     create?: XOR<SubCategoryCreateWithoutCategoryInput, SubCategoryUncheckedCreateWithoutCategoryInput> | SubCategoryCreateWithoutCategoryInput[] | SubCategoryUncheckedCreateWithoutCategoryInput[]
     connectOrCreate?: SubCategoryCreateOrConnectWithoutCategoryInput | SubCategoryCreateOrConnectWithoutCategoryInput[]
@@ -44198,6 +48365,34 @@ export namespace Prisma {
     update?: SubCategoryUpdateWithWhereUniqueWithoutCategoryInput | SubCategoryUpdateWithWhereUniqueWithoutCategoryInput[]
     updateMany?: SubCategoryUpdateManyWithWhereWithoutCategoryInput | SubCategoryUpdateManyWithWhereWithoutCategoryInput[]
     deleteMany?: SubCategoryScalarWhereInput | SubCategoryScalarWhereInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput> | SubCategorySizeHistoryAggCreateWithoutCategoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutCategoryInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutCategoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManyCategoryInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutCategoryInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutCategoryInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutCategoryInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutCategoryInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput> | SalesHistoryAggCreateWithoutCategoryInput[] | SalesHistoryAggUncheckedCreateWithoutCategoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutCategoryInput | SalesHistoryAggCreateOrConnectWithoutCategoryInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutCategoryInput | SalesHistoryAggUpsertWithWhereUniqueWithoutCategoryInput[]
+    createMany?: SalesHistoryAggCreateManyCategoryInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutCategoryInput | SalesHistoryAggUpdateWithWhereUniqueWithoutCategoryInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutCategoryInput | SalesHistoryAggUpdateManyWithWhereWithoutCategoryInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
   }
 
   export type CategoryCreateNestedOneWithoutSub_categoriesInput = {
@@ -44227,6 +48422,20 @@ export namespace Prisma {
     connect?: PlanningCategoryWhereUniqueInput | PlanningCategoryWhereUniqueInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput> | SubCategorySizeHistoryAggCreateWithoutSub_categoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySub_categoryInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggCreateNestedManyWithoutSub_categoryInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput> | SalesHistoryAggCreateWithoutSub_categoryInput[] | SalesHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSub_categoryInput | SalesHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    createMany?: SalesHistoryAggCreateManySub_categoryInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type ProductUncheckedCreateNestedManyWithoutSub_categoryInput = {
     create?: XOR<ProductCreateWithoutSub_categoryInput, ProductUncheckedCreateWithoutSub_categoryInput> | ProductCreateWithoutSub_categoryInput[] | ProductUncheckedCreateWithoutSub_categoryInput[]
     connectOrCreate?: ProductCreateOrConnectWithoutSub_categoryInput | ProductCreateOrConnectWithoutSub_categoryInput[]
@@ -44246,6 +48455,20 @@ export namespace Prisma {
     connectOrCreate?: PlanningCategoryCreateOrConnectWithoutSubcategoryInput | PlanningCategoryCreateOrConnectWithoutSubcategoryInput[]
     createMany?: PlanningCategoryCreateManySubcategoryInputEnvelope
     connect?: PlanningCategoryWhereUniqueInput | PlanningCategoryWhereUniqueInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput> | SubCategorySizeHistoryAggCreateWithoutSub_categoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySub_categoryInputEnvelope
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput> | SalesHistoryAggCreateWithoutSub_categoryInput[] | SalesHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSub_categoryInput | SalesHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    createMany?: SalesHistoryAggCreateManySub_categoryInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput = {
@@ -44298,6 +48521,34 @@ export namespace Prisma {
     deleteMany?: PlanningCategoryScalarWhereInput | PlanningCategoryScalarWhereInput[]
   }
 
+  export type SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput> | SubCategorySizeHistoryAggCreateWithoutSub_categoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySub_categoryInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSub_categoryInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSub_categoryInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput> | SalesHistoryAggCreateWithoutSub_categoryInput[] | SalesHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSub_categoryInput | SalesHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput[]
+    createMany?: SalesHistoryAggCreateManySub_categoryInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSub_categoryInput | SalesHistoryAggUpdateManyWithWhereWithoutSub_categoryInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type ProductUncheckedUpdateManyWithoutSub_categoryNestedInput = {
     create?: XOR<ProductCreateWithoutSub_categoryInput, ProductUncheckedCreateWithoutSub_categoryInput> | ProductCreateWithoutSub_categoryInput[] | ProductUncheckedCreateWithoutSub_categoryInput[]
     connectOrCreate?: ProductCreateOrConnectWithoutSub_categoryInput | ProductCreateOrConnectWithoutSub_categoryInput[]
@@ -44338,6 +48589,34 @@ export namespace Prisma {
     update?: PlanningCategoryUpdateWithWhereUniqueWithoutSubcategoryInput | PlanningCategoryUpdateWithWhereUniqueWithoutSubcategoryInput[]
     updateMany?: PlanningCategoryUpdateManyWithWhereWithoutSubcategoryInput | PlanningCategoryUpdateManyWithWhereWithoutSubcategoryInput[]
     deleteMany?: PlanningCategoryScalarWhereInput | PlanningCategoryScalarWhereInput[]
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput = {
+    create?: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput> | SubCategorySizeHistoryAggCreateWithoutSub_categoryInput[] | SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput | SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    upsert?: SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput | SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput[]
+    createMany?: SubCategorySizeHistoryAggCreateManySub_categoryInputEnvelope
+    set?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    disconnect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    delete?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    connect?: SubCategorySizeHistoryAggWhereUniqueInput | SubCategorySizeHistoryAggWhereUniqueInput[]
+    update?: SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput | SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput[]
+    updateMany?: SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSub_categoryInput | SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSub_categoryInput[]
+    deleteMany?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput> | SalesHistoryAggCreateWithoutSub_categoryInput[] | SalesHistoryAggUncheckedCreateWithoutSub_categoryInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSub_categoryInput | SalesHistoryAggCreateOrConnectWithoutSub_categoryInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput[]
+    createMany?: SalesHistoryAggCreateManySub_categoryInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSub_categoryInput | SalesHistoryAggUpdateManyWithWhereWithoutSub_categoryInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
   }
 
   export type SubCategoryCreateNestedOneWithoutSubcategory_sizesInput = {
@@ -45436,6 +49715,190 @@ export namespace Prisma {
     update?: XOR<XOR<SubcategorySizeUpdateToOneWithWhereWithoutProposal_sizingsInput, SubcategorySizeUpdateWithoutProposal_sizingsInput>, SubcategorySizeUncheckedUpdateWithoutProposal_sizingsInput>
   }
 
+  export type StoreCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<StoreCreateWithoutHistory_aggInput, StoreUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: StoreCreateOrConnectWithoutHistory_aggInput
+    connect?: StoreWhereUniqueInput
+  }
+
+  export type BrandCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<BrandCreateWithoutHistory_aggInput, BrandUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: BrandCreateOrConnectWithoutHistory_aggInput
+    connect?: BrandWhereUniqueInput
+  }
+
+  export type GenderCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<GenderCreateWithoutHistory_aggInput, GenderUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: GenderCreateOrConnectWithoutHistory_aggInput
+    connect?: GenderWhereUniqueInput
+  }
+
+  export type CategoryCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<CategoryCreateWithoutHistory_aggInput, CategoryUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: CategoryCreateOrConnectWithoutHistory_aggInput
+    connect?: CategoryWhereUniqueInput
+  }
+
+  export type SubCategoryCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<SubCategoryCreateWithoutHistory_aggInput, SubCategoryUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: SubCategoryCreateOrConnectWithoutHistory_aggInput
+    connect?: SubCategoryWhereUniqueInput
+  }
+
+  export type SeasonCreateNestedOneWithoutHistory_aggInput = {
+    create?: XOR<SeasonCreateWithoutHistory_aggInput, SeasonUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: SeasonCreateOrConnectWithoutHistory_aggInput
+    connect?: SeasonWhereUniqueInput
+  }
+
+  export type NullableDecimalFieldUpdateOperationsInput = {
+    set?: Decimal | DecimalJsLike | number | string | null
+    increment?: Decimal | DecimalJsLike | number | string
+    decrement?: Decimal | DecimalJsLike | number | string
+    multiply?: Decimal | DecimalJsLike | number | string
+    divide?: Decimal | DecimalJsLike | number | string
+  }
+
+  export type StoreUpdateOneRequiredWithoutHistory_aggNestedInput = {
+    create?: XOR<StoreCreateWithoutHistory_aggInput, StoreUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: StoreCreateOrConnectWithoutHistory_aggInput
+    upsert?: StoreUpsertWithoutHistory_aggInput
+    connect?: StoreWhereUniqueInput
+    update?: XOR<XOR<StoreUpdateToOneWithWhereWithoutHistory_aggInput, StoreUpdateWithoutHistory_aggInput>, StoreUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type BrandUpdateOneRequiredWithoutHistory_aggNestedInput = {
+    create?: XOR<BrandCreateWithoutHistory_aggInput, BrandUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: BrandCreateOrConnectWithoutHistory_aggInput
+    upsert?: BrandUpsertWithoutHistory_aggInput
+    connect?: BrandWhereUniqueInput
+    update?: XOR<XOR<BrandUpdateToOneWithWhereWithoutHistory_aggInput, BrandUpdateWithoutHistory_aggInput>, BrandUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type GenderUpdateOneRequiredWithoutHistory_aggNestedInput = {
+    create?: XOR<GenderCreateWithoutHistory_aggInput, GenderUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: GenderCreateOrConnectWithoutHistory_aggInput
+    upsert?: GenderUpsertWithoutHistory_aggInput
+    connect?: GenderWhereUniqueInput
+    update?: XOR<XOR<GenderUpdateToOneWithWhereWithoutHistory_aggInput, GenderUpdateWithoutHistory_aggInput>, GenderUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type CategoryUpdateOneWithoutHistory_aggNestedInput = {
+    create?: XOR<CategoryCreateWithoutHistory_aggInput, CategoryUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: CategoryCreateOrConnectWithoutHistory_aggInput
+    upsert?: CategoryUpsertWithoutHistory_aggInput
+    disconnect?: CategoryWhereInput | boolean
+    delete?: CategoryWhereInput | boolean
+    connect?: CategoryWhereUniqueInput
+    update?: XOR<XOR<CategoryUpdateToOneWithWhereWithoutHistory_aggInput, CategoryUpdateWithoutHistory_aggInput>, CategoryUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type SubCategoryUpdateOneWithoutHistory_aggNestedInput = {
+    create?: XOR<SubCategoryCreateWithoutHistory_aggInput, SubCategoryUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: SubCategoryCreateOrConnectWithoutHistory_aggInput
+    upsert?: SubCategoryUpsertWithoutHistory_aggInput
+    disconnect?: SubCategoryWhereInput | boolean
+    delete?: SubCategoryWhereInput | boolean
+    connect?: SubCategoryWhereUniqueInput
+    update?: XOR<XOR<SubCategoryUpdateToOneWithWhereWithoutHistory_aggInput, SubCategoryUpdateWithoutHistory_aggInput>, SubCategoryUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type SeasonUpdateOneRequiredWithoutHistory_aggNestedInput = {
+    create?: XOR<SeasonCreateWithoutHistory_aggInput, SeasonUncheckedCreateWithoutHistory_aggInput>
+    connectOrCreate?: SeasonCreateOrConnectWithoutHistory_aggInput
+    upsert?: SeasonUpsertWithoutHistory_aggInput
+    connect?: SeasonWhereUniqueInput
+    update?: XOR<XOR<SeasonUpdateToOneWithWhereWithoutHistory_aggInput, SeasonUpdateWithoutHistory_aggInput>, SeasonUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type StoreCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<StoreCreateWithoutSales_history_aggInput, StoreUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: StoreCreateOrConnectWithoutSales_history_aggInput
+    connect?: StoreWhereUniqueInput
+  }
+
+  export type BrandCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<BrandCreateWithoutSales_history_aggInput, BrandUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: BrandCreateOrConnectWithoutSales_history_aggInput
+    connect?: BrandWhereUniqueInput
+  }
+
+  export type GenderCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<GenderCreateWithoutSales_history_aggInput, GenderUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: GenderCreateOrConnectWithoutSales_history_aggInput
+    connect?: GenderWhereUniqueInput
+  }
+
+  export type CategoryCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<CategoryCreateWithoutSales_history_aggInput, CategoryUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: CategoryCreateOrConnectWithoutSales_history_aggInput
+    connect?: CategoryWhereUniqueInput
+  }
+
+  export type SubCategoryCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<SubCategoryCreateWithoutSales_history_aggInput, SubCategoryUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SubCategoryCreateOrConnectWithoutSales_history_aggInput
+    connect?: SubCategoryWhereUniqueInput
+  }
+
+  export type SeasonCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SeasonCreateOrConnectWithoutSales_history_aggInput
+    connect?: SeasonWhereUniqueInput
+  }
+
+  export type StoreUpdateOneRequiredWithoutSales_history_aggNestedInput = {
+    create?: XOR<StoreCreateWithoutSales_history_aggInput, StoreUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: StoreCreateOrConnectWithoutSales_history_aggInput
+    upsert?: StoreUpsertWithoutSales_history_aggInput
+    connect?: StoreWhereUniqueInput
+    update?: XOR<XOR<StoreUpdateToOneWithWhereWithoutSales_history_aggInput, StoreUpdateWithoutSales_history_aggInput>, StoreUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type BrandUpdateOneRequiredWithoutSales_history_aggNestedInput = {
+    create?: XOR<BrandCreateWithoutSales_history_aggInput, BrandUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: BrandCreateOrConnectWithoutSales_history_aggInput
+    upsert?: BrandUpsertWithoutSales_history_aggInput
+    connect?: BrandWhereUniqueInput
+    update?: XOR<XOR<BrandUpdateToOneWithWhereWithoutSales_history_aggInput, BrandUpdateWithoutSales_history_aggInput>, BrandUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type GenderUpdateOneRequiredWithoutSales_history_aggNestedInput = {
+    create?: XOR<GenderCreateWithoutSales_history_aggInput, GenderUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: GenderCreateOrConnectWithoutSales_history_aggInput
+    upsert?: GenderUpsertWithoutSales_history_aggInput
+    connect?: GenderWhereUniqueInput
+    update?: XOR<XOR<GenderUpdateToOneWithWhereWithoutSales_history_aggInput, GenderUpdateWithoutSales_history_aggInput>, GenderUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type CategoryUpdateOneWithoutSales_history_aggNestedInput = {
+    create?: XOR<CategoryCreateWithoutSales_history_aggInput, CategoryUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: CategoryCreateOrConnectWithoutSales_history_aggInput
+    upsert?: CategoryUpsertWithoutSales_history_aggInput
+    disconnect?: CategoryWhereInput | boolean
+    delete?: CategoryWhereInput | boolean
+    connect?: CategoryWhereUniqueInput
+    update?: XOR<XOR<CategoryUpdateToOneWithWhereWithoutSales_history_aggInput, CategoryUpdateWithoutSales_history_aggInput>, CategoryUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SubCategoryUpdateOneWithoutSales_history_aggNestedInput = {
+    create?: XOR<SubCategoryCreateWithoutSales_history_aggInput, SubCategoryUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SubCategoryCreateOrConnectWithoutSales_history_aggInput
+    upsert?: SubCategoryUpsertWithoutSales_history_aggInput
+    disconnect?: SubCategoryWhereInput | boolean
+    delete?: SubCategoryWhereInput | boolean
+    connect?: SubCategoryWhereUniqueInput
+    update?: XOR<XOR<SubCategoryUpdateToOneWithWhereWithoutSales_history_aggInput, SubCategoryUpdateWithoutSales_history_aggInput>, SubCategoryUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput = {
+    create?: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SeasonCreateOrConnectWithoutSales_history_aggInput
+    upsert?: SeasonUpsertWithoutSales_history_aggInput
+    connect?: SeasonWhereUniqueInput
+    update?: XOR<XOR<SeasonUpdateToOneWithWhereWithoutSales_history_aggInput, SeasonUpdateWithoutSales_history_aggInput>, SeasonUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
   export type BudgetCreateNestedOneWithoutTicketsInput = {
     create?: XOR<BudgetCreateWithoutTicketsInput, BudgetUncheckedCreateWithoutTicketsInput>
     connectOrCreate?: BudgetCreateOrConnectWithoutTicketsInput
@@ -46003,6 +50466,33 @@ export namespace Prisma {
     _sum?: NestedIntFilter<$PrismaModel>
     _min?: NestedIntFilter<$PrismaModel>
     _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type NestedDecimalNullableFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type NestedDecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableWithAggregatesFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedDecimalNullableFilter<$PrismaModel>
+    _sum?: NestedDecimalNullableFilter<$PrismaModel>
+    _min?: NestedDecimalNullableFilter<$PrismaModel>
+    _max?: NestedDecimalNullableFilter<$PrismaModel>
   }
 
   export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
@@ -46721,6 +51211,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     categories?: CategoryCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandUncheckedCreateWithoutGroup_brandInput = {
@@ -46734,6 +51226,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutBrandInput
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandCreateOrConnectWithoutGroup_brandInput = {
@@ -46873,6 +51367,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutCategoriesInput
     sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateWithoutBrandInput = {
@@ -46885,6 +51381,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryCreateOrConnectWithoutBrandInput = {
@@ -46935,6 +51433,104 @@ export namespace Prisma {
 
   export type AllocateHeaderCreateManyBrandInputEnvelope = {
     data: AllocateHeaderCreateManyBrandInput | AllocateHeaderCreateManyBrandInput[]
+  }
+
+  export type SubCategorySizeHistoryAggCreateWithoutBrand_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutBrand_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyBrand_refInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManyBrand_refInput | SubCategorySizeHistoryAggCreateManyBrand_refInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutBrand_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutBrand_refInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutBrand_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput>
+  }
+
+  export type SalesHistoryAggCreateManyBrand_refInputEnvelope = {
+    data: SalesHistoryAggCreateManyBrand_refInput | SalesHistoryAggCreateManyBrand_refInput[]
   }
 
   export type GroupBrandUpsertWithoutBrandsInput = {
@@ -47017,6 +51613,86 @@ export namespace Prisma {
   export type AllocateHeaderUpdateManyWithWhereWithoutBrandInput = {
     where: AllocateHeaderScalarWhereInput
     data: XOR<AllocateHeaderUpdateManyMutationInput, AllocateHeaderUncheckedUpdateManyWithoutBrandInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutBrand_refInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutBrand_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutBrand_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutBrand_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutBrand_refInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggScalarWhereInput = {
+    AND?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+    OR?: SubCategorySizeHistoryAggScalarWhereInput[]
+    NOT?: SubCategorySizeHistoryAggScalarWhereInput | SubCategorySizeHistoryAggScalarWhereInput[]
+    id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    store_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SubCategorySizeHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SubCategorySizeHistoryAgg"> | number
+    season_id?: BigIntFilter<"SubCategorySizeHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SubCategorySizeHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SubCategorySizeHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutBrand_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutBrand_refInput, SalesHistoryAggUncheckedUpdateWithoutBrand_refInput>
+    create: XOR<SalesHistoryAggCreateWithoutBrand_refInput, SalesHistoryAggUncheckedCreateWithoutBrand_refInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutBrand_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutBrand_refInput, SalesHistoryAggUncheckedUpdateWithoutBrand_refInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutBrand_refInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutBrand_refInput>
+  }
+
+  export type SalesHistoryAggScalarWhereInput = {
+    AND?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+    OR?: SalesHistoryAggScalarWhereInput[]
+    NOT?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+    id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    store_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    year?: IntFilter<"SalesHistoryAgg"> | number
+    season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
+    mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    group_brand?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
+    buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
+    st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
   }
 
   export type BudgetAllocateCreateWithoutStoreInput = {
@@ -47165,6 +51841,104 @@ export namespace Prisma {
     data: SKUAllocateCreateManyStoreInput | SKUAllocateCreateManyStoreInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateWithoutStore_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput = {
+    id?: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutStore_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyStore_refInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManyStore_refInput | SubCategorySizeHistoryAggCreateManyStore_refInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutStore_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutStore_refInput = {
+    id?: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutStore_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput>
+  }
+
+  export type SalesHistoryAggCreateManyStore_refInputEnvelope = {
+    data: SalesHistoryAggCreateManyStore_refInput | SalesHistoryAggCreateManyStore_refInput[]
+  }
+
   export type BudgetAllocateUpsertWithWhereUniqueWithoutStoreInput = {
     where: BudgetAllocateWhereUniqueInput
     update: XOR<BudgetAllocateUpdateWithoutStoreInput, BudgetAllocateUncheckedUpdateWithoutStoreInput>
@@ -47300,6 +52074,38 @@ export namespace Prisma {
     updated_by?: BigIntNullableFilter<"SKUAllocate"> | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutStore_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutStore_refInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutStore_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutStore_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutStore_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutStore_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutStore_refInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refInput>
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutStore_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutStore_refInput, SalesHistoryAggUncheckedUpdateWithoutStore_refInput>
+    create: XOR<SalesHistoryAggCreateWithoutStore_refInput, SalesHistoryAggUncheckedCreateWithoutStore_refInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutStore_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutStore_refInput, SalesHistoryAggUncheckedUpdateWithoutStore_refInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutStore_refInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutStore_refInput>
+  }
+
   export type PlanningCollectionCreateWithoutSeason_typeInput = {
     id?: bigint | number
     actual_buy_pct?: Decimal | DecimalJsLike | number | string
@@ -47369,6 +52175,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateWithoutSeason_groupInput = {
@@ -47381,6 +52189,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonCreateOrConnectWithoutSeason_groupInput = {
@@ -47621,6 +52431,104 @@ export namespace Prisma {
     data: TicketCreateManySeasonInput | TicketCreateManySeasonInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateWithoutSeasonInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutSeasonInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManySeasonInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManySeasonInput | SubCategorySizeHistoryAggCreateManySeasonInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutSeasonInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutSeasonInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutSeasonInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput>
+  }
+
+  export type SalesHistoryAggCreateManySeasonInputEnvelope = {
+    data: SalesHistoryAggCreateManySeasonInput | SalesHistoryAggCreateManySeasonInput[]
+  }
+
   export type SeasonGroupUpsertWithoutSeasonsInput = {
     update: XOR<SeasonGroupUpdateWithoutSeasonsInput, SeasonGroupUncheckedUpdateWithoutSeasonsInput>
     create: XOR<SeasonGroupCreateWithoutSeasonsInput, SeasonGroupUncheckedCreateWithoutSeasonsInput>
@@ -47690,6 +52598,38 @@ export namespace Prisma {
     data: XOR<TicketUpdateManyMutationInput, TicketUncheckedUpdateManyWithoutSeasonInput>
   }
 
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSeasonInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutSeasonInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSeasonInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSeasonInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutSeasonInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutSeasonInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSeasonInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonInput>
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutSeasonInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutSeasonInput, SalesHistoryAggUncheckedUpdateWithoutSeasonInput>
+    create: XOR<SalesHistoryAggCreateWithoutSeasonInput, SalesHistoryAggUncheckedCreateWithoutSeasonInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutSeasonInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutSeasonInput, SalesHistoryAggUncheckedUpdateWithoutSeasonInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutSeasonInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutSeasonInput>
+  }
+
   export type CategoryCreateWithoutGenderInput = {
     id?: bigint | number
     name: string
@@ -47700,6 +52640,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
     brand?: BrandCreateNestedOneWithoutCategoriesInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateWithoutGenderInput = {
@@ -47712,6 +52654,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryCreateOrConnectWithoutGenderInput = {
@@ -47764,6 +52708,104 @@ export namespace Prisma {
     data: PlanningGenderCreateManyGenderInput | PlanningGenderCreateManyGenderInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateWithoutGender_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutGender_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyGender_refInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManyGender_refInput | SubCategorySizeHistoryAggCreateManyGender_refInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutGender_refInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutGender_refInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutGender_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput>
+  }
+
+  export type SalesHistoryAggCreateManyGender_refInputEnvelope = {
+    data: SalesHistoryAggCreateManyGender_refInput | SalesHistoryAggCreateManyGender_refInput[]
+  }
+
   export type CategoryUpsertWithWhereUniqueWithoutGenderInput = {
     where: CategoryWhereUniqueInput
     update: XOR<CategoryUpdateWithoutGenderInput, CategoryUncheckedUpdateWithoutGenderInput>
@@ -47796,6 +52838,38 @@ export namespace Prisma {
     data: XOR<PlanningGenderUpdateManyMutationInput, PlanningGenderUncheckedUpdateManyWithoutGenderInput>
   }
 
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutGender_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutGender_refInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedCreateWithoutGender_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutGender_refInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutGender_refInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutGender_refInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutGender_refInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refInput>
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutGender_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutGender_refInput, SalesHistoryAggUncheckedUpdateWithoutGender_refInput>
+    create: XOR<SalesHistoryAggCreateWithoutGender_refInput, SalesHistoryAggUncheckedCreateWithoutGender_refInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutGender_refInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutGender_refInput, SalesHistoryAggUncheckedUpdateWithoutGender_refInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutGender_refInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutGender_refInput>
+  }
+
   export type GenderCreateWithoutCategoriesInput = {
     id?: bigint | number
     name: string
@@ -47805,6 +52879,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderUncheckedCreateWithoutCategoriesInput = {
@@ -47816,6 +52892,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderCreateOrConnectWithoutCategoriesInput = {
@@ -47834,6 +52912,8 @@ export namespace Prisma {
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutCategoryInput = {
@@ -47847,6 +52927,8 @@ export namespace Prisma {
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryCreateOrConnectWithoutCategoryInput = {
@@ -47869,6 +52951,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandUncheckedCreateWithoutCategoriesInput = {
@@ -47882,11 +52966,111 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandCreateOrConnectWithoutCategoriesInput = {
     where: BrandWhereUniqueInput
     create: XOR<BrandCreateWithoutCategoriesInput, BrandUncheckedCreateWithoutCategoriesInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateWithoutCategoryInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutCategoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyCategoryInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManyCategoryInput | SubCategorySizeHistoryAggCreateManyCategoryInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutCategoryInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutCategoryInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutCategoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput>
+  }
+
+  export type SalesHistoryAggCreateManyCategoryInputEnvelope = {
+    data: SalesHistoryAggCreateManyCategoryInput | SalesHistoryAggCreateManyCategoryInput[]
   }
 
   export type GenderUpsertWithoutCategoriesInput = {
@@ -47909,6 +53093,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutGender_refNestedInput
   }
 
   export type GenderUncheckedUpdateWithoutCategoriesInput = {
@@ -47920,6 +53106,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
   }
 
   export type SubCategoryUpsertWithWhereUniqueWithoutCategoryInput = {
@@ -47974,6 +53162,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutCategoriesInput = {
@@ -47987,6 +53177,40 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutCategoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutCategoryInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutCategoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutCategoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutCategoryInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutCategoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutCategoryInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryInput>
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutCategoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutCategoryInput, SalesHistoryAggUncheckedUpdateWithoutCategoryInput>
+    create: XOR<SalesHistoryAggCreateWithoutCategoryInput, SalesHistoryAggUncheckedCreateWithoutCategoryInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutCategoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutCategoryInput, SalesHistoryAggUncheckedUpdateWithoutCategoryInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutCategoryInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutCategoryInput>
   }
 
   export type CategoryCreateWithoutSub_categoriesInput = {
@@ -47999,6 +53223,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     gender: GenderCreateNestedOneWithoutCategoriesInput
     brand?: BrandCreateNestedOneWithoutCategoriesInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryUncheckedCreateWithoutSub_categoriesInput = {
@@ -48011,6 +53237,8 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
   }
 
   export type CategoryCreateOrConnectWithoutSub_categoriesInput = {
@@ -48139,6 +53367,104 @@ export namespace Prisma {
     data: PlanningCategoryCreateManySubcategoryInput | PlanningCategoryCreateManySubcategoryInput[]
   }
 
+  export type SubCategorySizeHistoryAggCreateWithoutSub_categoryInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutHistory_aggInput
+    brand_ref: BrandCreateNestedOneWithoutHistory_aggInput
+    gender_ref: GenderCreateNestedOneWithoutHistory_aggInput
+    category?: CategoryCreateNestedOneWithoutHistory_aggInput
+    season: SeasonCreateNestedOneWithoutHistory_aggInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateOrConnectWithoutSub_categoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggCreateManySub_categoryInputEnvelope = {
+    data: SubCategorySizeHistoryAggCreateManySub_categoryInput | SubCategorySizeHistoryAggCreateManySub_categoryInput[]
+  }
+
+  export type SalesHistoryAggCreateWithoutSub_categoryInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutSub_categoryInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutSub_categoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput>
+  }
+
+  export type SalesHistoryAggCreateManySub_categoryInputEnvelope = {
+    data: SalesHistoryAggCreateManySub_categoryInput | SalesHistoryAggCreateManySub_categoryInput[]
+  }
+
   export type CategoryUpsertWithoutSub_categoriesInput = {
     update: XOR<CategoryUpdateWithoutSub_categoriesInput, CategoryUncheckedUpdateWithoutSub_categoriesInput>
     create: XOR<CategoryCreateWithoutSub_categoriesInput, CategoryUncheckedCreateWithoutSub_categoriesInput>
@@ -48160,6 +53486,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
     brand?: BrandUpdateOneWithoutCategoriesNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateWithoutSub_categoriesInput = {
@@ -48172,6 +53500,8 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type ProductUpsertWithWhereUniqueWithoutSub_categoryInput = {
@@ -48279,6 +53609,38 @@ export namespace Prisma {
     updated_by?: BigIntNullableFilter<"PlanningCategory"> | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    update: XOR<SubCategorySizeHistoryAggUpdateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutSub_categoryInput>
+    create: XOR<SubCategorySizeHistoryAggCreateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedCreateWithoutSub_categoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput = {
+    where: SubCategorySizeHistoryAggWhereUniqueInput
+    data: XOR<SubCategorySizeHistoryAggUpdateWithoutSub_categoryInput, SubCategorySizeHistoryAggUncheckedUpdateWithoutSub_categoryInput>
+  }
+
+  export type SubCategorySizeHistoryAggUpdateManyWithWhereWithoutSub_categoryInput = {
+    where: SubCategorySizeHistoryAggScalarWhereInput
+    data: XOR<SubCategorySizeHistoryAggUpdateManyMutationInput, SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryInput>
+  }
+
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutSub_categoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutSub_categoryInput, SalesHistoryAggUncheckedUpdateWithoutSub_categoryInput>
+    create: XOR<SalesHistoryAggCreateWithoutSub_categoryInput, SalesHistoryAggUncheckedCreateWithoutSub_categoryInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutSub_categoryInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutSub_categoryInput, SalesHistoryAggUncheckedUpdateWithoutSub_categoryInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutSub_categoryInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryInput>
+  }
+
   export type SubCategoryCreateWithoutSubcategory_sizesInput = {
     id?: bigint | number
     name: string
@@ -48290,6 +53652,8 @@ export namespace Prisma {
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutSubcategory_sizesInput = {
@@ -48303,6 +53667,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryCreateOrConnectWithoutSubcategory_sizesInput = {
@@ -48367,6 +53733,8 @@ export namespace Prisma {
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutSubcategory_sizesInput = {
@@ -48380,6 +53748,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type ProposalSizingUpsertWithWhereUniqueWithoutSubcategory_sizeInput = {
@@ -48426,6 +53796,8 @@ export namespace Prisma {
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutProductsInput = {
@@ -48439,6 +53811,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
     planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryCreateOrConnectWithoutProductsInput = {
@@ -48505,6 +53879,8 @@ export namespace Prisma {
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutProductsInput = {
@@ -48518,6 +53894,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SKUProposalUpsertWithWhereUniqueWithoutProductInput = {
@@ -48800,6 +54178,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
     categories?: CategoryCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandUncheckedCreateWithoutAllocate_headersInput = {
@@ -48813,6 +54193,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
   }
 
   export type BrandCreateOrConnectWithoutAllocate_headersInput = {
@@ -49062,6 +54444,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
     categories?: CategoryUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutAllocate_headersInput = {
@@ -49075,6 +54459,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
   }
 
   export type UserUpsertWithoutCreated_allocate_headersInput = {
@@ -49262,6 +54648,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUncheckedCreateWithoutBudget_allocatesInput = {
@@ -49276,6 +54664,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreCreateOrConnectWithoutBudget_allocatesInput = {
@@ -49324,6 +54714,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateWithoutBudget_allocatesInput = {
@@ -49336,6 +54728,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonCreateOrConnectWithoutBudget_allocatesInput = {
@@ -49409,6 +54803,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutBudget_allocatesInput = {
@@ -49423,6 +54819,8 @@ export namespace Prisma {
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
   }
 
   export type SeasonGroupUpsertWithoutBudget_allocatesInput = {
@@ -49483,6 +54881,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateWithoutBudget_allocatesInput = {
@@ -49495,6 +54895,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type UserCreateWithoutCreated_planning_headersInput = {
@@ -49885,6 +55287,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUncheckedCreateWithoutPlanning_collectionsInput = {
@@ -49899,6 +55303,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreCreateOrConnectWithoutPlanning_collectionsInput = {
@@ -49993,6 +55399,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutPlanning_collectionsInput = {
@@ -50007,6 +55415,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
   }
 
   export type PlanningHeaderUpsertWithoutPlanning_collectionsInput = {
@@ -50057,6 +55467,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     categories?: CategoryCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderUncheckedCreateWithoutPlanning_gendersInput = {
@@ -50068,6 +55480,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
   }
 
   export type GenderCreateOrConnectWithoutPlanning_gendersInput = {
@@ -50087,6 +55501,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUncheckedCreateWithoutPlanning_gendersInput = {
@@ -50101,6 +55517,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreCreateOrConnectWithoutPlanning_gendersInput = {
@@ -50161,6 +55579,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutGender_refNestedInput
   }
 
   export type GenderUncheckedUpdateWithoutPlanning_gendersInput = {
@@ -50172,6 +55592,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
   }
 
   export type StoreUpsertWithoutPlanning_gendersInput = {
@@ -50197,6 +55619,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutPlanning_gendersInput = {
@@ -50211,6 +55635,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
   }
 
   export type PlanningHeaderUpsertWithoutPlanning_gendersInput = {
@@ -50263,6 +55689,8 @@ export namespace Prisma {
     category: CategoryCreateNestedOneWithoutSub_categoriesInput
     products?: ProductCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryUncheckedCreateWithoutPlanning_categoriesInput = {
@@ -50276,6 +55704,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
     subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
   }
 
   export type SubCategoryCreateOrConnectWithoutPlanning_categoriesInput = {
@@ -50338,6 +55768,8 @@ export namespace Prisma {
     category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutPlanning_categoriesInput = {
@@ -50351,6 +55783,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type PlanningHeaderUpsertWithoutPlanning_categoriesInput = {
@@ -50973,6 +56407,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreUncheckedCreateWithoutSku_allocatesInput = {
@@ -50987,6 +56423,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
     planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
   }
 
   export type StoreCreateOrConnectWithoutSku_allocatesInput = {
@@ -51056,6 +56494,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
   }
 
   export type StoreUncheckedUpdateWithoutSku_allocatesInput = {
@@ -51070,6 +56510,8 @@ export namespace Prisma {
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
     planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
   }
 
   export type SKUProposalHeaderCreateWithoutProposal_sizing_headersInput = {
@@ -51475,6 +56917,894 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type StoreCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
+    planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
+    planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
+    sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutStore_refInput
+  }
+
+  export type StoreUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
+    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
+    planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
+    sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+  }
+
+  export type StoreCreateOrConnectWithoutHistory_aggInput = {
+    where: StoreWhereUniqueInput
+    create: XOR<StoreCreateWithoutHistory_aggInput, StoreUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type BrandCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
+    categories?: CategoryCreateNestedManyWithoutBrandInput
+    allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutBrand_refInput
+  }
+
+  export type BrandUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    group_brand_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryUncheckedCreateNestedManyWithoutBrandInput
+    allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+  }
+
+  export type BrandCreateOrConnectWithoutHistory_aggInput = {
+    where: BrandWhereUniqueInput
+    create: XOR<BrandCreateWithoutHistory_aggInput, BrandUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type GenderCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryCreateNestedManyWithoutGenderInput
+    planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutGender_refInput
+  }
+
+  export type GenderUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
+    planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
+  }
+
+  export type GenderCreateOrConnectWithoutHistory_aggInput = {
+    where: GenderWhereUniqueInput
+    create: XOR<GenderCreateWithoutHistory_aggInput, GenderUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type CategoryCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    gender: GenderCreateNestedOneWithoutCategoriesInput
+    sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
+    brand?: BrandCreateNestedOneWithoutCategoriesInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutCategoryInput
+  }
+
+  export type CategoryUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    gender_id: bigint | number
+    brand_id?: bigint | number | null
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+  }
+
+  export type CategoryCreateOrConnectWithoutHistory_aggInput = {
+    where: CategoryWhereUniqueInput
+    create: XOR<CategoryCreateWithoutHistory_aggInput, CategoryUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type SubCategoryCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    category: CategoryCreateNestedOneWithoutSub_categoriesInput
+    products?: ProductCreateNestedManyWithoutSub_categoryInput
+    subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
+    planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSub_categoryInput
+  }
+
+  export type SubCategoryUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    category_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
+    subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
+    planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+  }
+
+  export type SubCategoryCreateOrConnectWithoutHistory_aggInput = {
+    where: SubCategoryWhereUniqueInput
+    create: XOR<SubCategoryCreateWithoutHistory_aggInput, SubCategoryUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type SeasonCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
+    tickets?: TicketCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeasonInput
+  }
+
+  export type SeasonUncheckedCreateWithoutHistory_aggInput = {
+    id?: bigint | number
+    name: string
+    season_group_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
+    tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+  }
+
+  export type SeasonCreateOrConnectWithoutHistory_aggInput = {
+    where: SeasonWhereUniqueInput
+    create: XOR<SeasonCreateWithoutHistory_aggInput, SeasonUncheckedCreateWithoutHistory_aggInput>
+  }
+
+  export type StoreUpsertWithoutHistory_aggInput = {
+    update: XOR<StoreUpdateWithoutHistory_aggInput, StoreUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<StoreCreateWithoutHistory_aggInput, StoreUncheckedCreateWithoutHistory_aggInput>
+    where?: StoreWhereInput
+  }
+
+  export type StoreUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: StoreWhereInput
+    data: XOR<StoreUpdateWithoutHistory_aggInput, StoreUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type StoreUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
+    planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
+    planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
+    sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutStore_refNestedInput
+  }
+
+  export type StoreUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
+    planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
+    sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+  }
+
+  export type BrandUpsertWithoutHistory_aggInput = {
+    update: XOR<BrandUpdateWithoutHistory_aggInput, BrandUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<BrandCreateWithoutHistory_aggInput, BrandUncheckedCreateWithoutHistory_aggInput>
+    where?: BrandWhereInput
+  }
+
+  export type BrandUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: BrandWhereInput
+    data: XOR<BrandUpdateWithoutHistory_aggInput, BrandUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type BrandUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
+    categories?: CategoryUpdateManyWithoutBrandNestedInput
+    allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutBrand_refNestedInput
+  }
+
+  export type BrandUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUncheckedUpdateManyWithoutBrandNestedInput
+    allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+  }
+
+  export type GenderUpsertWithoutHistory_aggInput = {
+    update: XOR<GenderUpdateWithoutHistory_aggInput, GenderUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<GenderCreateWithoutHistory_aggInput, GenderUncheckedCreateWithoutHistory_aggInput>
+    where?: GenderWhereInput
+  }
+
+  export type GenderUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: GenderWhereInput
+    data: XOR<GenderUpdateWithoutHistory_aggInput, GenderUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type GenderUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUpdateManyWithoutGenderNestedInput
+    planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutGender_refNestedInput
+  }
+
+  export type GenderUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
+    planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
+  }
+
+  export type CategoryUpsertWithoutHistory_aggInput = {
+    update: XOR<CategoryUpdateWithoutHistory_aggInput, CategoryUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<CategoryCreateWithoutHistory_aggInput, CategoryUncheckedCreateWithoutHistory_aggInput>
+    where?: CategoryWhereInput
+  }
+
+  export type CategoryUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: CategoryWhereInput
+    data: XOR<CategoryUpdateWithoutHistory_aggInput, CategoryUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type CategoryUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
+    sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
+    brand?: BrandUpdateOneWithoutCategoriesNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutCategoryNestedInput
+  }
+
+  export type CategoryUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+  }
+
+  export type SubCategoryUpsertWithoutHistory_aggInput = {
+    update: XOR<SubCategoryUpdateWithoutHistory_aggInput, SubCategoryUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<SubCategoryCreateWithoutHistory_aggInput, SubCategoryUncheckedCreateWithoutHistory_aggInput>
+    where?: SubCategoryWhereInput
+  }
+
+  export type SubCategoryUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: SubCategoryWhereInput
+    data: XOR<SubCategoryUpdateWithoutHistory_aggInput, SubCategoryUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type SubCategoryUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
+    products?: ProductUpdateManyWithoutSub_categoryNestedInput
+    subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
+    planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
+  }
+
+  export type SubCategoryUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
+    subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
+    planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+  }
+
+  export type SeasonUpsertWithoutHistory_aggInput = {
+    update: XOR<SeasonUpdateWithoutHistory_aggInput, SeasonUncheckedUpdateWithoutHistory_aggInput>
+    create: XOR<SeasonCreateWithoutHistory_aggInput, SeasonUncheckedCreateWithoutHistory_aggInput>
+    where?: SeasonWhereInput
+  }
+
+  export type SeasonUpdateToOneWithWhereWithoutHistory_aggInput = {
+    where?: SeasonWhereInput
+    data: XOR<SeasonUpdateWithoutHistory_aggInput, SeasonUncheckedUpdateWithoutHistory_aggInput>
+  }
+
+  export type SeasonUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
+    budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
+    tickets?: TicketUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeasonNestedInput
+  }
+
+  export type SeasonUncheckedUpdateWithoutHistory_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
+    tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+  }
+
+  export type StoreCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutStoreInput
+    planning_collections?: PlanningCollectionCreateNestedManyWithoutStoreInput
+    planning_genders?: PlanningGenderCreateNestedManyWithoutStoreInput
+    sku_allocates?: SKUAllocateCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutStore_refInput
+  }
+
+  export type StoreUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutStoreInput
+    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutStoreInput
+    planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutStoreInput
+    sku_allocates?: SKUAllocateUncheckedCreateNestedManyWithoutStoreInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutStore_refInput
+  }
+
+  export type StoreCreateOrConnectWithoutSales_history_aggInput = {
+    where: StoreWhereUniqueInput
+    create: XOR<StoreCreateWithoutSales_history_aggInput, StoreUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type BrandCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    group_brand: GroupBrandCreateNestedOneWithoutBrandsInput
+    categories?: CategoryCreateNestedManyWithoutBrandInput
+    allocate_headers?: AllocateHeaderCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutBrand_refInput
+  }
+
+  export type BrandUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    code: string
+    name: string
+    group_brand_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryUncheckedCreateNestedManyWithoutBrandInput
+    allocate_headers?: AllocateHeaderUncheckedCreateNestedManyWithoutBrandInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutBrand_refInput
+  }
+
+  export type BrandCreateOrConnectWithoutSales_history_aggInput = {
+    where: BrandWhereUniqueInput
+    create: XOR<BrandCreateWithoutSales_history_aggInput, BrandUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type GenderCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryCreateNestedManyWithoutGenderInput
+    planning_genders?: PlanningGenderCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutGender_refInput
+  }
+
+  export type GenderUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    categories?: CategoryUncheckedCreateNestedManyWithoutGenderInput
+    planning_genders?: PlanningGenderUncheckedCreateNestedManyWithoutGenderInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutGender_refInput
+  }
+
+  export type GenderCreateOrConnectWithoutSales_history_aggInput = {
+    where: GenderWhereUniqueInput
+    create: XOR<GenderCreateWithoutSales_history_aggInput, GenderUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type CategoryCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    gender: GenderCreateNestedOneWithoutCategoriesInput
+    sub_categories?: SubCategoryCreateNestedManyWithoutCategoryInput
+    brand?: BrandCreateNestedOneWithoutCategoriesInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutCategoryInput
+  }
+
+  export type CategoryUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    gender_id: bigint | number
+    brand_id?: bigint | number | null
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    sub_categories?: SubCategoryUncheckedCreateNestedManyWithoutCategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutCategoryInput
+  }
+
+  export type CategoryCreateOrConnectWithoutSales_history_aggInput = {
+    where: CategoryWhereUniqueInput
+    create: XOR<CategoryCreateWithoutSales_history_aggInput, CategoryUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type SubCategoryCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    category: CategoryCreateNestedOneWithoutSub_categoriesInput
+    products?: ProductCreateNestedManyWithoutSub_categoryInput
+    subcategory_sizes?: SubcategorySizeCreateNestedManyWithoutSub_categoryInput
+    planning_categories?: PlanningCategoryCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSub_categoryInput
+  }
+
+  export type SubCategoryUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    category_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    products?: ProductUncheckedCreateNestedManyWithoutSub_categoryInput
+    subcategory_sizes?: SubcategorySizeUncheckedCreateNestedManyWithoutSub_categoryInput
+    planning_categories?: PlanningCategoryUncheckedCreateNestedManyWithoutSubcategoryInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSub_categoryInput
+  }
+
+  export type SubCategoryCreateOrConnectWithoutSales_history_aggInput = {
+    where: SubCategoryWhereUniqueInput
+    create: XOR<SubCategoryCreateWithoutSales_history_aggInput, SubCategoryUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type SeasonCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
+    budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
+    tickets?: TicketCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
+  }
+
+  export type SeasonUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    season_group_id: bigint | number
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
+    tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+  }
+
+  export type SeasonCreateOrConnectWithoutSales_history_aggInput = {
+    where: SeasonWhereUniqueInput
+    create: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
+  }
+
+  export type StoreUpsertWithoutSales_history_aggInput = {
+    update: XOR<StoreUpdateWithoutSales_history_aggInput, StoreUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<StoreCreateWithoutSales_history_aggInput, StoreUncheckedCreateWithoutSales_history_aggInput>
+    where?: StoreWhereInput
+  }
+
+  export type StoreUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: StoreWhereInput
+    data: XOR<StoreUpdateWithoutSales_history_aggInput, StoreUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type StoreUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUpdateManyWithoutStoreNestedInput
+    planning_collections?: PlanningCollectionUpdateManyWithoutStoreNestedInput
+    planning_genders?: PlanningGenderUpdateManyWithoutStoreNestedInput
+    sku_allocates?: SKUAllocateUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutStore_refNestedInput
+  }
+
+  export type StoreUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutStoreNestedInput
+    planning_genders?: PlanningGenderUncheckedUpdateManyWithoutStoreNestedInput
+    sku_allocates?: SKUAllocateUncheckedUpdateManyWithoutStoreNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refNestedInput
+  }
+
+  export type BrandUpsertWithoutSales_history_aggInput = {
+    update: XOR<BrandUpdateWithoutSales_history_aggInput, BrandUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<BrandCreateWithoutSales_history_aggInput, BrandUncheckedCreateWithoutSales_history_aggInput>
+    where?: BrandWhereInput
+  }
+
+  export type BrandUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: BrandWhereInput
+    data: XOR<BrandUpdateWithoutSales_history_aggInput, BrandUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type BrandUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    group_brand?: GroupBrandUpdateOneRequiredWithoutBrandsNestedInput
+    categories?: CategoryUpdateManyWithoutBrandNestedInput
+    allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput
+  }
+
+  export type BrandUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    code?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    group_brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUncheckedUpdateManyWithoutBrandNestedInput
+    allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+  }
+
+  export type GenderUpsertWithoutSales_history_aggInput = {
+    update: XOR<GenderUpdateWithoutSales_history_aggInput, GenderUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<GenderCreateWithoutSales_history_aggInput, GenderUncheckedCreateWithoutSales_history_aggInput>
+    where?: GenderWhereInput
+  }
+
+  export type GenderUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: GenderWhereInput
+    data: XOR<GenderUpdateWithoutSales_history_aggInput, GenderUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type GenderUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUpdateManyWithoutGenderNestedInput
+    planning_genders?: PlanningGenderUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutGender_refNestedInput
+  }
+
+  export type GenderUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    categories?: CategoryUncheckedUpdateManyWithoutGenderNestedInput
+    planning_genders?: PlanningGenderUncheckedUpdateManyWithoutGenderNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refNestedInput
+  }
+
+  export type CategoryUpsertWithoutSales_history_aggInput = {
+    update: XOR<CategoryUpdateWithoutSales_history_aggInput, CategoryUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<CategoryCreateWithoutSales_history_aggInput, CategoryUncheckedCreateWithoutSales_history_aggInput>
+    where?: CategoryWhereInput
+  }
+
+  export type CategoryUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: CategoryWhereInput
+    data: XOR<CategoryUpdateWithoutSales_history_aggInput, CategoryUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type CategoryUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
+    sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
+    brand?: BrandUpdateOneWithoutCategoriesNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput
+  }
+
+  export type CategoryUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+  }
+
+  export type SubCategoryUpsertWithoutSales_history_aggInput = {
+    update: XOR<SubCategoryUpdateWithoutSales_history_aggInput, SubCategoryUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<SubCategoryCreateWithoutSales_history_aggInput, SubCategoryUncheckedCreateWithoutSales_history_aggInput>
+    where?: SubCategoryWhereInput
+  }
+
+  export type SubCategoryUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: SubCategoryWhereInput
+    data: XOR<SubCategoryUpdateWithoutSales_history_aggInput, SubCategoryUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SubCategoryUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    category?: CategoryUpdateOneRequiredWithoutSub_categoriesNestedInput
+    products?: ProductUpdateManyWithoutSub_categoryNestedInput
+    subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
+    planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+  }
+
+  export type SubCategoryUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
+    subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
+    planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+  }
+
+  export type SeasonUpsertWithoutSales_history_aggInput = {
+    update: XOR<SeasonUpdateWithoutSales_history_aggInput, SeasonUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
+    where?: SeasonWhereInput
+  }
+
+  export type SeasonUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: SeasonWhereInput
+    data: XOR<SeasonUpdateWithoutSales_history_aggInput, SeasonUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SeasonUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
+    budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
+    tickets?: TicketUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
+  }
+
+  export type SeasonUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    season_group_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
+    tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+  }
+
   export type BudgetCreateWithoutTicketsInput = {
     id?: bigint | number
     name: string
@@ -51549,6 +57879,8 @@ export namespace Prisma {
     updated_by?: bigint | number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonUncheckedCreateWithoutTicketsInput = {
@@ -51561,6 +57893,8 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
   }
 
   export type SeasonCreateOrConnectWithoutTicketsInput = {
@@ -51786,6 +58120,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateWithoutTicketsInput = {
@@ -51798,6 +58134,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type UserUpsertWithoutCreated_ticketsInput = {
@@ -52917,6 +59255,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandUncheckedUpdateWithoutGroup_brandInput = {
@@ -52930,6 +59270,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     categories?: CategoryUncheckedUpdateManyWithoutBrandNestedInput
     allocate_headers?: AllocateHeaderUncheckedUpdateManyWithoutBrandNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutBrand_refNestedInput
   }
 
   export type BrandUncheckedUpdateManyWithoutGroup_brandInput = {
@@ -52994,6 +59336,44 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggCreateManyBrand_refInput = {
+    store_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManyBrand_refInput = {
+    store_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
   export type CategoryUpdateWithoutBrandInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
@@ -53004,6 +59384,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     gender?: GenderUpdateOneRequiredWithoutCategoriesNestedInput
     sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateWithoutBrandInput = {
@@ -53016,6 +59398,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateManyWithoutBrandInput = {
@@ -53074,6 +59458,126 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpdateWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutBrand_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type BudgetAllocateCreateManyStoreInput = {
     allocate_header_id: bigint | number
     season_group_id: bigint | number
@@ -53123,6 +59627,44 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyStore_refInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManyStore_refInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
   }
 
   export type BudgetAllocateUpdateWithoutStoreInput = {
@@ -53290,6 +59832,126 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpdateWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutStore_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type PlanningCollectionCreateManySeason_typeInput = {
     store_id: bigint | number
     planning_header_id: bigint | number
@@ -53397,6 +60059,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateWithoutSeason_groupInput = {
@@ -53409,6 +60073,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
   }
 
   export type SeasonUncheckedUpdateManyWithoutSeason_groupInput = {
@@ -53515,6 +60181,44 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggCreateManySeasonInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManySeasonInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
   export type BudgetAllocateUpdateWithoutSeasonInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     budget_amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -53588,6 +60292,126 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpdateWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSeasonInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type CategoryCreateManyGenderInput = {
     name: string
     brand_id?: bigint | number | null
@@ -53613,6 +60437,44 @@ export namespace Prisma {
     updated_by?: bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggCreateManyGender_refInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManyGender_refInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
   export type CategoryUpdateWithoutGenderInput = {
     id?: BigIntFieldUpdateOperationsInput | bigint | number
     name?: StringFieldUpdateOperationsInput | string
@@ -53623,6 +60485,8 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUpdateManyWithoutCategoryNestedInput
     brand?: BrandUpdateOneWithoutCategoriesNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateWithoutGenderInput = {
@@ -53635,6 +60499,8 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_categories?: SubCategoryUncheckedUpdateManyWithoutCategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutCategoryNestedInput
   }
 
   export type CategoryUncheckedUpdateManyWithoutGenderInput = {
@@ -53696,6 +60562,126 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SubCategorySizeHistoryAggUpdateWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutGender_refInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type SubCategoryCreateManyCategoryInput = {
     name: string
     is_active?: boolean
@@ -53703,6 +60689,44 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateManyCategoryInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManyCategoryInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
   }
 
   export type SubCategoryUpdateWithoutCategoryInput = {
@@ -53716,6 +60740,8 @@ export namespace Prisma {
     products?: ProductUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateWithoutCategoryInput = {
@@ -53729,6 +60755,8 @@ export namespace Prisma {
     products?: ProductUncheckedUpdateManyWithoutSub_categoryNestedInput
     subcategory_sizes?: SubcategorySizeUncheckedUpdateManyWithoutSub_categoryNestedInput
     planning_categories?: PlanningCategoryUncheckedUpdateManyWithoutSubcategoryNestedInput
+    history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
   export type SubCategoryUncheckedUpdateManyWithoutCategoryInput = {
@@ -53739,6 +60767,126 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutCategoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
   }
 
   export type ProductCreateManySub_categoryInput = {
@@ -53781,6 +60929,44 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+  }
+
+  export type SubCategorySizeHistoryAggCreateManySub_categoryInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateManySub_categoryInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    product_size?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
   }
 
   export type ProductUpdateWithoutSub_categoryInput = {
@@ -53920,6 +61106,126 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+  }
+
+  export type SubCategorySizeHistoryAggUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutHistory_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutHistory_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutHistory_aggNestedInput
+    category?: CategoryUpdateOneWithoutHistory_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutHistory_aggNestedInput
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSub_categoryInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    product_size?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
   }
 
   export type ProposalSizingCreateManySubcategory_sizeInput = {
@@ -55102,6 +62408,14 @@ export namespace Prisma {
      * @deprecated Use ProposalSizingDefaultArgs instead
      */
     export type ProposalSizingArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = ProposalSizingDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use SubCategorySizeHistoryAggDefaultArgs instead
+     */
+    export type SubCategorySizeHistoryAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SubCategorySizeHistoryAggDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use SalesHistoryAggDefaultArgs instead
+     */
+    export type SalesHistoryAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SalesHistoryAggDefaultArgs<ExtArgs>
     /**
      * @deprecated Use ApprovalStatusDefaultArgs instead
      */
