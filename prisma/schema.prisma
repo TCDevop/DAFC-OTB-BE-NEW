@@ -107,7 +107,8 @@ model Brand {
   categories       Category[]       @relation("BrandToCategory")
   allocate_headers AllocateHeader[] @relation("BrandToAllocateHeader")
   history_agg       SubCategorySizeHistoryAgg[] @relation("BrandToHistoryAgg")
-  sales_history_agg SalesHistoryAgg[]           @relation("BrandToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("BrandToSalesHistoryAgg")
+
 
   @@map("brand")
 }
@@ -132,7 +133,7 @@ model Store {
   planning_genders     PlanningGender[]     @relation("StoreToPlanningGender")
   sku_allocates        SKUAllocate[]        @relation("StoreToSKUAllocate")
   history_agg          SubCategorySizeHistoryAgg[] @relation("StoreToHistoryAgg")
-  sales_history_agg    SalesHistoryAgg[]           @relation("StoreToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("StoreToSalesHistoryAgg")
 
   @@map("store")
 }
@@ -152,6 +153,7 @@ model SeasonType {
 
   // Relations
   planning_collections PlanningCollection[] @relation("SeasonTypeToPlanningCollection")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("SeasonTypeToSalesHistoryAgg")
 
   @@map("season_type")
 }
@@ -183,13 +185,14 @@ model Season {
   created_at      DateTime @default(now())
   updated_at      DateTime @updatedAt
   updated_by      BigInt?
+  no              Int?
 
   // Relations
   season_group     SeasonGroup      @relation("SeasonGroupToSeason", fields: [season_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "season_group_id_fkey")
   budget_allocates BudgetAllocate[] @relation("SeasonToBudgetAllocate")
   tickets          Ticket[]         @relation("SeasonToTicket")
   history_agg       SubCategorySizeHistoryAgg[] @relation("SeasonToHistoryAgg")
-  sales_history_agg SalesHistoryAgg[]           @relation("SeasonToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("SeasonToSalesHistoryAgg")
 
   @@map("season")
 }
@@ -207,7 +210,7 @@ model Gender {
   categories       Category[]       @relation("GenderToCategory")
   planning_genders PlanningGender[] @relation("GenderToPlanningGender")
   history_agg       SubCategorySizeHistoryAgg[] @relation("GenderToHistoryAgg")
-  sales_history_agg SalesHistoryAgg[]           @relation("GenderToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("GenderToSalesHistoryAgg")
 
   @@map("gender")
 }
@@ -228,7 +231,7 @@ model Category {
   sub_categories SubCategory[] @relation("CategoryToSubCategory")
   brand         Brand?        @relation("BrandToCategory", fields: [brand_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   history_agg       SubCategorySizeHistoryAgg[] @relation("CategoryToHistoryAgg")
-  sales_history_agg SalesHistoryAgg[]           @relation("CategoryToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("CategoryToSalesHistoryAgg")
 
   @@map("category")
 }
@@ -249,7 +252,7 @@ model SubCategory {
   subcategory_sizes   SubcategorySize[]    @relation("SubCategoryToSize")
   planning_categories PlanningCategory[]   @relation("SubCategoryToPlanningCategory")
   history_agg         SubCategorySizeHistoryAgg[] @relation("SubCategoryToHistoryAgg")
-  sales_history_agg   SalesHistoryAgg[]           @relation("SubCategoryToSalesHistoryAgg")
+  sales_history_agg          SalesHistoryAgg[]                    @relation("SubCategoryToSalesHistoryAgg")
 
   @@map("sub_category")
 }
@@ -604,6 +607,9 @@ model SubCategorySizeHistoryAgg {
   @@map("sub_category_size_history_agg")
 }
 
+// sales_sub_category_size_history_agg — no PK, all columns nullable (int)
+// Queried via raw SQL in ProposalService.getSizingHistory()
+
 model SalesHistoryAgg {
   id               BigInt   @id @default(autoincrement())
   store_id         BigInt
@@ -611,6 +617,7 @@ model SalesHistoryAgg {
   gender_id        BigInt
   category_id      BigInt?
   sub_category_id  BigInt?
+  season_type_id   BigInt?
   year             Int
   season_id        BigInt
   mall             String?
@@ -619,7 +626,6 @@ model SalesHistoryAgg {
   cat_vendor       String?
   prod_line_vendor String?
   gender           String?
-  product_size     String?
   buy              Decimal  @default(0) @db.Decimal(18, 2)
   sales_amt        Decimal  @default(0) @db.Decimal(18, 2)
   st               Decimal? @db.Decimal(18, 4)
@@ -630,9 +636,59 @@ model SalesHistoryAgg {
   gender_ref       Gender       @relation("GenderToSalesHistoryAgg", fields: [gender_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   category         Category?    @relation("CategoryToSalesHistoryAgg", fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   sub_category     SubCategory? @relation("SubCategoryToSalesHistoryAgg", fields: [sub_category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  season_type      SeasonType?  @relation("SeasonTypeToSalesHistoryAgg", fields: [season_type_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   season           Season       @relation("SeasonToSalesHistoryAgg", fields: [season_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
   @@map("sales_history_agg")
+}
+
+model SellthroughByGenderAgg {
+  store_id    BigInt
+  brand_id    BigInt
+  gender_id   BigInt
+  year        Int
+  season_id   BigInt
+  mall        String?
+  group_brand String?
+  brand_name  String?
+  gender      String?
+  st          Decimal? @db.Decimal(18, 4)
+
+  @@id([store_id, brand_id, gender_id, year, season_id])
+  @@map("sellthrough_by_gender_history_agg")
+}
+
+model SellthroughBySeasonTypeAgg {
+  store_id       BigInt
+  brand_id       BigInt
+  season_type_id BigInt
+  year           Int
+  season_id      BigInt
+  mall           String?
+  group_brand    String?
+  brand_name     String?
+  st             Decimal? @db.Decimal(18, 4)
+
+  @@id([store_id, brand_id, season_type_id, year, season_id])
+  @@map("sellthrough_by_season_type_history_agg")
+}
+
+model SellthroughBySubcategoryAgg {
+  brand_id         BigInt
+  gender_id        BigInt
+  category_id      BigInt
+  sub_category_id  BigInt
+  year             Int
+  season_id        BigInt
+  group_brand      String?
+  brand_name       String?
+  cat_vendor       String?
+  prod_line_vendor String?
+  gender           String?
+  st               Decimal? @db.Decimal(18, 4)
+
+  @@id([brand_id, gender_id, category_id, sub_category_id, year, season_id])
+  @@map("sellthrough_by_subcategory_history_agg")
 }
 
 // ============================================

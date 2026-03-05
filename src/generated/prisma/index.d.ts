@@ -149,6 +149,21 @@ export type SubCategorySizeHistoryAgg = $Result.DefaultSelection<Prisma.$SubCate
  */
 export type SalesHistoryAgg = $Result.DefaultSelection<Prisma.$SalesHistoryAggPayload>
 /**
+ * Model SellthroughByGenderAgg
+ * 
+ */
+export type SellthroughByGenderAgg = $Result.DefaultSelection<Prisma.$SellthroughByGenderAggPayload>
+/**
+ * Model SellthroughBySeasonTypeAgg
+ * 
+ */
+export type SellthroughBySeasonTypeAgg = $Result.DefaultSelection<Prisma.$SellthroughBySeasonTypeAggPayload>
+/**
+ * Model SellthroughBySubcategoryAgg
+ * 
+ */
+export type SellthroughBySubcategoryAgg = $Result.DefaultSelection<Prisma.$SellthroughBySubcategoryAggPayload>
+/**
  * Model ApprovalStatus
  * 
  */
@@ -566,6 +581,36 @@ export class PrismaClient<
     * ```
     */
   get salesHistoryAgg(): Prisma.SalesHistoryAggDelegate<ExtArgs>;
+
+  /**
+   * `prisma.sellthroughByGenderAgg`: Exposes CRUD operations for the **SellthroughByGenderAgg** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more SellthroughByGenderAggs
+    * const sellthroughByGenderAggs = await prisma.sellthroughByGenderAgg.findMany()
+    * ```
+    */
+  get sellthroughByGenderAgg(): Prisma.SellthroughByGenderAggDelegate<ExtArgs>;
+
+  /**
+   * `prisma.sellthroughBySeasonTypeAgg`: Exposes CRUD operations for the **SellthroughBySeasonTypeAgg** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more SellthroughBySeasonTypeAggs
+    * const sellthroughBySeasonTypeAggs = await prisma.sellthroughBySeasonTypeAgg.findMany()
+    * ```
+    */
+  get sellthroughBySeasonTypeAgg(): Prisma.SellthroughBySeasonTypeAggDelegate<ExtArgs>;
+
+  /**
+   * `prisma.sellthroughBySubcategoryAgg`: Exposes CRUD operations for the **SellthroughBySubcategoryAgg** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more SellthroughBySubcategoryAggs
+    * const sellthroughBySubcategoryAggs = await prisma.sellthroughBySubcategoryAgg.findMany()
+    * ```
+    */
+  get sellthroughBySubcategoryAgg(): Prisma.SellthroughBySubcategoryAggDelegate<ExtArgs>;
 
   /**
    * `prisma.approvalStatus`: Exposes CRUD operations for the **ApprovalStatus** model.
@@ -1084,6 +1129,9 @@ export namespace Prisma {
     ProposalSizing: 'ProposalSizing',
     SubCategorySizeHistoryAgg: 'SubCategorySizeHistoryAgg',
     SalesHistoryAgg: 'SalesHistoryAgg',
+    SellthroughByGenderAgg: 'SellthroughByGenderAgg',
+    SellthroughBySeasonTypeAgg: 'SellthroughBySeasonTypeAgg',
+    SellthroughBySubcategoryAgg: 'SellthroughBySubcategoryAgg',
     ApprovalStatus: 'ApprovalStatus',
     Ticket: 'Ticket',
     ApprovalWorkflow: 'ApprovalWorkflow',
@@ -1104,7 +1152,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, ClientOptions = {}> = {
     meta: {
-      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "seasonType" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "subCategorySizeHistoryAgg" | "salesHistoryAgg" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
+      modelProps: "user" | "role" | "groupBrand" | "brand" | "store" | "seasonType" | "seasonGroup" | "season" | "gender" | "category" | "subCategory" | "subcategorySize" | "product" | "budget" | "allocateHeader" | "budgetAllocate" | "planningHeader" | "planningCollection" | "planningGender" | "planningCategory" | "sKUProposalHeader" | "sKUProposal" | "sKUAllocate" | "proposalSizingHeader" | "proposalSizing" | "subCategorySizeHistoryAgg" | "salesHistoryAgg" | "sellthroughByGenderAgg" | "sellthroughBySeasonTypeAgg" | "sellthroughBySubcategoryAgg" | "approvalStatus" | "ticket" | "approvalWorkflow" | "approvalWorkflowLevel" | "ticketApprovalLog"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -2890,6 +2938,204 @@ export namespace Prisma {
           }
         }
       }
+      SellthroughByGenderAgg: {
+        payload: Prisma.$SellthroughByGenderAggPayload<ExtArgs>
+        fields: Prisma.SellthroughByGenderAggFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.SellthroughByGenderAggFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.SellthroughByGenderAggFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          findFirst: {
+            args: Prisma.SellthroughByGenderAggFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.SellthroughByGenderAggFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          findMany: {
+            args: Prisma.SellthroughByGenderAggFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>[]
+          }
+          create: {
+            args: Prisma.SellthroughByGenderAggCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          createMany: {
+            args: Prisma.SellthroughByGenderAggCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.SellthroughByGenderAggDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          update: {
+            args: Prisma.SellthroughByGenderAggUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          deleteMany: {
+            args: Prisma.SellthroughByGenderAggDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.SellthroughByGenderAggUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.SellthroughByGenderAggUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughByGenderAggPayload>
+          }
+          aggregate: {
+            args: Prisma.SellthroughByGenderAggAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSellthroughByGenderAgg>
+          }
+          groupBy: {
+            args: Prisma.SellthroughByGenderAggGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughByGenderAggGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.SellthroughByGenderAggCountArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughByGenderAggCountAggregateOutputType> | number
+          }
+        }
+      }
+      SellthroughBySeasonTypeAgg: {
+        payload: Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>
+        fields: Prisma.SellthroughBySeasonTypeAggFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.SellthroughBySeasonTypeAggFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.SellthroughBySeasonTypeAggFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          findFirst: {
+            args: Prisma.SellthroughBySeasonTypeAggFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.SellthroughBySeasonTypeAggFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          findMany: {
+            args: Prisma.SellthroughBySeasonTypeAggFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>[]
+          }
+          create: {
+            args: Prisma.SellthroughBySeasonTypeAggCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          createMany: {
+            args: Prisma.SellthroughBySeasonTypeAggCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.SellthroughBySeasonTypeAggDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          update: {
+            args: Prisma.SellthroughBySeasonTypeAggUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          deleteMany: {
+            args: Prisma.SellthroughBySeasonTypeAggDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.SellthroughBySeasonTypeAggUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.SellthroughBySeasonTypeAggUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySeasonTypeAggPayload>
+          }
+          aggregate: {
+            args: Prisma.SellthroughBySeasonTypeAggAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSellthroughBySeasonTypeAgg>
+          }
+          groupBy: {
+            args: Prisma.SellthroughBySeasonTypeAggGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughBySeasonTypeAggGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.SellthroughBySeasonTypeAggCountArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughBySeasonTypeAggCountAggregateOutputType> | number
+          }
+        }
+      }
+      SellthroughBySubcategoryAgg: {
+        payload: Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>
+        fields: Prisma.SellthroughBySubcategoryAggFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.SellthroughBySubcategoryAggFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.SellthroughBySubcategoryAggFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          findFirst: {
+            args: Prisma.SellthroughBySubcategoryAggFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.SellthroughBySubcategoryAggFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          findMany: {
+            args: Prisma.SellthroughBySubcategoryAggFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>[]
+          }
+          create: {
+            args: Prisma.SellthroughBySubcategoryAggCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          createMany: {
+            args: Prisma.SellthroughBySubcategoryAggCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.SellthroughBySubcategoryAggDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          update: {
+            args: Prisma.SellthroughBySubcategoryAggUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          deleteMany: {
+            args: Prisma.SellthroughBySubcategoryAggDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.SellthroughBySubcategoryAggUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.SellthroughBySubcategoryAggUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$SellthroughBySubcategoryAggPayload>
+          }
+          aggregate: {
+            args: Prisma.SellthroughBySubcategoryAggAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateSellthroughBySubcategoryAgg>
+          }
+          groupBy: {
+            args: Prisma.SellthroughBySubcategoryAggGroupByArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughBySubcategoryAggGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.SellthroughBySubcategoryAggCountArgs<ExtArgs>
+            result: $Utils.Optional<SellthroughBySubcategoryAggCountAggregateOutputType> | number
+          }
+        }
+      }
       ApprovalStatus: {
         payload: Prisma.$ApprovalStatusPayload<ExtArgs>
         fields: Prisma.ApprovalStatusFieldRefs
@@ -3681,10 +3927,12 @@ export namespace Prisma {
 
   export type SeasonTypeCountOutputType = {
     planning_collections: number
+    sales_history_agg: number
   }
 
   export type SeasonTypeCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     planning_collections?: boolean | SeasonTypeCountOutputTypeCountPlanning_collectionsArgs
+    sales_history_agg?: boolean | SeasonTypeCountOutputTypeCountSales_history_aggArgs
   }
 
   // Custom InputTypes
@@ -3703,6 +3951,13 @@ export namespace Prisma {
    */
   export type SeasonTypeCountOutputTypeCountPlanning_collectionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PlanningCollectionWhereInput
+  }
+
+  /**
+   * SeasonTypeCountOutputType without action
+   */
+  export type SeasonTypeCountOutputTypeCountSales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SalesHistoryAggWhereInput
   }
 
 
@@ -9927,6 +10182,7 @@ export namespace Prisma {
     updated_at?: boolean
     updated_by?: boolean
     planning_collections?: boolean | SeasonType$planning_collectionsArgs<ExtArgs>
+    sales_history_agg?: boolean | SeasonType$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SeasonTypeCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["seasonType"]>
 
@@ -9943,6 +10199,7 @@ export namespace Prisma {
 
   export type SeasonTypeInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     planning_collections?: boolean | SeasonType$planning_collectionsArgs<ExtArgs>
+    sales_history_agg?: boolean | SeasonType$sales_history_aggArgs<ExtArgs>
     _count?: boolean | SeasonTypeCountOutputTypeDefaultArgs<ExtArgs>
   }
 
@@ -9950,6 +10207,7 @@ export namespace Prisma {
     name: "SeasonType"
     objects: {
       planning_collections: Prisma.$PlanningCollectionPayload<ExtArgs>[]
+      sales_history_agg: Prisma.$SalesHistoryAggPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: bigint
@@ -10300,6 +10558,7 @@ export namespace Prisma {
   export interface Prisma__SeasonTypeClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     planning_collections<T extends SeasonType$planning_collectionsArgs<ExtArgs> = {}>(args?: Subset<T, SeasonType$planning_collectionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PlanningCollectionPayload<ExtArgs>, T, "findMany"> | Null>
+    sales_history_agg<T extends SeasonType$sales_history_aggArgs<ExtArgs> = {}>(args?: Subset<T, SeasonType$sales_history_aggArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SalesHistoryAggPayload<ExtArgs>, T, "findMany"> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -10651,6 +10910,26 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: PlanningCollectionScalarFieldEnum | PlanningCollectionScalarFieldEnum[]
+  }
+
+  /**
+   * SeasonType.sales_history_agg
+   */
+  export type SeasonType$sales_history_aggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SalesHistoryAgg
+     */
+    select?: SalesHistoryAggSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SalesHistoryAggInclude<ExtArgs> | null
+    where?: SalesHistoryAggWhereInput
+    orderBy?: SalesHistoryAggOrderByWithRelationInput | SalesHistoryAggOrderByWithRelationInput[]
+    cursor?: SalesHistoryAggWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: SalesHistoryAggScalarFieldEnum | SalesHistoryAggScalarFieldEnum[]
   }
 
   /**
@@ -11712,6 +11991,7 @@ export namespace Prisma {
     season_group_id: number | null
     created_by: number | null
     updated_by: number | null
+    no: number | null
   }
 
   export type SeasonSumAggregateOutputType = {
@@ -11719,6 +11999,7 @@ export namespace Prisma {
     season_group_id: bigint | null
     created_by: bigint | null
     updated_by: bigint | null
+    no: number | null
   }
 
   export type SeasonMinAggregateOutputType = {
@@ -11730,6 +12011,7 @@ export namespace Prisma {
     created_at: Date | null
     updated_at: Date | null
     updated_by: bigint | null
+    no: number | null
   }
 
   export type SeasonMaxAggregateOutputType = {
@@ -11741,6 +12023,7 @@ export namespace Prisma {
     created_at: Date | null
     updated_at: Date | null
     updated_by: bigint | null
+    no: number | null
   }
 
   export type SeasonCountAggregateOutputType = {
@@ -11752,6 +12035,7 @@ export namespace Prisma {
     created_at: number
     updated_at: number
     updated_by: number
+    no: number
     _all: number
   }
 
@@ -11761,6 +12045,7 @@ export namespace Prisma {
     season_group_id?: true
     created_by?: true
     updated_by?: true
+    no?: true
   }
 
   export type SeasonSumAggregateInputType = {
@@ -11768,6 +12053,7 @@ export namespace Prisma {
     season_group_id?: true
     created_by?: true
     updated_by?: true
+    no?: true
   }
 
   export type SeasonMinAggregateInputType = {
@@ -11779,6 +12065,7 @@ export namespace Prisma {
     created_at?: true
     updated_at?: true
     updated_by?: true
+    no?: true
   }
 
   export type SeasonMaxAggregateInputType = {
@@ -11790,6 +12077,7 @@ export namespace Prisma {
     created_at?: true
     updated_at?: true
     updated_by?: true
+    no?: true
   }
 
   export type SeasonCountAggregateInputType = {
@@ -11801,6 +12089,7 @@ export namespace Prisma {
     created_at?: true
     updated_at?: true
     updated_by?: true
+    no?: true
     _all?: true
   }
 
@@ -11899,6 +12188,7 @@ export namespace Prisma {
     created_at: Date
     updated_at: Date
     updated_by: bigint | null
+    no: number | null
     _count: SeasonCountAggregateOutputType | null
     _avg: SeasonAvgAggregateOutputType | null
     _sum: SeasonSumAggregateOutputType | null
@@ -11929,6 +12219,7 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
+    no?: boolean
     season_group?: boolean | SeasonGroupDefaultArgs<ExtArgs>
     budget_allocates?: boolean | Season$budget_allocatesArgs<ExtArgs>
     tickets?: boolean | Season$ticketsArgs<ExtArgs>
@@ -11947,6 +12238,7 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     updated_by?: boolean
+    no?: boolean
   }
 
   export type SeasonInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -11976,6 +12268,7 @@ export namespace Prisma {
       created_at: Date
       updated_at: Date
       updated_by: bigint | null
+      no: number | null
     }, ExtArgs["result"]["season"]>
     composites: {}
   }
@@ -12358,6 +12651,7 @@ export namespace Prisma {
     readonly created_at: FieldRef<"Season", 'DateTime'>
     readonly updated_at: FieldRef<"Season", 'DateTime'>
     readonly updated_by: FieldRef<"Season", 'BigInt'>
+    readonly no: FieldRef<"Season", 'Int'>
   }
     
 
@@ -31613,6 +31907,7 @@ export namespace Prisma {
     gender_id: number | null
     category_id: number | null
     sub_category_id: number | null
+    season_type_id: number | null
     year: number | null
     season_id: number | null
     buy: Decimal | null
@@ -31627,6 +31922,7 @@ export namespace Prisma {
     gender_id: bigint | null
     category_id: bigint | null
     sub_category_id: bigint | null
+    season_type_id: bigint | null
     year: number | null
     season_id: bigint | null
     buy: Decimal | null
@@ -31641,6 +31937,7 @@ export namespace Prisma {
     gender_id: bigint | null
     category_id: bigint | null
     sub_category_id: bigint | null
+    season_type_id: bigint | null
     year: number | null
     season_id: bigint | null
     mall: string | null
@@ -31649,7 +31946,6 @@ export namespace Prisma {
     cat_vendor: string | null
     prod_line_vendor: string | null
     gender: string | null
-    product_size: string | null
     buy: Decimal | null
     sales_amt: Decimal | null
     st: Decimal | null
@@ -31662,6 +31958,7 @@ export namespace Prisma {
     gender_id: bigint | null
     category_id: bigint | null
     sub_category_id: bigint | null
+    season_type_id: bigint | null
     year: number | null
     season_id: bigint | null
     mall: string | null
@@ -31670,7 +31967,6 @@ export namespace Prisma {
     cat_vendor: string | null
     prod_line_vendor: string | null
     gender: string | null
-    product_size: string | null
     buy: Decimal | null
     sales_amt: Decimal | null
     st: Decimal | null
@@ -31683,6 +31979,7 @@ export namespace Prisma {
     gender_id: number
     category_id: number
     sub_category_id: number
+    season_type_id: number
     year: number
     season_id: number
     mall: number
@@ -31691,7 +31988,6 @@ export namespace Prisma {
     cat_vendor: number
     prod_line_vendor: number
     gender: number
-    product_size: number
     buy: number
     sales_amt: number
     st: number
@@ -31706,6 +32002,7 @@ export namespace Prisma {
     gender_id?: true
     category_id?: true
     sub_category_id?: true
+    season_type_id?: true
     year?: true
     season_id?: true
     buy?: true
@@ -31720,6 +32017,7 @@ export namespace Prisma {
     gender_id?: true
     category_id?: true
     sub_category_id?: true
+    season_type_id?: true
     year?: true
     season_id?: true
     buy?: true
@@ -31734,6 +32032,7 @@ export namespace Prisma {
     gender_id?: true
     category_id?: true
     sub_category_id?: true
+    season_type_id?: true
     year?: true
     season_id?: true
     mall?: true
@@ -31742,7 +32041,6 @@ export namespace Prisma {
     cat_vendor?: true
     prod_line_vendor?: true
     gender?: true
-    product_size?: true
     buy?: true
     sales_amt?: true
     st?: true
@@ -31755,6 +32053,7 @@ export namespace Prisma {
     gender_id?: true
     category_id?: true
     sub_category_id?: true
+    season_type_id?: true
     year?: true
     season_id?: true
     mall?: true
@@ -31763,7 +32062,6 @@ export namespace Prisma {
     cat_vendor?: true
     prod_line_vendor?: true
     gender?: true
-    product_size?: true
     buy?: true
     sales_amt?: true
     st?: true
@@ -31776,6 +32074,7 @@ export namespace Prisma {
     gender_id?: true
     category_id?: true
     sub_category_id?: true
+    season_type_id?: true
     year?: true
     season_id?: true
     mall?: true
@@ -31784,7 +32083,6 @@ export namespace Prisma {
     cat_vendor?: true
     prod_line_vendor?: true
     gender?: true
-    product_size?: true
     buy?: true
     sales_amt?: true
     st?: true
@@ -31884,6 +32182,7 @@ export namespace Prisma {
     gender_id: bigint
     category_id: bigint | null
     sub_category_id: bigint | null
+    season_type_id: bigint | null
     year: number
     season_id: bigint
     mall: string | null
@@ -31892,7 +32191,6 @@ export namespace Prisma {
     cat_vendor: string | null
     prod_line_vendor: string | null
     gender: string | null
-    product_size: string | null
     buy: Decimal
     sales_amt: Decimal
     st: Decimal | null
@@ -31924,6 +32222,7 @@ export namespace Prisma {
     gender_id?: boolean
     category_id?: boolean
     sub_category_id?: boolean
+    season_type_id?: boolean
     year?: boolean
     season_id?: boolean
     mall?: boolean
@@ -31932,7 +32231,6 @@ export namespace Prisma {
     cat_vendor?: boolean
     prod_line_vendor?: boolean
     gender?: boolean
-    product_size?: boolean
     buy?: boolean
     sales_amt?: boolean
     st?: boolean
@@ -31941,6 +32239,7 @@ export namespace Prisma {
     gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
     category?: boolean | SalesHistoryAgg$categoryArgs<ExtArgs>
     sub_category?: boolean | SalesHistoryAgg$sub_categoryArgs<ExtArgs>
+    season_type?: boolean | SalesHistoryAgg$season_typeArgs<ExtArgs>
     season?: boolean | SeasonDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["salesHistoryAgg"]>
 
@@ -31952,6 +32251,7 @@ export namespace Prisma {
     gender_id?: boolean
     category_id?: boolean
     sub_category_id?: boolean
+    season_type_id?: boolean
     year?: boolean
     season_id?: boolean
     mall?: boolean
@@ -31960,7 +32260,6 @@ export namespace Prisma {
     cat_vendor?: boolean
     prod_line_vendor?: boolean
     gender?: boolean
-    product_size?: boolean
     buy?: boolean
     sales_amt?: boolean
     st?: boolean
@@ -31972,6 +32271,7 @@ export namespace Prisma {
     gender_ref?: boolean | GenderDefaultArgs<ExtArgs>
     category?: boolean | SalesHistoryAgg$categoryArgs<ExtArgs>
     sub_category?: boolean | SalesHistoryAgg$sub_categoryArgs<ExtArgs>
+    season_type?: boolean | SalesHistoryAgg$season_typeArgs<ExtArgs>
     season?: boolean | SeasonDefaultArgs<ExtArgs>
   }
 
@@ -31983,6 +32283,7 @@ export namespace Prisma {
       gender_ref: Prisma.$GenderPayload<ExtArgs>
       category: Prisma.$CategoryPayload<ExtArgs> | null
       sub_category: Prisma.$SubCategoryPayload<ExtArgs> | null
+      season_type: Prisma.$SeasonTypePayload<ExtArgs> | null
       season: Prisma.$SeasonPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
@@ -31992,6 +32293,7 @@ export namespace Prisma {
       gender_id: bigint
       category_id: bigint | null
       sub_category_id: bigint | null
+      season_type_id: bigint | null
       year: number
       season_id: bigint
       mall: string | null
@@ -32000,7 +32302,6 @@ export namespace Prisma {
       cat_vendor: string | null
       prod_line_vendor: string | null
       gender: string | null
-      product_size: string | null
       buy: Prisma.Decimal
       sales_amt: Prisma.Decimal
       st: Prisma.Decimal | null
@@ -32349,6 +32650,7 @@ export namespace Prisma {
     gender_ref<T extends GenderDefaultArgs<ExtArgs> = {}>(args?: Subset<T, GenderDefaultArgs<ExtArgs>>): Prisma__GenderClient<$Result.GetResult<Prisma.$GenderPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     category<T extends SalesHistoryAgg$categoryArgs<ExtArgs> = {}>(args?: Subset<T, SalesHistoryAgg$categoryArgs<ExtArgs>>): Prisma__CategoryClient<$Result.GetResult<Prisma.$CategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
     sub_category<T extends SalesHistoryAgg$sub_categoryArgs<ExtArgs> = {}>(args?: Subset<T, SalesHistoryAgg$sub_categoryArgs<ExtArgs>>): Prisma__SubCategoryClient<$Result.GetResult<Prisma.$SubCategoryPayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
+    season_type<T extends SalesHistoryAgg$season_typeArgs<ExtArgs> = {}>(args?: Subset<T, SalesHistoryAgg$season_typeArgs<ExtArgs>>): Prisma__SeasonTypeClient<$Result.GetResult<Prisma.$SeasonTypePayload<ExtArgs>, T, "findUniqueOrThrow"> | null, null, ExtArgs>
     season<T extends SeasonDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SeasonDefaultArgs<ExtArgs>>): Prisma__SeasonClient<$Result.GetResult<Prisma.$SeasonPayload<ExtArgs>, T, "findUniqueOrThrow"> | Null, Null, ExtArgs>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -32385,6 +32687,7 @@ export namespace Prisma {
     readonly gender_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
     readonly category_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
     readonly sub_category_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
+    readonly season_type_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
     readonly year: FieldRef<"SalesHistoryAgg", 'Int'>
     readonly season_id: FieldRef<"SalesHistoryAgg", 'BigInt'>
     readonly mall: FieldRef<"SalesHistoryAgg", 'String'>
@@ -32393,7 +32696,6 @@ export namespace Prisma {
     readonly cat_vendor: FieldRef<"SalesHistoryAgg", 'String'>
     readonly prod_line_vendor: FieldRef<"SalesHistoryAgg", 'String'>
     readonly gender: FieldRef<"SalesHistoryAgg", 'String'>
-    readonly product_size: FieldRef<"SalesHistoryAgg", 'String'>
     readonly buy: FieldRef<"SalesHistoryAgg", 'Decimal'>
     readonly sales_amt: FieldRef<"SalesHistoryAgg", 'Decimal'>
     readonly st: FieldRef<"SalesHistoryAgg", 'Decimal'>
@@ -32725,6 +33027,21 @@ export namespace Prisma {
   }
 
   /**
+   * SalesHistoryAgg.season_type
+   */
+  export type SalesHistoryAgg$season_typeArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SeasonType
+     */
+    select?: SeasonTypeSelect<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: SeasonTypeInclude<ExtArgs> | null
+    where?: SeasonTypeWhereInput
+  }
+
+  /**
    * SalesHistoryAgg without action
    */
   export type SalesHistoryAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -32736,6 +33053,2841 @@ export namespace Prisma {
      * Choose, which related nodes to fetch as well
      */
     include?: SalesHistoryAggInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model SellthroughByGenderAgg
+   */
+
+  export type AggregateSellthroughByGenderAgg = {
+    _count: SellthroughByGenderAggCountAggregateOutputType | null
+    _avg: SellthroughByGenderAggAvgAggregateOutputType | null
+    _sum: SellthroughByGenderAggSumAggregateOutputType | null
+    _min: SellthroughByGenderAggMinAggregateOutputType | null
+    _max: SellthroughByGenderAggMaxAggregateOutputType | null
+  }
+
+  export type SellthroughByGenderAggAvgAggregateOutputType = {
+    store_id: number | null
+    brand_id: number | null
+    gender_id: number | null
+    year: number | null
+    season_id: number | null
+    st: Decimal | null
+  }
+
+  export type SellthroughByGenderAggSumAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    st: Decimal | null
+  }
+
+  export type SellthroughByGenderAggMinAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    gender: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughByGenderAggMaxAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    gender_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    gender: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughByGenderAggCountAggregateOutputType = {
+    store_id: number
+    brand_id: number
+    gender_id: number
+    year: number
+    season_id: number
+    mall: number
+    group_brand: number
+    brand_name: number
+    gender: number
+    st: number
+    _all: number
+  }
+
+
+  export type SellthroughByGenderAggAvgAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughByGenderAggSumAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughByGenderAggMinAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    gender?: true
+    st?: true
+  }
+
+  export type SellthroughByGenderAggMaxAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    gender?: true
+    st?: true
+  }
+
+  export type SellthroughByGenderAggCountAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    gender_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    gender?: true
+    st?: true
+    _all?: true
+  }
+
+  export type SellthroughByGenderAggAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughByGenderAgg to aggregate.
+     */
+    where?: SellthroughByGenderAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughByGenderAggs to fetch.
+     */
+    orderBy?: SellthroughByGenderAggOrderByWithRelationInput | SellthroughByGenderAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: SellthroughByGenderAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughByGenderAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughByGenderAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned SellthroughByGenderAggs
+    **/
+    _count?: true | SellthroughByGenderAggCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: SellthroughByGenderAggAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: SellthroughByGenderAggSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: SellthroughByGenderAggMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: SellthroughByGenderAggMaxAggregateInputType
+  }
+
+  export type GetSellthroughByGenderAggAggregateType<T extends SellthroughByGenderAggAggregateArgs> = {
+        [P in keyof T & keyof AggregateSellthroughByGenderAgg]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateSellthroughByGenderAgg[P]>
+      : GetScalarType<T[P], AggregateSellthroughByGenderAgg[P]>
+  }
+
+
+
+
+  export type SellthroughByGenderAggGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SellthroughByGenderAggWhereInput
+    orderBy?: SellthroughByGenderAggOrderByWithAggregationInput | SellthroughByGenderAggOrderByWithAggregationInput[]
+    by: SellthroughByGenderAggScalarFieldEnum[] | SellthroughByGenderAggScalarFieldEnum
+    having?: SellthroughByGenderAggScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: SellthroughByGenderAggCountAggregateInputType | true
+    _avg?: SellthroughByGenderAggAvgAggregateInputType
+    _sum?: SellthroughByGenderAggSumAggregateInputType
+    _min?: SellthroughByGenderAggMinAggregateInputType
+    _max?: SellthroughByGenderAggMaxAggregateInputType
+  }
+
+  export type SellthroughByGenderAggGroupByOutputType = {
+    store_id: bigint
+    brand_id: bigint
+    gender_id: bigint
+    year: number
+    season_id: bigint
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    gender: string | null
+    st: Decimal | null
+    _count: SellthroughByGenderAggCountAggregateOutputType | null
+    _avg: SellthroughByGenderAggAvgAggregateOutputType | null
+    _sum: SellthroughByGenderAggSumAggregateOutputType | null
+    _min: SellthroughByGenderAggMinAggregateOutputType | null
+    _max: SellthroughByGenderAggMaxAggregateOutputType | null
+  }
+
+  type GetSellthroughByGenderAggGroupByPayload<T extends SellthroughByGenderAggGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<SellthroughByGenderAggGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof SellthroughByGenderAggGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], SellthroughByGenderAggGroupByOutputType[P]>
+            : GetScalarType<T[P], SellthroughByGenderAggGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type SellthroughByGenderAggSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    gender?: boolean
+    st?: boolean
+  }, ExtArgs["result"]["sellthroughByGenderAgg"]>
+
+
+  export type SellthroughByGenderAggSelectScalar = {
+    store_id?: boolean
+    brand_id?: boolean
+    gender_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    gender?: boolean
+    st?: boolean
+  }
+
+
+  export type $SellthroughByGenderAggPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SellthroughByGenderAgg"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      store_id: bigint
+      brand_id: bigint
+      gender_id: bigint
+      year: number
+      season_id: bigint
+      mall: string | null
+      group_brand: string | null
+      brand_name: string | null
+      gender: string | null
+      st: Prisma.Decimal | null
+    }, ExtArgs["result"]["sellthroughByGenderAgg"]>
+    composites: {}
+  }
+
+  type SellthroughByGenderAggGetPayload<S extends boolean | null | undefined | SellthroughByGenderAggDefaultArgs> = $Result.GetResult<Prisma.$SellthroughByGenderAggPayload, S>
+
+  type SellthroughByGenderAggCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SellthroughByGenderAggFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SellthroughByGenderAggCountAggregateInputType | true
+    }
+
+  export interface SellthroughByGenderAggDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SellthroughByGenderAgg'], meta: { name: 'SellthroughByGenderAgg' } }
+    /**
+     * Find zero or one SellthroughByGenderAgg that matches the filter.
+     * @param {SellthroughByGenderAggFindUniqueArgs} args - Arguments to find a SellthroughByGenderAgg
+     * @example
+     * // Get one SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends SellthroughByGenderAggFindUniqueArgs>(args: SelectSubset<T, SellthroughByGenderAggFindUniqueArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+
+    /**
+     * Find one SellthroughByGenderAgg that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {SellthroughByGenderAggFindUniqueOrThrowArgs} args - Arguments to find a SellthroughByGenderAgg
+     * @example
+     * // Get one SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends SellthroughByGenderAggFindUniqueOrThrowArgs>(args: SelectSubset<T, SellthroughByGenderAggFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+
+    /**
+     * Find the first SellthroughByGenderAgg that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggFindFirstArgs} args - Arguments to find a SellthroughByGenderAgg
+     * @example
+     * // Get one SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends SellthroughByGenderAggFindFirstArgs>(args?: SelectSubset<T, SellthroughByGenderAggFindFirstArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+
+    /**
+     * Find the first SellthroughByGenderAgg that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggFindFirstOrThrowArgs} args - Arguments to find a SellthroughByGenderAgg
+     * @example
+     * // Get one SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends SellthroughByGenderAggFindFirstOrThrowArgs>(args?: SelectSubset<T, SellthroughByGenderAggFindFirstOrThrowArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+
+    /**
+     * Find zero or more SellthroughByGenderAggs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all SellthroughByGenderAggs
+     * const sellthroughByGenderAggs = await prisma.sellthroughByGenderAgg.findMany()
+     * 
+     * // Get first 10 SellthroughByGenderAggs
+     * const sellthroughByGenderAggs = await prisma.sellthroughByGenderAgg.findMany({ take: 10 })
+     * 
+     * // Only select the `store_id`
+     * const sellthroughByGenderAggWithStore_idOnly = await prisma.sellthroughByGenderAgg.findMany({ select: { store_id: true } })
+     * 
+     */
+    findMany<T extends SellthroughByGenderAggFindManyArgs>(args?: SelectSubset<T, SellthroughByGenderAggFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "findMany">>
+
+    /**
+     * Create a SellthroughByGenderAgg.
+     * @param {SellthroughByGenderAggCreateArgs} args - Arguments to create a SellthroughByGenderAgg.
+     * @example
+     * // Create one SellthroughByGenderAgg
+     * const SellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.create({
+     *   data: {
+     *     // ... data to create a SellthroughByGenderAgg
+     *   }
+     * })
+     * 
+     */
+    create<T extends SellthroughByGenderAggCreateArgs>(args: SelectSubset<T, SellthroughByGenderAggCreateArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "create">, never, ExtArgs>
+
+    /**
+     * Create many SellthroughByGenderAggs.
+     * @param {SellthroughByGenderAggCreateManyArgs} args - Arguments to create many SellthroughByGenderAggs.
+     * @example
+     * // Create many SellthroughByGenderAggs
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends SellthroughByGenderAggCreateManyArgs>(args?: SelectSubset<T, SellthroughByGenderAggCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a SellthroughByGenderAgg.
+     * @param {SellthroughByGenderAggDeleteArgs} args - Arguments to delete one SellthroughByGenderAgg.
+     * @example
+     * // Delete one SellthroughByGenderAgg
+     * const SellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.delete({
+     *   where: {
+     *     // ... filter to delete one SellthroughByGenderAgg
+     *   }
+     * })
+     * 
+     */
+    delete<T extends SellthroughByGenderAggDeleteArgs>(args: SelectSubset<T, SellthroughByGenderAggDeleteArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+
+    /**
+     * Update one SellthroughByGenderAgg.
+     * @param {SellthroughByGenderAggUpdateArgs} args - Arguments to update one SellthroughByGenderAgg.
+     * @example
+     * // Update one SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends SellthroughByGenderAggUpdateArgs>(args: SelectSubset<T, SellthroughByGenderAggUpdateArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "update">, never, ExtArgs>
+
+    /**
+     * Delete zero or more SellthroughByGenderAggs.
+     * @param {SellthroughByGenderAggDeleteManyArgs} args - Arguments to filter SellthroughByGenderAggs to delete.
+     * @example
+     * // Delete a few SellthroughByGenderAggs
+     * const { count } = await prisma.sellthroughByGenderAgg.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends SellthroughByGenderAggDeleteManyArgs>(args?: SelectSubset<T, SellthroughByGenderAggDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more SellthroughByGenderAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many SellthroughByGenderAggs
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends SellthroughByGenderAggUpdateManyArgs>(args: SelectSubset<T, SellthroughByGenderAggUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one SellthroughByGenderAgg.
+     * @param {SellthroughByGenderAggUpsertArgs} args - Arguments to update or create a SellthroughByGenderAgg.
+     * @example
+     * // Update or create a SellthroughByGenderAgg
+     * const sellthroughByGenderAgg = await prisma.sellthroughByGenderAgg.upsert({
+     *   create: {
+     *     // ... data to create a SellthroughByGenderAgg
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the SellthroughByGenderAgg we want to update
+     *   }
+     * })
+     */
+    upsert<T extends SellthroughByGenderAggUpsertArgs>(args: SelectSubset<T, SellthroughByGenderAggUpsertArgs<ExtArgs>>): Prisma__SellthroughByGenderAggClient<$Result.GetResult<Prisma.$SellthroughByGenderAggPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+
+
+    /**
+     * Count the number of SellthroughByGenderAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggCountArgs} args - Arguments to filter SellthroughByGenderAggs to count.
+     * @example
+     * // Count the number of SellthroughByGenderAggs
+     * const count = await prisma.sellthroughByGenderAgg.count({
+     *   where: {
+     *     // ... the filter for the SellthroughByGenderAggs we want to count
+     *   }
+     * })
+    **/
+    count<T extends SellthroughByGenderAggCountArgs>(
+      args?: Subset<T, SellthroughByGenderAggCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], SellthroughByGenderAggCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a SellthroughByGenderAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends SellthroughByGenderAggAggregateArgs>(args: Subset<T, SellthroughByGenderAggAggregateArgs>): Prisma.PrismaPromise<GetSellthroughByGenderAggAggregateType<T>>
+
+    /**
+     * Group by SellthroughByGenderAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughByGenderAggGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends SellthroughByGenderAggGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: SellthroughByGenderAggGroupByArgs['orderBy'] }
+        : { orderBy?: SellthroughByGenderAggGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, SellthroughByGenderAggGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSellthroughByGenderAggGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the SellthroughByGenderAgg model
+   */
+  readonly fields: SellthroughByGenderAggFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for SellthroughByGenderAgg.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__SellthroughByGenderAggClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the SellthroughByGenderAgg model
+   */ 
+  interface SellthroughByGenderAggFieldRefs {
+    readonly store_id: FieldRef<"SellthroughByGenderAgg", 'BigInt'>
+    readonly brand_id: FieldRef<"SellthroughByGenderAgg", 'BigInt'>
+    readonly gender_id: FieldRef<"SellthroughByGenderAgg", 'BigInt'>
+    readonly year: FieldRef<"SellthroughByGenderAgg", 'Int'>
+    readonly season_id: FieldRef<"SellthroughByGenderAgg", 'BigInt'>
+    readonly mall: FieldRef<"SellthroughByGenderAgg", 'String'>
+    readonly group_brand: FieldRef<"SellthroughByGenderAgg", 'String'>
+    readonly brand_name: FieldRef<"SellthroughByGenderAgg", 'String'>
+    readonly gender: FieldRef<"SellthroughByGenderAgg", 'String'>
+    readonly st: FieldRef<"SellthroughByGenderAgg", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * SellthroughByGenderAgg findUnique
+   */
+  export type SellthroughByGenderAggFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughByGenderAgg to fetch.
+     */
+    where: SellthroughByGenderAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughByGenderAgg findUniqueOrThrow
+   */
+  export type SellthroughByGenderAggFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughByGenderAgg to fetch.
+     */
+    where: SellthroughByGenderAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughByGenderAgg findFirst
+   */
+  export type SellthroughByGenderAggFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughByGenderAgg to fetch.
+     */
+    where?: SellthroughByGenderAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughByGenderAggs to fetch.
+     */
+    orderBy?: SellthroughByGenderAggOrderByWithRelationInput | SellthroughByGenderAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughByGenderAggs.
+     */
+    cursor?: SellthroughByGenderAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughByGenderAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughByGenderAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughByGenderAggs.
+     */
+    distinct?: SellthroughByGenderAggScalarFieldEnum | SellthroughByGenderAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughByGenderAgg findFirstOrThrow
+   */
+  export type SellthroughByGenderAggFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughByGenderAgg to fetch.
+     */
+    where?: SellthroughByGenderAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughByGenderAggs to fetch.
+     */
+    orderBy?: SellthroughByGenderAggOrderByWithRelationInput | SellthroughByGenderAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughByGenderAggs.
+     */
+    cursor?: SellthroughByGenderAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughByGenderAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughByGenderAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughByGenderAggs.
+     */
+    distinct?: SellthroughByGenderAggScalarFieldEnum | SellthroughByGenderAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughByGenderAgg findMany
+   */
+  export type SellthroughByGenderAggFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughByGenderAggs to fetch.
+     */
+    where?: SellthroughByGenderAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughByGenderAggs to fetch.
+     */
+    orderBy?: SellthroughByGenderAggOrderByWithRelationInput | SellthroughByGenderAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing SellthroughByGenderAggs.
+     */
+    cursor?: SellthroughByGenderAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughByGenderAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughByGenderAggs.
+     */
+    skip?: number
+    distinct?: SellthroughByGenderAggScalarFieldEnum | SellthroughByGenderAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughByGenderAgg create
+   */
+  export type SellthroughByGenderAggCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * The data needed to create a SellthroughByGenderAgg.
+     */
+    data: XOR<SellthroughByGenderAggCreateInput, SellthroughByGenderAggUncheckedCreateInput>
+  }
+
+  /**
+   * SellthroughByGenderAgg createMany
+   */
+  export type SellthroughByGenderAggCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many SellthroughByGenderAggs.
+     */
+    data: SellthroughByGenderAggCreateManyInput | SellthroughByGenderAggCreateManyInput[]
+  }
+
+  /**
+   * SellthroughByGenderAgg update
+   */
+  export type SellthroughByGenderAggUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * The data needed to update a SellthroughByGenderAgg.
+     */
+    data: XOR<SellthroughByGenderAggUpdateInput, SellthroughByGenderAggUncheckedUpdateInput>
+    /**
+     * Choose, which SellthroughByGenderAgg to update.
+     */
+    where: SellthroughByGenderAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughByGenderAgg updateMany
+   */
+  export type SellthroughByGenderAggUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update SellthroughByGenderAggs.
+     */
+    data: XOR<SellthroughByGenderAggUpdateManyMutationInput, SellthroughByGenderAggUncheckedUpdateManyInput>
+    /**
+     * Filter which SellthroughByGenderAggs to update
+     */
+    where?: SellthroughByGenderAggWhereInput
+  }
+
+  /**
+   * SellthroughByGenderAgg upsert
+   */
+  export type SellthroughByGenderAggUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * The filter to search for the SellthroughByGenderAgg to update in case it exists.
+     */
+    where: SellthroughByGenderAggWhereUniqueInput
+    /**
+     * In case the SellthroughByGenderAgg found by the `where` argument doesn't exist, create a new SellthroughByGenderAgg with this data.
+     */
+    create: XOR<SellthroughByGenderAggCreateInput, SellthroughByGenderAggUncheckedCreateInput>
+    /**
+     * In case the SellthroughByGenderAgg was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<SellthroughByGenderAggUpdateInput, SellthroughByGenderAggUncheckedUpdateInput>
+  }
+
+  /**
+   * SellthroughByGenderAgg delete
+   */
+  export type SellthroughByGenderAggDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+    /**
+     * Filter which SellthroughByGenderAgg to delete.
+     */
+    where: SellthroughByGenderAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughByGenderAgg deleteMany
+   */
+  export type SellthroughByGenderAggDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughByGenderAggs to delete
+     */
+    where?: SellthroughByGenderAggWhereInput
+  }
+
+  /**
+   * SellthroughByGenderAgg without action
+   */
+  export type SellthroughByGenderAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughByGenderAgg
+     */
+    select?: SellthroughByGenderAggSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model SellthroughBySeasonTypeAgg
+   */
+
+  export type AggregateSellthroughBySeasonTypeAgg = {
+    _count: SellthroughBySeasonTypeAggCountAggregateOutputType | null
+    _avg: SellthroughBySeasonTypeAggAvgAggregateOutputType | null
+    _sum: SellthroughBySeasonTypeAggSumAggregateOutputType | null
+    _min: SellthroughBySeasonTypeAggMinAggregateOutputType | null
+    _max: SellthroughBySeasonTypeAggMaxAggregateOutputType | null
+  }
+
+  export type SellthroughBySeasonTypeAggAvgAggregateOutputType = {
+    store_id: number | null
+    brand_id: number | null
+    season_type_id: number | null
+    year: number | null
+    season_id: number | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySeasonTypeAggSumAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    season_type_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySeasonTypeAggMinAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    season_type_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySeasonTypeAggMaxAggregateOutputType = {
+    store_id: bigint | null
+    brand_id: bigint | null
+    season_type_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySeasonTypeAggCountAggregateOutputType = {
+    store_id: number
+    brand_id: number
+    season_type_id: number
+    year: number
+    season_id: number
+    mall: number
+    group_brand: number
+    brand_name: number
+    st: number
+    _all: number
+  }
+
+
+  export type SellthroughBySeasonTypeAggAvgAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    season_type_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughBySeasonTypeAggSumAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    season_type_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughBySeasonTypeAggMinAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    season_type_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    st?: true
+  }
+
+  export type SellthroughBySeasonTypeAggMaxAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    season_type_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    st?: true
+  }
+
+  export type SellthroughBySeasonTypeAggCountAggregateInputType = {
+    store_id?: true
+    brand_id?: true
+    season_type_id?: true
+    year?: true
+    season_id?: true
+    mall?: true
+    group_brand?: true
+    brand_name?: true
+    st?: true
+    _all?: true
+  }
+
+  export type SellthroughBySeasonTypeAggAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughBySeasonTypeAgg to aggregate.
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySeasonTypeAggs to fetch.
+     */
+    orderBy?: SellthroughBySeasonTypeAggOrderByWithRelationInput | SellthroughBySeasonTypeAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: SellthroughBySeasonTypeAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySeasonTypeAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySeasonTypeAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned SellthroughBySeasonTypeAggs
+    **/
+    _count?: true | SellthroughBySeasonTypeAggCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: SellthroughBySeasonTypeAggAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: SellthroughBySeasonTypeAggSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: SellthroughBySeasonTypeAggMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: SellthroughBySeasonTypeAggMaxAggregateInputType
+  }
+
+  export type GetSellthroughBySeasonTypeAggAggregateType<T extends SellthroughBySeasonTypeAggAggregateArgs> = {
+        [P in keyof T & keyof AggregateSellthroughBySeasonTypeAgg]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateSellthroughBySeasonTypeAgg[P]>
+      : GetScalarType<T[P], AggregateSellthroughBySeasonTypeAgg[P]>
+  }
+
+
+
+
+  export type SellthroughBySeasonTypeAggGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SellthroughBySeasonTypeAggWhereInput
+    orderBy?: SellthroughBySeasonTypeAggOrderByWithAggregationInput | SellthroughBySeasonTypeAggOrderByWithAggregationInput[]
+    by: SellthroughBySeasonTypeAggScalarFieldEnum[] | SellthroughBySeasonTypeAggScalarFieldEnum
+    having?: SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: SellthroughBySeasonTypeAggCountAggregateInputType | true
+    _avg?: SellthroughBySeasonTypeAggAvgAggregateInputType
+    _sum?: SellthroughBySeasonTypeAggSumAggregateInputType
+    _min?: SellthroughBySeasonTypeAggMinAggregateInputType
+    _max?: SellthroughBySeasonTypeAggMaxAggregateInputType
+  }
+
+  export type SellthroughBySeasonTypeAggGroupByOutputType = {
+    store_id: bigint
+    brand_id: bigint
+    season_type_id: bigint
+    year: number
+    season_id: bigint
+    mall: string | null
+    group_brand: string | null
+    brand_name: string | null
+    st: Decimal | null
+    _count: SellthroughBySeasonTypeAggCountAggregateOutputType | null
+    _avg: SellthroughBySeasonTypeAggAvgAggregateOutputType | null
+    _sum: SellthroughBySeasonTypeAggSumAggregateOutputType | null
+    _min: SellthroughBySeasonTypeAggMinAggregateOutputType | null
+    _max: SellthroughBySeasonTypeAggMaxAggregateOutputType | null
+  }
+
+  type GetSellthroughBySeasonTypeAggGroupByPayload<T extends SellthroughBySeasonTypeAggGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<SellthroughBySeasonTypeAggGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof SellthroughBySeasonTypeAggGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], SellthroughBySeasonTypeAggGroupByOutputType[P]>
+            : GetScalarType<T[P], SellthroughBySeasonTypeAggGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type SellthroughBySeasonTypeAggSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    store_id?: boolean
+    brand_id?: boolean
+    season_type_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    st?: boolean
+  }, ExtArgs["result"]["sellthroughBySeasonTypeAgg"]>
+
+
+  export type SellthroughBySeasonTypeAggSelectScalar = {
+    store_id?: boolean
+    brand_id?: boolean
+    season_type_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    mall?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    st?: boolean
+  }
+
+
+  export type $SellthroughBySeasonTypeAggPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SellthroughBySeasonTypeAgg"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      store_id: bigint
+      brand_id: bigint
+      season_type_id: bigint
+      year: number
+      season_id: bigint
+      mall: string | null
+      group_brand: string | null
+      brand_name: string | null
+      st: Prisma.Decimal | null
+    }, ExtArgs["result"]["sellthroughBySeasonTypeAgg"]>
+    composites: {}
+  }
+
+  type SellthroughBySeasonTypeAggGetPayload<S extends boolean | null | undefined | SellthroughBySeasonTypeAggDefaultArgs> = $Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload, S>
+
+  type SellthroughBySeasonTypeAggCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SellthroughBySeasonTypeAggFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SellthroughBySeasonTypeAggCountAggregateInputType | true
+    }
+
+  export interface SellthroughBySeasonTypeAggDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SellthroughBySeasonTypeAgg'], meta: { name: 'SellthroughBySeasonTypeAgg' } }
+    /**
+     * Find zero or one SellthroughBySeasonTypeAgg that matches the filter.
+     * @param {SellthroughBySeasonTypeAggFindUniqueArgs} args - Arguments to find a SellthroughBySeasonTypeAgg
+     * @example
+     * // Get one SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends SellthroughBySeasonTypeAggFindUniqueArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggFindUniqueArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+
+    /**
+     * Find one SellthroughBySeasonTypeAgg that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {SellthroughBySeasonTypeAggFindUniqueOrThrowArgs} args - Arguments to find a SellthroughBySeasonTypeAgg
+     * @example
+     * // Get one SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends SellthroughBySeasonTypeAggFindUniqueOrThrowArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+
+    /**
+     * Find the first SellthroughBySeasonTypeAgg that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggFindFirstArgs} args - Arguments to find a SellthroughBySeasonTypeAgg
+     * @example
+     * // Get one SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends SellthroughBySeasonTypeAggFindFirstArgs>(args?: SelectSubset<T, SellthroughBySeasonTypeAggFindFirstArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+
+    /**
+     * Find the first SellthroughBySeasonTypeAgg that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggFindFirstOrThrowArgs} args - Arguments to find a SellthroughBySeasonTypeAgg
+     * @example
+     * // Get one SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends SellthroughBySeasonTypeAggFindFirstOrThrowArgs>(args?: SelectSubset<T, SellthroughBySeasonTypeAggFindFirstOrThrowArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+
+    /**
+     * Find zero or more SellthroughBySeasonTypeAggs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all SellthroughBySeasonTypeAggs
+     * const sellthroughBySeasonTypeAggs = await prisma.sellthroughBySeasonTypeAgg.findMany()
+     * 
+     * // Get first 10 SellthroughBySeasonTypeAggs
+     * const sellthroughBySeasonTypeAggs = await prisma.sellthroughBySeasonTypeAgg.findMany({ take: 10 })
+     * 
+     * // Only select the `store_id`
+     * const sellthroughBySeasonTypeAggWithStore_idOnly = await prisma.sellthroughBySeasonTypeAgg.findMany({ select: { store_id: true } })
+     * 
+     */
+    findMany<T extends SellthroughBySeasonTypeAggFindManyArgs>(args?: SelectSubset<T, SellthroughBySeasonTypeAggFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "findMany">>
+
+    /**
+     * Create a SellthroughBySeasonTypeAgg.
+     * @param {SellthroughBySeasonTypeAggCreateArgs} args - Arguments to create a SellthroughBySeasonTypeAgg.
+     * @example
+     * // Create one SellthroughBySeasonTypeAgg
+     * const SellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.create({
+     *   data: {
+     *     // ... data to create a SellthroughBySeasonTypeAgg
+     *   }
+     * })
+     * 
+     */
+    create<T extends SellthroughBySeasonTypeAggCreateArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggCreateArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "create">, never, ExtArgs>
+
+    /**
+     * Create many SellthroughBySeasonTypeAggs.
+     * @param {SellthroughBySeasonTypeAggCreateManyArgs} args - Arguments to create many SellthroughBySeasonTypeAggs.
+     * @example
+     * // Create many SellthroughBySeasonTypeAggs
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends SellthroughBySeasonTypeAggCreateManyArgs>(args?: SelectSubset<T, SellthroughBySeasonTypeAggCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a SellthroughBySeasonTypeAgg.
+     * @param {SellthroughBySeasonTypeAggDeleteArgs} args - Arguments to delete one SellthroughBySeasonTypeAgg.
+     * @example
+     * // Delete one SellthroughBySeasonTypeAgg
+     * const SellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.delete({
+     *   where: {
+     *     // ... filter to delete one SellthroughBySeasonTypeAgg
+     *   }
+     * })
+     * 
+     */
+    delete<T extends SellthroughBySeasonTypeAggDeleteArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggDeleteArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+
+    /**
+     * Update one SellthroughBySeasonTypeAgg.
+     * @param {SellthroughBySeasonTypeAggUpdateArgs} args - Arguments to update one SellthroughBySeasonTypeAgg.
+     * @example
+     * // Update one SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends SellthroughBySeasonTypeAggUpdateArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggUpdateArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "update">, never, ExtArgs>
+
+    /**
+     * Delete zero or more SellthroughBySeasonTypeAggs.
+     * @param {SellthroughBySeasonTypeAggDeleteManyArgs} args - Arguments to filter SellthroughBySeasonTypeAggs to delete.
+     * @example
+     * // Delete a few SellthroughBySeasonTypeAggs
+     * const { count } = await prisma.sellthroughBySeasonTypeAgg.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends SellthroughBySeasonTypeAggDeleteManyArgs>(args?: SelectSubset<T, SellthroughBySeasonTypeAggDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more SellthroughBySeasonTypeAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many SellthroughBySeasonTypeAggs
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends SellthroughBySeasonTypeAggUpdateManyArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one SellthroughBySeasonTypeAgg.
+     * @param {SellthroughBySeasonTypeAggUpsertArgs} args - Arguments to update or create a SellthroughBySeasonTypeAgg.
+     * @example
+     * // Update or create a SellthroughBySeasonTypeAgg
+     * const sellthroughBySeasonTypeAgg = await prisma.sellthroughBySeasonTypeAgg.upsert({
+     *   create: {
+     *     // ... data to create a SellthroughBySeasonTypeAgg
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the SellthroughBySeasonTypeAgg we want to update
+     *   }
+     * })
+     */
+    upsert<T extends SellthroughBySeasonTypeAggUpsertArgs>(args: SelectSubset<T, SellthroughBySeasonTypeAggUpsertArgs<ExtArgs>>): Prisma__SellthroughBySeasonTypeAggClient<$Result.GetResult<Prisma.$SellthroughBySeasonTypeAggPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+
+
+    /**
+     * Count the number of SellthroughBySeasonTypeAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggCountArgs} args - Arguments to filter SellthroughBySeasonTypeAggs to count.
+     * @example
+     * // Count the number of SellthroughBySeasonTypeAggs
+     * const count = await prisma.sellthroughBySeasonTypeAgg.count({
+     *   where: {
+     *     // ... the filter for the SellthroughBySeasonTypeAggs we want to count
+     *   }
+     * })
+    **/
+    count<T extends SellthroughBySeasonTypeAggCountArgs>(
+      args?: Subset<T, SellthroughBySeasonTypeAggCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], SellthroughBySeasonTypeAggCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a SellthroughBySeasonTypeAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends SellthroughBySeasonTypeAggAggregateArgs>(args: Subset<T, SellthroughBySeasonTypeAggAggregateArgs>): Prisma.PrismaPromise<GetSellthroughBySeasonTypeAggAggregateType<T>>
+
+    /**
+     * Group by SellthroughBySeasonTypeAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySeasonTypeAggGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends SellthroughBySeasonTypeAggGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: SellthroughBySeasonTypeAggGroupByArgs['orderBy'] }
+        : { orderBy?: SellthroughBySeasonTypeAggGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, SellthroughBySeasonTypeAggGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSellthroughBySeasonTypeAggGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the SellthroughBySeasonTypeAgg model
+   */
+  readonly fields: SellthroughBySeasonTypeAggFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for SellthroughBySeasonTypeAgg.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__SellthroughBySeasonTypeAggClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the SellthroughBySeasonTypeAgg model
+   */ 
+  interface SellthroughBySeasonTypeAggFieldRefs {
+    readonly store_id: FieldRef<"SellthroughBySeasonTypeAgg", 'BigInt'>
+    readonly brand_id: FieldRef<"SellthroughBySeasonTypeAgg", 'BigInt'>
+    readonly season_type_id: FieldRef<"SellthroughBySeasonTypeAgg", 'BigInt'>
+    readonly year: FieldRef<"SellthroughBySeasonTypeAgg", 'Int'>
+    readonly season_id: FieldRef<"SellthroughBySeasonTypeAgg", 'BigInt'>
+    readonly mall: FieldRef<"SellthroughBySeasonTypeAgg", 'String'>
+    readonly group_brand: FieldRef<"SellthroughBySeasonTypeAgg", 'String'>
+    readonly brand_name: FieldRef<"SellthroughBySeasonTypeAgg", 'String'>
+    readonly st: FieldRef<"SellthroughBySeasonTypeAgg", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * SellthroughBySeasonTypeAgg findUnique
+   */
+  export type SellthroughBySeasonTypeAggFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySeasonTypeAgg to fetch.
+     */
+    where: SellthroughBySeasonTypeAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg findUniqueOrThrow
+   */
+  export type SellthroughBySeasonTypeAggFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySeasonTypeAgg to fetch.
+     */
+    where: SellthroughBySeasonTypeAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg findFirst
+   */
+  export type SellthroughBySeasonTypeAggFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySeasonTypeAgg to fetch.
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySeasonTypeAggs to fetch.
+     */
+    orderBy?: SellthroughBySeasonTypeAggOrderByWithRelationInput | SellthroughBySeasonTypeAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughBySeasonTypeAggs.
+     */
+    cursor?: SellthroughBySeasonTypeAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySeasonTypeAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySeasonTypeAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughBySeasonTypeAggs.
+     */
+    distinct?: SellthroughBySeasonTypeAggScalarFieldEnum | SellthroughBySeasonTypeAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg findFirstOrThrow
+   */
+  export type SellthroughBySeasonTypeAggFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySeasonTypeAgg to fetch.
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySeasonTypeAggs to fetch.
+     */
+    orderBy?: SellthroughBySeasonTypeAggOrderByWithRelationInput | SellthroughBySeasonTypeAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughBySeasonTypeAggs.
+     */
+    cursor?: SellthroughBySeasonTypeAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySeasonTypeAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySeasonTypeAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughBySeasonTypeAggs.
+     */
+    distinct?: SellthroughBySeasonTypeAggScalarFieldEnum | SellthroughBySeasonTypeAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg findMany
+   */
+  export type SellthroughBySeasonTypeAggFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySeasonTypeAggs to fetch.
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySeasonTypeAggs to fetch.
+     */
+    orderBy?: SellthroughBySeasonTypeAggOrderByWithRelationInput | SellthroughBySeasonTypeAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing SellthroughBySeasonTypeAggs.
+     */
+    cursor?: SellthroughBySeasonTypeAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySeasonTypeAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySeasonTypeAggs.
+     */
+    skip?: number
+    distinct?: SellthroughBySeasonTypeAggScalarFieldEnum | SellthroughBySeasonTypeAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg create
+   */
+  export type SellthroughBySeasonTypeAggCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * The data needed to create a SellthroughBySeasonTypeAgg.
+     */
+    data: XOR<SellthroughBySeasonTypeAggCreateInput, SellthroughBySeasonTypeAggUncheckedCreateInput>
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg createMany
+   */
+  export type SellthroughBySeasonTypeAggCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many SellthroughBySeasonTypeAggs.
+     */
+    data: SellthroughBySeasonTypeAggCreateManyInput | SellthroughBySeasonTypeAggCreateManyInput[]
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg update
+   */
+  export type SellthroughBySeasonTypeAggUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * The data needed to update a SellthroughBySeasonTypeAgg.
+     */
+    data: XOR<SellthroughBySeasonTypeAggUpdateInput, SellthroughBySeasonTypeAggUncheckedUpdateInput>
+    /**
+     * Choose, which SellthroughBySeasonTypeAgg to update.
+     */
+    where: SellthroughBySeasonTypeAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg updateMany
+   */
+  export type SellthroughBySeasonTypeAggUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update SellthroughBySeasonTypeAggs.
+     */
+    data: XOR<SellthroughBySeasonTypeAggUpdateManyMutationInput, SellthroughBySeasonTypeAggUncheckedUpdateManyInput>
+    /**
+     * Filter which SellthroughBySeasonTypeAggs to update
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg upsert
+   */
+  export type SellthroughBySeasonTypeAggUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * The filter to search for the SellthroughBySeasonTypeAgg to update in case it exists.
+     */
+    where: SellthroughBySeasonTypeAggWhereUniqueInput
+    /**
+     * In case the SellthroughBySeasonTypeAgg found by the `where` argument doesn't exist, create a new SellthroughBySeasonTypeAgg with this data.
+     */
+    create: XOR<SellthroughBySeasonTypeAggCreateInput, SellthroughBySeasonTypeAggUncheckedCreateInput>
+    /**
+     * In case the SellthroughBySeasonTypeAgg was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<SellthroughBySeasonTypeAggUpdateInput, SellthroughBySeasonTypeAggUncheckedUpdateInput>
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg delete
+   */
+  export type SellthroughBySeasonTypeAggDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+    /**
+     * Filter which SellthroughBySeasonTypeAgg to delete.
+     */
+    where: SellthroughBySeasonTypeAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg deleteMany
+   */
+  export type SellthroughBySeasonTypeAggDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughBySeasonTypeAggs to delete
+     */
+    where?: SellthroughBySeasonTypeAggWhereInput
+  }
+
+  /**
+   * SellthroughBySeasonTypeAgg without action
+   */
+  export type SellthroughBySeasonTypeAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySeasonTypeAgg
+     */
+    select?: SellthroughBySeasonTypeAggSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model SellthroughBySubcategoryAgg
+   */
+
+  export type AggregateSellthroughBySubcategoryAgg = {
+    _count: SellthroughBySubcategoryAggCountAggregateOutputType | null
+    _avg: SellthroughBySubcategoryAggAvgAggregateOutputType | null
+    _sum: SellthroughBySubcategoryAggSumAggregateOutputType | null
+    _min: SellthroughBySubcategoryAggMinAggregateOutputType | null
+    _max: SellthroughBySubcategoryAggMaxAggregateOutputType | null
+  }
+
+  export type SellthroughBySubcategoryAggAvgAggregateOutputType = {
+    brand_id: number | null
+    gender_id: number | null
+    category_id: number | null
+    sub_category_id: number | null
+    year: number | null
+    season_id: number | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySubcategoryAggSumAggregateOutputType = {
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySubcategoryAggMinAggregateOutputType = {
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySubcategoryAggMaxAggregateOutputType = {
+    brand_id: bigint | null
+    gender_id: bigint | null
+    category_id: bigint | null
+    sub_category_id: bigint | null
+    year: number | null
+    season_id: bigint | null
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    st: Decimal | null
+  }
+
+  export type SellthroughBySubcategoryAggCountAggregateOutputType = {
+    brand_id: number
+    gender_id: number
+    category_id: number
+    sub_category_id: number
+    year: number
+    season_id: number
+    group_brand: number
+    brand_name: number
+    cat_vendor: number
+    prod_line_vendor: number
+    gender: number
+    st: number
+    _all: number
+  }
+
+
+  export type SellthroughBySubcategoryAggAvgAggregateInputType = {
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughBySubcategoryAggSumAggregateInputType = {
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    st?: true
+  }
+
+  export type SellthroughBySubcategoryAggMinAggregateInputType = {
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    st?: true
+  }
+
+  export type SellthroughBySubcategoryAggMaxAggregateInputType = {
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    st?: true
+  }
+
+  export type SellthroughBySubcategoryAggCountAggregateInputType = {
+    brand_id?: true
+    gender_id?: true
+    category_id?: true
+    sub_category_id?: true
+    year?: true
+    season_id?: true
+    group_brand?: true
+    brand_name?: true
+    cat_vendor?: true
+    prod_line_vendor?: true
+    gender?: true
+    st?: true
+    _all?: true
+  }
+
+  export type SellthroughBySubcategoryAggAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughBySubcategoryAgg to aggregate.
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySubcategoryAggs to fetch.
+     */
+    orderBy?: SellthroughBySubcategoryAggOrderByWithRelationInput | SellthroughBySubcategoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: SellthroughBySubcategoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySubcategoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySubcategoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned SellthroughBySubcategoryAggs
+    **/
+    _count?: true | SellthroughBySubcategoryAggCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: SellthroughBySubcategoryAggAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: SellthroughBySubcategoryAggSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: SellthroughBySubcategoryAggMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: SellthroughBySubcategoryAggMaxAggregateInputType
+  }
+
+  export type GetSellthroughBySubcategoryAggAggregateType<T extends SellthroughBySubcategoryAggAggregateArgs> = {
+        [P in keyof T & keyof AggregateSellthroughBySubcategoryAgg]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateSellthroughBySubcategoryAgg[P]>
+      : GetScalarType<T[P], AggregateSellthroughBySubcategoryAgg[P]>
+  }
+
+
+
+
+  export type SellthroughBySubcategoryAggGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: SellthroughBySubcategoryAggWhereInput
+    orderBy?: SellthroughBySubcategoryAggOrderByWithAggregationInput | SellthroughBySubcategoryAggOrderByWithAggregationInput[]
+    by: SellthroughBySubcategoryAggScalarFieldEnum[] | SellthroughBySubcategoryAggScalarFieldEnum
+    having?: SellthroughBySubcategoryAggScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: SellthroughBySubcategoryAggCountAggregateInputType | true
+    _avg?: SellthroughBySubcategoryAggAvgAggregateInputType
+    _sum?: SellthroughBySubcategoryAggSumAggregateInputType
+    _min?: SellthroughBySubcategoryAggMinAggregateInputType
+    _max?: SellthroughBySubcategoryAggMaxAggregateInputType
+  }
+
+  export type SellthroughBySubcategoryAggGroupByOutputType = {
+    brand_id: bigint
+    gender_id: bigint
+    category_id: bigint
+    sub_category_id: bigint
+    year: number
+    season_id: bigint
+    group_brand: string | null
+    brand_name: string | null
+    cat_vendor: string | null
+    prod_line_vendor: string | null
+    gender: string | null
+    st: Decimal | null
+    _count: SellthroughBySubcategoryAggCountAggregateOutputType | null
+    _avg: SellthroughBySubcategoryAggAvgAggregateOutputType | null
+    _sum: SellthroughBySubcategoryAggSumAggregateOutputType | null
+    _min: SellthroughBySubcategoryAggMinAggregateOutputType | null
+    _max: SellthroughBySubcategoryAggMaxAggregateOutputType | null
+  }
+
+  type GetSellthroughBySubcategoryAggGroupByPayload<T extends SellthroughBySubcategoryAggGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<SellthroughBySubcategoryAggGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof SellthroughBySubcategoryAggGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], SellthroughBySubcategoryAggGroupByOutputType[P]>
+            : GetScalarType<T[P], SellthroughBySubcategoryAggGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type SellthroughBySubcategoryAggSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    st?: boolean
+  }, ExtArgs["result"]["sellthroughBySubcategoryAgg"]>
+
+
+  export type SellthroughBySubcategoryAggSelectScalar = {
+    brand_id?: boolean
+    gender_id?: boolean
+    category_id?: boolean
+    sub_category_id?: boolean
+    year?: boolean
+    season_id?: boolean
+    group_brand?: boolean
+    brand_name?: boolean
+    cat_vendor?: boolean
+    prod_line_vendor?: boolean
+    gender?: boolean
+    st?: boolean
+  }
+
+
+  export type $SellthroughBySubcategoryAggPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "SellthroughBySubcategoryAgg"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      brand_id: bigint
+      gender_id: bigint
+      category_id: bigint
+      sub_category_id: bigint
+      year: number
+      season_id: bigint
+      group_brand: string | null
+      brand_name: string | null
+      cat_vendor: string | null
+      prod_line_vendor: string | null
+      gender: string | null
+      st: Prisma.Decimal | null
+    }, ExtArgs["result"]["sellthroughBySubcategoryAgg"]>
+    composites: {}
+  }
+
+  type SellthroughBySubcategoryAggGetPayload<S extends boolean | null | undefined | SellthroughBySubcategoryAggDefaultArgs> = $Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload, S>
+
+  type SellthroughBySubcategoryAggCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<SellthroughBySubcategoryAggFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: SellthroughBySubcategoryAggCountAggregateInputType | true
+    }
+
+  export interface SellthroughBySubcategoryAggDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['SellthroughBySubcategoryAgg'], meta: { name: 'SellthroughBySubcategoryAgg' } }
+    /**
+     * Find zero or one SellthroughBySubcategoryAgg that matches the filter.
+     * @param {SellthroughBySubcategoryAggFindUniqueArgs} args - Arguments to find a SellthroughBySubcategoryAgg
+     * @example
+     * // Get one SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends SellthroughBySubcategoryAggFindUniqueArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggFindUniqueArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "findUnique"> | null, null, ExtArgs>
+
+    /**
+     * Find one SellthroughBySubcategoryAgg that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {SellthroughBySubcategoryAggFindUniqueOrThrowArgs} args - Arguments to find a SellthroughBySubcategoryAgg
+     * @example
+     * // Get one SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends SellthroughBySubcategoryAggFindUniqueOrThrowArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggFindUniqueOrThrowArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "findUniqueOrThrow">, never, ExtArgs>
+
+    /**
+     * Find the first SellthroughBySubcategoryAgg that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggFindFirstArgs} args - Arguments to find a SellthroughBySubcategoryAgg
+     * @example
+     * // Get one SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends SellthroughBySubcategoryAggFindFirstArgs>(args?: SelectSubset<T, SellthroughBySubcategoryAggFindFirstArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "findFirst"> | null, null, ExtArgs>
+
+    /**
+     * Find the first SellthroughBySubcategoryAgg that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggFindFirstOrThrowArgs} args - Arguments to find a SellthroughBySubcategoryAgg
+     * @example
+     * // Get one SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends SellthroughBySubcategoryAggFindFirstOrThrowArgs>(args?: SelectSubset<T, SellthroughBySubcategoryAggFindFirstOrThrowArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "findFirstOrThrow">, never, ExtArgs>
+
+    /**
+     * Find zero or more SellthroughBySubcategoryAggs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all SellthroughBySubcategoryAggs
+     * const sellthroughBySubcategoryAggs = await prisma.sellthroughBySubcategoryAgg.findMany()
+     * 
+     * // Get first 10 SellthroughBySubcategoryAggs
+     * const sellthroughBySubcategoryAggs = await prisma.sellthroughBySubcategoryAgg.findMany({ take: 10 })
+     * 
+     * // Only select the `brand_id`
+     * const sellthroughBySubcategoryAggWithBrand_idOnly = await prisma.sellthroughBySubcategoryAgg.findMany({ select: { brand_id: true } })
+     * 
+     */
+    findMany<T extends SellthroughBySubcategoryAggFindManyArgs>(args?: SelectSubset<T, SellthroughBySubcategoryAggFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "findMany">>
+
+    /**
+     * Create a SellthroughBySubcategoryAgg.
+     * @param {SellthroughBySubcategoryAggCreateArgs} args - Arguments to create a SellthroughBySubcategoryAgg.
+     * @example
+     * // Create one SellthroughBySubcategoryAgg
+     * const SellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.create({
+     *   data: {
+     *     // ... data to create a SellthroughBySubcategoryAgg
+     *   }
+     * })
+     * 
+     */
+    create<T extends SellthroughBySubcategoryAggCreateArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggCreateArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "create">, never, ExtArgs>
+
+    /**
+     * Create many SellthroughBySubcategoryAggs.
+     * @param {SellthroughBySubcategoryAggCreateManyArgs} args - Arguments to create many SellthroughBySubcategoryAggs.
+     * @example
+     * // Create many SellthroughBySubcategoryAggs
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends SellthroughBySubcategoryAggCreateManyArgs>(args?: SelectSubset<T, SellthroughBySubcategoryAggCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a SellthroughBySubcategoryAgg.
+     * @param {SellthroughBySubcategoryAggDeleteArgs} args - Arguments to delete one SellthroughBySubcategoryAgg.
+     * @example
+     * // Delete one SellthroughBySubcategoryAgg
+     * const SellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.delete({
+     *   where: {
+     *     // ... filter to delete one SellthroughBySubcategoryAgg
+     *   }
+     * })
+     * 
+     */
+    delete<T extends SellthroughBySubcategoryAggDeleteArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggDeleteArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "delete">, never, ExtArgs>
+
+    /**
+     * Update one SellthroughBySubcategoryAgg.
+     * @param {SellthroughBySubcategoryAggUpdateArgs} args - Arguments to update one SellthroughBySubcategoryAgg.
+     * @example
+     * // Update one SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends SellthroughBySubcategoryAggUpdateArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggUpdateArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "update">, never, ExtArgs>
+
+    /**
+     * Delete zero or more SellthroughBySubcategoryAggs.
+     * @param {SellthroughBySubcategoryAggDeleteManyArgs} args - Arguments to filter SellthroughBySubcategoryAggs to delete.
+     * @example
+     * // Delete a few SellthroughBySubcategoryAggs
+     * const { count } = await prisma.sellthroughBySubcategoryAgg.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends SellthroughBySubcategoryAggDeleteManyArgs>(args?: SelectSubset<T, SellthroughBySubcategoryAggDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more SellthroughBySubcategoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many SellthroughBySubcategoryAggs
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends SellthroughBySubcategoryAggUpdateManyArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one SellthroughBySubcategoryAgg.
+     * @param {SellthroughBySubcategoryAggUpsertArgs} args - Arguments to update or create a SellthroughBySubcategoryAgg.
+     * @example
+     * // Update or create a SellthroughBySubcategoryAgg
+     * const sellthroughBySubcategoryAgg = await prisma.sellthroughBySubcategoryAgg.upsert({
+     *   create: {
+     *     // ... data to create a SellthroughBySubcategoryAgg
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the SellthroughBySubcategoryAgg we want to update
+     *   }
+     * })
+     */
+    upsert<T extends SellthroughBySubcategoryAggUpsertArgs>(args: SelectSubset<T, SellthroughBySubcategoryAggUpsertArgs<ExtArgs>>): Prisma__SellthroughBySubcategoryAggClient<$Result.GetResult<Prisma.$SellthroughBySubcategoryAggPayload<ExtArgs>, T, "upsert">, never, ExtArgs>
+
+
+    /**
+     * Count the number of SellthroughBySubcategoryAggs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggCountArgs} args - Arguments to filter SellthroughBySubcategoryAggs to count.
+     * @example
+     * // Count the number of SellthroughBySubcategoryAggs
+     * const count = await prisma.sellthroughBySubcategoryAgg.count({
+     *   where: {
+     *     // ... the filter for the SellthroughBySubcategoryAggs we want to count
+     *   }
+     * })
+    **/
+    count<T extends SellthroughBySubcategoryAggCountArgs>(
+      args?: Subset<T, SellthroughBySubcategoryAggCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], SellthroughBySubcategoryAggCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a SellthroughBySubcategoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends SellthroughBySubcategoryAggAggregateArgs>(args: Subset<T, SellthroughBySubcategoryAggAggregateArgs>): Prisma.PrismaPromise<GetSellthroughBySubcategoryAggAggregateType<T>>
+
+    /**
+     * Group by SellthroughBySubcategoryAgg.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {SellthroughBySubcategoryAggGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends SellthroughBySubcategoryAggGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: SellthroughBySubcategoryAggGroupByArgs['orderBy'] }
+        : { orderBy?: SellthroughBySubcategoryAggGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, SellthroughBySubcategoryAggGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetSellthroughBySubcategoryAggGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the SellthroughBySubcategoryAgg model
+   */
+  readonly fields: SellthroughBySubcategoryAggFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for SellthroughBySubcategoryAgg.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__SellthroughBySubcategoryAggClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the SellthroughBySubcategoryAgg model
+   */ 
+  interface SellthroughBySubcategoryAggFieldRefs {
+    readonly brand_id: FieldRef<"SellthroughBySubcategoryAgg", 'BigInt'>
+    readonly gender_id: FieldRef<"SellthroughBySubcategoryAgg", 'BigInt'>
+    readonly category_id: FieldRef<"SellthroughBySubcategoryAgg", 'BigInt'>
+    readonly sub_category_id: FieldRef<"SellthroughBySubcategoryAgg", 'BigInt'>
+    readonly year: FieldRef<"SellthroughBySubcategoryAgg", 'Int'>
+    readonly season_id: FieldRef<"SellthroughBySubcategoryAgg", 'BigInt'>
+    readonly group_brand: FieldRef<"SellthroughBySubcategoryAgg", 'String'>
+    readonly brand_name: FieldRef<"SellthroughBySubcategoryAgg", 'String'>
+    readonly cat_vendor: FieldRef<"SellthroughBySubcategoryAgg", 'String'>
+    readonly prod_line_vendor: FieldRef<"SellthroughBySubcategoryAgg", 'String'>
+    readonly gender: FieldRef<"SellthroughBySubcategoryAgg", 'String'>
+    readonly st: FieldRef<"SellthroughBySubcategoryAgg", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * SellthroughBySubcategoryAgg findUnique
+   */
+  export type SellthroughBySubcategoryAggFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySubcategoryAgg to fetch.
+     */
+    where: SellthroughBySubcategoryAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg findUniqueOrThrow
+   */
+  export type SellthroughBySubcategoryAggFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySubcategoryAgg to fetch.
+     */
+    where: SellthroughBySubcategoryAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg findFirst
+   */
+  export type SellthroughBySubcategoryAggFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySubcategoryAgg to fetch.
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySubcategoryAggs to fetch.
+     */
+    orderBy?: SellthroughBySubcategoryAggOrderByWithRelationInput | SellthroughBySubcategoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughBySubcategoryAggs.
+     */
+    cursor?: SellthroughBySubcategoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySubcategoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySubcategoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughBySubcategoryAggs.
+     */
+    distinct?: SellthroughBySubcategoryAggScalarFieldEnum | SellthroughBySubcategoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg findFirstOrThrow
+   */
+  export type SellthroughBySubcategoryAggFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySubcategoryAgg to fetch.
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySubcategoryAggs to fetch.
+     */
+    orderBy?: SellthroughBySubcategoryAggOrderByWithRelationInput | SellthroughBySubcategoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for SellthroughBySubcategoryAggs.
+     */
+    cursor?: SellthroughBySubcategoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySubcategoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySubcategoryAggs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SellthroughBySubcategoryAggs.
+     */
+    distinct?: SellthroughBySubcategoryAggScalarFieldEnum | SellthroughBySubcategoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg findMany
+   */
+  export type SellthroughBySubcategoryAggFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter, which SellthroughBySubcategoryAggs to fetch.
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of SellthroughBySubcategoryAggs to fetch.
+     */
+    orderBy?: SellthroughBySubcategoryAggOrderByWithRelationInput | SellthroughBySubcategoryAggOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing SellthroughBySubcategoryAggs.
+     */
+    cursor?: SellthroughBySubcategoryAggWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` SellthroughBySubcategoryAggs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` SellthroughBySubcategoryAggs.
+     */
+    skip?: number
+    distinct?: SellthroughBySubcategoryAggScalarFieldEnum | SellthroughBySubcategoryAggScalarFieldEnum[]
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg create
+   */
+  export type SellthroughBySubcategoryAggCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * The data needed to create a SellthroughBySubcategoryAgg.
+     */
+    data: XOR<SellthroughBySubcategoryAggCreateInput, SellthroughBySubcategoryAggUncheckedCreateInput>
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg createMany
+   */
+  export type SellthroughBySubcategoryAggCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many SellthroughBySubcategoryAggs.
+     */
+    data: SellthroughBySubcategoryAggCreateManyInput | SellthroughBySubcategoryAggCreateManyInput[]
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg update
+   */
+  export type SellthroughBySubcategoryAggUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * The data needed to update a SellthroughBySubcategoryAgg.
+     */
+    data: XOR<SellthroughBySubcategoryAggUpdateInput, SellthroughBySubcategoryAggUncheckedUpdateInput>
+    /**
+     * Choose, which SellthroughBySubcategoryAgg to update.
+     */
+    where: SellthroughBySubcategoryAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg updateMany
+   */
+  export type SellthroughBySubcategoryAggUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update SellthroughBySubcategoryAggs.
+     */
+    data: XOR<SellthroughBySubcategoryAggUpdateManyMutationInput, SellthroughBySubcategoryAggUncheckedUpdateManyInput>
+    /**
+     * Filter which SellthroughBySubcategoryAggs to update
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg upsert
+   */
+  export type SellthroughBySubcategoryAggUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * The filter to search for the SellthroughBySubcategoryAgg to update in case it exists.
+     */
+    where: SellthroughBySubcategoryAggWhereUniqueInput
+    /**
+     * In case the SellthroughBySubcategoryAgg found by the `where` argument doesn't exist, create a new SellthroughBySubcategoryAgg with this data.
+     */
+    create: XOR<SellthroughBySubcategoryAggCreateInput, SellthroughBySubcategoryAggUncheckedCreateInput>
+    /**
+     * In case the SellthroughBySubcategoryAgg was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<SellthroughBySubcategoryAggUpdateInput, SellthroughBySubcategoryAggUncheckedUpdateInput>
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg delete
+   */
+  export type SellthroughBySubcategoryAggDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
+    /**
+     * Filter which SellthroughBySubcategoryAgg to delete.
+     */
+    where: SellthroughBySubcategoryAggWhereUniqueInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg deleteMany
+   */
+  export type SellthroughBySubcategoryAggDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which SellthroughBySubcategoryAggs to delete
+     */
+    where?: SellthroughBySubcategoryAggWhereInput
+  }
+
+  /**
+   * SellthroughBySubcategoryAgg without action
+   */
+  export type SellthroughBySubcategoryAggDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the SellthroughBySubcategoryAgg
+     */
+    select?: SellthroughBySubcategoryAggSelect<ExtArgs> | null
   }
 
 
@@ -37790,7 +40942,8 @@ export namespace Prisma {
     created_by: 'created_by',
     created_at: 'created_at',
     updated_at: 'updated_at',
-    updated_by: 'updated_by'
+    updated_by: 'updated_by',
+    no: 'no'
   };
 
   export type SeasonScalarFieldEnum = (typeof SeasonScalarFieldEnum)[keyof typeof SeasonScalarFieldEnum]
@@ -38107,6 +41260,7 @@ export namespace Prisma {
     gender_id: 'gender_id',
     category_id: 'category_id',
     sub_category_id: 'sub_category_id',
+    season_type_id: 'season_type_id',
     year: 'year',
     season_id: 'season_id',
     mall: 'mall',
@@ -38115,13 +41269,61 @@ export namespace Prisma {
     cat_vendor: 'cat_vendor',
     prod_line_vendor: 'prod_line_vendor',
     gender: 'gender',
-    product_size: 'product_size',
     buy: 'buy',
     sales_amt: 'sales_amt',
     st: 'st'
   };
 
   export type SalesHistoryAggScalarFieldEnum = (typeof SalesHistoryAggScalarFieldEnum)[keyof typeof SalesHistoryAggScalarFieldEnum]
+
+
+  export const SellthroughByGenderAggScalarFieldEnum: {
+    store_id: 'store_id',
+    brand_id: 'brand_id',
+    gender_id: 'gender_id',
+    year: 'year',
+    season_id: 'season_id',
+    mall: 'mall',
+    group_brand: 'group_brand',
+    brand_name: 'brand_name',
+    gender: 'gender',
+    st: 'st'
+  };
+
+  export type SellthroughByGenderAggScalarFieldEnum = (typeof SellthroughByGenderAggScalarFieldEnum)[keyof typeof SellthroughByGenderAggScalarFieldEnum]
+
+
+  export const SellthroughBySeasonTypeAggScalarFieldEnum: {
+    store_id: 'store_id',
+    brand_id: 'brand_id',
+    season_type_id: 'season_type_id',
+    year: 'year',
+    season_id: 'season_id',
+    mall: 'mall',
+    group_brand: 'group_brand',
+    brand_name: 'brand_name',
+    st: 'st'
+  };
+
+  export type SellthroughBySeasonTypeAggScalarFieldEnum = (typeof SellthroughBySeasonTypeAggScalarFieldEnum)[keyof typeof SellthroughBySeasonTypeAggScalarFieldEnum]
+
+
+  export const SellthroughBySubcategoryAggScalarFieldEnum: {
+    brand_id: 'brand_id',
+    gender_id: 'gender_id',
+    category_id: 'category_id',
+    sub_category_id: 'sub_category_id',
+    year: 'year',
+    season_id: 'season_id',
+    group_brand: 'group_brand',
+    brand_name: 'brand_name',
+    cat_vendor: 'cat_vendor',
+    prod_line_vendor: 'prod_line_vendor',
+    gender: 'gender',
+    st: 'st'
+  };
+
+  export type SellthroughBySubcategoryAggScalarFieldEnum = (typeof SellthroughBySubcategoryAggScalarFieldEnum)[keyof typeof SellthroughBySubcategoryAggScalarFieldEnum]
 
 
   export const ApprovalStatusScalarFieldEnum: {
@@ -38712,6 +41914,7 @@ export namespace Prisma {
     updated_at?: DateTimeFilter<"SeasonType"> | Date | string
     updated_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }
 
   export type SeasonTypeOrderByWithRelationInput = {
@@ -38723,6 +41926,7 @@ export namespace Prisma {
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
     planning_collections?: PlanningCollectionOrderByRelationAggregateInput
+    sales_history_agg?: SalesHistoryAggOrderByRelationAggregateInput
   }
 
   export type SeasonTypeWhereUniqueInput = Prisma.AtLeast<{
@@ -38737,6 +41941,7 @@ export namespace Prisma {
     updated_at?: DateTimeFilter<"SeasonType"> | Date | string
     updated_by?: BigIntNullableFilter<"SeasonType"> | bigint | number | null
     planning_collections?: PlanningCollectionListRelationFilter
+    sales_history_agg?: SalesHistoryAggListRelationFilter
   }, "id">
 
   export type SeasonTypeOrderByWithAggregationInput = {
@@ -38857,6 +42062,7 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
     updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
+    no?: IntNullableFilter<"Season"> | number | null
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     tickets?: TicketListRelationFilter
@@ -38873,6 +42079,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
+    no?: SortOrderInput | SortOrder
     season_group?: SeasonGroupOrderByWithRelationInput
     budget_allocates?: BudgetAllocateOrderByRelationAggregateInput
     tickets?: TicketOrderByRelationAggregateInput
@@ -38892,6 +42099,7 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
     updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
+    no?: IntNullableFilter<"Season"> | number | null
     season_group?: XOR<SeasonGroupRelationFilter, SeasonGroupWhereInput>
     budget_allocates?: BudgetAllocateListRelationFilter
     tickets?: TicketListRelationFilter
@@ -38908,6 +42116,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrderInput | SortOrder
+    no?: SortOrderInput | SortOrder
     _count?: SeasonCountOrderByAggregateInput
     _avg?: SeasonAvgOrderByAggregateInput
     _max?: SeasonMaxOrderByAggregateInput
@@ -38927,6 +42136,7 @@ export namespace Prisma {
     created_at?: DateTimeWithAggregatesFilter<"Season"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"Season"> | Date | string
     updated_by?: BigIntNullableWithAggregatesFilter<"Season"> | bigint | number | null
+    no?: IntNullableWithAggregatesFilter<"Season"> | number | null
   }
 
   export type GenderWhereInput = {
@@ -40645,6 +43855,7 @@ export namespace Prisma {
     gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    season_type_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     year?: IntFilter<"SalesHistoryAgg"> | number
     season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
@@ -40653,7 +43864,6 @@ export namespace Prisma {
     cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
-    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
@@ -40662,6 +43872,7 @@ export namespace Prisma {
     gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
     category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
     sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season_type?: XOR<SeasonTypeNullableRelationFilter, SeasonTypeWhereInput> | null
     season?: XOR<SeasonRelationFilter, SeasonWhereInput>
   }
 
@@ -40672,6 +43883,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrderInput | SortOrder
     sub_category_id?: SortOrderInput | SortOrder
+    season_type_id?: SortOrderInput | SortOrder
     year?: SortOrder
     season_id?: SortOrder
     mall?: SortOrderInput | SortOrder
@@ -40680,7 +43892,6 @@ export namespace Prisma {
     cat_vendor?: SortOrderInput | SortOrder
     prod_line_vendor?: SortOrderInput | SortOrder
     gender?: SortOrderInput | SortOrder
-    product_size?: SortOrderInput | SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
     st?: SortOrderInput | SortOrder
@@ -40689,6 +43900,7 @@ export namespace Prisma {
     gender_ref?: GenderOrderByWithRelationInput
     category?: CategoryOrderByWithRelationInput
     sub_category?: SubCategoryOrderByWithRelationInput
+    season_type?: SeasonTypeOrderByWithRelationInput
     season?: SeasonOrderByWithRelationInput
   }
 
@@ -40702,6 +43914,7 @@ export namespace Prisma {
     gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    season_type_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     year?: IntFilter<"SalesHistoryAgg"> | number
     season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
@@ -40710,7 +43923,6 @@ export namespace Prisma {
     cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
-    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
@@ -40719,6 +43931,7 @@ export namespace Prisma {
     gender_ref?: XOR<GenderRelationFilter, GenderWhereInput>
     category?: XOR<CategoryNullableRelationFilter, CategoryWhereInput> | null
     sub_category?: XOR<SubCategoryNullableRelationFilter, SubCategoryWhereInput> | null
+    season_type?: XOR<SeasonTypeNullableRelationFilter, SeasonTypeWhereInput> | null
     season?: XOR<SeasonRelationFilter, SeasonWhereInput>
   }, "id">
 
@@ -40729,6 +43942,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrderInput | SortOrder
     sub_category_id?: SortOrderInput | SortOrder
+    season_type_id?: SortOrderInput | SortOrder
     year?: SortOrder
     season_id?: SortOrder
     mall?: SortOrderInput | SortOrder
@@ -40737,7 +43951,6 @@ export namespace Prisma {
     cat_vendor?: SortOrderInput | SortOrder
     prod_line_vendor?: SortOrderInput | SortOrder
     gender?: SortOrderInput | SortOrder
-    product_size?: SortOrderInput | SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
     st?: SortOrderInput | SortOrder
@@ -40758,6 +43971,7 @@ export namespace Prisma {
     gender_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
     category_id?: BigIntNullableWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number | null
     sub_category_id?: BigIntNullableWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number | null
+    season_type_id?: BigIntNullableWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number | null
     year?: IntWithAggregatesFilter<"SalesHistoryAgg"> | number
     season_id?: BigIntWithAggregatesFilter<"SalesHistoryAgg"> | bigint | number
     mall?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
@@ -40766,10 +43980,254 @@ export namespace Prisma {
     cat_vendor?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
     prod_line_vendor?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
     gender?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
-    product_size?: StringNullableWithAggregatesFilter<"SalesHistoryAgg"> | string | null
     buy?: DecimalWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     st?: DecimalNullableWithAggregatesFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggWhereInput = {
+    AND?: SellthroughByGenderAggWhereInput | SellthroughByGenderAggWhereInput[]
+    OR?: SellthroughByGenderAggWhereInput[]
+    NOT?: SellthroughByGenderAggWhereInput | SellthroughByGenderAggWhereInput[]
+    store_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    year?: IntFilter<"SellthroughByGenderAgg"> | number
+    season_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    mall?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    group_brand?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    gender?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughByGenderAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggOrderByWithRelationInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+  }
+
+  export type SellthroughByGenderAggWhereUniqueInput = Prisma.AtLeast<{
+    store_id_brand_id_gender_id_year_season_id?: SellthroughByGenderAggStore_idBrand_idGender_idYearSeason_idCompoundUniqueInput
+    AND?: SellthroughByGenderAggWhereInput | SellthroughByGenderAggWhereInput[]
+    OR?: SellthroughByGenderAggWhereInput[]
+    NOT?: SellthroughByGenderAggWhereInput | SellthroughByGenderAggWhereInput[]
+    store_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    year?: IntFilter<"SellthroughByGenderAgg"> | number
+    season_id?: BigIntFilter<"SellthroughByGenderAgg"> | bigint | number
+    mall?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    group_brand?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    gender?: StringNullableFilter<"SellthroughByGenderAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughByGenderAgg"> | Decimal | DecimalJsLike | number | string | null
+  }, "store_id_brand_id_gender_id_year_season_id">
+
+  export type SellthroughByGenderAggOrderByWithAggregationInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+    _count?: SellthroughByGenderAggCountOrderByAggregateInput
+    _avg?: SellthroughByGenderAggAvgOrderByAggregateInput
+    _max?: SellthroughByGenderAggMaxOrderByAggregateInput
+    _min?: SellthroughByGenderAggMinOrderByAggregateInput
+    _sum?: SellthroughByGenderAggSumOrderByAggregateInput
+  }
+
+  export type SellthroughByGenderAggScalarWhereWithAggregatesInput = {
+    AND?: SellthroughByGenderAggScalarWhereWithAggregatesInput | SellthroughByGenderAggScalarWhereWithAggregatesInput[]
+    OR?: SellthroughByGenderAggScalarWhereWithAggregatesInput[]
+    NOT?: SellthroughByGenderAggScalarWhereWithAggregatesInput | SellthroughByGenderAggScalarWhereWithAggregatesInput[]
+    store_id?: BigIntWithAggregatesFilter<"SellthroughByGenderAgg"> | bigint | number
+    brand_id?: BigIntWithAggregatesFilter<"SellthroughByGenderAgg"> | bigint | number
+    gender_id?: BigIntWithAggregatesFilter<"SellthroughByGenderAgg"> | bigint | number
+    year?: IntWithAggregatesFilter<"SellthroughByGenderAgg"> | number
+    season_id?: BigIntWithAggregatesFilter<"SellthroughByGenderAgg"> | bigint | number
+    mall?: StringNullableWithAggregatesFilter<"SellthroughByGenderAgg"> | string | null
+    group_brand?: StringNullableWithAggregatesFilter<"SellthroughByGenderAgg"> | string | null
+    brand_name?: StringNullableWithAggregatesFilter<"SellthroughByGenderAgg"> | string | null
+    gender?: StringNullableWithAggregatesFilter<"SellthroughByGenderAgg"> | string | null
+    st?: DecimalNullableWithAggregatesFilter<"SellthroughByGenderAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggWhereInput = {
+    AND?: SellthroughBySeasonTypeAggWhereInput | SellthroughBySeasonTypeAggWhereInput[]
+    OR?: SellthroughBySeasonTypeAggWhereInput[]
+    NOT?: SellthroughBySeasonTypeAggWhereInput | SellthroughBySeasonTypeAggWhereInput[]
+    store_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    season_type_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    year?: IntFilter<"SellthroughBySeasonTypeAgg"> | number
+    season_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    mall?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    group_brand?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughBySeasonTypeAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggOrderByWithRelationInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggWhereUniqueInput = Prisma.AtLeast<{
+    store_id_brand_id_season_type_id_year_season_id?: SellthroughBySeasonTypeAggStore_idBrand_idSeason_type_idYearSeason_idCompoundUniqueInput
+    AND?: SellthroughBySeasonTypeAggWhereInput | SellthroughBySeasonTypeAggWhereInput[]
+    OR?: SellthroughBySeasonTypeAggWhereInput[]
+    NOT?: SellthroughBySeasonTypeAggWhereInput | SellthroughBySeasonTypeAggWhereInput[]
+    store_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    brand_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    season_type_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    year?: IntFilter<"SellthroughBySeasonTypeAgg"> | number
+    season_id?: BigIntFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    mall?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    group_brand?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughBySeasonTypeAgg"> | Decimal | DecimalJsLike | number | string | null
+  }, "store_id_brand_id_season_type_id_year_season_id">
+
+  export type SellthroughBySeasonTypeAggOrderByWithAggregationInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrderInput | SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+    _count?: SellthroughBySeasonTypeAggCountOrderByAggregateInput
+    _avg?: SellthroughBySeasonTypeAggAvgOrderByAggregateInput
+    _max?: SellthroughBySeasonTypeAggMaxOrderByAggregateInput
+    _min?: SellthroughBySeasonTypeAggMinOrderByAggregateInput
+    _sum?: SellthroughBySeasonTypeAggSumOrderByAggregateInput
+  }
+
+  export type SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput = {
+    AND?: SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput | SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput[]
+    OR?: SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput[]
+    NOT?: SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput | SellthroughBySeasonTypeAggScalarWhereWithAggregatesInput[]
+    store_id?: BigIntWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    brand_id?: BigIntWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    season_type_id?: BigIntWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    year?: IntWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | number
+    season_id?: BigIntWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | bigint | number
+    mall?: StringNullableWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    group_brand?: StringNullableWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    brand_name?: StringNullableWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | string | null
+    st?: DecimalNullableWithAggregatesFilter<"SellthroughBySeasonTypeAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggWhereInput = {
+    AND?: SellthroughBySubcategoryAggWhereInput | SellthroughBySubcategoryAggWhereInput[]
+    OR?: SellthroughBySubcategoryAggWhereInput[]
+    NOT?: SellthroughBySubcategoryAggWhereInput | SellthroughBySubcategoryAggWhereInput[]
+    brand_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    category_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    sub_category_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    year?: IntFilter<"SellthroughBySubcategoryAgg"> | number
+    season_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    group_brand?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    gender?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughBySubcategoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggOrderByWithRelationInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggWhereUniqueInput = Prisma.AtLeast<{
+    brand_id_gender_id_category_id_sub_category_id_year_season_id?: SellthroughBySubcategoryAggBrand_idGender_idCategory_idSub_category_idYearSeason_idCompoundUniqueInput
+    AND?: SellthroughBySubcategoryAggWhereInput | SellthroughBySubcategoryAggWhereInput[]
+    OR?: SellthroughBySubcategoryAggWhereInput[]
+    NOT?: SellthroughBySubcategoryAggWhereInput | SellthroughBySubcategoryAggWhereInput[]
+    brand_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    gender_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    category_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    sub_category_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    year?: IntFilter<"SellthroughBySubcategoryAgg"> | number
+    season_id?: BigIntFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    group_brand?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    brand_name?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    cat_vendor?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    prod_line_vendor?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    gender?: StringNullableFilter<"SellthroughBySubcategoryAgg"> | string | null
+    st?: DecimalNullableFilter<"SellthroughBySubcategoryAgg"> | Decimal | DecimalJsLike | number | string | null
+  }, "brand_id_gender_id_category_id_sub_category_id_year_season_id">
+
+  export type SellthroughBySubcategoryAggOrderByWithAggregationInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    group_brand?: SortOrderInput | SortOrder
+    brand_name?: SortOrderInput | SortOrder
+    cat_vendor?: SortOrderInput | SortOrder
+    prod_line_vendor?: SortOrderInput | SortOrder
+    gender?: SortOrderInput | SortOrder
+    st?: SortOrderInput | SortOrder
+    _count?: SellthroughBySubcategoryAggCountOrderByAggregateInput
+    _avg?: SellthroughBySubcategoryAggAvgOrderByAggregateInput
+    _max?: SellthroughBySubcategoryAggMaxOrderByAggregateInput
+    _min?: SellthroughBySubcategoryAggMinOrderByAggregateInput
+    _sum?: SellthroughBySubcategoryAggSumOrderByAggregateInput
+  }
+
+  export type SellthroughBySubcategoryAggScalarWhereWithAggregatesInput = {
+    AND?: SellthroughBySubcategoryAggScalarWhereWithAggregatesInput | SellthroughBySubcategoryAggScalarWhereWithAggregatesInput[]
+    OR?: SellthroughBySubcategoryAggScalarWhereWithAggregatesInput[]
+    NOT?: SellthroughBySubcategoryAggScalarWhereWithAggregatesInput | SellthroughBySubcategoryAggScalarWhereWithAggregatesInput[]
+    brand_id?: BigIntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    gender_id?: BigIntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    category_id?: BigIntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    sub_category_id?: BigIntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    year?: IntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | number
+    season_id?: BigIntWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | bigint | number
+    group_brand?: StringNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | string | null
+    brand_name?: StringNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | string | null
+    cat_vendor?: StringNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | string | null
+    prod_line_vendor?: StringNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | string | null
+    gender?: StringNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | string | null
+    st?: DecimalNullableWithAggregatesFilter<"SellthroughBySubcategoryAgg"> | Decimal | DecimalJsLike | number | string | null
   }
 
   export type ApprovalStatusWhereInput = {
@@ -41671,6 +45129,7 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionCreateNestedManyWithoutSeason_typeInput
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeason_typeInput
   }
 
   export type SeasonTypeUncheckedCreateInput = {
@@ -41682,6 +45141,7 @@ export namespace Prisma {
     updated_at?: Date | string
     updated_by?: bigint | number | null
     planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutSeason_typeInput
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeason_typeInput
   }
 
   export type SeasonTypeUpdateInput = {
@@ -41693,6 +45153,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUpdateManyWithoutSeason_typeNestedInput
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeason_typeNestedInput
   }
 
   export type SeasonTypeUncheckedUpdateInput = {
@@ -41704,6 +45165,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutSeason_typeNestedInput
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeason_typeNestedInput
   }
 
   export type SeasonTypeCreateManyInput = {
@@ -41831,6 +45293,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
@@ -41847,6 +45310,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -41861,6 +45325,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
@@ -41877,6 +45342,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -41891,6 +45357,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
   }
 
   export type SeasonUpdateManyMutationInput = {
@@ -41901,6 +45368,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
   }
 
   export type SeasonUncheckedUpdateManyInput = {
@@ -41912,6 +45380,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
   }
 
   export type GenderCreateInput = {
@@ -43722,7 +47191,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -43731,6 +47199,7 @@ export namespace Prisma {
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -43741,6 +47210,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -43749,7 +47219,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -43764,7 +47233,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -43773,6 +47241,7 @@ export namespace Prisma {
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -43783,6 +47252,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43791,7 +47261,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -43803,6 +47272,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -43811,7 +47281,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -43826,7 +47295,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -43839,6 +47307,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43847,9 +47316,288 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggCreateInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggUncheckedCreateInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggUpdateInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggUncheckedUpdateInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggCreateManyInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggUpdateManyMutationInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughByGenderAggUncheckedUpdateManyInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggCreateInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    season_type_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggUncheckedCreateInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    season_type_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggUpdateInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggUncheckedUpdateInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggCreateManyInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    season_type_id: bigint | number
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggUpdateManyMutationInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySeasonTypeAggUncheckedUpdateManyInput = {
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    season_type_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggCreateInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id: bigint | number
+    sub_category_id: bigint | number
+    year: number
+    season_id: bigint | number
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggUncheckedCreateInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id: bigint | number
+    sub_category_id: bigint | number
+    year: number
+    season_id: bigint | number
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggUpdateInput = {
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggUncheckedUpdateInput = {
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggCreateManyInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id: bigint | number
+    sub_category_id: bigint | number
+    year: number
+    season_id: bigint | number
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggUpdateManyMutationInput = {
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SellthroughBySubcategoryAggUncheckedUpdateManyInput = {
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    sub_category_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
   }
 
@@ -44990,6 +48738,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrder
+    no?: SortOrder
   }
 
   export type SeasonAvgOrderByAggregateInput = {
@@ -44997,6 +48746,7 @@ export namespace Prisma {
     season_group_id?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
+    no?: SortOrder
   }
 
   export type SeasonMaxOrderByAggregateInput = {
@@ -45008,6 +48758,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrder
+    no?: SortOrder
   }
 
   export type SeasonMinOrderByAggregateInput = {
@@ -45019,6 +48770,7 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     updated_by?: SortOrder
+    no?: SortOrder
   }
 
   export type SeasonSumOrderByAggregateInput = {
@@ -45026,6 +48778,7 @@ export namespace Prisma {
     season_group_id?: SortOrder
     created_by?: SortOrder
     updated_by?: SortOrder
+    no?: SortOrder
   }
 
   export type GenderCountOrderByAggregateInput = {
@@ -46383,6 +50136,11 @@ export namespace Prisma {
     _max?: NestedDecimalNullableFilter<$PrismaModel>
   }
 
+  export type SeasonTypeNullableRelationFilter = {
+    is?: SeasonTypeWhereInput | null
+    isNot?: SeasonTypeWhereInput | null
+  }
+
   export type SalesHistoryAggCountOrderByAggregateInput = {
     id?: SortOrder
     store_id?: SortOrder
@@ -46390,6 +50148,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrder
     sub_category_id?: SortOrder
+    season_type_id?: SortOrder
     year?: SortOrder
     season_id?: SortOrder
     mall?: SortOrder
@@ -46398,7 +50157,6 @@ export namespace Prisma {
     cat_vendor?: SortOrder
     prod_line_vendor?: SortOrder
     gender?: SortOrder
-    product_size?: SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
     st?: SortOrder
@@ -46411,6 +50169,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrder
     sub_category_id?: SortOrder
+    season_type_id?: SortOrder
     year?: SortOrder
     season_id?: SortOrder
     buy?: SortOrder
@@ -46425,6 +50184,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrder
     sub_category_id?: SortOrder
+    season_type_id?: SortOrder
     year?: SortOrder
     season_id?: SortOrder
     mall?: SortOrder
@@ -46433,7 +50193,6 @@ export namespace Prisma {
     cat_vendor?: SortOrder
     prod_line_vendor?: SortOrder
     gender?: SortOrder
-    product_size?: SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
     st?: SortOrder
@@ -46446,6 +50205,7 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrder
     sub_category_id?: SortOrder
+    season_type_id?: SortOrder
     year?: SortOrder
     season_id?: SortOrder
     mall?: SortOrder
@@ -46454,7 +50214,6 @@ export namespace Prisma {
     cat_vendor?: SortOrder
     prod_line_vendor?: SortOrder
     gender?: SortOrder
-    product_size?: SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
     st?: SortOrder
@@ -46467,10 +50226,212 @@ export namespace Prisma {
     gender_id?: SortOrder
     category_id?: SortOrder
     sub_category_id?: SortOrder
+    season_type_id?: SortOrder
     year?: SortOrder
     season_id?: SortOrder
     buy?: SortOrder
     sales_amt?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughByGenderAggStore_idBrand_idGender_idYearSeason_idCompoundUniqueInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    year: number
+    season_id: bigint | number
+  }
+
+  export type SellthroughByGenderAggCountOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughByGenderAggAvgOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughByGenderAggMaxOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughByGenderAggMinOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughByGenderAggSumOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggStore_idBrand_idSeason_type_idYearSeason_idCompoundUniqueInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    season_type_id: bigint | number
+    year: number
+    season_id: bigint | number
+  }
+
+  export type SellthroughBySeasonTypeAggCountOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggAvgOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggMaxOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggMinOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    mall?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySeasonTypeAggSumOrderByAggregateInput = {
+    store_id?: SortOrder
+    brand_id?: SortOrder
+    season_type_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggBrand_idGender_idCategory_idSub_category_idYearSeason_idCompoundUniqueInput = {
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id: bigint | number
+    sub_category_id: bigint | number
+    year: number
+    season_id: bigint | number
+  }
+
+  export type SellthroughBySubcategoryAggCountOrderByAggregateInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggAvgOrderByAggregateInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggMaxOrderByAggregateInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggMinOrderByAggregateInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
+    group_brand?: SortOrder
+    brand_name?: SortOrder
+    cat_vendor?: SortOrder
+    prod_line_vendor?: SortOrder
+    gender?: SortOrder
+    st?: SortOrder
+  }
+
+  export type SellthroughBySubcategoryAggSumOrderByAggregateInput = {
+    brand_id?: SortOrder
+    gender_id?: SortOrder
+    category_id?: SortOrder
+    sub_category_id?: SortOrder
+    year?: SortOrder
+    season_id?: SortOrder
     st?: SortOrder
   }
 
@@ -47720,11 +51681,25 @@ export namespace Prisma {
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
   }
 
+  export type SalesHistoryAggCreateNestedManyWithoutSeason_typeInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput> | SalesHistoryAggCreateWithoutSeason_typeInput[] | SalesHistoryAggUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeason_typeInput | SalesHistoryAggCreateOrConnectWithoutSeason_typeInput[]
+    createMany?: SalesHistoryAggCreateManySeason_typeInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+  }
+
   export type PlanningCollectionUncheckedCreateNestedManyWithoutSeason_typeInput = {
     create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
     connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
     createMany?: PlanningCollectionCreateManySeason_typeInputEnvelope
     connect?: PlanningCollectionWhereUniqueInput | PlanningCollectionWhereUniqueInput[]
+  }
+
+  export type SalesHistoryAggUncheckedCreateNestedManyWithoutSeason_typeInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput> | SalesHistoryAggCreateWithoutSeason_typeInput[] | SalesHistoryAggUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeason_typeInput | SalesHistoryAggCreateOrConnectWithoutSeason_typeInput[]
+    createMany?: SalesHistoryAggCreateManySeason_typeInputEnvelope
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
   }
 
   export type PlanningCollectionUpdateManyWithoutSeason_typeNestedInput = {
@@ -47741,6 +51716,20 @@ export namespace Prisma {
     deleteMany?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
   }
 
+  export type SalesHistoryAggUpdateManyWithoutSeason_typeNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput> | SalesHistoryAggCreateWithoutSeason_typeInput[] | SalesHistoryAggUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeason_typeInput | SalesHistoryAggCreateOrConnectWithoutSeason_typeInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSeason_typeInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSeason_typeInput[]
+    createMany?: SalesHistoryAggCreateManySeason_typeInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSeason_typeInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSeason_typeInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSeason_typeInput | SalesHistoryAggUpdateManyWithWhereWithoutSeason_typeInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
+  }
+
   export type PlanningCollectionUncheckedUpdateManyWithoutSeason_typeNestedInput = {
     create?: XOR<PlanningCollectionCreateWithoutSeason_typeInput, PlanningCollectionUncheckedCreateWithoutSeason_typeInput> | PlanningCollectionCreateWithoutSeason_typeInput[] | PlanningCollectionUncheckedCreateWithoutSeason_typeInput[]
     connectOrCreate?: PlanningCollectionCreateOrConnectWithoutSeason_typeInput | PlanningCollectionCreateOrConnectWithoutSeason_typeInput[]
@@ -47753,6 +51742,20 @@ export namespace Prisma {
     update?: PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput | PlanningCollectionUpdateWithWhereUniqueWithoutSeason_typeInput[]
     updateMany?: PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput | PlanningCollectionUpdateManyWithWhereWithoutSeason_typeInput[]
     deleteMany?: PlanningCollectionScalarWhereInput | PlanningCollectionScalarWhereInput[]
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSeason_typeNestedInput = {
+    create?: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput> | SalesHistoryAggCreateWithoutSeason_typeInput[] | SalesHistoryAggUncheckedCreateWithoutSeason_typeInput[]
+    connectOrCreate?: SalesHistoryAggCreateOrConnectWithoutSeason_typeInput | SalesHistoryAggCreateOrConnectWithoutSeason_typeInput[]
+    upsert?: SalesHistoryAggUpsertWithWhereUniqueWithoutSeason_typeInput | SalesHistoryAggUpsertWithWhereUniqueWithoutSeason_typeInput[]
+    createMany?: SalesHistoryAggCreateManySeason_typeInputEnvelope
+    set?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    disconnect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    delete?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    connect?: SalesHistoryAggWhereUniqueInput | SalesHistoryAggWhereUniqueInput[]
+    update?: SalesHistoryAggUpdateWithWhereUniqueWithoutSeason_typeInput | SalesHistoryAggUpdateWithWhereUniqueWithoutSeason_typeInput[]
+    updateMany?: SalesHistoryAggUpdateManyWithWhereWithoutSeason_typeInput | SalesHistoryAggUpdateManyWithWhereWithoutSeason_typeInput[]
+    deleteMany?: SalesHistoryAggScalarWhereInput | SalesHistoryAggScalarWhereInput[]
   }
 
   export type SeasonCreateNestedManyWithoutSeason_groupInput = {
@@ -49841,6 +53844,12 @@ export namespace Prisma {
     connect?: SubCategoryWhereUniqueInput
   }
 
+  export type SeasonTypeCreateNestedOneWithoutSales_history_aggInput = {
+    create?: XOR<SeasonTypeCreateWithoutSales_history_aggInput, SeasonTypeUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SeasonTypeCreateOrConnectWithoutSales_history_aggInput
+    connect?: SeasonTypeWhereUniqueInput
+  }
+
   export type SeasonCreateNestedOneWithoutSales_history_aggInput = {
     create?: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
     connectOrCreate?: SeasonCreateOrConnectWithoutSales_history_aggInput
@@ -49889,6 +53898,16 @@ export namespace Prisma {
     delete?: SubCategoryWhereInput | boolean
     connect?: SubCategoryWhereUniqueInput
     update?: XOR<XOR<SubCategoryUpdateToOneWithWhereWithoutSales_history_aggInput, SubCategoryUpdateWithoutSales_history_aggInput>, SubCategoryUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SeasonTypeUpdateOneWithoutSales_history_aggNestedInput = {
+    create?: XOR<SeasonTypeCreateWithoutSales_history_aggInput, SeasonTypeUncheckedCreateWithoutSales_history_aggInput>
+    connectOrCreate?: SeasonTypeCreateOrConnectWithoutSales_history_aggInput
+    upsert?: SeasonTypeUpsertWithoutSales_history_aggInput
+    disconnect?: SeasonTypeWhereInput | boolean
+    delete?: SeasonTypeWhereInput | boolean
+    connect?: SeasonTypeWhereUniqueInput
+    update?: XOR<XOR<SeasonTypeUpdateToOneWithWhereWithoutSales_history_aggInput, SeasonTypeUpdateWithoutSales_history_aggInput>, SeasonTypeUncheckedUpdateWithoutSales_history_aggInput>
   }
 
   export type SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput = {
@@ -51493,7 +55512,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -51501,6 +55519,7 @@ export namespace Prisma {
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -51510,6 +55529,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -51518,7 +55538,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -51681,6 +55700,7 @@ export namespace Prisma {
     gender_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     sub_category_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
+    season_type_id?: BigIntNullableFilter<"SalesHistoryAgg"> | bigint | number | null
     year?: IntFilter<"SalesHistoryAgg"> | number
     season_id?: BigIntFilter<"SalesHistoryAgg"> | bigint | number
     mall?: StringNullableFilter<"SalesHistoryAgg"> | string | null
@@ -51689,7 +55709,6 @@ export namespace Prisma {
     cat_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     prod_line_vendor?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     gender?: StringNullableFilter<"SalesHistoryAgg"> | string | null
-    product_size?: StringNullableFilter<"SalesHistoryAgg"> | string | null
     buy?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string
     st?: DecimalNullableFilter<"SalesHistoryAgg"> | Decimal | DecimalJsLike | number | string | null
@@ -51899,7 +55918,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -51907,6 +55925,7 @@ export namespace Prisma {
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -51916,6 +55935,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -51924,7 +55944,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -52149,6 +56168,55 @@ export namespace Prisma {
     data: PlanningCollectionCreateManySeason_typeInput | PlanningCollectionCreateManySeason_typeInput[]
   }
 
+  export type SalesHistoryAggCreateWithoutSeason_typeInput = {
+    id?: bigint | number
+    year: number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+    store_ref: StoreCreateNestedOneWithoutSales_history_aggInput
+    brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
+    gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
+    category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season: SeasonCreateNestedOneWithoutSales_history_aggInput
+  }
+
+  export type SalesHistoryAggUncheckedCreateWithoutSeason_typeInput = {
+    id?: bigint | number
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggCreateOrConnectWithoutSeason_typeInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    create: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput>
+  }
+
+  export type SalesHistoryAggCreateManySeason_typeInputEnvelope = {
+    data: SalesHistoryAggCreateManySeason_typeInput | SalesHistoryAggCreateManySeason_typeInput[]
+  }
+
   export type PlanningCollectionUpsertWithWhereUniqueWithoutSeason_typeInput = {
     where: PlanningCollectionWhereUniqueInput
     update: XOR<PlanningCollectionUpdateWithoutSeason_typeInput, PlanningCollectionUncheckedUpdateWithoutSeason_typeInput>
@@ -52165,6 +56233,22 @@ export namespace Prisma {
     data: XOR<PlanningCollectionUpdateManyMutationInput, PlanningCollectionUncheckedUpdateManyWithoutSeason_typeInput>
   }
 
+  export type SalesHistoryAggUpsertWithWhereUniqueWithoutSeason_typeInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    update: XOR<SalesHistoryAggUpdateWithoutSeason_typeInput, SalesHistoryAggUncheckedUpdateWithoutSeason_typeInput>
+    create: XOR<SalesHistoryAggCreateWithoutSeason_typeInput, SalesHistoryAggUncheckedCreateWithoutSeason_typeInput>
+  }
+
+  export type SalesHistoryAggUpdateWithWhereUniqueWithoutSeason_typeInput = {
+    where: SalesHistoryAggWhereUniqueInput
+    data: XOR<SalesHistoryAggUpdateWithoutSeason_typeInput, SalesHistoryAggUncheckedUpdateWithoutSeason_typeInput>
+  }
+
+  export type SalesHistoryAggUpdateManyWithWhereWithoutSeason_typeInput = {
+    where: SalesHistoryAggScalarWhereInput
+    data: XOR<SalesHistoryAggUpdateManyMutationInput, SalesHistoryAggUncheckedUpdateManyWithoutSeason_typeInput>
+  }
+
   export type SeasonCreateWithoutSeason_groupInput = {
     id?: bigint | number
     name: string
@@ -52173,6 +56257,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
@@ -52187,6 +56272,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -52298,6 +56384,7 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"Season"> | Date | string
     updated_at?: DateTimeFilter<"Season"> | Date | string
     updated_by?: BigIntNullableFilter<"Season"> | bigint | number | null
+    no?: IntNullableFilter<"Season"> | number | null
   }
 
   export type BudgetAllocateUpsertWithWhereUniqueWithoutSeason_groupInput = {
@@ -52489,7 +56576,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -52498,6 +56584,7 @@ export namespace Prisma {
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
   }
 
   export type SalesHistoryAggUncheckedCreateWithoutSeasonInput = {
@@ -52507,6 +56594,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     mall?: string | null
     group_brand?: string | null
@@ -52514,7 +56602,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -52766,7 +56853,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -52774,6 +56860,7 @@ export namespace Prisma {
     brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -52783,6 +56870,7 @@ export namespace Prisma {
     brand_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -52791,7 +56879,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -53033,7 +57120,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -53041,6 +57127,7 @@ export namespace Prisma {
     brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     sub_category?: SubCategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -53050,6 +57137,7 @@ export namespace Prisma {
     brand_id: bigint | number
     gender_id: bigint | number
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -53058,7 +57146,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -53425,7 +57512,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -53433,6 +57519,7 @@ export namespace Prisma {
     brand_ref: BrandCreateNestedOneWithoutSales_history_aggInput
     gender_ref: GenderCreateNestedOneWithoutSales_history_aggInput
     category?: CategoryCreateNestedOneWithoutSales_history_aggInput
+    season_type?: SeasonTypeCreateNestedOneWithoutSales_history_aggInput
     season: SeasonCreateNestedOneWithoutSales_history_aggInput
   }
 
@@ -53442,6 +57529,7 @@ export namespace Prisma {
     brand_id: bigint | number
     gender_id: bigint | number
     category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -53450,7 +57538,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -54712,6 +58799,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
@@ -54727,6 +58815,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
     sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -54879,6 +58968,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
@@ -54894,6 +58984,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
     sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -55258,6 +59349,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    sales_history_agg?: SalesHistoryAggCreateNestedManyWithoutSeason_typeInput
   }
 
   export type SeasonTypeUncheckedCreateWithoutPlanning_collectionsInput = {
@@ -55268,6 +59360,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeason_typeInput
   }
 
   export type SeasonTypeCreateOrConnectWithoutPlanning_collectionsInput = {
@@ -55364,6 +59457,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sales_history_agg?: SalesHistoryAggUpdateManyWithoutSeason_typeNestedInput
   }
 
   export type SeasonTypeUncheckedUpdateWithoutPlanning_collectionsInput = {
@@ -55374,6 +59468,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeason_typeNestedInput
   }
 
   export type StoreUpsertWithoutPlanning_collectionsInput = {
@@ -57096,6 +61191,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
@@ -57111,6 +61207,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
     sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -57341,6 +61438,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
@@ -57356,6 +61454,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
     sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -57532,6 +61631,33 @@ export namespace Prisma {
     create: XOR<SubCategoryCreateWithoutSales_history_aggInput, SubCategoryUncheckedCreateWithoutSales_history_aggInput>
   }
 
+  export type SeasonTypeCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    planning_collections?: PlanningCollectionCreateNestedManyWithoutSeason_typeInput
+  }
+
+  export type SeasonTypeUncheckedCreateWithoutSales_history_aggInput = {
+    id?: bigint | number
+    name: string
+    is_active?: boolean
+    created_by?: bigint | number | null
+    created_at?: Date | string
+    updated_at?: Date | string
+    updated_by?: bigint | number | null
+    planning_collections?: PlanningCollectionUncheckedCreateNestedManyWithoutSeason_typeInput
+  }
+
+  export type SeasonTypeCreateOrConnectWithoutSales_history_aggInput = {
+    where: SeasonTypeWhereUniqueInput
+    create: XOR<SeasonTypeCreateWithoutSales_history_aggInput, SeasonTypeUncheckedCreateWithoutSales_history_aggInput>
+  }
+
   export type SeasonCreateWithoutSales_history_aggInput = {
     id?: bigint | number
     name: string
@@ -57540,6 +61666,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     tickets?: TicketCreateNestedManyWithoutSeasonInput
@@ -57555,6 +61682,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     tickets?: TicketUncheckedCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -57766,6 +61894,39 @@ export namespace Prisma {
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSub_categoryNestedInput
   }
 
+  export type SeasonTypeUpsertWithoutSales_history_aggInput = {
+    update: XOR<SeasonTypeUpdateWithoutSales_history_aggInput, SeasonTypeUncheckedUpdateWithoutSales_history_aggInput>
+    create: XOR<SeasonTypeCreateWithoutSales_history_aggInput, SeasonTypeUncheckedCreateWithoutSales_history_aggInput>
+    where?: SeasonTypeWhereInput
+  }
+
+  export type SeasonTypeUpdateToOneWithWhereWithoutSales_history_aggInput = {
+    where?: SeasonTypeWhereInput
+    data: XOR<SeasonTypeUpdateWithoutSales_history_aggInput, SeasonTypeUncheckedUpdateWithoutSales_history_aggInput>
+  }
+
+  export type SeasonTypeUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    planning_collections?: PlanningCollectionUpdateManyWithoutSeason_typeNestedInput
+  }
+
+  export type SeasonTypeUncheckedUpdateWithoutSales_history_aggInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    name?: StringFieldUpdateOperationsInput | string
+    is_active?: BoolFieldUpdateOperationsInput | boolean
+    created_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    planning_collections?: PlanningCollectionUncheckedUpdateManyWithoutSeason_typeNestedInput
+  }
+
   export type SeasonUpsertWithoutSales_history_aggInput = {
     update: XOR<SeasonUpdateWithoutSales_history_aggInput, SeasonUncheckedUpdateWithoutSales_history_aggInput>
     create: XOR<SeasonCreateWithoutSales_history_aggInput, SeasonUncheckedCreateWithoutSales_history_aggInput>
@@ -57785,6 +61946,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
@@ -57800,6 +61962,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -57877,6 +62040,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     season_group: SeasonGroupCreateNestedOneWithoutSeasonsInput
     budget_allocates?: BudgetAllocateCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggCreateNestedManyWithoutSeasonInput
@@ -57892,6 +62056,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
     budget_allocates?: BudgetAllocateUncheckedCreateNestedManyWithoutSeasonInput
     history_agg?: SubCategorySizeHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
     sales_history_agg?: SalesHistoryAggUncheckedCreateNestedManyWithoutSeasonInput
@@ -58118,6 +62283,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     season_group?: SeasonGroupUpdateOneRequiredWithoutSeasonsNestedInput
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
@@ -58133,6 +62299,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
     sales_history_agg?: SalesHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -59360,6 +63527,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -59368,7 +63536,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -59527,7 +63694,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59535,6 +63701,7 @@ export namespace Prisma {
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -59544,6 +63711,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -59552,7 +63720,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59564,6 +63731,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -59572,7 +63740,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59653,6 +63820,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -59661,7 +63829,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -59901,7 +64068,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59909,6 +64075,7 @@ export namespace Prisma {
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -59918,6 +64085,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -59926,7 +64094,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59938,6 +64105,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -59946,7 +64114,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -59966,6 +64133,25 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+  }
+
+  export type SalesHistoryAggCreateManySeason_typeInput = {
+    store_id: bigint | number
+    brand_id: bigint | number
+    gender_id: bigint | number
+    category_id?: bigint | number | null
+    sub_category_id?: bigint | number | null
+    year: number
+    season_id: bigint | number
+    mall?: string | null
+    group_brand?: string | null
+    brand_name?: string | null
+    cat_vendor?: string | null
+    prod_line_vendor?: string | null
+    gender?: string | null
+    buy?: Decimal | DecimalJsLike | number | string
+    sales_amt?: Decimal | DecimalJsLike | number | string
+    st?: Decimal | DecimalJsLike | number | string | null
   }
 
   export type PlanningCollectionUpdateWithoutSeason_typeInput = {
@@ -60019,6 +64205,66 @@ export namespace Prisma {
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
   }
 
+  export type SalesHistoryAggUpdateWithoutSeason_typeInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    year?: IntFieldUpdateOperationsInput | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    store_ref?: StoreUpdateOneRequiredWithoutSales_history_aggNestedInput
+    brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
+    gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
+    category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
+  }
+
+  export type SalesHistoryAggUncheckedUpdateWithoutSeason_typeInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type SalesHistoryAggUncheckedUpdateManyWithoutSeason_typeInput = {
+    id?: BigIntFieldUpdateOperationsInput | bigint | number
+    store_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    year?: IntFieldUpdateOperationsInput | number
+    season_id?: BigIntFieldUpdateOperationsInput | bigint | number
+    mall?: NullableStringFieldUpdateOperationsInput | string | null
+    group_brand?: NullableStringFieldUpdateOperationsInput | string | null
+    brand_name?: NullableStringFieldUpdateOperationsInput | string | null
+    cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: NullableStringFieldUpdateOperationsInput | string | null
+    buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+  }
+
   export type SeasonCreateManySeason_groupInput = {
     name: string
     is_active?: boolean
@@ -60026,6 +64272,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     updated_by?: bigint | number | null
+    no?: number | null
   }
 
   export type BudgetAllocateCreateManySeason_groupInput = {
@@ -60057,6 +64304,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUpdateManyWithoutSeasonNestedInput
@@ -60071,6 +64319,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
     budget_allocates?: BudgetAllocateUncheckedUpdateManyWithoutSeasonNestedInput
     tickets?: TicketUncheckedUpdateManyWithoutSeasonNestedInput
     history_agg?: SubCategorySizeHistoryAggUncheckedUpdateManyWithoutSeasonNestedInput
@@ -60085,6 +64334,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_by?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    no?: NullableIntFieldUpdateOperationsInput | number | null
   }
 
   export type BudgetAllocateUpdateWithoutSeason_groupInput = {
@@ -60206,6 +64456,7 @@ export namespace Prisma {
     gender_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     mall?: string | null
     group_brand?: string | null
@@ -60213,7 +64464,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -60361,7 +64611,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60370,6 +64619,7 @@ export namespace Prisma {
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
   }
 
   export type SalesHistoryAggUncheckedUpdateWithoutSeasonInput = {
@@ -60379,6 +64629,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
     group_brand?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60386,7 +64637,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60399,6 +64649,7 @@ export namespace Prisma {
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
     group_brand?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60406,7 +64657,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60461,6 +64711,7 @@ export namespace Prisma {
     brand_id: bigint | number
     category_id?: bigint | number | null
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -60469,7 +64720,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -60631,7 +64881,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60639,6 +64888,7 @@ export namespace Prisma {
     brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -60648,6 +64898,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60656,7 +64907,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60668,6 +64918,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60676,7 +64927,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60715,6 +64965,7 @@ export namespace Prisma {
     brand_id: bigint | number
     gender_id: bigint | number
     sub_category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -60723,7 +64974,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -60838,7 +65088,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60846,6 +65095,7 @@ export namespace Prisma {
     brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     sub_category?: SubCategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -60855,6 +65105,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60863,7 +65114,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60875,6 +65125,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     sub_category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60883,7 +65134,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -60955,6 +65205,7 @@ export namespace Prisma {
     brand_id: bigint | number
     gender_id: bigint | number
     category_id?: bigint | number | null
+    season_type_id?: bigint | number | null
     year: number
     season_id: bigint | number
     mall?: string | null
@@ -60963,7 +65214,6 @@ export namespace Prisma {
     cat_vendor?: string | null
     prod_line_vendor?: string | null
     gender?: string | null
-    product_size?: string | null
     buy?: Decimal | DecimalJsLike | number | string
     sales_amt?: Decimal | DecimalJsLike | number | string
     st?: Decimal | DecimalJsLike | number | string | null
@@ -61177,7 +65427,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -61185,6 +65434,7 @@ export namespace Prisma {
     brand_ref?: BrandUpdateOneRequiredWithoutSales_history_aggNestedInput
     gender_ref?: GenderUpdateOneRequiredWithoutSales_history_aggNestedInput
     category?: CategoryUpdateOneWithoutSales_history_aggNestedInput
+    season_type?: SeasonTypeUpdateOneWithoutSales_history_aggNestedInput
     season?: SeasonUpdateOneRequiredWithoutSales_history_aggNestedInput
   }
 
@@ -61194,6 +65444,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -61202,7 +65453,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -61214,6 +65464,7 @@ export namespace Prisma {
     brand_id?: BigIntFieldUpdateOperationsInput | bigint | number
     gender_id?: BigIntFieldUpdateOperationsInput | bigint | number
     category_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    season_type_id?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     year?: IntFieldUpdateOperationsInput | number
     season_id?: BigIntFieldUpdateOperationsInput | bigint | number
     mall?: NullableStringFieldUpdateOperationsInput | string | null
@@ -61222,7 +65473,6 @@ export namespace Prisma {
     cat_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     prod_line_vendor?: NullableStringFieldUpdateOperationsInput | string | null
     gender?: NullableStringFieldUpdateOperationsInput | string | null
-    product_size?: NullableStringFieldUpdateOperationsInput | string | null
     buy?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     sales_amt?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     st?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
@@ -62416,6 +66666,18 @@ export namespace Prisma {
      * @deprecated Use SalesHistoryAggDefaultArgs instead
      */
     export type SalesHistoryAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SalesHistoryAggDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use SellthroughByGenderAggDefaultArgs instead
+     */
+    export type SellthroughByGenderAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SellthroughByGenderAggDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use SellthroughBySeasonTypeAggDefaultArgs instead
+     */
+    export type SellthroughBySeasonTypeAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SellthroughBySeasonTypeAggDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use SellthroughBySubcategoryAggDefaultArgs instead
+     */
+    export type SellthroughBySubcategoryAggArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = SellthroughBySubcategoryAggDefaultArgs<ExtArgs>
     /**
      * @deprecated Use ApprovalStatusDefaultArgs instead
      */

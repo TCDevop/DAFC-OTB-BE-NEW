@@ -76,6 +76,28 @@ export class ProposalController {
     });
   }
 
+  @Get('sizing-history')
+  @RequirePermissions(PERMISSIONS.PROPOSAL.READ)
+  @ApiOperation({ summary: 'Get sizing sales history (%Sales mix, %ST) by brand + subCategory' })
+  @ApiSuccessResponse()
+  @ApiQuery({ name: 'brandId', required: true })
+  @ApiQuery({ name: 'subCategoryId', required: true })
+  @ApiQuery({ name: 'year', required: false, type: Number })
+  @ApiQuery({ name: 'seasonId', required: false })
+  async getSizingHistory(
+    @Query('brandId') brandId: string,
+    @Query('subCategoryId') subCategoryId: string,
+    @Query('year') year?: number,
+    @Query('seasonId') seasonId?: string,
+  ) {
+    return this.proposalService.getSizingHistory({
+      brandId,
+      subCategoryId,
+      year: year ? Number(year) : undefined,
+      seasonId: seasonId || undefined,
+    });
+  }
+
   @Get(':id')
   @RequirePermissions(PERMISSIONS.PROPOSAL.READ)
   @ApiOperation({ summary: 'Get SKU proposal header with nested data' })

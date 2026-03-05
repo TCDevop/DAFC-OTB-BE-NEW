@@ -702,4 +702,47 @@ export class ProposalService {
     }
     return this.prisma.sKUProposalHeader.delete({ where: { id: toBigInt(id) } });
   }
+
+  // ─── SIZING HISTORY (from sales_sub_category_size_history_agg) ──────────
+
+  async getSizingHistory(params: { brandId: string; subCategoryId: string; year?: number; seasonId?: string }) {
+    // Raw SQL — table has no PK, all columns nullable (int type)
+    const conditions: string[] = [];
+    const values: number[] = [];
+    let paramIdx = 1;
+
+    conditions.push(`brand_id = @P${paramIdx}`);
+    values.push(Number(params.brandId));
+    paramIdx++;
+
+    conditions.push(`sub_category_id = @P${paramIdx}`);
+    values.push(Number(params.subCategoryId));
+    paramIdx++;
+
+    if (params.year) {
+      conditions.push(`year = @P${paramIdx}`);
+      values.push(params.year);
+      paramIdx++;
+    }
+    if (params.seasonId) {
+      conditions.push(`season_id = @P${paramIdx}`);
+      values.push(Number(params.seasonId));
+      paramIdx++;
+    }
+
+    const sql = `SELECT product_size, SUM(CAST(sales_amt AS FLOAT)) AS total_sales, AVG(CAST(st AS FLOAT)) AS avg_st
+      FROM sales_sub_category_size_history_agg
+      WHERE ${conditions.join(' AND ')} AND product_size IS NOT NULL
+      GROUP BY product_size`;
+
+    const rows: any[] = await this.prisma.$queryRawUnsafe(sql, ...values);
+
+    const grandTotalSales = rows.reduce((sum, r) => sum + (r.total_sales || 0), 0);
+
+    return rows.map(r => ({
+      size: r.product_size || '',
+      salesMixPct: grandTotalSales > 0 ? Math.round((r.total_sales || 0) / grandTotalSales * 10000) / 100 : 0,
+      stPct: r.avg_st != null ? Math.round(r.avg_st * 100) / 100 : null,
+    }));
+  }
 }

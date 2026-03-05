@@ -57,8 +57,11 @@ export class HttpExceptionFilter implements ExceptionFilter {
           break;
         default:
           status = HttpStatus.BAD_REQUEST;
-          message = 'Database operation failed';
+          message = `Database operation failed (${exception.code}: ${exception.message})`;
       }
+    } else if (exception instanceof Error) {
+      // Log non-Prisma errors for debugging
+      console.error('[HttpExceptionFilter] Unhandled error:', exception.message, exception.stack);
     }
     // Unknown errors → 500 với message generic (không lộ details)
 

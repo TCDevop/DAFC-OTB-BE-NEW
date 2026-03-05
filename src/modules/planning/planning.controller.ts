@@ -76,29 +76,29 @@ export class PlanningController {
 
   @Get('sales-history')
   @RequirePermissions(PERMISSIONS.PLANNING.READ)
-  @ApiOperation({ summary: 'Get aggregated sales history from sales_history_agg for baseline or recent periods' })
+  @ApiOperation({ summary: 'Get aggregated sales history — same (year-N same season) or diff (go back N seasons by season.no)' })
   @ApiSuccessResponse()
   @ApiQuery({ name: 'brandId', required: true, type: String })
-  @ApiQuery({ name: 'mode', required: true, description: 'baseline | recent' })
-  @ApiQuery({ name: 'year', required: false, type: Number })
-  @ApiQuery({ name: 'seasonName', required: false, type: String })
-  @ApiQuery({ name: 'seasonGroupName', required: false, type: String })
-  @ApiQuery({ name: 'limit', required: false, type: Number })
+  @ApiQuery({ name: 'mode', required: true, description: 'same | diff' })
+  @ApiQuery({ name: 'year', required: true, type: Number, description: 'Current selected fiscal year' })
+  @ApiQuery({ name: 'seasonId', required: true, type: String, description: 'Current selected season DB id' })
+  @ApiQuery({ name: 'count', required: false, type: Number, description: 'Number of periods (default 1, max 3)' })
+  @ApiQuery({ name: 'tab', required: false, description: 'category | collection | gender — only compute the relevant aggregation' })
   async findSalesHistory(
     @Query('brandId') brandId: string,
-    @Query('mode') mode: 'baseline' | 'recent',
-    @Query('year') year?: number,
-    @Query('seasonName') seasonName?: string,
-    @Query('seasonGroupName') seasonGroupName?: string,
-    @Query('limit') limit?: number,
+    @Query('mode') mode: 'same' | 'diff',
+    @Query('year') year: number,
+    @Query('seasonId') seasonId: string,
+    @Query('count') count?: number,
+    @Query('tab') tab?: 'category' | 'collection' | 'gender',
   ) {
     return this.planningService.findSalesHistory({
       brandId,
       mode,
-      year: year ? Number(year) : undefined,
-      seasonName,
-      seasonGroupName,
-      limit: limit ? Number(limit) : undefined,
+      year: Number(year),
+      seasonId,
+      count: count ? Number(count) : undefined,
+      tab,
     });
   }
 

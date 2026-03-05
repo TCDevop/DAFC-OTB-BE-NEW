@@ -68,24 +68,32 @@ export class PlanningService {
         where: { id: BigInt(id) },
         include: {
           creator: { select: { id: true, name: true, email: true } },
-          allocate_header: { include: { brand: true } },
+          allocate_header: {
+            select: {
+              id: true, brand_id: true, budget_id: true,
+              brand: { select: { id: true, name: true } },
+            },
+          },
           planning_collections: {
             include: {
-              season_type: true,
-              store: true,
+              season_type: { select: { id: true, name: true } },
+              store: { select: { id: true, name: true, code: true } },
             },
           },
           planning_genders: {
             include: {
-              gender: true,
-              store: true,
+              gender: { select: { id: true, name: true } },
+              store: { select: { id: true, name: true, code: true } },
             },
           },
           planning_categories: {
             include: {
               subcategory: {
-                include: {
-                  category: { include: { gender: true } },
+                select: {
+                  id: true, name: true, category_id: true,
+                  category: {
+                    select: { id: true, name: true, gender_id: true, gender: { select: { id: true, name: true } } },
+                  },
                 },
               },
             },
@@ -477,152 +485,340 @@ export class PlanningService {
 
   // ─── SALES HISTORY (from sales_history_agg) ────────────────────────────────
 
-  private aggregateSalesHistory(rows: any[]) {
-    let totalBuy = 0;
-    let totalSales = 0;
-    rows.forEach(r => {
-      totalBuy += Number(r.buy) || 0;
-      totalSales += Number(r.sales_amt) || 0;
-    });
+  /**
+   * bySubCategory: raw SQL with window functions — %buy, %sale relative to category total
+   * PARTITION BY gender_id, category_id so each sub's pct is within its own category group
+   */
+  private async aggregateBySubCategory(
+    brandId: bigint, year: number, seasonId: bigint,
+  ) {
+    const rows: any[] = await this.prisma.$queryRawUnsafe(`
+      WITH base AS (
+        SELECT
+          s.gender_id,
+          s.category_id,
+          s.sub_category_id,
 
-    // Group by sub_category_id
-    const subCatMap: Record<string, { buy: number; sales: number }> = {};
-    rows.forEach(r => {
-      const scId = r.sub_category_id ? String(r.sub_category_id) : null;
-      if (!scId) return;
-      if (!subCatMap[scId]) subCatMap[scId] = { buy: 0, sales: 0 };
-      subCatMap[scId].buy += Number(r.buy) || 0;
-      subCatMap[scId].sales += Number(r.sales_amt) || 0;
-    });
+          SUM(ISNULL(s.buy,0)) AS sub_buy,
+          SUM(SUM(ISNULL(s.buy,0)))
+            OVER(PARTITION BY s.gender_id, s.category_id) AS total_category_buy,
+          ISNULL(
+            CAST(
+              SUM(ISNULL(s.buy,0)) * 100.0 /
+              NULLIF(SUM(SUM(ISNULL(s.buy,0))) OVER(PARTITION BY s.gender_id, s.category_id), 0)
+            AS DECIMAL(10,2)), 0) AS buy_percent,
 
-    const bySubCategory: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
-    for (const [id, v] of Object.entries(subCatMap)) {
-      bySubCategory[id] = {
-        buyPct: totalBuy > 0 ? Math.round((v.buy / totalBuy) * 10000) / 100 : 0,
-        salesPct: totalSales > 0 ? Math.round((v.sales / totalSales) * 10000) / 100 : 0,
-        stPct: v.buy > 0 ? Math.round((v.sales / v.buy) * 10000) / 100 : 0,
+          SUM(ISNULL(s.sales_amt,0)) AS sub_sales_amt,
+          SUM(SUM(ISNULL(s.sales_amt,0)))
+            OVER(PARTITION BY s.gender_id, s.category_id) AS total_category_sales_amt,
+          ISNULL(
+            CAST(
+              SUM(ISNULL(s.sales_amt,0)) * 100.0 /
+              NULLIF(SUM(SUM(ISNULL(s.sales_amt,0))) OVER(PARTITION BY s.gender_id, s.category_id), 0)
+            AS DECIMAL(10,2)), 0) AS sales_percent
+
+        FROM dbo.sales_history_agg s
+        WHERE s.[year] = @P1
+          AND s.brand_id = @P2
+          AND s.season_id = @P3
+          AND s.sub_category_id IS NOT NULL
+          AND s.category_id IS NOT NULL
+        GROUP BY s.gender_id, s.category_id, s.sub_category_id
+      )
+      SELECT b.*,
+             g.name AS gender_name,
+             c.name AS category_name,
+             sc.name AS sub_category_name,
+             ISNULL(CAST(st_agg.st AS DECIMAL(10,4)), 0) AS st_value
+      FROM base b
+      LEFT JOIN dbo.gender g ON g.id = b.gender_id
+      LEFT JOIN dbo.category c ON c.id = b.category_id
+      LEFT JOIN dbo.sub_category sc ON sc.id = b.sub_category_id
+      LEFT JOIN (
+        SELECT gender_id, category_id, sub_category_id, AVG(st) AS st
+        FROM dbo.sellthrough_by_subcategory_history_agg
+        WHERE [year] = @P1 AND brand_id = @P2 AND season_id = @P3
+        GROUP BY gender_id, category_id, sub_category_id
+      ) st_agg ON st_agg.gender_id = b.gender_id
+             AND st_agg.category_id = b.category_id
+             AND st_agg.sub_category_id = b.sub_category_id
+    `, year, brandId, seasonId);
+
+    const bySubCategory: Record<string, any> = {};
+    // Also build structured categories list
+    const categoriesMap: Record<string, any> = {};
+
+    for (const r of rows) {
+      const key = `${r.gender_id}_${r.category_id}_${r.sub_category_id}`;
+      bySubCategory[key] = {
+        buyPct: Number(r.buy_percent) || 0,
+        salesPct: Number(r.sales_percent) || 0,
+        stPct: r.st_value != null ? Number(r.st_value) : 0,
+        genderId: String(r.gender_id),
+        genderName: r.gender_name || '',
+        categoryId: String(r.category_id),
+        categoryName: r.category_name || '',
+        subCategoryId: String(r.sub_category_id),
+        subCategoryName: r.sub_category_name || '',
       };
+
+      // Build categories structure for the frontend
+      const catKey = `${r.gender_id}_${r.category_id}`;
+      if (!categoriesMap[catKey]) {
+        categoriesMap[catKey] = {
+          genderId: String(r.gender_id),
+          genderName: r.gender_name || '',
+          categoryId: String(r.category_id),
+          categoryName: r.category_name || '',
+          subCategories: [],
+        };
+      }
+      categoriesMap[catKey].subCategories.push({
+        id: String(r.sub_category_id),
+        name: r.sub_category_name || '',
+        dataKey: key,
+      });
     }
 
-    // Group by gender_id + store_id
-    const genderStoreMap: Record<string, { buy: number; sales: number }> = {};
-    rows.forEach(r => {
+    return { bySubCategory, categories: Object.values(categoriesMap) };
+  }
+
+  /**
+   * aggregateByGenderStore: raw SQL with window functions
+   * %buy/%sales relative to gender total (PARTITION BY gender_id), ST averaged
+   * Key: gender_${genderId}_${storeId}
+   */
+  private async aggregateByGenderStore(
+    brandId: bigint,
+    year: number,
+    seasonId: bigint,
+  ): Promise<Record<string, { buyPct: number; salesPct: number; stPct: number }>> {
+    const sql = `
+      WITH base AS (
+        SELECT
+          store_id,
+          gender_id,
+          SUM(ISNULL(buy,0))       AS total_buy,
+          SUM(ISNULL(sales_amt,0)) AS total_sales
+        FROM dbo.sales_history_agg
+        WHERE [year] = @P1 AND brand_id = @P2 AND season_id = @P3
+          AND gender_id IS NOT NULL AND store_id IS NOT NULL
+        GROUP BY store_id, gender_id
+      )
+      SELECT
+        b.store_id,
+        b.gender_id,
+        ISNULL(CAST(b.total_buy * 100.0 /
+          NULLIF(SUM(b.total_buy) OVER(PARTITION BY b.gender_id),0)
+          AS DECIMAL(10,2)),0) AS buy_percent,
+        ISNULL(CAST(b.total_sales * 100.0 /
+          NULLIF(SUM(b.total_sales) OVER(PARTITION BY b.gender_id),0)
+          AS DECIMAL(10,2)),0) AS sales_percent,
+        ISNULL(CAST(st_agg.st AS DECIMAL(10,4)),0) AS st_percent
+      FROM base b
+      LEFT JOIN (
+        SELECT store_id, gender_id, AVG(st) AS st
+        FROM dbo.sellthrough_by_gender_history_agg
+        WHERE [year] = @P1 AND brand_id = @P2 AND season_id = @P3
+        GROUP BY store_id, gender_id
+      ) st_agg ON st_agg.store_id = b.store_id AND st_agg.gender_id = b.gender_id
+      ORDER BY b.gender_id, b.store_id
+    `;
+
+    const rows: any[] = await this.prisma.$queryRawUnsafe(sql, year, brandId, seasonId);
+    const result: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
+    for (const r of rows) {
       const key = `gender_${r.gender_id}_${r.store_id}`;
-      if (!genderStoreMap[key]) genderStoreMap[key] = { buy: 0, sales: 0 };
-      genderStoreMap[key].buy += Number(r.buy) || 0;
-      genderStoreMap[key].sales += Number(r.sales_amt) || 0;
-    });
-
-    const byGenderStore: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
-    for (const [key, v] of Object.entries(genderStoreMap)) {
-      byGenderStore[key] = {
-        buyPct: totalBuy > 0 ? Math.round((v.buy / totalBuy) * 10000) / 100 : 0,
-        salesPct: totalSales > 0 ? Math.round((v.sales / totalSales) * 10000) / 100 : 0,
-        stPct: v.buy > 0 ? Math.round((v.sales / v.buy) * 10000) / 100 : 0,
+      result[key] = {
+        buyPct: Number(r.buy_percent) || 0,
+        salesPct: Number(r.sales_percent) || 0,
+        stPct: Number(r.st_percent) || 0,
       };
     }
+    return result;
+  }
 
-    return { bySubCategory, byGenderStore };
+  /**
+   * aggregateBySeasonType: raw SQL with window functions
+   * %buy/%sales relative to season_type total, ST averaged
+   * Key: seasonType_${seasonTypeId}_${storeId}
+   */
+  private async aggregateBySeasonType(
+    brandId: bigint,
+    year: number,
+    seasonId: bigint,
+  ): Promise<Record<string, { buyPct: number; salesPct: number; stPct: number }>> {
+    const sql = `
+      WITH base AS (
+        SELECT
+          store_id,
+          season_type_id,
+          SUM(ISNULL(buy,0))       AS total_buy,
+          SUM(ISNULL(sales_amt,0)) AS total_sales
+        FROM dbo.sales_history_agg
+        WHERE [year] = @P1 AND brand_id = @P2 AND season_id = @P3
+          AND season_type_id IS NOT NULL AND store_id IS NOT NULL
+        GROUP BY store_id, season_type_id
+      )
+      SELECT
+        b.store_id,
+        b.season_type_id,
+        ISNULL(CAST(b.total_buy * 100.0 /
+          NULLIF(SUM(b.total_buy) OVER(PARTITION BY b.season_type_id),0)
+          AS DECIMAL(10,2)),0) AS buy_percent,
+        ISNULL(CAST(b.total_sales * 100.0 /
+          NULLIF(SUM(b.total_sales) OVER(PARTITION BY b.season_type_id),0)
+          AS DECIMAL(10,2)),0) AS sales_percent,
+        ISNULL(CAST(st_agg.st AS DECIMAL(10,4)),0) AS st_percent
+      FROM base b
+      LEFT JOIN (
+        SELECT store_id, season_type_id, AVG(st) AS st
+        FROM dbo.sellthrough_by_season_type_history_agg
+        WHERE [year] = @P1 AND brand_id = @P2 AND season_id = @P3
+        GROUP BY store_id, season_type_id
+      ) st_agg ON st_agg.store_id = b.store_id AND st_agg.season_type_id = b.season_type_id
+      ORDER BY b.season_type_id, b.store_id
+    `;
+
+    const rows: any[] = await this.prisma.$queryRawUnsafe(sql, year, brandId, seasonId);
+    const result: Record<string, { buyPct: number; salesPct: number; stPct: number }> = {};
+    for (const r of rows) {
+      const key = `seasonType_${r.season_type_id}_${r.store_id}`;
+      result[key] = {
+        buyPct: Number(r.buy_percent) || 0,
+        salesPct: Number(r.sales_percent) || 0,
+        stPct: Number(r.st_percent) || 0,
+      };
+    }
+    return result;
   }
 
   async findSalesHistory(params: {
     brandId: string;
-    mode: 'baseline' | 'recent';
-    year?: number;
-    seasonName?: string;
-    seasonGroupName?: string;
-    limit?: number;
+    mode: 'same' | 'diff';
+    year: number;
+    seasonId: string;
+    count?: number;
+    tab?: 'category' | 'collection' | 'gender';
   }) {
-    const { brandId, mode } = params;
+    const { brandId, mode, year, seasonId, tab } = params;
+    const count = params.count || 1;
+    this.logger.debug(`[findSalesHistory] mode=${mode} brandId=${brandId} year=${year} seasonId=${seasonId} count=${count}`);
 
-    if (mode === 'baseline') {
-      const { year, seasonName, seasonGroupName } = params;
-      if (!year || !seasonName || !seasonGroupName) {
-        throw new BadRequestException('year, seasonName, seasonGroupName are required for baseline mode');
+    try {
+    const bId = BigInt(brandId);
+    const sId = BigInt(seasonId);
+
+    // Build list of target (year, seasonId) pairs
+    let targetPeriods: { year: number; seasonId: bigint }[];
+
+    if (mode === 'same') {
+      // Same season, go back N years: year-1, year-2, ..., year-N
+      targetPeriods = [];
+      for (let i = 1; i <= count; i++) {
+        targetPeriods.push({ year: year - i, seasonId: sId });
+      }
+    } else {
+      // Diff: go back N seasons chronologically
+      // Build flat ordered list: season_group (by id ASC) → season (by no ASC) within each group
+      const seasonGroups = await this.prisma.seasonGroup.findMany({
+        where: { is_active: true },
+        orderBy: { id: 'asc' },
+        include: {
+          seasons: {
+            where: { is_active: true },
+            orderBy: [{ no: 'asc' }, { id: 'asc' }],
+            select: { id: true, name: true, no: true },
+          },
+        },
+      });
+
+      // Flat chronological order within one year: SG1-S1, SG1-S2, SG2-S1, SG2-S2, ...
+      const flatSeasons: { id: bigint; name: string; sgName: string }[] = [];
+      for (const sg of seasonGroups) {
+        for (const s of sg.seasons) {
+          flatSeasons.push({ id: s.id, name: s.name, sgName: sg.name });
+        }
       }
 
-      // Find matching season_id(s)
-      const seasons = await this.prisma.season.findMany({
-        where: {
-          name: seasonName,
-          season_group: { name: { contains: seasonGroupName } },
-        },
-        select: { id: true },
-      });
-      const seasonIds = seasons.map(s => s.id);
-
-      if (seasonIds.length === 0) {
-        return { year, seasonName, seasonGroupName, bySubCategory: {}, byGenderStore: {} };
+      if (flatSeasons.length === 0) {
+        return { periods: [] };
       }
 
-      const rows = await this.prisma.salesHistoryAgg.findMany({
-        where: {
-          brand_id: BigInt(brandId),
-          year,
-          season_id: { in: seasonIds },
-        },
-      });
+      // Find current season's index in the flat list
+      const currentIdx = flatSeasons.findIndex(s => s.id === sId);
+      if (currentIdx === -1) {
+        this.logger.warn(`[findSalesHistory] seasonId=${seasonId} not found in flat season list`);
+        return { periods: [] };
+      }
 
-      const aggregated = this.aggregateSalesHistory(rows);
-      return { year, seasonName, seasonGroupName, ...aggregated };
+      // Go backward: decrement index, wrap to previous year's last entry
+      targetPeriods = [];
+      let curYear = year;
+      let curIdx = currentIdx;
+      for (let i = 0; i < count; i++) {
+        curIdx--;
+        if (curIdx < 0) {
+          curYear--;
+          curIdx = flatSeasons.length - 1;
+        }
+        targetPeriods.push({ year: curYear, seasonId: flatSeasons[curIdx].id });
+      }
     }
 
-    // mode === 'recent'
-    const limit = params.limit || 3;
+    this.logger.debug(`[findSalesHistory] targetPeriods: ${JSON.stringify(targetPeriods.map(p => ({ year: p.year, seasonId: String(p.seasonId) })))}`);
 
-    // Find distinct (year, season_id) combos ordered by year DESC
-    const distinctPeriods = await this.prisma.salesHistoryAgg.findMany({
-      where: { brand_id: BigInt(brandId) },
-      distinct: ['year', 'season_id'],
-      orderBy: [{ year: 'desc' }],
-      select: { year: true, season_id: true },
-      take: limit * 5, // fetch more to ensure enough unique combos
-    });
-
-    // De-duplicate and take first `limit`
-    const seen = new Set<string>();
-    const uniquePeriods: { year: number; season_id: bigint }[] = [];
-    for (const p of distinctPeriods) {
-      const key = `${p.year}_${p.season_id}`;
-      if (!seen.has(key)) {
-        seen.add(key);
-        uniquePeriods.push(p);
-        if (uniquePeriods.length >= limit) break;
-      }
+    if (targetPeriods.length === 0) {
+      return { periods: [] };
     }
 
     // Fetch season names for labels
-    const seasonIds = [...new Set(uniquePeriods.map(p => p.season_id))];
+    const uniqueSeasonIds = [...new Set(targetPeriods.map(p => p.seasonId))];
     const seasonRecords = await this.prisma.season.findMany({
-      where: { id: { in: seasonIds } },
+      where: { id: { in: uniqueSeasonIds } },
       include: { season_group: true },
     });
     const seasonMap = new Map(seasonRecords.map(s => [String(s.id), s]));
 
-    // For each period, aggregate
-    const periods = await Promise.all(
-      uniquePeriods.map(async (p) => {
-        const rows = await this.prisma.salesHistoryAgg.findMany({
-          where: {
-            brand_id: BigInt(brandId),
-            year: p.year,
-            season_id: p.season_id,
-          },
-        });
-        const aggregated = this.aggregateSalesHistory(rows);
-        const season = seasonMap.get(String(p.season_id));
-        return {
-          year: p.year,
-          seasonId: String(p.season_id),
-          seasonName: season?.name || '',
-          seasonGroupName: season?.season_group?.name || '',
-          label: `${p.year} ${season?.season_group?.name || ''} ${season?.name || ''}`.trim(),
-          ...aggregated,
-        };
-      })
-    );
+    // Aggregate each period — only compute what the active tab needs
+    const periods = await Promise.all(targetPeriods.map(async (p) => {
+      let bySubCategory: Record<string, any> = {};
+      let bySeasonType: Record<string, any> = {};
+      let byGenderStore: Record<string, any> = {};
+      let categories: any[] = [];
+
+      if (!tab || tab === 'category') {
+        const res = await this.aggregateBySubCategory(bId, p.year, p.seasonId);
+        bySubCategory = res.bySubCategory;
+        categories = res.categories;
+      }
+      if (!tab || tab === 'collection') {
+        bySeasonType = await this.aggregateBySeasonType(bId, p.year, p.seasonId);
+      }
+      if (!tab || tab === 'gender') {
+        byGenderStore = await this.aggregateByGenderStore(bId, p.year, p.seasonId);
+      }
+
+      const season = seasonMap.get(String(p.seasonId));
+      return {
+        year: p.year,
+        seasonId: String(p.seasonId),
+        seasonName: season?.name || '',
+        seasonGroupName: season?.season_group?.name || '',
+        label: `${p.year} ${season?.season_group?.name || ''} ${season?.name || ''}`.trim(),
+        bySubCategory,
+        bySeasonType,
+        byGenderStore,
+        categories,
+      };
+    }));
 
     return { periods };
+
+    } catch (err: any) {
+      this.logger.error(`[findSalesHistory] Error: ${err?.message}`, err?.stack);
+      throw err;
+    }
   }
 
   // ─── CATEGORY FILTER OPTIONS ────────────────────────────────────────────────

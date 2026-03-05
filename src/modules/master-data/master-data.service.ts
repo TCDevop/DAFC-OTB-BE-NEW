@@ -82,10 +82,10 @@ export class MasterDataService {
       include: {
         seasons: {
           where: { is_active: true },
-          orderBy: { name: 'asc' },
+          orderBy: [{ no: 'asc' }, { id: 'asc' }],
         },
       },
-      orderBy: { name: 'asc' },
+      orderBy: { id: 'asc' },
     });
   }
 
@@ -96,7 +96,7 @@ export class MasterDataService {
     return this.prisma.season.findMany({
       where,
       include: { season_group: true },
-      orderBy: { name: 'asc' },
+      orderBy: [{ no: 'asc' }, { id: 'asc' }],
     });
   }
 

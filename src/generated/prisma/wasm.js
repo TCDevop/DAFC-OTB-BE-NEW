@@ -210,7 +210,8 @@ exports.Prisma.SeasonScalarFieldEnum = {
   created_by: 'created_by',
   created_at: 'created_at',
   updated_at: 'updated_at',
-  updated_by: 'updated_by'
+  updated_by: 'updated_by',
+  no: 'no'
 };
 
 exports.Prisma.GenderScalarFieldEnum = {
@@ -470,6 +471,7 @@ exports.Prisma.SalesHistoryAggScalarFieldEnum = {
   gender_id: 'gender_id',
   category_id: 'category_id',
   sub_category_id: 'sub_category_id',
+  season_type_id: 'season_type_id',
   year: 'year',
   season_id: 'season_id',
   mall: 'mall',
@@ -478,9 +480,48 @@ exports.Prisma.SalesHistoryAggScalarFieldEnum = {
   cat_vendor: 'cat_vendor',
   prod_line_vendor: 'prod_line_vendor',
   gender: 'gender',
-  product_size: 'product_size',
   buy: 'buy',
   sales_amt: 'sales_amt',
+  st: 'st'
+};
+
+exports.Prisma.SellthroughByGenderAggScalarFieldEnum = {
+  store_id: 'store_id',
+  brand_id: 'brand_id',
+  gender_id: 'gender_id',
+  year: 'year',
+  season_id: 'season_id',
+  mall: 'mall',
+  group_brand: 'group_brand',
+  brand_name: 'brand_name',
+  gender: 'gender',
+  st: 'st'
+};
+
+exports.Prisma.SellthroughBySeasonTypeAggScalarFieldEnum = {
+  store_id: 'store_id',
+  brand_id: 'brand_id',
+  season_type_id: 'season_type_id',
+  year: 'year',
+  season_id: 'season_id',
+  mall: 'mall',
+  group_brand: 'group_brand',
+  brand_name: 'brand_name',
+  st: 'st'
+};
+
+exports.Prisma.SellthroughBySubcategoryAggScalarFieldEnum = {
+  brand_id: 'brand_id',
+  gender_id: 'gender_id',
+  category_id: 'category_id',
+  sub_category_id: 'sub_category_id',
+  year: 'year',
+  season_id: 'season_id',
+  group_brand: 'group_brand',
+  brand_name: 'brand_name',
+  cat_vendor: 'cat_vendor',
+  prod_line_vendor: 'prod_line_vendor',
+  gender: 'gender',
   st: 'st'
 };
 
@@ -582,6 +623,9 @@ exports.Prisma.ModelName = {
   ProposalSizing: 'ProposalSizing',
   SubCategorySizeHistoryAgg: 'SubCategorySizeHistoryAgg',
   SalesHistoryAgg: 'SalesHistoryAgg',
+  SellthroughByGenderAgg: 'SellthroughByGenderAgg',
+  SellthroughBySeasonTypeAgg: 'SellthroughBySeasonTypeAgg',
+  SellthroughBySubcategoryAgg: 'SellthroughBySubcategoryAgg',
   ApprovalStatus: 'ApprovalStatus',
   Ticket: 'Ticket',
   ApprovalWorkflow: 'ApprovalWorkflow',
