@@ -18,12 +18,13 @@ interface TicketFilters {
 export interface ValidationStep {
   step: number;
   label: string;
-  status: 'pass' | 'fail' | 'skipped';
+  status: 'pass' | 'fail' | 'warn' | 'skipped';
   details: string[];
 }
 
 export interface ValidationResult {
   valid: boolean;
+  hasWarnings?: boolean;
   steps: ValidationStep[];
 }
 
@@ -160,9 +161,11 @@ export class TicketService {
     }
 
     // ──── STEP 3: Final SKUProposalHeader per brand ─────────────────────────────
+    // At least 1 brand must have final SKU proposal; others are warnings
 
     const step3Details: string[] = [];
-    let step3Pass = true;
+    const step3Warnings: string[] = [];
+    let step3HasAny = false;
 
     for (const brandId of brandIds) {
       const allocateHeaderId = finalAHMap.get(brandId)!;
@@ -173,53 +176,71 @@ export class TicketService {
         },
       });
       if (!finalSPH) {
-        step3Pass = false;
-        step3Details.push(`Brand "${brandMap.get(brandId)}" chưa có Final SKU Proposal version`);
+        step3Warnings.push(`Brand "${brandMap.get(brandId)}" chưa có Final SKU Proposal version`);
       } else {
+        step3HasAny = true;
         finalSPHMap.set(brandId, finalSPH.id);
       }
     }
 
+    const step3Pass = step3HasAny;
+    if (!step3HasAny) {
+      step3Details.push('Không có Brand nào có Final SKU Proposal version');
+    }
+
     steps.push({
       step: 3,
-      label: 'SKU Proposal Final đầy đủ cho tất cả Brand',
-      status: step3Pass ? 'pass' : 'fail',
-      details: step3Details,
+      label: 'Ít nhất 1 Brand có SKU Proposal Final',
+      status: step3Pass ? (step3Warnings.length > 0 ? 'warn' : 'pass') : 'fail',
+      details: step3Pass ? step3Warnings : step3Details,
     });
 
     if (!step3Pass) {
       steps.push(
-        { step: 4, label: 'Sizing hoàn tất (A, B, C) cho tất cả SKU Proposal', status: 'skipped', details: ['Bỏ qua: Step 3 chưa đạt'] },
+        { step: 4, label: 'Sizing hoàn tất cho SKU Proposal Final', status: 'skipped', details: ['Bỏ qua: Step 3 chưa đạt'] },
       );
       return { valid: false, steps };
     }
 
-    // ──── STEP 4: ProposalSizingHeaders (3 = A, B, C) per SKUProposalHeader ────
+    // ──── STEP 4: ProposalSizingHeaders per brand (only brands with final SPH) ──
+    // At least 1 brand must have sizing; others are warnings
 
     const step4Details: string[] = [];
-    let step4Pass = true;
+    const step4Warnings: string[] = [];
+    let step4HasAny = false;
 
-    for (const brandId of brandIds) {
+    for (const brandId of finalSPHMap.keys()) {
       const sphId = finalSPHMap.get(brandId)!;
       const sizingCount = await this.prisma.proposalSizingHeader.count({
         where: { sku_proposal_header_id: sphId },
       });
       if (sizingCount < 3) {
-        step4Pass = false;
-        step4Details.push(
+        step4Warnings.push(
           `Brand "${brandMap.get(brandId)}" có ${sizingCount}/3 Sizing version`,
         );
+      } else {
+        step4HasAny = true;
       }
+    }
+
+    const step4Pass = step4HasAny;
+    if (!step4HasAny) {
+      step4Details.push('Không có Brand nào đủ 3 Sizing version (A, B, C)');
     }
 
     steps.push({
       step: 4,
-      label: 'Sizing hoàn tất (A, B, C) cho tất cả SKU Proposal',
-      status: step4Pass ? 'pass' : 'fail',
-      details: step4Details,
+      label: 'Sizing hoàn tất cho SKU Proposal Final',
+      status: step4Pass ? (step4Warnings.length > 0 ? 'warn' : 'pass') : 'fail',
+      details: step4Pass ? step4Warnings : step4Details,
     });
 
-    return { valid: step1Pass && step2Pass && step3Pass && step4Pass, steps };
+    const hasWarnings = steps.some(s => s.status === 'warn');
+    return {
+      valid: step1Pass && step2Pass && step3Pass && step4Pass,
+      hasWarnings,
+      steps,
+    };
   }
 
   // ═══════════════════════════════════════════════════════════════════════════════
@@ -227,7 +248,8 @@ export class TicketService {
   // ═══════════════════════════════════════════════════════════════════════════════
 
   private async createSnapshotCopy(tx: Prisma.TransactionClient, budgetId: string, ticketId: bigint, userId: bigint) {
-    // Load all Final AllocateHeaders (non-snapshot) with full hierarchy
+    // Load all Final AllocateHeaders (non-snapshot) with SKU proposals + sizing only
+    // (BudgetAllocate and Planning are NOT snapshotted)
     const finalHeaders = await tx.allocateHeader.findMany({
       where: {
         budget_id: toBigInt(budgetId),
@@ -235,15 +257,6 @@ export class TicketService {
         is_snapshot: false,
       },
       include: {
-        budget_allocates: true,
-        planning_headers: {
-          where: { is_final_version: true },
-          include: {
-            planning_collections: true,
-            planning_genders: true,
-            planning_categories: true,
-          },
-        },
         sku_proposal_headers: {
           where: { is_final_version: true },
           include: {
@@ -263,7 +276,7 @@ export class TicketService {
     });
 
     for (const ah of finalHeaders) {
-      // 1. Duplicate AllocateHeader
+      // 1. Duplicate AllocateHeader (as snapshot container)
       const newAH = await tx.allocateHeader.create({
         data: {
           budget_id: ah.budget_id,
@@ -276,87 +289,7 @@ export class TicketService {
         },
       });
 
-      // 2. Duplicate BudgetAllocates
-      if (ah.budget_allocates.length > 0) {
-        await tx.budgetAllocate.createMany({
-          data: ah.budget_allocates.map(ba => ({
-            allocate_header_id: newAH.id,
-            store_id: ba.store_id,
-            season_group_id: ba.season_group_id,
-            season_id: ba.season_id,
-            budget_amount: ba.budget_amount,
-            created_by: userId,
-          })),
-        });
-      }
-
-      // 3. Duplicate Final PlanningHeaders + children
-      for (const ph of ah.planning_headers) {
-        const newPH = await tx.planningHeader.create({
-          data: {
-            allocate_header_id: newAH.id,
-            version: ph.version,
-            status: ph.status,
-            is_final_version: ph.is_final_version,
-            created_by: userId,
-          },
-        });
-
-        if (ph.planning_collections.length > 0) {
-          await tx.planningCollection.createMany({
-            data: ph.planning_collections.map(pc => ({
-              season_type_id: pc.season_type_id,
-              store_id: pc.store_id,
-              planning_header_id: newPH.id,
-              actual_buy_pct: pc.actual_buy_pct,
-              actual_sales_pct: pc.actual_sales_pct,
-              actual_st_pct: pc.actual_st_pct,
-              actual_moc: pc.actual_moc,
-              proposed_buy_pct: pc.proposed_buy_pct,
-              otb_proposed_amount: pc.otb_proposed_amount,
-              pct_var_vs_last: pc.pct_var_vs_last,
-              created_by: userId,
-            })),
-          });
-        }
-
-        if (ph.planning_genders.length > 0) {
-          await tx.planningGender.createMany({
-            data: ph.planning_genders.map(pg => ({
-              gender_id: pg.gender_id,
-              store_id: pg.store_id,
-              planning_header_id: newPH.id,
-              actual_buy_pct: pg.actual_buy_pct,
-              actual_sales_pct: pg.actual_sales_pct,
-              actual_st_pct: pg.actual_st_pct,
-              proposed_buy_pct: pg.proposed_buy_pct,
-              otb_proposed_amount: pg.otb_proposed_amount,
-              pct_var_vs_last: pg.pct_var_vs_last,
-              created_by: userId,
-            })),
-          });
-        }
-
-        if (ph.planning_categories.length > 0) {
-          await tx.planningCategory.createMany({
-            data: ph.planning_categories.map(pc => ({
-              subcategory_id: pc.subcategory_id,
-              planning_header_id: newPH.id,
-              actual_buy_pct: pc.actual_buy_pct,
-              actual_sales_pct: pc.actual_sales_pct,
-              actual_st_pct: pc.actual_st_pct,
-              proposed_buy_pct: pc.proposed_buy_pct,
-              otb_proposed_amount: pc.otb_proposed_amount,
-              var_lastyear_pct: pc.var_lastyear_pct,
-              otb_actual_amount: pc.otb_actual_amount,
-              otb_actual_buy_pct: pc.otb_actual_buy_pct,
-              created_by: userId,
-            })),
-          });
-        }
-      }
-
-      // 4. Duplicate Final SKUProposalHeaders + children
+      // 2. Duplicate Final SKUProposalHeaders + children
       for (const sph of ah.sku_proposal_headers) {
         const newSPH = await tx.sKUProposalHeader.create({
           data: {
@@ -371,7 +304,7 @@ export class TicketService {
         // Map old SKUProposal ID → new SKUProposal ID (for sizing remapping)
         const skuIdMap = new Map<bigint, bigint>();
 
-        // 4a. Duplicate SKUProposals + SKUAllocates
+        // 2a. Duplicate SKUProposals + SKUAllocates
         for (const sku of sph.sku_proposals) {
           const newSku = await tx.sKUProposal.create({
             data: {
@@ -397,7 +330,7 @@ export class TicketService {
           }
         }
 
-        // 4b. Duplicate ProposalSizingHeaders + ProposalSizings
+        // 2b. Duplicate ProposalSizingHeaders + ProposalSizings
         for (const psh of sph.proposal_sizing_headers) {
           const newPSH = await tx.proposalSizingHeader.create({
             data: {
@@ -496,30 +429,10 @@ export class TicketService {
           },
           orderBy: { created_at: 'asc' as const },
         },
-        // Load snapshot allocate headers with full hierarchy
+        // Load snapshot allocate headers with SKU proposals + sizing only
         snapshot_allocate_headers: {
           include: {
             brand: { include: { group_brand: true } },
-            budget_allocates: {
-              include: { store: true, season_group: true, season: true },
-            },
-            planning_headers: {
-              include: {
-                planning_collections: {
-                  include: { season_type: true, store: true },
-                },
-                planning_genders: {
-                  include: { gender: true, store: true },
-                },
-                planning_categories: {
-                  include: {
-                    subcategory: {
-                      include: { category: { include: { gender: true } } },
-                    },
-                  },
-                },
-              },
-            },
             sku_proposal_headers: {
               include: {
                 sku_proposals: {
@@ -597,6 +510,14 @@ export class TicketService {
       throw new BadRequestException({
         message: 'Budget chưa sẵn sàng để tạo Ticket',
         validation,
+      });
+    }
+    // If there are warnings and force flag is not set, return warnings for confirmation
+    if (validation.hasWarnings && !dto.force) {
+      throw new BadRequestException({
+        message: 'Một số Brand chưa hoàn tất SKU Proposal / Sizing',
+        validation,
+        requireConfirmation: true,
       });
     }
 

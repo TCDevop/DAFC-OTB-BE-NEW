@@ -19,6 +19,10 @@ export class CreateTicketDto {
   @IsNotEmpty()
   @MaxLength(255)
   seasonId: string;
+
+  @ApiPropertyOptional({ description: 'Force creation despite warnings' })
+  @IsOptional()
+  force?: boolean;
 }
 
 export class ValidateTicketDto {

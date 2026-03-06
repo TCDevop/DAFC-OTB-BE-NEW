@@ -17,6 +17,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
 
     let status = HttpStatus.INTERNAL_SERVER_ERROR;
     let message: string | string[] = 'Internal server error';
+    let extra: Record<string, unknown> = {};
 
     if (exception instanceof HttpException) {
       status = exception.getStatus();
@@ -34,6 +35,9 @@ export class HttpExceptionFilter implements ExceptionFilter {
         } else if (typeof resObj.error === 'string') {
           message = resObj.error;
         }
+        // Pass through extra properties (e.g. validation steps)
+        const { message: _m, statusCode: _s, error: _e, ...rest } = resObj;
+        if (Object.keys(rest).length > 0) extra = rest;
       }
     } else if (exception instanceof PrismaClientKnownRequestError) {
       switch (exception.code) {
@@ -69,6 +73,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
       success: false,
       statusCode: status,
       message,
+      ...extra,
       timestamp: new Date().toISOString(),
       path: request.url,
     });
